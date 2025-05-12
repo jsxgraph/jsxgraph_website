@@ -1,47 +1,28 @@
 # Some general consts
 
-logo: '<span class="sketcho sketcho-logo"><span class="d-none">sketchometry</span></span>'
-version: v2.4
-version_date: 2025-03-03
-version_legacy: 1.5.3-legacy
-
 default_lang: en
 
-sketchometry: sketchometry
-
 webtitle:
-  en: sketchometry
-  de: sketchometry
+  en: JSXGraph
 
 meta:
   en: >
-    sketchometry is a different kind of dynamic math software.
-    It converts your sketches into precise constructions that you can modify and move.
-  de: >
-    sketchometry ist die etwas andere dynamische Mathematiksoftware.
-    Sie wandelt deine Skizzen in exakte Konstruktionen um, die du verändern und bewegen kannst.
+    TBA
 
 keywords:
   en: >
-    sketchometry, geometry, mathematics, dynamic geometry, app, software, browser, finger, intuitive, calculus, sketches
-  de: >
-    sketchometry, Geometrie, Mathematik, Dynamische Geometrie, App, Software, Browser, Finger, intuitiv, Analysis, Skizzen
+    TBA
 
 btn:
   start:
-    de: Starten
     en: Start
   menu:
-    de: Menü
     en: Menu
   more:
-    de: Mehr
     en: More
 
 splash:
   image:
-    de:
-      /media/images/2x1/bausteine-winkel-hand-mitte.jpg
     en:
       /media/images/2x1/sketchometry-hand.jpg
   subtitle:
@@ -50,86 +31,21 @@ splash:
 
 cookie:
   hint:
-    de: >
-      sketchometry speichert essenzielle Daten in deinem Browser,
-      um die Funktionalität der Software zu ermöglichen.
     en: >
-      sketchometry stores essential data in your browser,
+      JSXGraph stores essential data in your browser,
       to enable the functionality of the software.
   more:
-    de: Mehr erfahren.
     en: Learn more.
   btn:
-    de: Okay
     en: Okay
 
 url:
-  web: https://sketchometry.org
-  start: https://start.sketchometry.org
-  beta: https://beta.sketchometry.org
-  legacy: https://legacy.sketchometry.org
-
-appstores:
-
-  - id: apple
-    show: true
-    credits:
-      de: App Store und das Apple-Logo sind Marken der Apple Inc., die in den USA und weiteren Ländern und Regionen eingetragen sind.
-      en: App Store and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries.
-    url: https://apps.apple.com/de/app/sketchometry/id635195332
-    image:
-      de: /media/stores/apple/de.svg
-      en: /media/stores/apple/en.svg
-    redirect:
-      enabled: true
-      useragent: ipad|iphone|ipod
-    banner:
-      enabled: true
-      code: <meta name="apple-itunes-app" content="app-id=635195332">
-
-  - id: google
-    show: false
-    credits:
-      de: Google Play und das Google Play-Logo sind Marken von Google LLC.
-      en: Google Play and the Google Play logo are trademarks of Google LLC.
-    url: https://play.google.com/store/apps/details?id=sketchometry
-    image:
-      de: /media/stores/google/de.png
-      en: /media/stores/google/en.png
-    redirect:
-      enabled: false
-      useragent: android
-    banner:
-      enabled: false
-      code:
-
-  - id: microsoft
-    show: false
-    credits:
-      de:
-      en:
-    url: https://start.sketchometry.org
-    image:
-      de: /media/stores/microsoft/de.png
-      en: /media/stores/microsoft/en.png
-    redirect:
-      enabled: false
-      useragent: windows phone
-    banner:
-      enabled: false
-      code:
+  web: https://jsxgraph.org
 
 maps:
     button:
-      de: Google Maps laden
       en: Load Google Maps
     text:
-      de: >
-        Sie können den Standort via Google Maps anzeigen lassen.
-        Wenn Sie die Karte laden, werden personenbezogene Daten an Google gesendet und Cookies durch Google gesetzt.
-        Daher ist es möglich, dass der Anbieter Ihre Zugriffe speichert und Ihr Verhalten analysieren kann.
-        Die Datenschutzerklärung von Google Maps finden Sie
-        <a href="https://policies.google.com/privacy" target="_blank" title="https://policies.google.com/privacy">hier</a>.
       en: >
         You can view the location via Google Maps.
         When you load the map, personal data will be sent to Google, and cookies will be set by Google.
@@ -138,18 +54,14 @@ maps:
         <a href="https://policies.google.com/privacy" target="_blank" title="https://policies.google.com/privacy">here</a>.
 
 cmldt:
-  de: Forschungsstelle für Mobiles Lernen mit digitalen Medien
   en: Center for Mobile Learning with Digital Technology
 
 ubt:
-  de: Universität Bayreuth
   en: University of Bayreuth
 
 address: >
   Universitätsstraße 30<br>
   95447 Bayreuth
-
-iconlist_afterline: <br><span class="sketcho sketcho-lg sketcho-blank me-1"></span>
 
 supporters:
   title:
@@ -158,9 +70,6 @@ supporters:
   containerclass: g-5 g-xs-4 g-sm-5 g-xxl-2
   itemclass: col-7 col-xs-4 col-lg-3 col-xxl-2 mx-auto mx-xs-0
   list:
-    - name: thinkING.
-      logo: /media/images/logo-thinking.png
-      url: https://www.think-ing.de
     - name:
         de: Forschungsstelle für Mobiles Lernen mit digitalen Medien
         en: Center for Mobile Learning with Digital Technology

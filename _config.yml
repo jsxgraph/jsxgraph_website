@@ -44,39 +44,3 @@ defaults:
       render_this: true
       absolute_paths: false
       in_shortcuts: false
-  - scope:
-      path: "de"
-    values:
-      lang: "de"
-      layout: default
-      is_home: false
-      in_menu_popup: true
-      in_menu_topbar: false
-      in_menu_footer: false
-      render_this: "after"
-      absolute_paths: false
-      in_shortcuts: false
-  - scope:
-      path: "en"
-    values:
-      lang: "en"
-      layout: default
-      is_home: false
-      in_menu_popup: true
-      in_menu_topbar: false
-      in_menu_footer: false
-      render_this: "after"
-      absolute_paths: false
-      in_shortcuts: false
-  - scope:
-      path: "app"
-    values:
-      lang: "en"
-      layout: plain_splash
-      is_home: false
-      in_menu_popup: false
-      in_menu_topbar: false
-      in_menu_footer: false
-      render_this: true
-      absolute_paths: true
-      in_shortcuts: false

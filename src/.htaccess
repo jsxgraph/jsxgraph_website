@@ -9,10 +9,10 @@ allow from all
 RewriteEngine on
 
 # The 'Accept-Language' header starts with 'de' and the test is case-insensitive ([NC])
-RewriteCond %{HTTP:Accept-Language} ^de [NC]
-RewriteRule ^/?$ /de/ [L,R]
+#RewriteCond %{HTTP:Accept-Language} ^de [NC]
+#RewriteRule ^/?$ /de/ [L,R]
 
 # For every other language use English
-RewriteRule ^/?$ /en/ [L,R]
+#RewriteRule ^/?$ /en/ [L,R]
 
 # Options -Indexes

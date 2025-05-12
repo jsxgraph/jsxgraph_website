@@ -1,1 +1,0 @@
-Die folgenden Unterrichtsbausteine stehen unter der Creative-Commons-Lizenz <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY SA 4.0 </a> zur freien Verfügung.

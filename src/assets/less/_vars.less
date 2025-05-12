@@ -1,0 +1,21 @@
+// Only vars here!
+
+// ---------------------------------------------
+// ------------- override defaults -------------
+// ---------------------------------------------
+
+@fixed_width_xs: 100px;
+
+@threshold_light: 75%;
+@threshold_dark: 88%;
+@threshold_overlay: 55%;
+
+@color_primary: #10427C;
+@color_secondary: #73AFDC; // mix(@color_primary, #fff, 25%);
+@color_tertiary: #ADFCF0; // mix(@color_primary, #fff, 10%);
+
+@color_outer: #F5F5F5; // mix(@color_primary, #dcc4c4, 20%); // @color_secondary;
+@color_outer_light: mix(@color_outer, #fff, @threshold_light);
+@color_outer_dark: mix(@color_outer, #10427C, @threshold_dark);
+
+@underline_links: true;
