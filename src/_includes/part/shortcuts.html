@@ -1,0 +1,50 @@
+{%- assign polygon = include.polygon | default: "6" -%}
+<!-- 5 | 6 | 8 | heart -->
+
+{%- if polygon == "5" -%}
+{%- assign class = "pentagon-clip" -%}
+{%- assign padding_x = "10%" -%}
+{%- assign padding_y = "7%" -%}
+{%- elsif polygon == "8" -%}
+{%- assign class = "octagon-clip" -%}
+{%- assign padding_x = "5%" -%}
+{%- assign padding_y = "5%" -%}
+{%- elsif polygon == "heart" -%}
+{%- assign class = "heart-clip" -%}
+{%- assign padding_x = "15%" -%}
+{%- assign padding_y = "12%" -%}
+{%- else -%}
+{%- assign class = "hexagon-clip" -%}
+{%- assign padding_x = "15%" -%}
+{%- assign padding_y = "10%" -%}
+{%- endif -%}
+
+<div class="row g-4 justify-content-center my-4">
+    {%- assign color = 'primary' -%}
+    {%- assign first = true -%}
+    {%- assign sorted_pages = site.pages | sort: 'order' -%}
+    {%- for i_page in sorted_pages -%}
+    {%- if i_page.in_shortcuts == true and i_page.lang == page.lang -%}
+    {%- if color == 'primary' -%}
+    {%- assign color = 'secondary' -%}
+    {%- else -%}
+    {%- assign color = 'primary' -%}
+    {%- endif -%}
+    <div class="col-6 col-md-4 col-xl-3 col-xxl-2 {% if first %}offset-xxl-1{% endif %}">
+        <a href="{{ relBase }}{{ i_page.url }}" class="btn btn-{{ color }} square rounded-0 {{ class }} overflow-hidden" style="padding: {{ padding_y }} {{ padding_x }};">
+            <div class="d-flex flex-column justify-content-center align-items-center {% if i_page.icon %}mb-3{% endif %}">
+                {% if i_page.icon %}
+                <div class="h-fix-lg biggest">
+                    <i class="fa-fw {{ i_page.icon }}"></i>
+                </div>
+                {% endif %}
+                <div>
+                    {{ i_page.title_short | default: i_page.title }}
+                </div>
+            </div>
+        </a>
+    </div>
+    {%- assign first = false -%}
+    {%- endif -%}
+    {%- endfor -%}
+</div>

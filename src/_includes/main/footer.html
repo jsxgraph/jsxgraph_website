@@ -1,0 +1,60 @@
+<footer class="mt-5">
+    {% if (const.supporters.list | length) > 0 %}
+    <div class="bg-white my-5">
+        {% include part/supporters.html %}
+    </div>
+    {% endif %}
+    <div class="bg-primary-gradient">
+        <div class="container md-container py-4">
+            <div class="row justify-content-between align-items-center g-4">
+                <div class="col-12 col-md-6">
+                    <div class="m-between-2 m-between-md-3">
+                        {%- assign sorted_pages = site.pages | sort: 'order' -%}
+                        {%- for i_page in sorted_pages %}
+                        {%- if i_page.in_menu_footer == true and i_page.lang == page.lang -%}
+                        <div>
+                            <a href="{{ relBase }}{{ i_page.url }}" class="link-white">
+                                {{ i_page.menu_title | default: i_page.header | default: i_page.title }}
+                            </a>
+                        </div>
+                        {%- endif -%}
+                        {%- endfor -%}
+                    </div>
+                </div>
+                <div class="col-12 col-md">
+                    {%- if const.cmldt[page.lang] != nil -%}
+                    {{ const.cmldt[page.lang] }}
+                    {%- else -%}
+                    {{ const.cmldt[const.default_lang] }}
+                    {%- endif -%}
+                    <br>
+                    {%- if const.ubt[page.lang] != nil -%}
+                    {{ const.ubt[page.lang] }}
+                    {%- else -%}
+                    {{ const.ubt[const.default_lang] }}
+                    {%- endif -%}
+                    <br>
+                    {{ const.address }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-outer-gradient">
+        <div class="container md-container py-4">
+            <div class="d-flex flex-wrap flex-nowrap-md justify-content-center align-items-center">
+                <div class="nowrap">
+                    &copy; 2011 - {{ 'now' | date: "%Y" }}
+                </div>
+                <div class="mx-3 d-none d-md-block">|</div>
+                <div class="w-100 d-block d-md-none"></div>
+                <div>
+                    {%- if const.cmldt[page.lang] != nil -%}
+                    {{ const.cmldt[page.lang] }}
+                    {%- else -%}
+                    {{ const.cmldt[const.default_lang] }}
+                    {%- endif -%}
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

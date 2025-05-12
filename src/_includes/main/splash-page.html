@@ -1,0 +1,14 @@
+{%- if include.overlay == nil -%}{%- assign overlay = true -%}{%- else -%}{%- assign overlay = include.overlay -%}{%- endif -%}
+{%- if include.scroll == nil -%}{%- assign scroll = true -%}{%- else -%}{%- assign scroll = include.scroll -%}{%- endif -%}
+
+<div class="d-flex flex-column splash-page {% if overlay %}splash-overlay{% endif %}">
+    <div class="flex-fill d-flex flex-column justify-content-center align-items-center p-2 p-lg-3 text-center">
+        {{ include.content }}
+    </div>
+
+    {%- if scroll -%}
+    <div class="splash-scroll">
+        <span class="sketcho sketcho-caret-down-lg fs-1"></span>
+    </div>
+    {%- endif -%}
+</div>

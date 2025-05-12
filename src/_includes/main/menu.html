@@ -1,0 +1,40 @@
+<div class="offcanvas sketcho-special-offcanvas offcanvas-end" tabindex="-1" id="menu">
+    <div class="offcanvas-header">
+        <button type="button" class="btn-inline btn-none">
+            <span class="sketcho sketcho-blank sketcho-lg"></span>
+        </button>
+        <button type="button" class="btn-inline btn-none" data-bs-dismiss="offcanvas">
+            <span class="sketcho sketcho-times sketcho-lg"></span>
+        </button>
+    </div>
+    <div class="offcanvas-body m-between-3 py-0">
+        <div class="list-group list-group-flush mx-n3">
+            {%- assign sorted_pages = site.pages | sort: 'order' -%}
+            {%- for i_page in sorted_pages -%}
+            {%- if i_page.in_menu_popup == true and i_page.lang == page.lang -%}
+            <a href="{{ relBase }}{{ i_page.url }}" class="list-group-item list-group-item-action px-3 py-1 border-0 {% if page.url == i_page.url %}active{% endif %}">
+                {{ i_page.menu_title | default: i_page.header | default: i_page.title }}
+            </a>
+            {%- endif -%}
+            {%- endfor -%}
+        </div>
+
+        <div class="mt-3 mb-5">
+            {%- include main/tiles.html -%}
+        </div>
+    </div>
+
+    <div class="offcanvas-footer">
+        <div class="w-100 d-flex flex-wrap justify-content-center align-items-center">
+            {%- assign sorted_languages = site.data.languages | sort: 'title' -%}
+            {%- for i_lang in sorted_languages -%}
+            <div>
+                <a href="{{ relBase }}{{ i_lang.url }}" class="{% if page.lang == i_lang.key %}link-primary fw-little-bold{% else %}link-dark{% endif %}">
+                    {{ i_lang.title }} ({{ i_lang.key }})
+                </a>
+            </div>
+            <div class="d-not-last mx-3">|</div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>

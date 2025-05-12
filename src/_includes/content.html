@@ -1,0 +1,48 @@
+{%- assign content_blank = content | replace_post | strip_newlines -%}
+
+{%- if content_blank != "" -%}
+{%- if page.render_this == "before" or page.render_this == true or page.sections == nil -%}
+<div class="row justify-content-center px-2">
+    <div class="col-12 col-lg-10 content">
+        {{ content | replace_post }}
+    </div>
+</div>
+{%- endif -%}
+{%- endif -%}
+
+{%- if page.sections != nil -%}
+{%- for section in page.sections -%}
+{%- assign layout = 'sections/' | append: section.layout | append: '.html' -%}
+
+{%- if section.layout == 'image' -%}
+{% include {{ layout }} image_url=section.file data=section.data index=forloop.index index0=forloop.index0 %}
+
+{%- elsif section.layout == 'file' -%}
+<div>
+    {% include_relative {{ section.file }} %}
+</div>
+
+{%- else -%}
+
+{%- if section.file != nil -%}
+{%- assign file = '_' | append: section.file | append: '.section.md' -%}
+{%- capture section_inclusion -%}{% include_relative {{file}} %}{%- endcapture -%}
+{%- assign sec_content = section_inclusion | pre_markdown | markdownify | replace_post -%}
+{%- else -%}
+{%- assign section_inclusion = nil -%}
+{%- assign sec_content = nil -%}
+{%- endif -%}
+
+{% include {{ layout }} content=sec_content content_raw=section_inclusion data=section.data index=forloop.index index0=forloop.index0 %}
+{%- endif -%}
+
+{%- endfor -%}
+{%- endif -%}
+
+{%- if page.render_this == "after" and page.sections != nil and content_blank -%}
+<div class="row justify-content-center px-2">
+    <div class="col-12 col-lg-10 content">
+        {{ content | replace_post }}
+    </div>
+</div>
+{%- endif -%}

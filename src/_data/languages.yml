@@ -1,0 +1,37 @@
+- key: "en"
+  title: "English"
+  url: '/en/'
+  months:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+  abort: Abort
+  abort_user: Abort by the user
+
+- key: "de"
+  title: "Deutsch"
+  url: '/de/'
+  months:
+    - Januar
+    - Februar
+    - März
+    - April
+    - Mai
+    - Juni
+    - Juli
+    - August
+    - September
+    - Oktober
+    - November
+    - Dezember
+  abort: Abbruch
+  abort_user: Abbruch durch den Benutzer

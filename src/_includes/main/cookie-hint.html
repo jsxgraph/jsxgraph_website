@@ -1,0 +1,53 @@
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="cookie-hint" class="toast bg-secondary-light border-secondary-dark shadow-outer-dark rounded-4 z-index-outer" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+        <div class="d-flex">
+            <div class="toast-body px-3 py-2">
+                {% if const.cookie.hint[page.lang] != nil %}
+                {{ const.cookie.hint[page.lang] }}
+                {% else %}
+                {{ const.cookie.hint[const.default_lang] }}
+                {% endif %}
+                <a href="{{ relBase }}/de/datenschutz">
+                    {%- if const.cookie.more[page.lang] != nil -%}
+                    {{ const.cookie.more[page.lang] }}
+                    {%- else -%}
+                    {{ const.cookie.more[const.default_lang] }}
+                    {%- endif -%}
+                </a>
+            </div>
+            <button type="button" class="btn btn-secondary rounded-start-0 rounded-4" id="cookie-accept">
+                {%- if const.cookie.btn[page.lang] != nil -%}
+                {{ const.cookie.btn[page.lang] }}
+                {%- else -%}
+                {{ const.cookie.btn[const.default_lang] }}
+                {%- endif -%}
+            </button>
+        </div>
+    </div>
+</div>
+
+<script type="module">
+    (function () {
+        const hint = $('#cookie-hint'),
+            toast = bootstrap.Toast.getOrCreateInstance(hint[0]),
+            button = $('#cookie-accept'),
+            body = $('body'),
+            lsKey = 'accept_cookie';
+
+        let ls = window.localStorage,
+            entry;
+
+        if (typeof ls == 'undefined' || typeof ls.getItem == 'undefined') return;
+        entry = ls.getItem(lsKey);
+
+        if (typeof entry == 'undefined' || (entry !== true && entry !== 'true')) {
+            toast.show();
+            body.css('padding-bottom', hint.outerHeight());
+        }
+
+        button.on('click', function () {
+            ls.setItem(lsKey, true);
+            toast.hide();
+        });
+    })();
+</script>

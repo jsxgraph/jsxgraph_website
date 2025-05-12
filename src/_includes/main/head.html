@@ -1,0 +1,144 @@
+<!-- ########################################
+                       meta
+   ######################################### -->
+
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+{% if (page.layout == "default") or (page.layout == "splash") %}
+{%- for store in const.appstores -%}
+{%- if store.banner.enabled %}
+{{ store.banner.code }}
+{% endif -%}
+{%- endfor -%}
+{% endif %}
+<title>
+    {%- if page.title_only == true -%}{{ page.title }}{%- else -%}
+    {%- if page.is_home != true -%}{{ page.title }} | {% endif -%}
+    {%- if const.webtitle[page.lang] != nil %}
+    {{ const.webtitle[page.lang] }}
+    {%- else -%}
+    {{ const.webtitle[const.default_lang] }}
+    {%- endif -%}
+    {%- endif -%}
+</title>
+
+<meta name="robots" content="index,follow">
+{%- capture meta -%}
+{%- if const.meta[page.lang] != nil -%}
+{{ const.meta[page.lang] }}
+{%- else -%}
+{{ const.meta[const.default_lang] }}
+{%- endif -%}
+{%- endcapture -%}
+<meta name="description" content="{{ meta | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip }}">
+{%- capture keywords -%}
+{%- if const.keywords[page.lang] != nil -%}
+{{ const.keywords[page.lang] }}
+{%- else -%}
+{{ const.keywords[const.default_lang] }}
+{%- endif -%}
+{%- endcapture -%}
+<meta name="keywords" content="{{ keywords | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip }}">
+
+<!-- ########################################
+                    icons
+   ######################################### -->
+<link rel="icon" type="image/x-icon" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-16.png">
+<link rel="shortcut icon" type="image/x-icon" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-16.png">
+<link rel="icon" type="image/x-icon" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-32.png">
+<link rel="shortcut icon" type="image/x-icon" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-32.png">
+
+<link rel="apple-touch-icon" sizes="20x20" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-20.png"/>
+<link rel="apple-touch-icon" sizes="29x29" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-29.png"/>
+<link rel="apple-touch-icon" sizes="40x40" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-40.png"/>
+<link rel="apple-touch-icon" sizes="50x50" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-50.png"/>
+<link rel="apple-touch-icon" sizes="57x57" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-57.png"/>
+<link rel="apple-touch-icon" sizes="58x58" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-58.png"/>
+<link rel="apple-touch-icon" sizes="60x60" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-60.png"/>
+<link rel="apple-touch-icon" sizes="64x64" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-64.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-72.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-76.png"/>
+<link rel="apple-touch-icon" sizes="80x80" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-80.png"/>
+<link rel="apple-touch-icon" sizes="87x87" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-87.png"/>
+<link rel="apple-touch-icon" sizes="96x96" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-96.png"/>
+<link rel="apple-touch-icon" sizes="100x100" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-100.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-114.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-120.png"/>
+<link rel="apple-touch-icon" sizes="128x128" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-128.png"/>
+<link rel="apple-touch-icon" sizes="136x136" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-136.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-144.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-152.png"/>
+<link rel="apple-touch-icon" sizes="167x167" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-167.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-180.png"/>
+<link rel="apple-touch-icon" sizes="192x192" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-192.png"/>
+<link rel="apple-touch-icon" sizes="256x256" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-256.png"/>
+<link rel="apple-touch-icon" sizes="512x512" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-512.png"/>
+<link rel="apple-touch-icon" sizes="520x520" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-520.png"/>
+<link rel="apple-touch-icon" sizes="1024x1024" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-1024.png"/>
+<link rel="apple-touch-icon" sizes="2048x2048" href="{{ relBase }}/media/favicon/sketchometry-logo-bg-2048.png"/>
+
+<!-- ########################################
+                      MathJax
+    ######################################### -->
+<script type="text/javascript">
+    window.MathJax = {
+        loader: {
+            load: ['[tex]/html'],
+        },
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            packages: ['base', 'ams', 'html'],
+        },
+        options: {
+            ignoreHtmlClass: 'tex2jax_ignore',
+            processHtmlClass: 'tex2jax_process',
+        },
+    };
+</script>
+<script type="text/javascript" src="{{ relBase }}/assets/mathjax/es5/tex-chtml.js"></script>
+
+<!-- ########################################
+                 JS + JSXGraph
+    ######################################### -->
+
+<script type="text/javascript" src="{{ relBase }}/assets/from_sketchometry/extend_externa/ecma.js"></script>
+<script type="text/javascript" src="{{ relBase }}/assets/from_sketchometry/jsxgraphcore.js"></script>
+
+<!-- ########################################
+                   jQuery
+    ######################################### -->
+<script type="text/javascript" src="{{ relBase }}/assets/jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="{{ relBase }}/assets/from_sketchometry/extend_externa/jquery.js"></script>
+
+<!-- ########################################
+                  Bootstrap
+    ######################################### -->
+<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/bootstrap/bootstrap-individual.min.css">
+<script type="text/javascript" src="{{ relBase }}/assets/from_sketchometry/extend_externa/popper.min.js"></script>
+<script type="text/javascript" src="{{ relBase }}/assets/from_sketchometry/extend_externa/tether.min.js"></script>
+<script type="text/javascript" src="{{ relBase }}/assets/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ relBase }}/assets/from_sketchometry/extend_externa/bootstrap.js"></script>
+
+<!-- ########################################
+                   jszip
+    ######################################### -->
+<script type="text/javascript" src="{{ relBase }}/assets/jszip/jszip.min.js"></script>
+
+<!-- ########################################
+                  filesaver
+    ######################################### -->
+<script type="text/javascript" src="{{ relBase }}/assets/filesaver/filesaver.js"></script>
+
+<!-- ########################################
+                sketchometry
+    ######################################### -->
+<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/from_sketchometry/SketchoStyles.css">
+<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/from_sketchometry/SketchoFont.css">
+
+<!-- ########################################
+                  website
+    ######################################### -->
+<link rel="stylesheet" href="{{ relBase }}/assets/website.css">
+<script type="module" src="{{ relBase }}/assets/website.js"></script>

@@ -1,0 +1,14 @@
+<div class="row {% if include.data.image_pos=='second' or include.data.image_pos=='last' or include.data.image_pos=='right' or include.data.image_pos=='end' %}flex-row-reverse{% else %}flex-row{% endif %} image-block">
+    <div class="col-12 col-lg-7">
+        <div class="me-3 me-sm-4 me-lg-0 rounded-5 bg-{{ include.data.colorclassimg | default: 'secondary' }}">
+            <div class="image-bg-cover rounded-5 opacity-50"
+                 style="aspect-ratio: 2 / 1; background-image: url('{{ relBase }}{{ include.data.image }}');">
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-4">
+        <div class="bg-{{ include.data.color_txt | default: 'secondary' }} p-4 rounded-5 {% if include.data.image_pos=='second' %}overlap-right-lg{% else %}overlap-left-lg{% endif %} {{ include.data.option_txt }}">
+            {{ include.content }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+    {%- include basics.html -%}
+    {%- include main/head.html -%}
+</head>
+<body data-role="page" class="position-relative">
+    <main>
+        <div class="d-none">
+            <h1>{{ page.header | default: page.title }}</h1>
+        </div>
+
+        {%- include main/splash.html -%}
+    </main>
+</body>
+</html>

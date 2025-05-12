@@ -1,0 +1,43 @@
+#topbar {
+  &:not(.topbar-splash) {
+    .bg-outer-gradient();
+    .border-bottom();
+    .border-primary-dark-faded();
+    .shadow-outer-dark();
+  }
+
+  &.topbar-splash {
+    #topbar-logo,
+    #topbar-start {
+      .off();
+    }
+
+    li.nav-item:not(#menu-toggler-container),
+    #menu-toggler-name-more {
+      .off();
+    }
+
+    #menu-toggler-name-menu {
+      display: inline !important;
+    }
+
+    #topbar-language,
+    #topbar-language .link-dark,
+    #topbar-language .link-primary,
+    #menu-toggler {
+      .link-white();
+    }
+  }
+}
+
+main {
+  &, * {
+    scroll-margin-top: 120px;
+  }
+
+  header, #splash {
+    &, * {
+      scroll-margin-top: 0;
+    }
+  }
+}

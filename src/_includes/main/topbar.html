@@ -1,0 +1,98 @@
+{%- assign splash = include.splash | default: false -%}
+
+<header class="position-{% if splash == true %}fixed{% else %}sticky{% endif %} top-0 start-0 end-0 p-3 z-index-outer {% if splash == true %}topbar-splash{% else %}mb-4{% endif %}" id="topbar">
+    <div class="d-flex justify-content-between align-items-center">
+        <a class="text-primary-gradient my-n2 py-2" href="{{ relBase }}{{ lang.url }}" id="topbar-logo">
+            <span class="sketcho sketcho-sketchometry sketcho-xl lh-100 d-none d-sm-block"></span>
+            <span class="sketcho sketcho-logo sketcho-xl lh-100 d-block d-sm-none"></span>
+        </a>
+        <div></div>
+        <div class="d-flex align-items-center m-between-3 m-between-md-4">
+            <!--
+            <div class="d-flex" id="topbar-language">
+                {%- for i_lang in lang_sorted -%}
+                <a href="{{ relBase }}{{ i_lang.url }}{{ page.url | preg_replace: replace, '' }}" class="{% if page.lang == i_lang.key %}link-primary fw-little-bold{% else %}link-dark{% endif %}">
+                    {{ i_lang.key }}
+                </a>
+                <div class="d-not-last mx-1 mx-md-2">|</div>
+                {%- endfor -%}
+            </div>
+            -->
+
+            <nav class="navbar navbar-expand m-0 p-0">
+                <ul class="navbar-nav m-0 p-0">
+
+                    <li class="nav-item me-3 me-md-4">
+                        <a href="{{ const.url.start }}" target="_blank"
+                           class="btn btn-primary-gradient rounded-max h-fix-md py-0 px-3 d-flex justify-content-center align-items-center"
+                           id="topbar-start">
+                            <span class="sketcho sketcho-compass-cursor sketcho-lg"></span>
+                            <span class="ms-2">
+                            {%- if const.btn.start[page.lang] != nil -%}
+                            {{ const.btn.start[page.lang] }}
+                            {%- else -%}
+                            {{ const.btn.start[const.default_lang] }}
+                            {%- endif -%}
+                        </span>
+                        </a>
+                    </li>
+
+                    {%- assign sorted_pages = site.pages | sort: 'order' -%}
+                    {%- assign n_topbar = 0 -%}
+                    {%- for i_page in sorted_pages -%}
+                    {%- if i_page.in_menu_topbar == true and i_page.lang == page.lang -%}
+                    {%- assign n_topbar = n_topbar | add: 1 -%}
+                    <li class="nav-item d-none d-lg-block">
+                        <a href="{{ relBase }}{{ i_page.url }}"
+                           class="nav-link {% if page.url == i_page.url %}active{% endif %}">
+                            <i class="fa-fw {{ i_page.icon }}">{% if i_page.icon == '' %}&nbsp;{% endif %}</i>
+                            {{ i_page.menu_title | default: i_page.header | default: i_page.title_short | default: i_page.title }}
+                        </a>
+                    </li>
+                    {%- endif -%}
+                    {%- endfor -%}
+
+                    <li class="nav-item" id="menu-toggler-container">
+                        <div class="nav-link cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" id="menu-toggler">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                            <span class="sketcho sketcho-bars sketcho-lg"></span>
+                            {%- if n_topbar > 0 -%}
+                            <span class="d-none d-sm-inline d-lg-none ms-2" id="menu-toggler-name-menu">
+                                {%- if const.btn.menu[page.lang] != nil -%}
+                                {{ const.btn.menu[page.lang] }}
+                                {%- else -%}
+                                {{ const.btn.menu[const.default_lang] }}
+                                {%- endif -%}
+                            </span>
+                            <span class="d-none d-lg-inline ms-2" id="menu-toggler-name-more">
+                                {%- if const.btn.more[page.lang] != nil -%}
+                                {{ const.btn.more[page.lang] }}
+                                {%- else -%}
+                                {{ const.btn.more[const.default_lang] }}
+                                {%- endif -%}
+                            </span>
+                            {%- else -%}
+                            <span class="d-none d-md-inline ms-2">
+                                {%- if const.btn.menu[page.lang] != nil -%}
+                                {{ const.btn.menu[page.lang] }}
+                                {%- else -%}
+                                {{ const.btn.menu[const.default_lang] }}
+                                {%- endif -%}
+                            </span>
+                            {%- endif -%}
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+{%- if splash == true -%}
+<script type="module">
+    const THRESHOLD = $('#splash').height() - $('#splash-image').height() - $('#topbar').outerHeight();
+    $(document).on('scroll', function () {
+        $('#topbar').toggleClass('topbar-splash', $(this).scrollTop() < THRESHOLD);
+    }).trigger('scroll');
+</script>
+{%- endif -%}

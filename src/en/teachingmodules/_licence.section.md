@@ -1,0 +1,1 @@
+The following teaching modules are freely available under the Creative Commons License <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY SA 4.0 </a>.

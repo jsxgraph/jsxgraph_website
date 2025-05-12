@@ -1,0 +1,66 @@
+#splash {
+  .splash-page {
+    height: 100vh;
+    height: 100svh;
+    width: 100%;
+
+    color: @color_light;
+    font-size: 275%;
+  }
+
+  .countdown {
+    font-size: 70%;
+  }
+
+  #splash-image {
+    z-index: -1;
+
+    img, .image-bg-cover {
+      height: 100vh;
+      height: 100svh;
+      width: 100%;
+
+      margin-top: -100vh;
+      margin-top: -100svh;
+    }
+  }
+
+  .splash-scroll {
+    .pb-4();
+    .px-4();
+    .bigger();
+    .text-center();
+    .cursor-pointer();
+  }
+
+  .splash-scroll:hover {
+    color: mix(#000, @color_light, @threshold_hover) !important;
+  }
+
+  .splash-overlay {
+    background: fade(@color_secondary, @threshold_overlay);
+    color: @color_primary !important;
+
+    .splash-scroll:hover {
+      color: mix(#fff, @color_primary, @threshold_hover) !important;
+    }
+  }
+
+  #splash-logo {
+    max-width: 80%;
+    width: 750px;
+
+    img, svg {
+      path {
+        stroke: @color_primary !important;
+      }
+
+      [aria-label="Michelle & Andreas Walter"] path,
+      [aria-label="M"] path,
+      [aria-label="A"] path,
+      .text path {
+        fill: @color_primary !important;
+      }
+    }
+  }
+}

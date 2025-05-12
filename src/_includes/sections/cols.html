@@ -1,0 +1,25 @@
+{%- assign cols = include.data.cols -%}
+
+<div>
+    <div class="row justify-content-center flex-row">
+        <div class="col-12 col-lg-10">
+            <div class="p-2">
+                {{ include.content }}
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4 mt-0">
+        {%- for col in cols -%}
+        <div class="col-xxl-3 col-md-6 text-center">
+            <a href="{{ col.link }}" class="btn btn-secondary w-100 h-100 m-between-4 rounded-5 px-4 pt-3 pb-4">
+                <div class="sketcho sketcho-xxl sketcho-{{ col.iconname }} lh-base"></div>
+                <div>
+                    <h3 class="mb-3">{{ col.title }}</h3>
+                    {{ col.text | pre_markdown | markdownify | replace_post }}
+                </div>
+            </a>
+        </div>
+        {%- endfor -%}
+    </div>
+</div>

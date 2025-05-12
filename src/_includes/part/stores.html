@@ -1,0 +1,44 @@
+{%- assign direction = include.direction | default: "horizontal" -%}
+
+{%- assign len = 0 -%}
+{%- for store in const.appstores -%}
+{%- if store.show -%}
+{%- assign len = len | plus: 1 -%}
+{%- endif -%}
+{%- endfor -%}
+
+{% if len > 0 %}
+<div class="d-flex {% if direction == 'vertical' %}flex-column{% else %}flex-wrap{% endif %} g-3 align-items-start {{ include.css_class }}">
+
+    {%- for store in const.appstores -%}
+    {%- if store.show -%}
+
+    {%- if include.credits != false -%}
+    {%- if store.credits[page.lang] != nil -%}
+    {%- assign credits = store.credits[page.lang] -%}
+    {%- else -%}
+    {%- assign credits = store.credits[page.default_lang] -%}
+    {%- endif -%}
+    {%- endif -%}
+
+    {%- if store.image[page.lang] != nil -%}
+    {%- assign image = store.image[page.lang] -%}
+    {%- else -%}
+    {%- assign image = store.image[page.default_lang] -%}
+    {%- endif -%}
+
+    <div class="w-max-100 appstore-{{ store.id }}" style="width:150px;">
+        <a href="{{ store.url }}" target="_blank">
+            <img src="{{ relBase }}{{ image }}" class="image-raw"/>
+        </a>
+        {%- if credits != "" -%}
+        <div class="smallest px-2 py-1">
+            {{ credits }}
+        </div>
+        {%- endif -%}
+    </div>
+
+    {%- endif -%}
+    {%- endfor -%}
+</div>
+{% endif %}
