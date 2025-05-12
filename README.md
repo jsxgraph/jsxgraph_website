@@ -1,2 +1,2 @@
-# JSXgraph-website
+# JSXGraph website
 
