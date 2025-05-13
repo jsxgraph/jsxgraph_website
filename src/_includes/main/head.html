@@ -15,31 +15,13 @@
 <title>
     {%- if page.title_only == true -%}{{ page.title }}{%- else -%}
     {%- if page.is_home != true -%}{{ page.title }} | {% endif -%}
-    {%- if const.webtitle[page.lang] != nil %}
-    {{ const.webtitle[page.lang] }}
-    {%- else -%}
-    {{ const.webtitle[const.default_lang] }}
-    {%- endif -%}
+    {{ const.webtitle }}
     {%- endif -%}
 </title>
 
 <meta name="robots" content="index,follow">
-{%- capture meta -%}
-{%- if const.meta[page.lang] != nil -%}
-{{ const.meta[page.lang] }}
-{%- else -%}
-{{ const.meta[const.default_lang] }}
-{%- endif -%}
-{%- endcapture -%}
-<meta name="description" content="{{ meta | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip }}">
-{%- capture keywords -%}
-{%- if const.keywords[page.lang] != nil -%}
-{{ const.keywords[page.lang] }}
-{%- else -%}
-{{ const.keywords[const.default_lang] }}
-{%- endif -%}
-{%- endcapture -%}
-<meta name="keywords" content="{{ keywords | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip }}">
+<meta name="description" content="{{ const.meta | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip }}">
+<meta name="keywords" content="{{ const.keywords | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip }}">
 
 <!-- ########################################
                     icons

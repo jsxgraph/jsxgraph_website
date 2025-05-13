@@ -12,10 +12,6 @@ sitemap:
 }
 </style>
 
-<div class="mb-3">
-<span class="sketcho sketcho-alert-triangle sketcho-xxl"></span>
-</div>
-
 Sorry! An error occurred and this site is not available.
 
-Please go back to [sketchometry.org](/).
+Please go back to [{{ site.data.const.url.web }}](/).

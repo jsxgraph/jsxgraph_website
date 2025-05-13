@@ -1,4 +1,4 @@
-# sketchometry website
+# JSXGraph website
 
 ## Development and release
 
@@ -16,20 +16,18 @@ make dev
 
 ### Make
 
-The project `sketchometry` needs to be at the same level as this project for the following commands:
+The project `jsxgraph` needs to be at the same level as this project for the following commands:
 
-- Call `make version` to get version string from sketchometry and put it in all contexts of the website.
+- Call `make version` to get version string from JSXGraph and put it in all contexts of the website.
 - Call `make versionlocal` to type a user defined version string and put it in all contexts of the website.
-- Call `make libs` to copy libraries from sketchometry distrib.
-- Call `make releasenotes` to copy release notes from sketchometry and put it in all contexts of the website.
 
 The following call prepares a running version of the website in directory [distrib/](distrib/):
 ```shell
 make website
 ```
-It updates the website without getting version and release notes (but libs) from sketchometry.
+It updates the website without getting version and release notes (but libs) from JSXGraph.
 
-The command `make websitelocal` doesn't need sketchometry at all and adapts version strings by expecting a user input.
+The command `make websitelocal` doesn't need JSXGraph at all and adapts version strings by expecting a user input.
 
 ### Release
 
@@ -38,7 +36,7 @@ To release the new version of website follow the steps:
 1. Call in the root of this project:
    - `make website` (packs and compiles the current website in the present form)
    - `make websiteversion` (packs and compiles the current website, but asks for a version number first)
-   - or `make release` (packs and compiles the current website, gets the current version and the release information from sketchometry beforehand)
+   - or `make release` (packs and compiles the current website, gets the current version and the release information from JSXGraph beforehand)
 2. Pull the newest version from server.
 3. Call `make version-git-tag` or `make version-git`. This will push all files to Git.
    ```shell
@@ -61,26 +59,6 @@ To release the new version of website follow the steps:
 
 ## Components
 
-### sketchometry logo
-
-Tu use sketchometry logo in texts or headers type
-`{{ const.sketchometry }}`.
-
-### Icons
-
-Icons from SketchoFont should be used as follows:
-
-```html
-<span class="sketcho sketcho-<iconname>"></span>
-```
-
-Replace `iconname` by the name of the desired icon.
-
-For coloring icons use the additional classes `text-primary`, `text-red` etc.
-
-**There should not be used any other class or sizing style!**
-There is only one exception: See [separator](#Separators).
-
 ### References
 
 To refer an image or document within this page use the reference a follows:
@@ -95,7 +73,7 @@ Please use one of the following syntax:
 
 ```markdown
 [<Text>]({{ relBase }}/<Link>)  # to refer an internal site or file.
-[<Text>](https://<link>)        # to refer an external webpage.
+[<Text>](https://<link>)                   # to refer an external webpage.
 ```
 
 Links are automatically supplemented with target="_blank" if
@@ -110,8 +88,7 @@ Buttons will be formatted if you use the following syntax:
 
 ```markdown
 <a type="button" colorclass="<colorclass>" href="{{ relBase }}/url/to/your/target">
-<span class="sketcho sketcho-<iconname>"></span>
-<span>title</span>
+title
 </a>
 ```
 
@@ -127,14 +104,6 @@ For images have a look [here](#Images) and use
 
 ```html
 <img src="{{ relBase }}/<link-to-image>" alt="<title>" class="image-separator-(xs|sm|md|lg)">
-```
-
-For using an icon as a separator use the following code.
-Size specifications are analogous to [images](#Images).
-
-```html
-<span class="sketcho sketcho-<iconname> icon-separator"></span> <!-- or -->
-<span class="sketcho sketcho-<iconname> icon-separator-(xs|sm|md|lg)"></span>
 ```
 
 ### Images

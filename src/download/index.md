@@ -42,7 +42,6 @@ sections:
   - file: materiallist
     layout: text
    
-
-
 render_this: no # no | before | after
+in_shortcuts: true
 ---

@@ -9,6 +9,5 @@ A teaching module consists of the following elements:
 - Video about the student worksheet
 
 <a type="button" href="{{ relBase }}/en/teaching-and-learning">
-<span class="sketcho sketcho-board-multiple"></span>
-<span>Concept</span>
+Concept
 </a>

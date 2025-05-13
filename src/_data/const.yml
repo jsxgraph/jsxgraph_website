@@ -1,84 +1,60 @@
 # Some general consts
 
-default_lang: en
+webtitle: JSXGraph
 
-webtitle:
-  en: JSXGraph
+version: v1.11.1
+version_date: 2025-03-03
 
-meta:
-  en: >
-    TBA
+meta: >
+  TBA
 
-keywords:
-  en: >
-    TBA
+keywords: >
+  TBA
 
 btn:
-  start:
-    en: Start
-  menu:
-    en: Menu
-  more:
-    en: More
+  start: Start
+  menu: Menu
+  more: More
 
 splash:
-  image:
-    en:
-      /media/images/2x1/sketchometry-hand.jpg
+  image: /media/images/2x1/sketchometry-hand.jpg
   subtitle:
-    de:
-    en:
 
 cookie:
-  hint:
-    en: >
-      JSXGraph stores essential data in your browser,
-      to enable the functionality of the software.
-  more:
-    en: Learn more.
-  btn:
-    en: Okay
+  hint: >
+    JSXGraph stores essential data in your browser,
+    to enable the functionality of the software.
+  more: Learn more.
+  btn: Okay
 
 url:
   web: https://jsxgraph.org
 
 maps:
-    button:
-      en: Load Google Maps
-    text:
-      en: >
-        You can view the location via Google Maps.
-        When you load the map, personal data will be sent to Google, and cookies will be set by Google.
-        Therefore, it is possible that the provider stores your access and analyzes your behavior.
-        You can find Google Maps' privacy policy
-        <a href="https://policies.google.com/privacy" target="_blank" title="https://policies.google.com/privacy">here</a>.
+  button: Load Google Maps
+  text: >
+    You can view the location via Google Maps.
+    When you load the map, personal data will be sent to Google, and cookies will be set by Google.
+    Therefore, it is possible that the provider stores your access and analyzes your behavior.
+    You can find Google Maps' privacy policy
+    <a href="https://policies.google.com/privacy" target="_blank" title="https://policies.google.com/privacy">here</a>.
 
-cmldt:
-  en: Center for Mobile Learning with Digital Technology
+cmldt: Center for Mobile Learning with Digital Technology
 
-ubt:
-  en: University of Bayreuth
+ubt: University of Bayreuth
 
 address: >
   Universitätsstraße 30<br>
   95447 Bayreuth
 
 supporters:
-  title:
-    de: Unterstützt von
-    en: Supported by
+  title: Supported by
   containerclass: g-5 g-xs-4 g-sm-5 g-xxl-2
   itemclass: col-7 col-xs-4 col-lg-3 col-xxl-2 mx-auto mx-xs-0
   list:
-    - name:
-        de: Forschungsstelle für Mobiles Lernen mit digitalen Medien
-        en: Center for Mobile Learning with Digital Technology
+    - name: Center for Mobile Learning with Digital Technology
       logo: /media/logo-cmldt.png
-      url:
-        de: https://mobiles-lernen.uni-bayreuth.de
-        en: https://mobile-learning.uni-bayreuth.de
-    - name:
-        de: Universität Bayreuth
-        en: University of Bayreuth
+      url: https://mobile-learning.uni-bayreuth.de
+    - name: University of Bayreuth
       logo: /media/logo-ubt.png
       url: https://www.uni-bayreuth.de

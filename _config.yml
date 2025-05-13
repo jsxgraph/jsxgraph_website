@@ -21,12 +21,11 @@ disable_disk_cache: true
 # scoping
 defaults:
   - scope:
-      path: "index.md" # landing page
+      path: "" # landing page
     values:
-      lang: "en"
       layout: plain
       is_home: false
-      in_menu_popup: false
+      in_menu_popup: true
       in_menu_topbar: false
       in_menu_footer: false
       render_this: true
@@ -35,7 +34,6 @@ defaults:
   - scope:
       path: "error"
     values:
-      lang: "en"
       layout: plain
       is_home: false
       in_menu_popup: false

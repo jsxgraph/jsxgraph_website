@@ -11,7 +11,7 @@
                     <div class="m-between-2 m-between-md-3">
                         {%- assign sorted_pages = site.pages | sort: 'order' -%}
                         {%- for i_page in sorted_pages %}
-                        {%- if i_page.in_menu_footer == true and i_page.lang == page.lang -%}
+                        {%- if i_page.in_menu_footer == true -%}
                         <div>
                             <a href="{{ relBase }}{{ i_page.url }}" class="link-white">
                                 {{ i_page.menu_title | default: i_page.header | default: i_page.title }}
@@ -22,17 +22,9 @@
                     </div>
                 </div>
                 <div class="col-12 col-md">
-                    {%- if const.cmldt[page.lang] != nil -%}
-                    {{ const.cmldt[page.lang] }}
-                    {%- else -%}
-                    {{ const.cmldt[const.default_lang] }}
-                    {%- endif -%}
+                    {{ const.cmldt }}
                     <br>
-                    {%- if const.ubt[page.lang] != nil -%}
-                    {{ const.ubt[page.lang] }}
-                    {%- else -%}
-                    {{ const.ubt[const.default_lang] }}
-                    {%- endif -%}
+                    {{ const.ubt }}
                     <br>
                     {{ const.address }}
                 </div>
@@ -43,16 +35,12 @@
         <div class="container md-container py-4">
             <div class="d-flex flex-wrap flex-nowrap-md justify-content-center align-items-center">
                 <div class="nowrap">
-                    &copy; 2011 - {{ 'now' | date: "%Y" }}
+                    &copy; 2008 - {{ 'now' | date: "%Y" }}
                 </div>
                 <div class="mx-3 d-none d-md-block">|</div>
                 <div class="w-100 d-block d-md-none"></div>
                 <div>
-                    {%- if const.cmldt[page.lang] != nil -%}
-                    {{ const.cmldt[page.lang] }}
-                    {%- else -%}
-                    {{ const.cmldt[const.default_lang] }}
-                    {%- endif -%}
+                    {{ const.cmldt }}
                 </div>
             </div>
         </div>

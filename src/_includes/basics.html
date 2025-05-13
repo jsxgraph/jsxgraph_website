@@ -19,11 +19,3 @@
 {% endcapture %}
 
 {% assign const = site.data.const %}
-
-{%- assign lang_sorted = site.data.languages | sort: 'title' -%}
-{%- assign lang = [] -%}
-{%- for i_lang in lang_sorted -%}
-{%- if i_lang.key == page.lang -%}
-{%- assign lang = i_lang -%}
-{%- endif -%}
-{%- endfor -%}

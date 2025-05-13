@@ -56013,6 +56013,23 @@ footer {
     break-inside: avoid;
   }
 }
+body {
+  font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 .svg-body path {
   stroke: #fff !important;
 }
@@ -56468,9 +56485,6 @@ path.svg-apple-keyboard-dark {
 #topbar.topbar-splash #menu-toggler-name-menu {
   display: inline !important;
 }
-#topbar.topbar-splash #topbar-language,
-#topbar.topbar-splash #topbar-language .link-dark,
-#topbar.topbar-splash #topbar-language .link-primary,
 #topbar.topbar-splash #menu-toggler {
   color: #fff !important;
   cursor: pointer;

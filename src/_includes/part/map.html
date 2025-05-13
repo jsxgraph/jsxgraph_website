@@ -13,19 +13,11 @@
          style="width: {{ width }};">
         <div>
             <p>
-                {%- if const.maps.text[page.lang] != nil -%}
-                {{ const.maps.text[page.lang] }}
-                {%- else -%}
-                {{ const.maps.text[const.default_lang] }}
-                {%- endif -%}
+                {{ const.maps.text }}
             </p>
             <div>
                 <button type="button" class="btn btn-secondary-gradient rounded-max h-fix-md w-fit py-1 px-3 d-flex" id="map-privacy-check-{{ uuid }}">
-                    {%- if const.maps.button[page.lang] != nil -%}
-                    {{ const.maps.button[page.lang] }}
-                    {%- else -%}
-                    {{ const.maps.button[const.default_lang] }}
-                    {%- endif -%}
+                    {{ const.maps.button }}
                 </button>
             </div>
         </div>

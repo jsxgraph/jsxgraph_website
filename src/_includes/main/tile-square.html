@@ -10,7 +10,7 @@
             </div>
             {%- else -%}
             <div class="flex-fill mb-n1 d-flex align-items-center justify-content-center">
-                <div class="sketcho sketcho-lg sketcho-{{ include.iconname | default: 'blank' }}"></div>
+                <i class="fa-fw {{ include.icon }}">{% if include.icon == '' %}&nbsp;{% endif %}</i>
             </div>
             {%- endif -%}
             <div class="small h-fix-xxs shorten-content-x tile-label mt-1">

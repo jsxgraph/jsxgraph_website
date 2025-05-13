@@ -1,12 +1,12 @@
 <div class="row g-2">
-    {%- for tile in site.data.tiles[page.lang] -%}
+    {%- for tile in site.data.tiles -%}
     {%- if tile.type == "square" -%}
 
     {%- include main/tile-square.html
     title = tile.title
     target = tile.target
     colorclass = tile.colorclass
-    iconname = tile.iconname
+    icon = tile.icon
     image = tile.image
     -%}
 
@@ -17,13 +17,13 @@
     title1 = tile.title1
     target1 = tile.target1
     colorclass1 = tile.colorclass1
-    iconname1 = tile.iconname1
+    icon1 = tile.icon1
     image1 = tile.image1
 
     title2 = tile.title2
     target2 = tile.target2
     colorclass2 = tile.colorclass2
-    iconname2 = tile.iconname2
+    icon2 = tile.icon2
     image2 = tile.image2
 
     horizontal = horizontal
@@ -72,6 +72,6 @@
 
     // close menu on click
     $('.tile-button').on('click', function () {
-       offcanvas.offcanvas('hide');
+        offcanvas.offcanvas('hide');
     });
 </script>
