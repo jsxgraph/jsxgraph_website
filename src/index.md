@@ -1,7 +1,7 @@
 ---
-title: sketchometry - In touch with geometry
+title: JSXGraph
 title_only: true
-header: sketchometry - In touch with geometry
+header: JSXGraph - Dynamic Mathematics with JavaScript
 menu_title: Home
 order: 0
 layout: splash
