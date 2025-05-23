@@ -23,7 +23,7 @@ defaults:
   - scope:
       path: "" # landing page
     values:
-      layout: plain
+      layout: default
       is_home: false
       in_menu_popup: true
       in_menu_topbar: false
