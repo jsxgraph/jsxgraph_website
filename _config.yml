@@ -24,7 +24,7 @@ defaults:
       path: "" # landing page
     values:
       layout: default
-      is_home: false
+      is_home: falset
       in_menu_popup: true
       in_menu_topbar: false
       in_menu_footer: false
