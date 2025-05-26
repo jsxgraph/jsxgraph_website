@@ -1,6 +1,6 @@
 - home
 
-  - splash screen (fixed elemets)
+  - splash screen (fixed elements)
     - forum
     - github
     - jsfiddle
