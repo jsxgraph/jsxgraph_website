@@ -1,6 +1,6 @@
 ---
 title: Resources
-order: -4
+order: 3
 sitemap:
   priority: 1
   changefreq: 'weekly'

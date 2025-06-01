@@ -1,6 +1,6 @@
 ---
 title: Events
-order: -1
+order: 6
 sitemap:
   priority: 1
   changefreq: 'weekly'

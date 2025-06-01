@@ -1,6 +1,6 @@
 ---
 title: About
-order: -6
+order: 1
 sitemap:
   priority: 1
   changefreq: 'weekly'

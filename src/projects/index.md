@@ -1,6 +1,6 @@
 ---
 title: Projects
-order: -2
+order: 5
 sitemap:
   priority: 1
   changefreq: 'weekly'

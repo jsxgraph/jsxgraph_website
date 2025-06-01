@@ -1,6 +1,6 @@
 ---
 title: Docs
-order: -5
+order: 2
 sitemap:
   priority: 1
   changefreq: 'weekly'
@@ -19,7 +19,7 @@ sections:
    - file: jsxgraphbook
      layout: text
 
-   - file: jessicode
+   - file: jessiecode
      layout: text
 
 ---
