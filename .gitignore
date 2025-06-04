@@ -1,0 +1,14 @@
+.idea/
+.DS_Store
+.sass-cache/
+build/bin/*
+tmp/*
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+node_modules
+package-lock.json
+Gemfile.lock
+_site/
+distrib/
