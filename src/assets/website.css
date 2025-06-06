@@ -56591,6 +56591,13 @@ h6:first-child,
   transition-duration: 0.35s;
   transition-timing-function: ease;
   color: #10427C;
+  margin-right: -1rem !important;
+  margin-left: -1rem !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  width: calc(100% + 2 * 1rem * 1);
 }
 .section-accordion .accordion-button h2 {
   font-size: 1.8rem;

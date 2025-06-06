@@ -11,7 +11,6 @@
 {%- assign ids = "" | split: ',' -%}
 {%- assign contents = "" | split: ',' -%}
 {%- assign max_n = include.data.n | default: -1 -%}
-{%- assign open = include.data.open | default: -1 -%}
 {%- assign badge_is_date = include.data.badge_is_date | default: false -%}
 
 {%- assign head = nil -%}
@@ -79,7 +78,7 @@
 {%- assign contents = contents | push: cont | shift -%}
 <!--@formatter:on-->
 
-<div class="m-between-5">
+<div class="m-between-5 section-blogs">
     {%- for head in heads -%}
     {%- assign badge = badges[forloop.index0] -%}
     {%- assign id = ids[forloop.index0] -%}

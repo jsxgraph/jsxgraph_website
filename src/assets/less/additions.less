@@ -55,7 +55,6 @@ h6:first-child, .h6:first-child {
   --bs-toast-max-width: 400px;
 }
 
-
 /// Accordion ///
 
 .section-accordion {
@@ -71,6 +70,11 @@ h6:first-child, .h6:first-child {
     transition-timing-function: ease;
 
     color: @color_primary;
+
+    .mx-n3();
+    .px-3();
+    .py-3();
+    width: calc(100% + 2 * @spacer * extract(@spacer_factors, 3+1));
 
     h2 {
       font-size: 1.8rem;

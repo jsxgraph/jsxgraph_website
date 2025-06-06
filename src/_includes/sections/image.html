@@ -1,27 +1,10 @@
-{%- assign height = include.data.height | default: include.data.size -%}
-{%- if height == 'xxs' -%}
-{%- assign height = '100px' -%}
-{% elsif height == 'xs'%}
-{%- assign height = '125px' -%}
-{% elsif height == 'sm'%}
-{%- assign height = '170px' -%}
-{% elsif height == 'lg'%}
-{%- assign height = '225px' -%}
-{% elsif height == 'xl'%}
-{%- assign height = '260px' -%}
-{% elsif height == 'xxl'%}
-{%- assign height = '300px' -%}
-{%- elsif height == 'xxxl'%}
-{%- assign height = '400px' -%}
-{%- elsif height == nil -%}
-{%- assign height = '200px' -%}
-{%- endif -%}
-
-<div class="border border-primary-dark-faded shadow-outer-dark me-3 me-sm-4 me-lg-0 w-100 image-bg-cover {% if include.data.title != nil %}d-flex justify-content-end align-items-end{% endif %} {{ include.data.option_img }}"
-     style="background-image: url('{{ relBase }}{{ include.image_url | default: include.data.image | default: include.data.file }}'); height: {{ height }};">
+<div class="section-image">
     {%- if include.data.title != nil -%}
-    <h2 class="m-0 px-4 py-3 text-white">
+    <h2>
         {{ include.data.title }}
     </h2>
     {%- endif -%}
+    <div class="d-flex">
+    <img src="{{ relBase }}{{ include.data.image | default: include.data.file }}" style="width: {{ include.data.width | default: '100%' }}; max-width: 100%;" class="{{ include.data.class }}" alt="Image">
+    </div>
 </div>

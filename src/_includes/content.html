@@ -13,7 +13,7 @@
 {%- assign layout = 'sections/' | append: section.layout | append: '.html' -%}
 
 {%- if section.layout == 'image' -%}
-{% include {{ layout }} image_url=section.file data=section.data index=forloop.index index0=forloop.index0 %}
+{% include {{ layout }} data=section.data index=forloop.index index0=forloop.index0 %}
 
 {%- elsif section.layout == 'file' -%}
 <div>

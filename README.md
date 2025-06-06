@@ -140,23 +140,27 @@ use the following classes:
 
 The following sections (and params) are possible:
 
-| layout          | data attribute   | type       | possible values and **_defaults_**                                 | effect                                                                                 |
-|-----------------|------------------|------------|--------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| **text**        | colorclass       | optional   | **_transparent_** \| primary \| cat1 \| red \| ...                 | defines the background color class                                                     |
-| **image-block** | image            | obligatory | url starting with `/`                                              | path to the image or gif                                                               |
-|                 | image_pos        | optional   | **_first_** \| second                                              | the image is to the left or right of the text block                                    |
-|                 | colorclass       | optional   | primary \| **_secondary_** \| cat1 \| red \| ...                   | defines the background color class                                                     |
-| **blogs**       | delimiter_header | optional   | **_#&#9251;_** \| @...                                             | lines beginning with this string are used as headers                                   |
-|                 | max_n            | optional   | **_-1_** \| 1 \| 2 \| 3 \| ...                                     | maximum entries                                                                        |
-| **accordion**   | delimiter_header | optional   | **_#&#9251;_** \| @...                                             | lines beginning with this string are used as headers                                   |
-|                 | delimiter_badge  | optional   | **_>&#9251;_** \| @...                                             | badge after header line                                                                |
-|                 | badge_is_date    | optional   | **_false_** \| @...                                                | string which formats date                                                              |
-|                 | max_n            | optional   | **_-1_** \| 1 \| 2 \| 3 \| ...                                     | maximum entries                                                                        |
-|                 | open             | optional   | **_-1_** \| 0 \| 1 \| 2 \| ...                                     | which entry should be open?                                                            |
-| **image**[^1]   | height           | optional   | xxs \| xs \| sm \| **_md_** \| lg \| xl \| xxl                     | determines the height of the image                                                     |
-|                 | title            | optional   | plain text                                                         | optional title displayed in the bottom right corner                                    |
-| **cols**        | cols             | obligatory | list of all entries with subentries title, text, link and iconname | will be rendered as 4 columns (on large displays, smaller displays have 2 or 1 column) |
-|                 | colorclass       | optional   | **_transparent_** \| primary \| cat1 \| red \| ...                 | defines the background color of the columns                                            |
+| layout          | data attribute   | type       | possible values and **_defaults_** | effect                                               |
+|-----------------|------------------|------------|------------------------------------|------------------------------------------------------|
+| **text**        | -                |            |                                    |                                                      |
+| **image-block** | image            | obligatory | url starting with `/`              | path to the image or gif                             |
+|                 | image_pos        | optional   | **_first_** \| second              | the image is to the left or right of the text block  |
+| **image**[^1]   | image            | obligatory | url starting with `/`              | path to the image or gif                             |
+|                 | title            | optional   | plain text                         | optional title displayed in the bottom right corner  |
+|                 | width            | optional   | dimension with unit, default: 100% | optional dimension                                   |
+|                 | class            | optional   |                                    | css class for img                                    |
+| **blogs**       | delimiter_header | optional   | **_#&#9251;_** \| @...             | lines beginning with this string are used as headers |
+|                 | delimiter_badge  | optional   | **_>&#9251;_** \| @...             | badge after header line                              |
+|                 | badge_is_date    | optional   | **_false_** \| @...                | string which formats date                            |
+|                 | delimiter_id     | optional   | **_>&#9251;_** \| @...             | id after header line                                 |
+|                 | n                | optional   | **_-1_** \| 1 \| 2 \| 3 \| ...     | maximum entries                                      |
+| **accordion**   | delimiter_header | optional   | **_#&#9251;_** \| @...             | lines beginning with this string are used as headers |
+|                 | delimiter_badge  | optional   | **_>&#9251;_** \| @...             | badge after header line                              |
+|                 | badge_is_date    | optional   | **_false_** \| @...                | string which formats date                            |
+|                 | delimiter_id     | optional   | **_>&#9251;_** \| @...             | id after header line                                 |
+|                 | n                | optional   | **_-1_** \| 1 \| 2 \| 3 \| ...     | maximum entries                                      |
+|                 | arrows           | optional   | **_right_** \| left                | position of arrow                                    |
+|                 | open             | optional   | **_-1_** \| 0 \| 1 \| 2 \| ...     | which entry should be open?                          |
 
 Notes:
 
