@@ -56575,25 +56575,10 @@ h5:first-child,
 .h5:first-child,
 h6:first-child,
 .h6:first-child {
-  margin-top: 0rem;
+  margin-top: 0;
 }
 #cookie-hint {
   --bs-toast-max-width: 400px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-.accordion-item {
-  scroll-margin-top: 100px;
-}
-.image-block h1,
-.image-block h2,
-.image-block h3,
-.image-block h4,
-.image-block h5 {
-  scroll-margin-top: 200px;
 }
 .section-accordion .accordion-button {
   -webkit-transition-property: height;

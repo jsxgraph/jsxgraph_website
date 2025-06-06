@@ -13,7 +13,7 @@
                         {%- for i_page in sorted_pages %}
                         {%- if i_page.in_menu_footer == true -%}
                         <div>
-                            <a href="{{ relBase }}{{ i_page.url }}" class="link-white">
+                            <a href="{{ relBase }}{{ i_page.url }}" class="link-white link-quiet">
                                 {{ i_page.menu_title | default: i_page.header | default: i_page.title }}
                             </a>
                         </div>

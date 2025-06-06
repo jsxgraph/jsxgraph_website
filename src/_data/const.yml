@@ -49,7 +49,7 @@ address: >
 
 supporters:
   title: Supported by
-  containerclass: g-5 g-xs-4 g-sm-5 g-xxl-2
+  containerclass: g-5 g-xs-4 g-sm-5
   itemclass: col-7 col-xs-4 col-lg-3 col-xxl-2 mx-auto mx-xs-0
   list:
     - name: Center for Mobile Learning with Digital Technology
