@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="col-12 col-lg-4">
-        <div class="bg-{{ include.data.color_txt | default: 'secondary' }} p-4 rounded-5 {% if include.data.image_pos=='second' %}overlap-right-lg{% else %}overlap-left-lg{% endif %} {{ include.data.option_txt }}">
+        <div class="bg-{{ include.data.color_txt | default: 'secondary' }} p-4 {% if include.data.image_pos=='second' %}overlap-right-lg{% else %}overlap-left-lg{% endif %} {{ include.data.option_txt }}">
             {{ include.content }}
         </div>
     </div>

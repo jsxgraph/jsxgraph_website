@@ -1,6 +1,6 @@
 <div class="{% if horizontal %}col-12 d-flex g-2{% else %}col-6 d-flex flex-column m-between-2{% endif %}">
     <a href="{{ relBase }}{{ include.target1 }}"
-       class="d-block p-1 w-100 h-100 btn-{{ include.colorclass1 | default: 'primary' }}-gradient border border-outer-dark shadow-outer-dark rounded-4 overflow-hidden text-center tile-button tile-button-double"
+       class="d-block p-1 w-100 h-100 btn-{{ include.colorclass1 | default: 'primary' }}-gradient border border-outer-dark shadow-outer-dark overflow-hidden text-center tile-button tile-button-double"
     >
         <div class="d-flex flex-column w-100 h-100">
             {%- if include.image1 -%}
@@ -20,7 +20,7 @@
     </a>
 
     <a href="{{ relBase }}{{ include.target2 }}"
-       class="d-block p-1 w-100 h-100 btn-{{ include.colorclass2 | default: 'primary' }}-gradient border border-outer-dark shadow-outer-dark rounded-4 overflow-hidden text-center tile-button tile-button-double"
+       class="d-block p-1 w-100 h-100 btn-{{ include.colorclass2 | default: 'primary' }}-gradient border border-outer-dark shadow-outer-dark overflow-hidden text-center tile-button tile-button-double"
     >
         <div class="d-flex flex-column w-100 h-100">
             {%- if include.image2 -%}

@@ -17,7 +17,7 @@
 {%- assign height = '200px' -%}
 {%- endif -%}
 
-<div class="border border-primary-dark-faded shadow-outer-dark me-3 me-sm-4 me-lg-0 rounded-5 w-100 image-bg-cover {% if include.data.title != nil %}d-flex justify-content-end align-items-end{% endif %} {{ include.data.option_img }}"
+<div class="border border-primary-dark-faded shadow-outer-dark me-3 me-sm-4 me-lg-0 w-100 image-bg-cover {% if include.data.title != nil %}d-flex justify-content-end align-items-end{% endif %} {{ include.data.option_img }}"
      style="background-image: url('{{ relBase }}{{ include.image_url | default: include.data.image | default: include.data.file }}'); height: {{ height }};">
     {%- if include.data.title != nil -%}
     <h2 class="m-0 px-4 py-3 text-white">
