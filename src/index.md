@@ -12,11 +12,10 @@ sitemap:
   
 splash:
 
-#   background: var(--sketchometry-splash-gradient), url('{{ relBase }}/media/images/2x1/sketchometry-hand.jpg')
-#   content:
-#     - file: splash1
-#       data:
-#         overlay: false
+   background: var(--splash-gradient)
+   content:
+     - file: splash1
+       overlay: false
 
 sections:
 
@@ -24,9 +23,6 @@ sections:
      layout: text     
 
    - file: features
-     layout: text    
-
-   - file: ubtcmldt
-     layout: text    
+     layout: text   
 
 ---

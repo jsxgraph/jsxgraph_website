@@ -23,6 +23,10 @@
 <meta name="description" content="{{ const.meta | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip }}">
 <meta name="keywords" content="{{ const.keywords | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip }}">
 
+{% if page.external_link -%}
+<meta http-equiv="refresh" content="0; url={{page.external_link}}"/>
+{%- endif %}
+
 <!-- ########################################
                     icons
    ######################################### -->

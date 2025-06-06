@@ -1,4 +1,4 @@
-{%- assign polygon = include.polygon | default: "6" -%}
+{%- assign polygon = include.polygon | default: "4" -%}
 <!-- 5 | 6 | 8 -->
 
 {%- if polygon == "5" -%}
@@ -26,8 +26,15 @@
     {%- else -%}
     {%- assign color = 'primary' -%}
     {%- endif -%}
+    {%- if i_page.external_link -%}
+    {%- assign link = i_page.external_link -%}
+    {%- assign target = i_page.target | default: "_blank" -%}
+    {%- else -%}
+    {%- assign link = relBase | append: i_page.url -%}
+    {%- assign target = i_page.target | default: "_self" -%}
+    {%- endif -%}
     <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
-        <a href="{{ relBase }}{{ i_page.url }}" class="btn btn-{{ color }} square rounded-0 {{ class }} overflow-hidden" style="padding: {{ padding_y }} {{ padding_x }};">
+        <a href="{{ link }}" target="{{ target }}" class="btn btn-{{ color }} square rounded-0 {{ class }} overflow-hidden" style="padding: {{ padding_y }} {{ padding_x }};">
             <div class="d-flex flex-column justify-content-center align-items-center {% if i_page.icon %}mb-3{% endif %}">
                 {% if i_page.icon %}
                 <div class="h-fix-lg biggest">
