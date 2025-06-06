@@ -2,10 +2,8 @@
 
 {%- if content_blank != "" -%}
 {%- if page.render_this == "before" or page.render_this == true or page.sections == nil -%}
-<div class="row justify-content-center px-2">
-    <div class="col-12 content">
-        {{ content | replace_post }}
-    </div>
+<div class="content">
+    {{ content | replace_post }}
 </div>
 {%- endif -%}
 {%- endif -%}
@@ -40,9 +38,7 @@
 {%- endif -%}
 
 {%- if page.render_this == "after" and page.sections != nil and content_blank -%}
-<div class="row justify-content-center px-2">
-    <div class="col-12 col-lg-10 content">
-        {{ content | replace_post }}
-    </div>
+<div class="content">
+    {{ content | replace_post }}
 </div>
 {%- endif -%}

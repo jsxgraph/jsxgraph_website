@@ -1,7 +1,3 @@
-<div class="row justify-content-center {% if include.data.image_pos=='second' %}flex-row-reverse{% else %}flex-row{% endif %}">
-    <div class="col-12 col-lg-10">
-        <div class="p-2 {% if include.data.colorclass %}bg-{{ include.data.colorclass }}{% endif %}">
-            {{ include.content }}
-        </div>
-    </div>
+<div class="{% if include.data.colorclass %}bg-{{ include.data.colorclass }}{% endif %}">
+    {{ include.content }}
 </div>

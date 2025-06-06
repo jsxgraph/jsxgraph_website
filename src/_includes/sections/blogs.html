@@ -79,20 +79,19 @@
 {%- assign contents = contents | push: cont | shift -%}
 <!--@formatter:on-->
 
-<div class="row justify-content-center {% if include.data.image_pos=='second' %}flex-row-reverse{% else %}flex-row{% endif %}">
-    <div class="col-12 col-lg-10 m-between-6">
-        {%- for head in heads -%}
-        {%- assign badge = badges[forloop.index0] -%}
-        {%- assign id = ids[forloop.index0] -%}
-        {%- assign body = contents[forloop.index0] -%}
-        {%- if max_n > 0 and max_n <= forloop.index0 -%}
-        {%- break -%}
-        {%- endif -%}
-        <div id="{{ id | default: head | to_id }}">
-            <div class="d-flex align-items-center mb-3">
-                {%- if head != nil -%}
-                <h3 class="mb-0">
-                    <!--@formatter:off-->
+<div class="m-between-5">
+    {%- for head in heads -%}
+    {%- assign badge = badges[forloop.index0] -%}
+    {%- assign id = ids[forloop.index0] -%}
+    {%- assign body = contents[forloop.index0] -%}
+    {%- if max_n > 0 and max_n <= forloop.index0 -%}
+    {%- break -%}
+    {%- endif -%}
+    <div id="{{ id | default: head | to_id }}">
+        <div class="d-flex align-items-center mb-3">
+            {%- if head != nil -%}
+            <h3 class="mb-0">
+                <!--@formatter:off-->
                     {%- assign arr = head | pre_markdown | markdownify | replace_post | strip | split: "<p>" -%}
                     {%- if arr.size > 2 -%}
                     {{ arr | join: "<p>" | prepend: "<p>" }}
@@ -100,26 +99,25 @@
                     {{ arr[1] | remove: "</p>" }}
                     {%- endif -%}
                     <!--@formatter:on-->
-                </h3>
-                {%- endif -%}
-                {%- if badge != nil -%}
-                <div class="ms-auto">
-                    <div class="badge rounded-pill bg-primary {% if badge_is_date != false %}w-fix-xs{% endif %}">
-                        {%- if badge_is_date != false -%}
-                        {{ badge | date: badge_is_date }}
-                        {%- else -%}
-                        {{ badge | pre_markdown | markdownify | replace_post }}
-                        {%- endif -%}
-                    </div>
+            </h3>
+            {%- endif -%}
+            {%- if badge != nil -%}
+            <div class="ms-auto">
+                <div class="badge rounded-pill bg-primary {% if badge_is_date != false %}w-fix-xs{% endif %}">
+                    {%- if badge_is_date != false -%}
+                    {{ badge | date: badge_is_date }}
+                    {%- else -%}
+                    {{ badge | pre_markdown | markdownify | replace_post }}
+                    {%- endif -%}
                 </div>
-                {%- endif -%}
-            </div>
-            {%- if body != nil -%}
-            <div>
-                {{ body | pre_markdown | markdownify | replace_post }}
             </div>
             {%- endif -%}
         </div>
-        {%- endfor -%}
+        {%- if body != nil -%}
+        <div>
+            {{ body | pre_markdown | markdownify | replace_post }}
+        </div>
+        {%- endif -%}
     </div>
+    {%- endfor -%}
 </div>

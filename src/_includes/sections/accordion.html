@@ -1,6 +1,5 @@
-<div class="row justify-content-center {% if include.data.image_pos=='second' %}flex-row-reverse{% else %}flex-row{% endif %}">
-    <div class="col-12 col-lg-10">
-        <!--@formatter:off-->
+<div>
+    <!--@formatter:off-->
         {%- assign delimiter_header = include.data.delimiter_header | default: "# " -%}
         {%- assign delimiter_header_size = delimiter_header | size -%}
         {%- assign delimiter_badge = include.data.delimiter_badge | default: "> " -%}
@@ -81,55 +80,53 @@
         {%- assign contents = contents | push: cont | shift -%}
         <!--@formatter:on-->
 
-        <div class="accordion accordion-flush section-accordion" id="accordion-{{ include.index0 }}">
+    <div class="accordion accordion-flush section-accordion" id="accordion-{{ include.index0 }}">
 
-            {%- for head in heads -%}
-            {%- assign badge = badges[forloop.index0] -%}
-            {%- assign id = ids[forloop.index0] -%}
-            {%- assign body = contents[forloop.index0] -%}
-            {%- if max_n > 0 and max_n <= forloop.index0 -%}
-            {%- break -%}
-            {%- endif -%}
-            <div class="accordion-item border-0" id="{{ id | default: head | to_id }}">
-                <div class="accordion-header">
-                    <button class="accordion-button px-2 py-3 {% if forloop.index0==open %}{% else %}collapsed{% endif %} no-arrow" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-{{ include.index0 }}-{{ forloop.index0 }}"
-                            aria-expanded="{% if forloop.index0==open %}true{% else %}false{% endif %}"
-                            aria-controls="accordion-{{ include.index0 }}-{{ forloop.index0 }}">
-                        <div class="d-flex justify-content-between align-items-center {% if include.data.arrows=='left' %}flex-row-reverse{% endif %} w-100">
-                            <div class="d-flex align-items-center w-100 {% if include.data.arrows=='left' %}ps-3 ps-md-4{% else %}pe-3 pe-md-4 pe-xl-5{% endif %}">
-                                {%- if head != nil -%}
-                                <h2 class="mb-0">
-                                    {{ head | pre_markdown | markdownify | replace_post }}
-                                </h2>
-                                {%- endif -%}
-                                {%- if badge != nil -%}
-                                <div class="ms-auto">
-                                    <div class="badge rounded-pill bg-primary {% if badge_is_date != false %}w-fix-xs{% endif %}">
-                                        {%- if badge_is_date != false -%}
-                                        {{ badge | date: badge_is_date }}
-                                        {%- else -%}
-                                        {{ badge | pre_markdown | markdownify | replace_post }}
-                                        {%- endif -%}
-                                    </div>
+        {%- for head in heads -%}
+        {%- assign badge = badges[forloop.index0] -%}
+        {%- assign id = ids[forloop.index0] -%}
+        {%- assign body = contents[forloop.index0] -%}
+        {%- if max_n > 0 and max_n <= forloop.index0 -%}
+        {%- break -%}
+        {%- endif -%}
+        <div class="accordion-item border-0" id="{{ id | default: head | to_id }}">
+            <div class="accordion-header">
+                <button class="accordion-button px-2 py-3 {% if forloop.index0==open %}{% else %}collapsed{% endif %} no-arrow" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-{{ include.index0 }}-{{ forloop.index0 }}"
+                        aria-expanded="{% if forloop.index0==open %}true{% else %}false{% endif %}"
+                        aria-controls="accordion-{{ include.index0 }}-{{ forloop.index0 }}">
+                    <div class="d-flex justify-content-between align-items-center {% if include.data.arrows=='left' %}flex-row-reverse{% endif %} w-100">
+                        <div class="d-flex align-items-center w-100 {% if include.data.arrows=='left' %}ps-3 ps-md-4{% else %}pe-3 pe-md-4 pe-xl-5{% endif %}">
+                            {%- if head != nil -%}
+                            <h2 class="mb-0">
+                                {{ head | pre_markdown | markdownify | replace_post }}
+                            </h2>
+                            {%- endif -%}
+                            {%- if badge != nil -%}
+                            <div class="ms-auto">
+                                <div class="badge rounded-pill bg-primary {% if badge_is_date != false %}w-fix-xs{% endif %}">
+                                    {%- if badge_is_date != false -%}
+                                    {{ badge | date: badge_is_date }}
+                                    {%- else -%}
+                                    {{ badge | pre_markdown | markdownify | replace_post }}
+                                    {%- endif -%}
                                 </div>
-                                {%- endif -%}
                             </div>
-                            <div class="collapse-closed"><i class="fa-solid fa-angle-down"></i></div>
-                            <div class="collapse-opened"><i class="fa-solid fa-angle-up"></i></div>
+                            {%- endif -%}
                         </div>
-                    </button>
-                </div>
-                <div id="accordion-{{ include.index0 }}-{{ forloop.index0 }}" class="accordion-collapse collapse {% if forloop.index0==open %}show{% else %}{% endif %}" data-bs-parent="#accordion-{{ include.index0 }}">
-                    <div class="px-2 pb-5 pt-3 mb-5">
-                        {%- if body != nil -%}
-                        {{ body | pre_markdown | markdownify | replace_post }}
-                        {%- endif -%}
+                        <div class="collapse-closed"><i class="fa-solid fa-angle-down"></i></div>
+                        <div class="collapse-opened"><i class="fa-solid fa-angle-up"></i></div>
                     </div>
+                </button>
+            </div>
+            <div id="accordion-{{ include.index0 }}-{{ forloop.index0 }}" class="accordion-collapse collapse {% if forloop.index0==open %}show{% else %}{% endif %}" data-bs-parent="#accordion-{{ include.index0 }}">
+                <div class="px-2 pb-5 pt-3 mb-5">
+                    {%- if body != nil -%}
+                    {{ body | pre_markdown | markdownify | replace_post }}
+                    {%- endif -%}
                 </div>
             </div>
-            {%- endfor -%}
-
         </div>
+        {%- endfor -%}
 
     </div>
 </div>
