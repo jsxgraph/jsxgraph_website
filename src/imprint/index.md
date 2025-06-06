@@ -15,8 +15,8 @@ Universitätsstraße 30
 
 # Represented by
 
-**Chairman**   
-Prof. Dr. Peter Baptist   
+**Chairman and Main Developer**   
+Prof. Dr. Alfred Wassermann   
 Universitätsstraße 30   
 95447 Bayreuth
 
@@ -28,8 +28,8 @@ Universitätsstraße 30
 # Contact
 
 Tel.: +49 921 55-3266   
-E-Mail: <sketchometry@uni-bayreuth.de>   
-Website: <https://sketchometry.org>
+E-Mail: <jsxgraph@uni-bayreuth.de>   
+Website: <https://jsxgraph.org> and <https://jsxgraph.uni-bayreuth.de>
 
 ---
 
@@ -43,8 +43,8 @@ Universitätsstraße 30
 
 # Vertreten durch
 
-**Sprecher**   
-Prof. Dr. Peter Baptist   
+**Sprecher und Hauptentwickler**   
+Prof. Dr. Alfred Wassermann   
 Universitätsstraße 30   
 95447 Bayreuth
 
@@ -56,11 +56,5 @@ Universitätsstraße 30
 # Kontakt
 
 Tel.: +49 921 55-3266   
-E-Mail: <sketchometry@uni-bayreuth.de>   
-Website: <https://sketchometry.org>
-
-# Gefördert durch
-
-Arbeitgeberverband Gesamtmetall im Rahmen der Initiative thinkING.
-
-<https://think-ing.de>
+E-Mail: <jsxgraph@uni-bayreuth.de>   
+Website: <https://jsxgraph.org> und <https://jsxgraph.uni-bayreuth.de>

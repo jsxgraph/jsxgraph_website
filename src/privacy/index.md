@@ -18,11 +18,11 @@ Deutschland
 
 Vertreten durch den Sprecher der Forschungsstelle für Mobiles Lernen mit digitalen Medien
 
-Prof. Dr. Peter Baptist   
+Prof. Dr. Alfred Wassermann   
 Universitätsstraße 30   
 95447 Bayreuth   
 Tel.: +49 921 55-3266   
-E-Mail: <sketchometry@uni-bayreuth.de>
+E-Mail: <jsxgraph@uni-bayreuth.de>
 
 # II. Name und Anschrift des Datenschutzbeauftragten
 
