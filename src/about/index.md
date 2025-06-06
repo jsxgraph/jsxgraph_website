@@ -14,7 +14,7 @@ sections:
      layout: text
 
    - file: team
-     layout: image
+     layout: image-block
      data: 
         image: /about/ubt-campus.png
 
