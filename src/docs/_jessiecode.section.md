@@ -1,4 +1,3 @@
-
 ## JessieCode language reference
 
 ---
@@ -22,13 +21,21 @@ Number corresponds to the JavaScript number datatype.
 Objects can be created only via object literal notation `<< >>` and the predefined element functions (see below). To access properties and methods the operator is used. Example:
 
 ```js
-obj = <<
+obj = <
+<
 property: 'string',
-prop: 42,
-method: function (x) {
-return x*x;
+    prop
+:
+42,
+    method
+:
+
+function (x) {
+    return x * x;
 }
->>;
+
+>>
+;
 sixteen = obj.method(4);
 ```
 
@@ -38,7 +45,7 @@ Functions are declared with the function operator
 
 ```js
 f = function (a, b, c) {
-return a+b+c;
+    return a + b + c;
 };
 ```
 
@@ -54,7 +61,7 @@ Only one line comments with `//` being the first non-whitespace characters are s
 
 #### Logical operators
 
-_OR_ 
+_OR_
 
 `||`
 
@@ -64,7 +71,7 @@ _AND_
 
 _NOT_
 
-`!`	
+`!`
 
 #### Arithmetic operators
 
@@ -151,13 +158,15 @@ The control structures are exactly the same as in JavaScript.
 _if_
 
 ```js
-if (<expression) {
+if (<expression)
+{
     <Stmt>
-} else if (<expression>) {
-    <Stmt>
-} else {
-    <Stmt>
-}
+        } else if (
+        <expression>) {
+            <Stmt>
+                } else {
+                <Stmt>
+                    }
 ```
 
 _while_ loop
@@ -165,7 +174,7 @@ _while_ loop
 ```js
 while (<expression>) {
     <Stmt>
-}
+        }
 ```
 
 _do_ loop
@@ -173,15 +182,18 @@ _do_ loop
 ```js
 do {
     <Stmt>
-} while (<expression>);
+        } while (
+        <expression>);
 ```
 
 _for_ loop
 
 ```js
-for (<assignment>; <expression>; <assignment>) {
-    <Stmt>
-}
+for (<assignment>;
+    <expression>;
+        <assignment>) {
+            <Stmt>
+                }
 ```
 
 ---

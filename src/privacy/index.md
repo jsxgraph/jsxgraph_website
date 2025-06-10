@@ -4,6 +4,7 @@ in_menu_popup: false
 in_menu_footer: true
 order: 2
 ---
+
 Data Protection Statement for the websites of the University of Bayreuth in accordance with DSGVO:
 
 # I. Name und Anschrift des Verantwortlichen

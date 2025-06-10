@@ -31,7 +31,7 @@ and add the following lines into the document head:
 <script type="text/javascript" src="jsxgraphcore.js"></script>
 ```
 
-#### Complete HTML File (online) 
+#### Complete HTML File (online)
 
 ```html
 <!DOCTYPE html>
@@ -51,9 +51,9 @@ and add the following lines into the document head:
 
 ## Step 2 – Integrate Drawing Panel
 
-The construction which is displayed by JSXGraph resides in an HTML element. 
-Usually, a div-element is taken. 
-This division needs an ID. 
+The construction which is displayed by JSXGraph resides in an HTML element.
+Usually, a div-element is taken.
+This division needs an ID.
 Using this ID, we declare this element to be a drawing panel of JSXGraph.
 The following code has to be placed into the body part of an HTML file:
 
