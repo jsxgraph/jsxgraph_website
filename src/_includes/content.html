@@ -34,6 +34,17 @@
 {%- endif -%}
 {% include {{ layout }} content=sec_content content_raw=section_inclusion js=js data=section.data index=forloop.index index0=forloop.index0 %}
 
+{%- elsif section.layout == 'board' -%}
+{%- if section.code_file != nil -%}
+{%- capture js -%}{% include_relative {{ section.data.code_file }} %}{%- endcapture -%}
+{%- else if section.file != nil -%}
+{%- assign js_file = '_' | append: section.file | append: '.section.js' -%}
+{%- capture js -%}{% include_relative {{js_file}} %}{%- endcapture -%}
+{%- else -%}
+{%- assign js = nil -%}
+{%- endif -%}
+{% include {{ layout }} js=js data=section.data index=forloop.index index0=forloop.index0 %}
+
 {%- elsif section.layout == 'image' -%}
 {% include {{ layout }} data=section.data index=forloop.index index0=forloop.index0 %}
 

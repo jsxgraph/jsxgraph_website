@@ -173,7 +173,14 @@ The following sections (and params) are possible:
 |                 | height           | optional   | **_auto_** \| ...                  | height of the board                                                 |
 |                 | aspect_ratio     | optional   | **_1/1_** \| ...                   | aspect-ratio of the board                                           |
 |                 | code_file        | optional   | url starting with `/`              | path to the js file (default is same as **_file_** with ending .js) |
+| **board**[^1]   | code_file        | optional   | url starting with `/`              | path to the js file (default is same as **_file_** with ending .js) |
+|                 | boardid          | obligatory | unique id                          | unique id that is used in code_file                                 |
+|                 | width            | optional   | **_500px_** \| ...                 | width of the board                                                  |
+|                 | max_width        | optional   | **_100%_** \| ...                  | max-width of the board                                              |
+|                 | height           | optional   | **_auto_** \| ...                  | height of the board                                                 |
+|                 | aspect_ratio     | optional   | **_1/1_** \| ...                   | aspect-ratio of the board                                           |
+|                 | class            | optional   |                                    | css class for board                                                 |
 
 Notes:
 
-[^1]: *file* does not determine a file `.section.md` but the path of the image.
+[^1]: *file* does not determine a file `.section.md` but the path of the extra file.
