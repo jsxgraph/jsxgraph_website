@@ -67,7 +67,23 @@
                   JSXGraph
     ######################################### -->
 
-<script type="text/javascript" src="{{ relBase }}/assets/jsxgraph/jsxgraphcore.js"></script>
+{%- assign stringToCheck = const.url.css %}
+{%- assign checkArray = stringToCheck | split: ':' -%}
+{%- if checkArray[0] == 'http' or checkArray[0] == 'https' -%}
+{%- assign link = stringToCheck %}
+{%- else -%}
+{%- assign link = relBase | append: stringToCheck %}
+{%- endif -%}
+<link rel="stylesheet" href="{{ link }}"/>
+
+{%- assign stringToCheck = const.url.js %}
+{%- assign checkArray = stringToCheck | split: ':' -%}
+{%- if checkArray[0] == 'http' or checkArray[0] == 'https' -%}
+{%- assign link = stringToCheck %}
+{%- else -%}
+{%- assign link = relBase | append: stringToCheck %}
+{%- endif -%}
+<script type="text/javascript" src="{{ link }}"></script>
 
 <!-- ########################################
                    jQuery

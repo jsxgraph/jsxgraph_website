@@ -31,6 +31,8 @@ cookie:
 
 url:
   web: https://jsxgraph.org
+  js: https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js
+  css: https://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css
 
 maps:
   button: Load Google Maps
