@@ -12,9 +12,9 @@ sitemap:
   
 splash:
 
-   background: var(--splash-gradient)
+   color: var(--bs-primary)
    content:
-     - file: splash1
+     - file: start
        overlay: false
 
 sections:
