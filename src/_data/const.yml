@@ -43,13 +43,12 @@ maps:
     You can find Google Maps' privacy policy
     <a href="https://policies.google.com/privacy" target="_blank" title="https://policies.google.com/privacy">here</a>.
 
-cmldt: Center for Mobile Learning with Digital Technology
-
-ubt: University of Bayreuth
+institution: Center for Mobile Learning with Digital Technology, University of Bayreuth
 
 address: >
   Universitätsstraße 30<br>
-  95447 Bayreuth
+  95447 Bayreuth<br>
+  Germany
 
 supporters:
   title: Supported by
