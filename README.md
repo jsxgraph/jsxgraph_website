@@ -112,6 +112,11 @@ The following sections (and params) are possible:
 |                 | n                | optional   | **_-1_** \| 1 \| 2 \| 3 \| ...     | maximum entries                                                     |
 |                 | arrows           | optional   | **_right_** \| left                | position of arrow                                                   |
 |                 | open             | optional   | **_-1_** \| 0 \| 1 \| 2 \| ...     | which entry should be open?                                         |
+| **cards**       | delimiter_header | optional   | **_#&#9251;_** \| @...             | lines beginning with this string are used as headers                |
+|                 | delimiter_image  | optional   | **_>&#9251;_** \| @...             | image after header line                                             |
+|                 | delimiter_link   | optional   | **_>&#9251;_** \| @...             | link after header line                                              |
+|                 | delimiter_id     | optional   | **_>&#9251;_** \| @...             | id after header line                                                |
+|                 | n                | optional   | **_-1_** \| 1 \| 2 \| 3 \| ...     | maximum entries                                                     |
 | **board-block** | boardid          | obligatory | unique id                          | unique id that is used in code_file                                 |
 |                 | board_pos        | optional   | **_first_** \| second              | the board is to the left or right of the text block                 |
 |                 | width            | optional   | **_100%_** \| ...                  | width of the board                                                  |

@@ -1,1 +1,1 @@
-Dies sind internal projects.
+Dies sind internal projects mit 500 Zeichen beschrieben:
