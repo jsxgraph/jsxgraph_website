@@ -12,10 +12,11 @@ sitemap:
 
 splash:
 
+  image: /media/conf2024.jpg
   color: var(--bs-primary)
   content:
     - file: start
-      overlay: false
+      overlay_background: rgba(var(--bs-primary-faded-rgb), 0.85)
 
 sections:
 

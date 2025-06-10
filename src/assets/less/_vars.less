@@ -6,12 +6,12 @@
 
 @fixed_width_xs: 100px;
 
-@threshold_light: 75%;
-@threshold_dark: 88%;
-@threshold_overlay: 55%;
+@threshold_active: 12%;
+@threshold_hover: 4%;
+@threshold_overlay: 65%;
 
 @color_primary: #10427C;
-@color_secondary: mix(#fdfdfd, @color_primary, 85%); // #AFDCF0; // mix(@color_primary, #fff, 25%);
+@color_secondary: #AFDCF0; // mix(#fdfdfd, @color_primary, 85%);
 @color_tertiary: #ADFCF0; // mix(@color_primary, #fff, 10%);
 
 @color_outer: #F5F5F5; // mix(@color_primary, #dcc4c4, 20%); // @color_secondary;
@@ -20,5 +20,7 @@
 
 @underline_links: true;
 
-@color_code_bg: mix(@color_secondary, #fff, 45%);
-@color_code_outer: @color_secondary_dark;
+@color_code_base: mix(#fdfdfd, @color_primary, 85%);
+@color_code_bg: mix(@color_code_base, #fff, 45%);
+@color_code_outer: darken(@color_code_base, @threshold_dark);
+

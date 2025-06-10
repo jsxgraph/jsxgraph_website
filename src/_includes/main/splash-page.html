@@ -1,7 +1,19 @@
 {%- if include.overlay == nil -%}{%- assign overlay = true -%}{%- else -%}{%- assign overlay = include.overlay -%}{%- endif -%}
 {%- if include.scroll == nil -%}{%- assign scroll = true -%}{%- else -%}{%- assign scroll = include.scroll -%}{%- endif -%}
 
-<div class="d-flex flex-column splash-page {% if overlay %}splash-overlay{% endif %}">
+{%- assign id = 8 | randhex | prepend: 'id-' -%}
+
+{%- if include.overlay_background -%}
+<style>
+    /*@formatter:off*/
+    #splash .splash-overlay#{{ id }} {
+        background: {{ include.overlay_background }};
+    }
+    /*@formatter:on*/
+</style>
+{%- endif -%}
+
+<div class="d-flex flex-column splash-page {% if overlay %}splash-overlay{% endif %}" id="{{ id }}">
     <div class="flex-fill d-flex flex-column justify-content-center align-items-center p-2 p-lg-3 text-center">
         {{ include.content }}
     </div>

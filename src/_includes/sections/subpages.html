@@ -34,11 +34,6 @@
         {%- assign sorted_pages = site.pages | sort: 'order' -%}
         {%- for i_page in sorted_pages -%}
         {%- if i_page.parent == parent -%}
-        {%- if color == 'primary' -%}
-        {%- assign color = 'secondary' -%}
-        {%- else -%}
-        {%- assign color = 'primary' -%}
-        {%- endif -%}
         {%- if i_page.external_link -%}
         {%- assign link = i_page.external_link -%}
         {%- assign target = i_page.target | default: "_blank" -%}
