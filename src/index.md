@@ -22,6 +22,11 @@ sections:
   - file: description
     layout: text
 
+  - file: example1
+    layout: board-block
+    data:
+      boardid: box-123456789
+
   - file: features
     layout: text
 

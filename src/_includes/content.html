@@ -15,6 +15,25 @@
 {%- if section.layout == 'subpages' -%}
 {% include {{ layout }} parent=section.parent data=section.data index=forloop.index index0=forloop.index0 %}
 
+{%- elsif section.layout == 'board-block' -%}
+{%- if section.file != nil -%}
+{%- assign text_file = '_' | append: section.file | append: '.section.md' -%}
+{%- capture section_inclusion -%}{% include_relative {{text_file}} %}{%- endcapture -%}
+{%- assign sec_content = section_inclusion | pre_markdown | markdownify | replace_post -%}
+{%- else -%}
+{%- assign section_inclusion = nil -%}
+{%- assign sec_content = nil -%}
+{%- endif -%}
+{%- if section.code_file != nil -%}
+{%- capture js -%}{% include_relative {{ section.data.code_file }} %}{%- endcapture -%}
+{%- else if section.file != nil -%}
+{%- assign js_file = '_' | append: section.file | append: '.section.js' -%}
+{%- capture js -%}{% include_relative {{js_file}} %}{%- endcapture -%}
+{%- else -%}
+{%- assign js = nil -%}
+{%- endif -%}
+{% include {{ layout }} content=sec_content content_raw=section_inclusion js=js data=section.data index=forloop.index index0=forloop.index0 %}
+
 {%- elsif section.layout == 'image' -%}
 {% include {{ layout }} data=section.data index=forloop.index index0=forloop.index0 %}
 
@@ -33,7 +52,6 @@
 {%- assign section_inclusion = nil -%}
 {%- assign sec_content = nil -%}
 {%- endif -%}
-
 {% include {{ layout }} content=sec_content content_raw=section_inclusion data=section.data index=forloop.index index0=forloop.index0 %}
 {%- endif -%}
 
