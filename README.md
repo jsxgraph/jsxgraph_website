@@ -23,6 +23,42 @@ Links are automatically supplemented with target="_blank" if
 - they refer to a file ending with `.pdf`, `.jpg`, `.png`, `.svg`, `.sketcho`, `.zip`, `.woff` or `.ttf`.
   These links are also preceded by an icon.
 
+### Code highlighting
+
+Change theme by executing
+
+```markdown
+rougify style ... > src/assets/less/code_highlighting.css
+```
+
+Following styles are available:
+- base16
+- base16.dark
+- base16.light
+- base16.monokai
+- base16.monokai.dark
+- base16.monokai.light
+- base16.solarized
+- base16.solarized.dark
+- base16.solarized.light
+- bw
+- colorful
+- github
+- github.dark
+- github.light
+- gruvbox
+- gruvbox.dark
+- gruvbox.light
+- igorpro
+- magritte
+- molokai
+- monokai
+- monokai.sublime
+- pastie
+- thankful_eyes
+- tulip
+
+
 ### Buttons
 
 ```markdown
@@ -94,7 +130,6 @@ Notes:
 
 [^1]: *file* does not determine a file `.section.md` but the path of the extra file.
 
-
 ## Development and release
 
 ***Has to be reviewed!!***
@@ -141,9 +176,9 @@ The command `make websitelocal` doesn't need JSXGraph at all and adapts version 
 To release the new version of website follow the steps:
 
 1. Call in the root of this project:
-   - `make website` (packs and compiles the current website in the present form)
-   - `make websiteversion` (packs and compiles the current website, but asks for a version number first)
-   - or `make release` (packs and compiles the current website, gets the current version and the release information from JSXGraph beforehand)
+    - `make website` (packs and compiles the current website in the present form)
+    - `make websiteversion` (packs and compiles the current website, but asks for a version number first)
+    - or `make release` (packs and compiles the current website, gets the current version and the release information from JSXGraph beforehand)
 2. Pull the newest version from server.
 3. Call `make version-git-tag` or `make version-git`. This will push all files to Git.
    ```shell
@@ -154,12 +189,12 @@ To release the new version of website follow the steps:
    ```
 4. Call `make upload` and type in the correct server password.   
    This does:
-   - Copy files in [distrib/](distrib/) to the server via:
-      ```shell
-      scp -r distrib/ root@132.180.10.7:/net/httpd/htdocs/sketchometry/home.new
-      ```
-   - Link new version to <https://sketchometry.org> and link <https://sketchometry.org/download> via
-      ```shell
-      ssh root@132.180.10.7 "cd /net/httpd/htdocs/sketchometry/; rm -r home.old; mv home home.old; mv home.new home; cd /net/httpd/htdocs/sketchometry/home/; ln -s ../versions/download/ download;"
-      ```
+    - Copy files in [distrib/](distrib/) to the server via:
+       ```shell
+       scp -r distrib/ root@132.180.10.7:/net/httpd/htdocs/sketchometry/home.new
+       ```
+    - Link new version to <https://sketchometry.org> and link <https://sketchometry.org/download> via
+       ```shell
+       ssh root@132.180.10.7 "cd /net/httpd/htdocs/sketchometry/; rm -r home.old; mv home home.old; mv home.new home; cd /net/httpd/htdocs/sketchometry/home/; ln -s ../versions/download/ download;"
+       ```
 5. Adapt link of <https://heftreihe.sketchometry.org> (`/net/httpd/htdocs/sketchometry/heftreihe/`).

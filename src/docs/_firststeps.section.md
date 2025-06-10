@@ -10,8 +10,8 @@ The preferred way is to include JSXGraph online from one of the CDNs (Content De
 Add the following lines into the document head:
 
 ```html
-<script type="text/javascript" charset="UTF-8"
- src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+<script type="text/javascript" charset="UTF-8" 
+        src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
 ```
 

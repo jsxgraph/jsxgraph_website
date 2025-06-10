@@ -1,0 +1,70 @@
+@import (less) url("code_highlighting.css");
+
+.code-highlighting {
+  background-color: @color_body;
+
+  code {
+    background: @color_code_bg;
+    padding: 0;
+    border: 1px solid @color_code_outer;
+
+    font-size: var(--bs-body-font-size);
+
+    overflow-x: auto;
+  }
+
+  .rouge-gutter,
+  .rouge-code {
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .rouge-gutter {
+    text-align: right;
+    color: @color_code_outer;
+    border-right: 1px solid @color_code_outer;
+    width: 50px;
+    background-color: @color_code_bg;
+    position: absolute;
+  }
+
+  .rouge-code {
+    padding-left: calc(50px + 10px);
+  }
+
+  &:before {
+    display: block;
+    color: @color_code_outer;
+    text-align: right;
+    .small();
+    margin-top: -5px;
+    margin-bottom: -2px;
+  }
+
+  .language-js &:before,
+  .language-javascript &:before {
+    content: "JavaScript";
+  }
+
+  .language-html &:before {
+    content: "HTML";
+  }
+
+  .language-css &:before {
+    content: "CSS";
+  }
+
+  .language-json &:before {
+    content: "JSON";
+  }
+
+  .language-jessiecode &:before {
+    content: "JessieCode";
+  }
+
+  .language-php &:before {
+    content: "PHP";
+  }
+
+}

@@ -11,7 +11,10 @@
 @threshold_overlay: 55%;
 
 @color_primary: #10427C;
-@color_secondary: #AFDCF0; // mix(@color_primary, #fff, 25%);
+@color_primary_light: lighten(@color_primary, 20%);
+@color_primary_dark: darken(@color_primary, 5%);
+
+@color_secondary: mix(#fdfdfd, @color_primary, 85%); // #AFDCF0; // mix(@color_primary, #fff, 25%);
 @color_tertiary: #ADFCF0; // mix(@color_primary, #fff, 10%);
 
 @color_outer: #F5F5F5; // mix(@color_primary, #dcc4c4, 20%); // @color_secondary;
@@ -19,3 +22,6 @@
 @color_outer_dark: mix(@color_outer, #10427C, @threshold_dark);
 
 @underline_links: true;
+
+@color_code_bg: mix(@color_secondary, #fff, 45%);
+@color_code_outer: @color_secondary_dark;

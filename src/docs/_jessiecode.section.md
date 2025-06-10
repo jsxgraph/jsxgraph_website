@@ -20,22 +20,14 @@ Number corresponds to the JavaScript number datatype.
 
 Objects can be created only via object literal notation `<< >>` and the predefined element functions (see below). To access properties and methods the operator is used. Example:
 
-```js
-obj = <
-<
+```jessiecode
+obj = <<
 property: 'string',
-    prop
-:
-42,
-    method
-:
-
-function (x) {
-    return x * x;
-}
-
->>
-;
+    prop: 42,
+    method: function (x) {
+        return x * x;
+    }
+>>;
 sixteen = obj.method(4);
 ```
 

@@ -8,6 +8,20 @@ data_dir: _data
 sass:
   sass_dir: ./src/_sass
 
+# Parsing
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class: 'code-highlighting'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
 # Handling Reading
 safe: false
 include: [ ".htaccess", ".htpasswd" ]
