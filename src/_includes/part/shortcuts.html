@@ -1,4 +1,4 @@
-{%- assign polygon = include.polygon | default: "8" -%}
+{%- assign polygon = include.polygon | default: const.default_polygon -%}
 <!-- circle | 4 | 5 | 6 | 8 -->
 
 {%- if polygon == "circle" -%}

@@ -10,4 +10,6 @@ in_shortcuts: true
 
 sections:
 
+  - layout: subpages
+
 ---

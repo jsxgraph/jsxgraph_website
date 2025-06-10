@@ -12,7 +12,10 @@
 {%- for section in page.sections -%}
 {%- assign layout = 'sections/' | append: section.layout | append: '.html' -%}
 
-{%- if section.layout == 'image' -%}
+{%- if section.layout == 'subpages' -%}
+{% include {{ layout }} parent=section.parent data=section.data index=forloop.index index0=forloop.index0 %}
+
+{%- elsif section.layout == 'image' -%}
 {% include {{ layout }} data=section.data index=forloop.index index0=forloop.index0 %}
 
 {%- elsif section.layout == 'file' -%}

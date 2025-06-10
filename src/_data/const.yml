@@ -5,6 +5,8 @@ webtitle: JSXGraph
 version: v1.11.1
 version_date: 2025-03-03
 
+default_polygon: "8"  # circle | 4 | 5 | 6 | 8
+
 meta: >
   TBA
 
