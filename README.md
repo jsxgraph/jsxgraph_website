@@ -1,69 +1,8 @@
 # JSXGraph website
 
-## Development and release
-
-### Run test version
-
-Build files to directory [distrib/](distrib/) via the call
-
-```shell
-jekyll serve -l
-```
-
-or
-
-```shell
-make dev
-```
-
-### Make
-
-The project `jsxgraph` needs to be at the same level as this project for the following commands:
-
-- Call `make version` to get version string from JSXGraph and put it in all contexts of the website.
-- Call `make versionlocal` to type a user defined version string and put it in all contexts of the website.
-
-The following call prepares a running version of the website in directory [distrib/](distrib/):
-
-```shell
-make website
-```
-
-It updates the website without getting version and release notes (but libs) from JSXGraph.
-
-The command `make websitelocal` doesn't need JSXGraph at all and adapts version strings by expecting a user input.
-
-### Release
-
-To release the new version of website follow the steps:
-
-1. Call in the root of this project:
-    - `make website` (packs and compiles the current website in the present form)
-    - `make websiteversion` (packs and compiles the current website, but asks for a version number first)
-    - or `make release` (packs and compiles the current website, gets the current version and the release information from JSXGraph beforehand)
-2. Pull the newest version from server.
-3. Call `make version-git-tag` or `make version-git`. This will push all files to Git.
-   ```shell
-   git commit -a
-   git push
-   git tag vx.y.z  # optional in version-git-tag
-   git push origin vx.y.z # optional in version-git-tag
-   ```
-4. Call `make upload` and type in the correct server password.   
-   This does:
-    - Copy files in [distrib/](distrib/) to the server via:
-       ```shell
-       scp -r distrib/ root@132.180.10.7:/net/httpd/htdocs/sketchometry/home.new
-       ```
-    - Link new version to <https://sketchometry.org> and link <https://sketchometry.org/download> via
-       ```shell
-       ssh root@132.180.10.7 "cd /net/httpd/htdocs/sketchometry/; rm -r home.old; mv home home.old; mv home.new home; cd /net/httpd/htdocs/sketchometry/home/; ln -s ../versions/download/ download;"
-       ```
-5. Adapt link of <https://heftreihe.sketchometry.org> (`/net/httpd/htdocs/sketchometry/heftreihe/`).
-
 ## Components
 
-### References
+### References and Links
 
 To refer an image or document within this page use the reference a follows:
 
@@ -71,13 +10,11 @@ To refer an image or document within this page use the reference a follows:
 2. After this, add `/`.
 3. Now define the path to the file from root file of the homepage.
 
-### Links
-
-Please use one of the following syntax:
+For links use one of the following syntax:
 
 ```markdown
-[<Text>]({{ relBase }}/<Link>)  # to refer an internal site or file.
-[<Text>](https://<link>)                   # to refer an external webpage.
+[<Text>]({{ relBase }}/<Link>)      # to refer an internal site or file.
+[<Text>](https://<link>)            # to refer an external webpage.
 ```
 
 Links are automatically supplemented with target="_blank" if
@@ -88,39 +25,21 @@ Links are automatically supplemented with target="_blank" if
 
 ### Buttons
 
-Buttons will be formatted if you use the following syntax:
-
 ```markdown
 <a type="button" colorclass="<colorclass>" href="{{ relBase }}/url/to/your/target">
-title
+    title
 </a>
 ```
 
-Optional you can omit the icon line. It is important to use
-either `<a type="button"` or `<button type="button"` and no class.
+It is important to use either `<a type="button"` or `<button type="button"` and no class.
 The attribute `colorclass` can also been omitted.
-
-### Separators
-
-You can use an image or an icon as a separator.
-
-For images have a look [here](#Images) and use
-
-```html
-<img src="{{ relBase }}/<link-to-image>" alt="<title>" class="image-separator-(xs|sm|md|lg)">
-```
 
 ### Images
 
-Add images by using
-
-```html
-<img src="{{ relBase }}/<link-to-image>" alt="<title>">
-```
-
-or
+Add images by using one of the following lines
 
 ```markdown
+<img src="{{ relBase }}/<link-to-image>" alt="<title>">
 ![<title>]({{ relBase }}/<link-to-image>)
 ```
 
@@ -128,17 +47,7 @@ by replacing `<link-to-image>` and `<title>`.
 Pay attention to [this](#references).
 
 Images always have a width of 100%.
-If you would like to have a different formatting,
-use the following classes:
-
-| class                | behavior                                                                                  |
-|----------------------|-------------------------------------------------------------------------------------------|
-| image-separator-xs   | use a x-small image as a separator in the horizontal middle of the page                   |
-| image-separator(-sm) | use a small image as a separator in the horizontal middle of the page                     |
-| image-separator-md   | use a middle image as a separator in the horizontal middle of the page                    |
-| image-separator-lg   | use a large image as a separator in the horizontal middle of the page                     |
-| image-float-left     | place the image at the top left of the following block while the content flows around it  |
-| image-float-right    | place the image at the top right of the following block while the content flows around it |
+If you would like to have a different formatting, use section image.
 
 ## Sections
 
@@ -184,3 +93,73 @@ The following sections (and params) are possible:
 Notes:
 
 [^1]: *file* does not determine a file `.section.md` but the path of the extra file.
+
+
+## Development and release
+
+***Has to be reviewed!!***
+
+### Run test version
+
+Build files to directory [distrib/](distrib/) via the call
+
+```shell
+jekyll serve -l
+```
+
+or
+
+```shell
+bundle exec jekyll serve -l
+```
+
+or
+
+```shell
+make dev
+```
+
+### Make
+
+The project `jsxgraph` needs to be at the same level as this project for the following commands:
+
+- Call `make version` to get version string from JSXGraph and put it in all contexts of the website.
+- Call `make versionlocal` to type a user defined version string and put it in all contexts of the website.
+
+The following call prepares a running version of the website in directory [distrib/](distrib/):
+
+```shell
+make website
+```
+
+It updates the website without getting version and release notes (but libs) from JSXGraph.
+
+The command `make websitelocal` doesn't need JSXGraph at all and adapts version strings by expecting a user input.
+
+### Release
+
+To release the new version of website follow the steps:
+
+1. Call in the root of this project:
+   - `make website` (packs and compiles the current website in the present form)
+   - `make websiteversion` (packs and compiles the current website, but asks for a version number first)
+   - or `make release` (packs and compiles the current website, gets the current version and the release information from JSXGraph beforehand)
+2. Pull the newest version from server.
+3. Call `make version-git-tag` or `make version-git`. This will push all files to Git.
+   ```shell
+   git commit -a
+   git push
+   git tag vx.y.z  # optional in version-git-tag
+   git push origin vx.y.z # optional in version-git-tag
+   ```
+4. Call `make upload` and type in the correct server password.   
+   This does:
+   - Copy files in [distrib/](distrib/) to the server via:
+      ```shell
+      scp -r distrib/ root@132.180.10.7:/net/httpd/htdocs/sketchometry/home.new
+      ```
+   - Link new version to <https://sketchometry.org> and link <https://sketchometry.org/download> via
+      ```shell
+      ssh root@132.180.10.7 "cd /net/httpd/htdocs/sketchometry/; rm -r home.old; mv home home.old; mv home.new home; cd /net/httpd/htdocs/sketchometry/home/; ln -s ../versions/download/ download;"
+      ```
+5. Adapt link of <https://heftreihe.sketchometry.org> (`/net/httpd/htdocs/sketchometry/heftreihe/`).
