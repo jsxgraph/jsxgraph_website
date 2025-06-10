@@ -1,10 +1,18 @@
 {% assign type = include.type | default: "8" %}
-<!-- 5 | 6 | 8 -->
+<!-- circle | 4 | 5 | 6 | 8 -->
 
 {% assign col1 = include.color1 | default: "primary" %}
 {% assign col2 = include.color2 | default: "secondary" %}
 
-{%- if type == "5" -%}
+{%- if type == "circle" -%}
+{%- assign class = "circle-clip" -%}
+{%- assign padding_x = "5%" -%}
+{%- assign padding_y = "5%" -%}
+{%- elsif type == "4" -%}
+{%- assign class = "square-clip" -%}
+{%- assign padding_x = "5%" -%}
+{%- assign padding_y = "5%" -%}
+{%- elsif type == "5" -%}
 {%- assign class = "pentagon-clip" -%}
 {%- assign padding_x = "10%" -%}
 {%- assign padding_y = "7%" -%}
@@ -42,7 +50,41 @@
     </div>
     {% endif %}
 
-    {% if type == "5" %}
+    {% if type == "circle" %}
+    <svg class="w-100 position-absolute top-0 start-0 end-0 bottom-0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle
+                cx="50"
+                cy="50"
+                r="48"
+                fill="none"
+                stroke-width="0.99"
+                class="svg-{{ col1 }}"
+        />
+        <circle
+                cx="50"
+                cy="50"
+                r="40"
+                fill="none"
+                stroke-width="0.99"
+                class="svg-{{ col2 }}"
+        />
+    </svg>
+    {% elsif type == "4" %}
+    <svg class="w-100 position-absolute top-0 start-0 end-0 bottom-0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path
+                d="M 0,0 L 100,0 L 100,100 L 0,100 Z"
+                fill="none"
+                stroke-width="0.99"
+                class="svg-{{ col1 }}"
+        />
+        <path
+                d="M 10,10 L 90,10 L 90,90 L 10,90 Z"
+                fill="none"
+                stroke-width="0.99"
+                class="svg-{{ col2 }}"
+        />
+    </svg>
+    {% elsif type == "5" %}
     <!--<svg class="w-100 position-absolute top-0 start-0 end-0 bottom-0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <path d="M 50,3 L 98,37 L 80,97 L 20,97 L 2,37 Z"
                fill="none"

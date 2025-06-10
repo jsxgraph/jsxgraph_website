@@ -266,35 +266,6 @@ img {
   }
 }
 
-.heart-clip {
-  aspect-ratio: 1/1;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  clip-path: polygon(50% 21.53%,
-  42.53% 9.56%,
-  24.79% 6.09%,
-  11.11% 10.29%,
-  2.67% 21.25%,
-  1.05% 35.03%,
-  3.72% 46.25%,
-  16.04% 65.33%,
-  29.71% 78.39%,
-  49.87% 93.91%,
-  70.29% 78.39%,
-  83.96% 65.33%,
-  96.28% 46.25%,
-  98.95% 35.03%,
-  97.33% 21.25%,
-  88.89% 10.29%,
-  75.21% 6.09%,
-  57.21% 9.56%);
-
-  padding: 5% 1%;
-}
-
 .gallery-backdrop {
   .position-fixed();
   .top-0();
@@ -305,4 +276,31 @@ img {
   background-color: fade(@color_primary, @threshold_overlay);
   color: contrast(fade(@color_primary, @threshold_overlay), @color_text_dark, @color_text_light);
   z-index: @z_index_outer;
+}
+
+/// shortcuts ///
+
+.gen-shortcuts-hover(@colors: primary, @i: 1) when (@i <= length(@colors)) {
+  @name_raw: extract(@colors, @i);
+  @color: 'color_@{name_raw}';
+
+  @name: replace(@name_raw, '_', '-', 'gi');
+
+  .btn-@{name} {
+    background-color: darken(@@color, @threshold_hover);
+    border-color: darken(@@color, @threshold_hover);
+    color: contrast(darken(@@color, @threshold_hover), @color_text_dark, @color_text_light);
+  }
+
+  .link-@{name} {
+    color: darken(@@color, @threshold_hover) !important;
+  }
+
+  .gen-shortcuts-hover(@colors, (@i + 1));
+}
+
+.shortcuts {
+  a:hover {
+    .gen-shortcuts-hover(@bootstrap_colors);
+  }
 }

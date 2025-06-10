@@ -27044,6 +27044,8 @@ small,
 .fs-inherit {
   font-size: inherit;
 }
+.circle-clip,
+.square-clip,
 .pentagon-clip,
 .hexagon-clip,
 .octagon-clip {
@@ -27052,6 +27054,14 @@ small,
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.circle-clip {
+  clip-path: circle(50% at 50% 50%);
+  padding: 10%;
+}
+.square-clip {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 5%;
 }
 .pentagon-clip {
   clip-path: polygon(50% 3%, 98% 37%, 80% 97%, 20% 97%, 2% 37%);
@@ -56875,15 +56885,6 @@ img.image-float-right {
     margin-bottom: 1rem !important;
   }
 }
-.heart-clip {
-  aspect-ratio: 1/1;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  clip-path: polygon(50% 21.53%, 42.53% 9.56%, 24.79% 6.09%, 11.11% 10.29%, 2.67% 21.25%, 1.05% 35.03%, 3.72% 46.25%, 16.04% 65.33%, 29.71% 78.39%, 49.87% 93.91%, 70.29% 78.39%, 83.96% 65.33%, 96.28% 46.25%, 98.95% 35.03%, 97.33% 21.25%, 88.89% 10.29%, 75.21% 6.09%, 57.21% 9.56%);
-  padding: 5% 1%;
-}
 .gallery-backdrop {
   position: fixed !important;
   top: 0rem;
@@ -56897,5 +56898,309 @@ img.image-float-right {
   background-color: rgba(16, 66, 124, 0.55);
   color: #fff;
   z-index: 1000;
+}
+.shortcuts a:hover .btn-body {
+  background-color: #d4d4d4;
+  border-color: #d4d4d4;
+  color: #212529;
+}
+.shortcuts a:hover .link-body {
+  color: #d4d4d4 !important;
+}
+.shortcuts a:hover .btn-green {
+  background-color: #003f00;
+  border-color: #003f00;
+  color: #fff;
+}
+.shortcuts a:hover .link-green {
+  color: #003f00 !important;
+}
+.shortcuts a:hover .btn-yellow {
+  background-color: #a89a00;
+  border-color: #a89a00;
+  color: #fff;
+}
+.shortcuts a:hover .link-yellow {
+  color: #a89a00 !important;
+}
+.shortcuts a:hover .btn-orange {
+  background-color: #af7200;
+  border-color: #af7200;
+  color: #fff;
+}
+.shortcuts a:hover .link-orange {
+  color: #af7200 !important;
+}
+.shortcuts a:hover .btn-red {
+  background-color: #a80000;
+  border-color: #a80000;
+  color: #fff;
+}
+.shortcuts a:hover .link-red {
+  color: #a80000 !important;
+}
+.shortcuts a:hover .btn-purple {
+  background-color: #6a00a8;
+  border-color: #6a00a8;
+  color: #fff;
+}
+.shortcuts a:hover .link-purple {
+  color: #6a00a8 !important;
+}
+.shortcuts a:hover .btn-grey-light {
+  background-color: #989898;
+  border-color: #989898;
+  color: #fff;
+}
+.shortcuts a:hover .link-grey-light {
+  color: #989898 !important;
+}
+.shortcuts a:hover .btn-grey {
+  background-color: #858585;
+  border-color: #858585;
+  color: #fff;
+}
+.shortcuts a:hover .link-grey {
+  color: #858585 !important;
+}
+.shortcuts a:hover .btn-grey-dark {
+  background-color: #707070;
+  border-color: #707070;
+  color: #fff;
+}
+.shortcuts a:hover .link-grey-dark {
+  color: #707070 !important;
+}
+.shortcuts a:hover .btn-blue {
+  background-color: #006474;
+  border-color: #006474;
+  color: #fff;
+}
+.shortcuts a:hover .link-blue {
+  color: #006474 !important;
+}
+.shortcuts a:hover .btn-black {
+  background-color: #000000;
+  border-color: #000000;
+  color: #fff;
+}
+.shortcuts a:hover .link-black {
+  color: #000000 !important;
+}
+.shortcuts a:hover .btn-background {
+  background-color: #bbc9da;
+  border-color: #bbc9da;
+  color: #212529;
+}
+.shortcuts a:hover .link-background {
+  color: #bbc9da !important;
+}
+.shortcuts a:hover .btn-outer {
+  background-color: #cacaca;
+  border-color: #cacaca;
+  color: #212529;
+}
+.shortcuts a:hover .link-outer {
+  color: #cacaca !important;
+}
+.shortcuts a:hover .btn-outer-light {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  color: #212529;
+}
+.shortcuts a:hover .link-outer-light {
+  color: #cccccc !important;
+}
+.shortcuts a:hover .btn-outer-dark {
+  background-color: #a5b3c4;
+  border-color: #a5b3c4;
+  color: #212529;
+}
+.shortcuts a:hover .link-outer-dark {
+  color: #a5b3c4 !important;
+}
+.shortcuts a:hover .btn-primary {
+  background-color: #06192f;
+  border-color: #06192f;
+  color: #fff;
+}
+.shortcuts a:hover .link-primary {
+  color: #06192f !important;
+}
+.shortcuts a:hover .btn-secondary {
+  background-color: #66bce2;
+  border-color: #66bce2;
+  color: #212529;
+}
+.shortcuts a:hover .link-secondary {
+  color: #66bce2 !important;
+}
+.shortcuts a:hover .btn-tertiary {
+  background-color: #59f9e1;
+  border-color: #59f9e1;
+  color: #212529;
+}
+.shortcuts a:hover .link-tertiary {
+  color: #59f9e1 !important;
+}
+.shortcuts a:hover .btn-primary-light {
+  background-color: #304762;
+  border-color: #304762;
+  color: #fff;
+}
+.shortcuts a:hover .link-primary-light {
+  color: #304762 !important;
+}
+.shortcuts a:hover .btn-primary-dark {
+  background-color: #041120;
+  border-color: #041120;
+  color: #fff;
+}
+.shortcuts a:hover .link-primary-dark {
+  color: #041120 !important;
+}
+.shortcuts a:hover .btn-secondary-light {
+  background-color: #7ac5e6;
+  border-color: #7ac5e6;
+  color: #212529;
+}
+.shortcuts a:hover .link-secondary-light {
+  color: #7ac5e6 !important;
+}
+.shortcuts a:hover .btn-secondary-dark {
+  background-color: #5e9db9;
+  border-color: #5e9db9;
+  color: #fff;
+}
+.shortcuts a:hover .link-secondary-dark {
+  color: #5e9db9 !important;
+}
+.shortcuts a:hover .btn-tertiary-light {
+  background-color: #63f9e3;
+  border-color: #63f9e3;
+  color: #212529;
+}
+.shortcuts a:hover .link-tertiary-light {
+  color: #63f9e3 !important;
+}
+.shortcuts a:hover .btn-tertiary-dark {
+  background-color: #57c9b7;
+  border-color: #57c9b7;
+  color: #212529;
+}
+.shortcuts a:hover .link-tertiary-dark {
+  color: #57c9b7 !important;
+}
+.shortcuts a:hover .btn-success {
+  background-color: #003f00;
+  border-color: #003f00;
+  color: #fff;
+}
+.shortcuts a:hover .link-success {
+  color: #003f00 !important;
+}
+.shortcuts a:hover .btn-warning {
+  background-color: #af8300;
+  border-color: #af8300;
+  color: #fff;
+}
+.shortcuts a:hover .link-warning {
+  color: #af8300 !important;
+}
+.shortcuts a:hover .btn-danger {
+  background-color: #a80000;
+  border-color: #a80000;
+  color: #fff;
+}
+.shortcuts a:hover .link-danger {
+  color: #a80000 !important;
+}
+.shortcuts a:hover .btn-error {
+  background-color: #a80000;
+  border-color: #a80000;
+  color: #fff;
+}
+.shortcuts a:hover .link-error {
+  color: #a80000 !important;
+}
+.shortcuts a:hover .btn-info {
+  background-color: #0b1116;
+  border-color: #0b1116;
+  color: #fff;
+}
+.shortcuts a:hover .link-info {
+  color: #0b1116 !important;
+}
+.shortcuts a:hover .btn-light {
+  background-color: #c3c3c3;
+  border-color: #c3c3c3;
+  color: #212529;
+}
+.shortcuts a:hover .link-light {
+  color: #c3c3c3 !important;
+}
+.shortcuts a:hover .btn-dark {
+  background-color: #0d0f10;
+  border-color: #0d0f10;
+  color: #fff;
+}
+.shortcuts a:hover .link-dark {
+  color: #0d0f10 !important;
+}
+.shortcuts a:hover .btn-white {
+  background-color: #d4d4d4;
+  border-color: #d4d4d4;
+  color: #212529;
+}
+.shortcuts a:hover .link-white {
+  color: #d4d4d4 !important;
+}
+.shortcuts a:hover .btn-black {
+  background-color: #000000;
+  border-color: #000000;
+  color: #fff;
+}
+.shortcuts a:hover .link-black {
+  color: #000000 !important;
+}
+.shortcuts a:hover .btn-bs-grey-light {
+  background-color: #b7c1ca;
+  border-color: #b7c1ca;
+  color: #212529;
+}
+.shortcuts a:hover .link-bs-grey-light {
+  color: #b7c1ca !important;
+}
+.shortcuts a:hover .btn-bs-grey-dark {
+  background-color: #9da9b5;
+  border-color: #9da9b5;
+  color: #fff;
+}
+.shortcuts a:hover .link-bs-grey-dark {
+  color: #9da9b5 !important;
+}
+.shortcuts a:hover .btn-apple-keyboard-background {
+  background-color: #a0a8b2;
+  border-color: #a0a8b2;
+  color: #fff;
+}
+.shortcuts a:hover .link-apple-keyboard-background {
+  color: #a0a8b2 !important;
+}
+.shortcuts a:hover .btn-apple-keyboard-light {
+  background-color: #d4d4d4;
+  border-color: #d4d4d4;
+  color: #212529;
+}
+.shortcuts a:hover .link-apple-keyboard-light {
+  color: #d4d4d4 !important;
+}
+.shortcuts a:hover .btn-apple-keyboard-dark {
+  background-color: #7a8394;
+  border-color: #7a8394;
+  color: #fff;
+}
+.shortcuts a:hover .link-apple-keyboard-dark {
+  color: #7a8394 !important;
 }
 /*# sourceMappingURL=website.css.map */
