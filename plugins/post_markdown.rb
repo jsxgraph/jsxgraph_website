@@ -12,9 +12,13 @@ module Jekyll
       # Add target="_blank" to external links
       input = input.gsub(/<a(.*)href="http([^"]+)"([^>]*)>(.*)<\/a>/, '<a\1href="http\2" target="_blank"\3>\4</a>');
       # Add icon to YouTube and mundo links
-      input = input.gsub(/<a(.*)href="([^"]*)(youtube|mundo\.schule)([^"]*)"([^>]*)>(.*)<\/a>/, '<a\1href="\2\3\4" target="_blank"\5><span class="sketcho sketcho-lg sketcho-media me-1"></span>\6</a>');
+      input = input.gsub(/<a(.*)href="([^"]*)(youtube|mundo\.schule)([^"]*)"([^>]*)>(.*)<\/a>/, '<a\1href="\2\3\4" target="_blank"\5><i class="fa-brands fa-fw fa-lg fa-youtube me-1"></i>\6</a>');
       # Add target="_blank" and icon to files
-      input = input.gsub(/<a(.*)href="([^"]+)\.(gif|html|jc|jpg|js|pdf|png|sketcho|svg|ttf|woff|zip)"([^>]*)>(.*)<\/a>/, '<a\1href="\2.\3" target="_blank"\4><span class="sketcho sketcho-lg sketcho-file-\3 me-1"></span>\5</a>');
+      input = input.gsub(/<a(.*)href="([^"]+)\.(pdf)"([^>]*)>(.*)<\/a>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-pdf me-1"></i>\5</a>');
+      input = input.gsub(/<a(.*)href="([^"]+)\.(gif|jpg|jpeg|png|svg)"([^>]*)>(.*)<\/a>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-image me-1"></i>\5</a>');
+      input = input.gsub(/<a(.*)href="([^"]+)\.(zip)"([^>]*)>(.*)<\/a>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-zipper me-1"></i>\5</a>');
+      input = input.gsub(/<a(.*)href="([^"]+)\.(ttf|woff)"([^>]*)>(.*)<\/a>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-word me-1"></i>\5</a>');
+      input = input.gsub(/<a(.*)href="([^"]+)\.(html|jc|js|sketcho)"([^>]*)>(.*)<\/a>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-lines me-1"></i>\5</a>');
     end
 
     def replace_post(input)

@@ -4,7 +4,7 @@
 
 <a href="/data/webinar/advanced7.pdf" target="_blank">PDF [↗]</a>
 
-<a href="https://www.youtube.com/embed/762nj776TIg" target="_blank">Workshop vol.7 [↗]</a> (YouTube)
+[Workshop vol.7](https://www.youtube.com/embed/762nj776TIg) (YouTube)
 
 #### Vol 6, May 5th, 2021
 
