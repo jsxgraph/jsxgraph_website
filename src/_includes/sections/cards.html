@@ -56,18 +56,18 @@
         {%- assign start = line | strip | slice: 0, delimiter_image_size -%}
         {%- if start == delimiter_image and image==nil -%}
 
-        {%- assign image = line | replace_first: delimiter_image, "" -%}
+        {%- assign image = line | replace_first: delimiter_image, "" | strip_newlines | strip -%}
 
         {%- elsif start == delimiter_link and link==nil -%}
 
-        {%- assign link = line | replace_first: delimiter_link, "" -%}
+        {%- assign link = line | replace_first: delimiter_link, "" | strip_newlines | strip -%}
 
         {%- else -%}
 
         {%- assign start = line | strip | slice: 0, delimiter_id_size -%}
         {%- if start == delimiter_id and id==nil -%}
 
-        {%- assign id = line | replace_first: delimiter_id, "" -%}
+        {%- assign id = line | replace_first: delimiter_id, "" | strip_newlines | strip -%}
 
         {%- else -%}
 

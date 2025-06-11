@@ -99,7 +99,7 @@ The following sections (and params) are possible:
 | **image**[^1]   | image            | obligatory | url starting with `/`              | path to the image or gif                                            |
 |                 | title            | optional   | plain text                         | optional title displayed in the bottom right corner                 |
 |                 | width            | optional   | dimension with unit, default: 100% | optional dimension                                                  |
-|                 | class            | optional   |                                    | css class for img                                                   |
+|                 | class            | optional   | e.g. "mx-auto" for centering       | css class for img                                                   |
 | **blogs**       | delimiter_header | optional   | **_#&#9251;_** \| @...             | lines beginning with this string are used as headers                |
 |                 | delimiter_badge  | optional   | **_>&#9251;_** \| @...             | badge after header line                                             |
 |                 | badge_is_date    | optional   | **_false_** \| @...                | string which formats date                                           |
@@ -129,7 +129,7 @@ The following sections (and params) are possible:
 |                 | max_width        | optional   | **_100%_** \| ...                  | max-width of the board                                              |
 |                 | height           | optional   | **_auto_** \| ...                  | height of the board                                                 |
 |                 | aspect_ratio     | optional   | **_1/1_** \| ...                   | aspect-ratio of the board                                           |
-|                 | class            | optional   |                                    | css class for board                                                 |
+|                 | class            | optional   | e.g. "mx-auto" for centering       | css class for board                                                 |
 
 Notes:
 

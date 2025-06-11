@@ -52,7 +52,7 @@
 {%- assign start = line | strip | slice: 0, delimiter_id_size -%}
 {%- if start == delimiter_id and id==nil -%}
 
-{%- assign id = line | replace_first: delimiter_id, "" -%}
+{%- assign id = line | replace_first: delimiter_id, "" | strip_newlines | strip -%}
 
 {%- else -%}
 
