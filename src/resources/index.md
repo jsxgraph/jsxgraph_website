@@ -13,7 +13,4 @@ sections:
    - file: wiki
      layout: text
 
-   - file: plugins
-     layout: text
-     
 ---

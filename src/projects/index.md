@@ -6,15 +6,9 @@ sitemap:
   changefreq: 'weekly'
 
 sections:
-
-   - file: internalprojects
-     layout: text
      
    - file: list
      layout: cards
-
-   - file: externalprojects
-     layout: text
 
 ---
 

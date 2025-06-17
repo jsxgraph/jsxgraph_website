@@ -8,7 +8,7 @@ sitemap:
 
 sections:
 
-   - file: previousversions
+   - file: templates
      layout: text
 
 ---
