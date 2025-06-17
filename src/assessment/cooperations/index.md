@@ -1,6 +1,6 @@
 ---
-title: Presentations
-parent: events
+title: Cooperations
+parent: cooperations
 order: 1
 sitemap:
   priority: 1
@@ -8,7 +8,7 @@ sitemap:
 
 sections:
 
-   - file: presentations
+   - file: cooperations
      layout: text
 
 ---

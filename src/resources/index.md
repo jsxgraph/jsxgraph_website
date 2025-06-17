@@ -15,15 +15,5 @@ sections:
 
    - file: plugins
      layout: text
-
-   - file: templates
-     layout: text
-
-   - file: webinars
-     layout: text
-
-   - file: workshops
-     layout: text
+     
 ---
-
-Hier gehts zur [Unterseite](./files/).

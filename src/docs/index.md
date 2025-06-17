@@ -7,19 +7,10 @@ sitemap:
 
 sections:
 
-   - file: firststeps
-     layout: text
-
-   - file: templates
-     layout: text
-
    - file: api
      layout: text
 
    - file: jsxgraphbook
-     layout: text
-
-   - file: jessiecode
      layout: text
 
 ---

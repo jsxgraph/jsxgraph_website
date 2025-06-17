@@ -1,6 +1,6 @@
 ---
-title: Presentations
-parent: events
+title: External Projects
+parent: projects
 order: 1
 sitemap:
   priority: 1
@@ -8,7 +8,7 @@ sitemap:
 
 sections:
 
-   - file: presentations
+   - file: externalprojects
      layout: text
 
 ---

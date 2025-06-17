@@ -1,6 +1,6 @@
 ---
-title: Presentations
-parent: events
+title: Workshops
+parent: resources
 order: 1
 sitemap:
   priority: 1
@@ -8,7 +8,7 @@ sitemap:
 
 sections:
 
-   - file: presentations
+   - file: workshops
      layout: text
 
 ---

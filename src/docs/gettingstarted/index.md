@@ -1,6 +1,6 @@
 ---
-title: Presentations
-parent: events
+title: Getting Started
+parent: docs
 order: 1
 sitemap:
   priority: 1
@@ -8,7 +8,7 @@ sitemap:
 
 sections:
 
-   - file: presentations
+   - file: firststeps
      layout: text
 
 ---

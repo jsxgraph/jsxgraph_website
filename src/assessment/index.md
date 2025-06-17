@@ -7,13 +7,5 @@ sitemap:
 
 sections:
 
-   - file: jsxgraphstack
-     layout: text
-
-   - file: cooperations
-     layout: text
-
-   - file: formulas
-     layout: text
 
 ---
