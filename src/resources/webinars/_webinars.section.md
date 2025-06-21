@@ -1,4 +1,4 @@
-## Webinar – Advanced JSXGraph Programming
+## Advanced JSXGraph Programming
 
 #### Vol 7, June 9th, 2021
 

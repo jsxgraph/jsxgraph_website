@@ -8,7 +8,12 @@ sitemap:
 
 sections:
 
-   - file: firststeps
+   - file: step1
      layout: text
 
+   - file: step2
+     layout: text
+
+   - file: step3
+     layout: text
 ---

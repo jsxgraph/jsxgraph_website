@@ -1,14 +1,22 @@
 ---
 title: JessieCode
 parent: docs
-order: 1
+order: 4
 sitemap:
   priority: 1
   changefreq: 'weekly'
 
 sections:
 
-   - file: jessiecode
+   - file: datatypes
      layout: text
 
+   - file: comments
+     layout: text
+
+   - file: operators
+     layout: text
+
+   - file: controlstructures
+     layout: text
 ---

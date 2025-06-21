@@ -1,6 +1,7 @@
 ---
-title: Docs
-order: 2
+title: JSXGraphBook
+parent: docs
+order: 3
 sitemap:
   priority: 1
   changefreq: 'weekly'

@@ -11,5 +11,3 @@ sections:
      layout: cards
 
 ---
-
-Hier gehts zur [Unterseite](./references/).
