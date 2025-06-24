@@ -38,7 +38,7 @@
         -> nicht umgesetzt
 
 - projects
-  - internal porojects
+  - internal projects
   - external projects
   - references
     - print
@@ -57,7 +57,7 @@
         -> https://jsxgraph.uni-bayreuth.de/wp/ref/index.html
         -> 4th european workshop on mathematical Link funktioniert nicht und wurde dementsprechend noch nicht übernommen
         -> SVG Open Link unklar, ob das korrekt ist, deswegen nicht übernommen
-        -> Computer Algebra and Dynamic Gemoetry Systems Link funktioniert nicht
+        -> Computer Algebra and Dynamic Geometry Systems Link funktioniert nicht
         -> Eighth international Workshop on Automated Deduction in Geometry Link funktioniert nicht
 
 - blog
