@@ -1,7 +1,7 @@
 ---
 title: External Projects
 parent: projects
-order: 1
+order: 2
 sitemap:
   priority: 1
   changefreq: 'weekly'

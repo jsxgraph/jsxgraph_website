@@ -43,6 +43,7 @@
   - references
     - print
             -> Auf der aktuellen Reference Seite ist beim ersten Stichpunkt ein Link, der nicht mehr aktuell scheint?
+            -> radford Link geht auch nicht mehr
     - online
 
 - events
@@ -53,6 +54,11 @@
     - upcoming
     - past
   - presentations
+        -> https://jsxgraph.uni-bayreuth.de/wp/ref/index.html
+        -> 4th european workshop on mathematical Link funktioniert nicht und wurde dementsprechend noch nicht übernommen
+        -> SVG Open Link unklar, ob das korrekt ist, deswegen nicht übernommen
+        -> Computer Algebra and Dynamic Gemoetry Systems Link funktioniert nicht
+        -> Eighth international Workshop on Automated Deduction in Geometry Link funktioniert nicht
 
 - blog
   - releases
