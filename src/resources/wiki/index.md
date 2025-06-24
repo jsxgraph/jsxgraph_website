@@ -1,7 +1,7 @@
 ---
 title: Wiki
 parent: resources
-order: 1
+order: 3
 sitemap:
   priority: 1
   changefreq: 'weekly'

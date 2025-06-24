@@ -1,7 +1,7 @@
 ---
 title: Templates
 parent: resources
-order: 1
+order: 5
 sitemap:
   priority: 1
   changefreq: 'weekly'

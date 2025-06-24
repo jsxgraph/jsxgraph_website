@@ -1,14 +1,14 @@
 ---
 title: Plugins
 parent: resources
-order: 1
+order: 4
 sitemap:
   priority: 1
   changefreq: 'weekly'
 
-# sections:
+sections:
 
-#    - file: plugins
-#      layout: text
+    - file: plugins
+      layout: text
 
 ---

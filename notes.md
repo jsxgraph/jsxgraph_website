@@ -1,0 +1,63 @@
+- about
+  - (longer) description
+        -> description notwendig
+  - press releases
+  - team
+        -> done
+
+- docs
+  - getting started/first steps
+  - templates/inlcude
+  - API
+        -> external link fehlt
+  - JSXGraph book
+        -> external link fehlt
+  - JessiCode
+
+- resources
+  - files
+        -> previous versions eingefügt
+  - share (new)
+        -> external link fehlt
+  - wiki (old)
+        -> external link fehlt
+  - plugins
+        -> Links übernommen, müssen noch in Fliestext eingearbeitet werden
+  - templates
+  - webinar
+        -> alte Webinare eingefügt
+        -> Unterschied zwischen Workshops und Webinar?
+  - workshops
+
+- assessment
+  - JSXGraph & STACK
+        -> nicht umgesetzt
+  - cooperations
+        -> nicht umgesetzt
+  - formulas
+        -> nicht umgesetzt
+
+- projects
+  - internal porojects
+  - external projects
+  - references
+    - print
+            -> Auf der aktuellen Reference Seite ist beim ersten Stichpunkt ein Link, der nicht mehr aktuell scheint?
+    - online
+
+- events
+  - IJC
+    - upcoming
+    - past
+  - conferences
+    - upcoming
+    - past
+  - presentations
+
+- blog
+  - releases
+        -> releases
+  - news
+        -> examples, webserver, how to
+  - announcements
+        -> workshops, conferences

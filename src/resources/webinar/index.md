@@ -1,14 +1,14 @@
 ---
-title: Webinars
+title: Webinar
 parent: resources
-order: 1
+order: 6
 sitemap:
   priority: 1
   changefreq: 'weekly'
 
 sections:
 
-   - file: webinars
+   - file: webinar
      layout: text
 
 ---
