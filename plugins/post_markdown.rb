@@ -18,7 +18,7 @@ module Jekyll
       input = input.gsub(/<a(.*)href="([^"]+)\.(gif|jpg|jpeg|png|svg)"([^>]*)>(.*)<\/a>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-image me-1"></i>\5</a>');
       input = input.gsub(/<a(.*)href="([^"]+)\.(zip)"([^>]*)>(.*)<\/a>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-zipper me-1"></i>\5</a>');
       input = input.gsub(/<a(.*)href="([^"]+)\.(ttf|woff)"([^>]*)>(.*)<\/a>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-word me-1"></i>\5</a>');
-      input = input.gsub(/<a(.*)href="([^"]+)\.(html|jc|js|sketcho)"([^>]*)>(.*)<\/a>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-lines me-1"></i>\5</a>');
+      input = input.gsub(/<a(.*)href="([^"]+)\.(html|jc|js|sketcho|css|map)"([^>]*)>(.*)<\/a>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>\5</a>');
     end
 
     def replace_post(input)
