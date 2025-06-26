@@ -28716,6 +28716,9 @@ small,
 .fs-inherit {
   font-size: inherit;
 }
+.fs-normal {
+  font-size: var(--bs-body-font-size);
+}
 .circle-clip,
 .square-clip,
 .pentagon-clip,
@@ -55699,6 +55702,11 @@ hr {
   border-width: var(--bs-border-width);
   opacity: 1;
 }
+.normal {
+  font-weight: normal;
+  font-size: var(--bs-body-font-size);
+  font-family: var(--bs-body-font-family);
+}
 :focus,
 :focus-visible,
 .focus,
@@ -58031,7 +58039,8 @@ footer {
 .language-php .code-highlighting:before {
   content: "PHP";
 }
-body {
+body,
+.normal {
   font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;
 }
 h1,
