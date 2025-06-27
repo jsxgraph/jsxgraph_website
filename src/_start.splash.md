@@ -4,7 +4,7 @@
         {{ const.version }}
     </div>
     <div class="bigger">
-        Dynamic Mathematics with JavaScript
+        The Power of Interactive Browser-Based Visualization.
     </div>
 </div>
 

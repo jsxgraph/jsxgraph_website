@@ -16,18 +16,23 @@ splash:
   color: var(--bs-primary)
   content:
     - file: start
-      overlay_background: rgba(var(--bs-primary-faded-rgb), 0.85)
+      overlay_background: rgba(var(--bs-secondary-faded-rgb), 0.90)
 
 sections:
-
-  - file: description
-    layout: text
 
   - file: example1
     layout: board-block
     data:
       boardid: box-123456789
 
+  - file: example2
+    layout: board-block
+    data:
+      boardid: box-123456780
+      
+  - file: description
+    layout: text
+  
   - file: features
     layout: text
 

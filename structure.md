@@ -1,5 +1,5 @@
 > Verlängerung Vertrag
-> Was ist zu tun? Anpassung share-Layout / Betreuung WiSe VL?
+> Was ist zu tun? Anpassung share-Layout / Betreuung WiSe VL? / JSDocs Layout
 > Bis Ende 2025 oder 31.03.2026
 > 40 h/mon
 
@@ -27,7 +27,7 @@
   > Texte:
     - (longer) description
     - press releases
-    - team
+    - core developer team
 - Docs
     - getting started/first steps
       > fehlende Blöcke
@@ -41,7 +41,8 @@
       > Woher kommen die Inhalte?
 - Resources
     - Versions
-      > Table-Layout
+      > Liste von JSXGraph website
+      > jsdelivr & cdn nur die Struktur angeben und bis zu welcher Version verfügbar
     - share (new)
     - wiki (old)
     - plugins
@@ -86,5 +87,16 @@
     - releases
     - news
     - announcements
-    
 
+
+> Home:
+
+
+Integrated into digital assessment systems, JSXGraph enables the creation of intelligent, responsive tasks that adapt to student input in real time. Whether in classrooms, research, or exams, JSXGraph empowers users to visualize, experiment, and truly understand mathematics.
+
+
+Technische Aufzählung
+
+- rendering SVG
+- licence
+- 
