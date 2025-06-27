@@ -1,5 +1,5 @@
 ---
-title: Files
+title: Releases
 parent: resources
 order: 1
 sitemap:

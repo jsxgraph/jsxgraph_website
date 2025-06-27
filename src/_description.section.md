@@ -1,6 +1,8 @@
-> JSXGraph-Abbildung
+> JSXGraph-Abbildung 3
 
 Integrated into digital __assessment__ systems, JSXGraph enables the creation of intelligent, responsive tasks that adapt to student input in real time. Whether in classrooms, research, or exams, JSXGraph empowers users to visualize, experiment, and truly understand mathematics.
+
+> JSXGraph-Abbildung 4
 
 ### Features
 
@@ -12,11 +14,14 @@ Integrated into digital __assessment__ systems, JSXGraph enables the creation of
 - Differential equations
 - Charts and statistics
 
+> JSXGraph-Abbildung 5
+
 ### License
 
 - LGPL – Lesser GNU General Public License %%% Verlinken
 - MIT license %%% Verlinken
 
+> JSXGraph-Abbildung 6
 
 ### Technical Features
 
@@ -32,7 +37,7 @@ Integrated into digital __assessment__ systems, JSXGraph enables the creation of
 
 
 
-> JSXGraph Beispiele, die gleich mit share verlinkt sind
+> JSXGraph Abbildung 1 - 6
 
 - Surface Plot (Text links)
 - Feuerbach (Text rechts)

@@ -28,7 +28,8 @@ sections:
   - file: example2
     layout: board-block
     data:
-      boardid: box-123456780
+      boardid: box-202506271643
+      board_pos: second
       
   - file: description
     layout: text

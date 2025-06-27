@@ -10,12 +10,10 @@ sections:
   - file: description
     layout: text
 
-  - file: pressreleases
+  - file: team
     layout: text
 
-  - file: team
-    layout: image-block
-    data:
-      image: /media/ubt-campus.png
+  - file: pressreleases
+    layout: text
 
 ---

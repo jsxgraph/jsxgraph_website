@@ -1,11 +1,14 @@
-JSXGraph is developed at the University of Bayreuth. At the moment there are the following members in the developer team:
+## Project Leader and Main Developer
+
+- Alfred Wassermann
+
+## Core Developer Team
 
 - Matthias Ehmann
 - Carsten Miller
 - Andreas Walter
-- Alfred Wassermann
-
-Former members:
+ 
+### Former Members
 
 - Michael Gerhäuser
 - Bianca Valentin
