@@ -10,7 +10,7 @@ Integrated into digital __assessment__ systems, JSXGraph enables the creation of
 - Vector fields
 - Implicit curves
 - Differential equations
-- Charts and statistics- 
+- Charts and statistics
 
 ### License
 
@@ -21,6 +21,7 @@ Integrated into digital __assessment__ systems, JSXGraph enables the creation of
 ### Technical Features
 
 - Standalone JavaScript library
+- No server-side processing required
 - High-performance
 - Small footprint
 - Multi-touch support
@@ -33,8 +34,8 @@ Integrated into digital __assessment__ systems, JSXGraph enables the creation of
 
 > JSXGraph Beispiele, die gleich mit share verlinkt sind
 
-- Surface Plot
-- Feuerbach
+- Surface Plot (Text links)
+- Feuerbach (Text rechts)
 - Polyeder Mirror ...
 - Implizit Plot
 - 3D Vektorfeld

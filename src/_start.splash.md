@@ -4,7 +4,7 @@
         {{ const.version }}
     </div>
     <div class="bigger">
-        The Power of Interactive Browser-Based Visualization.
+        Math Visualization. Interactive. Web-Based. Seamless. 
     </div>
 </div>
 
