@@ -44,11 +44,11 @@
                 {% for post in site.posts %}
                 <a href="{{ post.url }}" class="list-group-item list-group-item-action px-4 py-4">
                     <article class="post-preview">
-                        <h3>{{ post.title }}</h3>
-                        {% include main/cats-and-tags.html cats=post.categories tags=post.tags %}
+                        {% include main/post-header.html post=post head_level=3 %}
+
                         {{ post.content | truncatewords: posts_excerpt_trunc | strip_html | xml_escape}}
                     </article>
-                    <div class="text-end">Read more &rarr;</div>
+                    <div class="text-end link-secondary">Read more &rarr;</div>
                 </a>
                 {% endfor %}
             </div>
@@ -74,24 +74,16 @@
 
         {% else %}
 
-        <div class="mb-5">
+        <div class="mb-4">
 
-            {%- assign additional = posts_root_page.header | default: posts_root_page.title %}
-            {% include main/cats-and-tags.html additional=additional %}
+            <div class="float-end">
+                <a href="{{ posts_root_page.url }}" class="btn btn-sm btn-secondary">
+                    &larr; Back to all posts
+                </a>
+            </div>
 
-            <h1 class="mt-0">
-                {{ page.title }}
-            </h1>
-            <div class="mt-n3 text-muted">
-                {% if page.subtitle %}
-                <h2 class="normal">
-                    {{ page.subtitle }}
-                </h2>
-                {% endif %}
-                <p>
-                    Posted on {{ page.date | date: "%B %-d, %Y" }}
-                    {% if page.author %}by {{ page.author }}{%- endif %}
-                </p>
+            <div class="pt-2">
+            {% include main/post-header.html post=page %}
             </div>
         </div>
 

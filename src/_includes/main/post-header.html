@@ -1,0 +1,36 @@
+{%- assign head_level = include.head_level | default: 1 -%}
+{%- assign post = include.post -%}
+
+{% include main/cats-and-tags.html cats=post.categories tags=post.tags %}
+
+{% if head_level <= 5 %}{% assign tag_title = head_level | prepend: "h" %}
+{% else %}{% assign tag_title = "p" %}{% endif %}
+{% assign tag_title_close = tag_title | prepend: "/" %}
+{% if head_level <= 4 %}{% assign tag_subtitle = head_level | plus: 1 | prepend: "h" %}
+{% else %}{%- assign tag_subtitle = "p" -%}{% endif %}
+{% assign tag_subtitle_close = tag_subtitle | prepend: "/" %}
+{% if head_level <= 2 %}{%- assign tag_subtitle_display = head_level | plus: 3 | prepend: "h" -%}
+{% else %}{%- assign tag_subtitle_display = "normal" -%}{% endif %}
+
+<div class="d-flex justify-content-between align-items-end mb-2">
+    <div>
+        <!--@formatter:off-->
+        <{{tag_title}} class="mt-0 mb-0">
+        {{ post.title }}
+        <{{tag_title_close}}>
+        <!--@formatter:on-->
+        <div class="mt-n1 text-muted">
+            <!--@formatter:off-->
+            {% if post.subtitle %}
+            <{{tag_subtitle}} class="{{tag_subtitle_display}} mb-0">
+                {{ post.subtitle }}
+            <{{tag_subtitle_close}}>
+            {% endif %}
+            <!--@formatter:on-->
+        </div>
+    </div>
+    <div class="ms-3 text-muted">
+        Posted on {{ post.date | date: "%B %-d, %Y" }}
+        {% if post.author %}by {{ post.author }}{%- endif %}
+    </div>
+</div>
