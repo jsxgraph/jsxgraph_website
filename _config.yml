@@ -57,12 +57,20 @@ defaults:
       absolute_paths: false
       in_shortcuts: false
   - scope:
+      path: "news"
+    values:
+      layout: posts
+      is_blogpost: false
+  - scope:
       path: "_posts"
     values:
-      layout: blogpost
-      permalink: /blog/:year-:month-:day-:title:output_ext
+      layout: posts
+      is_blogpost: true
+      permalink: /news/:year-:month-:day-:title:output_ext
   - scope:
       path: "_posts/releases"
     values:
+      layout: posts
+      is_blogpost: true
       category: Release
-      permalink: /blog/release/:title:output_ext
+      permalink: /news/release/:title:output_ext

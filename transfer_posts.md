@@ -14,10 +14,12 @@
 3. Es sind bei Posts die folgenden Attribute im Kopf erlaubt:
     - `tags`
         - Liste mit `-` von mehreren Schlagworten
+        - "Themen" des Posts
         - Auf Schreibweise achten!
     - `category`
-        - nur eine!
-        - Nicht bei Releases!
+        - nur eine: Bei mehreren bitte auf eine reduzieren. Der Rest ist "tag".
+        - "Art" des Posts
+        - Nicht bei Releases: Hier gar keine Kategorie angeben. Es wird automatisch die Kategorie "Release" ergänzt.
     - `title`
         - muss jeder Beitrag haben
         - kann sich vom Titel im Dateinamen unterscheiden

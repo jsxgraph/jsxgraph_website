@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include basics.html %}
+    {% include main/head.html %}
+</head>
+
+{%- assign posts_root = page.posts_root | default: "news" -%}
+{%- assign posts_excerpt_trunc = page.posts_excerpt_trunc | default: 50 -%}
+
+{%- for i_page in site.pages -%}
+{%- assign id = i_page.url | split: '/' | last -%}
+{%- if id == posts_root -%}
+{%- assign posts_root_page = i_page -%}
+{%- endif -%}
+{%- endfor -%}
+
+<body data-role="page" class="position-relative">
+    {% include main/menu.html active=posts_root %}
+    {% include main/topbar.html active=posts_root %}
+
+    <noscript>
+        <div class="alert alert-danger" role="alert">
+            This page requires JavaScript to work correctly.
+            Please enable JavaScript in your browser and reload the page.
+        </div>
+    </noscript>
+
+    <main class="container md-container m-between-5 mt-4 mb-5 pb-5">
+
+        {% if page.is_blogpost == false %}
+        <div class="mb-3">
+            <h1>{{ page.header | default: page.title }}</h1>
+        </div>
+
+        {%- if page.render_this == "before" or page.render_this == true -%}
+        {% include content.html %}
+        {%- endif -%}
+
+        <div class="blogposts">
+
+            <h2 class="d-none">List of Posts</h2>
+            <div class="list-group list-group-flush mx-n4">
+                {% for post in site.posts %}
+                <a href="{{ post.url }}" class="list-group-item list-group-item-action px-4 py-4">
+                    <article class="post-preview">
+                        <h3>{{ post.title }}</h3>
+                        {% include main/cats-and-tags.html cats=post.categories tags=post.tags %}
+                        {{ post.content | truncatewords: posts_excerpt_trunc | strip_html | xml_escape}}
+                    </article>
+                    <div class="text-end">Read more &rarr;</div>
+                </a>
+                {% endfor %}
+            </div>
+
+            <h2>Tags</h2>
+            <ul>
+                {% for tag in site.tags %}
+                <li>{{ tag[0] }}</li>
+                {% endfor %}
+            </ul>
+
+            <h2>Categories</h2>
+            <ul>
+                {% for cat in site.categories %}
+                <li>{{ cat[0] }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        {%- if page.render_this == "after" -%}
+        {% include content.html %}
+        {%- endif -%}
+
+        {% else %}
+
+        <div class="mb-5">
+
+            {%- assign additional = posts_root_page.header | default: posts_root_page.title %}
+            {% include main/cats-and-tags.html additional=additional %}
+
+            <h1 class="mt-0">
+                {{ page.title }}
+            </h1>
+            <div class="mt-n3 text-muted">
+                {% if page.subtitle %}
+                <h2 class="normal">
+                    {{ page.subtitle }}
+                </h2>
+                {% endif %}
+                <p>
+                    Posted on {{ page.date | date: "%B %-d, %Y" }}
+                    {% if page.author %}by {{ page.author }}{%- endif %}
+                </p>
+            </div>
+        </div>
+
+        {% include content.html %}
+
+        {% endif %}
+    </main>
+
+    {% include main/cookie-hint.html %}
+    {% include main/footer.html %}
+</body>
+</html>
