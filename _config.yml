@@ -66,11 +66,11 @@ defaults:
     values:
       layout: posts
       is_blogpost: true
-      permalink: /news/:year-:month-:day-:title:output_ext
+      permalink: /:year-:month-:day-:title/ # /news/:year-:month-:day-:title:output_ext   # for better SEO
   - scope:
       path: "_posts/releases"
     values:
       layout: posts
       is_blogpost: true
       category: Release
-      permalink: /news/release/:title:output_ext
+      permalink: /:year-:month-:day-:title/ # /news/release/:title:output_ext             # for better SEO
