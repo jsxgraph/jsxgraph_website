@@ -6,7 +6,7 @@
 </head>
 
 {%- assign posts_root = page.posts_root | default: "news" -%}
-{%- assign posts_excerpt_trunc = page.posts_excerpt_trunc | default: 50 -%}
+{%- assign posts_intro = page.posts_intro | default: 50 -%}
 
 {%- for i_page in site.pages -%}
 {%- assign id = i_page.url | split: '/' | last -%}
@@ -29,6 +29,8 @@
     <main class="container md-container m-between-5 mt-4 mb-5 pb-5">
 
         {% if page.is_blogpost == false %}
+        <!-- ###################### News overview ###################### -->
+
         <div class="mb-3">
             <h1>{{ page.header | default: page.title }}</h1>
         </div>
@@ -46,9 +48,9 @@
                     <article class="post-preview">
                         {% include main/post-header.html post=post head_level=3 %}
 
-                        {{ post.content | truncatewords: posts_excerpt_trunc | strip_html | xml_escape}}
+                        {{ post.content | truncatewords: posts_intro | strip_html | xml_escape}}
                     </article>
-                    <div class="text-end link-secondary">Read more &rarr;</div>
+                    <div class="text-end link-primary">Read more &rarr;</div>
                 </a>
                 {% endfor %}
             </div>
@@ -73,6 +75,7 @@
         {%- endif -%}
 
         {% else %}
+        <!-- ###################### News detailled ###################### -->
 
         <div class="mb-4">
 

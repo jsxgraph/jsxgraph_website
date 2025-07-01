@@ -1,8 +1,6 @@
 {%- assign head_level = include.head_level | default: 1 -%}
 {%- assign post = include.post -%}
 
-{% include main/cats-and-tags.html cats=post.categories tags=post.tags %}
-
 {% if head_level <= 5 %}{% assign tag_title = head_level | prepend: "h" %}
 {% else %}{% assign tag_title = "p" %}{% endif %}
 {% assign tag_title_close = tag_title | prepend: "/" %}
@@ -12,14 +10,33 @@
 {% if head_level <= 2 %}{%- assign tag_subtitle_display = head_level | plus: 3 | prepend: "h" -%}
 {% else %}{%- assign tag_subtitle_display = "normal" -%}{% endif %}
 
-<div class="d-flex justify-content-between align-items-end mb-2">
-    <div>
-        <!--@formatter:off-->
-        <{{tag_title}} class="mt-0 mb-0">
-        {{ post.title }}
-        <{{tag_title_close}}>
-        <!--@formatter:on-->
-        <div class="mt-n1 text-muted">
+<div class="mb-4">
+    <div class="d-flex flex-wrap align-items-center">
+        <div class="me-3">
+            <!--@formatter:off-->
+            <{{tag_title}} class="mt-0 mb-0">
+            {{ post.title }}
+            <{{tag_title_close}}>
+            <!--@formatter:on-->
+        </div>
+        <div class="ms-auto d-flex m-between-2">
+            {% for cat in post.categories %}
+            <div class="badge rounded-pill bg-primary px-2 py-1 text-white">
+                <i class="fa-solid fa-layer-group"></i>
+                {{ cat }}
+            </div>
+            {% endfor %}
+
+            {% for tag in post.tags %}
+            <div class="badge rounded-pill bg-secondary px-2 py-1 text-white">
+                <i class="fa-solid fa-fw fa-tag"></i>
+                {{ tag }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="d-flex flex-wrap align-items-baseline text-muted">
+        <div class="me-3">
             <!--@formatter:off-->
             {% if post.subtitle %}
             <{{tag_subtitle}} class="{{tag_subtitle_display}} mb-0">
@@ -28,9 +45,9 @@
             {% endif %}
             <!--@formatter:on-->
         </div>
-    </div>
-    <div class="ms-3 text-muted">
-        Posted on {{ post.date | date: "%B %-d, %Y" }}
-        {% if post.author %}by {{ post.author }}{%- endif %}
+        <div class="ms-auto">
+            Posted on {{ post.date | date: "%B %-d, %Y" }}
+            {% if post.author %}by {{ post.author }}{%- endif %}
+        </div>
     </div>
 </div>

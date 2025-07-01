@@ -6,7 +6,6 @@ in_shortcuts: true
 sitemap:
   priority: 1
   changefreq: 'weekly'
-
 ---
 
-News about JSXGraph.
+Stay informed about the latest developments in JSXGraph — from new features and performance enhancements to upcoming events that shape the future of interactive mathematics on the web.
