@@ -9,6 +9,6 @@ sitemap:
 sections:
 
    - file: externalprojects
-     layout: text
+     layout: cards
 
 ---

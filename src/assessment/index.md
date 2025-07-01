@@ -6,6 +6,7 @@ sitemap:
   changefreq: 'weekly'
 
 sections:
+    - layout: subpages
 
 
 ---

@@ -6,8 +6,8 @@ sitemap:
   changefreq: 'weekly'
 
 sections:
-     
-   - file: list
-     layout: cards
+
+sections:
+    - layout: subpages
 
 ---
