@@ -31,10 +31,16 @@ sections:
       boardid: box-202506271643
       board_pos: second
       
-  - file: description
+  - file: example3
     layout: text
   
   - file: features
+    layout: text
+
+  - file: license
+    layout: text
+
+  - file: technicalfeatures
     layout: text
 
 ---
