@@ -15,6 +15,11 @@
                     {%- assign n_topbar = 0 -%}
                     {%- for i_page in sorted_pages -%}
                     {% assign id = i_page.url | split: '/' | last %}
+                    {%- if id == "index.html" -%}
+                    {%- assign id = i_page.url | split: '/' -%}
+                    {%- assign tmp = id.size | minus: 2 -%}
+                    {%- assign id = id[tmp] -%}
+                    {%- endif -%}
                     {%- if i_page.in_menu_topbar == true -%}
                     {%- assign n_topbar = n_topbar | add: 1 -%}
                     <li class="nav-item d-none d-lg-block">

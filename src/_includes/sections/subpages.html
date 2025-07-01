@@ -25,6 +25,11 @@
     {%- endif -%}
 
     {%- assign id = page.url | split: '/' | last -%}
+    {%- if id == "index.html" -%}
+    {%- assign id = page.url | split: '/' -%}
+    {%- assign tmp = id.size | minus: 2 -%}
+    {%- assign id = id[tmp] -%}
+    {%- endif -%}
     {%- assign parent = include.parent | default: id -%}
 
     <div class="row g-3 w-100">

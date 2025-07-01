@@ -10,6 +10,11 @@
 
 {%- for i_page in site.pages -%}
 {%- assign id = i_page.url | split: '/' | last -%}
+{%- if id == "index.html" -%}
+{%- assign id = i_page.url | split: '/' -%}
+{%- assign tmp = id.size | minus: 2 -%}
+{%- assign id = id[tmp] -%}
+{%- endif -%}
 {%- if id == posts_root -%}
 {%- assign posts_root_page = i_page -%}
 {%- endif -%}
