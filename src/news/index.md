@@ -3,6 +3,7 @@ title: News
 icon: fa-solid fa-bullhorn
 order: 7
 in_shortcuts: true
+is_blogpost: false
 sitemap:
   priority: 1
   changefreq: 'weekly'

@@ -57,7 +57,6 @@ defaults:
       render_this: true
       absolute_paths: false
       in_shortcuts: false
-      is_blogpost: false
   - scope:
       path: "error"
     values:
@@ -73,6 +72,7 @@ defaults:
       path: "news/"
     values:
       layout: posts
+      is_blogpost: false # might not work with pagination here - define in file
       pagination:
         enabled: true
   - scope:
