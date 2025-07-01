@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Release of 0.99.4
 subtitle: Major new release
 date: 2016-02-10T14:50:08+00:00

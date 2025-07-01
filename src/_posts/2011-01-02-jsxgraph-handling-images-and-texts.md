@@ -3,7 +3,6 @@ id: 520
 title: 'JSXGraph &#8211; handling images and texts'
 date: 2011-01-02T13:52:23+00:00
 author: alfred
-layout: post
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=520
 permalink: /2011/01/02/jsxgraph-handling-images-and-texts/
 categories:

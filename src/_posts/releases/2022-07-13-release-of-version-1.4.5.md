@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Release of 1.4.5
 subtitle: Patch release
 date: 2022-07-13T13:00:00+00:00

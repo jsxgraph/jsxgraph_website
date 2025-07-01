@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Release of 1.8.0
 subtitle: Major new release
 categories:

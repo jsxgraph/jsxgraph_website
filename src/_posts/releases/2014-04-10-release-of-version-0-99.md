@@ -3,7 +3,6 @@ id: 859
 title: Release of version 0.99
 date: 2014-04-10T08:29:10+00:00
 author: alfred
-layout: post
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=859
 permalink: /2014/04/10/release-of-version-0-99/
 categories:

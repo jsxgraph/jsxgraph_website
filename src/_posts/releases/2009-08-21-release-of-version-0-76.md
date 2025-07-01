@@ -3,7 +3,6 @@ id: 312
 title: Release of version 0.76
 date: 2009-08-21T10:37:17+00:00
 author: alfred
-layout: post
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=312
 permalink: /2009/08/21/release-of-version-0-76/
 categories:

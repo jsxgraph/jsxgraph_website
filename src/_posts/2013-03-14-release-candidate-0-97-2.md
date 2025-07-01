@@ -3,7 +3,6 @@ id: 822
 title: Release candidate 0.97
 date: 2013-03-14T12:35:37+00:00
 author: alfred
-layout: post
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=822
 permalink: /2013/03/14/release-candidate-0-97-2/
 categories:

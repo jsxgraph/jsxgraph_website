@@ -3,7 +3,6 @@ id: 263
 title: 'Who&#8217;s using JSXGraph?'
 date: 2009-07-24T12:49:59+00:00
 author: alfred
-layout: post
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=263
 permalink: /2009/07/24/whos-using-jsxgraph/
 categories:

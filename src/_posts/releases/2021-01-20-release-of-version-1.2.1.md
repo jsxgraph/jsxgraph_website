@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Release of 1.2.1
 subtitle: Patch release
 date: 2021-01-20T12:00:00+00:00

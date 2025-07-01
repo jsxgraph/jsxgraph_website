@@ -3,7 +3,6 @@ id: 695
 title: Release of version 0.93
 date: 2012-01-26T14:10:07+00:00
 author: alfred
-layout: post
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=695
 permalink: /2012/01/26/release-of-version-0-93/
 categories:

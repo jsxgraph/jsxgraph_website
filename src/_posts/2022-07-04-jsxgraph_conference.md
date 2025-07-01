@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 3. international JSXGraph conference 
 subtitle: Online conference
 date: 2022-07-04T07:00:00+00:00

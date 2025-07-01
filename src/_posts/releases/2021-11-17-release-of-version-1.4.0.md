@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Release of 1.4.0
 subtitle: Major new release
 date: 2021-11-17T09:00:00+00:00

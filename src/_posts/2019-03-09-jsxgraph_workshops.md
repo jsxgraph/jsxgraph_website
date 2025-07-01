@@ -1,5 +1,4 @@
 ---
-layout: post
 title: JSXGraph related workshops 
 subtitle: Create learning material for moodle 
 date: 2019-03-09T09:00:00+00:00

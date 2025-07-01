@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Release of 1.00.0
 subtitle: Major new release
 date: 2020-03-26T09:00:00+00:00

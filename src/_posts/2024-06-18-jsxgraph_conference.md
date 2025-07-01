@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 5. international JSXGraph conference 
 subtitle: Online conference
 categories:

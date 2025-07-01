@@ -3,7 +3,6 @@ id: 552
 title: Option handling in version 0.90
 date: 2011-06-08T11:10:26+00:00
 author: alfred
-layout: post
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=552
 permalink: /2011/06/08/option-handling-in-version-0-90/
 categories:

@@ -3,7 +3,6 @@ id: 360
 title: Release of version 0.77
 date: 2009-09-30T13:29:31+00:00
 author: alfred
-layout: post
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=360
 permalink: /2009/09/30/release-of-version-0-77/
 categories:

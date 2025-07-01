@@ -3,7 +3,6 @@ id: 870
 title: Release of version 0.99.2
 date: 2014-12-12T13:34:13+00:00
 author: alfred
-layout: post
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=870
 permalink: /2014/12/12/release-of-version-0-99-2/
 categories:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Release of 1.4.1
 subtitle: Maintenance release
 date: 2022-01-26T09:00:00+00:00

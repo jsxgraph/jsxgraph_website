@@ -3,7 +3,6 @@ id: 851
 title: Release of version 0.98
 date: 2013-09-27T11:29:02+00:00
 author: alfred
-layout: post
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=851
 permalink: /2013/09/27/release-of-version-0-98/
 categories:

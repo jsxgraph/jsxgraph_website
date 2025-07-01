@@ -3,7 +3,6 @@ id: 383
 title: Release of version 0.78
 date: 2009-11-16T16:09:04+00:00
 author: alfred
-layout: post
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=383
 permalink: /2009/11/16/release-of-version-0-78/
 categories:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Exciting News - New Discussion Forum
 categories:
   - Discussion

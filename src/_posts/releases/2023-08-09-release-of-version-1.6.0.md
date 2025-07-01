@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Release of 1.6.0
 subtitle: Major new release
 date: 2023-08-09T07:00:00+00:00

@@ -3,7 +3,6 @@ id: 686
 title: v 0.92 available on CDN
 date: 2011-09-17T14:32:45+00:00
 author: alfred
-layout: post
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=686
 permalink: /2011/09/17/v-0-92-available-on-cdn/
 categories:

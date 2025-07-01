@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Release of 1.11.0
 subtitle: Major release
 categories:

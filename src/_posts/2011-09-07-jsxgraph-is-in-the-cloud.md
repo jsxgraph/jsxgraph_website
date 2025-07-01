@@ -3,7 +3,6 @@ id: 658
 title: JSXGraph is in the cloud!
 date: 2011-09-07T15:51:51+00:00
 author: alfred
-layout: post
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=658
 permalink: /2011/09/07/jsxgraph-is-in-the-cloud/
 categories:
