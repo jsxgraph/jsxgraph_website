@@ -18,6 +18,10 @@
             {%- assign id = id[tmp] -%}
             {%- endif -%}
 
+            {%- if i_page.pagination_info and i_page.pagination_info.curr_page > 1 -%}
+            {%- continue -%}
+            {%- endif -%}
+
             {%- if i_page.in_menu_popup == true and i_page.parent == nil -%}
             {%- if i_page.external_link -%}
             {%- assign link = i_page.external_link -%}

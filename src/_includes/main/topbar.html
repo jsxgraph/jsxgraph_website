@@ -20,6 +20,11 @@
                     {%- assign tmp = id.size | minus: 2 -%}
                     {%- assign id = id[tmp] -%}
                     {%- endif -%}
+
+                    {%- if i_page.pagination_info and i_page.pagination_info.curr_page > 1 -%}
+                    {%- continue -%}
+                    {%- endif -%}
+
                     {%- if i_page.in_menu_topbar == true -%}
                     {%- assign n_topbar = n_topbar | add: 1 -%}
                     <li class="nav-item d-none d-lg-block">

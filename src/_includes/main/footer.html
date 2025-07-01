@@ -11,6 +11,11 @@
                     <div class="m-between-2 m-between-md-3">
                         {%- assign sorted_pages = site.pages | sort: 'order' -%}
                         {%- for i_page in sorted_pages %}
+
+                        {%- if i_page.pagination_info and i_page.pagination_info.curr_page > 1 -%}
+                        {%- continue -%}
+                        {%- endif -%}
+
                         {%- if i_page.in_menu_footer == true -%}
                         <div>
                             <a href="{{ relBase }}{{ i_page.url }}" class="link-white link-quiet">
