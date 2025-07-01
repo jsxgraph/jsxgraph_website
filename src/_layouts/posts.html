@@ -47,18 +47,32 @@
         <div class="blogposts">
 
             <h2 class="d-none">List of Posts</h2>
-            <div class="list-group list-group-flush mx-n4">
-                {% for post in site.posts %}
+            <div class="list-group list-group-flush mx-n4 mb-4">
+
+                {% for post in paginator.posts %}
                 <a href="{{ post.url }}" class="list-group-item list-group-item-action px-4 py-4">
                     <article class="post-preview">
                         {% include main/post-header.html post=post head_level=3 %}
 
                         {{ post.content | truncatewords: posts_intro | strip_html | xml_escape}}
                     </article>
-                    <div class="text-end link-primary">Read more &rarr;</div>
+                    <div class="text-end link-primary">Read more</div>
                 </a>
                 {% endfor %}
+
             </div>
+
+            {% if paginator.total_pages > 1 %}
+            <h2 class="d-none">Pagination</h2>
+            <div class="d-flex">
+                {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}" class="btn btn-outline-primary w-fix-lg me-auto">Newer Posts</a>
+                {% endif %}
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="btn btn-outline-primary w-fix-lg ms-auto">Older Posts</a>
+                {% endif %}
+            </div>
+            {% endif %}
 
             <h2>Tags</h2>
             <ul>
@@ -91,7 +105,7 @@
             </div>
 
             <div class="pt-2">
-            {% include main/post-header.html post=page %}
+                {% include main/post-header.html post=page %}
             </div>
         </div>
 

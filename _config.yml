@@ -21,6 +21,8 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
+plugins:
+  - jekyll-paginate-v2
 
 # Handling Reading
 safe: false
@@ -32,7 +34,17 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter: false
 disable_disk_cache: true
 
-# scoping
+# Pagination blogposts
+pagination:
+  enabled: true
+  per_page: 5
+  limit: 0
+  permalink: '/page-:num.html'
+  title: ':title (Page :num)'
+  sort_field: 'date'
+  sort_reverse: true
+
+# Scoping
 defaults:
   - scope:
       path: "" # landing page
@@ -45,6 +57,7 @@ defaults:
       render_this: true
       absolute_paths: false
       in_shortcuts: false
+      is_blogpost: false
   - scope:
       path: "error"
     values:
@@ -57,10 +70,11 @@ defaults:
       absolute_paths: false
       in_shortcuts: false
   - scope:
-      path: "news"
+      path: "news/"
     values:
       layout: posts
-      is_blogpost: false
+      pagination:
+        enabled: true
   - scope:
       path: "_posts"
     values:
@@ -73,4 +87,4 @@ defaults:
       layout: posts
       is_blogpost: true
       category: Release
-      permalink: /:year-:month-:day-:title/ # /news/release/:title:output_ext             # for better SEO
+      # /news/release/:title:output_ext             # for better SEO
