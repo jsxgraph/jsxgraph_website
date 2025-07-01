@@ -12,7 +12,7 @@ sitemap:
 
 splash:
 
-  image: /media/conf2024.jpg
+  image: /media/bg-jsxgraph.jpg
   color: var(--bs-primary)
   content:
     - file: start
