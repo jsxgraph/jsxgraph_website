@@ -42,15 +42,15 @@ sections:
       boardid: features
       board_pos: second
 
-  - file: license
-    layout: board-block
-    data:
-      boardid: license
-
   - file: technicalfeatures
     layout: board-block
     data:
       boardid: technicalfeatures
+      
+  - file: license
+    layout: board-block
+    data:
+      boardid: license
       board_pos: second
 
 ---
