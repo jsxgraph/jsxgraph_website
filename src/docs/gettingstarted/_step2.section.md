@@ -1,4 +1,4 @@
-## Step 2 – Integrate Drawing Panel
+### Step 2 – Integrate Drawing Panel
 
 The construction which is displayed by JSXGraph resides in an HTML element.
 Usually, a div-element is taken.
@@ -34,12 +34,3 @@ The following code has to be placed into the body part of an HTML file:
 ```
 
 #### The Result
-
-{{< construction example-elements >}}
-<script type = "text/javascript">
-    (function () {
-        const BOARDID = 'example-elements';
-        const board = JXG.JSXGraph.initBoard(BOARDID, {boundingbox: [-10, 10, 10, -10], axis:true});
-    })();
-</script> 
-{{< /construction >}}

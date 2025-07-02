@@ -1,8 +1,6 @@
-# First Steps
-
 Use <b>the</b> <a href="https://ipesek.github.io/jsxgraphbook/" target="_blank">JSXGraph Book</a> for a comprehensive introduction to JSXGraph.
 
-## Step 1 – Include JSXGraph
+### Step 1 – Include JSXGraph
 
 #### Online Usage
 

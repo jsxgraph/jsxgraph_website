@@ -1,4 +1,4 @@
-## Step 3 – Add JSXGraph Elements
+### Step 3 – Add JSXGraph Elements
 
 To create a point in your JSXGraph construction, just add the following line to your code:
 
@@ -35,14 +35,3 @@ var f = board.create('functiongraph', [function(x) { return 0.5*x*x-2*x;}], {str
 ```
 
 #### The Result
-
-{{< construction example-blank >}}
-<script type = "text/javascript">
-    (function () {
-        const BOARDID = 'example-blank';
-        const board = JXG.JSXGraph.initBoard(BOARDID, {boundingbox: [-10, 10, 10, -10], axis:true});
-        var A = board.create('point', [2, 1], {name: 'A'});
-        var f = board.create('functiongraph', [function(x) { return 0.5*x*x-2*x;}], {strokeWidth: 3});
-    })();
-</script> 
-{{< /construction >}}

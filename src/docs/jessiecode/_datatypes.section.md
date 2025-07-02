@@ -1,7 +1,3 @@
-## JessieCode language reference
-
----
-
 ### Datatypes
 
 #### Boolean
@@ -35,7 +31,7 @@ sixteen = obj.method(4);
 
 Functions are declared with the function operator
 
-```js
+```jessiecode
 f = function (a, b, c) {
     return a + b + c;
 };

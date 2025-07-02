@@ -4,7 +4,7 @@ The control structures are exactly the same as in JavaScript.
 
 _if_
 
-```js
+```jessiecode
 if (<expression)
 {
     <Stmt>
@@ -18,7 +18,7 @@ if (<expression)
 
 _while_ loop
 
-```js
+```jessiecode
 while (<expression>) {
     <Stmt>
         }
@@ -26,7 +26,7 @@ while (<expression>) {
 
 _do_ loop
 
-```js
+```jessiecode
 do {
     <Stmt>
         } while (
@@ -35,7 +35,7 @@ do {
 
 _for_ loop
 
-```js
+```jessiecode
 for (<assignment>;
     <expression>;
         <assignment>) {

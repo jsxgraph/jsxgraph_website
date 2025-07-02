@@ -1,5 +1,5 @@
 ---
-title: IJC
+title: International JSXGraph Conferences
 parent: events
 order: 1
 sitemap:
@@ -8,9 +8,6 @@ sitemap:
 
 sections:
 
-   - file: upcoming
-     layout: text
-
-   - file: past
+   - file: ijc
      layout: text     
 ---

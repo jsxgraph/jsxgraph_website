@@ -9,6 +9,6 @@ sitemap:
 sections:
 
     - file: plugins
-      layout: text
+      layout: cards
 
 ---
