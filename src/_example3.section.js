@@ -1,6 +1,6 @@
 
 const board = JXG.JSXGraph.initBoard(
-    'box-202506271643',
+    'example3',
     {
         boundingbox: [-5, 5, 5, -5],
         minimizeReflow: 'svg',

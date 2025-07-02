@@ -1,4 +1,4 @@
-var brd = JXG.JSXGraph.initBoard('box-123456789', {boundingbox: [-3, 3, 3, -3]}),
+var brd = JXG.JSXGraph.initBoard('license', {boundingbox: [-3, 3, 3, -3]}),
     solveQ2 = function (x1, x2, x3, off) {
         var a, b, c, d;
         a = 0.5;
