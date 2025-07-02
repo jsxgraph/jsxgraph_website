@@ -27,7 +27,7 @@ sections:
   - file: miller
     layout: image-block
     data:
-      image: /media/team/miller.jpg
+      image: /media/team/miller.png
 
   - file: walter
     layout: image-block
