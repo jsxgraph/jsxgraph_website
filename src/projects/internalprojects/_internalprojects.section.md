@@ -1,31 +1,33 @@
 Dies sind internal projects mit 500 Zeichen beschrieben:
 
-# Project 1
+# sketchometry
 
 > /media/conf2024.jpg
 > https://sketchometry.org
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-At vero eos et accusam et justo duo dolores et eterna.
+sketchometry is an educational geometry tool that enables students to draw and manipulate geometric constructions using simple gestures. The software automatically recognizes shapes and relationships, providing a seamless transition from sketch to construction. Ideal for digital classrooms, sketchometry fosters active learning and helps students develop a deeper understanding of geometry through touch-based interaction.
 
-# Project 2
+# IDIAM
 
-> /media/conf2024.jpg
-> https://sketchometry.org
+> /media/logos/logo-eu.jpg
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-At vero eos et accusam et justo duo dolores et eterna.
+IDIAM (Interactive Digital Assessment in Mathematics) is a European project focused on developing digital tools to assess students’ competencies in mathematics, science, and technology, as well as designing digital tasks from various fields of university-level mathematics. Partner institutions include the universities of Trondheim, Edinburgh, Bochum, Erlangen, and Bayreuth. Funded by the European Union.
 
-# Project 3
+# EXPERT
 
-> /media/conf2024.jpg
-> https://sketchometry.org
+> /media/logos/logo-eu.jpg
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-At vero eos et accusam et justo duo dolores et eterna.
+EXPERT (Educational eXplanations and Practices in Emergency Remote Teaching) is a European project aiming to make extensive, certified digital textbooks and related materials accessible through learning management systems across Europe. The project involves organizations from Slovenia, Finland, Germany, Spain, and Turkey. Funded by the European Union.
+
+# ITEMS
+
+> /media/logos/logo-eu.jpg
+
+ITEMS (Improving Tools for E-assessment in Maths and Science) is a European project aiming to enhance digital tools for STEM education. Its main objective is to design and promote innovative methods, pedagogies, learning materials, and tools for use in both higher education and high schools. Funded by the European Union.
+
+
+# COMPASS
+> /media/logos/logo-eu.jpg
+
+COMPASS (Creating Online Materials & Products at STEM Subjects) supports teachers in developing lessons that connect mathematics and science with real-life contexts. It provides adaptable, enquiry-based teaching units and digital resources, promoting problem-solving and interdisciplinary learning for students across Europe.
+
