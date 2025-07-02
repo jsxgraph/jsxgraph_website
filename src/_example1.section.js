@@ -1,4 +1,4 @@
-var brd = JXG.JSXGraph.initBoard('example1', {boundingbox: [-3, 3, 3, -3]}),
+var brd = JXG.JSXGraph.initBoard('example1', {boundingbox: [-2.5, 2.5, 2.5, -2.5], showNavigation: false}),
     solveQ2 = function (x1, x2, x3, off) {
         var a, b, c, d;
         a = 0.5;
@@ -11,7 +11,7 @@ var brd = JXG.JSXGraph.initBoard('example1', {boundingbox: [-3, 3, 3, -3]}),
 
 var a = brd.create('line', [[0, 0], [2, 0]], {straightFirst: false, straightLast: false, visible: false}),
     p0 = brd.create('point', [0, 0], {name: '', visible: false}),
-    p1 = brd.create('glider', [1.3, 0, a], {name: 'drag me'}),
+    p1 = brd.create('glider', [1.3, 0, a], {name: 'drag me', showInfobox: false, label: { offset: [-20, 15]}}),
 
     b0 = -0.5,
     r1 = 2 - p1.X(),
@@ -114,7 +114,7 @@ var otherCirc = function (circs, level) {
     p = brd.create('point', [fx, fy], {name: '', visible: false});
     c = brd.create('circle', [p, fr], {
         strokeWidth: 1,
-        fillColor: JXG.hsv2rgb((70 * level) % 360, 0.9, 0.8), highlightFillColor: JXG.hsv2rgb((70 * level) % 360, 0.9, 0.6), fillOpacity: 0.7, withLabel: false,
+        fillColor: JXG.hsv2rgb((70 * level) % 360, 0.9, 1), highlightFillColor: JXG.hsv2rgb((70 * level) % 360, 0.9, 0.6), fillOpacity: 0.7, withLabel: false,
     });
     c.curvature = function () { return 1 / this.radius; };
 
@@ -126,10 +126,8 @@ var otherCirc = function (circs, level) {
 };
 
 //-------------------------------------------------------
-brd.suspendUpdate();
 var level = 3;
 otherCirc([c0, c1, c2, c3], level);
 otherCirc([c3, c1, c2, c0], level);
 otherCirc([c0, c2, c3, c1], level);
 otherCirc([c0, c1, c3, c2], level);
-brd.unsuspendUpdate();

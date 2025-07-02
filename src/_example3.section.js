@@ -1,136 +1,268 @@
-
-const board = JXG.JSXGraph.initBoard(
-    'example3',
-    {
-        boundingbox: [-5, 5, 5, -5],
-        minimizeReflow: 'svg',
-        axis: false,
-        showNavigation: false,
-        renderer: 'svg',
-        zoom: {
-            enabled: false
-        },
-        pan: {
-            enabled: false
-        }
-    }
-);
-
-var view = board.create(
-    'view3d',
-    [[-4, -4], [8, 8],
-        [[-2, 2], [-2, 2], [-2, 2]]],
-    {
-        projection: 'central',
-        trackball: { enabled: true },
-        depthOrder: {
-            enabled: true
-        },
-        xAxis: {visible: false },
-        yAxis: {visible: false },
-        zAxis: {visible: false },
-        xPlaneRear: { visible: false },
-        yPlaneRear: { visible: false },
-        zPlaneRear: { fillOpacity: 0.2, visible: false }
-    }
-);
-
-let rho = 1.6180339887;
-let vertexList = [
-    [0, -1, -rho], [0, +1, -rho], [0, -1, rho], [0, +1, rho],
-    [1, rho, 0], [-1, rho, 0], [1, -rho, 0], [-1, -rho, 0],
-    [-rho, 0, 1], [-rho, 0, -1], [rho, 0, 1], [rho, 0, -1]
-];
-let faceArray = [
-    [4, 1, 11],
-    [11, 1, 0],
-    [6, 11, 0],
-    [0, 1, 9],
-    [11, 10, 4],
-    [9, 1, 5],
-    [8, 9, 5],
-    [5, 3, 8],
-    [6, 10, 11],
-    [2, 3, 10],
-    [2, 10, 6],
-    [8, 3, 2],
-    [3, 4, 10],
-    [7, 8, 2],
-    [9, 8, 7],
-    [0, 9, 7],
-    [4, 3, 5],
-    [5, 1, 4],
-    [0, 7, 6],
-    [7, 2, 6]
-];
-
-let iterations = 3;   // 0 is a 20 sided icosahedron,  1 is 80 sided, 2 is 320 sided, 3 is 1280 sided, etc
-
-/* midpoint between two vertices */
-let midPoint = (p1, p2) => [(p2[0] + p1[0]) / 2, (p2[1] + p1[1]) / 2, (p2[2] + p1[2]) / 2];
-
-/* calculate the unit vector */
-let v3Unit = (v) => {
-    let length = Math.sqrt(Math.pow(v[0], 2) + Math.pow(v[1], 2) + Math.pow(v[2], 2));
-    return [v[0] / length, v[1] / length, v[2] / length];
+let input = {
+    'coordinates': {'-x': -5, '+x': 5, '-y': -5, '+y': 5, '-z': -5, '+z': 5},
+    'view': {'projection': 'central', 'trackball': false, 'controls': false, 'azimuth': 1, 'elevation': 0.15},
+    'axis': {'x': false, 'y': false, 'z': false, 'position': 'center'},
+    'planeRear': {'x': false, 'y': false, 'z': true, 'axis': false, 'border': 0, 'mesh': true, 'color': 'none'},
+    'planeFront': {'x': false, 'y': false, 'z': false, 'axis': false, 'border': 0, 'mesh': false, 'color': 'none'}
 };
 
-let newFaceArray = [];
+// JSXGraph board
 
-for (let j = 0; j < iterations; j++) {
-    newFaceArray = [];
-    for (let i = 0; i < faceArray.length; i++) {
+let board = JXG.JSXGraph.initBoard('example3', boardAttr());
 
-        let f = faceArray[i];
+// JSXGraph 3D view
 
-        // add three new points at the midpoint of each vertex
-        let m0 = midPoint(vertexList[f[1]], vertexList[f[2]]);
-        let m1 = midPoint(vertexList[f[0]], vertexList[f[2]]);
-        let m2 = midPoint(vertexList[f[0]], vertexList[f[1]]);
+let view = initBoard3D(board);
 
-        let radius = 2;  // our icos ran from +1 to -1
+// JSXGraph construction
 
-        let p0 = vertexList.push(v3Unit(m0).map((n) => n * radius)) - 1;  //new vertex point on surface of sphere through centroid and origin
-        let p1 = vertexList.push(v3Unit(m1).map((n) => n * radius)) - 1;
-        let p2 = vertexList.push(v3Unit(m2).map((n) => n * radius)) - 1;
-
-        // now four faces - the three corner-to-midpoints and then all three midpoints
-        newFaceArray.push([f[0], p2, p1]);
-        newFaceArray.push([f[1], p0, p2]);
-        newFaceArray.push([f[2], p1, p0]);
-        newFaceArray.push([p0, p1, p2]);
-    }
-    faceArray = newFaceArray;   // in case we go around again
-}
-
-// for fun, let's decorate random colors
-let randomColor = () => {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    // if (Math.random() < 0.8) {
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    // } else {
-    //     return 'none';
-    // }
-    return color;
-}
-
-let colorArray = faceArray.map((i) => randomColor());  // same length as faces
-
-
-var ico = view.create('polyhedron3d', [vertexList, faceArray], {
-    fillColorArray: colorArray,
-    fillOpacity: 1,
-    strokeWidth: 0.1,
-    layer: 12,
-    shader: {
-        enabled: true,
-        type: 'angle',
-        hue: 0,
-        saturation: 90,
-        minlightness: 60,
-        maxLightness: 80
+let tx = board.create('slider', [[-9, -9], [-5, -9], [0, 0, 1.5 * Math.PI]], {
+    name: 'x', ...(sliderAttr()), ...{
+        label: {visible: false},
+        snapValues: [0, Math.PI / 2, Math.PI, 1.5 * Math.PI]
     }
 });
+let ty = board.create('slider', [[-2, -9], [2, -9], [0, 0, 1.5 * Math.PI]], {
+    name: 'y', ...(sliderAttr()), ...{
+        label: {visible: false},
+        snapValues: [0, Math.PI / 2, Math.PI, 1.5 * Math.PI]
+    }
+});
+let tz = board.create('slider', [[5, -9], [9, -9], [0, 0, 1.5 * Math.PI]], {
+    name: 'z', ...(sliderAttr()), ...{
+        label: {visible: false},
+        snapValues: [0, Math.PI / 2, Math.PI, 1.5 * Math.PI]
+    }
+});
+
+var ph0 = view.create('polyhedron3d', [
+    [[-4, 0, -4], [-4, 0, 4], [4, 0, 4], [4, 0, -4]], [[0, 1, 2, 3]]
+], {
+    fillColorArray: ['grey'],
+    fillOpacity: 0.25,
+    strokeColor: 'black',
+    strokeWidth: 1
+});
+
+var ph1 = view.create('polyhedron3d', [
+    [[-1, -4, -1], [1, -4, -1], [1, -2, -1], [-1, -2, -1], [-1, -4, 1], [1, -4, 1], [1, -2, 1], [-1, -2, 1]],
+    [[0, 1, 2, 3], [0, 1, 5, 4], [1, 2, 6, 5], [2, 3, 7, 6], [3, 0, 4, 7], [4, 5, 6, 7]]
+], {
+    fillColorArray: ['#0072b2', '#e69f00', '#f0e442', '#009e73', '#56b4e9', '#ffffff'],
+    fillOpacity: 1,
+    strokeColor: 'black',
+    strokeWidth: 1
+});
+
+var tr1 = view.create('transform3d', [0, 3, 0], {type: 'translate'});
+var tr2 = view.create('transform3d', [Math.PI / 2], {type: 'rotateX'});
+var tr3 = view.create('transform3d', [Math.PI / 2], {type: 'rotateY'});
+var tr4 = view.create('transform3d', [-1, 1, 1], {type: 'scale'});
+var trX = view.create('transform3d', [() => {
+    return tx.Value();
+}], {type: 'rotateX'});
+var trY = view.create('transform3d', [() => {
+    return ty.Value();
+}], {type: 'rotateY'});
+var trZ = view.create('transform3d', [() => {
+    return tz.Value();
+}], {type: 'rotateZ'});
+
+var ph2 = view.create('polyhedron3d', [ph1, [tr1, tr2, tr3, tr4, trX, trY, trZ, tr1]], {
+    fillColorArray: ['#0072b2', '#e69f00', '#f0e442', '#009e73', '#56b4e9', '#ffffff'],
+    fillOpacity: 1,
+    strokeColor: 'black',
+    strokeWidth: 1
+});
+
+// Controls
+function initBoard3D(b) {
+    let sliderA = sliderAttr();
+
+    let elA = elAttr();
+
+    let v = b.create('view3d', [[-5, -3], [10, 10], [[input['coordinates']['-x'], input['coordinates']['+x']], [input['coordinates']['-y'], input['coordinates']['+y']], [input['coordinates']['-z'], input['coordinates']['+z']]]],
+        {
+            projection: input['view']['projection'],
+            trackball: { enabled: input['view']['trackball'] },
+            depthOrder: { enabled: true },
+
+            // Main axes
+            axesPosition: input['axis']['position'],
+            xAxis: {visible: input['axis']['x'], strokeColor: '#888888', strokeWidth: 2},
+            yAxis: {visible: input['axis']['y'], strokeColor: '#888888', strokeWidth: 2},
+            zAxis: {visible: input['axis']['z'], strokeColor: '#888888', strokeWidth: 2},
+
+            // Planes
+            xPlaneRear: {
+                visible: input['planeRear']['x'] | input['planeRear']['border'],
+                strokeColor: '#dddddd',
+                strokeWidth: input['planeRear']['border'],
+                mesh3d: {visible: input['planeRear']['x'] & input['planeRear']['mesh']},
+                fillColor: input['planeRear']['x'] ? input['planeRear']['color'] : 'none'
+            },
+            yPlaneRear: {
+                visible: input['planeRear']['y'] | input['planeRear']['border'],
+                strokeColor: '#dddddd',
+                strokeWidth: input['planeRear']['border'],
+                mesh3d: {visible: input['planeRear']['y'] & input['planeRear']['mesh']},
+                fillColor: input['planeRear']['y'] ? input['planeRear']['color'] : 'none'
+            },
+            zPlaneRear: {
+                visible: input['planeRear']['z'] | input['planeRear']['border'],
+                strokeColor: '#dddddd',
+                strokeWidth: input['planeRear']['border'],
+                mesh3d: {visible: input['planeRear']['z'] & input['planeRear']['mesh']},
+                fillColor: input['planeRear']['z'] ? input['planeRear']['color'] : 'none'
+            },
+            xPlaneFront: {
+                visible: input['planeFront']['x'] | input['planeFront']['border'],
+                strokeColor: '#dddddd',
+                strokeWidth: input['planeFront']['border'],
+                mesh3d: {visible: input['planeFront']['x'] & input['planeFront']['mesh']},
+                fillColor: input['planeFront']['x'] ? input['planeFront']['color'] : 'none'
+            },
+            yPlaneFront: {
+                visible: input['planeFront']['y'] | input['planeFront']['border'],
+                strokeColor: '#dddddd',
+                strokeWidth: input['planeFront']['border'],
+                mesh3d: {visible: input['planeFront']['y'] & input['planeFront']['mesh']},
+                fillColor: input['planeFront']['y'] ? input['planeFront']['color'] : 'none'
+            },
+            zPlaneFront: {
+                visible: input['planeFront']['z'] | input['planeFront']['border'],
+                strokeColor: '#dddddd',
+                strokeWidth: input['planeFront']['border'],
+                mesh3d: {visible: input['planeFront']['z'] & input['planeFront']['mesh']},
+                fillColor: input['planeFront']['z'] ? input['planeFront']['color'] : 'none'
+            },
+
+            // Axes on planes
+            xPlaneRearYAxis: {visible: input['planeRear']['x'] & input['planeRear']['axis']},
+            xPlaneRearZAxis: {visible: input['planeRear']['x'] & input['planeRear']['axis']},
+            yPlaneRearXAxis: {visible: input['planeRear']['y'] & input['planeRear']['axis']},
+            yPlaneRearZAxis: {visible: input['planeRear']['y'] & input['planeRear']['axis']},
+            zPlaneRearXAxis: {visible: input['planeRear']['z'] & input['planeRear']['axis']},
+            zPlaneRearYAxis: {visible: input['planeRear']['z'] & input['planeRear']['axis']},
+            xPlaneFrontYAxis: {visible: input['planeFront']['x'] & input['planeFront']['axis']},
+            xPlaneFrontZAxis: {visible: input['planeFront']['x'] & input['planeFront']['axis']},
+            yPlaneFrontXAxis: {visible: input['planeFront']['y'] & input['planeFront']['axis']},
+            yPlaneFrontZAxis: {visible: input['planeFront']['y'] & input['planeFront']['axis']},
+            zPlaneFrontXAxis: {visible: input['planeFront']['z'] & input['planeFront']['axis']},
+            zPlaneFrontYAxis: {visible: input['planeFront']['z'] & input['planeFront']['axis']},
+
+            // Controls
+            bank: {
+                slider: {...sliderA, ...{visible: input['view']['controls']}}
+            },
+            az: {
+                slider: {...sliderA, ...{visible: input['view']['controls']}}
+            },
+            el: {
+                slider: {...sliderA, ...elA, ...{visible: input['view']['controls']}}
+            }
+        }
+    );
+
+    v.el_slide.point1.setPosition(JXG.COORDS_BY_USER, [-9.5, -5]);
+    v.el_slide.point2.setPosition(JXG.COORDS_BY_USER, [-9.5, 5]);
+    v.el_slide.setMin(-Math.PI);
+    v.el_slide.setMax(Math.PI);
+    v.el_slide.setAttribute({ snapValues: [-Math.PI, -Math.PI / 2, 0, Math.PI / 2, Math.PI].concat(input['view']['elevation']) });
+    v.el_slide.name = 'EL';
+
+    v.az_slide.point1.setPosition(JXG.COORDS_BY_USER, [-5, -9.5]);
+    v.az_slide.point2.setPosition(JXG.COORDS_BY_USER, [5, -9.5]);
+    v.az_slide.setMin(0);
+    v.az_slide.setMax(Math.PI * 2);
+    v.az_slide.setAttribute({ snapValues: [0, Math.PI / 2, Math.PI, Math.PI * 1.5, Math.PI * 2].concat(input['view']['azimuth']) });
+    v.az_slide.name = 'AZ';
+
+    v.bank_slide.point1.setPosition(JXG.COORDS_BY_USER, [-5, 9.5]);
+    v.bank_slide.point2.setPosition(JXG.COORDS_BY_USER, [5, 9.5]);
+    v.bank_slide.setAttribute({ snapValues: [-Math.PI, -Math.PI / 2, 0, Math.PI / 2, Math.PI] });
+    v.bank_slide.name = 'BK';
+
+    v.setView(input['view']['azimuth'], input['view']['elevation'], 0);
+
+    return v;
+}
+
+function boardAttr() {
+    let bA = {
+        boundingbox: [-10, 10, 10, -10],
+        keepaspectratio: true,
+        axis: false,
+        showcopyright: true,
+        shownavigation: false,
+        movetarget: null,
+        pan: {
+            enabled: false
+        },
+        browserpan: false,
+        zoom: {
+            enabled: false,
+        }
+    };
+    return bA;
+}
+function sliderAttr() {
+    let slA = {
+        baseline: {
+            highlight: false,
+            strokeWidth: 8,
+            lineCap: 'round',
+            strokeColor: '#dddddd'
+        },
+        point1: {frozen: false, fixed: true},
+        point2: {frozen: false, fixed: true},
+        drawLabel: true,
+        face: 'o',
+        fillColor: '#aaaaaa',
+        highlightFillColor: '#aaaaaa',
+        highlightStrokeColor: '#aaaaaa',
+        highlightStrokeWidth: 5,
+        highline: {
+            highlight: false,
+            strokeWidth: 8,
+            lineCap: 'round',
+            strokeColor: '#aaaaaa'
+        },
+        label: {
+            strokeColor: '#aaaaaa',
+            anchorX: 'left',
+            anchorY: 'middle',
+            layer: 0,
+            cssStyle: 'border: 0px solid red; padding: 1px 8px 1px 8px; border-radius: 20px;background-color: #f2f2f2',
+        },
+        size: 7,
+        snapValueDistance: 0.1,
+        snapWidth: 0.001,
+        strokeColor: '#009900',
+        strokeWidth: 0,
+        ticks: {
+            layer: 7,
+            digits: 2,
+            maxLabelLength: 2,
+            majorHeight: 0,
+            majorTickEndings: [1, 1],
+            strokeWidth: 4,
+            strokeColor: '#cccccc'
+        },
+        visible: true
+    };
+    return slA;
+}
+function elAttr() {
+    let elA = {
+        label: {
+            rotate: 90,
+            strokeColor: '#aaaaaa',
+            anchorX: 'left',
+            anchorY: 'middle',
+            layer: 0,
+            cssStyle: 'border: 0px solid red; padding: 1px 8px 1px 8px; border-radius: 20px;background-color: #f2f2f2; white-space: nowrap;'
+        }
+    }
+    return elA;
+}

@@ -1,8 +1,8 @@
-Dies sind internal projects mit 500 Zeichen beschrieben:
+Dies sind internal projects mit 400 Zeichen beschrieben:
 
 # sketchometry
 
-> /media/conf2024.jpg
+> /media/logos/logo-sketchometry.png
 > https://sketchometry.org
 
 sketchometry is an educational geometry tool that enables students to draw and manipulate geometric constructions using simple gestures. The software automatically recognizes shapes and relationships, providing a seamless transition from sketch to construction. Ideal for digital classrooms, sketchometry fosters active learning and helps students develop a deeper understanding of geometry through touch-based interaction.
