@@ -1,8 +1,6 @@
 ---
 title: Release of 1.9.0
 subtitle: Major new release
-categories:
-  - Releases
 ---
 
 Dear friends of JSXGraph,

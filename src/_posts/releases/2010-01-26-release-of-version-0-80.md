@@ -5,8 +5,6 @@ date: 2010-01-26T10:25:23+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=417
 permalink: /2010/01/26/release-of-version-0-80/
-categories:
-  - Releases
 tags:
   - Fennec
   - iPad

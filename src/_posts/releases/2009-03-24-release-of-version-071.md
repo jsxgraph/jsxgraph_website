@@ -5,8 +5,6 @@ date: 2009-03-24T11:47:54+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=178
 permalink: /2009/03/24/release-of-version-071/
-categories:
-  - Releases
 tags:
   - axis
   - plot

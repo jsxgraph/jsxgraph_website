@@ -5,8 +5,6 @@ date: 2012-07-24T15:13:16+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=759
 permalink: /2012/07/24/release-of-version-0-95/
-categories:
-  - Uncategorized
 ---
 Beside the bug fixes, version 0.95 brings much improved text handling. All texts may now be right aligned or centered. Internal (SVG) texts are much better supported. A much requested new text option is `rotate:degree` for easy rotation of internal texts. With minor and major arcs there are new geometric objects.
   

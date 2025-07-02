@@ -5,8 +5,6 @@ date: 2009-02-18T19:07:41+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=67
 permalink: /2009/02/18/release-history/
-categories:
-  - Releases
 ---
 After moving to wordpress the original news about new releases are lost.
 

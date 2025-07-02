@@ -5,9 +5,6 @@ date: 2011-06-08T11:11:24+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=574
 permalink: /2011/06/08/release-of-version-0-90/
-categories:
-  - Releases
-  - Uncategorized
 tags:
   - Canvas
   - Image

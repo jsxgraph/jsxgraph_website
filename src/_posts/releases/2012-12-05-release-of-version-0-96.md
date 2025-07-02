@@ -5,8 +5,6 @@ date: 2012-12-05T14:08:19+00:00
 author: michael
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=780
 permalink: /2012/12/05/release-of-version-0-96/
-categories:
-  - Releases
 ---
 Version 0.96 enables dragging polygons and curves. Constructions created with [sketchometry](http://www.sketchometry.com "sketchometry") can now be read and displayed with JSXGraph. The environments in which JSXGraph can be used has been extended to node.js and Windows 8 apps.
 

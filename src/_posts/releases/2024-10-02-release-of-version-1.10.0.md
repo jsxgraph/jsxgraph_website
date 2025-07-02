@@ -1,8 +1,6 @@
 ---
 title: Release of 1.10.0
 subtitle: Major release
-categories:
-  - Releases
 ---
 
 Dear friends of JSXGraph,

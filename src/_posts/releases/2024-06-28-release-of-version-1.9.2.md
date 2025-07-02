@@ -1,8 +1,6 @@
 ---
 title: Release of 1.9.2
 subtitle: Patch release
-categories:
-  - Releases
 ---
 
 Dear friends of JSXGraph,

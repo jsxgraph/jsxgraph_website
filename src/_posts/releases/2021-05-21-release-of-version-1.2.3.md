@@ -2,8 +2,6 @@
 title: Release of 1.2.3
 subtitle: Patch release
 date: 2021-05-21T09:00:00+00:00
-categories:
-  - Releases
 ---
 
 JSXGraph version v1.2.3 contains small improvements and bug fixes, and some new experimental features, see <https://github.com/jsxgraph/jsxgraph/blob/master/CHANGELOG.md>.

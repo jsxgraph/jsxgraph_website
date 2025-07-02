@@ -2,8 +2,6 @@
 title: Release of 0.99.6
 subtitle: Major new release
 date: 2017-08-21T09:00:00+00:00
-categories:
-  - Releases
 ---
 The long awaited version 0.99.6 of JSXGraph has just been released! This is a 
 There are quite a few new features which are - hopefully -

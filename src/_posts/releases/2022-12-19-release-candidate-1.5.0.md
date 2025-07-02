@@ -2,8 +2,6 @@
 title: 1.5.0 Release Candidate
 subtitle: Preview release
 date: 2022-12-19T07:00:00+00:00
-categories:
-  - Releases
 ---
 
 Dear friends of JSXGraph,

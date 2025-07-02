@@ -1,8 +1,6 @@
 ---
 title: Release of 1.11.1
 subtitle: patch release
-categories:
-  - Releases
 ---
 
 Dear friends of JSXGraph,

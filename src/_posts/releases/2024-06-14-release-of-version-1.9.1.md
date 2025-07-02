@@ -1,8 +1,6 @@
 ---
 title: Release of 1.9.1
 subtitle: Patch release
-categories:
-  - Releases
 ---
 
 JSXGraph release v1.9.1 is a quick patch release after yesterday's release of v1.9.0. 

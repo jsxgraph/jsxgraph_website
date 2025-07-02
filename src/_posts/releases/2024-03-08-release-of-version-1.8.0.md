@@ -1,8 +1,6 @@
 ---
 title: Release of 1.8.0
 subtitle: Major new release
-categories:
-  - Releases
 ---
 
 Dear friends of JSXGraph,

@@ -2,8 +2,6 @@
 title: Release of 1.4.0
 subtitle: Major new release
 date: 2021-11-17T09:00:00+00:00
-categories:
-  - Releases
 ---
 
 We are happy to be able to announce the release of JSXGraph v1.4.0. This new version brings several new elements and methods, as well as many improvements and bug fixes.

@@ -5,8 +5,6 @@ date: 2009-05-04T08:48:25+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=208
 permalink: /2009/05/04/release-of-version-072/
-categories:
-  - Releases
 tags:
   - gunzip
   - javascript

@@ -2,8 +2,6 @@
 title: Release of 0.99.4
 subtitle: Major new release
 date: 2016-02-10T14:50:08+00:00
-categories:
-  - Releases
 ---
 Version 0.99.4 of JSXGraph has just been released! It fixes quite a few bugs and introduces several long awaited features. Below, the most important new features are demonstrated with examples. For a list of all changes see the [CHANGELOG](https://github.com/jsxgraph/jsxgraph/blob/master/CHANGELOG.md).
 

@@ -5,8 +5,6 @@ date: 2010-11-23T19:08:56+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=493
 permalink: /2010/11/23/release-of-version-0-82/
-categories:
-  - Releases
 tags:
   - B-Spline
   - Canvas

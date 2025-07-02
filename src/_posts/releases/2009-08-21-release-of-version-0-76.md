@@ -5,8 +5,6 @@ date: 2009-08-21T10:37:17+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=312
 permalink: /2009/08/21/release-of-version-0-76/
-categories:
-  - Releases
 ---
 Version 0.76 of the JavaScript plotting and Geometry library [JSXGraph](http://jsxgraph.org) contains major improvements. First, the display quality has been improved greatly. Curves are much more smooth now and use the full power of the vector graphics capabilities of SVG and VML. 
 

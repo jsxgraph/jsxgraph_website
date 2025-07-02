@@ -5,8 +5,6 @@ date: 2009-03-10T16:18:48+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=123
 permalink: /2009/03/10/release-of-version-070/
-categories:
-  - Releases
 tags:
   - axis
   - javascript

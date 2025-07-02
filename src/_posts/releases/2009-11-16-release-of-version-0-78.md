@@ -5,8 +5,6 @@ date: 2009-11-16T16:09:04+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=383
 permalink: /2009/11/16/release-of-version-0-78/
-categories:
-  - Releases
 ---
 The most notable change is that all dependencies of JSXGraph on third-party libraries like jquery or prototype have been removed. JSXGraph is now a stand-alone library. If delivered compressed, its size is only 81 kByte. Now, two possible types of texts are possible: &#8216;html&#8217; which uses an HTML-div element, and &#8216;internal&#8217; which uses the text element of SVG or VML, respectively. The consequence is that on SVG capable browsers it is possible to export a static SVG image from the JSXGraph construction. This can be done for instance by calling &#8220;XMLSerializer().serializeToString(board.renderer.svgRoot);&#8221;
   

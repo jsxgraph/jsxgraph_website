@@ -2,8 +2,6 @@
 title: Release of 1.1.0
 subtitle: Major new release
 date: 2020-06-02T12:00:00+00:00
-categories:
-  - Releases
 ---
 
 Version 1.1.0 introduces the new JSXGraph element `polygonalchain` (sometimes also called "polyline"), 

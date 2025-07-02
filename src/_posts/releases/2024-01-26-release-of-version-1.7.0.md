@@ -1,8 +1,6 @@
 ---
 title: Release of 1.7.0
 subtitle: Major new release
-categories:
-  - Releases
 ---
 
 Dear friends of JSXGraph,

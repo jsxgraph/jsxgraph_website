@@ -2,8 +2,6 @@
 title: Release of 1.4.3
 subtitle: Maintenance release
 date: 2022-04-14T09:00:00+00:00
-categories:
-  - Releases
 ---
 
 Version v1.4.3 is a patch release. Most importantly, JSXGraph can now be used as ES6 module and 

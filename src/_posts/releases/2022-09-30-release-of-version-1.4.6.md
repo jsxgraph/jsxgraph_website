@@ -2,8 +2,6 @@
 title: Release of 1.4.6
 subtitle: Patch release
 date: 2022-09-30T13:00:00+00:00
-categories:
-  - Releases
 ---
 
 JSXGraph release v1.4.6 is a patch release which additionally introduces a few new options and incrementally improves the 3D functionality (which is still consider experimental).

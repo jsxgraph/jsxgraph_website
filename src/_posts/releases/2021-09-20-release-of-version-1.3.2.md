@@ -2,8 +2,6 @@
 title: Release of 1.3.2
 subtitle: Patch release
 date: 2021-09-20T09:00:00+00:00
-categories:
-  - Releases
 ---
 
 JSXGraph v1.3.2 further improves responsiveness of JSXGraph constructions and fixes a few bugs. Most notable, it is now possible to allow fullscreen mode together with the well known aspect ratio trick for HTML divs, i.e. to center an outer div element in full screen mode. Here is an example:

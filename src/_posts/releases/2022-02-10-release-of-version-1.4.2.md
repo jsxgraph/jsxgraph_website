@@ -2,8 +2,6 @@
 title: Release of 1.4.2
 subtitle: Maintenance release
 date: 2022-02-10T09:00:00+00:00
-categories:
-  - Releases
 ---
 
 JSXGraph v1.4.2 is a patch release. It mainly fixes a code regression

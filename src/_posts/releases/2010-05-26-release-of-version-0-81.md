@@ -5,8 +5,6 @@ date: 2010-05-26T18:17:06+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=470
 permalink: /2010/05/26/release-of-version-0-81/
-categories:
-  - Releases
 ---
 Version 0.81 introduces conic sections (ellipse, hyperbola, parabola) as new elements and new chart elements like radar charts. There is also a new shortened syntax for geometric constructions (see [http://jsxgraph.uni-bayreuth.de/wiki/index.php/Construct\_with\_math_syntax](http://jsxgraph.uni-bayreuth.de/wiki/index.php/Construct_with_math_syntax)).
   

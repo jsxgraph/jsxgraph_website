@@ -5,10 +5,8 @@ date: 2012-05-14T09:39:35+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=726
 permalink: /2012/05/14/cdn-updated-to-v0-94/
-categories:
-  - cdnjs
-  - Releases
-  - Uncategorized
+tags:
+  - CDN
 ---
 After a some delay, jsxgraphcore.js version 0.94 is now available at the CDN: 
 

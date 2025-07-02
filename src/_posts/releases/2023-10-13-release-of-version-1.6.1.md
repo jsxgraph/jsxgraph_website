@@ -2,8 +2,6 @@
 title: Release of 1.6.1
 subtitle: Patch release
 date: 2023-10-13T07:00:00+00:02
-categories:
-  - Releases
 ---
 
 JSXGraph release v1.6.1 is a patch release which additionally introduces a few new options.
