@@ -1,49 +1,41 @@
 
   <table cellpadding="10">
-    <thead>
-      <tr>
-        <th>Version</th>
-        <th>jsDelivr</th>
-        <th>cdnjs</th>
-        <th>JSXGraph</th>
-      </tr>
-    </thead>
     <tbody>
       <tr>
         <td>v1.11.0</td>
-        <td><a href="https://cdn.jsdelivr.net/npm/jsxgraph@1.11.0/distrib/jsxgraphcore.js" >Download</a></td>
-        <td><a href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.11.0/jsxgraphcore.js" >Download</a></td>
-        <td><a href="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.11.0.js" >Download</a></td>
+        <td><a href="https://cdn.jsdelivr.net/npm/jsxgraph@1.11.0/distrib/jsxgraphcore.js" >jsDelivr</a></td>
+        <td><a href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.11.0/jsxgraphcore.js" >cdnjs</a></td>
+        <td><a href="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.11.0.js" >JSXGraph</a></td>
       </tr>
       <tr>
         <td>v1.10.1</td>
-        <td><a href="https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js" >Download</a></td>
-        <td><a href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.10.1/jsxgraphcore.js" >Download</a></td>
-        <td><a href="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.10.1.js" >Download</a></td>
+        <td><a href="https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js" >jsDelivr</a></td>
+        <td><a href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.10.1/jsxgraphcore.js" >cdnjs</a></td>
+        <td><a href="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.10.1.js" >JSXGraph</a></td>
       </tr>
       <tr>
         <td>v1.10.0</td>
-        <td><a href="https://cdn.jsdelivr.net/npm/jsxgraph@1.10.0/distrib/jsxgraphcore.js" >Download</a></td>
-        <td><a href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.10.0/jsxgraphcore.js" >Download</a></td>
-        <td><a href="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.10.0.js" >Download</a></td>
+        <td><a href="https://cdn.jsdelivr.net/npm/jsxgraph@1.10.0/distrib/jsxgraphcore.js" >jsDelivr</a></td>
+        <td><a href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.10.0/jsxgraphcore.js" >cdnjs</a></td>
+        <td><a href="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.10.0.js" >JSXGraph</a></td>
       </tr>
       <tr>
         <td>v1.1.0</td>
-        <td><a href="https://cdn.jsdelivr.net/npm/jsxgraph@1.1.0/distrib/jsxgraphcore.js" >Download</a></td>
-        <td><a href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js" >Download</a></td>
-        <td><a href="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.1.0.js" >Download</a></td>
+        <td><a href="https://cdn.jsdelivr.net/npm/jsxgraph@1.1.0/distrib/jsxgraphcore.js" >jsDelivr</a></td>
+        <td><a href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.1.0/jsxgraphcore.js" >cdnjs</a></td>
+        <td><a href="https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.1.0.js" >JSXGraph</a></td>
       </tr>
       <tr>
         <td>v0.99.7</td>
         <td>/</td>
-        <td><a href="http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraphcore.js" >Download</a></td>
-        <td><a href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-0.99.7.js" >Download</a></td>
+        <td><a href="http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.99.7/jsxgraphcore.js" >jsDelivr</a></td>
+        <td><a href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-0.99.7.js" >JSXGraph</a></td>
       </tr>
       <tr>
         <td>v0.97</td>
         <td>/</td>
-        <td><a href="http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.97/jsxgraphcore.js" >Download</a></td>
-        <td><a href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-0.97.js" >Download</a></td>
+        <td><a href="http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.97/jsxgraphcore.js" >jsDelivr</a></td>
+        <td><a href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-0.97.js" >JSXGraph</a></td>
       </tr>
     </tbody>
   </table>
