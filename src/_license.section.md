@@ -1,4 +1,4 @@
-> JSXGraph-Abbildung 5
+<!-- > JSXGraph-Abbildung 5 -->
 
 ### License
 

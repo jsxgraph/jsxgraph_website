@@ -1,4 +1,4 @@
-> JSXGraph-Abbildung 4
+<!-- > JSXGraph-Abbildung 4 -->
 
 ### Features
 

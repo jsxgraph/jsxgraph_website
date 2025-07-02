@@ -23,24 +23,34 @@ sections:
   - file: example1
     layout: board-block
     data:
-      boardid: box-123456789
+      boardid: example1
 
   - file: example2
     layout: board-block
     data:
-      boardid: box-202506271643
+      boardid: example2
       board_pos: second
       
   - file: example3
-    layout: text
-  
+    layout: board-block
+    data:
+      boardid: example3
+ 
   - file: features
-    layout: text
+    layout: board-block
+    data:
+      boardid: features
+      board_pos: second
 
   - file: license
-    layout: text
+    layout: board-block
+    data:
+      boardid: license
 
   - file: technicalfeatures
-    layout: text
+    layout: board-block
+    data:
+      boardid: technicalfeatures
+      board_pos: second
 
 ---

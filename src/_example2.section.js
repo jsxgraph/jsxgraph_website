@@ -12,7 +12,7 @@ let input = {
 
 // JSXGraph board
 
-let board = JXG.JSXGraph.initBoard('box-202506271643', boardAttr());
+let board = JXG.JSXGraph.initBoard('example2', boardAttr());
 
 // JSXGraph 3D view
 
