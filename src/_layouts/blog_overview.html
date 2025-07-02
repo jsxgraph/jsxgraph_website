@@ -4,23 +4,23 @@
     {% include basics.html %}
     {% include main/head.html %}
 </head>
-
-{%- assign posts_root = page.posts_root | default: "news" -%}
-{%- assign posts_intro = page.posts_intro | default: 50 -%}
-
-{%- for i_page in site.pages -%}
-{%- assign id = i_page.url | split: '/' | last -%}
-{%- if id == "index.html" -%}
-{%- assign id = i_page.url | split: '/' -%}
-{%- assign tmp = id.size | minus: 2 -%}
-{%- assign id = id[tmp] -%}
-{%- endif -%}
-{%- if id == posts_root -%}
-{%- assign posts_root_page = i_page -%}
-{%- endif -%}
-{%- endfor -%}
-
 <body data-role="page" class="position-relative">
+
+    {%- assign posts_root = page.posts_root -%}
+    {%- assign posts_intro = page.posts_intro | default: 50 -%}
+
+    {%- for i_page in site.pages -%}
+    {%- assign id = i_page.url | split: '/' | last -%}
+    {%- if id == "index.html" -%}
+    {%- assign id = i_page.url | split: '/' -%}
+    {%- assign tmp = id.size | minus: 2 -%}
+    {%- assign id = id[tmp] -%}
+    {%- endif -%}
+    {%- if id == posts_root -%}
+    {%- assign posts_root_page = i_page -%}
+    {%- endif -%}
+    {%- endfor -%}
+
     {% include main/menu.html active=posts_root %}
     {% include main/topbar.html active=posts_root %}
 
@@ -32,10 +32,6 @@
     </noscript>
 
     <main class="container md-container m-between-5 mt-4 mb-5 pb-5">
-
-        {% if page.is_blogpost != true %}
-        <!-- ###################### News overview ###################### -->
-
         <div class="mb-3">
             <h1>{{ page.header | default: page.title }}</h1>
         </div>
@@ -44,7 +40,7 @@
         {% include content.html %}
         {%- endif -%}
 
-        <div class="blogposts">
+        <div class="blog-overview">
 
             <h2 class="d-none">List of Posts</h2>
             <div class="list-group list-group-flush mx-n4 mb-4">
@@ -52,7 +48,9 @@
                 {% for post in paginator.posts %}
                 <a href="{{ post.url }}" class="list-group-item list-group-item-action px-4 py-4">
                     <article class="post-preview">
-                        {% include main/post-header.html post=post head_level=3 %}
+                        <div class="mb-4">
+                            {% include main/post-header.html post=post head_level=3 %}
+                        </div>
 
                         {{ post.content | truncatewords: posts_intro | strip_html | xml_escape}}
                     </article>
@@ -63,7 +61,6 @@
             </div>
 
             {% if paginator.total_pages > 1 %}
-            <h2 class="d-none">Pagination</h2>
             <div class="d-flex">
                 {% if paginator.previous_page %}
                 <a href="{{ paginator.previous_page_path }}" class="btn btn-outline-primary w-fix-lg me-auto">Newer Posts</a>
@@ -94,26 +91,6 @@
         {%- if page.render_this == "after" -%}
         {% include content.html %}
         {%- endif -%}
-
-        {% else %}
-        <!-- ###################### News detailled ###################### -->
-
-        <div class="mb-4">
-
-            <div class="float-end">
-                <a href="{{ posts_root_page.url }}" class="btn btn-sm btn-secondary">
-                    &larr; Back to all posts
-                </a>
-            </div>
-
-            <div class="pt-2">
-                {% include main/post-header.html post=page %}
-            </div>
-        </div>
-
-        {% include content.html %}
-
-        {% endif %}
     </main>
 
     {% include main/cookie-hint.html %}

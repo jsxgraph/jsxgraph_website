@@ -71,20 +71,19 @@ defaults:
   - scope:
       path: "news/"
     values:
-      layout: posts
-      is_blogpost: false # might not work with pagination here - define in file
+      layout: blog_overview
+      posts_root: "news"
       pagination:
         enabled: true
   - scope:
       path: "_posts"
     values:
-      layout: posts
-      is_blogpost: true
+      layout: blog_post
+      posts_root: "news"
       permalink: /:year-:month-:day-:title/ # /news/:year-:month-:day-:title:output_ext   # for better SEO
   - scope:
       path: "_posts/releases"
     values:
-      layout: posts
-      is_blogpost: true
       category: Release
+      posts_root: "news"
       # /news/release/:title:output_ext             # for better SEO
