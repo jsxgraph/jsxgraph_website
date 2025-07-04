@@ -1,5 +1,5 @@
 ---
-title: Internal Projects
+title: Projects
 parent: projects
 order: 1
 sitemap:

@@ -6,7 +6,7 @@ const board = JXG.JSXGraph.initBoard(
         minimizeReflow: 'svg',
         axis: false,
         showNavigation: false,
-        renderer: 'svg',
+        renderer: 'canvas',
         zoom: {
             enabled: false
         },
