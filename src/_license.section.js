@@ -1,6 +1,6 @@
 (function () {
     var board = JXG.JSXGraph.initBoard('license',
-        {boundingbox: [-8, 8, 8,-8], axis: false, showcopyright: true, shownavigation: false,
+        {boundingbox: [-8, 8, 8,-8], axis: false, showcopyright: false, shownavigation: false,
             pan: {
                 needTwoFingers: true
             }
