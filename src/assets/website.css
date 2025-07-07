@@ -58090,6 +58090,10 @@ footer {
 .language-php .code-highlighting:before {
   content: "PHP";
 }
+.jxgbox {
+  background-color: transparent;
+  border: none;
+}
 body,
 .normal {
   font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;
@@ -58582,6 +58586,19 @@ main #splash * {
 }
 #menu .offcanvas-footer {
   padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x) !important;
+}
+.md-container {
+  max-width: 90%;
+}
+@media (min-width: 1400px) {
+  .md-container {
+    max-width: 1050px;
+  }
+}
+@media (min-width: 576px) {
+  :root {
+    --bs-body-font-size: 1.25rem;
+  }
 }
 h2,
 .h2 {
