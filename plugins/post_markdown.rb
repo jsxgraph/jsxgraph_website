@@ -28,11 +28,19 @@ module Jekyll
       end
     end
 
-    def to_id(input)
+    def self.slopify(input)
       input = input.downcase
       input = input.gsub(/[^a-z0-9]/, '-');
       input = input.gsub(/(\-)+$/, '');
       input = input.gsub(/^(\-)+/, '');
+    end
+
+    def slopify(input)
+      input = Jekyll::PostMarkdown::slopify(input)
+    end
+
+    def to_id(input)
+      input = Jekyll::PostMarkdown::slopify(input)
     end
   end
 end
