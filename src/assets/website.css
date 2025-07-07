@@ -55716,10 +55716,6 @@ a:hover,
 .btn-link {
   text-decoration: none;
 }
-a,
-.btn-link {
-  text-decoration: underline;
-}
 a:not([href]):not([class]),
 .link-quiet,
 .dropdown-item,
@@ -58091,8 +58087,9 @@ footer {
   content: "PHP";
 }
 .jxgbox {
-  background-color: transparent;
+  background-color: #F5F5F5;
   border: none;
+  border-radius: 0;
 }
 body,
 .normal {
@@ -58111,6 +58108,23 @@ h5,
 h6,
 .h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.md-container {
+  max-width: 90%;
+}
+@media (min-width: 1400px) {
+  .md-container {
+    max-width: 1050px;
+  }
+}
+@media (min-width: 576px) {
+  :root {
+    --bs-body-font-size: 1.25rem;
+  }
+}
+footer {
+  --bs-body-font-size: 1rem;
+  font-size: 1rem;
 }
 .svg-body path {
   stroke: #fff !important;
@@ -58586,19 +58600,6 @@ main #splash * {
 }
 #menu .offcanvas-footer {
   padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x) !important;
-}
-.md-container {
-  max-width: 90%;
-}
-@media (min-width: 1400px) {
-  .md-container {
-    max-width: 1050px;
-  }
-}
-@media (min-width: 576px) {
-  :root {
-    --bs-body-font-size: 1.25rem;
-  }
 }
 h2,
 .h2 {
