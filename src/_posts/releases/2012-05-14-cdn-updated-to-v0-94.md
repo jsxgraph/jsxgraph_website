@@ -2,7 +2,7 @@
 id: 726
 title: CDN updated to v0.94
 date: 2012-05-14T09:39:35+00:00
-author: alfred
+author: Alfred Wassermann
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=726
 permalink: /2012/05/14/cdn-updated-to-v0-94/
 tags:

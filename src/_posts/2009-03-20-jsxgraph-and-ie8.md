@@ -2,7 +2,7 @@
 id: 158
 title: JSXGraph and IE8
 date: 2009-03-20T15:52:17+00:00
-author: alfred
+author: Alfred Wassermann
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=158
 permalink: /2009/03/20/jsxgraph-and-ie8/
 category: Bug

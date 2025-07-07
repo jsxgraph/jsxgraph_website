@@ -2,7 +2,7 @@
 id: 816
 title: JSXGraph and AMD
 date: 2013-03-14T12:10:49+00:00
-author: alfred
+author: Alfred Wassermann
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=816
 permalink: /2013/03/14/jsxgraph-and-amd/
 category: News

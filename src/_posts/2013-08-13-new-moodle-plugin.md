@@ -2,7 +2,7 @@
 id: 845
 title: New moodle plugin
 date: 2013-08-13T10:04:58+00:00
-author: alfred
+author: Alfred Wassermann
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=845
 permalink: /2013/08/13/new-moodle-plugin/
 category: News

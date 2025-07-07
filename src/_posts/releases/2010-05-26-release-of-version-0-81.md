@@ -2,7 +2,7 @@
 id: 470
 title: Release of version 0.81
 date: 2010-05-26T18:17:06+00:00
-author: alfred
+author: Alfred Wassermann
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=470
 permalink: /2010/05/26/release-of-version-0-81/
 ---

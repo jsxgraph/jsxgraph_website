@@ -2,7 +2,7 @@
 id: 669
 title: Release of version 0.92
 date: 2011-09-14T14:33:15+00:00
-author: alfred
+author: Alfred Wassermann
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=669
 permalink: /2011/09/14/release-of-version-0-92/
 ---

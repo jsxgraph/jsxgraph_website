@@ -2,7 +2,7 @@
 id: 409
 title: Release of version 0.79
 date: 2010-01-20T17:27:11+00:00
-author: alfred
+author: Alfred Wassermann
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=409
 permalink: /2010/01/20/release-of-version-0-79/
 ---

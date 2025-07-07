@@ -2,7 +2,7 @@
 id: 654
 title: Release of version 0.91
 date: 2011-08-17T17:06:16+00:00
-author: alfred
+author: Alfred Wassermann
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=654
 permalink: /2011/08/17/release-of-version-0-91/
 ---

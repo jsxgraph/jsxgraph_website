@@ -2,7 +2,7 @@
 id: 256
 title: JSXGraph at CADGME 09
 date: 2009-07-12T06:42:49+00:00
-author: alfred
+author: Alfred Wassermann
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=256
 permalink: /2009/07/12/talk-at-cadgme-09/
 category: News

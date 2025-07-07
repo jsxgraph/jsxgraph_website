@@ -2,7 +2,7 @@
 id: 388
 title: 'JSXCompressor &#8211; Python script'
 date: 2009-12-02T15:41:10+00:00
-author: alfred
+author: Alfred Wassermann
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=388
 permalink: /2009/12/02/jsxcompressor-python-script/
 category: Examples

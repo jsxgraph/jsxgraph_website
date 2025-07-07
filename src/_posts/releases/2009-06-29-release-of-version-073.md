@@ -2,7 +2,7 @@
 id: 228
 title: Release of version 0.73
 date: 2009-06-29T10:42:43+00:00
-author: alfred
+author: Alfred Wassermann
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=228
 permalink: /2009/06/29/release-of-version-073/
 tags:
