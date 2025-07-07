@@ -33,20 +33,16 @@
 
     <main class="container md-container m-between-5 mt-4 mb-5 pb-5">
         <div class="mb-3">
-            <h1>{{ page.header | default: page.title }}</h1>
+            <h1>{{ postlist_page.title }} - tag "{{page.tag}}"</h1>
         </div>
-
-        {%- if page.render_this == "before" or page.render_this == true -%}
-        {% include content.html %}
-        {%- endif -%}
 
         <div class="blog-overview">
 
             <h2 class="d-none">List of Posts</h2>
             <div class="list-group list-group-flush mx-n4 mb-4">
 
-                {%- assign posts = paginator.posts | default: site.posts -%}
-                {% for post in posts %}
+                {% for post in site.posts %}
+                {% if post.tags contains page.tag %}
                 <a href="{{ post.url }}" class="list-group-item list-group-item-action px-4 py-4">
                     <article class="post-preview">
                         <div class="mb-4">
@@ -57,43 +53,17 @@
                     </article>
                     <div class="text-end link-primary">Read more</div>
                 </a>
+                {% endif %}
                 {% endfor %}
 
             </div>
 
-            {% if paginator and paginator.total_pages > 1 %}
-            <div class="d-flex">
-                {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path }}" class="btn btn-outline-primary w-fix-lg me-auto">Newer Posts</a>
-                {% endif %}
-                {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path }}" class="btn btn-outline-primary w-fix-lg ms-auto">Older Posts</a>
-                {% endif %}
+            <div class="d-flex justify-content-center">
+                <a href="{{ relBase }}{{ postlist_page.url }}" class="btn btn-outline-primary w-fix-lg">
+                    To all posts
+                </a>
             </div>
-            {% endif %}
-
-            <h2>Tags</h2>
-            <ul>
-                {% assign sorted_tags = site.tags | sort %}
-                {% for tag in sorted_tags %}
-                <li><a href="{{ relBase }}{{ site.taglist.root }}{{ tag[0] | slopify }}/">
-                    {{ tag[0] }}
-                </a></li>
-                {% endfor %}
-            </ul>
-
-            <h2>Categories</h2>
-            <ul>
-                {% assign sorted_cats = site.categories | sort %}
-                {% for cat in sorted_cats %}
-                <li>{{ cat[0] }}</li>
-                {% endfor %}
-            </ul>
         </div>
-
-        {%- if page.render_this == "after" -%}
-        {% include content.html %}
-        {%- endif -%}
     </main>
 
     {% include main/cookie-hint.html %}

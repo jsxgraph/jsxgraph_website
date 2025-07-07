@@ -43,6 +43,16 @@ pagination:
   title: ':title (Page :num)'
   sort_field: 'date'
   sort_reverse: true
+taglist:
+  postlist_id: 'news'
+  root: '/news/tag/'
+  is_home: false
+  in_menu_popup: false
+  in_menu_topbar: false
+  in_menu_footer: false
+  render_this: false
+  absolute_paths: false
+  in_shortcuts: false
 
 # Scoping
 defaults:
