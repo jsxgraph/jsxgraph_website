@@ -58087,7 +58087,7 @@ footer {
   content: "PHP";
 }
 .jxgbox {
-  background-color: #F5F5F5;
+  background-color: transparent;
   border: none;
   border-radius: 0;
 }

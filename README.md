@@ -119,12 +119,18 @@ The following sections (and params) are possible:
 |                 | n                | optional   | **_-1_** \| 1 \| 2 \| 3 \| ...     | maximum entries                                                     |
 | **board-block** | boardid          | obligatory | unique id                          | unique id that is used in code_file                                 |
 |                 | board_pos        | optional   | **_first_** \| second              | the board is to the left or right of the text block                 |
+|                 | title            | optional   | plain text                         | subtitle under the board                                            |
+|                 | link             | optional   | url                                | link for the subtitle                                               |
+|                 | target           | optional   | _blank \| _self                    | target for the link (default will be calculated)                    |
 |                 | width            | optional   | **_100%_** \| ...                  | width of the board                                                  |
 |                 | height           | optional   | **_auto_** \| ...                  | height of the board                                                 |
 |                 | aspect_ratio     | optional   | **_1/1_** \| ...                   | aspect-ratio of the board                                           |
 |                 | code_file        | optional   | url starting with `/`              | path to the js file (default is same as **_file_** with ending .js) |
 | **board**[^1]   | code_file        | optional   | url starting with `/`              | path to the js file (default is same as **_file_** with ending .js) |
 |                 | boardid          | obligatory | unique id                          | unique id that is used in code_file                                 |
+|                 | title            | optional   | plain text                         | subtitle under the board                                            |
+|                 | link             | optional   | url                                | link for the subtitle                                               |
+|                 | target           | optional   | _blank \| _self                    | target for the link (default will be calculated)                    |
 |                 | width            | optional   | **_500px_** \| ...                 | width of the board                                                  |
 |                 | max_width        | optional   | **_100%_** \| ...                  | max-width of the board                                              |
 |                 | height           | optional   | **_auto_** \| ...                  | height of the board                                                 |

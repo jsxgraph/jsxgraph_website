@@ -8,8 +8,40 @@
                 /*@formatter:on*/
             })();
         </script>
+        {% if include.data.title %}
+        <div class="mt-3 text-muted smaller text-center">
+            {% if include.data.link %}
+
+            {%- assign stringToCheck = include.data.link %}
+            {%- assign checkArray = stringToCheck | split: ':' -%}
+            {%- if checkArray[0] == 'http' or checkArray[0] == 'https' or include.data.target == "_blank" -%}
+            {%- assign link = include.data.link -%}
+            {%- assign target = include.data.target | default: "_blank" -%}
+            {%- else -%}
+            {%- assign link = relBase | append: include.data.link -%}
+            {%- assign target = include.data.target | default: "_self" -%}
+            {%- endif -%}
+            <a href="{{ link }}" target="{{ target }}">
+                <span>{{ include.data.title }}</span>
+                {%- if target == "_blank" -%}
+                <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                {%- endif -%}
+            </a>
+
+            {% else %}
+            {{ include.data.title }}
+            {% endif %}
+        </div>
+        {% endif %}
     </div>
     <div class="col-12 col-md-6 col-lg-7 col-xxl-8">
-        {{ include.content }}
+        <div class="d-flex h-100">
+            <div class="my-auto">
+                {{ include.content }}
+                <div class="mt-3 smaller">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
     </div>
 </div>
