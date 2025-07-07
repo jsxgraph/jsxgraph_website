@@ -1,5 +1,6 @@
 {%- assign head_level = include.head_level | default: 1 -%}
 {%- assign post = include.post -%}
+{%- assign link_badges = include.link_badges | default: false -%}
 
 {% if head_level <= 5 %}{% assign tag_title = head_level | prepend: "h" %}
 {% else %}{% assign tag_title = "p" %}{% endif %}
@@ -21,17 +22,31 @@
         </div>
         <div class="ms-auto d-flex m-between-2">
             {% for cat in post.categories %}
+            {% if link_badges %}
+            <a class="badge rounded-pill btn btn-primary px-2 py-1" href="{{ relBase }}{{ site.categorylist.root }}{{ cat | slopify }}">
+                <i class="fa-solid fa-layer-group"></i>
+                {{ cat }}
+            </a>
+            {%- else %}
             <div class="badge rounded-pill bg-primary px-2 py-1 text-white">
                 <i class="fa-solid fa-layer-group"></i>
                 {{ cat }}
             </div>
+            {%- endif %}
             {% endfor %}
 
             {% for tag in post.tags %}
+            {% if link_badges %}
+            <a class="badge rounded-pill btn btn-secondary px-2 py-1" href="{{ relBase }}{{ site.taglist.root }}{{ tag | slopify }}">
+                <i class="fa-solid fa-fw fa-tag"></i>
+                {{ tag }}
+            </a>
+            {%- else %}
             <div class="badge rounded-pill bg-secondary px-2 py-1 text-white">
                 <i class="fa-solid fa-fw fa-tag"></i>
                 {{ tag }}
             </div>
+            {%- endif %}
             {% endfor %}
         </div>
     </div>

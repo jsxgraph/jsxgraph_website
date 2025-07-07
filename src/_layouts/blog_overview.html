@@ -76,7 +76,7 @@
             <ul>
                 {% assign sorted_tags = site.tags | sort %}
                 {% for tag in sorted_tags %}
-                <li><a href="{{ relBase }}{{ site.taglist.root }}{{ tag[0] | slopify }}/">
+                <li><a href="{{ relBase }}{{ site.taglist.root }}{{ tag[0] | slopify }}">
                     {{ tag[0] }}
                 </a></li>
                 {% endfor %}
@@ -86,7 +86,7 @@
             <ul>
                 {% assign sorted_cats = site.categories | sort %}
                 {% for cat in sorted_cats %}
-                <li><a href="{{ relBase }}{{ site.categorylist.root }}{{ cat[0] | slopify }}/">
+                <li><a href="{{ relBase }}{{ site.categorylist.root }}{{ cat[0] | slopify }}">
                     {{ cat[0] }}
                 </a></li>
                 {% endfor %}
