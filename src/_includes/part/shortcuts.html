@@ -42,10 +42,10 @@
         {%- assign link = relBase | append: i_page.url -%}
         {%- assign target = i_page.target | default: "_self" -%}
         {%- endif -%}
-        <div class="col-6 col-md-3 col-xl-2">
+        <div class="d-none d-sm-block col-3 col-md-3">
             <a href="{{ link }}" target="{{ target }}" class="link-quiet">
                 {% if i_page.icon %}
-                <div class="btn btn-{{ color }} square rounded-0 {{ class }} overflow-hidden w-fix-xs mx-auto" style="padding: {{ padding_y }} {{ padding_x }};">
+                <div class="btn btn-{{ color }} square rounded-0 {{ class }} overflow-hidden w-fix-xs w-fix-sm-over-md mx-auto" style="padding: {{ padding_y }} {{ padding_x }};">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <div class="biggest">
                             <i class="fa-fw {{ i_page.icon }}"></i>

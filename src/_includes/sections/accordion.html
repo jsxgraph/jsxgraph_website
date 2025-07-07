@@ -103,7 +103,7 @@
                             {%- endif -%}
                             {%- if badge != nil -%}
                             <div class="ms-auto">
-                                <div class="badge rounded-pill bg-primary {% if badge_is_date != false %}w-fix-xs{% endif %}">
+                                <div class="badge rounded-pill bg-primary {% if badge_is_date != false %}w-fix-sm{% endif %}">
                                     {%- if badge_is_date != false -%}
                                     {{ badge | date: badge_is_date }}
                                     {%- else -%}
