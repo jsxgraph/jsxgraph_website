@@ -2,8 +2,9 @@
 title: Free MOOC - Materials for teaching High School Physics
 subtitle: Online course
 date: 2020-12-13T09:00:00+00:00
-categories:
-  - Workshops
+category: Announcement
+tags:
+  - Workshop
 ---
 
 Dear friends of JSXGraph,

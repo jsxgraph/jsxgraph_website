@@ -5,8 +5,7 @@ date: 2011-09-07T15:51:51+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=658
 permalink: /2011/09/07/jsxgraph-is-in-the-cloud/
-categories:
-  - Uncategorized
+category: News
 tags:
   - CDN
 ---

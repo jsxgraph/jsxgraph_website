@@ -5,8 +5,7 @@ date: 2011-01-02T13:52:23+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=520
 permalink: /2011/01/02/jsxgraph-handling-images-and-texts/
-categories:
-  - Uncategorized
+category: News
 tags:
   - Image
   - text

@@ -5,9 +5,7 @@ date: 2014-03-19T15:13:24+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=857
 permalink: /2014/03/19/jsxgraph-in-epub3/
-categories:
-  - Howto
-  - Uncategorized
+category: Examples
 tags:
   - epub3
 ---

@@ -5,9 +5,9 @@ date: 2009-09-29T10:58:38+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=346
 permalink: /2009/09/29/jsxcompressor-zlib-compressed-javascript-code/
-categories:
-  - JSXCompressor
+category: Examples
 tags:
+  - JSXCompressor
   - gunzip
   - JavaScript compressor
   - JavaScript unzip

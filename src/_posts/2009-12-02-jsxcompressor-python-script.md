@@ -5,9 +5,9 @@ date: 2009-12-02T15:41:10+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=388
 permalink: /2009/12/02/jsxcompressor-python-script/
-categories:
-  - JSXCompressor
+category: Examples
 tags:
+  - JSXCompressor
   - gunzip
   - JavaScript compressor
   - JavaScript unzip

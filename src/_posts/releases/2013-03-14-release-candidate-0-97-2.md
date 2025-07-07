@@ -5,8 +5,6 @@ date: 2013-03-14T12:35:37+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=822
 permalink: /2013/03/14/release-candidate-0-97-2/
-categories:
-  - Uncategorized
 ---
 Version 0.97 is a complete overhaul of JSXGraph code base. It brings a lot of changes which in some cases might break your code. So, even if this version is already well tested internally, we decided to start with a release candidate. Please, test it carefully against your code base and give us feedback.
 

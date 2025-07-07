@@ -2,8 +2,9 @@
 title: JSXGraph related workshops 
 subtitle: Create learning material for moodle 
 date: 2019-03-09T09:00:00+00:00
-categories:
-  - Workshops
+category: Announcement
+tags:
+  - Workshop
 ---
 Dear friends of JSXGraph,
 we are happy to announce that since November 2018 JSXGraph is funded by the European Union in form of the Erasmus+ project ITEMS: <https://itemspro.eu/> (See also the [list of project partners](https://itemspro.eu/partners/)).

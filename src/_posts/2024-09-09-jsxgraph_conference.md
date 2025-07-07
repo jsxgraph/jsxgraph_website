@@ -1,8 +1,9 @@
 ---
 title: 5. international JSXGraph conference - 2nd announcement
 subtitle: Online conference
-categories:
-  - Workshops
+category: Announcement
+tags:
+  - Workshop
 ---
 
 Dear friends of JSXGraph,

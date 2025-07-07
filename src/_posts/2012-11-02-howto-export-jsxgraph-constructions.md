@@ -5,13 +5,11 @@ date: 2012-11-02T12:35:22+00:00
 author: michael
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=762
 permalink: /2012/11/02/howto-export-jsxgraph-constructions/
-categories:
-  - Howto
+category: News
 tags:
   - Canvas
   - export
-  - howto
-  - jsxgraph
+  - Howto
   - png
   - svg
 ---

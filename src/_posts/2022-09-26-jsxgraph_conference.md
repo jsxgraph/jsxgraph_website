@@ -2,8 +2,9 @@
 title: 3. international JSXGraph conference 
 subtitle: Online conference
 date: 2022-09-26T13:00:00+00:00
-categories:
-  - Workshops
+category: Announcement
+tags:
+  - Workshop
 ---
 Dear friends of JSXGraph,
 

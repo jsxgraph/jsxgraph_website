@@ -5,11 +5,9 @@ date: 2009-06-29T13:27:32+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=237
 permalink: /2009/06/29/recent-examples/
-categories:
-  - Uncategorized
+categories: Examples
 tags:
   - bounding box
-  - examples
   - jQuery
 ---
 Today, I want to highlight some of the recent examples in our documentation end example wiki:

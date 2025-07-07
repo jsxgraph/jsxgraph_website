@@ -1,6 +1,7 @@
 ---
 title: Exciting News - New Discussion Forum
-categories:
+category: News
+tags:
   - Discussion
 ---
 

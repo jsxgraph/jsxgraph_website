@@ -5,8 +5,9 @@ date: 2013-08-13T10:04:58+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=845
 permalink: /2013/08/13/new-moodle-plugin/
-categories:
-  - Uncategorized
+category: News
+tags:
+  - Moodle
 ---
 Finally, the moodle plugin for JSXGraph has been updated to run on moodle 2+. It is available at <a href="http://jsxgraph.uni-bayreuth.de/wp/download/tools/" target="_blank">http://jsxgraph.uni-bayreuth.de/wp/download/tools/</a>. To install, you have to unzip the downloaded file in the subdirectory &#8220;filter&#8221; of your moodle installation and open the admin page of moodle.
 

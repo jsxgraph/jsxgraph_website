@@ -5,12 +5,16 @@ date: 2013-03-14T12:13:27+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=819
 permalink: /2013/03/14/code-cleanup-in-0-97/
-categories:
-  - Uncategorized
+category: News
+tags:
+  - AMD
 ---
-While we implemented the AMD pattern in JSXGraph version 0.97 we also cleaned up our code base. There were a few math functions which you could access as &#8220;shortcuts&#8221; as methods of our `JXG.Board` class defined in `src/Wrappers.js`.
 
-`Wrappers.js` is gone now and the shortcuts were moved to more appropriate locations. This blog post lists all board method wrappers that were removed and where you can find the original functions if you used the wrappers.
+While we implemented the AMD pattern in JSXGraph version 0.97 we also cleaned up our code base. There were a few math functions which you could access as &#8220;shortcuts&#8221; as
+methods of our `JXG.Board` class defined in `src/Wrappers.js`.
+
+`Wrappers.js` is gone now and the shortcuts were moved to more appropriate locations. This blog post lists all board method wrappers that were removed and where you can find the
+original functions if you used the wrappers.
 
 ## JavaScript `Math` methods {#javascript-math-methods}
 
@@ -38,7 +42,8 @@ We provide a collection of general Math routines in our `JXG.Math` namespace. Pl
 
 ## Geometry helper functions {#geometry-helpers}
 
-Functions related to geometric calculations can be found in the `JXG.Math.Geometry` namespace. This is where you can find these methods now if you did use the corresponding board wrappers before:
+Functions related to geometric calculations can be found in the `JXG.Math.Geometry` namespace. This is where you can find these methods now if you did use the corresponding board
+wrappers before:
 
 > angle, rad, distance
 
@@ -57,7 +62,8 @@ There were also a few numerical algorithm wrappers you can now only use directly
 ### Example {#example-3}
 
 ```javascript
-    var Df = JXG.Math.Numerics.D(f); board.create('plot', [Df]);
+    var Df = JXG.Math.Numerics.D(f);
+board.create('plot', [Df]);
 ```
 
 ## Removed or renamed {#removed-an-renamed}

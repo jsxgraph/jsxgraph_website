@@ -5,9 +5,9 @@ date: 2013-03-14T12:10:49+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=816
 permalink: /2013/03/14/jsxgraph-and-amd/
-categories:
-  - Howto
+category: News
 tags:
+  - Howto
   - AMD
   - require.js
 ---

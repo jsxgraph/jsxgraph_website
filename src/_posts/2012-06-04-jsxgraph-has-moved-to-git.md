@@ -5,8 +5,7 @@ date: 2012-06-04T19:36:11+00:00
 author: michael
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=741
 permalink: /2012/06/04/jsxgraph-has-moved-to-git/
-categories:
-  - git
+category: News
 tags:
   - git
   - scm

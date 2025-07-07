@@ -5,8 +5,7 @@ date: 2009-07-31T14:02:03+00:00
 author: alfred
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=276
 permalink: /2009/07/31/problems-with-ie/
-categories:
-  - Uncategorized
+category: Bug
 tags:
   - IE
 ---
