@@ -193,7 +193,7 @@ function boardAttr() {
         boundingbox: [-10, 10, 10, -10],
         keepaspectratio: true,
         axis: false,
-        showcopyright: true,
+        showcopyright: false,
         shownavigation: false,
         movetarget: null,
         pan: {
