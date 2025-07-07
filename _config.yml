@@ -34,9 +34,9 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter: false
 disable_disk_cache: true
 
-# Pagination blogposts
+# Blogposts
 pagination:
-  enabled: true
+  enabled: false # for development disable this
   per_page: 5
   limit: 0
   permalink: '/page-:num.html'

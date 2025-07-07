@@ -45,7 +45,8 @@
             <h2 class="d-none">List of Posts</h2>
             <div class="list-group list-group-flush mx-n4 mb-4">
 
-                {% for post in paginator.posts %}
+                {%- assign posts = paginator.posts | default: site.posts -%}
+                {% for post in posts %}
                 <a href="{{ post.url }}" class="list-group-item list-group-item-action px-4 py-4">
                     <article class="post-preview">
                         <div class="mb-4">
@@ -60,7 +61,7 @@
 
             </div>
 
-            {% if paginator.total_pages > 1 %}
+            {% if paginator and paginator.total_pages > 1 %}
             <div class="d-flex">
                 {% if paginator.previous_page %}
                 <a href="{{ paginator.previous_page_path }}" class="btn btn-outline-primary w-fix-lg me-auto">Newer Posts</a>
