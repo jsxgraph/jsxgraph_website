@@ -24,6 +24,18 @@
     {% include main/menu.html active=postlist_id %}
     {% include main/topbar.html active=postlist_id %}
 
+    {%- if page.is_taglist -%}
+    {%- assign key = page.tag -%}
+    {%- assign name = "tag" -%}
+    {%- assign listkey = "tags" -%}
+    {%- elsif page.is_categorylist -%}
+    {%- assign key = page.category -%}
+    {%- assign name = "category" -%}
+    {%- assign listkey = "categories" -%}
+    {%- else -%}
+    ERROR
+    {%- endif -%}
+
     <noscript>
         <div class="alert alert-danger" role="alert">
             This page requires JavaScript to work correctly.
@@ -33,7 +45,7 @@
 
     <main class="container md-container m-between-5 mt-4 mb-5 pb-5">
         <div class="mb-3">
-            <h1>{{ postlist_page.title }} - tag "{{page.tag}}"</h1>
+            <h1>{{ postlist_page.title }} - {{ name }} "{{ key }}"</h1>
         </div>
 
         <div class="blog-overview">
@@ -42,7 +54,7 @@
             <div class="list-group list-group-flush mx-n4 mb-4">
 
                 {% for post in site.posts %}
-                {% if post.tags contains page.tag %}
+                {% if post[listkey] contains key %}
                 <a href="{{ post.url }}" class="list-group-item list-group-item-action px-4 py-4">
                     <article class="post-preview">
                         <div class="mb-4">

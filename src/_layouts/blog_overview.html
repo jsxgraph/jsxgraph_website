@@ -86,7 +86,9 @@
             <ul>
                 {% assign sorted_cats = site.categories | sort %}
                 {% for cat in sorted_cats %}
-                <li>{{ cat[0] }}</li>
+                <li><a href="{{ relBase }}{{ site.categorylist.root }}{{ cat[0] | slopify }}/">
+                    {{ cat[0] }}
+                </a></li>
                 {% endfor %}
             </ul>
         </div>
