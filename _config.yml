@@ -72,18 +72,18 @@ defaults:
       path: "news/"
     values:
       layout: blog_overview
-      posts_root: "news"
+      postlist_id: "news"
       pagination:
         enabled: true
   - scope:
       path: "_posts"
     values:
       layout: blog_post
-      posts_root: "news"
+      postlist_id: "news"
       permalink: /:year-:month-:day-:title/ # /news/:year-:month-:day-:title:output_ext   # for better SEO
   - scope:
       path: "_posts/releases"
     values:
       category: Release
-      posts_root: "news"
+      postlist_id: "news"
       # /news/release/:title:output_ext             # for better SEO

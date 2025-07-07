@@ -6,7 +6,7 @@
 </head>
 <body data-role="page" class="position-relative">
 
-    {%- assign posts_root = page.posts_root -%}
+    {%- assign postlist_id = page.postlist_id -%}
     {%- assign posts_intro = page.posts_intro | default: 50 -%}
 
     {%- for i_page in site.pages -%}
@@ -16,13 +16,13 @@
     {%- assign tmp = id.size | minus: 2 -%}
     {%- assign id = id[tmp] -%}
     {%- endif -%}
-    {%- if id == posts_root -%}
-    {%- assign posts_root_page = i_page -%}
+    {%- if id == postlist_id -%}
+    {%- assign postlist_page = i_page -%}
     {%- endif -%}
     {%- endfor -%}
 
-    {% include main/menu.html active=posts_root %}
-    {% include main/topbar.html active=posts_root %}
+    {% include main/menu.html active=postlist_id %}
+    {% include main/topbar.html active=postlist_id %}
 
     <noscript>
         <div class="alert alert-danger" role="alert">
