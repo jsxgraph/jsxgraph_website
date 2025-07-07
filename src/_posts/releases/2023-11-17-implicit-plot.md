@@ -1,6 +1,6 @@
 ---
 title: Implicit plots with JSXGraph
-subtitle: beta release
+subtitle: Beta release
 date: 2023-11-17T06:00:00+00:02
 ---
 
