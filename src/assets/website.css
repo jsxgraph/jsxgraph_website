@@ -29353,7 +29353,7 @@ small,
   justify-content: center;
 }
 .circle-clip {
-  clip-path: circle(50% at 50% 50%);
+  clip-path: circle(49% at 50% 50%);
   padding: 10%;
 }
 .square-clip {
@@ -30492,14 +30492,14 @@ label.input-group-text.w-fix-xxs {
   flex-shrink: 0 !important;
 }
 .w-fix-xxs {
-  width: 50px !important;
+  width: 40px !important;
 }
 .h-fix-xxs {
   height: 0.25rem !important;
 }
 .w-and-h-fix-xxs {
-  width: 50px !important;
-  height: 50px !important;
+  width: 40px !important;
+  height: 40px !important;
 }
 .h-and-w-fix-xxs {
   height: 0.25rem !important;
@@ -32660,14 +32660,14 @@ label.input-group-text.w-fix {
     flex-shrink: 0 !important;
   }
   .w-fix-xxs-over-xs {
-    width: 50px !important;
+    width: 40px !important;
   }
   .h-fix-xxs-over-xs {
     height: 0.25rem !important;
   }
   .w-and-h-fix-xxs-over-xs {
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
   }
   .h-and-w-fix-xxs-over-xs {
     height: 0.25rem !important;
@@ -34829,14 +34829,14 @@ label.input-group-text.w-fix {
     flex-shrink: 0 !important;
   }
   .w-fix-xxs-over-sm {
-    width: 50px !important;
+    width: 40px !important;
   }
   .h-fix-xxs-over-sm {
     height: 0.25rem !important;
   }
   .w-and-h-fix-xxs-over-sm {
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
   }
   .h-and-w-fix-xxs-over-sm {
     height: 0.25rem !important;
@@ -36998,14 +36998,14 @@ label.input-group-text.w-fix {
     flex-shrink: 0 !important;
   }
   .w-fix-xxs-over-md {
-    width: 50px !important;
+    width: 40px !important;
   }
   .h-fix-xxs-over-md {
     height: 0.25rem !important;
   }
   .w-and-h-fix-xxs-over-md {
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
   }
   .h-and-w-fix-xxs-over-md {
     height: 0.25rem !important;
@@ -39167,14 +39167,14 @@ label.input-group-text.w-fix {
     flex-shrink: 0 !important;
   }
   .w-fix-xxs-over-lg {
-    width: 50px !important;
+    width: 40px !important;
   }
   .h-fix-xxs-over-lg {
     height: 0.25rem !important;
   }
   .w-and-h-fix-xxs-over-lg {
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
   }
   .h-and-w-fix-xxs-over-lg {
     height: 0.25rem !important;
@@ -41336,14 +41336,14 @@ label.input-group-text.w-fix {
     flex-shrink: 0 !important;
   }
   .w-fix-xxs-over-xl {
-    width: 50px !important;
+    width: 40px !important;
   }
   .h-fix-xxs-over-xl {
     height: 0.25rem !important;
   }
   .w-and-h-fix-xxs-over-xl {
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
   }
   .h-and-w-fix-xxs-over-xl {
     height: 0.25rem !important;
@@ -43505,14 +43505,14 @@ label.input-group-text.w-fix {
     flex-shrink: 0 !important;
   }
   .w-fix-xxs-over-xxl {
-    width: 50px !important;
+    width: 40px !important;
   }
   .h-fix-xxs-over-xxl {
     height: 0.25rem !important;
   }
   .w-and-h-fix-xxs-over-xxl {
-    width: 50px !important;
-    height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
   }
   .h-and-w-fix-xxs-over-xxl {
     height: 0.25rem !important;
@@ -59142,8 +59142,8 @@ path.svg-apple-keyboard-dark {
   --splash-gradient: linear-gradient(to top left, #10427C, #0085a1);
 }
 #splash .splash-page {
-  height: 100vh;
-  height: 100svh;
+  min-height: 100vh;
+  min-height: 100svh;
   width: 100%;
 }
 #splash .countdown {
