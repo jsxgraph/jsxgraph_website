@@ -8,9 +8,6 @@ sitemap:
 
 sections:
 
-   - file: print
-     layout: text
-
-   - file: online
+   - file: references
      layout: text
 ---
