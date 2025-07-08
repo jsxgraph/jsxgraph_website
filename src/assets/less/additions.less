@@ -52,7 +52,10 @@ h6:first-child, .h6:first-child {
 /// Cookie hint ///
 
 #cookie-hint {
-  --bs-toast-max-width: 400px;
+  &, * {
+    --bs-toast-max-width: 400px;
+    font-size: var(--bs-toast-font-size) !important;
+  }
 }
 
 /// Accordion ///
