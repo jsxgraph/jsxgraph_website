@@ -8,7 +8,7 @@
         </button>
     </div>
     <div class="offcanvas-body m-between-3 py-0">
-        <div class="list-group list-group-flush mx-n3">
+        <div class="accordion list-group list-group-flush mx-n3" id="menu-accordion">
             {%- assign pagelist = site.pages | where: "in_menu_popup",true | where: "parent",nil | sort: 'order' -%}
             {%- for i_page in pagelist -%}
             {% assign id = i_page.url | split: '/' | last %}
@@ -24,6 +24,8 @@
 
             {%- assign subs = site.pages | where: "in_menu_popup",true | where: "parent",id | where_exp:"item", "item.parent != nil" | sort: 'order' -%}
 
+            {%- if subs.size == 0 -%}
+
             {%- if i_page.external_link -%}
             {%- assign link = i_page.external_link -%}
             {%- assign target = i_page.target | default: "_blank" -%}
@@ -31,7 +33,7 @@
             {%- assign link = relBase | append: i_page.url -%}
             {%- assign target = i_page.target | default: "_self" -%}
             {%- endif -%}
-            <a href="{{ link }}" target="{{ target }}" class="list-group-item list-group-item-action px-3 py-1 border-0 {% if page.url == i_page.url or (include.active and include.active == id) %}active{% endif %}">
+            <a href="{{ link }}" target="{{ target }}" class="list-group-item list-group-item-action px-3 py-2 {% if page.url == i_page.url or (include.active and include.active == id) %}active{% endif %}">
                 <div>
                     {{ i_page.menu_title | default: i_page.header | default: i_page.title }}
                     {%- if target == "_blank" -%}
@@ -40,24 +42,70 @@
                 </div>
             </a>
 
-            {%- for j_page in subs -%}
-            {% assign subid = j_page.url | split: '/' | last %}
-            {%- if j_page.external_link -%}
-            {%- assign link = j_page.external_link -%}
-            {%- assign target = j_page.target | default: "_blank" -%}
             {%- else -%}
-            {%- assign link = relBase | append: j_page.url -%}
-            {%- assign target = j_page.target | default: "_self" -%}
-            {%- endif -%}
-            <a href="{{ link }}" target="{{ target }}" class="list-group-item list-group-item-action px-3 py-1 border-0 {% if page.url == j_page.url or (include.active and include.active == subid) %}active{% endif %}">
-                <div class="ps-3">
-                    {{ j_page.menu_title | default: j_page.header | default: j_page.title }}
-                    {%- if target == "_blank" -%}
-                    <i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>
-                    {%- endif -%}
+
+            <div class="list-group-item p-0">
+                {%- if i_page.is_separator -%}
+                <button class="list-group-item list-group-item-action border-0 px-3 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item-{{ forloop.index0 }}" aria-expanded="false"
+                        aria-controls="accordion-item-{{ forloop.index0 }}">
+                    <div class="d-flex w-100">
+                        <div class="flex-fill">
+                            {{ i_page.menu_title | default: i_page.header | default: i_page.title }}
+                        </div>
+                        <div class="w-auto">
+                            <i class="fa-solid fa-angle-down collapse-closed"></i>
+                            <i class="fa-solid fa-angle-up collapse-opened"></i>
+                        </div>
+                    </div>
+                </button>
+                {%- else -%}
+                {%- if i_page.external_link -%}
+                {%- assign link = i_page.external_link -%}
+                {%- assign target = i_page.target | default: "_blank" -%}
+                {%- else -%}
+                {%- assign link = relBase | append: i_page.url -%}
+                {%- assign target = i_page.target | default: "_self" -%}
+                {%- endif -%}
+                <div class="d-flex">
+                    <a href="{{ link }}" target="{{ target }}" class="list-group-item list-group-item-action border-0 px-3 py-2 {% if page.url == i_page.url or (include.active and include.active == id) %}active{% endif %}">
+                        <div>
+                            {{ i_page.menu_title | default: i_page.header | default: i_page.title }}
+                            {%- if target == "_blank" -%}
+                            <i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>
+                            {%- endif -%}
+                        </div>
+                    </a>
+                    <button class="list-group-item list-group-item-action border-0 px-3 py-2 w-auto" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-item-{{ forloop.index0 }}" aria-expanded="false"
+                            aria-controls="accordion-item-{{ forloop.index0 }}">
+                        <i class="fa-solid fa-angle-down collapse-closed"></i>
+                        <i class="fa-solid fa-angle-up collapse-opened"></i>
+                    </button>
                 </div>
-            </a>
-            {%- endfor -%}
+                {%- endif -%}
+            </div>
+
+            <div id="accordion-item-{{ forloop.index0 }}" class="accordion-collapse collapse border-bottom" data-bs-parent="#menu-accordion">
+                {%- for j_page in subs -%}
+                {% assign subid = j_page.url | split: '/' | last %}
+                {%- if j_page.external_link -%}
+                {%- assign link = j_page.external_link -%}
+                {%- assign target = j_page.target | default: "_blank" -%}
+                {%- else -%}
+                {%- assign link = relBase | append: j_page.url -%}
+                {%- assign target = j_page.target | default: "_self" -%}
+                {%- endif -%}
+                <a href="{{ link }}" target="{{ target }}" class="list-group-item list-group-item-action px-3 py-2 border-0 {% if page.url == j_page.url or (include.active and include.active == subid) %}active{% endif %}">
+                    <div class="ps-3">
+                        {{ j_page.menu_title | default: j_page.header | default: j_page.title }}
+                        {%- if target == "_blank" -%}
+                        <i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>
+                        {%- endif -%}
+                    </div>
+                </a>
+                {%- endfor -%}
+            </div>
+
+            {%- endif -%}
             {%- endfor -%}
         </div>
 
