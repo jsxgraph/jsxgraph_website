@@ -56349,10 +56349,36 @@ hr {
   border-width: var(--bs-border-width);
   opacity: 1;
 }
+:root {
+  --bs-header-font-family: var(--bs-body-font-family);
+}
 .normal {
   font-weight: normal;
   font-size: var(--bs-body-font-size);
   font-family: var(--bs-body-font-family);
+}
+.font-normal {
+  font-family: var(--bs-body-font-family);
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.font-header {
+  font-family: var(--bs-header-font-family);
+}
+code,
+pre,
+.font-monospace {
+  font-family: var(--bs-font-monospace) !important;
 }
 :focus,
 :focus-visible,
@@ -58692,23 +58718,23 @@ footer {
   border-radius: 0;
   cursor: pointer;
 }
-body,
-.normal {
-  font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;
+@font-face {
+  font-family: FiraSans;
+  src: url("fonts/FiraSans/FiraSans-Regular.ttf");
 }
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@font-face {
+  font-family: FiraSansCondensed;
+  src: url("fonts/FiraSansCondensed/FiraSansCondensed-SemiBold.ttf");
+}
+@font-face {
+  font-family: FiraMono;
+  src: url("fonts/FiraMono/FiraMono-Regular.ttf");
+}
+:root {
+  --bs-body-font-family: 'FiraSans';
+  --bs-font-sans-serif: 'FiraSans';
+  --bs-header-font-family: 'FiraSansCondensed';
+  --bs-font-monospace: 'FiraMono';
 }
 .md-container {
   max-width: 90%;
@@ -59171,8 +59197,10 @@ path.svg-apple-keyboard-dark {
   border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
   border-color: #c1d8e3 !important;
 }
-#topbar.topbar-splash #topbar-logo,
-#topbar.topbar-splash #topbar-start {
+#topbar:not(.topbar-splash) .topbar-onlysplash {
+  display: none !important;
+}
+#topbar.topbar-splash .topbar-nosplash {
   display: none !important;
 }
 #topbar.topbar-splash li.nav-item:not(#menu-toggler-container),

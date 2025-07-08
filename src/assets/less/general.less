@@ -1,14 +1,23 @@
-body, .normal {
-  font-family: Verdana, Arial, Geneva, Tahoma, sans-serif;
+@font-face {
+  font-family: FiraSans;
+  src: url("fonts/FiraSans/FiraSans-Regular.ttf");
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@font-face {
+  font-family: FiraSansCondensed;
+  src: url("fonts/FiraSansCondensed/FiraSansCondensed-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: FiraMono;
+  src: url("fonts/FiraMono/FiraMono-Regular.ttf");
+}
+
+:root {
+  --bs-body-font-family: 'FiraSans';
+  --bs-font-sans-serif: 'FiraSans';
+  --bs-header-font-family: 'FiraSansCondensed';
+  --bs-font-monospace: 'FiraMono';
 }
 
 .md-container {
