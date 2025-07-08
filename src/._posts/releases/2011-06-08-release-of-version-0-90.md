@@ -9,7 +9,7 @@ tags:
   - Canvas
   - Image
   - Options
-  - texts
+  - text
 ---
 The jump of the version numbering from 0.90 to 0.82 is justified by a major rewrite of the JSXGraph code base. After gaining experience through the last couple of months we know where to go and we tried to make the source code ready for future developments. In this release, practically all source files have been refactored. The result is a smaller code base by more than 10 per cent and much improved and more complete documentation. One other benefit is the new, quite flexible handling of options. Now, a developer has total control over the visual appearance of JSXGraph constructions. One possibility to do this is to adapt the source file &#8220;Options.js&#8221; and load it after &#8220;jsxgraphcore.js&#8221;.
   

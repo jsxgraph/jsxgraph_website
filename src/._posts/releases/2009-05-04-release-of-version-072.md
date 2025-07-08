@@ -7,7 +7,7 @@ guid: http://jsxgraph.uni-bayreuth.de/wp/?p=208
 permalink: /2009/05/04/release-of-version-072/
 tags:
   - gunzip
-  - javascript
+  - JavaScript
   - pstricks
   - Riemann sum
   - unzip
