@@ -1,5 +1,5 @@
 ---
-title: Conferences
+title: Other conferences & meetings
 parent: events
 order: 2
 sitemap:
@@ -8,9 +8,6 @@ sitemap:
 
 sections:
 
-   - file: upcoming
-     layout: text
-
-   - file: past
+   - file: presentations
      layout: text     
 ---
