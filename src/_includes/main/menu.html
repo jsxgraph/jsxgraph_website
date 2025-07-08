@@ -9,8 +9,8 @@
     </div>
     <div class="offcanvas-body m-between-3 py-0">
         <div class="list-group list-group-flush mx-n3">
-            {%- assign sorted_pages = site.pages | sort: 'order' -%}
-            {%- for i_page in sorted_pages -%}
+            {%- assign pagelist = site.pages | where: "in_menu_popup",true | sort: 'order' -%}
+            {%- for i_page in pagelist -%}
             {% assign id = i_page.url | split: '/' | last %}
             {%- if id == "index.html" -%}
             {%- assign id = i_page.url | split: '/' -%}
@@ -22,7 +22,7 @@
             {%- continue -%}
             {%- endif -%}
 
-            {%- if i_page.in_menu_popup == true and i_page.parent == nil -%}
+            {%- if i_page.parent == nil -%}
             {%- if i_page.external_link -%}
             {%- assign link = i_page.external_link -%}
             {%- assign target = i_page.target | default: "_blank" -%}
@@ -39,9 +39,9 @@
                 </div>
             </a>
 
-            {%- for j_page in sorted_pages -%}
+            {%- for j_page in pagelist -%}
             {% assign subid = j_page.url | split: '/' | last %}
-            {%- if j_page.in_menu_popup == true and j_page.parent != nil and j_page.parent == id -%}
+            {%- if j_page.parent != nil and j_page.parent == id -%}
             {%- if j_page.external_link -%}
             {%- assign link = j_page.external_link -%}
             {%- assign target = j_page.target | default: "_blank" -%}

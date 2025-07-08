@@ -27,14 +27,13 @@
     <div class="row g-4 justify-content-center my-4 w-100">
         {%- assign color = include.color | default: 'primary' -%}
         {%- assign first = true -%}
-        {%- assign sorted_pages = site.pages | sort: 'order' -%}
-        {%- for i_page in sorted_pages -%}
+        {%- assign pagelist = site.pages | where: "in_shortcuts",true | sort: 'order_shortcuts' -%}
+        {%- for i_page in pagelist -%}
 
         {%- if i_page.pagination_info and i_page.pagination_info.curr_page > 1 -%}
         {%- continue -%}
         {%- endif -%}
 
-        {%- if i_page.in_shortcuts == true -%}
         {%- if i_page.external_link -%}
         {%- assign link = i_page.external_link -%}
         {%- assign target = i_page.target | default: "_blank" -%}
@@ -59,7 +58,6 @@
             </a>
         </div>
         {%- assign first = false -%}
-        {%- endif -%}
         {%- endfor -%}
     </div>
 </div>

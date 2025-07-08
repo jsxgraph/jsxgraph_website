@@ -21,9 +21,9 @@
             <nav class="navbar navbar-expand m-0 p-0">
                 <ul class="navbar-nav m-0 p-0">
 
-                    {%- assign sorted_pages = site.pages | sort: 'order' -%}
+                    {%- assign pagelist = site.pages | where: "in_menu_topbar",true | sort: 'order' -%}
                     {%- assign n_topbar = 0 -%}
-                    {%- for i_page in sorted_pages -%}
+                    {%- for i_page in pagelist -%}
                     {% assign id = i_page.url | split: '/' | last %}
                     {%- if id == "index.html" -%}
                     {%- assign id = i_page.url | split: '/' -%}
@@ -35,7 +35,6 @@
                     {%- continue -%}
                     {%- endif -%}
 
-                    {%- if i_page.in_menu_topbar == true -%}
                     {%- assign n_topbar = n_topbar | add: 1 -%}
                     <li class="nav-item d-none d-lg-block">
                         <a href="{{ relBase }}{{ i_page.url }}"
@@ -44,7 +43,6 @@
                             {{ i_page.menu_title | default: i_page.header | default: i_page.title_short | default: i_page.title }}
                         </a>
                     </li>
-                    {%- endif -%}
                     {%- endfor -%}
 
                     <li class="nav-item" id="menu-toggler-container">
