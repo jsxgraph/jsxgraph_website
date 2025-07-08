@@ -24,14 +24,14 @@
   max-width: 90%;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: @width_xxl_min) {
   .md-container {
     max-width: 1050px; // make xxl container same with as xl
   }
 }
 
 :root {
-  @media (min-width: 576px) {
+  @media (min-width: @width_sm_min) {
     --bs-body-font-size: 1.25rem;
   }
 }
