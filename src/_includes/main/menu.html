@@ -31,10 +31,10 @@
             {%- assign target = i_page.target | default: "_self" -%}
             {%- endif -%}
             <a href="{{ link }}" target="{{ target }}" class="list-group-item list-group-item-action px-3 py-1 border-0 {% if page.url == i_page.url or (include.active and include.active == id) %}active{% endif %}">
-                <div class="d-flex align-items-center">
-                    <div>{{ i_page.menu_title | default: i_page.header | default: i_page.title }}</div>
+                <div>
+                    {{ i_page.menu_title | default: i_page.header | default: i_page.title }}
                     {%- if target == "_blank" -%}
-                    <i class="fa-solid fa-arrow-up-right-from-square ms-2 smaller"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>
                     {%- endif -%}
                 </div>
             </a>
@@ -50,10 +50,10 @@
             {%- assign target = j_page.target | default: "_self" -%}
             {%- endif -%}
             <a href="{{ link }}" target="{{ target }}" class="list-group-item list-group-item-action px-3 py-1 border-0 {% if page.url == j_page.url or (include.active and include.active == subid) %}active{% endif %}">
-                <div class="d-flex align-items-center">
-                    <div class="ps-3">{{ j_page.menu_title | default: j_page.header | default: j_page.title }}</div>
+                <div class="ps-3">
+                    {{ j_page.menu_title | default: j_page.header | default: j_page.title }}
                     {%- if target == "_blank" -%}
-                    <i class="fa-solid fa-arrow-up-right-from-square ms-2 smaller"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>
                     {%- endif -%}
                 </div>
             </a>
