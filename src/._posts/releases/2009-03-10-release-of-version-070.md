@@ -7,11 +7,11 @@ guid: http://jsxgraph.uni-bayreuth.de/wp/?p=123
 permalink: /2009/03/10/release-of-version-070/
 tags:
   - axis
-  - javascript
-  - joomla
-  - jsxgraph
-  - mediawiki
-  - moodle
+  - JavaScript
+  - Joomla
+  - JSXGraph
+  - MediaWiki
+  - Moodle
   - normal
   - tangent
   - zoom bar

@@ -9,7 +9,7 @@ tags:
   - animation
   - Bezier curve
   - chart
-  - jsxgraph
+  - JSXGraph
 ---
 Version 0.77 of the JavaScript plotting and Geometry library [JSXGraph](http://jsxgraph.org) contains many improvements and feature enhancements. Beside of bug fixes the performance could also be improved considerably, again. The visual appearance of JSXGraph is another area where great progress could be achieved. The main issues were the automatic labeling of axes, the default colors of geometric elements, [gradient filling](/wiki/index.php/The_HSV_color_scheme), improved, animated highlighting, [flexible animations](/wiki/index.php/Animations). A forthcoming blog entry will be devoted to animations in greater detail. The algorithm for curve plotting has been completely rewritten. Now, function graphs having discontinuities and poles are displayed correctly in most cases. New elements are [cubic Bezier curves](/wiki/index.php/Bezier_curves), [&#8220;the other intersection point&#8221;](/wiki/index.php/Circum_circles_of_subtriangles), improved [charts](/wiki/index.php/Category:Charts), [tangent from point to circle](/wiki/index.php/Tangents_on_circle).
   
