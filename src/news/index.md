@@ -1,8 +1,10 @@
 ---
 title: News
+subtitle: Announcements
 icon: fa-solid fa-bullhorn
 order: 7
 in_shortcuts: true
+order_shortcuts: 7
 is_blogpost: false
 sitemap:
   priority: 1

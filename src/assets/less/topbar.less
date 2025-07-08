@@ -1,14 +1,18 @@
 #topbar {
   &:not(.topbar-splash) {
-    .bg-outer-gradient();
+    .bg-outer();
     .border-bottom();
-    .border-primary-dark-faded();
-    .shadow-outer-dark();
+    .border-outer();
+  }
+
+  &:not(.topbar-splash) {
+    .topbar-onlysplash {
+      .off();
+    }
   }
 
   &.topbar-splash {
-    #topbar-logo,
-    #topbar-start {
+    .topbar-nosplash {
       .off();
     }
 

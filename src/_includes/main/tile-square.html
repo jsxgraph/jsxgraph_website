@@ -1,12 +1,12 @@
 <div class="col-6">
     <a href="{{ relBase }}{{ include.target }}"
-       class="d-block p-1 w-100 h-100 square btn-{{ include.colorclass | default: 'primary' }}-gradient border border-outer-dark shadow-outer-dark overflow-hidden text-center tile-button tile-button-square"
+       class="d-block p-1 w-100 h-100 square btn-{{ include.colorclass | default: 'primary' }} border border-outer overflow-hidden text-center tile-button tile-button-square"
     >
         <div class="d-flex flex-column w-100 h-100">
             {%- if include.image -%}
             <div class="flex-fill mx-n1 mt-n1 position-relative">
                 <div class="w-100 h-100 image-bg-cover" style="background-image: url('{{ relBase }}{{ include.image }}');"></div>
-                <div class="position-absolute top-0 start-0 end-0 bottom-0 bg-{{ include.colorclass | default: 'primary' }}-gradient opacity-50"></div>
+                <div class="position-absolute top-0 start-0 end-0 bottom-0 bg-{{ include.colorclass | default: 'primary' }} opacity-50"></div>
             </div>
             {%- else -%}
             <div class="flex-fill mb-n1 d-flex align-items-center justify-content-center">

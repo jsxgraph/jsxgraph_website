@@ -2,18 +2,28 @@
 
 <header class="position-{% if splash == true %}fixed{% else %}sticky{% endif %} top-0 start-0 end-0 p-3 z-index-outer {% if splash == true %}topbar-splash{% else %}mb-4{% endif %}" id="topbar">
     <div class="d-flex justify-content-between align-items-center">
-        <a class="text-primary-gradient my-n2 py-2" href="{{ relBase }}" id="topbar-logo">
-            <img class="d-block d-sm-none h-fix-md w-auto" src="{{ relBase }}/media/logos/logo-sm.png"/>
-            <img class="d-none d-sm-block h-fix-md w-auto mb-n2" src="{{ relBase }}/media/logos/logo.png"/>
-        </a>
+        <div class="d-flex align-items-center">
+            <a class="text-primary my-n2 py-2 me-2" href="{{ relBase }}">
+                <div class="topbar-nosplash">
+                    <img class="d-block d-sm-none h-fix-md w-auto" src="{{ relBase }}/media/logos/logo-sm.png"/>
+                    <img class="d-none d-sm-block h-fix-md w-auto mb-n1" src="{{ relBase }}/media/logos/logo.png"/>
+                </div>
+                <div class="topbar-onlysplash">
+                    <img class="d-none d-md-block h-fix-md w-auto" src="{{ relBase }}/media/logos/logo-sm.png"/>
+                </div>
+            </a>
+            <div class="text-primary">
+                {{ const.version }}
+            </div>
+        </div>
         <div></div>
         <div class="d-flex align-items-center m-between-3 m-between-md-4">
             <nav class="navbar navbar-expand m-0 p-0">
                 <ul class="navbar-nav m-0 p-0">
 
-                    {%- assign sorted_pages = site.pages | sort: 'order' -%}
+                    {%- assign pagelist = site.pages | where: "in_menu_topbar",true | sort: 'order' -%}
                     {%- assign n_topbar = 0 -%}
-                    {%- for i_page in sorted_pages -%}
+                    {%- for i_page in pagelist -%}
                     {% assign id = i_page.url | split: '/' | last %}
                     {%- if id == "index.html" -%}
                     {%- assign id = i_page.url | split: '/' -%}
@@ -25,7 +35,6 @@
                     {%- continue -%}
                     {%- endif -%}
 
-                    {%- if i_page.in_menu_topbar == true -%}
                     {%- assign n_topbar = n_topbar | add: 1 -%}
                     <li class="nav-item d-none d-lg-block">
                         <a href="{{ relBase }}{{ i_page.url }}"
@@ -34,7 +43,6 @@
                             {{ i_page.menu_title | default: i_page.header | default: i_page.title_short | default: i_page.title }}
                         </a>
                     </li>
-                    {%- endif -%}
                     {%- endfor -%}
 
                     <li class="nav-item" id="menu-toggler-container">

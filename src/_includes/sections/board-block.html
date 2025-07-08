@@ -9,7 +9,7 @@
             })();
         </script>
         {% if include.data.title %}
-        <div class="mt-3 text-muted smaller text-center">
+        <div class="mt-3 text-muted text-center">
             {% if include.data.link %}
 
             {%- assign stringToCheck = include.data.link %}
@@ -22,9 +22,9 @@
             {%- assign target = include.data.target | default: "_self" -%}
             {%- endif -%}
             <a href="{{ link }}" target="{{ target }}">
-                <span>{{ include.data.title }}</span>
+                {{ include.data.title }}
                 {%- if target == "_blank" -%}
-                <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                <i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>
                 {%- endif -%}
             </a>
 
@@ -38,7 +38,7 @@
         <div class="d-flex h-100">
             <div class="my-auto">
                 {{ include.content }}
-                <div class="mt-3 smaller">
+                <div class="mt-3">
                     &nbsp;
                 </div>
             </div>

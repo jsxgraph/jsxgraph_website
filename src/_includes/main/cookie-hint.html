@@ -1,13 +1,13 @@
 <div class="toast-container position-fixed bottom-0 end-0 p-3">
-    <div id="cookie-hint" class="toast bg-secondary-light border-secondary-dark shadow-outer-dark rounded-0 z-index-outer" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+    <div id="cookie-hint" class="toast bg-outer border-primary rounded-0 z-index-outer" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
         <div class="d-flex">
             <div class="toast-body px-3 py-2">
                 {{ const.cookie.hint }}
-                <a href="{{ relBase }}/de/datenschutz">
+                <a href="{{ relBase }}{{ const.cookie.link }}">
                     {{ const.cookie.more }}
                 </a>
             </div>
-            <button type="button" class="btn btn-secondary rounded-0" id="cookie-accept">
+            <button type="button" class="btn btn-primary rounded-0" id="cookie-accept">
                 {{ const.cookie.btn }}
             </button>
         </div>

@@ -10,7 +10,7 @@ module Jekyll
 
     def replace_links(input)
       # Add target="_blank" to external links
-      input = input.gsub(/<a(.*)href="http([^"]+)"([^>]*)>(.*)<\/a>/, '<a\1href="http\2" target="_blank"\3>\4</a>');
+      input = input.gsub(/<a(.*)href="http([^"]+)"([^>]*)>(.*)<\/a>/, '<a\1href="http\2" target="_blank"\3>\4<i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i></a>');
       # Add icon to YouTube and mundo links
       input = input.gsub(/<a(.*)href="([^"]*)(youtube|mundo\.schule)([^"]*)"([^>]*)>(.*)<\/a>/, '<a\1href="\2\3\4" target="_blank"\5><i class="fa-brands fa-fw fa-lg fa-youtube me-1"></i>\6</a>');
       # Add target="_blank" and icon to files

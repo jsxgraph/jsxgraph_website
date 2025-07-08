@@ -36,14 +36,13 @@
 
         {%- assign color = 'primary' -%}
         {%- assign first = true -%}
-        {%- assign sorted_pages = site.pages | sort: 'order' -%}
-        {%- for i_page in sorted_pages -%}
+        {%- assign pagelist = site.pages | where: "parent",parent | sort: 'order' -%}
+        {%- for i_page in pagelist -%}
 
         {%- if i_page.pagination_info and i_page.pagination_info.curr_page > 1 -%}
         {%- continue -%}
         {%- endif -%}
 
-        {%- if i_page.parent == parent -%}
         {%- if i_page.external_link -%}
         {%- assign link = i_page.external_link -%}
         {%- assign target = i_page.target | default: "_blank" -%}
@@ -61,8 +60,6 @@
                 </div>
             </a>
         </div>
-
-        {%- endif -%}
         {%- endfor -%}
     </div>
 </div>
