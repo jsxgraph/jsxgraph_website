@@ -99,7 +99,7 @@
         {%- assign contents = contents | push: cont | shift -%}
         <!--@formatter:on-->
 
-    <div class="row g-5 g-md-3 g-lg-4 g-xl-5">
+    <div class="row g-5 g-md-3 g-lg-5 g-xl-4">
 
         {%- for head in heads -%}
         {%- assign image = images[forloop.index0] -%}
@@ -111,33 +111,36 @@
         {%- endif -%}
 
         <div class="col-12 col-md-6 col-xl-4">
-            <div class="card" id="{{ id | default: head | to_id }}">
-                {%- if image != nil -%}
-                <img src="{{ relBase }}{{ image }}" class="card-img-top" alt="{{ head }}">
-                {%- endif -%}
-                <div class="card-body border-top">
-                    {%- if head != nil -%}
-                    <h2 class="card-title">{{ head | pre_markdown | markdownify | replace_post }}</h2>
+            {%- if link != nil -%}
+            {%- assign stringToCheck = link %}
+            {%- assign checkArray = stringToCheck | split: ':' -%}
+            {%- if checkArray[0] == 'http' or checkArray[0] == 'https' -%}
+            {%- assign link = stringToCheck %}
+            {%- assign target = '_blank' %}
+            {%- else -%}
+            {%- assign link = relBase | append: stringToCheck %}
+            {%- assign target = '_self' %}
+            {%- endif -%}
+            <a href="{{ link }}" target="{{ target }}" class="card card-action card-action-outer-light h-100 no-focus" id="{{ id | default: head | to_id }}">
+                {%- else -%}
+                <div class="card h-100" id="{{ id | default: head | to_id }}">
                     {%- endif -%}
-                    {%- if body != nil -%}
-                    {{ body | pre_markdown | markdownify | replace_post }}
+                    {%- if image != nil -%}
+                    <img src="{{ relBase }}{{ image }}" class="card-img-top" alt="{{ head }}">
                     {%- endif -%}
+                    <div class="card-body">
+                        {%- if head != nil -%}
+                        <h2 class="card-title">{{ head | pre_markdown | markdownify | replace_post }}</h2>
+                        {%- endif -%}
+                        {%- if body != nil -%}
+                        {{ body | pre_markdown | markdownify | replace_post }}
+                        {%- endif -%}
+                    </div>
+                    {%- if link == nil -%}
                 </div>
-                {%- if link != nil -%}
-                <div class="card-footer p-0">
-                    {%- assign stringToCheck = link %}
-                    {%- assign checkArray = stringToCheck | split: ':' -%}
-                    {%- if checkArray[0] == 'http' or checkArray[0] == 'https' -%}
-                    {%- assign link = stringToCheck %}
-                    {%- assign target = '_blank' %}
-                    {%- else -%}
-                    {%- assign link = relBase | append: stringToCheck %}
-                    {%- assign target = '_self' %}
-                    {%- endif -%}
-                    <a href="{{ link }}" target="{{ target }}" class="btn btn-primary w-100 rounded-top-0">Go to {{ head | pre_markdown | markdownify | replace_post }}</a>
-                </div>
-                {%- endif -%}
-            </div>
+                {%- else -%}
+            </a>
+            {%- endif -%}
         </div>
         {%- endfor -%}
     </div>

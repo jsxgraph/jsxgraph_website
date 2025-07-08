@@ -1081,6 +1081,28 @@ a:hover,
   background-color: inherit;
   box-shadow: none;
 }
+a.card {
+  color: var(--bs-body-color);
+  text-decoration: none;
+}
+.card.card-action {
+  cursor: pointer;
+}
+.card.card-action:hover:not(.no-hover),
+.card.card-action.hover:not(.no-hover),
+.card.card-action:focus:not(.no-focus),
+.card.card-action:focus-visible:not(.no-focus),
+.card.card-action.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #edeff2 !important;
+  box-shadow: 0 0 7px 0 #dde2e6 !important;
+}
+.card.card-action:active,
+.card.card-action.active {
+  color: #212529;
+  background-color: #d5dbe0 !important;
+  box-shadow: 0 0 7px 0 #c6cdd5 !important;
+}
 .navbar .nav-link {
   color: #212529;
 }
@@ -1746,6 +1768,21 @@ a:hover,
   color: #212529;
   background-color: #e0e0e0 !important;
   border-color: #e0e0e0;
+}
+.card.card-action-body:hover:not(.no-hover),
+.card.card-action-body.hover:not(.no-hover),
+.card.card-action-body:focus:not(.no-focus),
+.card.card-action-body:focus-visible:not(.no-focus),
+.card.card-action-body.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #f5f5f5 !important;
+  box-shadow: 0 0 7px 0 #f5f5f5 !important;
+}
+.card.card-action-body:active,
+.card.card-action-body.active {
+  color: #212529;
+  background-color: #e0e0e0 !important;
+  box-shadow: 0 0 7px 0 #e0e0e0 !important;
 }
 .form-check-input-body:checked,
 .form-check-input-body[type=checkbox]:indeterminate {
@@ -2459,6 +2496,21 @@ a:hover,
   background-color: #87ce87 !important;
   border-color: #87ce87;
 }
+.card.card-action-green:hover:not(.no-hover),
+.card.card-action-green.hover:not(.no-hover),
+.card.card-action-green:focus:not(.no-focus),
+.card.card-action-green:focus-visible:not(.no-focus),
+.card.card-action-green.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #a4daa4 !important;
+  box-shadow: 0 0 7px 0 #008200 !important;
+}
+.card.card-action-green:active,
+.card.card-action-green.active {
+  color: #212529;
+  background-color: #87ce87 !important;
+  box-shadow: 0 0 7px 0 #005900 !important;
+}
 .form-check-input-green:checked,
 .form-check-input-green[type=checkbox]:indeterminate {
   border-color: #009600;
@@ -3170,6 +3222,21 @@ a:hover,
   color: #212529;
   background-color: #fff475 !important;
   border-color: #fff475;
+}
+.card.card-action-yellow:hover:not(.no-hover),
+.card.card-action-yellow.hover:not(.no-hover),
+.card.card-action-yellow:focus:not(.no-focus),
+.card.card-action-yellow:focus-visible:not(.no-focus),
+.card.card-action-yellow.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #fff79e !important;
+  box-shadow: 0 0 7px 0 #ebd700 !important;
+}
+.card.card-action-yellow:active,
+.card.card-action-yellow.active {
+  color: #212529;
+  background-color: #fff475 !important;
+  box-shadow: 0 0 7px 0 #c2b200 !important;
 }
 .form-check-input-yellow:checked,
 .form-check-input-yellow[type=checkbox]:indeterminate {
@@ -3883,6 +3950,21 @@ a:hover,
   background-color: #ffcf77 !important;
   border-color: #ffcf77;
 }
+.card.card-action-orange:hover:not(.no-hover),
+.card.card-action-orange.hover:not(.no-hover),
+.card.card-action-orange:focus:not(.no-focus),
+.card.card-action-orange:focus-visible:not(.no-focus),
+.card.card-action-orange.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #ffdea0 !important;
+  box-shadow: 0 0 7px 0 #f29d00 !important;
+}
+.card.card-action-orange:active,
+.card.card-action-orange.active {
+  color: #212529;
+  background-color: #ffcf77 !important;
+  box-shadow: 0 0 7px 0 #c98200 !important;
+}
 .form-check-input-orange:checked,
 .form-check-input-orange[type=checkbox]:indeterminate {
   border-color: #ffa807;
@@ -4594,6 +4676,21 @@ a:hover,
   color: #fff;
   background-color: #ff7575 !important;
   border-color: #ff7575;
+}
+.card.card-action-red:hover:not(.no-hover),
+.card.card-action-red.hover:not(.no-hover),
+.card.card-action-red:focus:not(.no-focus),
+.card.card-action-red:focus-visible:not(.no-focus),
+.card.card-action-red.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #ff9e9e !important;
+  box-shadow: 0 0 7px 0 #eb0000 !important;
+}
+.card.card-action-red:active,
+.card.card-action-red.active {
+  color: #fff;
+  background-color: #ff7575 !important;
+  box-shadow: 0 0 7px 0 #c20000 !important;
 }
 .form-check-input-red:checked,
 .form-check-input-red[type=checkbox]:indeterminate {
@@ -5307,6 +5404,21 @@ a:hover,
   background-color: #cc75ff !important;
   border-color: #cc75ff;
 }
+.card.card-action-purple:hover:not(.no-hover),
+.card.card-action-purple.hover:not(.no-hover),
+.card.card-action-purple:focus:not(.no-focus),
+.card.card-action-purple:focus-visible:not(.no-focus),
+.card.card-action-purple.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #db9eff !important;
+  box-shadow: 0 0 7px 0 #9400eb !important;
+}
+.card.card-action-purple:active,
+.card.card-action-purple.active {
+  color: #fff;
+  background-color: #cc75ff !important;
+  box-shadow: 0 0 7px 0 #7a00c2 !important;
+}
 .form-check-input-purple:checked,
 .form-check-input-purple[type=checkbox]:indeterminate {
   border-color: #a100ff;
@@ -6018,6 +6130,21 @@ a:hover,
   color: #212529;
   background-color: #d2d2d2 !important;
   border-color: #d2d2d2;
+}
+.card.card-action-grey-light:hover:not(.no-hover),
+.card.card-action-grey-light.hover:not(.no-hover),
+.card.card-action-grey-light:focus:not(.no-focus),
+.card.card-action-grey-light:focus-visible:not(.no-focus),
+.card.card-action-grey-light.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #e7e7e7 !important;
+  box-shadow: 0 0 7px 0 #c5c5c5 !important;
+}
+.card.card-action-grey-light:active,
+.card.card-action-grey-light.active {
+  color: #212529;
+  background-color: #d2d2d2 !important;
+  box-shadow: 0 0 7px 0 #b1b1b1 !important;
 }
 .form-check-input-grey-light:checked,
 .form-check-input-grey-light[type=checkbox]:indeterminate {
@@ -6731,6 +6858,21 @@ a:hover,
   background-color: #c9c9c9 !important;
   border-color: #c9c9c9;
 }
+.card.card-action-grey:hover:not(.no-hover),
+.card.card-action-grey.hover:not(.no-hover),
+.card.card-action-grey:focus:not(.no-focus),
+.card.card-action-grey:focus-visible:not(.no-focus),
+.card.card-action-grey.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #dddddd !important;
+  box-shadow: 0 0 7px 0 #a6a6a6 !important;
+}
+.card.card-action-grey:active,
+.card.card-action-grey.active {
+  color: #212529;
+  background-color: #c9c9c9 !important;
+  box-shadow: 0 0 7px 0 #919191 !important;
+}
 .form-check-input-grey:checked,
 .form-check-input-grey[type=checkbox]:indeterminate {
   border-color: #b0b0b0;
@@ -7442,6 +7584,21 @@ a:hover,
   color: #212529;
   background-color: #b4b4b4 !important;
   border-color: #b4b4b4;
+}
+.card.card-action-grey-dark:hover:not(.no-hover),
+.card.card-action-grey-dark.hover:not(.no-hover),
+.card.card-action-grey-dark:focus:not(.no-focus),
+.card.card-action-grey-dark:focus-visible:not(.no-focus),
+.card.card-action-grey-dark.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #c8c8c8 !important;
+  box-shadow: 0 0 7px 0 #5f5f5f !important;
+}
+.card.card-action-grey-dark:active,
+.card.card-action-grey-dark.active {
+  color: #212529;
+  background-color: #b4b4b4 !important;
+  box-shadow: 0 0 7px 0 #4b4b4b !important;
 }
 .form-check-input-grey-dark:checked,
 .form-check-input-grey-dark[type=checkbox]:indeterminate {
@@ -8155,6 +8312,21 @@ a:hover,
   background-color: #80d7e5 !important;
   border-color: #80d7e5;
 }
+.card.card-action-blue:hover:not(.no-hover),
+.card.card-action-blue.hover:not(.no-hover),
+.card.card-action-blue:focus:not(.no-focus),
+.card.card-action-blue:focus-visible:not(.no-focus),
+.card.card-action-blue.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #a2e1ec !important;
+  box-shadow: 0 0 7px 0 #009db7 !important;
+}
+.card.card-action-blue:active,
+.card.card-action-blue.active {
+  color: #212529;
+  background-color: #80d7e5 !important;
+  box-shadow: 0 0 7px 0 #007a8e !important;
+}
 .form-check-input-blue:checked,
 .form-check-input-blue[type=checkbox]:indeterminate {
   border-color: #00aecb;
@@ -8866,6 +9038,21 @@ a:hover,
   color: #fff;
   background-color: #949494 !important;
   border-color: #949494;
+}
+.card.card-action-black:hover:not(.no-hover),
+.card.card-action-black.hover:not(.no-hover),
+.card.card-action-black:focus:not(.no-focus),
+.card.card-action-black:focus-visible:not(.no-focus),
+.card.card-action-black.focus:not(.no-focus) {
+  color: #fff;
+  background-color: #a8a8a8 !important;
+  box-shadow: 0 0 7px 0 #000000 !important;
+}
+.card.card-action-black:active,
+.card.card-action-black.active {
+  color: #fff;
+  background-color: #949494 !important;
+  box-shadow: 0 0 7px 0 #000000 !important;
 }
 .form-check-input-black:checked,
 .form-check-input-black[type=checkbox]:indeterminate {
@@ -9579,6 +9766,21 @@ a:hover,
   background-color: #d4dde7 !important;
   border-color: #d4dde7;
 }
+.card.card-action-background:hover:not(.no-hover),
+.card.card-action-background.hover:not(.no-hover),
+.card.card-action-background:focus:not(.no-focus),
+.card.card-action-background:focus-visible:not(.no-focus),
+.card.card-action-background.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #eef2f6 !important;
+  box-shadow: 0 0 7px 0 #e6ebf1 !important;
+}
+.card.card-action-background:active,
+.card.card-action-background.active {
+  color: #212529;
+  background-color: #d4dde7 !important;
+  box-shadow: 0 0 7px 0 #ccd6e3 !important;
+}
 .form-check-input-background:checked,
 .form-check-input-background[type=checkbox]:indeterminate {
   border-color: #f3f6f8;
@@ -10290,6 +10492,21 @@ a:hover,
   color: #212529;
   background-color: #c2d9e3 !important;
   border-color: #c2d9e3;
+}
+.card.card-action-outer:hover:not(.no-hover),
+.card.card-action-outer.hover:not(.no-hover),
+.card.card-action-outer:focus:not(.no-focus),
+.card.card-action-outer:focus-visible:not(.no-focus),
+.card.card-action-outer.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #deebf0 !important;
+  box-shadow: 0 0 7px 0 #b3cfdc !important;
+}
+.card.card-action-outer:active,
+.card.card-action-outer.active {
+  color: #212529;
+  background-color: #c2d9e3 !important;
+  box-shadow: 0 0 7px 0 #97bed0 !important;
 }
 .form-check-input-outer:checked,
 .form-check-input-outer[type=checkbox]:indeterminate {
@@ -11003,6 +11220,21 @@ a:hover,
   background-color: #cadee7 !important;
   border-color: #cadee7;
 }
+.card.card-action-outer-light:hover:not(.no-hover),
+.card.card-action-outer-light.hover:not(.no-hover),
+.card.card-action-outer-light:focus:not(.no-focus),
+.card.card-action-outer-light:focus-visible:not(.no-focus),
+.card.card-action-outer-light.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #e6eff4 !important;
+  box-shadow: 0 0 7px 0 #ccdfe8 !important;
+}
+.card.card-action-outer-light:active,
+.card.card-action-outer-light.active {
+  color: #212529;
+  background-color: #cadee7 !important;
+  box-shadow: 0 0 7px 0 #b0cddb !important;
+}
 .form-check-input-outer-light:checked,
 .form-check-input-outer-light[type=checkbox]:indeterminate {
   border-color: #dae8ee;
@@ -11714,6 +11946,21 @@ a:hover,
   color: #212529;
   background-color: #afc3d5 !important;
   border-color: #afc3d5;
+}
+.card.card-action-outer-dark:hover:not(.no-hover),
+.card.card-action-outer-dark.hover:not(.no-hover),
+.card.card-action-outer-dark:focus:not(.no-focus),
+.card.card-action-outer-dark:focus-visible:not(.no-focus),
+.card.card-action-outer-dark.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #cad7e3 !important;
+  box-shadow: 0 0 7px 0 #6d92b3 !important;
+}
+.card.card-action-outer-dark:active,
+.card.card-action-outer-dark.active {
+  color: #212529;
+  background-color: #afc3d5 !important;
+  box-shadow: 0 0 7px 0 #557ea2 !important;
 }
 .form-check-input-outer-dark:checked,
 .form-check-input-outer-dark[type=checkbox]:indeterminate {
@@ -12427,6 +12674,21 @@ a:hover,
   background-color: #90a7c2 !important;
   border-color: #90a7c2;
 }
+.card.card-action-primary:hover:not(.no-hover),
+.card.card-action-primary.hover:not(.no-hover),
+.card.card-action-primary:focus:not(.no-focus),
+.card.card-action-primary:focus-visible:not(.no-focus),
+.card.card-action-primary.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #aabcd0 !important;
+  box-shadow: 0 0 7px 0 #0e386a !important;
+}
+.card.card-action-primary:active,
+.card.card-action-primary.active {
+  color: #fff;
+  background-color: #90a7c2 !important;
+  box-shadow: 0 0 7px 0 #092546 !important;
+}
 .form-check-input-primary:checked,
 .form-check-input-primary[type=checkbox]:indeterminate {
   border-color: #10427C;
@@ -13138,6 +13400,21 @@ a:hover,
   color: #212529;
   background-color: #86c5d2 !important;
   border-color: #86c5d2;
+}
+.card.card-action-secondary:hover:not(.no-hover),
+.card.card-action-secondary.hover:not(.no-hover),
+.card.card-action-secondary:focus:not(.no-focus),
+.card.card-action-secondary:focus-visible:not(.no-focus),
+.card.card-action-secondary.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #a4d3dd !important;
+  box-shadow: 0 0 7px 0 #00748d !important;
+}
+.card.card-action-secondary:active,
+.card.card-action-secondary.active {
+  color: #212529;
+  background-color: #86c5d2 !important;
+  box-shadow: 0 0 7px 0 #005264 !important;
 }
 .form-check-input-secondary:checked,
 .form-check-input-secondary[type=checkbox]:indeterminate {
@@ -13851,6 +14128,21 @@ a:hover,
   background-color: #8bb6ca !important;
   border-color: #8bb6ca;
 }
+.card.card-action-tertiary:hover:not(.no-hover),
+.card.card-action-tertiary.hover:not(.no-hover),
+.card.card-action-tertiary:focus:not(.no-focus),
+.card.card-action-tertiary:focus-visible:not(.no-focus),
+.card.card-action-tertiary.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #a7c8d7 !important;
+  box-shadow: 0 0 7px 0 #07567b !important;
+}
+.card.card-action-tertiary:active,
+.card.card-action-tertiary.active {
+  color: #212529;
+  background-color: #8bb6ca !important;
+  box-shadow: 0 0 7px 0 #053b55 !important;
+}
 .form-check-input-tertiary:checked,
 .form-check-input-tertiary[type=checkbox]:indeterminate {
   border-color: #08648f;
@@ -14562,6 +14854,21 @@ a:hover,
   color: #212529;
   background-color: #acbed2 !important;
   border-color: #acbed2;
+}
+.card.card-action-primary-light:hover:not(.no-hover),
+.card.card-action-primary-light.hover:not(.no-hover),
+.card.card-action-primary-light:focus:not(.no-focus),
+.card.card-action-primary-light:focus-visible:not(.no-focus),
+.card.card-action-primary-light.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #c7d3e0 !important;
+  box-shadow: 0 0 7px 0 #6283a9 !important;
+}
+.card.card-action-primary-light:active,
+.card.card-action-primary-light.active {
+  color: #212529;
+  background-color: #acbed2 !important;
+  box-shadow: 0 0 7px 0 #506f93 !important;
 }
 .form-check-input-primary-light:checked,
 .form-check-input-primary-light[type=checkbox]:indeterminate {
@@ -15275,6 +15582,21 @@ a:hover,
   background-color: #929faf !important;
   border-color: #929faf;
 }
+.card.card-action-primary-dark:hover:not(.no-hover),
+.card.card-action-primary-dark.hover:not(.no-hover),
+.card.card-action-primary-dark:focus:not(.no-focus),
+.card.card-action-primary-dark:focus-visible:not(.no-focus),
+.card.card-action-primary-dark.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #aab4c0 !important;
+  box-shadow: 0 0 7px 0 #071e38 !important;
+}
+.card.card-action-primary-dark:active,
+.card.card-action-primary-dark.active {
+  color: #fff;
+  background-color: #929faf !important;
+  box-shadow: 0 0 7px 0 #030b14 !important;
+}
 .form-check-input-primary-dark:checked,
 .form-check-input-primary-dark[type=checkbox]:indeterminate {
   border-color: #0a284a;
@@ -15986,6 +16308,21 @@ a:hover,
   color: #212529;
   background-color: #a4d4de !important;
   border-color: #a4d4de;
+}
+.card.card-action-secondary-light:hover:not(.no-hover),
+.card.card-action-secondary-light.hover:not(.no-hover),
+.card.card-action-secondary-light:focus:not(.no-focus),
+.card.card-action-secondary-light:focus-visible:not(.no-focus),
+.card.card-action-secondary-light.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #c2e2e9 !important;
+  box-shadow: 0 0 7px 0 #57afc1 !important;
+}
+.card.card-action-secondary-light:active,
+.card.card-action-secondary-light.active {
+  color: #212529;
+  background-color: #a4d4de !important;
+  box-shadow: 0 0 7px 0 #409caf !important;
 }
 .form-check-input-secondary-light:checked,
 .form-check-input-secondary-light[type=checkbox]:indeterminate {
@@ -16699,6 +17036,21 @@ a:hover,
   background-color: #8db1b8 !important;
   border-color: #8db1b8;
 }
+.card.card-action-secondary-dark:hover:not(.no-hover),
+.card.card-action-secondary-dark.hover:not(.no-hover),
+.card.card-action-secondary-dark:focus:not(.no-focus),
+.card.card-action-secondary-dark:focus-visible:not(.no-focus),
+.card.card-action-secondary-dark.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #a6c2c8 !important;
+  box-shadow: 0 0 7px 0 #003f4c !important;
+}
+.card.card-action-secondary-dark:active,
+.card.card-action-secondary-dark.active {
+  color: #fff;
+  background-color: #8db1b8 !important;
+  box-shadow: 0 0 7px 0 #001d23 !important;
+}
 .form-check-input-secondary-dark:checked,
 .form-check-input-secondary-dark[type=checkbox]:indeterminate {
   border-color: #005061;
@@ -17410,6 +17762,21 @@ a:hover,
   color: #212529;
   background-color: #a8c9d8 !important;
   border-color: #a8c9d8;
+}
+.card.card-action-tertiary-light:hover:not(.no-hover),
+.card.card-action-tertiary-light.hover:not(.no-hover),
+.card.card-action-tertiary-light:focus:not(.no-focus),
+.card.card-action-tertiary-light:focus-visible:not(.no-focus),
+.card.card-action-tertiary-light.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #c5dae4 !important;
+  box-shadow: 0 0 7px 0 #5d99b5 !important;
+}
+.card.card-action-tertiary-light:active,
+.card.card-action-tertiary-light.active {
+  color: #212529;
+  background-color: #a8c9d8 !important;
+  box-shadow: 0 0 7px 0 #4984a0 !important;
 }
 .form-check-input-tertiary-light:checked,
 .form-check-input-tertiary-light[type=checkbox]:indeterminate {
@@ -18123,6 +18490,21 @@ a:hover,
   background-color: #8fa8b3 !important;
   border-color: #8fa8b3;
 }
+.card.card-action-tertiary-dark:hover:not(.no-hover),
+.card.card-action-tertiary-dark.hover:not(.no-hover),
+.card.card-action-tertiary-dark:focus:not(.no-focus),
+.card.card-action-tertiary-dark:focus-visible:not(.no-focus),
+.card.card-action-tertiary-dark.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #a8bbc4 !important;
+  box-shadow: 0 0 7px 0 #042e42 !important;
+}
+.card.card-action-tertiary-dark:active,
+.card.card-action-tertiary-dark.active {
+  color: #fff;
+  background-color: #8fa8b3 !important;
+  box-shadow: 0 0 7px 0 #02131c !important;
+}
 .form-check-input-tertiary-dark:checked,
 .form-check-input-tertiary-dark[type=checkbox]:indeterminate {
   border-color: #053c56;
@@ -18834,6 +19216,21 @@ a:hover,
   color: #212529;
   background-color: #87ce87 !important;
   border-color: #87ce87;
+}
+.card.card-action-success:hover:not(.no-hover),
+.card.card-action-success.hover:not(.no-hover),
+.card.card-action-success:focus:not(.no-focus),
+.card.card-action-success:focus-visible:not(.no-focus),
+.card.card-action-success.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #a4daa4 !important;
+  box-shadow: 0 0 7px 0 #008200 !important;
+}
+.card.card-action-success:active,
+.card.card-action-success.active {
+  color: #212529;
+  background-color: #87ce87 !important;
+  box-shadow: 0 0 7px 0 #005900 !important;
 }
 .form-check-input-success:checked,
 .form-check-input-success[type=checkbox]:indeterminate {
@@ -19547,6 +19944,21 @@ a:hover,
   background-color: #ffdd77 !important;
   border-color: #ffdd77;
 }
+.card.card-action-warning:hover:not(.no-hover),
+.card.card-action-warning.hover:not(.no-hover),
+.card.card-action-warning:focus:not(.no-focus),
+.card.card-action-warning:focus-visible:not(.no-focus),
+.card.card-action-warning.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #ffe7a0 !important;
+  box-shadow: 0 0 7px 0 #f2b500 !important;
+}
+.card.card-action-warning:active,
+.card.card-action-warning.active {
+  color: #212529;
+  background-color: #ffdd77 !important;
+  box-shadow: 0 0 7px 0 #c99700 !important;
+}
 .form-check-input-warning:checked,
 .form-check-input-warning[type=checkbox]:indeterminate {
   border-color: #ffc107;
@@ -20258,6 +20670,21 @@ a:hover,
   color: #fff;
   background-color: #ff7575 !important;
   border-color: #ff7575;
+}
+.card.card-action-danger:hover:not(.no-hover),
+.card.card-action-danger.hover:not(.no-hover),
+.card.card-action-danger:focus:not(.no-focus),
+.card.card-action-danger:focus-visible:not(.no-focus),
+.card.card-action-danger.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #ff9e9e !important;
+  box-shadow: 0 0 7px 0 #eb0000 !important;
+}
+.card.card-action-danger:active,
+.card.card-action-danger.active {
+  color: #fff;
+  background-color: #ff7575 !important;
+  box-shadow: 0 0 7px 0 #c20000 !important;
 }
 .form-check-input-danger:checked,
 .form-check-input-danger[type=checkbox]:indeterminate {
@@ -20971,6 +21398,21 @@ a:hover,
   background-color: #ff7575 !important;
   border-color: #ff7575;
 }
+.card.card-action-error:hover:not(.no-hover),
+.card.card-action-error.hover:not(.no-hover),
+.card.card-action-error:focus:not(.no-focus),
+.card.card-action-error:focus-visible:not(.no-focus),
+.card.card-action-error.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #ff9e9e !important;
+  box-shadow: 0 0 7px 0 #eb0000 !important;
+}
+.card.card-action-error:active,
+.card.card-action-error.active {
+  color: #fff;
+  background-color: #ff7575 !important;
+  box-shadow: 0 0 7px 0 #c20000 !important;
+}
 .form-check-input-error:checked,
 .form-check-input-error[type=checkbox]:indeterminate {
   border-color: red;
@@ -21682,6 +22124,21 @@ a:hover,
   color: #fff;
   background-color: #9da6af !important;
   border-color: #9da6af;
+}
+.card.card-action-info:hover:not(.no-hover),
+.card.card-action-info.hover:not(.no-hover),
+.card.card-action-info:focus:not(.no-focus),
+.card.card-action-info:focus-visible:not(.no-focus),
+.card.card-action-info.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #b3bac1 !important;
+  box-shadow: 0 0 7px 0 #213242 !important;
+}
+.card.card-action-info:active,
+.card.card-action-info.active {
+  color: #fff;
+  background-color: #9da6af !important;
+  box-shadow: 0 0 7px 0 #141d27 !important;
 }
 .form-check-input-info:checked,
 .form-check-input-info[type=checkbox]:indeterminate {
@@ -22395,6 +22852,21 @@ a:hover,
   background-color: #dbdbdb !important;
   border-color: #dbdbdb;
 }
+.card.card-action-light:hover:not(.no-hover),
+.card.card-action-light.hover:not(.no-hover),
+.card.card-action-light:focus:not(.no-focus),
+.card.card-action-light:focus-visible:not(.no-focus),
+.card.card-action-light.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #f0f0f0 !important;
+  box-shadow: 0 0 7px 0 #e4e4e4 !important;
+}
+.card.card-action-light:active,
+.card.card-action-light.active {
+  color: #212529;
+  background-color: #dbdbdb !important;
+  box-shadow: 0 0 7px 0 #cfcfcf !important;
+}
 .form-check-input-light:checked,
 .form-check-input-light[type=checkbox]:indeterminate {
   border-color: #eeeeee;
@@ -23106,6 +23578,21 @@ a:hover,
   color: #fff;
   background-color: #a3a5a8 !important;
   border-color: #a3a5a8;
+}
+.card.card-action-dark:hover:not(.no-hover),
+.card.card-action-dark.hover:not(.no-hover),
+.card.card-action-dark:focus:not(.no-focus),
+.card.card-action-dark:focus-visible:not(.no-focus),
+.card.card-action-dark.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #b8babc !important;
+  box-shadow: 0 0 7px 0 #2b3035 !important;
+}
+.card.card-action-dark:active,
+.card.card-action-dark.active {
+  color: #fff;
+  background-color: #a3a5a8 !important;
+  box-shadow: 0 0 7px 0 #191b1e !important;
 }
 .form-check-input-dark:checked,
 .form-check-input-dark[type=checkbox]:indeterminate {
@@ -23819,6 +24306,21 @@ a:hover,
   background-color: #e0e0e0 !important;
   border-color: #e0e0e0;
 }
+.card.card-action-white:hover:not(.no-hover),
+.card.card-action-white.hover:not(.no-hover),
+.card.card-action-white:focus:not(.no-focus),
+.card.card-action-white:focus-visible:not(.no-focus),
+.card.card-action-white.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #f5f5f5 !important;
+  box-shadow: 0 0 7px 0 #f5f5f5 !important;
+}
+.card.card-action-white:active,
+.card.card-action-white.active {
+  color: #212529;
+  background-color: #e0e0e0 !important;
+  box-shadow: 0 0 7px 0 #e0e0e0 !important;
+}
 .form-check-input-white:checked,
 .form-check-input-white[type=checkbox]:indeterminate {
   border-color: #fff;
@@ -24530,6 +25032,21 @@ a:hover,
   color: #fff;
   background-color: #949494 !important;
   border-color: #949494;
+}
+.card.card-action-black:hover:not(.no-hover),
+.card.card-action-black.hover:not(.no-hover),
+.card.card-action-black:focus:not(.no-focus),
+.card.card-action-black:focus-visible:not(.no-focus),
+.card.card-action-black.focus:not(.no-focus) {
+  color: #fff;
+  background-color: #a8a8a8 !important;
+  box-shadow: 0 0 7px 0 #000000 !important;
+}
+.card.card-action-black:active,
+.card.card-action-black.active {
+  color: #fff;
+  background-color: #949494 !important;
+  box-shadow: 0 0 7px 0 #000000 !important;
 }
 .form-check-input-black:checked,
 .form-check-input-black[type=checkbox]:indeterminate {
@@ -25243,6 +25760,21 @@ a:hover,
   background-color: #d5dbe0 !important;
   border-color: #d5dbe0;
 }
+.card.card-action-bs-grey-light:hover:not(.no-hover),
+.card.card-action-bs-grey-light.hover:not(.no-hover),
+.card.card-action-bs-grey-light:focus:not(.no-focus),
+.card.card-action-bs-grey-light:focus-visible:not(.no-focus),
+.card.card-action-bs-grey-light.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #edeff2 !important;
+  box-shadow: 0 0 7px 0 #dde2e6 !important;
+}
+.card.card-action-bs-grey-light:active,
+.card.card-action-bs-grey-light.active {
+  color: #212529;
+  background-color: #d5dbe0 !important;
+  box-shadow: 0 0 7px 0 #c6cdd5 !important;
+}
 .form-check-input-bs-grey-light:checked,
 .form-check-input-bs-grey-light[type=checkbox]:indeterminate {
   border-color: #e9ecef;
@@ -25954,6 +26486,21 @@ a:hover,
   color: #212529;
   background-color: #cdd3da !important;
   border-color: #cdd3da;
+}
+.card.card-action-bs-grey-dark:hover:not(.no-hover),
+.card.card-action-bs-grey-dark.hover:not(.no-hover),
+.card.card-action-bs-grey-dark:focus:not(.no-focus),
+.card.card-action-bs-grey-dark:focus-visible:not(.no-focus),
+.card.card-action-bs-grey-dark.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #e5e8eb !important;
+  box-shadow: 0 0 7px 0 #c2cad1 !important;
+}
+.card.card-action-bs-grey-dark:active,
+.card.card-action-bs-grey-dark.active {
+  color: #212529;
+  background-color: #cdd3da !important;
+  box-shadow: 0 0 7px 0 #abb5c0 !important;
 }
 .form-check-input-bs-grey-dark:checked,
 .form-check-input-bs-grey-dark[type=checkbox]:indeterminate {
@@ -26667,6 +27214,21 @@ a:hover,
   background-color: #cfd3d8 !important;
   border-color: #cfd3d8;
 }
+.card.card-action-apple-keyboard-background:hover:not(.no-hover),
+.card.card-action-apple-keyboard-background.hover:not(.no-hover),
+.card.card-action-apple-keyboard-background:focus:not(.no-focus),
+.card.card-action-apple-keyboard-background:focus-visible:not(.no-focus),
+.card.card-action-apple-keyboard-background.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #e6e8ea !important;
+  box-shadow: 0 0 7px 0 #c5cad0 !important;
+}
+.card.card-action-apple-keyboard-background:active,
+.card.card-action-apple-keyboard-background.active {
+  color: #212529;
+  background-color: #cfd3d8 !important;
+  box-shadow: 0 0 7px 0 #aeb5be !important;
+}
 .form-check-input-apple-keyboard-background:checked,
 .form-check-input-apple-keyboard-background[type=checkbox]:indeterminate {
   border-color: #d0d4d9;
@@ -27379,6 +27941,21 @@ a:hover,
   background-color: #e0e0e0 !important;
   border-color: #e0e0e0;
 }
+.card.card-action-apple-keyboard-light:hover:not(.no-hover),
+.card.card-action-apple-keyboard-light.hover:not(.no-hover),
+.card.card-action-apple-keyboard-light:focus:not(.no-focus),
+.card.card-action-apple-keyboard-light:focus-visible:not(.no-focus),
+.card.card-action-apple-keyboard-light.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #f5f5f5 !important;
+  box-shadow: 0 0 7px 0 #f5f5f5 !important;
+}
+.card.card-action-apple-keyboard-light:active,
+.card.card-action-apple-keyboard-light.active {
+  color: #212529;
+  background-color: #e0e0e0 !important;
+  box-shadow: 0 0 7px 0 #e0e0e0 !important;
+}
 .form-check-input-apple-keyboard-light:checked,
 .form-check-input-apple-keyboard-light[type=checkbox]:indeterminate {
   border-color: #ffffff;
@@ -28090,6 +28667,21 @@ a:hover,
   color: #212529;
   background-color: #c3c8cf !important;
   border-color: #c3c8cf;
+}
+.card.card-action-apple-keyboard-dark:hover:not(.no-hover),
+.card.card-action-apple-keyboard-dark.hover:not(.no-hover),
+.card.card-action-apple-keyboard-dark:focus:not(.no-focus),
+.card.card-action-apple-keyboard-dark:focus-visible:not(.no-focus),
+.card.card-action-apple-keyboard-dark.focus:not(.no-focus) {
+  color: #212529;
+  background-color: #dadde2 !important;
+  box-shadow: 0 0 7px 0 #9fa5b2 !important;
+}
+.card.card-action-apple-keyboard-dark:active,
+.card.card-action-apple-keyboard-dark.active {
+  color: #212529;
+  background-color: #c3c8cf !important;
+  box-shadow: 0 0 7px 0 #8890a0 !important;
 }
 .form-check-input-apple-keyboard-dark:checked,
 .form-check-input-apple-keyboard-dark[type=checkbox]:indeterminate {
@@ -55644,6 +56236,14 @@ textarea.readonly {
 }
 .carousel-static .carousel-item {
   transition: none;
+}
+.card-img:not(.border):not(.border-start):not(.border-end),
+.card-img-top:not(.border):not(.border-start):not(.border-end),
+.card-img-bottom:not(.border):not(.border-start):not(.border-end) {
+  width: calc(100% + 1px + 1px);
+  margin-left: -1px;
+  margin-right: -1px;
+  margin-top: -1px;
 }
 .opacity-0 {
   opacity: 0 !important;
