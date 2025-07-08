@@ -1,6 +1,4 @@
 #splash {
-  --splash-gradient: linear-gradient(to top left, @color_primary, @color_secondary);
-
   .splash-page {
     min-height: 100vh;
     min-height: 100svh;
@@ -38,7 +36,7 @@
   }
 
   .splash-overlay {
-    background: fade(@color_secondary, @threshold_overlay);
+    background: @splash_overlay;
     color: @color_primary !important;
 
     .splash-scroll:hover {

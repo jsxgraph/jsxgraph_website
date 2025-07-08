@@ -16,7 +16,6 @@ splash:
   color: var(--bs-primary)
   content:
     - file: start
-      overlay_background: rgba(var(--bs-tertiary-faded-rgb), 0.90)
 
 sections:
 
