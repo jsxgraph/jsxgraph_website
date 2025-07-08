@@ -9,7 +9,7 @@
     </div>
     <div class="offcanvas-body m-between-3 py-0">
         <div class="list-group list-group-flush mx-n3">
-            {%- assign pagelist = site.pages | where: "in_menu_popup",true | sort: 'order' -%}
+            {%- assign pagelist = site.pages | where: "in_menu_popup",true | where: "parent",nil | sort: 'order' -%}
             {%- for i_page in pagelist -%}
             {% assign id = i_page.url | split: '/' | last %}
             {%- if id == "index.html" -%}
@@ -22,7 +22,8 @@
             {%- continue -%}
             {%- endif -%}
 
-            {%- if i_page.parent == nil -%}
+            {%- assign subs = site.pages | where: "in_menu_popup",true | where: "parent",id | where_exp:"item", "item.parent != nil" | sort: 'order' -%}
+
             {%- if i_page.external_link -%}
             {%- assign link = i_page.external_link -%}
             {%- assign target = i_page.target | default: "_blank" -%}
@@ -39,9 +40,8 @@
                 </div>
             </a>
 
-            {%- for j_page in pagelist -%}
+            {%- for j_page in subs -%}
             {% assign subid = j_page.url | split: '/' | last %}
-            {%- if j_page.parent != nil and j_page.parent == id -%}
             {%- if j_page.external_link -%}
             {%- assign link = j_page.external_link -%}
             {%- assign target = j_page.target | default: "_blank" -%}
@@ -57,10 +57,7 @@
                     {%- endif -%}
                 </div>
             </a>
-            {%- endif -%}
             {%- endfor -%}
-
-            {%- endif -%}
             {%- endfor -%}
         </div>
 
