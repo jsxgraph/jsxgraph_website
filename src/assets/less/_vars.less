@@ -15,7 +15,7 @@
 @color_secondary: #0085a1; // mix(#fdfdfd, @color_primary, 85%);
 @color_tertiary: mix(@color_primary, @color_secondary); // #ADFCF0; // mix(@color_primary, #fff, 10%);
 
-@color_outer: #F5F5F5; // mix(@color_primary, #dcc4c4, 20%); // @color_secondary;
+@color_outer: mix(#fff, @color_tertiary, @threshold_faded); // #F5F5F5; // mix(@color_primary, #dcc4c4, 20%); // @color_secondary;
 @color_outer_light: mix(@color_outer, #fff, @threshold_light);
 @color_outer_dark: mix(@color_outer, #10427C, @threshold_dark);
 
