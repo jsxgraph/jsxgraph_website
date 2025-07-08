@@ -3,10 +3,10 @@
 <header class="position-{% if splash == true %}fixed{% else %}sticky{% endif %} top-0 start-0 end-0 p-3 z-index-outer {% if splash == true %}topbar-splash{% else %}mb-4{% endif %}" id="topbar">
     <div class="d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
-            <a class="text-primary mt-n2 mb-n3 py-2 me-2" href="{{ relBase }}">
+            <a class="text-primary my-n2 py-2 me-2" href="{{ relBase }}">
                 <div class="topbar-nosplash">
                     <img class="d-block d-sm-none h-fix-md w-auto" src="{{ relBase }}/media/logos/logo-sm.png"/>
-                    <img class="d-none d-sm-block h-fix-md w-auto" src="{{ relBase }}/media/logos/logo.png"/>
+                    <img class="d-none d-sm-block h-fix-md w-auto mb-n1" src="{{ relBase }}/media/logos/logo.png"/>
                 </div>
                 <div class="topbar-onlysplash">
                     <img class="h-fix-md w-auto" src="{{ relBase }}/media/logos/logo-sm.png"/>
