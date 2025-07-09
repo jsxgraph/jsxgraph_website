@@ -1,5 +1,3 @@
-Dies sind internal projects mit etwa 400 Zeichen beschrieben:
-
 # sketchometry
 
 > /media/logos/logo-sketchometry.png

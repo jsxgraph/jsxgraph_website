@@ -1,14 +1,20 @@
 ---
 title: Projects
 order: 5
-sitemap:
-  priority: 1
-  changefreq: 'weekly'
-
 sections:
+  
+  - file: internal-intro
+    layout: text
+  
+  - file: internal
+    layout: cards
 
-sections:
-
-    - layout: subpages
-
+#  - file: external-intro
+#    layout: text
+#  
+#  - file: external
+#    layout: cards
+  
+  - file: references
+    layout: text
 ---
