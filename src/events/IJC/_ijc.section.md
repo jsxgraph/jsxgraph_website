@@ -1,6 +1,4 @@
-## Previous IJCs
-
-10.-12. October 2023
+10.-12. October 2023 <br>
 The 4th International JSXGraph Conference will bring together developers and teachers, instructors and designers who are interested or already experienced in using JSXGraph to
 enhance digital learning of STEM topics.
 
