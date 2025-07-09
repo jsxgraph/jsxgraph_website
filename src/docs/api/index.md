@@ -6,8 +6,4 @@ parent: docs
 order: 3
 in_shortcuts: true
 order_shortcuts: 2
-sitemap:
-  priority: 1
-  changefreq: 'weekly'
-
 ---

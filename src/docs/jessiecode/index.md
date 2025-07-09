@@ -2,10 +2,6 @@
 title: JessieCode
 parent: docs
 order: 5
-sitemap:
-  priority: 1
-  changefreq: 'weekly'
-
 sections:
 
    - file: datatypes

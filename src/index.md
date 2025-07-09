@@ -6,12 +6,7 @@ menu_title: Home
 order: 0
 layout: splash
 is_home: true
-sitemap:
-  priority: 1
-  changefreq: 'daily'
-
 splash:
-
   image: /media/bg-jsxgraph.jpg
   color: var(--bs-primary)
   content:
@@ -68,6 +63,5 @@ sections:
       board_pos: second
       title: Vectorfield
       link: /share
-      target: _blank      
-
+      target: _blank
 ---
