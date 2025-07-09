@@ -1,15 +1,18 @@
 ### Step 2 – Integrate Drawing Panel
 
-The construction which is displayed by JSXGraph resides in an HTML element.
-Usually, a div-element is taken.
-This division needs an ID.
-Using this ID, we declare this element to be a drawing panel of JSXGraph.
+The construction which is displayed by JSXGraph resides in an HTML element. Usually, a div-element is taken.
+This division needs an ID. Using this ID, we declare this element to be a drawing panel of JSXGraph.
+
 The following code has to be placed into the body part of an HTML file:
 
 ```html
 <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
 <script type="text/javascript">
-    var board = JXG.JSXGraph.initBoard('box', {boundingbox: [-10, 10, 10, -10], axis:true});
+    var board = JXG.JSXGraph.initBoard(
+        'box', {
+            boundingbox: [-10, 10, 10, -10],
+                axis:true
+        });
 </script>
 ```
 
@@ -27,7 +30,11 @@ The following code has to be placed into the body part of an HTML file:
 <body>
     <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
     <script type="text/javascript">
-        var board = JXG.JSXGraph.initBoard('box', {boundingbox: [-10, 10, 10, -10], axis:true});
+        var board = JXG.JSXGraph.initBoard(
+            'box', {
+                boundingbox: [-10, 10, 10, -10], 
+                    axis:true
+            });
     </script>
 </body>
 </html>
