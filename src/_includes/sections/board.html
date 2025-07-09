@@ -1,4 +1,4 @@
-<div class="section-board">
+<div class="section-board" id="section-{{ include.file }}">
     <div class="d-flex">
         <div style="width: {{ include.data.width | default: '500px' }}; height: {{ include.data.height | default: 'auto' }}; aspect-ratio: {{ include.data.aspect_ratio | default: '1/1' }}; max-width: {{ include.data.max_width | default: '100%' }};" class="jxgbox {{ include.data.class }}" id="{{ include.data.boardid }}"></div>
     </div>

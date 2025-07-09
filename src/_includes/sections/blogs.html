@@ -78,7 +78,7 @@
 {%- assign contents = contents | push: cont | shift -%}
 <!--@formatter:on-->
 
-<div class="m-between-5 section-blogs">
+<div class="m-between-5 section-blogs" id="section-{{ include.file }}">
     {%- for head in heads -%}
     {%- assign badge = badges[forloop.index0] -%}
     {%- assign id = ids[forloop.index0] -%}

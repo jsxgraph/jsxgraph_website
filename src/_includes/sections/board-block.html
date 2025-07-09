@@ -1,4 +1,4 @@
-<div class="row g-4 {% if include.data.board_pos=='second' or include.data.board_pos=='last' or include.data.board-pos=='right' or include.data.board-pos=='end' %}flex-row-reverse{% else %}flex-row{% endif %} justify-content-center section-board-block">
+<div class="row g-4 {% if include.data.board_pos=='second' or include.data.board_pos=='last' or include.data.board-pos=='right' or include.data.board-pos=='end' %}flex-row-reverse{% else %}flex-row{% endif %} justify-content-center section-board-block" id="section-{{ include.file }}">
     <div class="col-12 col-xs-10 col-sm-8 col-md-6 col-lg-5 col-xxl-4">
         <div style="width: {{ include.data.width | default: '100%' }}; height: {{ include.data.height | default: 'auto' }}; aspect-ratio: {{ include.data.aspect_ratio | default: '1/1' }};" class="jxgbox" id="{{ include.data.boardid }}"></div>
         <script type="text/javascript">

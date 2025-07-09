@@ -20,9 +20,11 @@
 {%- assign text_file = '_' | append: section.file | append: '.section.md' -%}
 {%- capture section_inclusion -%}{% include_relative {{text_file}} %}{%- endcapture -%}
 {%- assign sec_content = section_inclusion | pre_markdown | markdownify | replace_post -%}
+{%- assign name = section.file -%}
 {%- else -%}
 {%- assign section_inclusion = nil -%}
 {%- assign sec_content = nil -%}
+{%- assign name = nil -%}
 {%- endif -%}
 {%- if section.code_file != nil -%}
 {%- capture js -%}{% include_relative {{ section.data.code_file }} %}{%- endcapture -%}
@@ -32,18 +34,21 @@
 {%- else -%}
 {%- assign js = nil -%}
 {%- endif -%}
-{% include {{ layout }} content=sec_content content_raw=section_inclusion js=js data=section.data index=forloop.index index0=forloop.index0 %}
+{% include {{ layout }} file=name content=sec_content content_raw=section_inclusion js=js data=section.data index=forloop.index index0=forloop.index0 %}
 
 {%- elsif section.layout == 'board' -%}
 {%- if section.code_file != nil -%}
 {%- capture js -%}{% include_relative {{ section.data.code_file }} %}{%- endcapture -%}
+{%- assign name = section.code_file -%}
 {%- else if section.file != nil -%}
 {%- assign js_file = '_' | append: section.file | append: '.section.js' -%}
 {%- capture js -%}{% include_relative {{js_file}} %}{%- endcapture -%}
+{%- assign name = section.file -%}
 {%- else -%}
 {%- assign js = nil -%}
+{%- assign name = nil -%}
 {%- endif -%}
-{% include {{ layout }} js=js data=section.data index=forloop.index index0=forloop.index0 %}
+{% include {{ layout }} file=name js=js data=section.data index=forloop.index index0=forloop.index0 %}
 
 {%- elsif section.layout == 'image' -%}
 {% include {{ layout }} data=section.data index=forloop.index index0=forloop.index0 %}
@@ -63,7 +68,7 @@
 {%- assign section_inclusion = nil -%}
 {%- assign sec_content = nil -%}
 {%- endif -%}
-{% include {{ layout }} content=sec_content content_raw=section_inclusion data=section.data index=forloop.index index0=forloop.index0 %}
+{% include {{ layout }} file=section.file content=sec_content content_raw=section_inclusion data=section.data index=forloop.index index0=forloop.index0 %}
 {%- endif -%}
 
 {%- endfor -%}
