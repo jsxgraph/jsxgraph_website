@@ -2,14 +2,18 @@
 
 To create a point in your JSXGraph construction, just add the following line to your code:
 
-```html
+```js
 var A = board.create('point', [2, 1], {name: 'A'});
 ```
 
 A function graph can be included by adding:
 
-```html
-var f = board.create('functiongraph', [function(x) { return 0.5*x*x-2*x;}], {strokeWidth: 3});
+```js
+var f = board.create(
+    'functiongraph', 
+    [function(x) { return 0.5 * x * x - 2 * x;}], 
+    {strokeWidth: 3}
+);
 ```
 
 #### Complete HTML File (online)
@@ -26,9 +30,17 @@ var f = board.create('functiongraph', [function(x) { return 0.5*x*x-2*x;}], {str
 <body>
     <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
     <script type="text/javascript">
-        var board = JXG.JSXGraph.initBoard('box', {boundingbox: [-10, 10, 10, -10], axis:true});
+        var board = JXG.JSXGraph.initBoard(
+            'box', {
+                boundingbox: [-10, 10, 10, -10], 
+                axis:true
+            });
         var A = board.create('point', [2, 1], {name: 'A'});
-        var f = board.create('functiongraph', [function(x) { return 0.5*x*x-2*x;}], {strokeWidth: 3});
+        var f = board.create(
+            'functiongraph', 
+            [function(x) { return 0.5 * x * x - 2 * x;}],
+            {strokeWidth: 3}
+        );
     </script>
 </body>
 </html>

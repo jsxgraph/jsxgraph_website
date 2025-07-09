@@ -1,4 +1,4 @@
-Use <b>the</b> <a href="https://ipesek.github.io/jsxgraphbook/" target="_blank">JSXGraph Book</a> for a comprehensive introduction to JSXGraph.
+Use the [JSXGraph Book](https://ipesek.github.io/jsxgraphbook/) for a comprehensive introduction to JSXGraph.
 
 ### Step 1 – Include JSXGraph
 
@@ -10,7 +10,8 @@ Add the following lines into the document head:
 ```html
 <script type="text/javascript" charset="UTF-8" 
         src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
+<link rel="stylesheet" type="text/css" 
+      href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
 ```
 
 #### Local Usage
@@ -18,9 +19,8 @@ Add the following lines into the document head:
 If you want to include a local copy of JSXGraph in your HTML file,
 download the two following JSXGraph files
 
-* <https://jsxgraph.org/distrib/jsxgraphcore.js>
-
-* <https://jsxgraph.org/distrib/jsxgraph.css>
+- <https://jsxgraph.org/distrib/jsxgraphcore.js>
+- <https://jsxgraph.org/distrib/jsxgraph.css>
 
 and add the following lines into the document head:
 
@@ -39,7 +39,8 @@ and add the following lines into the document head:
     <title>My JSXGraph Example</title>
     <script type="text/javascript" charset="UTF-8"
             src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
 </head>
 <body>
 
