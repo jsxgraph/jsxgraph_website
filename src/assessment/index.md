@@ -5,8 +5,5 @@ sitemap:
   priority: 1
   changefreq: 'weekly'
 
-sections:
-    - layout: subpages
-
-
+is_separator: true
 ---

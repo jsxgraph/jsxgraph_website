@@ -9,9 +9,5 @@ sitemap:
 
 in_shortcuts: true
 order_shortcuts: 6
-
-sections:
-
-  - layout: subpages
-
+is_separator: true
 ---

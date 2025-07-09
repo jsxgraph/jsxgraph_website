@@ -27,6 +27,12 @@
 <meta http-equiv="refresh" content="0; url={{page.external_link}}"/>
 {%- endif %}
 
+{% if page.is_separator -%}
+{% assign id = page.url | split: '/' | last %}
+{%- assign subs = site.pages | where: "parent",id | where_exp:"item", "item.parent != nil" | sort: 'order' -%}
+<meta http-equiv="refresh" content="0; url={{ relBase }}{{ subs[0].url }}"/>
+{%- endif %}
+
 <!-- ########################################
                     icons
    ######################################### -->
