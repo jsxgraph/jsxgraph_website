@@ -6,7 +6,8 @@
 </head>
 {% if page.external_link==nil and page.is_separator!=true -%}
 <body data-role="page" class="position-relative">
-    <main>
+    {% assign id = page.url | split: '/' | last | default: "home" %}
+    <main id="page-{{ id }}">
         <div class="d-none">
             <h1>{{ page.header | default: page.title }}</h1>
         </div>
