@@ -60212,4 +60212,9 @@ img.image-float-right {
 .shortcuts a:hover .link-apple-keyboard-dark {
   color: #9fa5b2 !important;
 }
+.jsxgraph-logo-clip {
+  border-radius: 0 !important;
+  border-top-left-radius: 20% !important;
+  border-bottom-right-radius: 20% !important;
+}
 /*# sourceMappingURL=website.css.map */

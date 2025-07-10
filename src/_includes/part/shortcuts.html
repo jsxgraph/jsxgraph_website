@@ -2,9 +2,9 @@
 <!-- circle | 4 | 5 | 6 | 8 | jsxgraph -->
 
 {%- if polygon == "jsxgraph" -%}
-{%- assign class = "rounded-top-start-max rounded-bottom-end-max" -%}
-{%- assign padding_x = "5%" -%}
-{%- assign padding_y = "5%" -%}
+{%- assign class = "jsxgraph-logo-clip" -%}
+{%- assign padding_x = "0" -%}
+{%- assign padding_y = "0" -%}
 {%- elsif polygon == "circle" -%}
 {%- assign class = "circle-clip" -%}
 {%- assign padding_x = "10%" -%}
@@ -48,7 +48,9 @@
         <div class="col-9 col-xs-8 col-sm-4 col-md-3">
             <a href="{{ link }}" target="{{ target }}" class="link-quiet d-flex d-sm-block m-between-3 m-between-sm-0 align-items-center">
                 {% if i_page.icon %}
-                <div class="btn btn-{{ color }} square rounded-0 {{ class }} overflow-hidden w-fix-xxs w-fix-xs-over-sm w-fix-sm-over-md mx-sm-auto mb-sm-2 p-0">
+                <div class="btn btn-{{ color }} square rounded-0 {{ class }} overflow-hidden w-fix-xxs w-fix-xs-over-sm w-fix-sm-over-md mx-sm-auto mb-sm-2 p-0"
+                     style="padding: {{padding-y}} {{padding-x}};"
+                >
                     <div class="d-flex justify-content-center align-items-center h-100 w-100">
                         <div class="big d-block d-sm-none">
                             <i class="fa-fw {{ i_page.icon }}"></i>
