@@ -1,1 +1,0 @@
-The development of JSXGraph is coordinated at the University of Bayreuth, Germany.
