@@ -1,5 +1,5 @@
 ---
-title: Other conferences & meetings
+title: Further events
 parent: events
 order: 2
 sections:
