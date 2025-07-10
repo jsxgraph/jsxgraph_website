@@ -1,4 +1,4 @@
-<button type="button" colorclass="outline-primary" class="w-fix-lg mx-auto" id="releases-all">Show all versions</button>
+<button type="button" colorclass="outline-primary" class="w-fix-lg mx-auto" id="releases-all">Show all releases</button>
 
 <style>
 #section-releases table thead,
