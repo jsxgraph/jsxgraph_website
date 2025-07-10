@@ -22,7 +22,7 @@ Vertreten durch den Sprecher der Forschungsstelle für Mobiles Lernen mit digita
 Prof. Dr. Alfred Wassermann   
 Universitätsstraße 30   
 95447 Bayreuth   
-Tel.: +49 921 55-3266   
+Tel.: [+49 (0) 921 55-3266](tel:+49921553266)   
 E-Mail: <jsxgraph@uni-bayreuth.de>
 
 # II. Name und Anschrift des Datenschutzbeauftragten
@@ -34,7 +34,7 @@ Angewandte Informatik (AI), Raum 1.13
 Universitätsstraße 30   
 95447 Bayreuth   
 Deutschland   
-Tel.: +49 921 55-7668   
+Tel.: [+49 (0) 921 55-7668](tel:+49921557668)   
 E-Mail: <datenschutz@uni-bayreuth.de>
 
 # III. Allgemeines zur Datenverarbeitung

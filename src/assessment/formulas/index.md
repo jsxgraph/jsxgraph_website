@@ -6,5 +6,4 @@ sections:
 
    - file: formulas
      layout: text
-
 ---
