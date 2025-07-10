@@ -1,0 +1,23 @@
+{%- assign data = include.data[0] -%}
+
+<div class="col-6">
+    <a href="{{ relBase }}{{ data.link }}" target="{{ data.target | default: '_self' }}"
+       class="d-block p-1 w-100 h-100 square btn-{{ data.colorclass | default: 'primary' }} border border-{{ data.colorclass | default: 'primary' }} overflow-hidden text-center tile-button tile-button-half-square"
+    >
+        <div class="d-flex flex-column w-100 h-100">
+            {%- if data.image -%}
+            <div class="flex-fill mx-n1 mt-n1 position-relative">
+                <div class="w-100 h-100 image-bg-cover" style="background-image: url('{{ relBase }}{{ data.image }}');"></div>
+                <div class="position-absolute top-0 start-0 end-0 bottom-0 bg-{{ data.colorclass | default: 'primary' }} opacity-50"></div>
+            </div>
+            {%- else -%}
+            <div class="flex-fill mb-n1 d-flex align-items-center justify-content-center">
+                <i class="fa-fw {{ data.icon }}">{% if data.icon == '' %}&nbsp;{% endif %}</i>
+            </div>
+            {%- endif -%}
+            <div class="small h-fix-xxs shorten-content-x tile-label mt-1">
+                {{ data.title | default: "" }}
+            </div>
+        </div>
+    </a>
+</div>

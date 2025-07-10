@@ -1,35 +1,9 @@
 <div class="row g-2">
     {%- for tile in site.data.tiles -%}
-    {%- if tile.type == "square" -%}
 
-    {%- include main/tile-square.html
-    title = tile.title
-    target = tile.target
-    colorclass = tile.colorclass
-    icon = tile.icon
-    image = tile.image
-    -%}
+    {%- assign filepath = "part/tile-" | append: tile.type | append: ".html" -%}
+    {%- include {{ filepath }} data = tile.data -%}
 
-    {%- else if tile.type == "double" or tile.type == "double-horizontal" -%}
-
-    {%- if tile.type == "double-horizontal" -%}{%- assign horizontal = true -%}{%- else -%}{%- assign horizontal = false -%}{%- endif -%}
-    {%- include main/tile-double.html
-    title1 = tile.title1
-    target1 = tile.target1
-    colorclass1 = tile.colorclass1
-    icon1 = tile.icon1
-    image1 = tile.image1
-
-    title2 = tile.title2
-    target2 = tile.target2
-    colorclass2 = tile.colorclass2
-    icon2 = tile.icon2
-    image2 = tile.image2
-
-    horizontal = horizontal
-    -%}
-
-    {%- endif -%}
     {%- endfor -%}
 </div>
 
@@ -44,9 +18,9 @@
                 label = button.find('.tile-label').first(),
                 space;
 
-            if (button.hasClass('tile-button-square'))
+            if (button.hasClass('tile-button-half-square'))
                 space = button.width() - (parseFloat(button.css('padding-top')) * 4) - label.outerHeight();
-            else if (button.hasClass('tile-button-double'))
+            else if (button.hasClass('tile-button-half-slim'))
                 space = (button.width() / 2) - (parseFloat(button.css('padding-top')) * 4) - label.outerHeight();
 
             icon.css({
@@ -56,10 +30,10 @@
         });
     }
 
-    // resize double buttons
+    // resize half slim buttons
     const SPACE = '0.5rem'; // m-between-2
     function resizeButtons() {
-        $('.tile-button-double').each(function (_, el) {
+        $('.tile-button-half-slim').each(function (_, el) {
             let button = $(el),
                 width = button.outerWidth();
             button.cssStyle('height', 'calc((' + width + 'px - ' + SPACE + ') / 2)', true);
