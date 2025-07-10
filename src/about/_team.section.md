@@ -8,7 +8,10 @@
     text-align: center;
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
-    width: 200px;
+    width: 180px;
+}
+#section-team #section-team-list {
+    margin-bottom: -1.5rem;
 }
 #section-team #section-team-list img,
 #section-team-leader img {
@@ -23,13 +26,16 @@
     <img src="{{ relBase }}/media/team/wassermann.jpg" alt="Alfred Wassermann">
 </div>
 
-Prof. Dr. Alfred Wassermann  
+Prof. Dr. Alfred Wassermann
+
 <alfred.wassermann@uni-bayreuth.de>
+
+[+49 (0) 921 55-3266](tel:+49921553266)
 
 <div class="clearfix"></div>
 
-University of Bayreuth   
 Center for Mobile Learning with Digital Technology (CMLDT)  
+University of Bayreuth   
 Universitätsstraße 30   
 95447 Bayreuth
 
