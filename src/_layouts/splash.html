@@ -4,6 +4,7 @@
     {% include basics.html %}
     {% include main/head.html %}
 </head>
+{% if page.external_link==nil and page.is_separator!=true -%}
 <body data-role="page" class="position-relative">
     {% include main/menu.html %}
 
@@ -29,4 +30,5 @@
     {% include main/cookie-hint.html %}
     {% include main/footer.html %}
 </body>
+{% endif -%}
 </html>

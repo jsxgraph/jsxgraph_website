@@ -4,6 +4,7 @@
     {%- include basics.html -%}
     {%- include main/head.html -%}
 </head>
+{% if page.external_link==nil and page.is_separator!=true -%}
 <body data-role="page" class="position-relative">
     <main>
         <div class="d-none">
@@ -13,4 +14,5 @@
         {%- include main/splash.html -%}
     </main>
 </body>
+{% endif -%}
 </html>
