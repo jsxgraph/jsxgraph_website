@@ -1,5 +1,5 @@
 ---
-title: International JSXGraph Conferences
+title: JSXGraph Conferences
 parent: events
 order: 1
 sections:
