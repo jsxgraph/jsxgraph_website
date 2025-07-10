@@ -216,6 +216,27 @@ window.bsAddOns = bsAddOns;
                 maxWidth: bsAddOns.breakpoints[0].minWidth - 1,
             });
 
+            let sel = [];
+            for (let bp of bsAddOns.breakpoints) {
+                sel.push('.table-list' + (Helper.exists(bp.name, true) ? '-' + bp.name : ''));
+            }
+            $(sel.join(', ')).each(function (_, that) {
+                let table = $(that),
+                    headers = [],
+                    node;
+                for (node of table.find('thead tr:first-child th, thead tr:first-child th')) {
+                    headers.push($(node).html());
+                }
+                table.find('tbody tr').each(function (_, that) {
+                    let tr = $(that),
+                        nodes = tr.find('th, td'),
+                        i;
+                    for (i = 0; i < nodes.length; i++) {
+                        $(nodes[i]).attr('data-bs-table-list-header', headers[i]);
+                    }
+                });
+            });
+
             firstInit = false;
         },
 
@@ -224,7 +245,7 @@ window.bsAddOns = bsAddOns;
 
             tooltipTriggerList = $(selector).toArray();
             tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                if (JXG.exists($(tooltipTriggerEl).attr('data-bs-title'), true))
+                if (Helper.exists($(tooltipTriggerEl).attr('data-bs-title'), true))
                     return new bootstrap.Tooltip(tooltipTriggerEl, options);
             });
             return tooltipList;

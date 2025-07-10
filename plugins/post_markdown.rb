@@ -3,8 +3,8 @@
 module Jekyll
   module PostMarkdown
     def replace_buttons(input)
-      input = input.gsub(/<a(.*)type="button"( colorclass="([^"]+)")?( class="([^"]+)")?/, '<a\1class="btn btn-\3-gradient rounded-max h-fix-md w-fit py-1 px-3 d-flex justify-content-center align-items-center m-between-2 \5"')
-      input = input.gsub(/<button(.*)type="button"( colorclass="([^"]+)")?( class="([^"]+)")?/, '<button\1type="button" class="btn btn-\3-gradient rounded-max h-fix-md w-fit py-1 px-3 d-flex justify-content-center align-items-center m-between-2 \5"')
+      input = input.gsub(/<a(.*)type="button"( colorclass="([^"]+)")?( class="([^"]+)")?/, '<a\1class="btn btn-\3 d-flex justify-content-center align-items-center \5"')
+      input = input.gsub(/<button(.*)type="button"( colorclass="([^"]+)")?( class="([^"]+)")?/, '<button\1type="button" class="btn btn-\3 d-flex justify-content-center align-items-center \5"')
       input = input.gsub('btn--gradient', 'btn-primary-gradient')
     end
 
@@ -21,8 +21,15 @@ module Jekyll
       input = input.gsub(/<a(.*)href="([^"]+)\.(jc|js|sketcho|css|map)"([^>]*)>(.*)<\/a>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>\5</a>');
     end
 
+    def replace_tables(input)
+        input = input.gsub(/<table([^>]*)>(.*)<\/table>/m, '<table\1 class="table table-striped table-list-sm">\2</table>');
+        input = input.gsub(/<thead([^>]*)>(.*)<\/thead>/m, '<thead\1>\2</thead>');
+        input = input.gsub(/<td>[\s|\n|\r|\r\n]*<strong>[\s|\n|\r|\r\n]*<em>[\s|\n|\r|\r\n]*(.*)[\s|\n|\r|\r\n]*<\/em>[\s|\n|\r|\r\n]*<\/strong>[\s|\n|\r|\r\n]*<\/td>/, '<th scope="row">\1</th>');
+    end
+
     def replace_post(input)
       if(input != nil)
+        input = replace_tables(input)
         input = replace_buttons(input)
         input = replace_links(input)
       end
