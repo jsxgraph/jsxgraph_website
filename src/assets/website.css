@@ -59074,7 +59074,7 @@ footer {
 .language-php .code-highlighting:before {
   content: "PHP";
 }
-.jxgbox {
+#page-home .jxgbox {
   background-color: transparent;
   border: none;
   border-radius: 0;
