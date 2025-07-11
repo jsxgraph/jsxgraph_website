@@ -2,40 +2,22 @@
 <!-- auto | xs | sm | md | lg | xl | xxl -->
 
 {%- assign polygon = include.polygon | default: const.default_polygon -%}
-<!-- circle | 4 | 5 | 6 | 8 | jsxgraph | jsxgraph-pure | jsxgraph-plain -->
+<!-- circle | 4 | 5 | 6 | 8 | jsxgraph-pure | jsxgraph-plain -->
 
-{%- if polygon == "jsxgraph" -%}
-{%- assign class = "jsxgraph-logo-clip" -%}
-{%- assign padding_x = "3%" -%}
-{%- assign padding_y = "3%" -%}
-{%- elsif polygon == "jsxgraph-pure" -%}
+{%- if polygon == "jsxgraph-pure" -%}
 {%- assign class = "jsxgraph-logo-pure-clip" -%}
-{%- assign padding_x = "5%" -%}
-{%- assign padding_y = "5%" -%}
 {%- elsif polygon == "jsxgraph-plain" -%}
 {%- assign class = "jsxgraph-logo-plain-clip" -%}
-{%- assign padding_x = "5%" -%}
-{%- assign padding_y = "5%" -%}
 {%- elsif polygon == "circle" -%}
 {%- assign class = "circle-clip" -%}
-{%- assign padding_x = "10%" -%}
-{%- assign padding_y = "10%" -%}
 {%- elsif polygon == "4" -%}
 {%- assign class = "square-clip" -%}
-{%- assign padding_x = "5%" -%}
-{%- assign padding_y = "5%" -%}
 {%- elsif polygon == "5" -%}
 {%- assign class = "pentagon-clip" -%}
-{%- assign padding_x = "10%" -%}
-{%- assign padding_y = "7%" -%}
 {%- elsif polygon == "8" -%}
 {%- assign class = "octagon-clip" -%}
-{%- assign padding_x = "5%" -%}
-{%- assign padding_y = "5%" -%}
 {%- else -%}
 {%- assign class = "hexagon-clip" -%}
-{%- assign padding_x = "15%" -%}
-{%- assign padding_y = "10%" -%}
 {%- endif -%}
 
 {%- assign max_size = include.max_size | default: include.data.size -%}
@@ -64,17 +46,15 @@
             </div>
         </div>
         {% else %}
-        <div class="btn btn-{{ data.colorclass | default: 'primary' }} border border-{{ data.colorclass | default: 'primary' }} d-block mx-auto
-                    {%- if tile_width=='auto' %} w-100 {% else %} w-fix-{{tile_width}} w-max-100 {% endif -%}
-                    square rounded-0 {{ class }} overflow-hidden text-center mb-1 p-0"
-             style="padding: {{padding_y}} {{padding_x}};"
-        >
-            <div class="d-flex justify-content-center align-items-center h-100 w-100">
-                <i class="biggest fa-fw {{ data.icon }}">{% if data.icon == '' %}&nbsp;{% endif %}</i>
+        <div class="square {% if tile_width=='auto' %} w-100 {% else %} w-fix-{{tile_width}} w-max-100 {% endif %} overflow-hidden mx-auto mb-1">
+            <div class="btn btn-{{ data.colorclass | default: 'primary' }} border border-{{ data.colorclass | default: 'primary' }} rounded-0 {{ class }}">
+                <div class="d-flex justify-content-center align-items-center h-100 w-100">
+                    <i class="biggest fa-fw {{ data.icon }}">{% if data.icon == '' %}&nbsp;{% endif %}</i>
+                </div>
             </div>
         </div>
         {% endif %}
-        <div class="shorten-content-x mb-2 tile-label" style="padding: 0 {{padding-x}};">
+        <div class="shorten-content-x mb-2 tile-label py-0 px-1">
             {{ data.title | default: "" }}
         </div>
     </a>
