@@ -1,0 +1,30 @@
+- type: "icons"
+  width: "sm"
+  data:
+    - title: "API"
+      link: "/docs/api"
+      target: "_blank"
+      icon: "fa-solid fa-book-open"
+
+    - title: "Forum"
+      link: "/links/forum"
+      target: "_blank"
+      icon: "fa-solid fa-comments"
+
+    - title: "jsFiddle"
+      link: "/links/jsfiddle"
+      target: "_blank"
+      icon: "fa-brands fa-jsfiddle"
+
+- type: "icons"
+  width: "sm"
+  data:
+    - title: "Examples"
+      link: "/share"
+      target: "_blank"
+      icon: "fa-solid fa-folder-open"
+
+    - title: "GitHub"
+      link: "/links/github"
+      target: "_blank"
+      icon: "fa-brands fa-github"

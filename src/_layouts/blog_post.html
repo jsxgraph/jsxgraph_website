@@ -4,6 +4,7 @@
     {% include basics.html %}
     {% include main/head.html %}
 </head>
+{% if page.external_link==nil and page.is_separator!=true -%}
 <body data-role="page" class="position-relative">
 
     {%- assign postlist_id = page.postlist_id -%}
@@ -30,7 +31,8 @@
         </div>
     </noscript>
 
-    <main class="container md-container m-between-5 mt-4 mb-5 pb-5">
+    {% assign id = page.url | split: '/' | last | default: "home" %}
+    <main class="container md-container m-between-5 mt-4 mb-5 pb-5" id="page-{{ id }}">
         <div class="mb-4">
             {% include main/post-header.html post=page link_badges=true %}
         </div>
@@ -47,4 +49,5 @@
     {% include main/cookie-hint.html %}
     {% include main/footer.html %}
 </body>
+{% endif -%}
 </html>

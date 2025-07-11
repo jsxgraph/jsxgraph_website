@@ -5,7 +5,7 @@ webtitle: JSXGraph
 version: v1.11.1
 version_date: 2025-03-03
 
-default_polygon: "circle"  # circle | 4 | 5 | 6 | 8
+default_polygon: "jsxgraph-pure"  # jsxgraph-pure | jsxgraph-plain | circle | 4 | 5 | 6 | 8
 
 meta: >
   TBA

@@ -7,7 +7,7 @@ order: 0
 layout: splash
 is_home: true
 splash:
-  image: /media/bg-jsxgraph.jpg
+  image: /media/splash.jpg
   color: var(--bs-primary)
   content:
     - file: start

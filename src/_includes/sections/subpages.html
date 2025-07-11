@@ -1,8 +1,12 @@
 <div class="section-subpages">
     {%- assign polygon = include.polygon | default: const.default_polygon -%}
-    <!-- circle | 4 | 5 | 6 | 8 -->
+    <!-- circle | 4 | 5 | 6 | 8 | jsxgraph -->
 
-    {%- if polygon == "circle" -%}
+    {%- if polygon == "jsxgraph" -%}
+    {%- assign class = "rounded-0 rounded-top-left rounded-bottom-right" -%}
+    {%- assign padding_x = "5%" -%}
+    {%- assign padding_y = "5%" -%}
+    {%- elsif polygon == "circle" -%}
     {%- assign class = "circle-clip" -%}
     {%- assign padding_x = "10%" -%}
     {%- assign padding_y = "10%" -%}

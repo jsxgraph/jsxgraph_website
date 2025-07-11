@@ -1,8 +1,32 @@
 #menu {
-  width: 350px;
+  width: 400px;
+
+  --bs-offcanvas-padding-x: 1rem;
+  --bs-offcanvas-padding-y: 1rem;
+
+  .list-group-item,
+  .accordion-collapse {
+    .border-0();
+  }
+
+  .list-group-item {
+    padding: calc(var(--bs-offcanvas-padding-y) / 3) var(--bs-offcanvas-padding-x);
+
+    @media (min-width: @width_sm_min) {
+      padding: calc(var(--bs-offcanvas-padding-y) / 2) var(--bs-offcanvas-padding-x);
+    }
+  }
+
+  div.list-group-item {
+    padding: 0;
+  }
 
   .offcanvas-header {
-    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x) calc(var(--bs-offcanvas-padding-y) / 2) !important;
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x) !important;
+
+    button {
+      .p-0();
+    }
   }
 
   .offcanvas-footer {

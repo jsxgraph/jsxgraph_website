@@ -1,34 +1,34 @@
 # Moodle
 
-> /media/logos/logo-moodle.png
+> /media/logos-external/logo-moodle.png
 > https://github.com/jsxgraph/moodle-filter_jsxgraph
 
 # ILIAS
 
-> /media/logos/logo-ilias.png
+> /media/logos-external/logo-ilias.png
 > https://
 
 # STACK
 
-> /media/logos/logo-ilias.png
+> /media/logos-external/logo-ilias.png
 > https://
 
 # formulas
 
-> /media/logos/logo-ilias.png
+> /media/logos-external/logo-ilias.png
 > https://
 
 # MediaWiki
 
-> /media/logos/logo-mediawiki.png
+> /media/logos-external/logo-mediawiki.png
 > https://github.com/jsxgraph/jsxgraph
 
 # WordPress
 
-> /media/logos/logo-wordpress.png
+> /media/logos-external/logo-wordpress.png
 > https://wordpress.org/plugins/jsxgraph/
 
 # Drupal
 
-> /media/logos/logo-drupal.png
+> /media/logos-external/logo-drupal.png
 > https://www.drupal.org/project/jsxgraph

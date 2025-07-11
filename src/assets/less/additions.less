@@ -307,3 +307,32 @@ img {
     .gen-shortcuts-hover(@bootstrap_colors);
   }
 }
+
+// clipping
+
+.jsxgraph-logo-pure-clip {
+  aspect-ratio: 1/1;
+  width: 105%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:0;
+
+  clip-path: url("#jsxgraph-logo-pure-clip");
+
+  margin: -5% -5% 0 0;
+  padding: 18% 18% 3% 3%;
+}
+
+.jsxgraph-logo-plain-clip {
+  aspect-ratio: 1/1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:0;
+
+  clip-path: url("#jsxgraph-logo-plain-clip");
+
+  padding: 0;
+}

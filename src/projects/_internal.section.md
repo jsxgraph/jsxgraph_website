@@ -11,7 +11,7 @@ sketchometry is an educational geometry tool that enables students to draw and m
 
 # IDIAM
 
-> /media/logos/logo-eu.jpg
+> /media/logos-external/logo-eu.jpg
 
 2021 – 2023
 
@@ -21,7 +21,7 @@ IDIAM (Interactive Digital Assessment in Mathematics) is a European project focu
 
 # EXPERT
 
-> /media/logos/logo-eu.jpg
+> /media/logos-external/logo-eu.jpg
 
 2021 – 2023
 
@@ -31,7 +31,7 @@ EXPERT (Educational eXplanations and Practices in Emergency Remote Teaching) is 
 
 # ITEMS
 
-> /media/logos/logo-eu.jpg
+> /media/logos-external/logo-eu.jpg
 
 2018 – 2021
 
@@ -41,7 +41,7 @@ ITEMS (Improving Tools for E-assessment in Maths and Science) is a European proj
 
 
 # COMPASS
-> /media/logos/logo-eu.jpg
+> /media/logos-external/logo-eu.jpg
 
 2016 – 2018
 
@@ -51,7 +51,7 @@ COMPASS (Creating Online Materials & Products at STEM Subjects) supports teacher
 
 
 # Everything is Number
-> /media/logos/logo-ein.jpg
+> /media/logos-external/logo-ein.jpg
 
 Since 2008
 

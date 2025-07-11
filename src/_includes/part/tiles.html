@@ -1,0 +1,38 @@
+<div class="row g-2 justify-content-center">
+    {%- assign max_size = 1 -%}
+    {%- for tile in site.data.tiles -%}
+    {%- if tile.type == "squares" or tile.type == "icons" -%}
+    {%- if tile.data.size > max_size -%}
+    {%- assign max_size = tile.data.size -%}
+    {%- endif -%}
+    {%- endif -%}
+    {%- endfor -%}
+
+    {%- for tile in site.data.tiles -%}
+    {%- assign filepath = "part/tile-" | append: tile.type | append: ".html" -%}
+    {%- include {{ filepath }} data=tile.data horizontal=tile.horizontal polygon=tile.polygon width=tile.width max_size=max_size -%}
+    {%- endfor -%}
+</div>
+
+<script type="module">
+    let offcanvas = $('#menu');
+
+    // resize half slim buttons
+    const SPACE = '0.5rem'; // m-between-2
+    function resizeButtons() {
+        $('.tile-button-half-slim').each(function (_, el) {
+            let button = $(el),
+                width = button.outerWidth();
+            button.cssStyle('height', 'calc((' + width + 'px - ' + SPACE + ') / 2)', true);
+        });
+    }
+
+    $(window).resize(resizeButtons);
+    offcanvas.on('shown.bs.offcanvas', resizeButtons);
+    resizeButtons();
+
+    // close menu on click
+    $('.tile-button').on('click', function () {
+        offcanvas.offcanvas('hide');
+    });
+</script>
