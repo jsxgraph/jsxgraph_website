@@ -1,12 +1,7 @@
 - type: "icons"
-  width: "xs"
+  width: "sm"
   data:
-    - title: "GitHub"
-      link: "/links/github"
-      target: "_blank"
-      icon: "fa-brands fa-github"
-
-    - title: "API Reference"
+    - title: "API"
       link: "/docs/api"
       target: "_blank"
       icon: "fa-solid fa-book-open"
@@ -16,66 +11,20 @@
       target: "_blank"
       icon: "fa-solid fa-comments"
 
-    - title: "StackOverflow"
-      link: "/links/stackoverflow"
+    - title: "jsFiddle"
+      link: "/links/jsfiddle"
       target: "_blank"
-      icon: "fa-brands fa-stack-overflow"
+      icon: "fa-brands fa-jsfiddle"
 
 - type: "icons"
-  width: "xs"
+  width: "sm"
   data:
-    - title: "jsFiddle"
-      link: "/links/jsfiddle"
+    - title: "Share"
+      link: "/share"
       target: "_blank"
-      icon: "fa-brands fa-jsfiddle"
+      icon: "fa-solid fa-arrow-up-right-from-square"
 
-    - title: "Events"
-      link: "/events/"
-      target: "_self"
-      icon: "fa-solid fa-calendar-days"
-
-    - title: "News"
-      link: "/news/"
-      target: "_self"
-      icon: "fa-solid fa-bullhorn"
-
-- type: "squares"
-  width: "xs"
-  data:
     - title: "GitHub"
       link: "/links/github"
       target: "_blank"
       icon: "fa-brands fa-github"
-
-    - title: "API Reference"
-      link: "/docs/api"
-      target: "_blank"
-      icon: "fa-solid fa-book-open"
-
-    - title: "Forum"
-      link: "/links/forum"
-      target: "_blank"
-      icon: "fa-solid fa-comments"
-
-    - title: "StackOverflow"
-      link: "/links/stackoverflow"
-      target: "_blank"
-      icon: "fa-brands fa-stack-overflow"
-
-- type: "squares"
-  width: "xs"
-  data:
-    - title: "jsFiddle"
-      link: "/links/jsfiddle"
-      target: "_blank"
-      icon: "fa-brands fa-jsfiddle"
-
-    - title: "Events"
-      link: "/events/"
-      target: "_self"
-      icon: "fa-solid fa-calendar-days"
-
-    - title: "News"
-      link: "/news/"
-      target: "_self"
-      icon: "fa-solid fa-bullhorn"

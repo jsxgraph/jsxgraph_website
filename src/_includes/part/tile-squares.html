@@ -1,4 +1,4 @@
-{%- assign tile_width = include.width | default: "xs" -%}
+{%- assign tile_width = include.width | default: "auto" -%}
 <!-- auto | xs | sm | md | lg | xl | xxl -->
 
 {%- assign polygon = include.polygon | default: const.default_polygon -%}
@@ -30,14 +30,14 @@
 {%- assign padding_y = "10%" -%}
 {%- endif -%}
 
-{%- assign size = include.data.size -%}
-{%- assign max_n = size | minus: 1 -%}
-{%- assign width = 100 | divided_by: size | append: "%" -%}
+{%- assign max_size = include.max_size | default: include.data.size -%}
+{%- assign width = 100 | divided_by: max_size | append: "%" -%}
+{%- assign max_n = include.data.size | minus: 1 -%}
 
 {% for i in (0..max_n) %}
 {%- assign data = include.data[i] -%}
 
-<div style="width: {{width}};">
+<div style="width: {{ width }};">
     {%- assign stringToCheck = data.link %}
     {%- assign checkArray = stringToCheck | split: ':' -%}
     {%- if checkArray[0] == 'http' or checkArray[0] == 'https' or data.target == "_blank" -%}
@@ -49,7 +49,7 @@
     {%- endif -%}
     <a href="{{ link }}" target="{{ target }}"
        class="btn-{{ data.colorclass | default: 'primary' }} border border-{{ data.colorclass | default: 'primary' }} d-block mx-auto
-              {%- if tile_width=='auto' %} w-100 w-90-over-xs w-80-over-md {% else %} w-fix-{{tile_width}} w-max-100 w-max-90-over-xs mb-xs-2 {% endif -%}
+              {%- if tile_width=='auto' %} w-100 {% else %} w-fix-{{tile_width}} w-max-100 {% endif -%}
               square {{ class }} overflow-hidden text-center p-1 tile-button tile-button-squares"
     >
         <div class="d-flex flex-column w-100 h-100">

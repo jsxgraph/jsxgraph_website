@@ -56829,7 +56829,7 @@ option:disabled {
 .offcanvas-backdrop.show,
 .custom-backdrop.fade.show,
 .custom-backdrop:not(.show):not(.fade):not(.off) {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 code {
   color: inherit;
@@ -59133,12 +59133,12 @@ footer,
   font-size: 1rem;
 }
 .tile-button-squares .tile-label {
-  --bs-body-font-size: 0.8rem;
-  font-size: 0.8rem;
+  --bs-body-font-size: 1rem;
+  font-size: 1rem;
 }
 .tile-button-icons .tile-label {
-  --bs-body-font-size: 0.8rem;
-  font-size: 0.8rem;
+  --bs-body-font-size: 1rem;
+  font-size: 1rem;
 }
 .icon-external-link {
   vertical-align: text-top;

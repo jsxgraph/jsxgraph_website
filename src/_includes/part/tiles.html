@@ -1,32 +1,21 @@
-<div class="row g-2">
+<div class="row g-2 justify-content-center">
+    {%- assign max_size = 1 -%}
+    {%- for tile in site.data.tiles -%}
+    {%- if tile.type == "squares" or tile.type == "icons" -%}
+    {%- if tile.data.size > max_size -%}
+    {%- assign max_size = tile.data.size -%}
+    {%- endif -%}
+    {%- endif -%}
+    {%- endfor -%}
+
     {%- for tile in site.data.tiles -%}
     {%- assign filepath = "part/tile-" | append: tile.type | append: ".html" -%}
-    {%- include {{ filepath }} data=tile.data horizontal=tile.horizontal polygon=tile.polygon width=tile.width -%}
+    {%- include {{ filepath }} data=tile.data horizontal=tile.horizontal polygon=tile.polygon width=tile.width max_size=max_size -%}
     {%- endfor -%}
 </div>
 
 <script type="module">
     let offcanvas = $('#menu');
-
-    // Auto resize icons
-    function resizeIcons() {
-        $('.tile-button .sketcho').each(function (_, el) {
-            let icon = $(el),
-                button = icon.parents('.tile-button').first(),
-                label = button.find('.tile-label').first(),
-                space;
-
-            if (button.hasClass('tile-button-half-square'))
-                space = button.width() - (parseFloat(button.css('padding-top')) * 4) - label.outerHeight();
-            else if (button.hasClass('tile-button-half-slim'))
-                space = (button.width() / 2) - (parseFloat(button.css('padding-top')) * 4) - label.outerHeight();
-
-            icon.css({
-                'font-size': space,
-                'line-height': '100%',
-            });
-        });
-    }
 
     // resize half slim buttons
     const SPACE = '0.5rem'; // m-between-2
