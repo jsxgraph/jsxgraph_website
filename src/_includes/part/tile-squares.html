@@ -2,10 +2,18 @@
 <!-- auto | xs | sm | md | lg | xl | xxl -->
 
 {%- assign polygon = include.polygon | default: const.default_polygon -%}
-<!-- circle | 4 | 5 | 6 | 8 | jsxgraph -->
+<!-- circle | 4 | 5 | 6 | 8 | jsxgraph | jsxgraph-pure | jsxgraph-plain -->
 
 {%- if polygon == "jsxgraph" -%}
 {%- assign class = "jsxgraph-logo-clip" -%}
+{%- assign padding_x = "3%" -%}
+{%- assign padding_y = "3%" -%}
+{%- elsif polygon == "jsxgraph-pure" -%}
+{%- assign class = "jsxgraph-logo-pure-clip" -%}
+{%- assign padding_x = "5%" -%}
+{%- assign padding_y = "5%" -%}
+{%- elsif polygon == "jsxgraph-plain" -%}
+{%- assign class = "jsxgraph-logo-plain-clip" -%}
 {%- assign padding_x = "5%" -%}
 {%- assign padding_y = "5%" -%}
 {%- elsif polygon == "circle" -%}
