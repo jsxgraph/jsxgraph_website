@@ -1,0 +1,38 @@
+- type: "icons"
+  data:
+    - title: "GitHub"
+      link: "/links/github"
+      target: "_blank"
+      icon: "fa-brands fa-github"
+
+    - title: "API Reference"
+      link: "/docs/api"
+      target: "_blank"
+      icon: "fa-solid fa-book-open"
+
+    - title: "Forum"
+      link: "/links/forum"
+      target: "_blank"
+      icon: "fa-solid fa-comments"
+
+    - title: "StackOverflow"
+      link: "/links/stackoverflow"
+      target: "_blank"
+      icon: "fa-brands fa-stack-overflow"
+
+- type: "squares"
+  data:
+    - title: "jsFiddle"
+      link: "/links/jsfiddle"
+      target: "_blank"
+      icon: "fa-brands fa-jsfiddle"
+
+    - title: "Events"
+      link: "/events/"
+      target: "_self"
+      icon: "fa-solid fa-calendar-days"
+
+    - title: "News"
+      link: "/news/"
+      target: "_self"
+      icon: "fa-solid fa-bullhorn"
