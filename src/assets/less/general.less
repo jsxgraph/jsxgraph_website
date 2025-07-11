@@ -33,15 +33,23 @@
 :root {
   @media (min-width: @width_sm_min) {
     --bs-body-font-size: 1.25rem;
-    .code-highlighting code {
-      font-size: 1rem;
-    }
   }
 }
 
-footer {
+footer,
+.code-highlighting code {
   --bs-body-font-size: 1rem;
   font-size: 1rem;
+}
+
+.tile-button-squares .tile-label {
+  --bs-body-font-size: 1rem;
+  font-size: 1rem;
+}
+
+.tile-button-icons .tile-label {
+  --bs-body-font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .icon-external-link {

@@ -54,11 +54,11 @@
                 <div class="position-absolute top-0 start-0 end-0 bottom-0 bg-{{ data.colorclass | default: 'primary' }} opacity-33"></div>
             </div>
             {%- else -%}
-            <div class="flex-fill mb-n1 d-flex align-items-center justify-content-center" style="padding: {{padding-y}} {{padding-x}};">
+            <div class="flex-fill mb-n1 d-flex align-items-center justify-content-center" style="padding: {{padding_y}} {{padding_x}};">
                 <i class="biggest fa-fw {{ data.icon }}">{% if data.icon == '' %}&nbsp;{% endif %}</i>
             </div>
             {%- endif -%}
-            <div class="smaller shorten-content-x tile-label" style="padding: 0 {{padding-x}};">
+            <div class="shorten-content-x tile-label" style="padding: 0 {{padding-x}};">
                 {{ data.title | default: "" }}
             </div>
         </div>
