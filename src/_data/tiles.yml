@@ -19,10 +19,10 @@
 - type: "icons"
   width: "sm"
   data:
-    - title: "Share"
+    - title: "Examples"
       link: "/share"
       target: "_blank"
-      icon: "fa-solid fa-arrow-up-right-from-square"
+      icon: "fa-solid fa-folder-open"
 
     - title: "GitHub"
       link: "/links/github"
