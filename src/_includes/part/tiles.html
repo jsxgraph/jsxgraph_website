@@ -1,7 +1,7 @@
 <div class="row g-2">
     {%- for tile in site.data.tiles -%}
     {%- assign filepath = "part/tile-" | append: tile.type | append: ".html" -%}
-    {%- include {{ filepath }} data=tile.data horizontal=tile.horizontal polygon=tile.polygon -%}
+    {%- include {{ filepath }} data=tile.data horizontal=tile.horizontal polygon=tile.polygon width=tile.width -%}
     {%- endfor -%}
 </div>
 

@@ -1,3 +1,6 @@
+{%- assign tile_width = include.width | default: "xs" -%}
+<!-- auto | xs | sm | md | lg | xl | xxl -->
+
 {%- assign polygon = include.polygon | default: const.default_polygon -%}
 <!-- circle | 4 | 5 | 6 | 8 | jsxgraph -->
 
@@ -53,7 +56,9 @@
             </div>
         </div>
         {% else %}
-        <div class="btn btn-{{ data.colorclass | default: 'primary' }} border border-{{ data.colorclass | default: 'primary' }} d-block mx-auto w-100 w-90-over-xs w-80-over-md square rounded-0 {{ class }} overflow-hidden text-center mb-1 p-0"
+        <div class="btn btn-{{ data.colorclass | default: 'primary' }} border border-{{ data.colorclass | default: 'primary' }} d-block mx-auto
+                    {%- if tile_width=='auto' %} w-100 w-90-over-xs w-80-over-md {% else %} w-fix-{{tile_width}} w-max-100 w-max-90-over-xs {% endif -%}
+                    square rounded-0 {{ class }} overflow-hidden text-center mb-1 p-0"
              style="padding: {{padding_y}} {{padding_x}};"
         >
             <div class="d-flex justify-content-center align-items-center h-100 w-100">
@@ -61,7 +66,7 @@
             </div>
         </div>
         {% endif %}
-        <div class="shorten-content-x  mb-2 tile-label" style="padding: 0 {{padding-x}};">
+        <div class="shorten-content-x mb-2 tile-label" style="padding: 0 {{padding-x}};">
             {{ data.title | default: "" }}
         </div>
     </a>
