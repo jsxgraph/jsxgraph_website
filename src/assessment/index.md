@@ -1,5 +1,9 @@
 ---
 title: Assessment
 order: 4
-is_separator: true
+is_separator: false
+sections:
+
+  - file: assessment
+    layout: text
 ---
