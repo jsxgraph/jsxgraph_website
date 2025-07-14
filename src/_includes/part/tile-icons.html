@@ -48,7 +48,7 @@
         {% else %}
         <div class="square {% if tile_width=='auto' %} w-100 {% else %} w-fix-{{tile_width}} w-max-100 {% endif %} overflow-hidden mx-auto mb-1">
             <div class="btn btn-{{ data.colorclass | default: 'primary' }} border border-{{ data.colorclass | default: 'primary' }} rounded-0 {{ class }}">
-                <div class="d-flex justify-content-center align-items-center h-100 w-100">
+                <div class="d-flex justify-content-center align-items-center w-100">
                     <i class="biggest fa-fw {{ data.icon }}">{% if data.icon == '' %}&nbsp;{% endif %}</i>
                 </div>
             </div>
