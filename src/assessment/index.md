@@ -12,10 +12,19 @@ sections:
     data:
       boardid: visualinput
       board_pos: second
-      title: Visual input with JSXGraph 
-      link: /share
+      title: Reflection of a triangle with respect to a line 
+      link: /share/example/reflection-of-a-triangle-with-respect-to-a-line-assessment
       target: _blank
 
+  - file: examples
+    layout: board-block
+    data:
+      boardid: examples
+      title: 3D cubes and projections
+      link: /share/example/cube-and-projection
+      target: _blank
+    
   - file: stackformulas
     layout: text
+
 ---

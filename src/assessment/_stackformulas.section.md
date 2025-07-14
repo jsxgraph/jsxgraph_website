@@ -1,4 +1,4 @@
-## STACK
+# STACK
 
 _STACK_ is a server-based assessment system for mathematics that evaluates student input using symbolic algebra in _Moodle_ or _ILIAS_ courses. 
 It allows learners to enter answers as mathematical expressions, which are then automatically analyzed and checked for correctness, structure, and equivalence.
@@ -9,7 +9,7 @@ This allows students to move geometric figures, drag points, or manipulate param
 - [STACK-Assessment](https://stack-assessment.org)
 - [STACK Docs JSXGraph](https://docs.stack-assessment.org/en/Specialist_tools/JSXGraph/)
 
-## Formulas
+# Formulas
 
 _Formulas_ is a Moodle question type that supports algebraic input, symbolic evaluation, randomization, and automated feedback—making it well-suited for both formative and summative assessment.
 
