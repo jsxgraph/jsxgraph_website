@@ -21,20 +21,32 @@
   Universität Augsburg, Augsburg 2010.  
   ISBN 978-3-00-032628-8
 
-<b>Alfred Wassermann:</b> Dynamische Mathematik-Software für Web und ebook. In Dieter Schott, editor, Proceedings 9. Workshop Mathematik für ingenieurwissenschaftliche
-Studiengänge, Wilhelmshaven, September 2011, pages 34–38. Hochschule Wismar, Gottlob-Frege-Institut, 2011. <br>
+- Alfred Wassermann:
+  **Dynamische Mathematik-Software für Web und ebook**, <br>
+  in Dieter Schott, editor, Proceedings 9. Workshop Mathematik für ingenieurwissenschaftliche
+  Studiengänge, Wilhelmshaven, September 2011, pages 34–38. <br>
+  Hochschule Wismar, Gottlob-Frege-Institut, 2011.
 
-<b>Michael Gerhäuser, Bianca Valentin, Alfred Wassermann, Peter Wilfahrt:</b> JSXGraph – Dynamic Mathematics Running on (nearly) Every Device. Electronic Journal of Mathematics and
-Technology 5 (1) (2011). Available at http://www.radford.edu/ejmt. <br>
+- Michael Gerhäuser, Bianca Valentin, Alfred Wassermann, Peter Wilfahrt: <br>
+ **JSXGraph – Dynamic Mathematics Running on (nearly) Every Device**, <br>
+ Electronic Journal of Mathematics and Technology 5 (1) (2011). <br>
+ Available at http://www.radford.edu/ejmt.
 
-<b>Michael Gerhäuser and Alfred Wassermann:</b> Automatic calculation of plane loci using Gröbner bases and integration into a dynamic geometry system. In Pascal Schreck, Julien
-Narboux, and Jürgen Richter-Gebert, editors, Automated Deduction in Geometry, volume 6877 of Lecture Notes in Computer Science, pages 68–77. Springer Berlin/Heidelberg, 2011. <br>
+- Michael Gerhäuser and Alfred Wassermann: <br>
+  **Automatic calculation of plane loci using Gröbner bases and integration into a dynamic geometry system**, <br>
+  in Pascal Schreck, Julien Narboux, and Jürgen Richter-Gebert, editors, Automated Deduction in Geometry, volume 6877 of Lecture Notes in Computer Science, pages 68–77. <br>
+  Springer Berlin/Heidelberg, 2011.
 
-<b>Matthias Ehmann, Michael Gerhäuser, Carsten Miller, Heiko Vogel, and Alfred Wassermann:</b> Interactive geometry for the web and mobile devices. In Peter Baptist and Dagmar
-Raab, editors, Implementing Inquiry in Mathematics Education. Universität Bayreuth, 2012. <br>
+- Matthias Ehmann, Michael Gerhäuser, Carsten Miller, Heiko Vogel, and Alfred Wassermann: <br>
+  **Interactive geometry for the web and mobile devices**, <br>
+  in Peter Baptist and Dagmar Raab, editors, Implementing Inquiry in Mathematics Education. <br>
+  Universität Bayreuth, 2012.
 
-<b>Matthias Ehmann, Michael Gerhäuser, Carsten Miller, and Alfred Wassermann:</b> Sketchometry and JSXGraph - dynamic geometry for mobile devices. South Bohemia Mathematical
-Letters, 21:1-7, 2013. <br>
+- Matthias Ehmann, Michael Gerhäuser, Carsten Miller, and Alfred Wassermann: <br>
+  **Sketchometry and JSXGraph - dynamic geometry for mobile devices**, <br>
+  South Bohemia Mathematical Letters, 21:1-7, 2013.
 
-<b>Darko Drakulić, Igor Pesek, Alfred Wassermann, and Blaž Zmazek:</b> JSXGraph in i-textbooks. In Igor Pesek, Blaž Zmazek, and Vladimir Milekšič, editors, Slovenian i-textbooks,
-pages 93–114. The National Education Institute Slovenia, 2014. <br>
+- Darko Drakulić, Igor Pesek, Alfred Wassermann, and Blaž Zmazek: <br>
+  **JSXGraph in i-textbooks**, <br>
+  in Igor Pesek, Blaž Zmazek, and Vladimir Milekšič, editors, Slovenian i-textbooks, pages 93–114. <br>
+  The National Education Institute Slovenia, 2014.
