@@ -7,7 +7,7 @@ guid: http://jsxgraph.uni-bayreuth.de/wp/?p=520
 permalink: /2011/01/02/jsxgraph-handling-images-and-texts/
 category: News
 tags:
-  - Image
+  - image
   - text
   - transformation
 ---

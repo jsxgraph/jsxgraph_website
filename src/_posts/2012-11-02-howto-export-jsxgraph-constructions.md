@@ -9,9 +9,9 @@ category: News
 tags:
   - Canvas
   - export
-  - Howto
-  - png
-  - svg
+  - How to
+  - image
+
 ---
 You created a wonderful mathlet and now you want to include it into a static environment like a pdf document. To do so you have to export the construction into a format that can be processed by e.g. your word processor. Based on the rendering techniques used in JSXGraph to display the graphics you have the choice between SVG and PNG. In this post we will describe several methods how you can extract a JSXGraph construction into either a _SVG_ or _PNG_ encoded static image.
 
