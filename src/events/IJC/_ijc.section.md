@@ -1,24 +1,47 @@
-10.-12. October 2023 <br>
-The 4th International JSXGraph Conference will bring together developers and teachers, instructors and designers who are interested or already experienced in using JSXGraph to
-enhance digital learning of STEM topics.
+# 2025
 
-- Free online conference
-- Organized by the [Center of Mobile Learning with Digital Technology](https://mobile-learning.uni-bayreuth.de) at the University of Bayreuth, Germany.
+> /media/conferences/conf2025.png
 
-2022
+- 7.-9. October
+- <a href="https://jsxgraph.org/conf2025" target="_blank">Web page</a>
+- Book of Abstracts coming soon!
 
-- Free online conference
-- Web page: <https://jsxgraph.org/conf2022>
-- Organized by the [Center of Mobile Learning with Digital Technology](https://mobile-learning.uni-bayreuth.de) at the University of Bayreuth, Germany.
+# 2024
 
-2021
+> /media/conferences/conf2024.png
 
-- Free online conference
-- Web page: <https://jsxgraph.org/conf2021>
-- Organized by the [Center of Mobile Learning with Digital Technology](https://mobile-learning.uni-bayreuth.de) at the University of Bayreuth, Germany.
+- 8.-10. October
+- <a href="https://jsxgraph.org/conf2024" target="_blank">Web page</a>
+- Book of Abstracts coming soon!
 
-2020
+# 2023
 
-- Free online conference
-- Web page: <https://jsxgraph.org/conf>
-- Organized by the [Center of Mobile Learning with Digital Technology](https://mobile-learning.uni-bayreuth.de) at the University of Bayreuth, Germany.
+> /media/conferences/conf2023.png
+
+- 10.-12. October
+- <a href="https://jsxgraph.org/conf2023" target="_blank">Web page</a>
+- <a href="/media/pdf/ijc-abstracts/ijc-2023.pdf" target="_blank">Book of Abstracts</a>
+
+# 2022
+
+> /media/conferences/conf2022.png
+
+- 4.-6. October
+- <a href="https://jsxgraph.org/conf2022" target="_blank">Web page</a>
+- <a href="/media/pdf/ijc-abstracts/ijc-2022.pdf" target="_blank">Book of Abstracts</a>
+
+# 2021
+
+> /media/conferences/conf2021.png
+
+- 5.-7. October
+- <a href="https://jsxgraph.org/conf2021" target="_blank">Web page</a>
+- <a href="/media/pdf/ijc-abstracts/ijc-2021.pdf" target="_blank">Book of Abstracts</a>
+
+# 2020
+
+<!-- > /media/conferences/conf2020.png -->
+
+- 6.-8. October
+- <a href="https://jsxgraph.org/conf" target="_blank">Web page</a>
+- <a href="/media/pdf/ijc-abstracts/ijc-2020.pdf" target="_blank">Book of Abstracts</a>
