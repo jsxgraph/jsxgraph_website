@@ -7,7 +7,7 @@ guid: http://jsxgraph.uni-bayreuth.de/wp/?p=158
 permalink: /2009/03/20/jsxgraph-and-ie8/
 category: Bug
 tags:
-  - IE8
+  - Internet Explorer
   - strict mode
   - VML
 ---
