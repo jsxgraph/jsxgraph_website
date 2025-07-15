@@ -9,8 +9,7 @@ category: Examples
 tags:
   - JSXCompressor
   - gunzip
-  - JavaScript compressor
-  - JavaScript unzip
+  - JavaScript
   - unzip
 ---
 A simple Python script to compress a file to be uncompressed by the JavaScript JSXCompressor is the following:
