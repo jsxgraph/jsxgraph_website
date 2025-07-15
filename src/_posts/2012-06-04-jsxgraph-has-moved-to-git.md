@@ -8,7 +8,6 @@ permalink: /2012/06/04/jsxgraph-has-moved-to-git/
 category: News
 tags:
   - git
-  - scm
   - subversion
 ---
 We moved our version control from subversion to Git. We also created a [project page at GitHub](https://github.com/jsxgraph/jsxgraph) to make it easier for you to report bugs and feature requests and to participate in the development of JSXGraph.

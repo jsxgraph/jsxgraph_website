@@ -8,9 +8,7 @@ permalink: /2012/09/28/sourceforge-repository-new-url/
 category: News
 tags:
   - git
-  - repository
-  - scm
-  - sf
+  - Repository
   - SourceForge
 ---
 We updated our SourceForge project to the new &#8220;forge&#8221; software and in this regard sourceforge moved our repository. You can [find the new URLs here](https://sourceforge.net/p/jsxgraph/code/). To update the remote in your local repository do
