@@ -1,5 +1,30 @@
 ---
 title: Assessment
 order: 4
-is_separator: true
+is_separator: false
+sections:
+
+  - file: intro
+    layout: text
+
+  - file: visualinput
+    layout: board-block
+    data:
+      boardid: visualinput
+      board_pos: second
+      title: Reflection of a triangle with respect to a line 
+      link: /share/example/reflection-of-a-triangle-with-respect-to-a-line-assessment
+      target: _blank
+
+  - file: examples
+    layout: board-block
+    data:
+      boardid: examples
+      title: 3D cubes and projections
+      link: /share/example/cube-and-projection
+      target: _blank
+    
+  - file: stackformulas
+    layout: text
+
 ---

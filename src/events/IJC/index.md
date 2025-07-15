@@ -4,6 +4,9 @@ parent: events
 order: 1
 sections:
 
-   - file: ijc
+   - file: ijc-intro
      layout: text     
+
+   - file: ijc
+     layout: cards     
 ---

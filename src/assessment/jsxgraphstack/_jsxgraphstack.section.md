@@ -1,1 +1,0 @@
-Dies ist JSXGraph Stack.

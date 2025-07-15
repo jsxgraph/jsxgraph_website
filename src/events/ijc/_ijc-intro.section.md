@@ -1,0 +1,2 @@
+The International JSXGraph Conference is a free online conference that brings together developers and teachers, instructors and designers who are interested or already experienced in using JSXGraph to
+enhance digital learning of STEM topics. It is organized by the [Center of Mobile Learning with Digital Technology](https://mobile-learning.uni-bayreuth.de) at the University of Bayreuth, Germany.

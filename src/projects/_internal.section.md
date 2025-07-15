@@ -1,6 +1,6 @@
 # sketchometry
 
-> /media/logos/logo-sketchometry.png
+> /media/logos-external/logo-sketchometry.png
 > https://sketchometry.org
 
 Since 2010
