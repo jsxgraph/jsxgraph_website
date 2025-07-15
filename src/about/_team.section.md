@@ -34,11 +34,6 @@ Prof. Dr. Alfred Wassermann
 
 <div class="clearfix"></div>
 
-Center for Mobile Learning with Digital Technology (CMLDT)  
-University of Bayreuth   
-Universitätsstraße 30   
-95447 Bayreuth
-
 
 # Core Developer Team
 
