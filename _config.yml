@@ -37,7 +37,7 @@ disable_disk_cache: true
 # Blogposts
 pagination:
   enabled: true # for development disable this
-  per_page: 5
+  per_page: 7
   limit: 0
   permalink: '/page-:num.html'
   title: ':title (Page :num)'
