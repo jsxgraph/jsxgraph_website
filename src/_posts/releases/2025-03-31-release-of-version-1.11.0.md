@@ -1,6 +1,13 @@
 ---
 title: Release of 1.11.0
 subtitle: Major release
+author: Alfred Wassermann
+tags:
+  - 3D
+  - polyhedron3d
+  - depth ordering
+  - heatmap
+  - attributes
 ---
 
 Dear friends of JSXGraph,
@@ -29,7 +36,7 @@ __API Changes:__
 
 Enjoy,
 
-Alfred Wassermann
+Carsten Miller, Andreas Walter, and Alfred Wassermann
 
 
 

@@ -9,7 +9,7 @@ tags:
   - Mozilla
   - iPad
   - iPhone
-  - mobile webkit
+  - Mobile WebKit
   - Opera mini
 ---
 With version 0.80 JSXGraph starts the support of multitouch devices like the Apple iPhone and iPod touch, or devices running Mozilla Fennec. Surprisingly, JSXGraph runs quite smoothly on these devices.

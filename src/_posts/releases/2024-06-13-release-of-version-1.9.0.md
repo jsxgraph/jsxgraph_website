@@ -1,6 +1,15 @@
 ---
 title: Release of 1.9.0
-subtitle: Major new release
+subtitle: Major release
+author: Alfred Wassermann
+tags:
+  - 3D
+  - trackball
+  - intersection
+  - Statistics 
+  - grid
+  - text
+  - Eventhandling
 ---
 
 Dear friends of JSXGraph,

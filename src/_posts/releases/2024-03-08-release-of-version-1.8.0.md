@@ -1,6 +1,12 @@
 ---
 title: Release of 1.8.0
-subtitle: Major new release
+subtitle: Major release
+author: Alfred Wassermann
+tags:
+  - axis
+  - grid
+  - 3D
+  - TypeScript 
 ---
 
 Dear friends of JSXGraph,

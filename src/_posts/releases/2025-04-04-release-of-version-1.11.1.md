@@ -1,6 +1,10 @@
 ---
 title: Release of 1.11.1
 subtitle: Patch release
+author: Alfred Wassermann
+tags:
+  - 3D
+  - Attributes
 ---
 
 Dear friends of JSXGraph,

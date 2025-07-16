@@ -2,15 +2,15 @@
 id: 741
 title: JSXGraph has moved to Git
 date: 2012-06-04T19:36:11+00:00
-author: michael
+author: Michael Gerhäuser
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=741
 permalink: /2012/06/04/jsxgraph-has-moved-to-git/
 category: News
 tags:
-  - git
-  - subversion
+  - Git
+  - Subversion
 ---
-We moved our version control from subversion to Git. We also created a [project page at GitHub](https://github.com/jsxgraph/jsxgraph) to make it easier for you to report bugs and feature requests and to participate in the development of JSXGraph.
+We moved our version control from Subversion to Git. We also created a [project page at GitHub](https://github.com/jsxgraph/jsxgraph) to make it easier for you to report bugs and feature requests and to participate in the development of JSXGraph.
 
 If you are not familiar with Git you can find a lot of good ressources on the web, e.g. <http://git-scm.com/documentation> and the [GitHub help](http://help.github.com) pages.
 

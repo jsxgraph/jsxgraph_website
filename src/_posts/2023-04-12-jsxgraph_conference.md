@@ -1,7 +1,7 @@
 ---
 title: 4. International JSXGraph conference 
 subtitle: Online conference
-date: 2023-04-12T12:00:00+00:00
+author: Carsten Miller, Alfred Wassermann
 category: Announcement
 tags:
   - Workshop

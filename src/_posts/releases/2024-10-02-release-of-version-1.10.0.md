@@ -1,6 +1,10 @@
 ---
 title: Release of 1.10.0
 subtitle: Major release
+author: Alfred Wassermann
+tags:
+  - 3D
+  - tangent
 ---
 
 Dear friends of JSXGraph,

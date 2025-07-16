@@ -1,6 +1,6 @@
 ---
 title: Release of 1.5.0
-subtitle: Major new release
+subtitle: Major release
 date: 2023-01-27T07:00:00+00:00
 ---
 

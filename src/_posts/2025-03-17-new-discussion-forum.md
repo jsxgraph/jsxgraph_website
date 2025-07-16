@@ -1,5 +1,6 @@
 ---
 title: Exciting News - New Discussion Forum
+author: Alfred Wassermann
 category: News
 tags:
   - Discussion

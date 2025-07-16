@@ -1,6 +1,6 @@
 ---
 title: Release of 1.2.0
-subtitle: Major new release
+subtitle: Major release
 date: 2021-01-18T12:00:00+00:00
 ---
 

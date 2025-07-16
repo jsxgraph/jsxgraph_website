@@ -1,6 +1,14 @@
 ---
 title: Release of 1.7.0
-subtitle: Major new release
+subtitle: Major release
+author: Alfred Wassermann
+tags:
+  - implicitcurve
+  - parallelogram
+  - vectorfield3D
+  - measurement
+  - Themes
+  - STACK
 ---
 
 Dear friends of JSXGraph,

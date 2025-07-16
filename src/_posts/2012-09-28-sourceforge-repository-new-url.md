@@ -2,12 +2,12 @@
 id: 769
 title: 'SourceForge repository: New URL'
 date: 2012-09-28T17:41:29+00:00
-author: michael
+author: Michael Gerhäuser
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=769
 permalink: /2012/09/28/sourceforge-repository-new-url/
 category: News
 tags:
-  - git
+  - Git
   - Repository
   - SourceForge
 ---

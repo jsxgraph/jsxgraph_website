@@ -1,6 +1,12 @@
 ---
 title: Release of 1.11.0-beta2
 subtitle: Beta release
+author: Alfred Wassermann
+tags:
+  - 3D
+  - polyhedron3d
+  - depth ordering
+  - transformations
 ---
 
 Dear friends of JSXGraph,

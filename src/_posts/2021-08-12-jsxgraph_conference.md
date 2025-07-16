@@ -1,7 +1,7 @@
 ---
 title: 2. international JSXGraph conference 
 subtitle: Online conference
-date: 2021-08-12T07:00:00+00:00
+author: Carsten Miller, Alfred Wassermann
 category: Announcement
 tags:
   - Workshop

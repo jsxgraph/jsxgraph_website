@@ -1,6 +1,13 @@
 ---
 title: Release of 1.9.2
 subtitle: Patch release
+author: Alfred Wassermann
+tags:
+  - 3D
+  - trackball
+  - circle
+  - parallelogram
+  - axis
 ---
 
 Dear friends of JSXGraph,

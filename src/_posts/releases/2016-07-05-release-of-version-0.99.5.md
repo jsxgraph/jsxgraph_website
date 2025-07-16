@@ -1,6 +1,6 @@
 ---
 title: Release of 0.99.5
-subtitle: Major new release
+subtitle: Major release
 date: 2016-07-05T11:15:08+00:00
 ---
 Version 0.99.5 of JSXGraph has just been released! This release contains mostly bug fixes. Most of them have been reported by careful users. The most important change is that now (hopefully) all types of devices are supported. Previously, there was a problem if the web page allowed scaling by the user, i.e. if the html file contained a line

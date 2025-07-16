@@ -1,6 +1,11 @@
 ---
 title: Release of 1.11.0-beta1
 subtitle: Beta release
+author: Alfred Wassermann
+tags:
+  - Accessibility 
+  - CSS
+  - attributes
 ---
 
 Dear friends of JSXGraph,

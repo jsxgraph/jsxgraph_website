@@ -1,6 +1,7 @@
 ---
 title: Release of 1.10.1
 subtitle: Patch release
+author: Alfred Wassermann
 ---
 
 Dear friends of JSXGraph,

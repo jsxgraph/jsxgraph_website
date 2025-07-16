@@ -2,7 +2,7 @@
 id: 780
 title: Release of version 0.96
 date: 2012-12-05T14:08:19+00:00
-author: michael
+author: Michael Gerhäuser
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=780
 permalink: /2012/12/05/release-of-version-0-96/
 ---
