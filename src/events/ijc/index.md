@@ -4,7 +4,7 @@ parent: events
 order: 1
 sections:
 
-   - file: ijc-intro
+   - file: intro
      layout: text     
 
    - file: ijc
