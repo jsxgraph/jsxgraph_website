@@ -56616,9 +56616,7 @@ textarea.readonly {
 .carousel-static .carousel-item {
   transition: none;
 }
-.card-img:not(.border):not(.border-start):not(.border-end),
-.card-img-top:not(.border):not(.border-start):not(.border-end),
-.card-img-bottom:not(.border):not(.border-start):not(.border-end) {
+.card-img-full:not(.border):not(.border-start):not(.border-end) {
   width: calc(100% + 1px + 1px);
   margin-left: -1px;
   margin-right: -1px;
