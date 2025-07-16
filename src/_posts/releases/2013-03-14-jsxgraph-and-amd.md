@@ -7,7 +7,7 @@ guid: http://jsxgraph.uni-bayreuth.de/wp/?p=816
 permalink: /2013/03/14/jsxgraph-and-amd/
 category: News
 tags:
-  - Howto
+  - How to
   - AMD
   - require.js
 ---

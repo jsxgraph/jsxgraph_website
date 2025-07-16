@@ -7,7 +7,7 @@ guid: http://jsxgraph.uni-bayreuth.de/wp/?p=574
 permalink: /2011/06/08/release-of-version-0-90/
 tags:
   - Canvas
-  - Image
+  - image
   - Options
   - text
 ---

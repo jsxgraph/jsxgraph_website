@@ -9,7 +9,6 @@ tags:
   - axis
   - JavaScript
   - Joomla
-  - JSXGraph
   - MediaWiki
   - Moodle
   - normal

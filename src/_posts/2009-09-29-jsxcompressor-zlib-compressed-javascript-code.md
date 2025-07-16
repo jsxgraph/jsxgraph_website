@@ -9,8 +9,7 @@ category: Examples
 tags:
   - JSXCompressor
   - gunzip
-  - JavaScript compressor
-  - JavaScript unzip
+  - JavaScript
   - unzip
 ---
 The open source library _JSXGraph_ (http://jsxgraph.org) contains utilities to read files which

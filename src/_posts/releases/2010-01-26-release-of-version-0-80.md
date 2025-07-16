@@ -6,7 +6,7 @@ author: Alfred Wassermann
 guid: http://jsxgraph.uni-bayreuth.de/wp/?p=417
 permalink: /2010/01/26/release-of-version-0-80/
 tags:
-  - Fennec
+  - Mozilla
   - iPad
   - iPhone
   - mobile webkit
