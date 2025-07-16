@@ -6,7 +6,7 @@ tags:
   - 3D
   - polyhedron3d
   - depth ordering
-  - transformations
+  - transformation
 ---
 
 Dear friends of JSXGraph,

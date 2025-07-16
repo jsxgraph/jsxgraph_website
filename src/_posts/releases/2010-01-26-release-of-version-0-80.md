@@ -7,8 +7,7 @@ guid: http://jsxgraph.uni-bayreuth.de/wp/?p=417
 permalink: /2010/01/26/release-of-version-0-80/
 tags:
   - Mozilla
-  - iPad
-  - iPhone
+  - Apple
   - Mobile WebKit
   - Opera mini
 ---

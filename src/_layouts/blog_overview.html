@@ -85,7 +85,7 @@
                     {% endfor %}
                     {% assign sorted_tags = sorted_tags | sort_natural %}
                     {% for tag in sorted_tags %}
-                    <a href="{{ relBase }}{{ site.taglist.root }}{{ tag | slopify }}" class="d-block badge bg-white text-start p-0 mx-0 mt-0 mb-3 link-primary">
+                    <a href="{{ relBase }}{{ site.taglist.root }}{{ tag | slopify }}" class="d-block badge bg-white text-start p-0 mx-0 mt-0 mb-2 link-primary">
                         <i class="fa-solid fa-fw fa-tag"></i>
                         {{ tag }}
                     </a>
@@ -100,7 +100,7 @@
                     {% endfor %}
                     {% assign sorted_cats = sorted_cats | sort_natural %}
                     {% for cat in sorted_cats %}
-                    <a href="{{ relBase }}{{ site.categorylist.root }}{{ cat | slopify }}" class="d-block badge bg-white text-start p-0 mx-0 mt-0 mb-3 link-primary">
+                    <a href="{{ relBase }}{{ site.categorylist.root }}{{ cat | slopify }}" class="d-block badge bg-white text-start p-0 mx-0 mt-0 mb-2 link-primary">
                         <i class="fa-solid fa-layer-group"></i>
                         {{ cat }}
                     </a>

@@ -7,7 +7,7 @@ tags:
   - polyhedron3d
   - depth ordering
   - heatmap
-  - attributes
+  - Attributes
 ---
 
 Dear friends of JSXGraph,

@@ -5,7 +5,7 @@ author: Alfred Wassermann
 tags:
   - Accessibility 
   - CSS
-  - attributes
+  - Attributes
 ---
 
 Dear friends of JSXGraph,
