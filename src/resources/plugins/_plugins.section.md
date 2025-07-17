@@ -10,12 +10,12 @@
 
 # STACK
 
-> /media/logos-external/logo-ilias.png
+> /media/logos-external/logo-stack.png
 > https://
 
 # formulas
 
-> /media/logos-external/logo-ilias.png
+> /media/logos-external/logo-formulas.png
 > https://
 
 # MediaWiki
