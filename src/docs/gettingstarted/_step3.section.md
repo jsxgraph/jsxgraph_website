@@ -1,4 +1,4 @@
-### Step 3 – Add JSXGraph Elements
+# Step 3 – Add JSXGraph Elements
 
 To create a point in your JSXGraph construction, just add the following line to your code:
 
@@ -16,7 +16,7 @@ var f = board.create(
 );
 ```
 
-#### Complete HTML File (online)
+## Complete HTML File (online)
 
 ```html
 <!DOCTYPE html>
@@ -46,4 +46,4 @@ var f = board.create(
 </html>
 ```
 
-#### The Result
+## The Result

@@ -1,18 +1,18 @@
-### Datatypes
+# Datatypes
 
-#### Boolean
+## Boolean
 
 _true_ or _false_ (case insensitive, _tRuE_ is a valid boolean constant).
 
-#### Strings
+## Strings
 
 Strings are defined using single quote marks. Quote marks inside a string have to be escaped with a backslash.
 
-#### Number
+## Number
 
 Number corresponds to the JavaScript number datatype.
 
-#### Objects
+## Objects
 
 Objects can be created only via object literal notation `<< >>` and the predefined element functions (see below). To access properties and methods the operator is used. Example:
 
@@ -27,7 +27,7 @@ property: 'string',
 sixteen = obj.method(4);
 ```
 
-#### Functions
+## Functions
 
 Functions are declared with the function operator
 

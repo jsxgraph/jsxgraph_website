@@ -1,4 +1,4 @@
-### Control structures
+# Control structures
 
 The control structures are exactly the same as in JavaScript.
 

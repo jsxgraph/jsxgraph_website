@@ -1,8 +1,8 @@
 Use the [JSXGraph Book](https://ipesek.github.io/jsxgraphbook/) for a comprehensive introduction to JSXGraph.
 
-### Step 1 – Include JSXGraph
+# Step 1 – Include JSXGraph
 
-#### Online Usage
+## Online Usage
 
 The preferred way is to include JSXGraph online from one of the CDNs (Content Delivery Network).
 Add the following lines into the document head:
@@ -14,7 +14,7 @@ Add the following lines into the document head:
       href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
 ```
 
-#### Local Usage
+## Local Usage
 
 If you want to include a local copy of JSXGraph in your HTML file,
 download the two following JSXGraph files
@@ -29,7 +29,7 @@ and add the following lines into the document head:
 <script type="text/javascript" src="jsxgraphcore.js"></script>
 ```
 
-#### Complete HTML File (online)
+## Complete HTML File (online)
 
 ```html
 <!DOCTYPE html>

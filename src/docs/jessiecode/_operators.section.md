@@ -1,12 +1,12 @@
-### Operators
+# Operators
 
-#### Logical operators
+## Logical operators
 
 * _OR_ `||`
 * _AND_ `&&`
 * _NOT_ `!`
 
-#### Arithmetic operators
+## Arithmetic operators
 
 * _Addition_ `+`
 * _Subtraction or unary negation_ `-`
@@ -15,11 +15,11 @@
 * _Modulus_ `%`
 * _Exponentiation_ `^`
 
-#### Assignment operators
+## Assignment operators
 
 * _Assignment_ `=`
 
-#### Comparison operators
+## Comparison operators
 
 * _Equals_ `==`
 * _Lesser or equal_ `<=`
@@ -29,11 +29,11 @@
 * _Not equal_ `!=`
 * _Approximately equal_ (Can be used to compare two float values.) `~=`
 
-#### String operators
+## String operators
 
 * _String concatenation_ `+`
 
-#### Member operators
+## Member operators
 
 * _Access the object's properties and methods_ `.`
 
