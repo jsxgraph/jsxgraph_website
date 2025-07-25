@@ -14,7 +14,7 @@
 - 8.-10. October
 - <a href="https://jsxgraph.org/conf2024" target="_blank">Web page</a>
 - <a href="https://www.youtube.com/playlist?list=PLr10cPSXxWJfZ6R7vJF3G6yeTfhuPwzJ4" target="_blank">Playlist</a>
-- Book of Abstracts coming soon!
+- <a href="/media/pdf/ijc-abstracts/ijc-2024.pdf" target="_blank">Book of Abstracts</a>
 
 # 2023
 
@@ -45,7 +45,7 @@
 
 # 2020
 
-<!-- > /media/conferences/conf2020.png -->
+> /media/conferences/conf2020.png 
 
 - 6.-8. October
 - <a href="https://jsxgraph.org/conf" target="_blank">Web page</a>
