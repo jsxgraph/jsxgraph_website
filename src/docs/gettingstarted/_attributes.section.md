@@ -59,6 +59,7 @@ var c = board.create('circle', [A, B, C], {
             strokeWidth: 5,
             dash: 3
         });
+    </script>
 </body>
 </html>
 ```
