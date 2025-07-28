@@ -55471,8 +55471,8 @@ table.table-list,
   font-weight: 500;
   line-height: 1.2;
   font-size: calc(1.275rem + 0.3vw);
-  margin-bottom: 1rem;
-  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 4rem;
 }
 .table-list tr:first-child th {
   margin-top: 0rem !important;
@@ -55488,8 +55488,8 @@ table.table-list,
   font-weight: 500;
   line-height: 1.2;
   font-size: 1.25rem;
-  margin-bottom: 1rem;
-  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 4rem;
 }
 .table-list tr th + td:before {
   margin-top: 0rem !important;
@@ -55522,8 +55522,8 @@ table.table-list,
     font-weight: 500;
     line-height: 1.2;
     font-size: calc(1.275rem + 0.3vw);
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
   }
   .table-list-xs tr:first-child th {
     margin-top: 0rem !important;
@@ -55539,8 +55539,8 @@ table.table-list,
     font-weight: 500;
     line-height: 1.2;
     font-size: 1.25rem;
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
   }
   .table-list-xs tr th + td:before {
     margin-top: 0rem !important;
@@ -55574,8 +55574,8 @@ table.table-list,
     font-weight: 500;
     line-height: 1.2;
     font-size: calc(1.275rem + 0.3vw);
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
   }
   .table-list-sm tr:first-child th {
     margin-top: 0rem !important;
@@ -55591,8 +55591,8 @@ table.table-list,
     font-weight: 500;
     line-height: 1.2;
     font-size: 1.25rem;
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
   }
   .table-list-sm tr th + td:before {
     margin-top: 0rem !important;
@@ -55626,8 +55626,8 @@ table.table-list,
     font-weight: 500;
     line-height: 1.2;
     font-size: calc(1.275rem + 0.3vw);
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
   }
   .table-list-md tr:first-child th {
     margin-top: 0rem !important;
@@ -55643,8 +55643,8 @@ table.table-list,
     font-weight: 500;
     line-height: 1.2;
     font-size: 1.25rem;
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
   }
   .table-list-md tr th + td:before {
     margin-top: 0rem !important;
@@ -55678,8 +55678,8 @@ table.table-list,
     font-weight: 500;
     line-height: 1.2;
     font-size: calc(1.275rem + 0.3vw);
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
   }
   .table-list-lg tr:first-child th {
     margin-top: 0rem !important;
@@ -55695,8 +55695,8 @@ table.table-list,
     font-weight: 500;
     line-height: 1.2;
     font-size: 1.25rem;
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
   }
   .table-list-lg tr th + td:before {
     margin-top: 0rem !important;
@@ -55730,8 +55730,8 @@ table.table-list,
     font-weight: 500;
     line-height: 1.2;
     font-size: calc(1.275rem + 0.3vw);
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
   }
   .table-list-xl tr:first-child th {
     margin-top: 0rem !important;
@@ -55747,8 +55747,8 @@ table.table-list,
     font-weight: 500;
     line-height: 1.2;
     font-size: 1.25rem;
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
   }
   .table-list-xl tr th + td:before {
     margin-top: 0rem !important;
@@ -55782,8 +55782,8 @@ table.table-list,
     font-weight: 500;
     line-height: 1.2;
     font-size: calc(1.275rem + 0.3vw);
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
   }
   .table-list-xxl tr:first-child th {
     margin-top: 0rem !important;
@@ -55799,8 +55799,8 @@ table.table-list,
     font-weight: 500;
     line-height: 1.2;
     font-size: 1.25rem;
-    margin-bottom: 1rem;
-    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
   }
   .table-list-xxl tr th + td:before {
     margin-top: 0rem !important;
@@ -59663,7 +59663,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 p:last-child,
 ul:last-child {
@@ -59695,7 +59695,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 h1:first-child,
 .h1:first-child,
