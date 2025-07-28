@@ -1,13 +1,42 @@
-JSXGraph needs two files:
+To work correctly, JSXGraph requires two files:
 
 1. `jsxgraphcore.js` contains the complete source code of JSXGraph bundled in one file. All objects of JSXGraph use the namespace JXG. Beside JXG there are no global variables.
 2. Include the css commands from `jsxgraph.css` into the web pages.
 
-JSXGraph is hosted on [jsDelivr](https://jsdelivr.com), [cdnjs](https://cdnjs.cloudflare.com/) and our own server. **We highly recommend to use jsDelivr or cdnjs.** The links always have a specific structure:
+# Server
 
-- `https://cdn.jsdelivr.net/npm/jsxgraph@`***`<version number>`***`/distrib/jsxgraphcore.js`
-- `https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/`***`<version number>`***`/jsxgraphcore.js`
-- `https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-`***`<version number>`***`.js`
+JSXGraph is hosted on [jsDelivr](https://jsdelivr.com), [cdnjs](https://cdnjs.cloudflare.com/) and our own server.
+The links always have a specific structure. We highly recommend to use jsDelivr or cdnjs.
+
+### jsDelivr
+
+`https://cdn.jsdelivr.net/npm/jsxgraph@`***`<version number>`***`/distrib/jsxgraphcore.js`
+
+`https://cdn.jsdelivr.net/npm/jsxgraph@`***`<version number>`***`/distrib/jsxgraph.css`
+
+### cdnjs
+
+`https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/`***`<version number>`***`/jsxgraphcore.js`
+
+`https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/`***`<version number>`***`/jsxgraph.css`
+
+### University of Bayreuth 
+
+`https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-`***`<version number>`***`.js`  
+
+`https://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css`  
+
+# Example
+
+For example, include `jsxgraphcore.js` version 1.9.2 using one of the following links:  
+
+`https://cdn.jsdelivr.net/npm/jsxgraph@1.9.2/distrib/jsxgraphcore.js`
+
+`https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraphcore.js`
+
+`https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.9.2.js`
+
+
 
 # List of releases
 

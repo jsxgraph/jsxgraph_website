@@ -5,5 +5,5 @@ order: 4
 sections:
 
     - file: plugins
-      layout: cards
+      layout: text
 ---

@@ -5,7 +5,7 @@ order: 2
 ---
 # Students' Projects
 
-Students on software internships at the University of Bayreuth develop their own interactive projects using JSXGraph. 
+Students on software internships at the University of Bayreuth develop their own projects using JSXGraph. 
 These projects enable them to apply their programming skills to a mathematical context and gain experience in creating complex applications.
 
 [https://jsxgraph.github.io](https://jsxgraph.github.io)
