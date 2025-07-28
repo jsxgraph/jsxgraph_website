@@ -59643,6 +59643,10 @@ main #splash * {
 #menu .offcanvas-footer {
   padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x) !important;
 }
+h1,
+.h1 {
+  padding-bottom: 1rem;
+}
 h2,
 .h2 {
   font-size: 2rem;
