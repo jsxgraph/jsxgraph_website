@@ -55472,7 +55472,7 @@ table.table-list,
   line-height: 1.2;
   font-size: calc(1.275rem + 0.3vw);
   margin-bottom: 1rem;
-  margin-top: 3.5rem;
+  margin-top: 5rem;
 }
 .table-list tr:first-child th {
   margin-top: 0rem !important;
@@ -55489,7 +55489,7 @@ table.table-list,
   line-height: 1.2;
   font-size: 1.25rem;
   margin-bottom: 1rem;
-  margin-top: 3.5rem;
+  margin-top: 5rem;
 }
 .table-list tr th + td:before {
   margin-top: 0rem !important;
@@ -55523,7 +55523,7 @@ table.table-list,
     line-height: 1.2;
     font-size: calc(1.275rem + 0.3vw);
     margin-bottom: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 5rem;
   }
   .table-list-xs tr:first-child th {
     margin-top: 0rem !important;
@@ -55540,7 +55540,7 @@ table.table-list,
     line-height: 1.2;
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 5rem;
   }
   .table-list-xs tr th + td:before {
     margin-top: 0rem !important;
@@ -55575,7 +55575,7 @@ table.table-list,
     line-height: 1.2;
     font-size: calc(1.275rem + 0.3vw);
     margin-bottom: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 5rem;
   }
   .table-list-sm tr:first-child th {
     margin-top: 0rem !important;
@@ -55592,7 +55592,7 @@ table.table-list,
     line-height: 1.2;
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 5rem;
   }
   .table-list-sm tr th + td:before {
     margin-top: 0rem !important;
@@ -55627,7 +55627,7 @@ table.table-list,
     line-height: 1.2;
     font-size: calc(1.275rem + 0.3vw);
     margin-bottom: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 5rem;
   }
   .table-list-md tr:first-child th {
     margin-top: 0rem !important;
@@ -55644,7 +55644,7 @@ table.table-list,
     line-height: 1.2;
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 5rem;
   }
   .table-list-md tr th + td:before {
     margin-top: 0rem !important;
@@ -55679,7 +55679,7 @@ table.table-list,
     line-height: 1.2;
     font-size: calc(1.275rem + 0.3vw);
     margin-bottom: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 5rem;
   }
   .table-list-lg tr:first-child th {
     margin-top: 0rem !important;
@@ -55696,7 +55696,7 @@ table.table-list,
     line-height: 1.2;
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 5rem;
   }
   .table-list-lg tr th + td:before {
     margin-top: 0rem !important;
@@ -55731,7 +55731,7 @@ table.table-list,
     line-height: 1.2;
     font-size: calc(1.275rem + 0.3vw);
     margin-bottom: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 5rem;
   }
   .table-list-xl tr:first-child th {
     margin-top: 0rem !important;
@@ -55748,7 +55748,7 @@ table.table-list,
     line-height: 1.2;
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 5rem;
   }
   .table-list-xl tr th + td:before {
     margin-top: 0rem !important;
@@ -55783,7 +55783,7 @@ table.table-list,
     line-height: 1.2;
     font-size: calc(1.275rem + 0.3vw);
     margin-bottom: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 5rem;
   }
   .table-list-xxl tr:first-child th {
     margin-top: 0rem !important;
@@ -55800,7 +55800,7 @@ table.table-list,
     line-height: 1.2;
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    margin-top: 3.5rem;
+    margin-top: 5rem;
   }
   .table-list-xxl tr th + td:before {
     margin-top: 0rem !important;
@@ -59695,7 +59695,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  margin-top: 3.5rem;
+  margin-top: 5rem;
 }
 h1:first-child,
 .h1:first-child,
