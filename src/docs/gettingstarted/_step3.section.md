@@ -1,9 +1,11 @@
 # Step 3 – Add JSXGraph Elements
 
+Once the board is initialized, you can add geometric elements such as points, circles, or function graphs. 
+
 To create a point in your JSXGraph construction, just add the following line to your code:
 
 ```js
-var A = board.create('point', [2, 1], {name: 'A'});
+var A = board.create('point', [2, 1], { name: 'A' });
 ```
 
 A function graph can be included by adding:
@@ -11,12 +13,12 @@ A function graph can be included by adding:
 ```js
 var f = board.create(
     'functiongraph', 
-    [function(x) { return 0.5 * x * x - 2 * x;}], 
-    {strokeWidth: 3}
+    [function(x) { return 0.5 * x * x - 2 * x; }], 
+    { strokeWidth: 3 }
 );
 ```
 
-## Complete HTML File (online)
+## Complete HTML File (Online Usage)
 
 ```html
 <!DOCTYPE html>
@@ -35,15 +37,15 @@ var f = board.create(
                 boundingbox: [-10, 10, 10, -10], 
                 axis:true
             });
-        var A = board.create('point', [2, 1], {name: 'A'});
+        var A = board.create('point', [2, 1], { name: 'A' });
         var f = board.create(
             'functiongraph', 
-            [function(x) { return 0.5 * x * x - 2 * x;}],
-            {strokeWidth: 3}
+            [function(x) { return 0.5 * x * x - 2 * x; }],
+            { strokeWidth: 3 }
         );
     </script>
 </body>
 </html>
 ```
 
-## The Result
+## JSXGraph  (Preview)

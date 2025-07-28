@@ -13,7 +13,7 @@ sections:
    - file: step2result
      layout: board
      data:
-      boardid: example-elements
+      boardid: step2result
 
    - file: step3
      layout: text
@@ -21,5 +21,26 @@ sections:
    - file: step3result
      layout: board
      data:
-      boardid: example-blank 
+      boardid: step3result 
+
+   - file: nextsteps
+     layout: text
+
+   - file: nextstepsresult
+     layout: board
+     data:
+       boardid: nextstepsresult
+       
+   - file: attributes
+     layout: text
+
+   - file: attributesresult
+     layout: board
+     data:
+       boardid: attributesresult
+
+   - file: help
+     layout: text
+
+
 ---
