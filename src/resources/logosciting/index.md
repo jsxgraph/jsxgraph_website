@@ -1,9 +1,9 @@
 ---
-title: Templates
+title: Logo Files & Citing
 parent: resources
 order: 5
 sections:
 
-   - file: templates
+   - file: logosciting
      layout: text
 ---

@@ -1,6 +1,4 @@
-# Logo Files
-
-## Square logo
+# Square logo
 
 <img src="/media/logos/jsxgraph/png/jsxgraph-logo_square-solid.png" class="w-15 w-10-over-lg">
 
@@ -14,7 +12,7 @@
 [PNG](/media/logos/jsxgraph/png/jsxgraph-logo_square-outline.png)
 [SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_square-outline.svg)
 
-## Text logo
+# Text logo
 
 <img src="/media/logos/jsxgraph/png/jsxgraph-logo_text-solid.png" class="w-30 w-25-over-lg">
 
@@ -51,5 +49,4 @@
 
 # How to Cite JSXGraph
 
-- im Web 
-- als Print
+JSXGraph. Center for Mobile Learning with Digital Technology – University of Bayreuth, Germany. <https://jsxgraph.org>

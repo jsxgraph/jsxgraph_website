@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Projects & References
 order: 5
 sections:
   

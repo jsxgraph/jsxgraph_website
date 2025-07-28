@@ -2,7 +2,8 @@ var board = JXG.JSXGraph.initBoard("example2", {
     boundingbox: [-5, 5, 5, -5],
     axis: false,
     pan: { enabled: false },
-    zoom: { enabled: false }
+    zoom: { enabled: false },
+    showNavigation: false
 });
 var box = [-2, 2],
     view = board.create('view3d', [[-3, -1], [6, 6], [box, box, box]], {

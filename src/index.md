@@ -35,7 +35,7 @@ sections:
     layout: board-block
     data:
       boardid: example3
-      title: Mirror, Mirror on the Wall ...
+      title: Continuous function
       link: /share
       target: _blank
       
@@ -46,7 +46,8 @@ sections:
       board_pos: second
       title: Euler line
       link: /share
-      target: _blank      
+      target: _blank
+
 
   - file: technicalfeatures
     layout: board-block
@@ -55,13 +56,22 @@ sections:
       title: Sphere
       link: /share
       target: _blank      
-      
+     
+  - file: opensource
+    layout: board-block
+    data:
+      boardid: opensource
+      board_pos: second
+      title: Mirror, Mirror on the Wall ...
+      link: /share
+      target: _blank
+ 
   - file: license
     layout: board-block
     data:
       boardid: license
-      board_pos: second
       title: Vectorfield
       link: /share
       target: _blank
+
 ---

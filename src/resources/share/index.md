@@ -1,6 +1,6 @@
 ---
 title: Example Database
 parent: resources
-order: 2
+order: 1
 external_link: /share
 ---

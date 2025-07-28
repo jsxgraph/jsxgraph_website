@@ -1,7 +1,7 @@
 ---
 title: Releases
 parent: resources
-order: 1
+order: 3
 sections:
 
   - file: releases
