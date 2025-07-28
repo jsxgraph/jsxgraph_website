@@ -12,13 +12,3 @@
 - <a href="https://jsxgraph.uni-bayreuth.de/talks/cadgme09/talk/" target="_blank">JSXGraph – Dynamic Geometry with JavaScript</a> at <a href="https://www3.risc.jku.at/conferences/cadgme2009/" target="_blank"> Computer Algebra and Dynamic Geometry Systems in Mathematics Education (CADGME)</a>, Hagenberg 2009.  
 <br>
 - <a href="/media/pdf/presentations/dynamicmathematics.pdf" target="_blank">Dynamic Mathematics with GEONExT – New Concepts</a> at 4th European Workshop on Mathematical & Scientific e-Contents, Trondheim 2008
-
-
-
-
-
-
-
-
-
-
