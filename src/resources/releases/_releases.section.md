@@ -1,7 +1,7 @@
 To work correctly, JSXGraph requires two files:
 
-1. `jsxgraphcore.js` contains the complete source code of JSXGraph bundled in one file. All objects of JSXGraph use the namespace JXG. Beside JXG there are no global variables.
-2. Include the css commands from `jsxgraph.css` into the web pages.
+- `jsxgraphcore.js` contains the complete source code of JSXGraph bundled in one file. All objects of JSXGraph use the namespace JXG. Beside JXG there are no global variables.
+- Include the css commands from `jsxgraph.css` into the web pages.
 
 # Server
 

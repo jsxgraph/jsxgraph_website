@@ -4,6 +4,9 @@ parent: resources
 order: 5
 sections:
 
-   - file: logosciting
+   - file: logos
+     layout: text
+
+   - file: citing
      layout: text
 ---
