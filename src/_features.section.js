@@ -1,6 +1,8 @@
 const board = JXG.JSXGraph.initBoard("features", {
     boundingbox: [-6, 6, 6, -6],
-    keepaspectratio: true
+    keepaspectratio: true,
+    pan: { enabled: false },
+    zoom: { enabled: false }
 });
 
 // Set visual attributes

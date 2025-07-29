@@ -1,16 +1,11 @@
 ---
-title: About
-order: 1
+title: Team
+order: 7
 sections:
 
   - file: team
     layout: text
 
-  - file: press
-    layout: text
-    
-  - file: logos
-    layout: text
 ---
 
 The development of JSXGraph is coordinated at the University of Bayreuth, Germany:

@@ -1,6 +1,6 @@
 ---
 title: JSXGraph Book
 parent: docs
-order: 4
+order: 2
 external_link: https://ipesek.github.io/jsxgraphbook/
 ---

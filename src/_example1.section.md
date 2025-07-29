@@ -1,1 +1,2 @@
-Bring your ideas to life with powerful, interactive visualizations — right in your browser, no plugins needed. Whether you’re exploring geometry, plotting functions, or visualizing data, JSXGraph helps you turn abstract concepts into clear, dynamic graphics you can manipulate and understand.
+### Powerful JavaScript Library 
+Bring your ideas to life with powerful, interactive visualizations — right in any browser, no plugins required. Whether you want your users to explore geometry, function plots, or data visualizations, JSXGraph helps you transform abstract concepts into clear, dynamic graphics they can manipulate and understand.

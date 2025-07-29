@@ -1,6 +1,6 @@
 ---
-title: Wiki
+title: Example Wiki
 parent: resources
-order: 3
+order: 2
 external_link: /wiki
 ---

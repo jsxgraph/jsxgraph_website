@@ -1,4 +1,8 @@
-var brd = JXG.JSXGraph.initBoard('example1', {boundingbox: [-2.5, 2.5, 2.5, -2.5], showNavigation: false}),
+var brd = JXG.JSXGraph.initBoard('example1', {
+    boundingbox: [-2.5, 2.5, 2.5, -2.5],
+    showNavigation: false,
+    pan: { enabled: false },
+    zoom: { enabled: false }}),
     solveQ2 = function (x1, x2, x3, off) {
         var a, b, c, d;
         a = 0.5;
