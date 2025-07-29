@@ -13,17 +13,17 @@ Each version comes in both a filled (solid) and an outline (stroke-only) style, 
 
 <br/>
 
-<img src="/media/logos/jsxgraph/png/jsxgraph-logo_square-solid-pure.png" class="w-10 w-10-over-lg">
-
-[PNG](/media/logos/jsxgraph/png/jsxgraph-logo_square-solid-pure.png)
-[SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_square-solid-pure.svg)
-
-<br/>
-
 <img src="/media/logos/jsxgraph/png/jsxgraph-logo_square-outline.png" class="w-10 w-10-over-lg">
 
 [PNG](/media/logos/jsxgraph/png/jsxgraph-logo_square-outline.png)
 [SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_square-outline.svg)
+
+### Graphic Element
+
+<img src="/media/logos/jsxgraph/png/jsxgraph-logo_square-solid-pure.png" class="w-10 w-10-over-lg">
+
+[PNG](/media/logos/jsxgraph/png/jsxgraph-logo_square-solid-pure.png)
+[SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_square-solid-pure.svg)
 
 <br/>
 
