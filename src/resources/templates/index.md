@@ -7,10 +7,10 @@ sections:
     - file: html
       layout: text
 
-    - file: htmlcdn
+    - file: html-cdn
       layout: accordion
 
-    - file: htmllocal
+    - file: html-local
       layout: accordion
 
     - file: es6

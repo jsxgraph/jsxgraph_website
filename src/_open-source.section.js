@@ -8,7 +8,7 @@ let input = {
 
 // JSXGraph board
 
-let board = JXG.JSXGraph.initBoard('opensource', boardAttr());
+let board = JXG.JSXGraph.initBoard('open-source', boardAttr());
 
 // JSXGraph 3D view
 

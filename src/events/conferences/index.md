@@ -7,7 +7,7 @@ sections:
   - file: 24hours
     layout: text     
 
-  - file: 24hoursimpressions
+  - file: 24hours-impressions
     layout: cards     
 
   - file: webinar

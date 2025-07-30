@@ -10,7 +10,7 @@ sections:
    - file: step2
      layout: text
 
-   - file: step2result
+   - file: step2-result
      layout: board
      data:
       boardid: step2result
@@ -18,26 +18,26 @@ sections:
    - file: step3
      layout: text
 
-   - file: step3result
+   - file: step3-result
      layout: board
      data:
-      boardid: step3result 
+      boardid: step3-result 
 
-   - file: nextsteps
+   - file: next-steps
      layout: text
 
-   - file: nextstepsresult
+   - file: next-steps-result
      layout: board
      data:
-       boardid: nextstepsresult
+       boardid: next-steps-result
        
    - file: attributes
      layout: text
 
-   - file: attributesresult
+   - file: attributes-result
      layout: board
      data:
-       boardid: attributesresult
+       boardid: attributes-result
 
    - file: help
      layout: text

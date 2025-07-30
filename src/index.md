@@ -49,18 +49,18 @@ sections:
       target: _blank
 
 
-  - file: technicalfeatures
+  - file: technical-features
     layout: board-block
     data:
-      boardid: technicalfeatures
+      boardid: technical-features
       title: Sphere
       link: /share
       target: _blank      
      
-  - file: opensource
+  - file: open-source
     layout: board-block
     data:
-      boardid: opensource
+      boardid: open-source
       board_pos: second
       title: Mirror, Mirror on the Wall ...
       link: /share

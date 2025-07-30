@@ -1,1 +1,0 @@
-# Projects and Cooperations of our JSXGraph team

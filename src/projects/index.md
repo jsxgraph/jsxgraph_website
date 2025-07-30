@@ -3,10 +3,10 @@ title: Projects & References
 order: 5
 sections:
   
-  - file: internal-intro
+  - file: projects-intro
     layout: text
   
-  - file: internal
+  - file: projects
     layout: cards
  
   - file: presentations

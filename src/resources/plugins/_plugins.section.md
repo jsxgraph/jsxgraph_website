@@ -9,7 +9,7 @@ JSXGraph can be embedded into various systems as a plugin or through filter mech
 
 # Moodle LMS
 
-![Moodle](/media/logos-external/logo-moodle.png)
+![Moodle]({{ relBase }}/media/logos-external/logo-moodle.png)
 
 The JSXGraph plugin for Moodle enables function plotting and dynamic geometry constructions with JSXGraph within a Moodle platform.
 Using the JSXGraph filter makes it a lot easier to embed JSXGraph constructions into Moodle online documents, e.g. in contents like page, quiz, link, ... .
@@ -18,7 +18,7 @@ Using the JSXGraph filter makes it a lot easier to embed JSXGraph constructions 
 
 # ILIAS LMS
 
-![ILIAS](/media/logos-external/logo-ilias.png)
+![ILIAS]({{ relBase }}/media/logos-external/logo-ilias.png)
 
 The plugin integrates interactive JSXGraph visualizations into ILIAS as a Page Component, allowing users to explore mathematical and scientific concepts through dynamic diagrams and graphs, enriching both instructional content and learner engagement.
 
@@ -27,7 +27,7 @@ The plugin integrates interactive JSXGraph visualizations into ILIAS as a Page C
 
 # STACK Online Assessment
 
-![STACK](/media/logos-external/logo-stack.png)
+![STACK]({{ relBase }}/media/logos-external/logo-stack.png)
 
 The combination of STACK and JSXGraph enables the creation of assessment questions with visual input. In such tasks, students respond by performing visual actions—for example, by moving a point to specific coordinates or transforming a geometric figure.
 
@@ -41,7 +41,7 @@ The Formulas extension for the Moodle JSXGraph filter facilitates the two-way ex
 
 # Jupyter Notebook
 
-![Jupyter](/media/logos-external/logo-jupyter.png)
+![Jupyter]({{ relBase }}/media/logos-external/logo-jupyter.png)
 
 Jupyter Notebook and JSXGraph are powerful open-source tools that enable the creation of interactive, web-based mathematical content by combining executable code, dynamic visualizations, and explanatory text. Their integration allows for rich, exploratory learning environments in mathematics, science, and education.
 
@@ -49,7 +49,7 @@ Jupyter Notebook and JSXGraph are powerful open-source tools that enable the cre
 
 # MediaWiki
 
-![MediaWiki](/media/logos-external/logo-mediawiki.png)
+![MediaWiki]({{ relBase }}/media/logos-external/logo-mediawiki.png)
 
 The MediaWiki plugin for JSXGraph enables the embedding of interactive JSXGraph constructions directly into wiki pages using simple tags. It provides an easy way to integrate dynamic mathematical visualizations into collaborative documentation platforms.
 
@@ -59,7 +59,7 @@ The MediaWiki plugin for JSXGraph enables the embedding of interactive JSXGraph 
 
 # WordPress
 
-![WordPress](/media/logos-external/logo-wordpress.png)
+![WordPress]({{ relBase }}/media/logos-external/logo-wordpress.png)
 
 The JSXGraph plugin for WordPress is outdated.
 If there is interest, this version could serve as a basis for further development.
@@ -68,7 +68,7 @@ If there is interest, this version could serve as a basis for further developmen
 
 # Drupal
 
-![Drupal](/media/logos-external/logo-drupal.png)
+![Drupal]({{ relBase }}/media/logos-external/logo-drupal.png)
 
 The JSXGraph module for Drupal is no longer up to date, but it could serve as a foundation for future development if there is interest.
 

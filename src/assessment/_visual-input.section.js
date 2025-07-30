@@ -15,7 +15,7 @@ let input = [
 
 // JSXGraph board
 
-const board = JXG.JSXGraph.initBoard('visualinput', {
+const board = JXG.JSXGraph.initBoard('visual-input', {
     boundingbox: [-10, 20, 10, 0],
     grid: true,
     showNavigation: false,

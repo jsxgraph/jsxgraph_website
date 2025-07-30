@@ -1,6 +1,6 @@
 
 const board = JXG.JSXGraph.initBoard(
-    'technicalfeatures',
+    'technical-features',
     {
         boundingbox: [-5, 5, 5, -5],
         minimizeReflow: 'svg',

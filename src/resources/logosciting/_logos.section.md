@@ -9,78 +9,78 @@ A clear space equivalent to 50% of the logo’s height ('square', 'text' and 'ba
 
 ## Figurative Mark ('square')
 
-<img src="/media/logos/jsxgraph/png/jsxgraph-logo_square-solid.png" class="w-10 w-10-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_square-solid.png" class="w-10 w-10-over-lg">
 
-[PNG](/media/logos/jsxgraph/png/jsxgraph-logo_square-solid.png)
-[SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_square-solid.svg)
+[PNG]({{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_square-solid.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-solid.svg)
 
 <br/>
 
-<img src="/media/logos/jsxgraph/png/jsxgraph-logo_square-outline.png" class="w-10 w-10-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_square-outline.png" class="w-10 w-10-over-lg">
 
-[PNG](/media/logos/jsxgraph/png/jsxgraph-logo_square-outline.png)
-[SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_square-outline.svg)
+[PNG]({{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_square-outline.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-outline.svg)
 
 ### Graphic Element
 
-<img src="/media/logos/jsxgraph/png/jsxgraph-logo_square-solid-pure.png" class="w-10 w-10-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_square-solid-pure.png" class="w-10 w-10-over-lg">
 
-[PNG](/media/logos/jsxgraph/png/jsxgraph-logo_square-solid-pure.png)
-[SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_square-solid-pure.svg)
+[PNG]({{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_square-solid-pure.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-solid-pure.svg)
 
 <br/>
 
-<img src="/media/logos/jsxgraph/png/jsxgraph-logo_square-outline-pure.png" class="w-10 w-10-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_square-outline-pure.png" class="w-10 w-10-over-lg">
 
-[PNG](/media/logos/jsxgraph/png/jsxgraph-logo_square-outline-pure.png)
-[SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_square-outline-pure.svg)
+[PNG]({{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_square-outline-pure.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-outline-pure.svg)
 
 ## Combined Word and Figurative Mark ('text')
 
-<img src="/media/logos/jsxgraph/png/jsxgraph-logo_text-solid.png" class="w-30 w-25-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_text-solid.png" class="w-30 w-25-over-lg">
 
-[PNG](/media/logos/jsxgraph/png/jsxgraph-logo_text-solid.png)
-[SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_text-solid.svg)
+[PNG]({{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_text-solid.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_text-solid.svg)
 
 <br/>
 
-<img src="/media/logos/jsxgraph/png/jsxgraph-logo_text-outline.png" class="w-30 w-25-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_text-outline.png" class="w-30 w-25-over-lg">
 
-[PNG](/media/logos/jsxgraph/png/jsxgraph-logo_text-outline.png)
-[SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_text-outline.svg)
+[PNG]({{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_text-outline.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_text-outline.svg)
 
 ## Combined Word and Figurative Mark ('banner')
 
 The banner-style JSXGraph logo with word mark is also available with a colored background, making it ideal for use in headers, presentations, or promotional materials.  
 
-<img src="/media/logos/jsxgraph/png/jsxgraph-logo_banner-solid-text-solid.png" class="w-30 w-25-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_banner-solid-text-solid.png" class="w-30 w-25-over-lg">
 
-[PNG](/media/logos/jsxgraph/png/jsxgraph-logo_banner-solid-text-solid.png)
-[SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_banner-solid-text-solid.svg)
-
-<br/>
-
-<img src="/media/logos/jsxgraph/png/jsxgraph-logo_banner-solid-text-outline.png" class="w-30 w-25-over-lg">
-
-[PNG](/media/logos/jsxgraph/png/jsxgraph-logo_banner-solid-text-outline.png)
-[SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_banner-solid-text-outline.svg)
+[PNG]({{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_banner-solid-text-solid.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_banner-solid-text-solid.svg)
 
 <br/>
 
-<img src="/media/logos/jsxgraph/png/jsxgraph-logo_banner-outline-text-solid.png" class="w-30 w-25-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_banner-solid-text-outline.png" class="w-30 w-25-over-lg">
 
-[PNG](/media/logos/jsxgraph/png/jsxgraph-logo_banner-outline-text-solid.png)
-[SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_banner-outline-text-solid.svg)
+[PNG]({{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_banner-solid-text-outline.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_banner-solid-text-outline.svg)
 
 <br/>
 
-<img src="/media/logos/jsxgraph/png/jsxgraph-logo_banner-outline-text-outline.png" class="w-30 w-25-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_banner-outline-text-solid.png" class="w-30 w-25-over-lg">
 
-[PNG](/media/logos/jsxgraph/png/jsxgraph-logo_banner-outline-text-outline.png)
-[SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_banner-outline-text-outline.svg)
+[PNG]({{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_banner-outline-text-solid.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_banner-outline-text-solid.svg)
+
+<br/>
+
+<img src="{{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_banner-outline-text-outline.png" class="w-30 w-25-over-lg">
+
+[PNG]({{ relBase }}/media/logos/jsxgraph/png/jsxgraph-logo_banner-outline-text-outline.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_banner-outline-text-outline.svg)
 
 ## ZIP-Archive
 
 All logo layouts are provided in a single ZIP file:
 
-[JSXGraph-logo.zip](/...)
+[JSXGraph-logo.zip]({{ relBase }}/...)

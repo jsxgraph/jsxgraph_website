@@ -47,7 +47,7 @@
   ISSN: 1744-2710, 17 4 (2010)
 
 - Michael Gerhäuser, Bianca Valentin:  
-  [**Interactive SVG with JSXGraph**](/media/pdf/jsxgraph.pdf),  
+  [**Interactive SVG with JSXGraph**]({{ relBase }}/media/pdf/jsxgraph.pdf),  
   Proceedings of the SVGOpen 2009
 
 

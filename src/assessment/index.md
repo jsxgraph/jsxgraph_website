@@ -7,10 +7,10 @@ sections:
   - file: intro
     layout: text
 
-  - file: visualinput
+  - file: visual-input
     layout: board-block
     data:
-      boardid: visualinput
+      boardid: visual-input
       board_pos: second
       title: Reflection of a triangle with respect to a line 
       link: /share/example/reflection-of-a-triangle-with-respect-to-a-line-assessment
@@ -24,7 +24,7 @@ sections:
       link: /share/example/cube-and-projection
       target: _blank
     
-  - file: stackformulas
+  - file: stack-formulas
     layout: text
 
 ---
