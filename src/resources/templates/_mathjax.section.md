@@ -1,4 +1,4 @@
-# Complete HTML File with MathJax (Online Usage)
+# HTML template with MathJax
 
 MathJax can easily be integrated into JSXGraph to display mathematical formulas within labels or texts. To use it, include the MathJax library in your HTML file and enable the `useMathJax` attribute when creating elements. 
 

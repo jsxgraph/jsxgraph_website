@@ -13,7 +13,7 @@ sections:
    - file: step2-result
      layout: board
      data:
-      boardid: step2result
+      boardid: step2-result
 
    - file: step3
      layout: text

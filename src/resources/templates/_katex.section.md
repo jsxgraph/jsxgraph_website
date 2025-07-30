@@ -1,4 +1,4 @@
-# Complete HTML File with KaTeX (Online Usage)
+# HTML template with KaTeX
 
 KaTeX can also be integrated into JSXGraph to display mathematical formulas within labels or texts. To use it, include the KaTeX library in your HTML file and enable the useKatex attribute when creating text elements.
 

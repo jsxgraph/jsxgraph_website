@@ -18,7 +18,7 @@ var f = board.create(
 );
 ```
 
-## Complete HTML File (Online Usage)
+#### HTML template – JSXGraph hosted via CDN
 
 ```html
 <!DOCTYPE html>
@@ -50,4 +50,4 @@ var f = board.create(
 </html>
 ```
 
-## JSXGraph  (Preview)
+#### JSXGraph  Preview

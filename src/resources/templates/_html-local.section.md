@@ -1,4 +1,4 @@
-# HTML file – JSXGraph locally hosted
+# HTML template – JSXGraph locally hosted
 
 If you want to include a local copy of JSXGraph in your HTML file,
 download the two following JSXGraph files

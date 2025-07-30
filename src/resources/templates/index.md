@@ -17,7 +17,13 @@ sections:
       layout: accordion
       
     - file: iframe
+      layout: text      
+      
+    - file: iframe-code
       layout: accordion
+
+    - file: math
+      layout: text
 
     - file: mathjax
       layout: accordion
@@ -26,5 +32,8 @@ sections:
       layout: accordion
       
     - file: moodle
+      layout: text
+      
+    - file: moodle-filter
       layout: accordion
 ---

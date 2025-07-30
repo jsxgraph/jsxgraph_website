@@ -1,4 +1,4 @@
-# HTML File – JSXGraph import (ES6)
+# HTML template – JSXGraph import (ES6)
 
 ```html
 <!DOCTYPE html>
