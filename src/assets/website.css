@@ -59649,6 +59649,8 @@ h1,
 }
 .content h2::before,
 .content .h2::before,
+.my-auto h2::before,
+.my-auto .h2::before,
 .section-text h2::before,
 .section-text .h2::before {
   content: '';
@@ -59658,7 +59660,7 @@ h1,
   display: inline-block;
   width: 2rem !important;
   height: 2rem !important;
-  margin-right: 0.5rem;
+  margin-right: 0.75rem;
   margin-left: -1.25rem;
   margin-bottom: -0.4rem;
 }
