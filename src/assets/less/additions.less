@@ -4,8 +4,23 @@ h1, .h1 {
   padding-bottom: 1rem;
 }
 
+.content h2::before, .content .h2::before,
+.section-text h2::before, .section-text .h2::before {
+  content: '';
+  background: url('/media/logos/logo-pure.png');
+  background-size: 2rem 2rem;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 2rem !important;
+  height: 2rem !important;
+  margin-right: 0.5rem;
+  margin-left: -1.25rem;
+  margin-bottom: -0.4rem;
+}
+
+
 h2, .h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 h3, .h3 {
