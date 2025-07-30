@@ -1,12 +1,13 @@
 ---
-title: Logo Files & Citing
+title: Citing & Logo Files 
 parent: resources
 order: 5
 sections:
 
-   - file: logos
-     layout: text
+  - file: citing
+    layout: text
+    
+  - file: logos
+    layout: text
 
-   - file: citing
-     layout: text
 ---

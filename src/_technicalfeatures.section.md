@@ -10,3 +10,4 @@
 - Rendered with SVG or canvas
 - Seamless HTML integration
 - Symbolic math support
+- MathJax/KaTeX support

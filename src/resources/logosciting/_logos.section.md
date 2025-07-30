@@ -1,10 +1,13 @@
+# Logo Files
 The JSXGraph logo is available in two main layouts: 
-- figurative mark ('square logo') 
-- combined word and figurative mark ('text logo')
+- figurative mark ('square') 
+- combined word and figurative mark ('text')
 
 Each version comes in both a filled (solid) and an outline (stroke-only) style, suitable for different design and background needs.
 
-# Figurative Mark ('square logo')
+A clear space equivalent to 50% of the logo’s height ('square', 'text' and 'banner' version) must be maintained on all sides of the logo.
+
+## Figurative Mark ('square')
 
 <img src="/media/logos/jsxgraph/png/jsxgraph-logo_square-solid.png" class="w-10 w-10-over-lg">
 
@@ -32,7 +35,7 @@ Each version comes in both a filled (solid) and an outline (stroke-only) style, 
 [PNG](/media/logos/jsxgraph/png/jsxgraph-logo_square-outline-pure.png)
 [SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_square-outline-pure.svg)
 
-# Combined Word and Figurative Mark ('text logo')
+## Combined Word and Figurative Mark ('text')
 
 <img src="/media/logos/jsxgraph/png/jsxgraph-logo_text-solid.png" class="w-30 w-25-over-lg">
 
@@ -46,7 +49,7 @@ Each version comes in both a filled (solid) and an outline (stroke-only) style, 
 [PNG](/media/logos/jsxgraph/png/jsxgraph-logo_text-outline.png)
 [SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_text-outline.svg)
 
-# Combined Word and Figurative Mark ('banner logo')
+## Combined Word and Figurative Mark ('banner')
 
 The banner-style JSXGraph logo with word mark is also available with a colored background, making it ideal for use in headers, presentations, or promotional materials.  
 
@@ -75,3 +78,9 @@ The banner-style JSXGraph logo with word mark is also available with a colored b
 
 [PNG](/media/logos/jsxgraph/png/jsxgraph-logo_banner-outline-text-outline.png)
 [SVG](/media/logos/jsxgraph/svg/jsxgraph-logo_banner-outline-text-outline.svg)
+
+## ZIP-Archive
+
+All logo layouts are provided in a single ZIP file:
+
+[JSXGraph-logo.zip](/...)

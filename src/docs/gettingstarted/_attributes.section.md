@@ -34,8 +34,10 @@ var c = board.create('circle', [A, B, C], {
 <head>
     <meta charset="UTF-8">
     <title>My JSXGraph Example</title>
-    <script type="text/javascript" src="jsxgraphcore.js"></script>
-    <link rel="stylesheet" type="text/css" href="jsxgraph.css" />
+    <script type="text/javascript" charset="UTF-8"
+            src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
 </head>
 <body>
     <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
