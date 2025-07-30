@@ -143,8 +143,6 @@ Notes:
 
 ## Development and release
 
-***Has to be reviewed!!***
-
 ### Run test version
 
 Build files to directory [distrib/](distrib/) via the call
@@ -180,18 +178,15 @@ make website
 
 It updates the website without getting version and release notes (but libs) from JSXGraph.
 
-The command `make websitelocal` doesn't need JSXGraph at all and adapts version strings by expecting a user input.
-
 ### Release
 
 To release the new version of website follow the steps:
 
 1. Call in the root of this project:
     - `make website` (packs and compiles the current website in the present form)
-    - `make websiteversion` (packs and compiles the current website, but asks for a version number first)
     - or `make release` (packs and compiles the current website, gets the current version and the release information from JSXGraph beforehand)
 2. Pull the newest version from server.
-3. Call `make version-git-tag` or `make version-git`. This will push all files to Git.
+3. Push all files to Git.
    ```shell
    git commit -a
    git push
@@ -202,10 +197,9 @@ To release the new version of website follow the steps:
    This does:
     - Copy files in [distrib/](distrib/) to the server via:
        ```shell
-       scp -r distrib/ root@132.180.10.7:/net/httpd/htdocs/sketchometry/home.new
+       scp -r distrib/ root@132.180.10.7:/net/httpd/htdocs/jsxgraph/home.new
        ```
-    - Link new version to <https://sketchometry.org> and link <https://sketchometry.org/download> via
+    - Link new version to <https://jsxgraph.org> and link <https://jsxgraph.uni-bayreuth.de> via
        ```shell
-       ssh root@132.180.10.7 "cd /net/httpd/htdocs/sketchometry/; rm -r home.old; mv home home.old; mv home.new home; cd /net/httpd/htdocs/sketchometry/home/; ln -s ../versions/download/ download;"
+       ssh root@132.180.10.7 "cd /net/httpd/htdocs/jsxgraph/; rm -r home.old; mv home home.old; mv home.new home;"
        ```
-5. Adapt link of <https://heftreihe.sketchometry.org> (`/net/httpd/htdocs/sketchometry/heftreihe/`).
