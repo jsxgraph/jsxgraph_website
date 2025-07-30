@@ -1,5 +1,5 @@
 ---
-title: Plugins & Filters
+title: Plugins
 parent: resources
 order: 4
 sections:

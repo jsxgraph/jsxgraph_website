@@ -1,27 +1,30 @@
 ---
-title: Templates
+title: Starter Files
 parent: resources
-order: 3
+order: 2
 sections:
 
     - file: html
       layout: text
 
-    - file: es6
-      layout: text
+    - file: htmlcdn
+      layout: accordion
 
-    - file: amd
-      layout: text
+    - file: htmllocal
+      layout: accordion
+
+    - file: es6
+      layout: accordion
       
     - file: iframe
-      layout: text
+      layout: accordion
 
     - file: mathjax
-      layout: text
+      layout: accordion
 
     - file: katex
-      layout: text
+      layout: accordion
       
     - file: moodle
-      layout: text
+      layout: accordion
 ---

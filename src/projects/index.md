@@ -8,13 +8,10 @@ sections:
   
   - file: internal
     layout: cards
+ 
+  - file: presentations
+    layout: text
 
-#  - file: external-intro
-#    layout: text
-#  
-#  - file: external
-#    layout: cards
-  
   - file: references
     layout: text
 ---

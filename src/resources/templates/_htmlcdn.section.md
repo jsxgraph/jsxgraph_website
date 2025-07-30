@@ -1,4 +1,4 @@
-# Complete HTML File with AMD – Asynchronous Module Definition (Online Usage)
+# HTML template – JSXGraph hosted via CDN
 
 ```html
 <!DOCTYPE html>
@@ -13,7 +13,12 @@
 </head>
 <body>
     <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
-    <script type="text/javascript" src="require.js">
+    <script type="text/javascript">
+        var board = JXG.JSXGraph.initBoard(
+            'box', {
+                boundingbox: [-10, 10, 10, -10], 
+                axis:true
+            });
 
         // Insert JSXGraph code here!
 
@@ -22,11 +27,4 @@
 </html>
 ```
 
-```js
-require.config({ baseUrl: "path/to/JSXGraph/src/" });
-require(['jsxgraph', 'base/line', 'base/curve'],
-    function (JSXGraph, Line, Plot) {
-        var board = JSXGraph.initBoard('box', {...}),
-            p = board.create('plot', [Math.sin]);
-    });
-```
+[HTML template – JSXGraph hosted via CDN](/q.html)

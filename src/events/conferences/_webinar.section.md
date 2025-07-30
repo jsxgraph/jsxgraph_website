@@ -1,4 +1,4 @@
-# Webinar – Advanced JSXGraph Programming
+# Webinar – Advanced JSXGraph Programming (Online)
 
 The JSXGraph webinar offers a comprehensive introduction to the features and practical applications of JSXGraph for interactive mathematics visualizations. 
 
