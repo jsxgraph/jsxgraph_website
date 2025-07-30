@@ -1,6 +1,4 @@
-<!-- > JSXGraph-Abbildung 5 -->
-
-### License
+# License
 
 JSXGraph is dual licensed under the _GNU Lesser General Public License (LGPL)_ and the _MIT License_. Both licenses allow you to use, modify, and distribute the software, including for commercial purposes.
 

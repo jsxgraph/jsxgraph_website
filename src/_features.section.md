@@ -1,6 +1,4 @@
-<!-- > JSXGraph-Abbildung 4 -->
-
-### Features
+# Features
 
 - Euclidean and projective geometry
 - 2D and 3D support

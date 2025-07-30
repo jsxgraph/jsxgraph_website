@@ -1,6 +1,6 @@
 <!-- > JSXGraph-Abbildung 6 -->
 
-### Technical Features
+# Technical Features
 
 - Standalone JavaScript library
 - No server-side processing required

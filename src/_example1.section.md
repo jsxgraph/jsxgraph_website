@@ -1,2 +1,2 @@
-### Powerful JavaScript Library 
+# Powerful JavaScript Library 
 Bring your ideas to life with powerful, interactive visualizations — right in any browser, no plugins required. Whether you want your users to explore geometry, function plots, or data visualizations, JSXGraph helps you transform abstract concepts into clear, dynamic graphics they can manipulate and understand.
