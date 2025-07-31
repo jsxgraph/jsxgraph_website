@@ -59654,7 +59654,7 @@ h1,
 .section-text h2::before,
 .section-text .h2::before {
   content: '';
-  background: url('/media/logos/logo-pure.png');
+  background: url('../media/logos/logo-pure.png');
   background-size: 2rem 2rem;
   background-repeat: no-repeat;
   display: inline-block;
