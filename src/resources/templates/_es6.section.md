@@ -6,12 +6,13 @@
 <head>
     <meta charset="UTF-8">
     <title>My JSXGraph Example</title>
-</head>
-<body>
-    <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
     <style>
         @import url("https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css");
     </style>
+</head>
+<body>
+    <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
+
     <script type="module">
         import JXG from 'https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.mjs';
         var board = JXG.JSXGraph.initBoard(

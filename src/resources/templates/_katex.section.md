@@ -20,10 +20,9 @@ This guarantees that all text elements generated in JSXGraph are automatically r
 <head>
     <meta charset="UTF-8">
     <title>My JSXGraph Example</title>
-    <script type="text/javascript" charset="UTF-8"
-            src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
     <link rel="stylesheet" type="text/css"
-          href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
+          href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css"      
           integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" 
           crossorigin="anonymous">
@@ -33,7 +32,7 @@ This guarantees that all text elements generated in JSXGraph are automatically r
 </head>
 <body>
     <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
-    <script type="text/javascript">
+    <script>
         JXG.Options.text.useKaTeX = true; // Enable KaTeX for all JSXGraph elements!
         var board = JXG.JSXGraph.initBoard(
             'box', {

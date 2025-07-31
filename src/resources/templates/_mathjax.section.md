@@ -22,16 +22,15 @@ This ensures that every text element created in JSXGraph will automatically be p
 <head>
     <meta charset="UTF-8">
     <title>My JSXGraph Example</title>
-    <script type="text/javascript" charset="UTF-8"
-            src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
     <link rel="stylesheet" type="text/css"
-          href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
+          href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" 
             id="MathJax-script" async></script>
 </head>
 <body>
     <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
-    <script type="text/javascript">
+    <script>
         JXG.Options.text.useMathJax = true; // Enable MathJax for all JSXGraph elements!
         var board = JXG.JSXGraph.initBoard(
             'box', {

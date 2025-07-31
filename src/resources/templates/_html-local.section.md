@@ -12,11 +12,11 @@ download the two following JSXGraph files
 <head>
     <meta charset="UTF-8">
     <title>My JSXGraph Example</title>
-    <link rel="stylesheet" type="text/css" href="jsxgraph.css" />
-    <script type="text/javascript" src="jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="jsxgraph.css">
+    <script src="jsxgraphcore.js"></script>
 </head>
 <body>
-    <script type="text/javascript">
+    <script>
         var board = JXG.JSXGraph.initBoard(
                 'box', {
                     boundingbox: [-10, 10, 10, -10],
