@@ -27,3 +27,5 @@
 </body>
 </html>
 ```
+
+[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph import (ES6)](src/html-es6.html)

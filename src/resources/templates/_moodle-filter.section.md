@@ -1,6 +1,6 @@
 # Moodle Filter Template
 
-Reference JSXGraph within the `jsxgraph` tag using the constant `BOARDID`.
+Reference JSXGraph within the `jsxgraph` tag using the constant `BOARDID` for initializing the board.
 
 ```html
 <jsxgraph width="100%" aspect-ratio="1 / 1" useGlobalJS="false">

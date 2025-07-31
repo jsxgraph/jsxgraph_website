@@ -37,6 +37,7 @@ This ensures that every text element created in JSXGraph will automatically be p
                 boundingbox: [-10, 10, 10, -10], 
                 axis:true
             });
+        var A = board.create('point', [-4,  5], { name: '$$A_{max}$$' });
 
         // Insert JSXGraph code here!
 
@@ -44,3 +45,5 @@ This ensures that every text element created in JSXGraph will automatically be p
 </body>
 </html>
 ```
+
+[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template with MathJax](src/html-mathjax.html)

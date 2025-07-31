@@ -16,6 +16,7 @@ download the two following JSXGraph files
     <script src="jsxgraphcore.js"></script>
 </head>
 <body>
+    <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
     <script>
         var board = JXG.JSXGraph.initBoard(
                 'box', {
@@ -29,3 +30,5 @@ download the two following JSXGraph files
 </body>
 </html>
 ```
+
+[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph locally hosted](src/html-local.html)

@@ -1,20 +1,3 @@
-# HTML template with KaTeX
-
-KaTeX can also be integrated into JSXGraph to display mathematical formulas within labels or texts. To use it, include the KaTeX library in your HTML file and enable the useKatex attribute when creating text elements.
-
-```js
-var A = board.create('point', [-4,  5], { name: '$$A$$', useKatex: true });
-````
-
-Jo enable KaTeX rendering for all text objects on the board, use the following global option:
-
-```js
-JXG.Options.text.useKatex = true;
-```
-
-This guarantees that all text elements generated in JSXGraph are automatically rendered by KaTeX, eliminating the need to activate the option for each object separately.
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,21 +16,18 @@ This guarantees that all text elements generated in JSXGraph are automatically r
             onload="renderMathInElement(document.body);"></script>
 </head>
 <body>
-<div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
-<script>
-    JXG.Options.text.useKatex = true; // Enable KaTeX for all JSXGraph elements!
-    var board = JXG.JSXGraph.initBoard(
+    <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
+    <script>
+        JXG.Options.text.useKatex = true; // Enable KaTeX for all JSXGraph elements!
+        var board = JXG.JSXGraph.initBoard(
             'box', {
                 boundingbox: [-10, 10, 10, -10],
                 axis:true
             });
-    var A = board.create('point', [-4,  5], { name: '$$A_{max}$$' });
+        var A = board.create('point', [-4,  5], { name: '$$A_{max}$$' });
 
-    // Insert JSXGraph code here!
+        // Insert JSXGraph code here!
 
-</script>
+    </script>
 </body>
 </html>
-```
-
-[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template with KaTeX](src/html-katex.html)

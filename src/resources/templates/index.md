@@ -1,5 +1,5 @@
 ---
-title: Starter Files
+title: Starter Templates
 parent: resources
 order: 2
 sections:
@@ -13,7 +13,7 @@ sections:
     - file: html-local
       layout: accordion
 
-    - file: es6
+    - file: html-es6
       layout: accordion
       
     - file: iframe

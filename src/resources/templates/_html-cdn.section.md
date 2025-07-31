@@ -26,4 +26,4 @@
 </html>
 ```
 
-[HTML template – JSXGraph hosted via CDN](/q.html)
+[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph hosted via CDN](src/html-cdn.html)
