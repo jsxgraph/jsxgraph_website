@@ -15,10 +15,9 @@ The preferred way is to include JSXGraph online from one of the CDNs (Content De
 Add the following lines into the HTML document head:
 
 ```html
-<script type="text/javascript" charset="UTF-8" 
-        src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
 <link rel="stylesheet" type="text/css" 
-      href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
+      href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
 ```
 
 #### HTML template – JSXGraph hosted via CDN
@@ -29,10 +28,9 @@ Add the following lines into the HTML document head:
 <head>
     <meta charset="UTF-8">
     <title>My JSXGraph Example</title>
-    <script type="text/javascript" charset="UTF-8"
-            src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
     <link rel="stylesheet" type="text/css"
-          href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
+          href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
 </head>
 <body>
     ...
@@ -51,8 +49,8 @@ download the two following JSXGraph files
 and add the following lines into the document head:
 
 ```html
-<link rel="stylesheet" type="text/css" href="jsxgraph.css" />
-<script type="text/javascript" src="jsxgraphcore.js"></script>
+<script src="jsxgraphcore.js"></script>
+<link rel="stylesheet" type="text/css" href="jsxgraph.css">
 ```
 
 #### HTML template – JSXGraph locally hosted
@@ -63,8 +61,8 @@ and add the following lines into the document head:
 <head>
     <meta charset="UTF-8">
     <title>My JSXGraph Example</title>
-    <link rel="stylesheet" type="text/css" href="jsxgraph.css" />
-    <script type="text/javascript" src="jsxgraphcore.js"></script>
+    <script src="jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="jsxgraph.css">
 </head>
 <body>
     ...

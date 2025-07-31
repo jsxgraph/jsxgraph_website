@@ -7,7 +7,7 @@ The following code has to be placed into the body part of an HTML file:
 
 ```html
 <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
-<script type="text/javascript">
+<script>
     var board = JXG.JSXGraph.initBoard(
         'box', {
             boundingbox: [-10, 10, 10, -10],
@@ -24,14 +24,13 @@ The following code has to be placed into the body part of an HTML file:
 <head>
     <meta charset="UTF-8">
     <title>My JSXGraph Example</title>
-    <script type="text/javascript" charset="UTF-8"
-            src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
     <link rel="stylesheet" type="text/css"
-          href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
+          href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
 </head>
 <body>
     <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
-    <script type="text/javascript">
+    <script>
         var board = JXG.JSXGraph.initBoard(
             'box', {
                 boundingbox: [-10, 10, 10, -10], 
