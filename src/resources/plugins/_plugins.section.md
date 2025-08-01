@@ -14,17 +14,20 @@ JSXGraph can be embedded into various systems as a plugin or through filter mech
 The JSXGraph filter for Moodle enables function plotting and dynamic geometry constructions with JSXGraph within a Moodle platform.
 Using the JSXGraph filter makes it a lot easier to embed JSXGraph constructions into Moodle online documents, e.g. in contents like page, quiz, link, ... .
 
-[Moodle Filter](https://github.com/jsxgraph/moodle-filter_jsxgraph)
+[Moodle JSXGraph Filter](https://moodle.org/plugins/filter_jsxgraph)
+
+[Moodle JSXGraph Filter on GitHub](https://github.com/jsxgraph/moodle-filter_jsxgraph)
+
 
 # ILIAS LMS
 
 ![ILIAS]({{ relBase }}/media/logos-external/logo-ilias.png)
 
-The plugin integrates interactive JSXGraph visualizations into ILIAS as a Page Component, allowing users to explore mathematical and scientific concepts through dynamic diagrams and graphs, enriching both instructional content and learner engagement. 
+The filter integrates interactive JSXGraph visualizations into ILIAS as a Page Component, allowing users to explore mathematical and scientific concepts through dynamic diagrams and graphs, enriching both instructional content and learner engagement. 
 
 It is a third-party plugin that is not developed or maintained by the JSXGraph project itself.
 
-[ILIAS plugin](https://docu.ilias.de/ilias.php?baseClass=ilrepositorygui&cmdNode=xv:mg:9y&cmdClass=ilDclDetailedViewGUI&cmd=renderRecord&ref_id=3342&record_id=12913&table_id=1&tableview_id=379)
+[ILIAS Filter](https://docu.ilias.de/ilias.php?baseClass=ilrepositorygui&cmdNode=xv:mg:9y&cmdClass=ilDclDetailedViewGUI&cmd=renderRecord&ref_id=3342&record_id=12913&table_id=1&tableview_id=379)
 
 
 # STACK Online Assessment
@@ -41,7 +44,7 @@ JSXGraph can be used not only for capturing visual input but also for merely ill
 
 The Formulas extension for the Moodle JSXGraph filter facilitates the two-way exchange of values between formulas question logic and interactive JSXGraph visualizations.
 
-[Formulas extension for Moodle JSXGraph filter](https://github.com/jsxgraph/moodleformulas_jsxgraph)
+[Formulas extension for Moodle JSXGraph filter on GitHub](https://github.com/jsxgraph/moodleformulas_jsxgraph)
 
 # MediaWiki
 
@@ -49,9 +52,9 @@ The Formulas extension for the Moodle JSXGraph filter facilitates the two-way ex
 
 The MediaWiki plugin for JSXGraph enables the embedding of interactive JSXGraph constructions directly into wiki pages using simple tags. It provides an easy way to integrate dynamic mathematical visualizations into collaborative documentation platforms.
 
-[MediaWiki Extension](https://github.com/jsxgraph/jsxgraph/tree/main/plugins/mediawiki)
+[MediaWiki Extension on GitHub](https://github.com/jsxgraph/jsxgraph/tree/main/plugins/mediawiki)
 
-[Archive](https://www.mediawiki.org/w/index.php?oldid=2495951)
+[MediaWiki Extension (deprecated)](https://www.mediawiki.org/w/index.php?oldid=2495951)
 
 # WordPress
 
@@ -77,4 +80,6 @@ The JSXGraph module for Drupal is no longer up to date, but it could serve as a 
 Jupyter Notebook and JSXGraph are powerful open-source tools that enable the creation of interactive, web-based mathematical content by combining executable code, dynamic visualizations, and explanatory text. Their integration allows for rich, exploratory learning environments in mathematics, science, and education.
 
 [Jupyter Notebook](https://jupyter.org)
+
+[JSXGraph plugin for Jupyter Notebook]( https://pypi.org/project/jsxgraph-magic/)
 

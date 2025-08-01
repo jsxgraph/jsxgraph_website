@@ -31,9 +31,12 @@ sections:
     - file: katex
       layout: accordion
       
-    - file: moodle
-      layout: text
+    - file: filter
+      layout: text  
       
     - file: moodle-filter
+      layout: accordion
+      
+    - file: ilias-filter
       layout: accordion
 ---

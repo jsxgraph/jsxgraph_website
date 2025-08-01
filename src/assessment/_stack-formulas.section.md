@@ -17,6 +17,6 @@ Interactive elements—such as JSXGraph constructions—can be embedded to enabl
 The _Formulas extension_ for the _Moodle JSXGraph filter_ facilitates the two-way exchange of values between the question logic and the interactive JSXGraph diagrams.
 
 
-- [Formulas question type](https://dynamiccourseware.org)
-- [Formulas extension for Moodle JSXGraph filter](https://github.com/jsxgraph/moodleformulas_jsxgraph)
-- [Moodle JSXGraph filter](https://moodle.org/plugins/filter_jsxgraph)
+- [Formulas Question Type](https://dynamiccourseware.org)
+- [Formulas Extension for Moodle JSXGraph Filter on GitHub](https://github.com/jsxgraph/moodleformulas_jsxgraph)
+- [Moodle JSXGraph Filter](https://moodle.org/plugins/filter_jsxgraph)
