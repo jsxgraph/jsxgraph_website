@@ -5,7 +5,7 @@
         A = board.create('point', [ 2,  1], { name: 'A', fixed: true });
         var f = board.create(
             'functiongraph',
-            [function(x) { return 0.5 * x * x - 2 * x; }],
+            [(x) => 0.5 * x**2 - 2 * x],
             { strokeWidth: 3 }
         );
         var B = board.create('point', [-4,  5], { name: 'B' });

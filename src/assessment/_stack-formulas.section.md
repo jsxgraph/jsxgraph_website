@@ -1,10 +1,10 @@
 # STACK Online Assessment
 
-_STACK_ is a server-based assessment system for mathematics that evaluates student input using symbolic algebra in _Moodle_ or _ILIAS_ courses. 
-It allows learners to enter answers as mathematical expressions, which are then automatically analyzed and checked for correctness, structure, and equivalence.
+_STACK_ is a server-based assessment system for mathematics that evaluates student input using symbolic algebra in _Moodle_ or _ILIAS_ courses. It allows learners to enter answers as mathematical expressions, which are then automatically analyzed and checked for correctness, structure, and equivalence. 
 
-JSXGraph can be integrated into STACK questions to enable interactive, visual input. 
-This allows students to move geometric figures, drag points, or manipulate parameters of functions directly within the question—adding a dynamic, visual dimension to traditional formula-based assessment.
+JSXGraph can be integrated into STACK questions to enable interactive, visual input. This allows students to move geometric figures, drag points, or manipulate parameters of functions directly within the question—adding a dynamic, visual dimension to traditional formula-based assessment. 
+
+JSXGraph is already built into STACK, so there’s no need for separate installation.
 
 - [STACK-Assessment](https://stack-assessment.org)
 - [STACK Docs JSXGraph](https://docs.stack-assessment.org/en/Specialist_tools/JSXGraph/)

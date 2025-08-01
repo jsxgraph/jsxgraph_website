@@ -11,7 +11,7 @@ JSXGraph can be embedded into various systems as a plugin or through filter mech
 
 ![Moodle]({{ relBase }}/media/logos-external/logo-moodle.png)
 
-The JSXGraph plugin for Moodle enables function plotting and dynamic geometry constructions with JSXGraph within a Moodle platform.
+The JSXGraph filter for Moodle enables function plotting and dynamic geometry constructions with JSXGraph within a Moodle platform.
 Using the JSXGraph filter makes it a lot easier to embed JSXGraph constructions into Moodle online documents, e.g. in contents like page, quiz, link, ... .
 
 [Moodle Filter](https://github.com/jsxgraph/moodle-filter_jsxgraph)
@@ -20,7 +20,9 @@ Using the JSXGraph filter makes it a lot easier to embed JSXGraph constructions 
 
 ![ILIAS]({{ relBase }}/media/logos-external/logo-ilias.png)
 
-The plugin integrates interactive JSXGraph visualizations into ILIAS as a Page Component, allowing users to explore mathematical and scientific concepts through dynamic diagrams and graphs, enriching both instructional content and learner engagement.
+The plugin integrates interactive JSXGraph visualizations into ILIAS as a Page Component, allowing users to explore mathematical and scientific concepts through dynamic diagrams and graphs, enriching both instructional content and learner engagement. 
+
+It is a third-party plugin that is not developed or maintained by the JSXGraph project itself.
 
 [ILIAS plugin](https://docu.ilias.de/ilias.php?baseClass=ilrepositorygui&cmdNode=xv:mg:9y&cmdClass=ilDclDetailedViewGUI&cmd=renderRecord&ref_id=3342&record_id=12913&table_id=1&tableview_id=379)
 
@@ -29,7 +31,9 @@ The plugin integrates interactive JSXGraph visualizations into ILIAS as a Page C
 
 ![STACK]({{ relBase }}/media/logos-external/logo-stack.png)
 
-The combination of STACK and JSXGraph enables the creation of assessment questions with visual input. In such tasks, students respond by performing visual actions—for example, by moving a point to specific coordinates or transforming a geometric figure.
+The combination of STACK and JSXGraph enables the creation of assessment questions with visual input in automated online testing environments. In such tasks, students respond through visual interactions—for example, by moving a point to specific coordinates or transforming geometric objects. 
+
+JSXGraph can be used not only for capturing visual input but also for merely illustrating or visualizing the question prompt. JSXGraph is already integrated into STACK and does not require separate installation. However, it is important to note that the JSXGraph component provided within STACK is designed exclusively for use inside STACK and does not replace the general-purpose JSXGraph filter.
 
 [STACK plugin](https://docs.stack-assessment.org/en/Specialist_tools/JSXGraph/)
 
@@ -38,14 +42,6 @@ The combination of STACK and JSXGraph enables the creation of assessment questio
 The Formulas extension for the Moodle JSXGraph filter facilitates the two-way exchange of values between formulas question logic and interactive JSXGraph visualizations.
 
 [Formulas extension for Moodle JSXGraph filter](https://github.com/jsxgraph/moodleformulas_jsxgraph)
-
-# Jupyter Notebook
-
-![Jupyter]({{ relBase }}/media/logos-external/logo-jupyter.png)
-
-Jupyter Notebook and JSXGraph are powerful open-source tools that enable the creation of interactive, web-based mathematical content by combining executable code, dynamic visualizations, and explanatory text. Their integration allows for rich, exploratory learning environments in mathematics, science, and education.
-
-[Jupyter Notebook](https://jupyter.org)
 
 # MediaWiki
 
@@ -73,4 +69,12 @@ If there is interest, this version could serve as a basis for further developmen
 The JSXGraph module for Drupal is no longer up to date, but it could serve as a foundation for future development if there is interest.
 
 [JSXGraph Module for Drupal](https://www.drupal.org/project/jsxgraph)
+
+# Jupyter Notebook
+
+![Jupyter]({{ relBase }}/media/logos-external/logo-jupyter.png)
+
+Jupyter Notebook and JSXGraph are powerful open-source tools that enable the creation of interactive, web-based mathematical content by combining executable code, dynamic visualizations, and explanatory text. Their integration allows for rich, exploratory learning environments in mathematics, science, and education.
+
+[Jupyter Notebook](https://jupyter.org)
 

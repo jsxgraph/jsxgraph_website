@@ -56,7 +56,7 @@ Prof. Dr. Alfred Wassermann
     </div>
 </div>
 
-## Former Members
+# Former Members
 
 - Michael Gerhäuser
 - Bianca Valentin

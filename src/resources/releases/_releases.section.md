@@ -9,10 +9,21 @@ For ES6 import use the file `jsxgraphcore.mjs` instead of `jsxgraphcore.js`.
 
 # Server
 
-JSXGraph is hosted on [jsDelivr](https://jsdelivr.com), [cdnjs](https://cdnjs.cloudflare.com/) and our own server.
-The links always have a specific structure. We highly recommend to use jsDelivr or cdnjs.
+JSXGraph can be downloaded from [jsDelivr](https://jsdelivr.com), [cdnjs](https://cdnjs.cloudflare.com/) and our own server. The links always have a specific structure. For permanent hosting of the
+library `jsxgraphcore.js` we highly recommend either local hosting or CDN
+hosting at jsDelivr or cdnjs.
 
-### jsDelivr
+## Latest Version
+
+`https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js`
+
+`https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js`
+
+## Specific Version 
+
+To use a specific version, include one of the following links with the corresponding version number:
+
+#### jsDelivr
 
 `https://cdn.jsdelivr.net/npm/jsxgraph@`***`<version number>`***`/distrib/jsxgraph.css`
 
@@ -21,7 +32,7 @@ The links always have a specific structure. We highly recommend to use jsDelivr 
 `https://cdn.jsdelivr.net/npm/jsxgraph@`***`<version number>`***`/distrib/jsxgraphcore.mjs`
 
 
-### cdnjs
+#### cdnjs
 
 `https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/`***`<version number>`***`/jsxgraph.css`
 
@@ -29,7 +40,7 @@ The links always have a specific structure. We highly recommend to use jsDelivr 
 
 `https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/`***`<version number>`***`/jsxgraphcore.mjs`
 
-### University of Bayreuth 
+#### University of Bayreuth 
 
 `https://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css`  
 
