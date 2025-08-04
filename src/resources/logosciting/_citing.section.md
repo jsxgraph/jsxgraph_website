@@ -2,7 +2,7 @@
 
 ## Citing
 
-JSXGraph. Center for Mobile Learning with Digital Technology – University of Bayreuth, Germany. <https://jsxgraph.org>
+JSXGraph. Center for Mobile Learning with Digital Technology – University of Bayreuth, Germany. https://jsxgraph.org.
 
 ## Spelling
 

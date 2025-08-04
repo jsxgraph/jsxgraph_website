@@ -7,7 +7,7 @@
 
 JSXGraph can be embedded into various systems as a plugin or through filter mechanisms, enabling seamless integration into platforms such as Moodle, STACK, Jupyter Notebook, and static HTML pages. This flexibility allows educators and developers to enhance digital learning environments with interactive mathematical visualizations across diverse technical contexts.
 
-# Moodle LMS
+# Moodle – Learning Management System
 
 ![Moodle]({{ relBase }}/media/logos-external/logo-moodle.png)
 
@@ -19,7 +19,7 @@ Using the JSXGraph filter makes it a lot easier to embed JSXGraph constructions 
 [Moodle JSXGraph Filter on GitHub](https://github.com/jsxgraph/moodle-filter_jsxgraph)
 
 
-# ILIAS LMS
+# ILIAS – Learning Management System
 
 ![ILIAS]({{ relBase }}/media/logos-external/logo-ilias.png)
 

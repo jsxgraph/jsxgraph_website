@@ -12,7 +12,7 @@ sections:
     data:
       boardid: visual-input
       board_pos: second
-      title: Reflection of a triangle with respect to a line 
+      title: Reflection of a triangle
       link: /share/example/reflection-of-a-triangle-with-respect-to-a-line-assessment
       target: _blank
 

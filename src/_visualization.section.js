@@ -1,4 +1,4 @@
-var board = JXG.JSXGraph.initBoard("example2", {
+var board = JXG.JSXGraph.initBoard("visualization", {
     boundingbox: [-5, 5, 5, -5],
     axis: false,
     pan: { enabled: false },

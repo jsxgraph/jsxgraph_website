@@ -9,9 +9,9 @@ JXG.Options.axis.ticks.drawLabels = false;
 JXG.Options.axis.ticks.insertTicks = false;
 JXG.Options.point.showInfobox = false;
 
-var board = JXG.JSXGraph.initBoard('example3', {
+var board = JXG.JSXGraph.initBoard('assessment', {
     axis: false,
-    boundingbox: [-2, 5, 5, -2],
+    boundingbox: [-3, 5, 5.5, -2],
     infoboxText: '',
     showCopyright: false,
     showNavigation: false,
@@ -33,7 +33,7 @@ var x_axis = board.create('axis', [[0, 0], [1, 0]],
             position: 'rt',
             offset: [-10, -15]
         },
-        name: '$x$',
+        name: '\\(x\\)',
         straightFirst: false,
         withLabel: true
     });
@@ -48,7 +48,7 @@ var y_axis = board.create('axis', [[0, 0], [0, 1]],
             position: 'lft',
             offset: [-40, -5]
         },
-        name: '$f(x)$',
+        name: '\\(f(x)\\)',
         straightFirst: false,
         withLabel: true
     });
@@ -210,7 +210,7 @@ var glider_x0_0 = board.create('glider', [x0_init, 0, line_parallel_x_axis], {
     label: {
         offset: [-5, -15]
     },
-    name: '$x_0$',
+    name: '\\(x_0\\)',
     size: 2,
     strokeColor: '#000000',
     strokeWidth: 1
@@ -243,7 +243,7 @@ var point_0_fx0 = board.create('point', [0,
     label: {
         offset: [-45, 0]
     },
-    name: '$f(x_0)$',
+    name: '\\(f(x_0)\\)',
     */
     name: '',
     size: 2,
@@ -297,7 +297,7 @@ var point_cx_fx0 = board.create('point', [function () {
     label: {
         offset: [-55, 0]
     },
-    name: '$f(x_0)$',
+    name: '\\(f(x_0)\\)',
     size: 2,
     strokeWidth: 0
 });
@@ -338,7 +338,7 @@ var glider_cx_fx0_espilon = board.create('glider', [0, (function () {
     label: {
         offset: [-55, 20]
     },
-    name: '$f(x_0)+\\epsilon$',
+    name: '\\(f(x_0)+\\epsilon\\)',
     size: 2,
     strokeColor: '#000000',
     strokeWidth: 1
@@ -363,7 +363,7 @@ var point_label_epsilon = board.create('midpoint', [point_cx_fx0, glider_cx_fx0_
     label: {
         offset: [5, 1]
     },
-    name: '$\\epsilon$',
+    name: '\\(\\epsilon\\)',
     size: 0
 });
 
@@ -373,7 +373,7 @@ var point_cx_fx0_minus_epsilon = board.create('mirrorpoint', [glider_cx_fx0_espi
     label: {
         offset: [-55, -20]
     },
-    name: '$f(x_0)-\\epsilon$',
+    name: '\\(f(x_0)-\\epsilon\\)',
     size: 2,
     strokeWidth: 0
 });
@@ -466,7 +466,7 @@ var glider_x0_delta_cy = board.create('glider', [(function () {
     label: {
         offset: [10, -10]
     },
-    name: '$x_0+\\delta$',
+    name: '\\(x_0+\\delta\\)',
     size: 2,
     strokeColor: '#000000',
     strokeWidth: 1
@@ -492,7 +492,7 @@ var point_x0_minus_delta_cy = board.create('mirrorpoint', [glider_x0_delta_cy, p
     label: {
         offset: [-50, -10]
     },
-    name: '$x_0-\\delta$',
+    name: '\\(x_0-\\delta\\)',
     size: 2,
     strokeWidth: 0
 });
@@ -510,7 +510,7 @@ var point_label_delta = board.create('midpoint', [point_x0_cy, glider_x0_delta_c
     label: {
         offset: [-2, 12]
     },
-    name: '$\\delta$',
+    name: '\\(\\delta\\)',
     size: 0
 });
 
@@ -628,7 +628,7 @@ var glider_x_0 = board.create('glider', [glider_x0_0.X() + delta / 2, 0, line_x0
     label: {
         offset: [-4, -15]
     },
-    name: '$x$',
+    name: '\\(x\\)',
     size: 2,
     strokeColor: '#000000',
     strokeWidth: 1
@@ -660,7 +660,7 @@ var point_0_fx = board.create('point', [0,
     label: {
         offset: [-30, 0]
     },
-    name: '$f(x)$',
+    name: '\\(f(x)\\)',
     size: 2,
     strokeWidth: 0
 });

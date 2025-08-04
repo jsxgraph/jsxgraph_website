@@ -1,4 +1,4 @@
-var brd = JXG.JSXGraph.initBoard('example1', {
+var brd = JXG.JSXGraph.initBoard('library', {
     boundingbox: [-2.5, 2.5, 2.5, -2.5],
     showNavigation: false,
     pan: { enabled: false },

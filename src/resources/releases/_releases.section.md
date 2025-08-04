@@ -48,7 +48,7 @@ To use a specific version, include one of the following links with the correspon
 
 `https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-`***`<version number>`***`.mjs`  
 
-# Example
+## Example
 
 For example, include `jsxgraphcore.js` version 1.9.2 using one of the following links:  
 

@@ -14,64 +14,74 @@ splash:
 
 sections:
 
-  - file: example1
+  - file: library
     layout: board-block
     data:
-      boardid: example1
+      boardid: library
       title: Apollonian circle packing 
-      link: /share
+      link: /share/example/apollonian-circle-packing
       target: _blank
 
-  - file: example2
+  - file: visualization
     layout: board-block
     data:
-      boardid: example2
+      boardid: visualization
       board_pos: second
       title: Surface plot
-      link: /share
+      link: /share/example/surface-plot
       target: _blank
-      
-  - file: example3
-    layout: board-block
-    data:
-      boardid: example3
-      title: Continuous function
-      link: /share
-      target: _blank
-      
+
   - file: features
     layout: board-block
     data:
       boardid: features
-      board_pos: second
       title: Euler line
-      link: /share
+      link: /share/example/euler-line
       target: _blank
+
+  - file: assessment
+    layout: board-block
+    data:
+      boardid: assessment
+      board_pos: second
+      title: Continuity
+      link: /share/example/continuity
+      target: _blank
+      
+  - file: accessibility
+    layout: board-block
+    data:
+      boardid: accessibility
+
+      title: Iterated Icosahedron
+      link: /share/example/iterated-icosahedron
+      target: _blank      
 
 
   - file: technical-features
     layout: board-block
     data:
       boardid: technical-features
-      title: Sphere
-      link: /share
+      board_pos: second
+      title: Implicit plot – Elliptic curves
+      link: /share/example/elliptic-curves-group-law
       target: _blank      
      
   - file: open-source
     layout: board-block
     data:
       boardid: open-source
-      board_pos: second
       title: Mirror, Mirror on the Wall ...
-      link: /share
+      link: /share/example/3d-mirror-mirror-on-the-wall
       target: _blank
  
   - file: license
     layout: board-block
     data:
       boardid: license
+      board_pos: second
       title: Vectorfield
-      link: /share
+      link: /share/example/3d-vector-field
       target: _blank
 
 ---
