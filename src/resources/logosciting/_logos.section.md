@@ -21,38 +21,6 @@ Each version comes in both a filled (solid) and an outline (stroke-only) style, 
 [PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_square-outline.png)
 [SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-outline.svg)
 
-### Graphic Element
-
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-solid-pure.png" class="w-10 w-10-over-lg">
-
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-solid-pure.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_square-solid-pure.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-solid-pure.svg)
-
-<br/>
-
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-outline-pure.png" class="w-10 w-10-over-lg">
-
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-outline-pure.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_square-outline-pure.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-outline-pure.svg)
-
-<br/>
-
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-solid-plain-pure.png" class="w-10 w-10-over-lg">
-
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-solid-plain-pure.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_square-solid-plain-pure.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-solid-plain-pure.svg)
-
-<br/>
-
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-outline-plain-pure.png" class="w-10 w-10-over-lg">
-
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-outline-plain-pure.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_square-outline-plain-pure.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-outline-plain-pure.svg)
-
 ## Combined Word and Figurative Mark ('text')
 
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_text-solid.png" class="w-30 w-25-over-lg">
@@ -71,7 +39,7 @@ Each version comes in both a filled (solid) and an outline (stroke-only) style, 
 
 ## Combined Word and Figurative Mark ('banner')
 
-The banner-style JSXGraph logo with word mark is also available with a colored background, making it ideal for use in headers, presentations, or promotional materials.  
+The banner-style JSXGraph logo is also available with a colored background, making it ideal for use in headers, presentations, or promotional materials.  
 
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_banner-solid-text-solid.png" class="w-30 w-25-over-lg">
 
@@ -102,6 +70,38 @@ The banner-style JSXGraph logo with word mark is also available with a colored b
 [PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_banner-outline-text-outline.png)
 [PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_banner-outline-text-outline.png)
 [SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_banner-outline-text-outline.svg)
+
+### Graphic Elements
+
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-solid-pure.png" class="w-10 w-10-over-lg">
+
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-solid-pure.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_square-solid-pure.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-solid-pure.svg)
+
+<br/>
+
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-outline-pure.png" class="w-10 w-10-over-lg">
+
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-outline-pure.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_square-outline-pure.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-outline-pure.svg)
+
+<br/>
+
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-solid-plain-pure.png" class="w-10 w-10-over-lg">
+
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-solid-plain-pure.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_square-solid-plain-pure.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-solid-plain-pure.svg)
+
+<br/>
+
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-outline-plain-pure.png" class="w-10 w-10-over-lg">
+
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-outline-plain-pure.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_square-outline-plain-pure.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-outline-plain-pure.svg)
 
 ## ZIP-Archive
 
