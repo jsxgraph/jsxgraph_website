@@ -16,10 +16,3 @@ JSXGraph was successfully used in the Erasmus+ projects ITEMS and COMPASS to des
 The developed examples ranged from dynamic geometry tasks to visualized functions and simulations of mathematical concepts.
 
 [Examples](https://jsxgraph.org/examples/)
-
-# Meclib
-
-Meclib is a toolset designed to simplify the creation of STACK questions in Moodle by providing high-level support for JSXGraph-based illustrations controlled via Maxima. 
-Its focus lies on interactive graphics and rich formative feedback, particularly for applications such as parametrized geometry and free body diagrams in mechanics.
-
-[Meclib](https://github.com/mkraska/meclib)
