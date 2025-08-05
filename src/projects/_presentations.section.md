@@ -18,7 +18,7 @@
   Roman Hašek (University of South Bohemia in České Budějovice, Czech Republic),
   Marc Bernat Martinez (BonNouEdu. La Vila Joiosa, Spain),
   Igor Pesek (University of Maribor, Slovenia),
-  Alfred Wassermann (University of Bayreuth, Germany).
+  Alfred Wassermann (University of Bayreuth, Germany).  
 <br>
 - _JSXGraph - presence & future_. Alicante. 2019. Alfred Wassermann.  
 <br>
