@@ -1,5 +1,3 @@
-# References
-
 <style>
 #section-references ul li {
    margin-bottom: 20px;

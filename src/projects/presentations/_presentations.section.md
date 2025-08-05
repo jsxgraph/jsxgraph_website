@@ -1,5 +1,3 @@
-# Presentations
-
 <style>
 #section-presentations ul li {
    margin-bottom: 20px;
