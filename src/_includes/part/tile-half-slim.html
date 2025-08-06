@@ -5,7 +5,7 @@
 
     {%- assign stringToCheck = data.link %}
     {%- assign checkArray = stringToCheck | split: ':' -%}
-    {%- if checkArray[0] == 'http' or checkArray[0] == 'https' or data.target == "_blank" -%}
+    {%- if checkArray[0] == 'http' or checkArray[0] == 'https' -%}
     {%- assign link = data.link -%}
     {%- assign target = data.target | default: "_blank" -%}
     {%- else -%}

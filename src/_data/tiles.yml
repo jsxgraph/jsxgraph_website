@@ -20,7 +20,7 @@
   width: "sm"
   data:
     - title: "Examples"
-      link: "/share"
+      link: "/resources/share"
       target: "_blank"
       icon: "fa-solid fa-folder-open"
 
