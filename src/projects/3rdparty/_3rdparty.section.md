@@ -12,6 +12,13 @@ TSXGraph is a lightweight TypeScript wrapper for JSXGraph that improves coding w
 
 Murray Bourne’s site offers mobile-friendly JSXGraph demos, smooth animations, advanced plotting techniques, and integration with MathJax, KaTeX, and audio. It includes tutorials, slides from JSXGraph conferences, and experiments like Game of Life and efficient SVG rendering.
 
+# i‑Učbeniki/i-Textbooks
+
+> /media/logos-external/logo-itextbooks.png
+> https://eucbeniki.sio.si 
+
+The i‑Učbeniki portal offers free Slovenian digital textbooks with interactive content. Many activities use JSXGraph, enabling dynamic visualizations in math and science that promote exploratory and hands-on learning. All materials are open and browser-based.
+
 # Meclib
 
 > /media/logos-external/logo-meclib.png
