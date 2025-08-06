@@ -24,6 +24,11 @@ carousel:
         Web-Based.#~#
         Interactive. Seamless.
 
+url:
+  web: https://jsxgraph.org
+  js: https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js
+  css: https://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css
+
 default_polygon: "jsxgraph-pure"  # jsxgraph-pure | jsxgraph-plain | circle | 4 | 5 | 6 | 8
 
 meta: >
@@ -33,13 +38,8 @@ keywords: >
   TBA
 
 btn:
-  start: Start
   menu: Menu
   more: More
-
-splash:
-  image: /media/images/2x1/sketchometry-hand.jpg
-  subtitle:
 
 cookie:
   hint: >
@@ -48,11 +48,6 @@ cookie:
   more: Learn more.
   btn: Okay
   link: /privacy
-
-url:
-  web: https://jsxgraph.org
-  js: https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js
-  css: https://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css
 
 maps:
   button: Load Google Maps
