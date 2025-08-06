@@ -7,15 +7,9 @@ sections:
     - file: html
       layout: text
 
-    - file: html-cdn
+    - file: html-code
       layout: accordion
 
-    - file: html-local
-      layout: accordion
-
-    - file: html-es6
-      layout: accordion
-      
     - file: iframe
       layout: text      
       
@@ -25,18 +19,12 @@ sections:
     - file: math
       layout: text
 
-    - file: mathjax
-      layout: accordion
-
-    - file: katex
+    - file: math-code
       layout: accordion
       
     - file: filter
       layout: text  
       
-    - file: moodle-filter
-      layout: accordion
-      
-    - file: ilias-filter
+    - file: filter-code
       layout: accordion
 ---

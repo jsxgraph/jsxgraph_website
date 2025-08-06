@@ -9,7 +9,13 @@ For ES6 import use the file `jsxgraphcore.mjs` instead of `jsxgraphcore.js`.
 
 # Server
 
-JSXGraph can be downloaded from [jsDelivr](https://jsdelivr.com), [cdnjs](https://cdnjs.cloudflare.com/) and our own server. The links always have a specific structure. For permanent hosting of the
+JSXGraph can be downloaded at least  from:
+- [jsDelivr](https://jsdelivr.com) 
+- [cdnjs](https://cdnjs.cloudflare.com/)
+- [npm/nodejs](https://www.npmjs.com) 
+- [JSXGraph Server](https://jsxgraph.org)
+
+The links always have a specific structure. For permanent hosting of the
 library `jsxgraphcore.js` we highly recommend either local hosting or CDN
 hosting at jsDelivr or cdnjs.
 
@@ -17,7 +23,7 @@ hosting at jsDelivr or cdnjs.
 
 `https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js`
 
-`https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js`
+`https://jsxgraph.org/distrib/jsxgraphcore.js`
 
 ## Specific Version 
 
@@ -106,3 +112,35 @@ For example, include `jsxgraphcore.js` version 1.9.2 using one of the following 
 | ***v0.93***   | —                                                                                | [cdnjs](http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.93/jsxgraphcore.js)    | [JSXGraph server](http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-0.93.js)    |
 | ***v0.92***   | —                                                                                | [cdnjs](http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.92/jsxgraphcore.js)    | [JSXGraph server](http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-0.92.js)    |
 | ***v0.91***   | —                                                                                | [cdnjs](http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.91/jsxgraphcore.js)    | [JSXGraph server](http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-0.91.js)    |
+
+<button type="button" colorclass="outline-primary" class="w-fix-lg mx-auto" id="releases-all">Show all releases</button>
+<style>
+#section-releases table thead,
+#section-releases table tbody td:before {
+    display: none;
+}
+
+#section-releases table td {
+    white-space: nowrap;
+}
+</style>
+
+<script type="text/javascript">
+(function() {
+    $('#section-releases table tbody tr').each(function(i, that) {
+        if(i > 5)
+            $(that).addClass('off');
+    });
+
+    $('#releases-all').on('click', function () {
+        $('#section-releases table tbody tr').removeClass('off');
+        $(this).addClass('off');
+    });
+})();
+</script>
+
+# Debian Support
+
+JSXGraph (incl. source code) is also available as a Debian `deb`-package:
+
+[JSXGraph at Debian](https://packages.debian.org/search?keywords=jsxgraph)

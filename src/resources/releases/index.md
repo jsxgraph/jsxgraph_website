@@ -6,8 +6,5 @@ sections:
 
   - file: releases
     layout: text
-
-  - file: script-and-styling
-    layout: text
 ---
 

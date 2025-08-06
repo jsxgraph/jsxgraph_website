@@ -1,0 +1,96 @@
+# HTML template – JSXGraph hosted via CDN
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My JSXGraph Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
+</head>
+<body>
+    <div id="box" class="jxgbox" style="width:500px; aspect-ratio: 1/1;"></div>
+    <script>
+        var board = JXG.JSXGraph.initBoard(
+            'box', {
+                boundingbox: [-10, 10, 10, -10], 
+                axis:true
+            });
+
+        // Insert JSXGraph code here!
+
+    </script>
+</body>
+</html>
+```
+
+[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph hosted via CDN](src/html-cdn.html)
+
+# HTML template – JSXGraph locally hosted
+
+If you want to include a local copy of JSXGraph in your HTML file,
+download the two following JSXGraph files
+
+- <https://jsxgraph.org/distrib/jsxgraphcore.js>
+- <https://jsxgraph.org/distrib/jsxgraph.css>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My JSXGraph Example</title>
+    <link rel="stylesheet" type="text/css" href="jsxgraph.css">
+    <script src="jsxgraphcore.js"></script>
+</head>
+<body>
+    <div id="box" class="jxgbox" style="width:500px; aspect-ratio: 1/1;"></div>
+    <script>
+        var board = JXG.JSXGraph.initBoard(
+                'box', {
+                    boundingbox: [-10, 10, 10, -10],
+                    axis:true
+                });
+
+        // Insert JSXGraph code here!
+
+    </script>
+</body>
+</html>
+```
+
+[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph locally hosted](src/html-local.html)
+
+# HTML template – JSXGraph import (ES6)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My JSXGraph Example</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css");
+    </style>
+</head>
+<body>
+    <div id="box" class="jxgbox" style="width:500px; aspect-ratio: 1/1;"></div>
+
+    <script type="module">
+        import JXG from 'https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.mjs';
+        var board = JXG.JSXGraph.initBoard(
+                'box', {
+                    boundingbox: [-10, 10, 10, -10],
+                    axis:true
+                });
+
+        // Insert JSXGraph code here!
+        
+    </script>
+</body>
+</html>
+```
+
+[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph import (ES6)](src/html-es6.html)
