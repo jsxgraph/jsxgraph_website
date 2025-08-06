@@ -57,7 +57,7 @@
 
                 {% for post in site.posts %}
                 {% if post[listkey] contains key %}
-                <a href="{{ post.url }}" class="list-group-item list-group-item-action px-4 py-4">
+                <a href="{{ relBase }}{{ post.url }}" class="list-group-item list-group-item-action px-4 py-4">
                     <article class="post-preview">
                         <div class="mb-4">
                             {% include main/post-header.html post=post head_level=3 %}

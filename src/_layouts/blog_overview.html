@@ -50,7 +50,7 @@
 
                     {%- assign posts = paginator.posts | default: site.posts -%}
                     {% for post in posts %}
-                    <a href="{{ post.url }}" class="list-group-item list-group-item-action px-4 py-4">
+                    <a href="{{ relBase }}{{ post.url }}" class="list-group-item list-group-item-action px-4 py-4">
                         <article class="post-preview">
                             <div class="mb-4">
                                 {% include main/post-header.html post=post head_level=3 %}
@@ -66,10 +66,10 @@
                 {% if paginator and paginator.total_pages > 1 %}
                 <div class="d-flex">
                     {% if paginator.previous_page %}
-                    <a href="{{ paginator.previous_page_path }}" class="btn btn-outline-primary w-fix-lg me-auto">Newer Posts</a>
+                    <a href="{{ relBase }}{{ paginator.previous_page_path }}" class="btn btn-outline-primary w-fix-lg me-auto">Newer Posts</a>
                     {% endif %}
                     {% if paginator.next_page %}
-                    <a href="{{ paginator.next_page_path }}" class="btn btn-outline-primary w-fix-lg ms-auto">Older Posts</a>
+                    <a href="{{ relBase }}{{ paginator.next_page_path }}" class="btn btn-outline-primary w-fix-lg ms-auto">Older Posts</a>
                     {% endif %}
                 </div>
                 {% endif %}
