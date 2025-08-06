@@ -59633,23 +59633,6 @@ h1,
 .h1 {
   padding-bottom: 1rem;
 }
-.content h2::before,
-.content .h2::before,
-.my-auto h2::before,
-.my-auto .h2::before,
-.section-text h2::before,
-.section-text .h2::before {
-  content: '';
-  background: url('../media/logos/logo-pure.png');
-  background-size: 2rem 2rem;
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: 2rem !important;
-  height: 2rem !important;
-  margin-right: 0.5rem;
-  margin-left: -1rem;
-  margin-bottom: -0.4rem;
-}
 h2,
 .h2 {
   font-size: 1.75rem;
@@ -59718,13 +59701,58 @@ h6:first-child,
 .h6:first-child {
   margin-top: 0;
 }
+
+.leading-logo,
+.content > h2:before,
+.content > .h2:before {
+    content: '';
+    background: url('../media/logos/logo-pure.png') no-repeat;
+    background-size: 2rem 2rem;
+    display: inline-block;
+    width: 2rem !important;
+    height: 2rem !important;
+    margin-right: 0.5rem;
+    margin-left: -1rem;
+    margin-bottom: -0.4rem;
+}
+
+.section-accordion h2:before,
+.section-blogs h2:before,
+.section-board h2:before,
+.section-board-block h2:before,
+.section-cards h2:before,
+.section-image h2:before,
+.section-image-block h2:before,
+.section-subpages h2:before,
+.section-text h2:before,
+.section-accordion .h2:before,
+.section-blogs .h2:before,
+.section-board .h2:before,
+.section-board-block .h2:before,
+.section-cards .h2:before,
+.section-image .h2:before,
+.section-image-block .h2:before,
+.section-subpages .h2:before,
+.section-text .h2:before {
+    content: '';
+    background: url('../media/logos/logo-pure.png') no-repeat;
+    background-size: 2rem 2rem;
+    display: inline-block;
+    width: 2rem !important;
+    height: 2rem !important;
+    margin-right: 0.5rem;
+    margin-left: -1rem;
+    margin-bottom: -0.4rem;
+}
+
+.section-accordion .accordion-header .accordion-button h2:before,
+.section-accordion .accordion-header .accordion-button .h2:before {
+    display: none;
+}
 #cookie-hint,
 #cookie-hint * {
   --bs-toast-max-width: 400px;
   font-size: var(--bs-toast-font-size) !important;
-}
-.section-text h2 {
-  margin-top: 3rem !important;
 }
 .section-accordion .accordion-button {
   -webkit-transition-property: height;

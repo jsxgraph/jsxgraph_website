@@ -6,6 +6,4 @@ sections:
 
   - file: jsxcompressor
     layout: text
-
-
 ---
