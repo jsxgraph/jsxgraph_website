@@ -9,7 +9,13 @@ For ES6 import use the file `jsxgraphcore.mjs` instead of `jsxgraphcore.js`.
 
 # Server
 
-JSXGraph can be downloaded from [jsDelivr](https://jsdelivr.com), [cdnjs](https://cdnjs.cloudflare.com/) and our own server. The links always have a specific structure. For permanent hosting of the
+JSXGraph can be downloaded from:
+- [jsDelivr](https://jsdelivr.com) 
+- [cdnjs](https://cdnjs.cloudflare.com/)
+- [npm/nodejs](https://www.npmjs.com) 
+- [JSXGraph Server](https://jsxgraph.org)
+
+The links always have a specific structure. For permanent hosting of the
 library `jsxgraphcore.js` we highly recommend either local hosting or CDN
 hosting at jsDelivr or cdnjs.
 
@@ -17,7 +23,7 @@ hosting at jsDelivr or cdnjs.
 
 `https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js`
 
-`https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js`
+`https://jsxgraph.org/distrib/jsxgraphcore.js`
 
 ## Specific Version 
 

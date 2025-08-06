@@ -6,7 +6,7 @@
 
 - [_JSXGraph: recent developments_]({{ relBase }}/media/pdf/presentations/durham2025.pdf) at STACK Durham 2025 – International meeting of the STACK community 2025. Druham. 2025. Alfred Wassermann.  
  
-- _Visual e-Assessment with JSXGraph in Calculus_ ([Part I]({{ relBase }}/media/pdf/presentations/amberg2024_aw.pdf) / [Part II]({{ relBase }}/media/pdf/presentations/amberg2024_wr.pdf)) at STACK Amberg 2024 – International meeting of the STACK community 2024. Amberg. 2024. Wigand Rathmann, Alfred Wassermann.  
+- _Visual e-Assessment with JSXGraph in Calculus_ ([Part I]({{ relBase }}/media/pdf/presentations/amberg2024_aw.pdf) / [Part II]({{ relBase }}/media/pdf/presentations/amberg2024_wr.pdf)) keynote talk at STACK Amberg 2024 – International meeting of the STACK community 2024. Amberg. 2024. Wigand Rathmann, Alfred Wassermann.  
 
 - [_Interactive visualization and e-assessment with JSXGraph_]({{ relBase }}/media/pdf/presentations/trondheim2023.pdf) at The 1st Northern e-Assessment Meeting (June 2023). Trondheim. 2023. Carsten Miller, Alfred Wassermann.  
 
@@ -16,7 +16,7 @@
 
 - [_Math visualization with JSXGraph – an overview_]({{ relBase }}/media/pdf/presentations/edinburgh2022.pdf) at Workshop “Using JSX graphs in STACK”. Edinburgh. 2022. Andrey Chesnokov, Alfred Wassermann.  
 
-- _Interaktive Mathematik im E-learning mit JSXGraph_. Leipzig. 2021. Alfred Wassermann.  
+- [_Interaktive Mathematik im E-learning mit JSXGraph_]({{ relBase }}/media/pdf/presentations/leipzig2021.pdf). Leipzig. 2021. Alfred Wassermann.  
 
 - _<a href="https://atcm.mathandtech.org/EP2020/invited/videos/21819.mp4" target="_blank">Web-browser based STEM learning activities with JSXGraph</a>_ at ATCM. 2020. Pekka Alestalo (Aalto University, Finland), 
   Roman Hašek (University of South Bohemia in České Budějovice, Czech Republic),
@@ -24,9 +24,9 @@
   Igor Pesek (University of Maribor, Slovenia),
   Alfred Wassermann (University of Bayreuth, Germany).  
 
-- _JSXGraph - presence & future_. Alicante. 2019. Alfred Wassermann.  
+- [_JSXGraph - presence & future_]({{ relBase }}/media/pdf/presentations/alicante2019.pdf). Alicante. 2019. Alfred Wassermann.  
 
-- _Mathematik im Web-Browser mit JSXGraph_ at 14. Workshop - Mathematik in ingenieur-wissenschaftlichen Studiengängen. Erlangen. 2017. Alfred Wassermann.  
+- [_Mathematik im Web-Browser mit JSXGraph_]({{ relBase }}/media/pdf/presentations/erlangen2017.pdf) at 14. Workshop - Mathematik in ingenieur-wissenschaftlichen Studiengängen. Erlangen. 2017. Alfred Wassermann.  
 
 - JSXGraph. University of Maribor. 2014. Alfred Wassermann.  
 
