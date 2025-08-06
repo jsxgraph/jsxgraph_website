@@ -1,5 +1,6 @@
 ---
-title: 3<sup>rd</sup> Party Projects
+title: 3rd Party Projects
+header: 3<sup>rd</sup> Party Projects
 parent: projects
 order: 2
 sections:
