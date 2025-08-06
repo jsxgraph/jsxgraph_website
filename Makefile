@@ -75,7 +75,7 @@ build:
 	@echo " ... done"
 
 dev:
-	@bundle exec jekyll serve -l
+	@bundle exec jekyll serve
 
 #######################
 ### Rules for tests ###
