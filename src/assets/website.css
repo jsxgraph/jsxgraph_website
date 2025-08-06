@@ -59744,7 +59744,9 @@ h6:first-child,
     margin-bottom: -0.4rem;
 }
 .section-accordion .accordion-header .accordion-button h2:before,
-.section-accordion .accordion-header .accordion-button .h2:before {
+.section-cards .card-body h2:before,
+.section-accordion .accordion-header .accordion-button .h2:before,
+.section-cards .card-body .h2:before {
     display: none;
 }
 #cookie-hint,
