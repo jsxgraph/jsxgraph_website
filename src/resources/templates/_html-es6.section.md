@@ -11,7 +11,7 @@
     </style>
 </head>
 <body>
-    <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
+    <div id="box" class="jxgbox" style="width:500px; aspect-ratio: 1/1;"></div>
 
     <script type="module">
         import JXG from 'https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.mjs';

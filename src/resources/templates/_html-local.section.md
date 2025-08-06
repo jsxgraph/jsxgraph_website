@@ -16,7 +16,7 @@ download the two following JSXGraph files
     <script src="jsxgraphcore.js"></script>
 </head>
 <body>
-    <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
+    <div id="box" class="jxgbox" style="width:500px; aspect-ratio: 1/1;"></div>
     <script>
         var board = JXG.JSXGraph.initBoard(
                 'box', {

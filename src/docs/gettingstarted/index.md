@@ -39,6 +39,14 @@ sections:
      data:
        boardid: attributes-result
 
+   - file: view
+     layout: text
+
+   - file: view-result
+     layout: board
+     data:
+       boardid: view-result
+
    - file: help
      layout: text
 

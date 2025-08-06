@@ -29,7 +29,7 @@ This ensures that every text element created in JSXGraph will automatically be p
             id="MathJax-script" async></script>
 </head>
 <body>
-    <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
+    <div id="box" class="jxgbox" style="width:500px; aspect-ratio: 1/1;"></div>
     <script>
         JXG.Options.text.useMathJax = true; // Enable MathJax for all JSXGraph elements!
         var board = JXG.JSXGraph.initBoard(
@@ -37,7 +37,7 @@ This ensures that every text element created in JSXGraph will automatically be p
                 boundingbox: [-10, 10, 10, -10], 
                 axis:true
             });
-        var A = board.create('point', [-4,  5], { name: '$$A_{max}$$' });
+        var A = board.create('point', [-4,  5], { name: '$$A_{\\max}$$' });
 
         // Insert JSXGraph code here!
 

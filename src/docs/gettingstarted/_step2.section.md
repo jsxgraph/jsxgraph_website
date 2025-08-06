@@ -6,7 +6,7 @@ This division needs an ID. Using this ID, we declare this element to be a board 
 The following code has to be placed into the body part of an HTML file:
 
 ```html
-<div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
+<div id="box" class="jxgbox" style="width:500px; aspect-ratio: 1/1;"></div>
 <script>
     var board = JXG.JSXGraph.initBoard(
         'box', {
@@ -29,7 +29,7 @@ The following code has to be placed into the body part of an HTML file:
           href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
 </head>
 <body>
-    <div id="box" class="jxgbox" style="width:500px; height:500px;"></div>
+    <div id="box" class="jxgbox" style="width:500px; aspect-ratio: 1/1;"></div>
     <script>
         var board = JXG.JSXGraph.initBoard(
             'box', {
