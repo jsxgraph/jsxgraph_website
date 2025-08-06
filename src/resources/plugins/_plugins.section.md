@@ -52,7 +52,8 @@ The Formulas extension for the Moodle JSXGraph filter facilitates the two-way ex
 
 The H5P integration for JSXGraph enables the creation of interactive mathematical content that can be seamlessly embedded into learning management systems.
 
-[H5P.JSXGraph](https://github.com/jsxgraph/H5P.JSXGraph)
+[H5P.JSXGraph](https://github.com/jsxgraph/H5P.JSXGraph/tree/security)
+
 
 # MediaWiki
 

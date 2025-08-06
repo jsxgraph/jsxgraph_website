@@ -24,8 +24,8 @@
         <div class="carousel-item">
             <div class="container md-container text-center">
                 <div class="bigger mt-2">
-                    <span class="nowrap"><a href="https://jsxgraph.org/conf2025" class="text-danger" target="_blank">6<sup>th</sup> International</a></span>
-                    <span class="nowrap text-danger"><a href="https://jsxgraph.org/conf2025" class="text-danger" target="_blank">JSXGraph Conference!</a></span>
+                    <span class="nowrap"><a href="https://jsxgraph.org/conf2025" class="text-danger" target="_blank">6<sup>th</sup> Int. JSXGraph</a></span>
+                    <span class="nowrap text-danger"><a href="https://jsxgraph.org/conf2025" class="text-danger" target="_blank">Conference, 7.–9. Oct. 25 </a></span>
                 </div>
             </div>
         </div>
@@ -39,8 +39,8 @@
         <div class="carousel-item">
             <div class="container md-container text-center">
                 <div class="bigger mt-2">
-                    <span class="nowrap"><a href="https://jsxgraph.org/conf2025" class="text-danger" target="_blank">6<sup>th</sup> International</a></span>
-                    <span class="nowrap text-danger"><a href="https://jsxgraph.org/conf2025" class="text-danger" target="_blank">JSXGraph Conference!</a></span>
+                    <span class="nowrap"><a href="https://jsxgraph.org/conf2025" class="text-danger" target="_blank">6<sup>th</sup> Int. JSXGraph</a></span>
+                    <span class="nowrap text-danger"><a href="https://jsxgraph.org/conf2025" class="text-danger" target="_blank">Conference, 7.–9. Oct. 25 </a></span>
                 </div>
             </div>
         </div>
