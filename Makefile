@@ -50,7 +50,18 @@ versionwrite:
 
 upload:
 	@echo "Start uploading"
-	@scp -r distrib/ root@132.180.10.7:/net/httpd/htdocs/jsxgraph/home.new
+	@cd $(DISTRIB) && zip -q -r ../upload.zip *
+	@ssh root@132.180.10.7 "\
+    	cd /net/httpd/htdocs/jsxgraph/; \
+    	mkdir home.new; \
+    "
+	@scp -r upload.zip root@132.180.10.7:/net/httpd/htdocs/jsxgraph/home.new
+	@ssh root@132.180.10.7 "\
+    	cd /net/httpd/htdocs/jsxgraph/home.new/; \
+    	unzip -q upload.zip; \
+    	rm upload.zip; \
+    "
+	@rm upload.zip;
 	@echo "... successful"
 	@echo "Link new version to jsxgraph.org and jsxgraph.uni-bayreuth.de"
 	@ssh root@132.180.10.7 "\
