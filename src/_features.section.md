@@ -7,3 +7,4 @@
 - Implicit curves
 - Differential equations
 - Charts and statistics
+- Animations

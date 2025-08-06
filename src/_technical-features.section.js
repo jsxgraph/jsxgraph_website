@@ -1,6 +1,6 @@
 // Define the id of your board in BOARDID
 
-JXG.Options.label.autoposition = true;
+//JXG.Options.label.autoposition = true;
 
 const board = JXG.JSXGraph.initBoard("technical-features", {
     boundingbox: [-5, 5, 5, -5],

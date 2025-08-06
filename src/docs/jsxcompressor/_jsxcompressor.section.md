@@ -45,5 +45,3 @@ JXG.decompress = function(str) {
 ## Download
 
 [JSXCompressor on GitHub](https://github.com/jsxgraph/jsxgraph/tree/main/JSXCompressor)
-
-[JSXCompressor on SourceForge](http://sourceforge.net/projects/jsxgraph/)

@@ -12,7 +12,7 @@ sketchometry is an educational geometry tool that enables students to draw and m
 # JSXCompressor
 
 > /media/logos-external/logo-square-active.png
-> https://github.com/jsxgraph/jsxgraph/tree/main/JSXCompressor
+> /docs/jsxcompressor/
 
 Since 2010
 
