@@ -114,6 +114,30 @@ For example, include `jsxgraphcore.js` version 1.9.2 using one of the following 
 | ***v0.91***   | —                                                                                | [cdnjs](http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.91/jsxgraphcore.js)    | [JSXGraph server](http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-0.91.js)    |
 
 <button type="button" colorclass="outline-primary" class="w-fix-lg mx-auto" id="releases-all">Show all releases</button>
+<style>
+#section-releases table thead,
+#section-releases table tbody td:before {
+    display: none;
+}
+
+#section-releases table td {
+    white-space: nowrap;
+}
+</style>
+
+<script type="text/javascript">
+(function() {
+    $('#section-releases table tbody tr').each(function(i, that) {
+        if(i > 5)
+            $(that).addClass('off');
+    });
+
+    $('#releases-all').on('click', function () {
+        $('#section-releases table tbody tr').removeClass('off');
+        $(this).addClass('off');
+    });
+})();
+</script>
 
 # Debian Support
 
