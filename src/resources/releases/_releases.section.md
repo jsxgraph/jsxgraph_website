@@ -9,7 +9,7 @@ For ES6 import use the file `jsxgraphcore.mjs` instead of `jsxgraphcore.js`.
 
 # Server
 
-JSXGraph can be downloaded from:
+JSXGraph can be downloaded at least  from:
 - [jsDelivr](https://jsdelivr.com) 
 - [cdnjs](https://cdnjs.cloudflare.com/)
 - [npm/nodejs](https://www.npmjs.com) 
@@ -112,3 +112,11 @@ For example, include `jsxgraphcore.js` version 1.9.2 using one of the following 
 | ***v0.93***   | —                                                                                | [cdnjs](http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.93/jsxgraphcore.js)    | [JSXGraph server](http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-0.93.js)    |
 | ***v0.92***   | —                                                                                | [cdnjs](http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.92/jsxgraphcore.js)    | [JSXGraph server](http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-0.92.js)    |
 | ***v0.91***   | —                                                                                | [cdnjs](http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.91/jsxgraphcore.js)    | [JSXGraph server](http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-0.91.js)    |
+
+<button type="button" colorclass="outline-primary" class="w-fix-lg mx-auto" id="releases-all">Show all releases</button>
+
+# Debian Support
+
+JSXGraph (incl. source code) is also available as a Debian `deb`-package:
+
+[JSXGraph at Debian](https://packages.debian.org/search?keywords=jsxgraph)
