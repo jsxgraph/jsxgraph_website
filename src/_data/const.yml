@@ -1,9 +1,28 @@
 # Some general consts
 
 webtitle: JSXGraph
+slogan: > # use sign #~# to define breakpoints
+  Math Visualization.#~#
+  Web-Based.#~#
+  Interactive. Seamless.
 
 version: v1.11.1
 version_year: 2025
+
+carousel:
+  active: true
+  speed: 3000
+  data: # use sign #~# to define breakpoints
+    - text: >
+        6<sup>th</sup> Intl. JSXGraph#~#
+        Conference,#~#
+        7.-9. October 2025
+      link: https://jsxgraph.org/conf2025
+      target: _blank
+    - text: >
+        Math Visualization.#~#
+        Web-Based.#~#
+        Interactive. Seamless.
 
 default_polygon: "jsxgraph-pure"  # jsxgraph-pure | jsxgraph-plain | circle | 4 | 5 | 6 | 8
 

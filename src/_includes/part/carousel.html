@@ -1,0 +1,50 @@
+{% assign uuid = 8 | randhex %}
+
+<div id="carousel-{{ uuid }}" class="carousel carousel-dark slide w-100 bigger" data-bs-ride="carousel" data-bs-interval="{{ const.carousel.speed | default: 5000 }}">
+    <div class="carousel-inner py-1">
+
+        {%- for item in const.carousel.data %}
+
+        <div class="carousel-item {% if forloop.index0 == 0 %}active{% endif %}">
+            <div class="{{ include.class }}">
+                <div class="d-flex align-items-center justify-content-center" style="height: 85px;">
+
+                    {% if item.link %}
+
+                    {%- assign stringToCheck = item.link %}
+                    {%- assign checkArray = stringToCheck | split: ':' -%}
+                    {%- if checkArray[0] == 'http' or checkArray[0] == 'https' or item.target == "_blank" -%}
+                    {%- assign link = item.link -%}
+                    {%- assign target = item.target | default: "_blank" -%}
+                    {%- else -%}
+                    {%- assign link = relBase | append: item.link -%}
+                    {%- assign target = item.target | default: "_self" -%}
+                    {%- endif -%}
+                    <a href="{{ link }}" target="{{ target }}" class="fst-italic">
+                        {%- assign text = item.text | split: '#~#' -%}
+                        {%- for t in text %}
+                        <span class="nowrap">
+                            {{ t }}
+                            {%- if target == "_blank" and forloop.index == text.size -%}
+                            <i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>
+                            {%- endif -%}
+                        </span>
+                        {% endfor -%}
+                    </a>
+
+                    {% else %}
+                    <div>
+                        {%- assign text = item.text | split: '#~#' -%}
+                        {%- for t in text %}
+                        <span class="nowrap">{{ t }}</span>
+                        {% endfor -%}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        {% endfor -%}
+
+    </div>
+</div>

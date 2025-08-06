@@ -59513,6 +59513,7 @@ path.svg-apple-keyboard-dark {
   stroke: #aab0bb !important;
 }
 #splash .splash-page {
+    padding-top: 30px;
   min-height: 100vh;
   min-height: 100svh;
   width: 100%;
@@ -59701,7 +59702,6 @@ h6:first-child,
 .h6:first-child {
   margin-top: 0;
 }
-
 .leading-logo,
 .content > h2:before,
 .content > .h2:before {
@@ -59715,7 +59715,6 @@ h6:first-child,
     margin-left: -1rem;
     margin-bottom: -0.4rem;
 }
-
 .section-accordion h2:before,
 .section-blogs h2:before,
 .section-board h2:before,
@@ -59744,7 +59743,6 @@ h6:first-child,
     margin-left: -1rem;
     margin-bottom: -0.4rem;
 }
-
 .section-accordion .accordion-header .accordion-button h2:before,
 .section-accordion .accordion-header .accordion-button .h2:before {
     display: none;
