@@ -2,7 +2,7 @@
 title: News
 subtitle: Announcements
 icon: fa-solid fa-bullhorn
-order: 7
+order: 8
 in_shortcuts: true
 order_shortcuts: 7
 is_blogpost: false
