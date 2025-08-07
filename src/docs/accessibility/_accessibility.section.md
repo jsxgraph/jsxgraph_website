@@ -17,3 +17,7 @@ var A = board.create('point', [2, 3], {
 In addition, JSXGraph visualizations can be enriched with descriptive text, keyboard navigation support, and dynamic announcements to assist users with visual impairments. 
 
 These features help ensure that interactive mathematics is accessible and inclusive across a wider range of users.
+
+## ARIA Example
+
+Enable screen reader support for the following example. Point A can be activated using the Tab key and moved with the arrow keys.
