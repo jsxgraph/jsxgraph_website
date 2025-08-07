@@ -7,107 +7,102 @@ Each version comes in both a filled (solid) and an outline (stroke-only) style, 
 
 ## Figurative Mark ('square')
 
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-solid.png" class="w-10 w-10-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-solid.png" class="w-10 w-10-over-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-solid.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_square-solid.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-solid.svg)
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-solid.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-square-solid.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-square-solid.svg)
 
-<br/>
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-outline.png" class="w-10 w-10-over-lg">
 
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-outline.png" class="w-10 w-10-over-lg">
-
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-outline.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_square-outline.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-outline.svg)
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-outline.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-square-outline.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-square-outline.svg)
 
 ## Combined Word and Figurative Mark ('text')
 
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_text-solid.png" class="w-30 w-25-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-text-solid.png" class="w-30 w-25-over-lg">
 
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_text-solid.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_text-solid.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_text-solid.svg)
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-text-solid.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-text-solid.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-text-solid.svg)
 
-<br/>
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-text-outline.png" class="w-30 w-25-over-lg">
 
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_text-outline.png" class="w-30 w-25-over-lg">
-
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_text-outline.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_text-outline.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_text-outline.svg)
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-text-outline.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-text-outline.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-text-outline.svg)
 
 ## Combined Word and Figurative Mark ('banner')
 
 The banner-style JSXGraph logo is also available with a colored background, making it ideal for use in headers, presentations, or promotional materials.  
 
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_banner-solid-text-solid.png" class="w-30 w-25-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-banner-solid-text-solid.png" class="w-30 w-25-over-lg">
 
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_banner-solid-text-solid.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_banner-solid-text-solid.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_banner-solid-text-solid.svg)
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-banner-solid-text-solid.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-banner-solid-text-solid.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-banner-solid-text-solid.svg)
 
-<br/>
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-banner-solid-text-outline.png" class="w-30 w-25-over-lg">
 
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_banner-solid-text-outline.png" class="w-30 w-25-over-lg">
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-banner-solid-text-outline.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-banner-solid-text-outline.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-banner-solid-text-outline.svg)
 
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_banner-solid-text-outline.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_banner-solid-text-outline.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_banner-solid-text-outline.svg)
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-banner-outline-text-solid.png" class="w-30 w-25-over-lg">
 
-<br/>
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-banner-outline-text-solid.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-banner-outline-text-solid.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-banner-outline-text-solid.svg)  
 
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_banner-outline-text-solid.png" class="w-30 w-25-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-banner-outline-text-outline.png" class="w-30 w-25-over-lg">
 
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_banner-outline-text-solid.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_banner-outline-text-solid.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_banner-outline-text-solid.svg)
-
-<br/>
-
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_banner-outline-text-outline.png" class="w-30 w-25-over-lg">
-
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_banner-outline-text-outline.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_banner-outline-text-outline.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_banner-outline-text-outline.svg)
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-banner-outline-text-outline.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-banner-outline-text-outline.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-banner-outline-text-outline.svg)
 
 ### Graphic Elements
 
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-solid-pure.png" class="w-10 w-10-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-solid-pure.png" class="w-10 w-10-over-lg">
 
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-solid-pure.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_square-solid-pure.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-solid-pure.svg)
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-solid-pure.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-square-solid-pure.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-square-solid-pure.svg)
 
-<br/>
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-solid-plain-pure.png" class="w-10 w-10-over-lg">
 
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-outline-pure.png" class="w-10 w-10-over-lg">
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-solid-plain-pure.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-square-solid-plain-pure.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-square-solid-plain-pure.svg)
 
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-outline-pure.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_square-outline-pure.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-outline-pure.svg)
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-outline-pure.png" class="w-10 w-10-over-lg">
 
-<br/>
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-outline-pure.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-square-outline-pure.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-square-outline-pure.svg)
 
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-solid-plain-pure.png" class="w-10 w-10-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-outline-plain-pure.png" class="w-10 w-10-over-lg">
 
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-solid-plain-pure.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_square-solid-plain-pure.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-solid-plain-pure.svg)
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-outline-plain-pure.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-square-outline-plain-pure.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-square-outline-plain-pure.svg)
 
-<br/>
+## Logo Colors
+Each logo is available in blue (#10427c), light blue (#aedcef), black, and with a gradient.
 
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-outline-plain-pure.png" class="w-10 w-10-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-solid.png" class="w-10 w-10-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_light-square-solid.png" class="w-10 w-10-over-lg">
 
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_square-outline-plain-pure.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_square-outline-plain-pure.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_square-outline-plain-pure.svg)
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_black-square-solid.png" class="w-10 w-10-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_gradient-square-solid.png" class="w-10 w-10-over-lg">
 
 ## ZIP-Archive
 
-All logo layouts are provided in a single ZIP file:
+All logos are available as ZIP files:
 
-[JSXGraph Logo Archive]({{ relBase }}/media/logos/jsxgraph/JSXGraph-logos.zip)
+[JSXGraph Logos – PNG]({{ relBase }}/media/logos/jsxgraph/JSXGraph-logos-png.zip)
+
+[JSXGraph Logos – SVG]({{ relBase }}/media/logos/jsxgraph/JSXGraph-logos-svg.zip)
 
 ## Embedding the JSXGraph Logo
 A clear space equivalent to 50% of the square logo’s height h  should be maintained on all sides of the logo:
