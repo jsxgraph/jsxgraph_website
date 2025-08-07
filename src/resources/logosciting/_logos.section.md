@@ -69,17 +69,17 @@ The banner-style JSXGraph logo is also available with a colored background, maki
 [PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-square-solid-pure.png)
 [SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-square-solid-pure.svg)
 
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-outline-pure.png" class="w-10 w-10-over-lg">
-
-[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-outline-pure.png)
-[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-square-outline-pure.png)
-[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-square-outline-pure.svg)
-
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-solid-plain-pure.png" class="w-10 w-10-over-lg">
 
 [PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-solid-plain-pure.png)
 [PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-square-solid-plain-pure.png)
 [SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-square-solid-plain-pure.svg)
+
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-outline-pure.png" class="w-10 w-10-over-lg">
+
+[PNG (screen)]({{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-outline-pure.png)
+[PNG (print)]({{ relBase }}/media/logos/jsxgraph/png/print/jsxgraph-logo_blue-square-outline-pure.png)
+[SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-square-outline-pure.svg)
 
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-outline-plain-pure.png" class="w-10 w-10-over-lg">
 
