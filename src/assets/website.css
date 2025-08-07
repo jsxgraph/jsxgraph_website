@@ -1119,7 +1119,7 @@ a.card {
   --bs-body-g: 255;
   --bs-body-b: 255;
   --bs-body-hover: #f5f5f5;
-  --bs-body-hover-rgb: 244.8, 244.79999999999998, 244.79999999999998;
+    --bs-body-hover-rgb: 244.8, 244.8, 244.8;
   --bs-body-hover-r: 244.8;
   --bs-body-hover-g: 244.8;
   --bs-body-hover-b: 244.8;
@@ -1134,7 +1134,7 @@ a.card {
   --bs-body-faded-g: 255;
   --bs-body-faded-b: 255;
   --bs-body-faded-hover: #f5f5f5;
-  --bs-body-faded-hover-rgb: 244.8, 244.79999999999998, 244.79999999999998;
+    --bs-body-faded-hover-rgb: 244.8, 244.8, 244.8;
   --bs-body-faded-hover-r: 244.8;
   --bs-body-faded-hover-g: 244.8;
   --bs-body-faded-hover-b: 244.8;
@@ -1149,7 +1149,7 @@ a.card {
   --bs-body-pale-g: 255;
   --bs-body-pale-b: 255;
   --bs-body-pale-hover: #f5f5f5;
-  --bs-body-pale-hover-rgb: 244.8, 244.79999999999998, 244.79999999999998;
+    --bs-body-pale-hover-rgb: 244.8, 244.8, 244.8;
   --bs-body-pale-hover-r: 244.8;
   --bs-body-pale-hover-g: 244.8;
   --bs-body-pale-hover-b: 244.8;
@@ -1846,12 +1846,12 @@ a.card {
   --bs-green-g: 150;
   --bs-green-b: 0;
   --bs-green-hover: #008200;
-  --bs-green-hover-rgb: 0, 129.60000000000002, 0;
+    --bs-green-hover-rgb: 0, 129.6, 0;
   --bs-green-hover-r: 0;
   --bs-green-hover-g: 129.6;
   --bs-green-hover-b: 0;
   --bs-green-active: #005900;
-  --bs-green-active-rgb: 0, 88.80000000000001, 0;
+    --bs-green-active-rgb: 0, 88.8, 0;
   --bs-green-active-r: 0;
   --bs-green-active-g: 88.8;
   --bs-green-active-b: 0;
@@ -1861,12 +1861,12 @@ a.card {
   --bs-green-faded-g: 228.75;
   --bs-green-faded-b: 191.25;
   --bs-green-faded-hover: #b1dfb1;
-  --bs-green-faded-hover-rgb: 176.8, 222.8, 176.79999999999995;
+    --bs-green-faded-hover-rgb: 176.8, 222.8, 176.8;
   --bs-green-faded-hover-r: 176.8;
   --bs-green-faded-hover-g: 222.8;
   --bs-green-faded-hover-b: 176.8;
   --bs-green-faded-active: #94d394;
-  --bs-green-faded-active-rgb: 147.9, 210.89999999999998, 147.9;
+    --bs-green-faded-active-rgb: 147.9, 210.9, 147.9;
   --bs-green-faded-active-r: 147.9;
   --bs-green-faded-active-g: 210.9;
   --bs-green-faded-active-b: 147.9;
@@ -1876,12 +1876,12 @@ a.card {
   --bs-green-pale-g: 239.25;
   --bs-green-pale-b: 216.75;
   --bs-green-pale-hover: #cae9ca;
-  --bs-green-pale-hover-rgb: 202.3, 233.3, 202.29999999999995;
+    --bs-green-pale-hover-rgb: 202.3, 233.3, 202.3;
   --bs-green-pale-hover-r: 202.3;
   --bs-green-pale-hover-g: 233.3;
   --bs-green-pale-hover-b: 202.3;
   --bs-green-pale-active: #adddad;
-  --bs-green-pale-active-rgb: 173.4, 221.39999999999998, 173.39999999999998;
+    --bs-green-pale-active-rgb: 173.4, 221.4, 173.4;
   --bs-green-pale-active-r: 173.4;
   --bs-green-pale-active-g: 221.4;
   --bs-green-pale-active-b: 173.4;
@@ -2578,7 +2578,7 @@ a.card {
   --bs-yellow-hover-g: 215.28;
   --bs-yellow-hover-b: 0;
   --bs-yellow-active: #c2b200;
-  --bs-yellow-active-rgb: 193.8, 177.83999999999997, 0;
+    --bs-yellow-active-rgb: 193.8, 177.84, 0;
   --bs-yellow-active-r: 193.8;
   --bs-yellow-active-g: 177.84;
   --bs-yellow-active-b: 0;
@@ -2593,22 +2593,22 @@ a.card {
   --bs-yellow-faded-hover-g: 248.07;
   --bs-yellow-faded-hover-b: 170.85;
   --bs-yellow-faded-active: #fff582;
-  --bs-yellow-faded-active-rgb: 255, 244.70999999999998, 130.05000000000004;
+    --bs-yellow-faded-active-rgb: 255, 244.71, 130.05;
   --bs-yellow-faded-active-r: 255;
   --bs-yellow-faded-active-g: 244.71;
   --bs-yellow-faded-active-b: 130.05;
   --bs-yellow-pale: #fffcd9;
-  --bs-yellow-pale-rgb: 255, 251.85000000000002, 216.75;
+    --bs-yellow-pale-rgb: 255, 251.85, 216.75;
   --bs-yellow-pale-r: 255;
   --bs-yellow-pale-g: 251.85;
   --bs-yellow-pale-b: 216.75;
   --bs-yellow-pale-hover: #fffac4;
-  --bs-yellow-pale-hover-rgb: 255, 250.17000000000004, 196.35;
+    --bs-yellow-pale-hover-rgb: 255, 250.17, 196.35;
   --bs-yellow-pale-hover-r: 255;
   --bs-yellow-pale-hover-g: 250.17;
   --bs-yellow-pale-hover-b: 196.35;
   --bs-yellow-pale-active: #fff79c;
-  --bs-yellow-pale-active-rgb: 255, 246.8100000000001, 155.55;
+    --bs-yellow-pale-active-rgb: 255, 246.81, 155.55;
   --bs-yellow-pale-active-r: 255;
   --bs-yellow-pale-active-g: 246.81;
   --bs-yellow-pale-active-b: 155.55;
@@ -3300,12 +3300,12 @@ a.card {
   --bs-orange-g: 168;
   --bs-orange-b: 7;
   --bs-orange-hover: #f29d00;
-  --bs-orange-hover-rgb: 241.6, 156.84516129032255, 0;
+    --bs-orange-hover-rgb: 241.6, 156.84516129, 0;
   --bs-orange-hover-r: 241.6;
   --bs-orange-hover-g: 156.84516129;
   --bs-orange-hover-b: 0;
   --bs-orange-active: #c98200;
-  --bs-orange-active-rgb: 200.8, 130.35806451612902, 0;
+    --bs-orange-active-rgb: 200.8, 130.35806452, 0;
   --bs-orange-active-r: 200.8;
   --bs-orange-active-g: 130.35806452;
   --bs-orange-active-b: 0;
@@ -3315,12 +3315,12 @@ a.card {
   --bs-orange-faded-g: 233.25;
   --bs-orange-faded-b: 193;
   --bs-orange-faded-hover: #ffe2ad;
-  --bs-orange-faded-hover-rgb: 255, 226.09354838709675, 172.59999999999997;
+    --bs-orange-faded-hover-rgb: 255, 226.09354839, 172.6;
   --bs-orange-faded-hover-r: 255;
   --bs-orange-faded-hover-g: 226.09354839;
   --bs-orange-faded-hover-b: 172.6;
   --bs-orange-faded-active: #ffd484;
-  --bs-orange-faded-active-rgb: 255, 211.78064516129027, 131.8;
+    --bs-orange-faded-active-rgb: 255, 211.78064516, 131.8;
   --bs-orange-faded-active-r: 255;
   --bs-orange-faded-active-g: 211.78064516;
   --bs-orange-faded-active-b: 131.8;
@@ -3330,12 +3330,12 @@ a.card {
   --bs-orange-pale-g: 241.95;
   --bs-orange-pale-b: 217.8;
   --bs-orange-pale-hover: #ffebc5;
-  --bs-orange-pale-hover-rgb: 255, 234.79354838709673, 197.39999999999995;
+    --bs-orange-pale-hover-rgb: 255, 234.79354839, 197.4;
   --bs-orange-pale-hover-r: 255;
   --bs-orange-pale-hover-g: 234.79354839;
   --bs-orange-pale-hover-b: 197.4;
   --bs-orange-pale-active: #ffdc9d;
-  --bs-orange-pale-active-rgb: 255, 220.48064516129025, 156.59999999999997;
+    --bs-orange-pale-active-rgb: 255, 220.48064516, 156.6;
   --bs-orange-pale-active-r: 255;
   --bs-orange-pale-active-g: 220.48064516;
   --bs-orange-pale-active-b: 156.6;
@@ -4047,7 +4047,7 @@ a.card {
   --bs-red-faded-hover-g: 170.85;
   --bs-red-faded-hover-b: 170.85;
   --bs-red-faded-active: #ff8282;
-  --bs-red-faded-active-rgb: 255, 130.05000000000004, 130.05000000000004;
+    --bs-red-faded-active-rgb: 255, 130.05, 130.05;
   --bs-red-faded-active-r: 255;
   --bs-red-faded-active-g: 130.05;
   --bs-red-faded-active-b: 130.05;
@@ -4754,7 +4754,7 @@ a.card {
   --bs-purple-g: 0;
   --bs-purple-b: 255;
   --bs-purple-hover: #9400eb;
-  --bs-purple-hover-rgb: 148.12, 0, 234.60000000000002;
+    --bs-purple-hover-rgb: 148.12, 0, 234.6;
   --bs-purple-hover-r: 148.12;
   --bs-purple-hover-g: 0;
   --bs-purple-hover-b: 234.6;
@@ -4774,7 +4774,7 @@ a.card {
   --bs-purple-faded-hover-g: 170.85;
   --bs-purple-faded-hover-b: 255;
   --bs-purple-faded-active: #d182ff;
-  --bs-purple-faded-active-rgb: 208.94, 130.05000000000004, 254.99999999999997;
+    --bs-purple-faded-active-rgb: 208.94, 130.05, 255;
   --bs-purple-faded-active-r: 208.94;
   --bs-purple-faded-active-g: 130.05;
   --bs-purple-faded-active-b: 255;
@@ -5481,7 +5481,7 @@ a.card {
   --bs-grey-light-g: 207.6;
   --bs-grey-light-b: 207.6;
   --bs-grey-light-hover: #c5c5c5;
-  --bs-grey-light-hover-rgb: 197.4, 197.39999999999998, 197.39999999999998;
+    --bs-grey-light-hover-rgb: 197.4, 197.4, 197.4;
   --bs-grey-light-hover-r: 197.4;
   --bs-grey-light-hover-g: 197.4;
   --bs-grey-light-hover-b: 197.4;
@@ -5496,7 +5496,7 @@ a.card {
   --bs-grey-light-faded-g: 243.15;
   --bs-grey-light-faded-b: 243.15;
   --bs-grey-light-faded-hover: #e9e9e9;
-  --bs-grey-light-faded-hover-rgb: 232.95, 232.95000000000002, 232.95000000000002;
+    --bs-grey-light-faded-hover-rgb: 232.95, 232.95, 232.95;
   --bs-grey-light-faded-hover-r: 232.95;
   --bs-grey-light-faded-hover-g: 232.95;
   --bs-grey-light-faded-hover-b: 232.95;
@@ -5506,17 +5506,17 @@ a.card {
   --bs-grey-light-faded-active-g: 212.55;
   --bs-grey-light-faded-active-b: 212.55;
   --bs-grey-light-pale: #f8f8f8;
-  --bs-grey-light-pale-rgb: 247.89, 247.89000000000001, 247.89000000000001;
+    --bs-grey-light-pale-rgb: 247.89, 247.89, 247.89;
   --bs-grey-light-pale-r: 247.89;
   --bs-grey-light-pale-g: 247.89;
   --bs-grey-light-pale-b: 247.89;
   --bs-grey-light-pale-hover: #eeeeee;
-  --bs-grey-light-pale-hover-rgb: 237.69, 237.69000000000003, 237.69000000000003;
+    --bs-grey-light-pale-hover-rgb: 237.69, 237.69, 237.69;
   --bs-grey-light-pale-hover-r: 237.69;
   --bs-grey-light-pale-hover-g: 237.69;
   --bs-grey-light-pale-hover-b: 237.69;
   --bs-grey-light-pale-active: #d9d9d9;
-  --bs-grey-light-pale-active-rgb: 217.29, 217.29000000000002, 217.29000000000002;
+    --bs-grey-light-pale-active-rgb: 217.29, 217.29, 217.29;
   --bs-grey-light-pale-active-r: 217.29;
   --bs-grey-light-pale-active-g: 217.29;
   --bs-grey-light-pale-active-b: 217.29;
@@ -6208,7 +6208,7 @@ a.card {
   --bs-grey-g: 176;
   --bs-grey-b: 176;
   --bs-grey-hover: #a6a6a6;
-  --bs-grey-hover-rgb: 165.8, 165.79999999999998, 165.79999999999998;
+    --bs-grey-hover-rgb: 165.8, 165.8, 165.8;
   --bs-grey-hover-r: 165.8;
   --bs-grey-hover-g: 165.8;
   --bs-grey-hover-b: 165.8;
@@ -6238,7 +6238,7 @@ a.card {
   --bs-grey-pale-g: 243.15;
   --bs-grey-pale-b: 243.15;
   --bs-grey-pale-hover: #e9e9e9;
-  --bs-grey-pale-hover-rgb: 232.95, 232.95000000000002, 232.95000000000002;
+    --bs-grey-pale-hover-rgb: 232.95, 232.95, 232.95;
   --bs-grey-pale-hover-r: 232.95;
   --bs-grey-pale-hover-g: 232.95;
   --bs-grey-pale-hover-b: 232.95;
@@ -6965,7 +6965,7 @@ a.card {
   --bs-grey-dark-pale-g: 232.59;
   --bs-grey-dark-pale-b: 232.59;
   --bs-grey-dark-pale-hover: #dedede;
-  --bs-grey-dark-pale-hover-rgb: 222.39, 222.39000000000001, 222.39000000000001;
+    --bs-grey-dark-pale-hover-rgb: 222.39, 222.39, 222.39;
   --bs-grey-dark-pale-hover-r: 222.39;
   --bs-grey-dark-pale-hover-g: 222.39;
   --bs-grey-dark-pale-hover-b: 222.39;
@@ -7662,12 +7662,12 @@ a.card {
   --bs-blue-g: 174;
   --bs-blue-b: 203;
   --bs-blue-hover: #009db7;
-  --bs-blue-hover-rgb: 0, 156.51428571428565, 182.6;
+    --bs-blue-hover-rgb: 0, 156.51428571, 182.6;
   --bs-blue-hover-r: 0;
   --bs-blue-hover-g: 156.51428571;
   --bs-blue-hover-b: 182.6;
   --bs-blue-active: #007a8e;
-  --bs-blue-active-rgb: 0, 121.54285714285709, 141.79999999999998;
+    --bs-blue-active-rgb: 0, 121.54285714, 141.8;
   --bs-blue-active-r: 0;
   --bs-blue-active-g: 121.54285714;
   --bs-blue-active-b: 141.8;
@@ -7677,12 +7677,12 @@ a.card {
   --bs-blue-faded-g: 234.75;
   --bs-blue-faded-b: 242;
   --bs-blue-faded-hover: #aee5ef;
-  --bs-blue-faded-hover-rgb: 174.30537459, 229.36758957654718, 238.5446254071661;
+    --bs-blue-faded-hover-rgb: 174.30537459, 229.36758958, 238.54462541;
   --bs-blue-faded-hover-r: 174.30537459;
   --bs-blue-faded-hover-g: 229.36758958;
   --bs-blue-faded-hover-b: 238.54462541;
   --bs-blue-faded-active: #8cdbe8;
-  --bs-blue-faded-active-rgb: 140.41612378, 218.6027687296417, 231.63387622149838;
+    --bs-blue-faded-active-rgb: 140.41612378, 218.60276873, 231.63387622;
   --bs-blue-faded-active-r: 140.41612378;
   --bs-blue-faded-active-g: 218.60276873;
   --bs-blue-faded-active-b: 231.63387622;
@@ -7692,12 +7692,12 @@ a.card {
   --bs-blue-pale-g: 242.85;
   --bs-blue-pale-b: 247.2;
   --bs-blue-pale-hover: #c8edf4;
-  --bs-blue-pale-hover-rgb: 199.80537459, 237.4675895765472, 243.7446254071661;
+    --bs-blue-pale-hover-rgb: 199.80537459, 237.46758958, 243.74462541;
   --bs-blue-pale-hover-r: 199.80537459;
   --bs-blue-pale-hover-g: 237.46758958;
   --bs-blue-pale-hover-b: 243.74462541;
   --bs-blue-pale-active: #a6e3ed;
-  --bs-blue-pale-active-rgb: 165.91612378, 226.70276872964166, 236.83387622149837;
+    --bs-blue-pale-active-rgb: 165.91612378, 226.70276873, 236.83387622;
   --bs-blue-pale-active-r: 165.91612378;
   --bs-blue-pale-active-g: 226.70276873;
   --bs-blue-pale-active-b: 236.83387622;
@@ -8404,7 +8404,7 @@ a.card {
   --bs-black-faded-g: 191.25;
   --bs-black-faded-b: 191.25;
   --bs-black-faded-hover: #b5b5b5;
-  --bs-black-faded-hover-rgb: 181.05, 181.04999999999998, 181.04999999999998;
+    --bs-black-faded-hover-rgb: 181.05, 181.05, 181.05;
   --bs-black-faded-hover-r: 181.05;
   --bs-black-faded-hover-g: 181.05;
   --bs-black-faded-hover-b: 181.05;
@@ -8419,7 +8419,7 @@ a.card {
   --bs-black-pale-g: 216.75;
   --bs-black-pale-b: 216.75;
   --bs-black-pale-hover: #cfcfcf;
-  --bs-black-pale-hover-rgb: 206.55, 206.54999999999998, 206.54999999999998;
+    --bs-black-pale-hover-rgb: 206.55, 206.55, 206.55;
   --bs-black-pale-hover-r: 206.55;
   --bs-black-pale-hover-g: 206.55;
   --bs-black-pale-hover-b: 206.55;
@@ -9116,12 +9116,12 @@ a.card {
   --bs-background-g: 245.55;
   --bs-background-b: 248.45;
   --bs-background-hover: #e6ebf1;
-  --bs-background-hover-rgb: 229.8727027, 235.12945945945947, 241.22729729729727;
+    --bs-background-hover-rgb: 229.8727027, 235.12945946, 241.2272973;
   --bs-background-hover-r: 229.8727027;
   --bs-background-hover-g: 235.12945946;
   --bs-background-hover-b: 241.2272973;
   --bs-background-active: #ccd6e3;
-  --bs-background-active-rgb: 203.51810811, 214.28837837837844, 226.7818918918918;
+    --bs-background-active-rgb: 203.51810811, 214.28837838, 226.78189189;
   --bs-background-active-r: 203.51810811;
   --bs-background-active-g: 214.28837838;
   --bs-background-active-b: 226.78189189;
@@ -9131,12 +9131,12 @@ a.card {
   --bs-background-faded-g: 252.6375;
   --bs-background-faded-b: 253.3625;
   --bs-background-faded-hover: #eff2f6;
-  --bs-background-faded-hover-rgb: 238.8352027, 242.21695945945942, 246.13979729729732;
+    --bs-background-faded-hover-rgb: 238.8352027, 242.21695946, 246.1397973;
   --bs-background-faded-hover-r: 238.8352027;
   --bs-background-faded-hover-g: 242.21695946;
   --bs-background-faded-hover-b: 246.1397973;
   --bs-background-faded-active: #d4dde8;
-  --bs-background-faded-active-rgb: 212.48060811, 221.37587837837822, 231.69439189189205;
+    --bs-background-faded-active-rgb: 212.48060811, 221.37587838, 231.69439189;
   --bs-background-faded-active-r: 212.48060811;
   --bs-background-faded-active-g: 221.37587838;
   --bs-background-faded-active-b: 231.69439189;
@@ -9146,12 +9146,12 @@ a.card {
   --bs-background-pale-g: 253.5825;
   --bs-background-pale-b: 254.0175;
   --bs-background-pale-hover: #f0f3f7;
-  --bs-background-pale-hover-rgb: 240.0302027, 243.1619594594594, 246.79479729729738;
+    --bs-background-pale-hover-rgb: 240.0302027, 243.16195946, 246.7947973;
   --bs-background-pale-hover-r: 240.0302027;
   --bs-background-pale-hover-g: 243.16195946;
   --bs-background-pale-hover-b: 246.7947973;
   --bs-background-pale-active: #d6dee8;
-  --bs-background-pale-active-rgb: 213.67560811, 222.32087837837824, 232.34939189189217;
+    --bs-background-pale-active-rgb: 213.67560811, 222.32087838, 232.34939189;
   --bs-background-pale-active-r: 213.67560811;
   --bs-background-pale-active-g: 222.32087838;
   --bs-background-pale-active-b: 232.34939189;
@@ -9843,12 +9843,12 @@ a.card {
   --bs-outer-g: 220;
   --bs-outer-b: 239;
   --bs-outer-hover: #9dd5ec;
-  --bs-outer-hover-rgb: 156.96494845, 212.63917525773198, 235.63505154639176;
+    --bs-outer-hover-rgb: 156.96494845, 212.63917526, 235.63505155;
   --bs-outer-hover-r: 156.96494845;
   --bs-outer-hover-g: 212.63917526;
   --bs-outer-hover-b: 235.63505155;
   --bs-outer-active: #7bc6e5;
-  --bs-outer-active-rgb: 122.89484536, 197.9175257731959, 228.90515463917527;
+    --bs-outer-active-rgb: 122.89484536, 197.91752577, 228.90515464;
   --bs-outer-active-r: 122.89484536;
   --bs-outer-active-g: 197.91752577;
   --bs-outer-active-b: 228.90515464;
@@ -9858,27 +9858,27 @@ a.card {
   --bs-outer-faded-g: 246.25;
   --bs-outer-faded-b: 251;
   --bs-outer-faded-hover: #daeff8;
-  --bs-outer-faded-hover-rgb: 217.71494845, 238.88917525773195, 247.63505154639176;
+    --bs-outer-faded-hover-rgb: 217.71494845, 238.88917526, 247.63505155;
   --bs-outer-faded-hover-r: 217.71494845;
   --bs-outer-faded-hover-g: 238.88917526;
   --bs-outer-faded-hover-b: 247.63505155;
   --bs-outer-faded-active: #b8e0f1;
-  --bs-outer-faded-active-rgb: 183.64484536, 224.16752577319593, 240.90515463917527;
+    --bs-outer-faded-active-rgb: 183.64484536, 224.16752577, 240.90515464;
   --bs-outer-faded-active-r: 183.64484536;
   --bs-outer-faded-active-g: 224.16752577;
   --bs-outer-faded-active-b: 240.90515464;
   --bs-outer-pale: #f3fafd;
-  --bs-outer-pale-rgb: 242.85, 249.75, 252.60000000000002;
+    --bs-outer-pale-rgb: 242.85, 249.75, 252.6;
   --bs-outer-pale-r: 242.85;
   --bs-outer-pale-g: 249.75;
   --bs-outer-pale-b: 252.6;
   --bs-outer-pale-hover: #e2f2f9;
-  --bs-outer-pale-hover-rgb: 225.81494845, 242.38917525773192, 249.23505154639182;
+    --bs-outer-pale-hover-rgb: 225.81494845, 242.38917526, 249.23505155;
   --bs-outer-pale-hover-r: 225.81494845;
   --bs-outer-pale-hover-g: 242.38917526;
   --bs-outer-pale-hover-b: 249.23505155;
   --bs-outer-pale-active: #c0e4f3;
-  --bs-outer-pale-active-rgb: 191.74484536, 227.6675257731958, 242.50515463917537;
+    --bs-outer-pale-active-rgb: 191.74484536, 227.66752577, 242.50515464;
   --bs-outer-pale-active-r: 191.74484536;
   --bs-outer-pale-active-g: 227.66752577;
   --bs-outer-pale-active-b: 242.50515464;
@@ -10570,12 +10570,12 @@ a.card {
   --bs-outer-light-g: 234;
   --bs-outer-light-b: 245.4;
   --bs-outer-light-hover: #bde3f2;
-  --bs-outer-light-hover-rgb: 189.36494845, 226.63917525773192, 242.03505154639177;
+    --bs-outer-light-hover-rgb: 189.36494845, 226.63917526, 242.03505155;
   --bs-outer-light-hover-r: 189.36494845;
   --bs-outer-light-hover-g: 226.63917526;
   --bs-outer-light-hover-b: 242.03505155;
   --bs-outer-light-active: #9bd4eb;
-  --bs-outer-light-active-rgb: 155.29484536, 211.91752577319585, 235.3051546391753;
+    --bs-outer-light-active-rgb: 155.29484536, 211.91752577, 235.30515464;
   --bs-outer-light-active-r: 155.29484536;
   --bs-outer-light-active-g: 211.91752577;
   --bs-outer-light-active-b: 235.30515464;
@@ -10585,27 +10585,27 @@ a.card {
   --bs-outer-light-faded-g: 249.75;
   --bs-outer-light-faded-b: 252.6;
   --bs-outer-light-faded-hover: #e2f2f9;
-  --bs-outer-light-faded-hover-rgb: 225.81494845, 242.38917525773195, 249.2350515463918;
+    --bs-outer-light-faded-hover-rgb: 225.81494845, 242.38917526, 249.23505155;
   --bs-outer-light-faded-hover-r: 225.81494845;
   --bs-outer-light-faded-hover-g: 242.38917526;
   --bs-outer-light-faded-hover-b: 249.23505155;
   --bs-outer-light-faded-active: #c0e4f3;
-  --bs-outer-light-faded-active-rgb: 191.74484536, 227.66752577319585, 242.50515463917534;
+    --bs-outer-light-faded-active-rgb: 191.74484536, 227.66752577, 242.50515464;
   --bs-outer-light-faded-active-r: 191.74484536;
   --bs-outer-light-faded-active-g: 227.66752577;
   --bs-outer-light-faded-active-b: 242.50515464;
   --bs-outer-light-pale: #f8fcfe;
-  --bs-outer-light-pale-rgb: 247.71, 251.85000000000002, 253.56;
+    --bs-outer-light-pale-rgb: 247.71, 251.85, 253.56;
   --bs-outer-light-pale-r: 247.71;
   --bs-outer-light-pale-g: 251.85;
   --bs-outer-light-pale-b: 253.56;
   --bs-outer-light-pale-hover: #e7f4fa;
-  --bs-outer-light-pale-hover-rgb: 230.67494845, 244.4891752577321, 250.1950515463917;
+    --bs-outer-light-pale-hover-rgb: 230.67494845, 244.48917526, 250.19505155;
   --bs-outer-light-pale-hover-r: 230.67494845;
   --bs-outer-light-pale-hover-g: 244.48917526;
   --bs-outer-light-pale-hover-b: 250.19505155;
   --bs-outer-light-pale-active: #c5e6f3;
-  --bs-outer-light-pale-active-rgb: 196.60484536, 229.76752577319616, 243.46515463917527;
+    --bs-outer-light-pale-active-rgb: 196.60484536, 229.76752577, 243.46515464;
   --bs-outer-light-pale-active-r: 196.60484536;
   --bs-outer-light-pale-active-g: 229.76752577;
   --bs-outer-light-pale-active-b: 243.46515464;
@@ -11297,12 +11297,12 @@ a.card {
   --bs-outer-dark-g: 158.4;
   --bs-outer-dark-b: 193;
   --bs-outer-dark-hover: #6195bb;
-  --bs-outer-dark-hover-rgb: 96.53385063, 148.843064985451, 186.86614936954413;
+    --bs-outer-dark-hover-rgb: 96.53385063, 148.84306499, 186.86614937;
   --bs-outer-dark-hover-r: 96.53385063;
   --bs-outer-dark-hover-g: 148.84306499;
   --bs-outer-dark-hover-b: 186.86614937;
   --bs-outer-dark-active: #4981aa;
-  --bs-outer-dark-active-rgb: 72.94471387, 128.9474296799224, 169.6552861299709;
+    --bs-outer-dark-active-rgb: 72.94471387, 128.94742968, 169.65528613;
   --bs-outer-dark-active-r: 72.94471387;
   --bs-outer-dark-active-g: 128.94742968;
   --bs-outer-dark-active-b: 169.65528613;
@@ -11312,12 +11312,12 @@ a.card {
   --bs-outer-dark-faded-g: 230.85;
   --bs-outer-dark-faded-b: 239.5;
   --bs-outer-dark-faded-hover: #cddde9;
-  --bs-outer-dark-faded-hover-rgb: 204.68385063, 221.29306498545102, 233.36614936954413;
+    --bs-outer-dark-faded-hover-rgb: 204.68385063, 221.29306499, 233.36614937;
   --bs-outer-dark-faded-hover-r: 204.68385063;
   --bs-outer-dark-faded-hover-g: 221.29306499;
   --bs-outer-dark-faded-hover-b: 233.36614937;
   --bs-outer-dark-faded-active: #b0cadd;
-  --bs-outer-dark-faded-active-rgb: 176.15155189, 202.1791949563531, 221.0984481086324;
+    --bs-outer-dark-faded-active-rgb: 176.15155189, 202.17919496, 221.09844811;
   --bs-outer-dark-faded-active-r: 176.15155189;
   --bs-outer-dark-faded-active-g: 202.17919496;
   --bs-outer-dark-faded-active-b: 221.09844811;
@@ -11327,12 +11327,12 @@ a.card {
   --bs-outer-dark-pale-g: 240.51;
   --bs-outer-dark-pale-b: 245.7;
   --bs-outer-dark-pale-hover: #dbe7f0;
-  --bs-outer-dark-pale-hover-rgb: 219.10385063, 230.953064985451, 239.5661493695441;
+    --bs-outer-dark-pale-hover-rgb: 219.10385063, 230.95306499, 239.56614937;
   --bs-outer-dark-pale-hover-r: 219.10385063;
   --bs-outer-dark-pale-hover-g: 230.95306499;
   --bs-outer-dark-pale-hover-b: 239.56614937;
   --bs-outer-dark-pale-active: #bfd4e3;
-  --bs-outer-dark-pale-active-rgb: 190.57155189, 211.83919495635305, 227.29844810863233;
+    --bs-outer-dark-pale-active-rgb: 190.57155189, 211.83919496, 227.29844811;
   --bs-outer-dark-pale-active-r: 190.57155189;
   --bs-outer-dark-pale-active-g: 211.83919496;
   --bs-outer-dark-pale-active-b: 227.29844811;
@@ -12024,12 +12024,12 @@ a.card {
   --bs-primary-g: 66;
   --bs-primary-b: 124;
   --bs-primary-hover: #0e386a;
-  --bs-primary-hover-rgb: 13.66857143, 56.3828571428571, 105.93142857142857;
+    --bs-primary-hover-rgb: 13.66857143, 56.38285714, 105.93142857;
   --bs-primary-hover-r: 13.66857143;
   --bs-primary-hover-g: 56.38285714;
   --bs-primary-hover-b: 105.93142857;
   --bs-primary-active: #092546;
-  --bs-primary-active-rgb: 9.00571429, 37.148571428571394, 69.79428571428572;
+    --bs-primary-active-rgb: 9.00571429, 37.14857143, 69.79428571;
   --bs-primary-active-r: 9.00571429;
   --bs-primary-active-g: 37.14857143;
   --bs-primary-active-b: 69.79428571;
@@ -12039,12 +12039,12 @@ a.card {
   --bs-primary-faded-g: 207.75;
   --bs-primary-faded-b: 222.25;
   --bs-primary-faded-hover: #b6c5d7;
-  --bs-primary-faded-hover-rgb: 182.0727027, 197.32945945945943, 215.02729729729728;
+    --bs-primary-faded-hover-rgb: 182.0727027, 197.32945946, 215.0272973;
   --bs-primary-faded-hover-r: 182.0727027;
   --bs-primary-faded-hover-g: 197.32945946;
   --bs-primary-faded-hover-b: 215.0272973;
   --bs-primary-faded-active: #9cb0c9;
-  --bs-primary-faded-active-rgb: 155.71810811, 176.48837837837834, 200.5818918918919;
+    --bs-primary-faded-active-rgb: 155.71810811, 176.48837838, 200.58189189;
   --bs-primary-faded-active-r: 155.71810811;
   --bs-primary-faded-active-g: 176.48837838;
   --bs-primary-faded-active-b: 200.58189189;
@@ -12054,12 +12054,12 @@ a.card {
   --bs-primary-pale-g: 226.65;
   --bs-primary-pale-b: 235.35;
   --bs-primary-pale-hover: #ced8e4;
-  --bs-primary-pale-hover-rgb: 205.9727027, 216.22945945945943, 228.12729729729728;
+    --bs-primary-pale-hover-rgb: 205.9727027, 216.22945946, 228.1272973;
   --bs-primary-pale-hover-r: 205.9727027;
   --bs-primary-pale-hover-g: 216.22945946;
   --bs-primary-pale-hover-b: 228.1272973;
   --bs-primary-pale-active: #b4c3d6;
-  --bs-primary-pale-active-rgb: 179.61810811, 195.38837837837835, 213.68189189189192;
+    --bs-primary-pale-active-rgb: 179.61810811, 195.38837838, 213.68189189;
   --bs-primary-pale-active-r: 179.61810811;
   --bs-primary-pale-active-g: 195.38837838;
   --bs-primary-pale-active-b: 213.68189189;
@@ -12751,12 +12751,12 @@ a.card {
   --bs-secondary-g: 99.5;
   --bs-secondary-b: 142.5;
   --bs-secondary-hover: #07567b;
-  --bs-secondary-hover-rgb: 6.91561462, 86.01295681063121, 123.18438538205982;
+    --bs-secondary-hover-rgb: 6.91561462, 86.01295681, 123.18438538;
   --bs-secondary-hover-r: 6.91561462;
   --bs-secondary-hover-g: 86.01295681;
   --bs-secondary-hover-b: 123.18438538;
   --bs-secondary-active: #053b55;
-  --bs-secondary-active-rgb: 4.74684385, 59.03887043189367, 84.5531561461794;
+    --bs-secondary-active-rgb: 4.74684385, 59.03887043, 84.55315615;
   --bs-secondary-active-r: 4.74684385;
   --bs-secondary-active-g: 59.03887043;
   --bs-secondary-active-b: 84.55315615;
@@ -12766,12 +12766,12 @@ a.card {
   --bs-secondary-faded-g: 216.125;
   --bs-secondary-faded-b: 226.875;
   --bs-secondary-faded-hover: #b3cfdc;
-  --bs-secondary-faded-hover-rgb: 179.23386648, 207.30107788595268, 220.49113351877605;
+    --bs-secondary-faded-hover-rgb: 179.23386648, 207.30107789, 220.49113352;
   --bs-secondary-faded-hover-r: 179.23386648;
   --bs-secondary-faded-hover-g: 207.30107789;
   --bs-secondary-faded-hover-b: 220.49113352;
   --bs-secondary-faded-active: #97bed0;
-  --bs-secondary-faded-active-rgb: 151.20159944, 189.65323365785812, 207.72340055632824;
+    --bs-secondary-faded-active-rgb: 151.20159944, 189.65323366, 207.72340056;
   --bs-secondary-faded-active-r: 151.20159944;
   --bs-secondary-faded-active-g: 189.65323366;
   --bs-secondary-faded-active-b: 207.72340056;
@@ -12781,12 +12781,12 @@ a.card {
   --bs-secondary-pale-g: 231.675;
   --bs-secondary-pale-b: 238.125;
   --bs-secondary-pale-hover: #ccdfe8;
-  --bs-secondary-pale-hover-rgb: 203.93386648, 222.85107788595272, 231.74113351877605;
+    --bs-secondary-pale-hover-rgb: 203.93386648, 222.85107789, 231.74113352;
   --bs-secondary-pale-hover-r: 203.93386648;
   --bs-secondary-pale-hover-g: 222.85107789;
   --bs-secondary-pale-hover-b: 231.74113352;
   --bs-secondary-pale-active: #b0cddb;
-  --bs-secondary-pale-active-rgb: 175.90159944, 205.20323365785816, 218.97340055632827;
+    --bs-secondary-pale-active-rgb: 175.90159944, 205.20323366, 218.97340056;
   --bs-secondary-pale-active-r: 175.90159944;
   --bs-secondary-pale-active-g: 205.20323366;
   --bs-secondary-pale-active-b: 218.97340056;
@@ -13478,12 +13478,12 @@ a.card {
   --bs-tertiary-g: 220;
   --bs-tertiary-b: 239;
   --bs-tertiary-hover: #9dd5ec;
-  --bs-tertiary-hover-rgb: 156.96494845, 212.63917525773198, 235.63505154639176;
+    --bs-tertiary-hover-rgb: 156.96494845, 212.63917526, 235.63505155;
   --bs-tertiary-hover-r: 156.96494845;
   --bs-tertiary-hover-g: 212.63917526;
   --bs-tertiary-hover-b: 235.63505155;
   --bs-tertiary-active: #7bc6e5;
-  --bs-tertiary-active-rgb: 122.89484536, 197.9175257731959, 228.90515463917527;
+    --bs-tertiary-active-rgb: 122.89484536, 197.91752577, 228.90515464;
   --bs-tertiary-active-r: 122.89484536;
   --bs-tertiary-active-g: 197.91752577;
   --bs-tertiary-active-b: 228.90515464;
@@ -13493,27 +13493,27 @@ a.card {
   --bs-tertiary-faded-g: 246.25;
   --bs-tertiary-faded-b: 251;
   --bs-tertiary-faded-hover: #daeff8;
-  --bs-tertiary-faded-hover-rgb: 217.71494845, 238.88917525773195, 247.63505154639176;
+    --bs-tertiary-faded-hover-rgb: 217.71494845, 238.88917526, 247.63505155;
   --bs-tertiary-faded-hover-r: 217.71494845;
   --bs-tertiary-faded-hover-g: 238.88917526;
   --bs-tertiary-faded-hover-b: 247.63505155;
   --bs-tertiary-faded-active: #b8e0f1;
-  --bs-tertiary-faded-active-rgb: 183.64484536, 224.16752577319593, 240.90515463917527;
+    --bs-tertiary-faded-active-rgb: 183.64484536, 224.16752577, 240.90515464;
   --bs-tertiary-faded-active-r: 183.64484536;
   --bs-tertiary-faded-active-g: 224.16752577;
   --bs-tertiary-faded-active-b: 240.90515464;
   --bs-tertiary-pale: #f3fafd;
-  --bs-tertiary-pale-rgb: 242.85, 249.75, 252.60000000000002;
+    --bs-tertiary-pale-rgb: 242.85, 249.75, 252.6;
   --bs-tertiary-pale-r: 242.85;
   --bs-tertiary-pale-g: 249.75;
   --bs-tertiary-pale-b: 252.6;
   --bs-tertiary-pale-hover: #e2f2f9;
-  --bs-tertiary-pale-hover-rgb: 225.81494845, 242.38917525773192, 249.23505154639182;
+    --bs-tertiary-pale-hover-rgb: 225.81494845, 242.38917526, 249.23505155;
   --bs-tertiary-pale-hover-r: 225.81494845;
   --bs-tertiary-pale-hover-g: 242.38917526;
   --bs-tertiary-pale-hover-b: 249.23505155;
   --bs-tertiary-pale-active: #c0e4f3;
-  --bs-tertiary-pale-active-rgb: 191.74484536, 227.6675257731958, 242.50515463917537;
+    --bs-tertiary-pale-active-rgb: 191.74484536, 227.66752577, 242.50515464;
   --bs-tertiary-pale-active-r: 191.74484536;
   --bs-tertiary-pale-active-g: 227.66752577;
   --bs-tertiary-pale-active-b: 242.50515464;
@@ -14200,17 +14200,17 @@ a.card {
 }
 :root {
   --bs-primary-light: #708eb0;
-  --bs-primary-light-rgb: 111.6, 141.6, 176.39999999999998;
+    --bs-primary-light-rgb: 111.6, 141.6, 176.4;
   --bs-primary-light-r: 111.6;
   --bs-primary-light-g: 141.6;
   --bs-primary-light-b: 176.4;
   --bs-primary-light-hover: #6283a9;
-  --bs-primary-light-hover-rgb: 98.4227027, 131.17945945945942, 169.1772972972973;
+    --bs-primary-light-hover-rgb: 98.4227027, 131.17945946, 169.1772973;
   --bs-primary-light-hover-r: 98.4227027;
   --bs-primary-light-hover-g: 131.17945946;
   --bs-primary-light-hover-b: 169.1772973;
   --bs-primary-light-active: #506f93;
-  --bs-primary-light-active-rgb: 80.29945946, 110.94810810810812, 146.50054054054053;
+    --bs-primary-light-active-rgb: 80.29945946, 110.94810811, 146.50054054;
   --bs-primary-light-active-r: 80.29945946;
   --bs-primary-light-active-g: 110.94810811;
   --bs-primary-light-active-b: 146.50054054;
@@ -14220,12 +14220,12 @@ a.card {
   --bs-primary-light-faded-g: 226.65;
   --bs-primary-light-faded-b: 235.35;
   --bs-primary-light-faded-hover: #ced8e4;
-  --bs-primary-light-faded-hover-rgb: 205.9727027, 216.22945945945943, 228.12729729729728;
+    --bs-primary-light-faded-hover-rgb: 205.9727027, 216.22945946, 228.1272973;
   --bs-primary-light-faded-hover-r: 205.9727027;
   --bs-primary-light-faded-hover-g: 216.22945946;
   --bs-primary-light-faded-hover-b: 228.1272973;
   --bs-primary-light-faded-active: #b4c3d6;
-  --bs-primary-light-faded-active-rgb: 179.61810811, 195.38837837837835, 213.68189189189192;
+    --bs-primary-light-faded-active-rgb: 179.61810811, 195.38837838, 213.68189189;
   --bs-primary-light-faded-active-r: 179.61810811;
   --bs-primary-light-faded-active-g: 195.38837838;
   --bs-primary-light-faded-active-b: 213.68189189;
@@ -14235,12 +14235,12 @@ a.card {
   --bs-primary-light-pale-g: 237.99;
   --bs-primary-light-pale-b: 243.21;
   --bs-primary-light-pale-hover: #dce4ec;
-  --bs-primary-light-pale-hover-rgb: 220.3127027, 227.56945945945947, 235.98729729729735;
+    --bs-primary-light-pale-hover-rgb: 220.3127027, 227.56945946, 235.9872973;
   --bs-primary-light-pale-hover-r: 220.3127027;
   --bs-primary-light-pale-hover-g: 227.56945946;
   --bs-primary-light-pale-hover-b: 235.9872973;
   --bs-primary-light-pale-active: #c2cfde;
-  --bs-primary-light-pale-active-rgb: 193.95810811, 206.72837837837835, 221.54189189189188;
+    --bs-primary-light-pale-active-rgb: 193.95810811, 206.72837838, 221.54189189;
   --bs-primary-light-pale-active-r: 193.95810811;
   --bs-primary-light-pale-active-g: 206.72837838;
   --bs-primary-light-pale-active-b: 221.54189189;
@@ -14927,17 +14927,17 @@ a.card {
 }
 :root {
   --bs-primary-dark: #0a284a;
-  --bs-primary-dark-rgb: 9.6, 39.6, 74.39999999999999;
+    --bs-primary-dark-rgb: 9.6, 39.6, 74.4;
   --bs-primary-dark-r: 9.6;
   --bs-primary-dark-g: 39.6;
   --bs-primary-dark-b: 74.4;
   --bs-primary-dark-hover: #071e38;
-  --bs-primary-dark-hover-rgb: 7.26857143, 29.982857142857142, 56.33142857142857;
+    --bs-primary-dark-hover-rgb: 7.26857143, 29.98285714, 56.33142857;
   --bs-primary-dark-hover-r: 7.26857143;
   --bs-primary-dark-hover-g: 29.98285714;
   --bs-primary-dark-hover-b: 56.33142857;
   --bs-primary-dark-active: #030b14;
-  --bs-primary-dark-active-rgb: 2.60571429, 10.748571428571429, 20.194285714285716;
+    --bs-primary-dark-active-rgb: 2.60571429, 10.74857143, 20.19428571;
   --bs-primary-dark-active-r: 2.60571429;
   --bs-primary-dark-active-g: 10.74857143;
   --bs-primary-dark-active-b: 20.19428571;
@@ -14947,12 +14947,12 @@ a.card {
   --bs-primary-dark-faded-g: 201.15;
   --bs-primary-dark-faded-b: 209.85;
   --bs-primary-dark-faded-hover: #b6bfc9;
-  --bs-primary-dark-faded-hover-rgb: 181.8984507, 190.8350704225352, 201.2015492957746;
+    --bs-primary-dark-faded-hover-rgb: 181.8984507, 190.83507042, 201.2015493;
   --bs-primary-dark-faded-hover-r: 181.8984507;
   --bs-primary-dark-faded-hover-g: 190.83507042;
   --bs-primary-dark-faded-hover-b: 201.2015493;
   --bs-primary-dark-faded-active: #9eaab8;
-  --bs-primary-dark-faded-active-rgb: 158.39535211, 170.20521126760562, 183.9046478873239;
+    --bs-primary-dark-faded-active-rgb: 158.39535211, 170.20521127, 183.90464789;
   --bs-primary-dark-faded-active-r: 158.39535211;
   --bs-primary-dark-faded-active-g: 170.20521127;
   --bs-primary-dark-faded-active-b: 183.90464789;
@@ -14962,12 +14962,12 @@ a.card {
   --bs-primary-dark-pale-g: 222.69;
   --bs-primary-dark-pale-b: 227.91;
   --bs-primary-dark-pale-hover: #ced4db;
-  --bs-primary-dark-pale-hover-rgb: 206.4384507, 212.3750704225352, 219.2615492957746;
+    --bs-primary-dark-pale-hover-rgb: 206.4384507, 212.37507042, 219.2615493;
   --bs-primary-dark-pale-hover-r: 206.4384507;
   --bs-primary-dark-pale-hover-g: 212.37507042;
   --bs-primary-dark-pale-hover-b: 219.2615493;
   --bs-primary-dark-pale-active: #b7c0ca;
-  --bs-primary-dark-pale-active-rgb: 182.93535211, 191.7452112676056, 201.96464788732396;
+    --bs-primary-dark-pale-active-rgb: 182.93535211, 191.74521127, 201.96464789;
   --bs-primary-dark-pale-active-r: 182.93535211;
   --bs-primary-dark-pale-active-g: 191.74521127;
   --bs-primary-dark-pale-active-b: 201.96464789;
@@ -15659,12 +15659,12 @@ a.card {
   --bs-secondary-light-g: 161.7;
   --bs-secondary-light-b: 187.5;
   --bs-secondary-light-hover: #5d99b5;
-  --bs-secondary-light-hover-rgb: 92.78386648, 152.87607788595264, 181.11613351877608;
+    --bs-secondary-light-hover-rgb: 92.78386648, 152.87607789, 181.11613352;
   --bs-secondary-light-hover-r: 92.78386648;
   --bs-secondary-light-hover-g: 152.87607789;
   --bs-secondary-light-hover-b: 181.11613352;
   --bs-secondary-light-active: #4984a0;
-  --bs-secondary-light-active-rgb: 72.94506259, 132.2737134909596, 160.15493741307375;
+    --bs-secondary-light-active-rgb: 72.94506259, 132.27371349, 160.15493741;
   --bs-secondary-light-active-r: 72.94506259;
   --bs-secondary-light-active-g: 132.27371349;
   --bs-secondary-light-active-b: 160.15493741;
@@ -15674,12 +15674,12 @@ a.card {
   --bs-secondary-light-faded-g: 231.675;
   --bs-secondary-light-faded-b: 238.125;
   --bs-secondary-light-faded-hover: #ccdfe8;
-  --bs-secondary-light-faded-hover-rgb: 203.93386648, 222.85107788595272, 231.74113351877605;
+    --bs-secondary-light-faded-hover-rgb: 203.93386648, 222.85107789, 231.74113352;
   --bs-secondary-light-faded-hover-r: 203.93386648;
   --bs-secondary-light-faded-hover-g: 222.85107789;
   --bs-secondary-light-faded-hover-b: 231.74113352;
   --bs-secondary-light-faded-active: #b0cddb;
-  --bs-secondary-light-faded-active-rgb: 175.90159944, 205.20323365785816, 218.97340055632827;
+    --bs-secondary-light-faded-active-rgb: 175.90159944, 205.20323366, 218.97340056;
   --bs-secondary-light-faded-active-r: 175.90159944;
   --bs-secondary-light-faded-active-g: 205.20323366;
   --bs-secondary-light-faded-active-b: 218.97340056;
@@ -15689,12 +15689,12 @@ a.card {
   --bs-secondary-light-pale-g: 241.005;
   --bs-secondary-light-pale-b: 244.875;
   --bs-secondary-light-pale-hover: #dbe8ee;
-  --bs-secondary-light-pale-hover-rgb: 218.75386648, 232.1810778859527, 238.4911335187761;
+    --bs-secondary-light-pale-hover-rgb: 218.75386648, 232.18107789, 238.49113352;
   --bs-secondary-light-pale-hover-r: 218.75386648;
   --bs-secondary-light-pale-hover-g: 232.18107789;
   --bs-secondary-light-pale-hover-b: 238.49113352;
   --bs-secondary-light-pale-active: #bfd7e2;
-  --bs-secondary-light-pale-active-rgb: 190.72159944, 214.5332336578581, 225.72340055632822;
+    --bs-secondary-light-pale-active-rgb: 190.72159944, 214.53323366, 225.72340056;
   --bs-secondary-light-pale-active-r: 190.72159944;
   --bs-secondary-light-pale-active-g: 214.53323366;
   --bs-secondary-light-pale-active-b: 225.72340056;
@@ -16381,17 +16381,17 @@ a.card {
 }
 :root {
   --bs-secondary-dark: #053c56;
-  --bs-secondary-dark-rgb: 4.8, 59.699999999999996, 85.5;
+    --bs-secondary-dark-rgb: 4.8, 59.7, 85.5;
   --bs-secondary-dark-r: 4.8;
   --bs-secondary-dark-g: 59.7;
   --bs-secondary-dark-b: 85.5;
   --bs-secondary-dark-hover: #042e42;
-  --bs-secondary-dark-hover-rgb: 3.71561462, 46.21295681063121, 66.18438538205979;
+    --bs-secondary-dark-hover-rgb: 3.71561462, 46.21295681, 66.18438538;
   --bs-secondary-dark-hover-r: 3.71561462;
   --bs-secondary-dark-hover-g: 46.21295681;
   --bs-secondary-dark-hover-b: 66.18438538;
   --bs-secondary-dark-active: #02131c;
-  --bs-secondary-dark-active-rgb: 1.54684385, 19.23887043189368, 27.553156146179397;
+    --bs-secondary-dark-active-rgb: 1.54684385, 19.23887043, 27.55315615;
   --bs-secondary-dark-active-r: 1.54684385;
   --bs-secondary-dark-active-g: 19.23887043;
   --bs-secondary-dark-active-b: 27.55315615;
@@ -16401,12 +16401,12 @@ a.card {
   --bs-secondary-dark-faded-g: 206.175;
   --bs-secondary-dark-faded-b: 212.625;
   --bs-secondary-dark-faded-hover: #b4c5cc;
-  --bs-secondary-dark-faded-hover-rgb: 180.28874196, 196.68221944245892, 204.3862580414582;
+    --bs-secondary-dark-faded-hover-rgb: 180.28874196, 196.68221944, 204.38625804;
   --bs-secondary-dark-faded-hover-r: 180.28874196;
   --bs-secondary-dark-faded-hover-g: 196.68221944;
   --bs-secondary-dark-faded-hover-b: 204.38625804;
   --bs-secondary-dark-faded-active: #9cb2bc;
-  --bs-secondary-dark-faded-active-rgb: 155.96622588, 177.69665832737672, 187.9087741243746;
+    --bs-secondary-dark-faded-active-rgb: 155.96622588, 177.69665833, 187.90877412;
   --bs-secondary-dark-faded-active-r: 155.96622588;
   --bs-secondary-dark-faded-active-g: 177.69665833;
   --bs-secondary-dark-faded-active-b: 187.90877412;
@@ -16416,12 +16416,12 @@ a.card {
   --bs-secondary-dark-pale-g: 225.705;
   --bs-secondary-dark-pale-b: 229.575;
   --bs-secondary-dark-pale-hover: #cdd8dd;
-  --bs-secondary-dark-pale-hover-rgb: 205.30874196, 216.21221944245892, 221.33625804145822;
+    --bs-secondary-dark-pale-hover-rgb: 205.30874196, 216.21221944, 221.33625804;
   --bs-secondary-dark-pale-hover-r: 205.30874196;
   --bs-secondary-dark-pale-hover-g: 216.21221944;
   --bs-secondary-dark-pale-hover-b: 221.33625804;
   --bs-secondary-dark-pale-active: #b5c5cd;
-  --bs-secondary-dark-pale-active-rgb: 180.98622588, 197.22665832737673, 204.85877412437458;
+    --bs-secondary-dark-pale-active-rgb: 180.98622588, 197.22665833, 204.85877412;
   --bs-secondary-dark-pale-active-r: 180.98622588;
   --bs-secondary-dark-pale-active-g: 197.22665833;
   --bs-secondary-dark-pale-active-b: 204.85877412;
@@ -17113,12 +17113,12 @@ a.card {
   --bs-tertiary-light-g: 234;
   --bs-tertiary-light-b: 245.4;
   --bs-tertiary-light-hover: #bde3f2;
-  --bs-tertiary-light-hover-rgb: 189.36494845, 226.63917525773192, 242.03505154639177;
+    --bs-tertiary-light-hover-rgb: 189.36494845, 226.63917526, 242.03505155;
   --bs-tertiary-light-hover-r: 189.36494845;
   --bs-tertiary-light-hover-g: 226.63917526;
   --bs-tertiary-light-hover-b: 242.03505155;
   --bs-tertiary-light-active: #9bd4eb;
-  --bs-tertiary-light-active-rgb: 155.29484536, 211.91752577319585, 235.3051546391753;
+    --bs-tertiary-light-active-rgb: 155.29484536, 211.91752577, 235.30515464;
   --bs-tertiary-light-active-r: 155.29484536;
   --bs-tertiary-light-active-g: 211.91752577;
   --bs-tertiary-light-active-b: 235.30515464;
@@ -17128,27 +17128,27 @@ a.card {
   --bs-tertiary-light-faded-g: 249.75;
   --bs-tertiary-light-faded-b: 252.6;
   --bs-tertiary-light-faded-hover: #e2f2f9;
-  --bs-tertiary-light-faded-hover-rgb: 225.81494845, 242.38917525773195, 249.2350515463918;
+    --bs-tertiary-light-faded-hover-rgb: 225.81494845, 242.38917526, 249.23505155;
   --bs-tertiary-light-faded-hover-r: 225.81494845;
   --bs-tertiary-light-faded-hover-g: 242.38917526;
   --bs-tertiary-light-faded-hover-b: 249.23505155;
   --bs-tertiary-light-faded-active: #c0e4f3;
-  --bs-tertiary-light-faded-active-rgb: 191.74484536, 227.66752577319585, 242.50515463917534;
+    --bs-tertiary-light-faded-active-rgb: 191.74484536, 227.66752577, 242.50515464;
   --bs-tertiary-light-faded-active-r: 191.74484536;
   --bs-tertiary-light-faded-active-g: 227.66752577;
   --bs-tertiary-light-faded-active-b: 242.50515464;
   --bs-tertiary-light-pale: #f8fcfe;
-  --bs-tertiary-light-pale-rgb: 247.71, 251.85000000000002, 253.56;
+    --bs-tertiary-light-pale-rgb: 247.71, 251.85, 253.56;
   --bs-tertiary-light-pale-r: 247.71;
   --bs-tertiary-light-pale-g: 251.85;
   --bs-tertiary-light-pale-b: 253.56;
   --bs-tertiary-light-pale-hover: #e7f4fa;
-  --bs-tertiary-light-pale-hover-rgb: 230.67494845, 244.4891752577321, 250.1950515463917;
+    --bs-tertiary-light-pale-hover-rgb: 230.67494845, 244.48917526, 250.19505155;
   --bs-tertiary-light-pale-hover-r: 230.67494845;
   --bs-tertiary-light-pale-hover-g: 244.48917526;
   --bs-tertiary-light-pale-hover-b: 250.19505155;
   --bs-tertiary-light-pale-active: #c5e6f3;
-  --bs-tertiary-light-pale-active-rgb: 196.60484536, 229.76752577319616, 243.46515463917527;
+    --bs-tertiary-light-pale-active-rgb: 196.60484536, 229.76752577, 243.46515464;
   --bs-tertiary-light-pale-active-r: 196.60484536;
   --bs-tertiary-light-pale-active-g: 229.76752577;
   --bs-tertiary-light-pale-active-b: 243.46515464;
@@ -17840,12 +17840,12 @@ a.card {
   --bs-tertiary-dark-g: 132;
   --bs-tertiary-dark-b: 143.4;
   --bs-tertiary-dark-hover: #607984;
-  --bs-tertiary-dark-hover-rgb: 95.80532688, 121.13317191283294, 131.5946731234867;
+    --bs-tertiary-dark-hover-rgb: 95.80532688, 121.13317191, 131.59467312;
   --bs-tertiary-dark-hover-r: 95.80532688;
   --bs-tertiary-dark-hover-g: 121.13317191;
   --bs-tertiary-dark-hover-b: 131.59467312;
   --bs-tertiary-dark-active: #4f636c;
-  --bs-tertiary-dark-active-rgb: 78.61598063, 99.39951573849879, 107.98401937046005;
+    --bs-tertiary-dark-active-rgb: 78.61598063, 99.39951574, 107.98401937;
   --bs-tertiary-dark-active-r: 78.61598063;
   --bs-tertiary-dark-active-g: 99.39951574;
   --bs-tertiary-dark-active-b: 107.98401937;
@@ -17855,12 +17855,12 @@ a.card {
   --bs-tertiary-dark-faded-g: 224.25;
   --bs-tertiary-dark-faded-b: 227.1;
   --bs-tertiary-dark-faded-hover: #ced7da;
-  --bs-tertiary-dark-faded-hover-rgb: 205.63283753, 214.68020594965674, 218.41716247139584;
+    --bs-tertiary-dark-faded-hover-rgb: 205.63283753, 214.68020595, 218.41716247;
   --bs-tertiary-dark-faded-hover-r: 205.63283753;
   --bs-tertiary-dark-faded-hover-g: 214.68020595;
   --bs-tertiary-dark-faded-hover-b: 218.41716247;
   --bs-tertiary-dark-faded-active: #b6c4c9;
-  --bs-tertiary-dark-faded-active-rgb: 182.19851259, 195.54061784897024, 201.0514874141876;
+    --bs-tertiary-dark-faded-active-rgb: 182.19851259, 195.54061785, 201.05148741;
   --bs-tertiary-dark-faded-active-r: 182.19851259;
   --bs-tertiary-dark-faded-active-g: 195.54061785;
   --bs-tertiary-dark-faded-active-b: 201.05148741;
@@ -17870,12 +17870,12 @@ a.card {
   --bs-tertiary-dark-pale-g: 236.55;
   --bs-tertiary-dark-pale-b: 238.26;
   --bs-tertiary-dark-pale-hover: #dde3e6;
-  --bs-tertiary-dark-pale-hover-rgb: 220.69283753, 226.9802059496568, 229.5771624713959;
+    --bs-tertiary-dark-pale-hover-rgb: 220.69283753, 226.98020595, 229.57716247;
   --bs-tertiary-dark-pale-hover-r: 220.69283753;
   --bs-tertiary-dark-pale-hover-g: 226.98020595;
   --bs-tertiary-dark-pale-hover-b: 229.57716247;
   --bs-tertiary-dark-pale-active: #c5d0d4;
-  --bs-tertiary-dark-pale-active-rgb: 197.25851259, 207.84061784897034, 212.2114874141876;
+    --bs-tertiary-dark-pale-active-rgb: 197.25851259, 207.84061785, 212.21148741;
   --bs-tertiary-dark-pale-active-r: 197.25851259;
   --bs-tertiary-dark-pale-active-g: 207.84061785;
   --bs-tertiary-dark-pale-active-b: 212.21148741;
@@ -18567,12 +18567,12 @@ a.card {
   --bs-success-g: 150;
   --bs-success-b: 0;
   --bs-success-hover: #008200;
-  --bs-success-hover-rgb: 0, 129.60000000000002, 0;
+    --bs-success-hover-rgb: 0, 129.6, 0;
   --bs-success-hover-r: 0;
   --bs-success-hover-g: 129.6;
   --bs-success-hover-b: 0;
   --bs-success-active: #005900;
-  --bs-success-active-rgb: 0, 88.80000000000001, 0;
+    --bs-success-active-rgb: 0, 88.8, 0;
   --bs-success-active-r: 0;
   --bs-success-active-g: 88.8;
   --bs-success-active-b: 0;
@@ -18582,12 +18582,12 @@ a.card {
   --bs-success-faded-g: 228.75;
   --bs-success-faded-b: 191.25;
   --bs-success-faded-hover: #b1dfb1;
-  --bs-success-faded-hover-rgb: 176.8, 222.8, 176.79999999999995;
+    --bs-success-faded-hover-rgb: 176.8, 222.8, 176.8;
   --bs-success-faded-hover-r: 176.8;
   --bs-success-faded-hover-g: 222.8;
   --bs-success-faded-hover-b: 176.8;
   --bs-success-faded-active: #94d394;
-  --bs-success-faded-active-rgb: 147.9, 210.89999999999998, 147.9;
+    --bs-success-faded-active-rgb: 147.9, 210.9, 147.9;
   --bs-success-faded-active-r: 147.9;
   --bs-success-faded-active-g: 210.9;
   --bs-success-faded-active-b: 147.9;
@@ -18597,12 +18597,12 @@ a.card {
   --bs-success-pale-g: 239.25;
   --bs-success-pale-b: 216.75;
   --bs-success-pale-hover: #cae9ca;
-  --bs-success-pale-hover-rgb: 202.3, 233.3, 202.29999999999995;
+    --bs-success-pale-hover-rgb: 202.3, 233.3, 202.3;
   --bs-success-pale-hover-r: 202.3;
   --bs-success-pale-hover-g: 233.3;
   --bs-success-pale-hover-b: 202.3;
   --bs-success-pale-active: #adddad;
-  --bs-success-pale-active-rgb: 173.4, 221.39999999999998, 173.39999999999998;
+    --bs-success-pale-active-rgb: 173.4, 221.4, 173.4;
   --bs-success-pale-active-r: 173.4;
   --bs-success-pale-active-g: 221.4;
   --bs-success-pale-active-b: 173.4;
@@ -19309,7 +19309,7 @@ a.card {
   --bs-warning-faded-g: 239.5;
   --bs-warning-faded-b: 193;
   --bs-warning-faded-hover: #ffeaad;
-  --bs-warning-faded-hover-rgb: 255, 234.4, 172.59999999999997;
+    --bs-warning-faded-hover-rgb: 255, 234.4, 172.6;
   --bs-warning-faded-hover-r: 255;
   --bs-warning-faded-hover-g: 234.4;
   --bs-warning-faded-hover-b: 172.6;
@@ -19324,12 +19324,12 @@ a.card {
   --bs-warning-pale-g: 245.7;
   --bs-warning-pale-b: 217.8;
   --bs-warning-pale-hover: #fff1c5;
-  --bs-warning-pale-hover-rgb: 255, 240.59999999999997, 197.39999999999995;
+    --bs-warning-pale-hover-rgb: 255, 240.6, 197.4;
   --bs-warning-pale-hover-r: 255;
   --bs-warning-pale-hover-g: 240.6;
   --bs-warning-pale-hover-b: 197.4;
   --bs-warning-pale-active: #ffe69d;
-  --bs-warning-pale-active-rgb: 255, 230.39999999999998, 156.59999999999997;
+    --bs-warning-pale-active-rgb: 255, 230.4, 156.6;
   --bs-warning-pale-active-r: 255;
   --bs-warning-pale-active-g: 230.4;
   --bs-warning-pale-active-b: 156.6;
@@ -20041,7 +20041,7 @@ a.card {
   --bs-danger-faded-hover-g: 170.85;
   --bs-danger-faded-hover-b: 170.85;
   --bs-danger-faded-active: #ff8282;
-  --bs-danger-faded-active-rgb: 255, 130.05000000000004, 130.05000000000004;
+    --bs-danger-faded-active-rgb: 255, 130.05, 130.05;
   --bs-danger-faded-active-r: 255;
   --bs-danger-faded-active-g: 130.05;
   --bs-danger-faded-active-b: 130.05;
@@ -20768,7 +20768,7 @@ a.card {
   --bs-error-faded-hover-g: 170.85;
   --bs-error-faded-hover-b: 170.85;
   --bs-error-faded-active: #ff8282;
-  --bs-error-faded-active-rgb: 255, 130.05000000000004, 130.05000000000004;
+    --bs-error-faded-active-rgb: 255, 130.05, 130.05;
   --bs-error-faded-active-r: 255;
   --bs-error-faded-active-g: 130.05;
   --bs-error-faded-active-b: 130.05;
@@ -21475,12 +21475,12 @@ a.card {
   --bs-info-g: 60;
   --bs-info-b: 80;
   --bs-info-hover: #213242;
-  --bs-info-hover-rgb: 33.2, 49.79999999999998, 66.39999999999999;
+    --bs-info-hover-rgb: 33.2, 49.8, 66.4;
   --bs-info-hover-r: 33.2;
   --bs-info-hover-g: 49.8;
   --bs-info-hover-b: 66.4;
   --bs-info-active: #141d27;
-  --bs-info-active-rgb: 19.6, 29.39999999999999, 39.199999999999996;
+    --bs-info-active-rgb: 19.6, 29.4, 39.2;
   --bs-info-active-r: 19.6;
   --bs-info-active-g: 29.4;
   --bs-info-active-b: 39.2;
@@ -21490,12 +21490,12 @@ a.card {
   --bs-info-faded-g: 206.25;
   --bs-info-faded-b: 211.25;
   --bs-info-faded-hover: #bec4ca;
-  --bs-info-faded-hover-rgb: 190.00384615, 196.04999999999998, 202.09615384615387;
+    --bs-info-faded-hover-rgb: 190.00384615, 196.05, 202.09615385;
   --bs-info-faded-hover-r: 190.00384615;
   --bs-info-faded-hover-g: 196.05;
   --bs-info-faded-hover-b: 202.09615385;
   --bs-info-faded-active: #a8b0b8;
-  --bs-info-faded-active-rgb: 167.51153846, 175.65, 183.78846153846155;
+    --bs-info-faded-active-rgb: 167.51153846, 175.65, 183.78846154;
   --bs-info-faded-active-r: 167.51153846;
   --bs-info-faded-active-g: 175.65;
   --bs-info-faded-active-b: 183.78846154;
@@ -21505,12 +21505,12 @@ a.card {
   --bs-info-pale-g: 225.75;
   --bs-info-pale-b: 228.75;
   --bs-info-pale-hover: #d4d8dc;
-  --bs-info-pale-hover-rgb: 211.50384615, 215.54999999999995, 219.59615384615384;
+    --bs-info-pale-hover-rgb: 211.50384615, 215.55, 219.59615385;
   --bs-info-pale-hover-r: 211.50384615;
   --bs-info-pale-hover-g: 215.55;
   --bs-info-pale-hover-b: 219.59615385;
   --bs-info-pale-active: #bdc3c9;
-  --bs-info-pale-active-rgb: 189.01153846, 195.14999999999998, 201.28846153846152;
+    --bs-info-pale-active-rgb: 189.01153846, 195.15, 201.28846154;
   --bs-info-pale-active-r: 189.01153846;
   --bs-info-pale-active-g: 195.15;
   --bs-info-pale-active-b: 201.28846154;
@@ -22202,7 +22202,7 @@ a.card {
   --bs-light-g: 238;
   --bs-light-b: 238;
   --bs-light-hover: #e4e4e4;
-  --bs-light-hover-rgb: 227.8, 227.79999999999998, 227.79999999999998;
+    --bs-light-hover-rgb: 227.8, 227.8, 227.8;
   --bs-light-hover-r: 227.8;
   --bs-light-hover-g: 227.8;
   --bs-light-hover-b: 227.8;
@@ -22217,12 +22217,12 @@ a.card {
   --bs-light-faded-g: 250.75;
   --bs-light-faded-b: 250.75;
   --bs-light-faded-hover: #f1f1f1;
-  --bs-light-faded-hover-rgb: 240.55, 240.54999999999998, 240.54999999999998;
+    --bs-light-faded-hover-rgb: 240.55, 240.55, 240.55;
   --bs-light-faded-hover-r: 240.55;
   --bs-light-faded-hover-g: 240.55;
   --bs-light-faded-hover-b: 240.55;
   --bs-light-faded-active: #dcdcdc;
-  --bs-light-faded-active-rgb: 220.15, 220.14999999999998, 220.14999999999998;
+    --bs-light-faded-active-rgb: 220.15, 220.15, 220.15;
   --bs-light-faded-active-r: 220.15;
   --bs-light-faded-active-g: 220.15;
   --bs-light-faded-active-b: 220.15;
@@ -22929,12 +22929,12 @@ a.card {
   --bs-dark-g: 58;
   --bs-dark-b: 64;
   --bs-dark-hover: #2b3035;
-  --bs-dark-hover-rgb: 42.85517241, 47.79999999999999, 52.744827586206895;
+    --bs-dark-hover-rgb: 42.85517241, 47.8, 52.74482759;
   --bs-dark-hover-r: 42.85517241;
   --bs-dark-hover-g: 47.8;
   --bs-dark-hover-b: 52.74482759;
   --bs-dark-active: #191b1e;
-  --bs-dark-active-rgb: 24.56551724, 27.399999999999995, 30.23448275862069;
+    --bs-dark-active-rgb: 24.56551724, 27.4, 30.23448276;
   --bs-dark-active-r: 24.56551724;
   --bs-dark-active-g: 27.4;
   --bs-dark-active-b: 30.23448276;
@@ -22944,12 +22944,12 @@ a.card {
   --bs-dark-faded-g: 205.75;
   --bs-dark-faded-b: 207.25;
   --bs-dark-faded-hover: #c2c4c5;
-  --bs-dark-faded-hover-rgb: 193.7393401, 195.54999999999998, 197.36065989847714;
+    --bs-dark-faded-hover-rgb: 193.7393401, 195.55, 197.3606599;
   --bs-dark-faded-hover-r: 193.7393401;
   --bs-dark-faded-hover-g: 195.55;
   --bs-dark-faded-hover-b: 197.3606599;
   --bs-dark-faded-active: #adafb2;
-  --bs-dark-faded-active-rgb: 172.7180203, 175.15, 177.58197969543147;
+    --bs-dark-faded-active-rgb: 172.7180203, 175.15, 177.5819797;
   --bs-dark-faded-active-r: 172.7180203;
   --bs-dark-faded-active-g: 175.15;
   --bs-dark-faded-active-b: 177.5819797;
@@ -22959,12 +22959,12 @@ a.card {
   --bs-dark-pale-g: 225.45;
   --bs-dark-pale-b: 226.35;
   --bs-dark-pale-hover: #d6d7d8;
-  --bs-dark-pale-hover-rgb: 214.0393401, 215.24999999999994, 216.46065989847713;
+    --bs-dark-pale-hover-rgb: 214.0393401, 215.25, 216.4606599;
   --bs-dark-pale-hover-r: 214.0393401;
   --bs-dark-pale-hover-g: 215.25;
   --bs-dark-pale-hover-b: 216.4606599;
   --bs-dark-pale-active: #c1c3c5;
-  --bs-dark-pale-active-rgb: 193.0180203, 194.84999999999997, 196.68197969543144;
+    --bs-dark-pale-active-rgb: 193.0180203, 194.85, 196.6819797;
   --bs-dark-pale-active-r: 193.0180203;
   --bs-dark-pale-active-g: 194.85;
   --bs-dark-pale-active-b: 196.6819797;
@@ -23656,7 +23656,7 @@ a.card {
   --bs-white-g: 255;
   --bs-white-b: 255;
   --bs-white-hover: #f5f5f5;
-  --bs-white-hover-rgb: 244.8, 244.79999999999998, 244.79999999999998;
+    --bs-white-hover-rgb: 244.8, 244.8, 244.8;
   --bs-white-hover-r: 244.8;
   --bs-white-hover-g: 244.8;
   --bs-white-hover-b: 244.8;
@@ -23671,7 +23671,7 @@ a.card {
   --bs-white-faded-g: 255;
   --bs-white-faded-b: 255;
   --bs-white-faded-hover: #f5f5f5;
-  --bs-white-faded-hover-rgb: 244.8, 244.79999999999998, 244.79999999999998;
+    --bs-white-faded-hover-rgb: 244.8, 244.8, 244.8;
   --bs-white-faded-hover-r: 244.8;
   --bs-white-faded-hover-g: 244.8;
   --bs-white-faded-hover-b: 244.8;
@@ -23686,7 +23686,7 @@ a.card {
   --bs-white-pale-g: 255;
   --bs-white-pale-b: 255;
   --bs-white-pale-hover: #f5f5f5;
-  --bs-white-pale-hover-rgb: 244.8, 244.79999999999998, 244.79999999999998;
+    --bs-white-pale-hover-rgb: 244.8, 244.8, 244.8;
   --bs-white-pale-hover-r: 244.8;
   --bs-white-pale-hover-g: 244.8;
   --bs-white-pale-hover-b: 244.8;
@@ -24398,7 +24398,7 @@ a.card {
   --bs-black-faded-g: 191.25;
   --bs-black-faded-b: 191.25;
   --bs-black-faded-hover: #b5b5b5;
-  --bs-black-faded-hover-rgb: 181.05, 181.04999999999998, 181.04999999999998;
+    --bs-black-faded-hover-rgb: 181.05, 181.05, 181.05;
   --bs-black-faded-hover-r: 181.05;
   --bs-black-faded-hover-g: 181.05;
   --bs-black-faded-hover-b: 181.05;
@@ -24413,7 +24413,7 @@ a.card {
   --bs-black-pale-g: 216.75;
   --bs-black-pale-b: 216.75;
   --bs-black-pale-hover: #cfcfcf;
-  --bs-black-pale-hover-rgb: 206.55, 206.54999999999998, 206.54999999999998;
+    --bs-black-pale-hover-rgb: 206.55, 206.55, 206.55;
   --bs-black-pale-hover-r: 206.55;
   --bs-black-pale-hover-g: 206.55;
   --bs-black-pale-hover-b: 206.55;
@@ -25110,12 +25110,12 @@ a.card {
   --bs-bs-grey-light-g: 236;
   --bs-bs-grey-light-b: 239;
   --bs-bs-grey-light-hover: #dde2e6;
-  --bs-bs-grey-light-hover-rgb: 221.18947368, 225.80000000000004, 230.4105263157895;
+    --bs-bs-grey-light-hover-rgb: 221.18947368, 225.8, 230.41052632;
   --bs-bs-grey-light-hover-r: 221.18947368;
   --bs-bs-grey-light-hover-g: 225.8;
   --bs-bs-grey-light-hover-b: 230.41052632;
   --bs-bs-grey-light-active: #c6cdd5;
-  --bs-bs-grey-light-active-rgb: 197.56842105, 205.40000000000003, 213.23157894736843;
+    --bs-bs-grey-light-active-rgb: 197.56842105, 205.4, 213.23157895;
   --bs-bs-grey-light-active-r: 197.56842105;
   --bs-bs-grey-light-active-g: 205.4;
   --bs-bs-grey-light-active-b: 213.23157895;
@@ -25125,27 +25125,27 @@ a.card {
   --bs-bs-grey-light-faded-g: 250.25;
   --bs-bs-grey-light-faded-b: 251;
   --bs-bs-grey-light-faded-hover: #eef0f2;
-  --bs-bs-grey-light-faded-hover-rgb: 237.68947368, 240.04999999999998, 242.41052631578944;
+    --bs-bs-grey-light-faded-hover-rgb: 237.68947368, 240.05, 242.41052632;
   --bs-bs-grey-light-faded-hover-r: 237.68947368;
   --bs-bs-grey-light-faded-hover-g: 240.05;
   --bs-bs-grey-light-faded-hover-b: 242.41052632;
   --bs-bs-grey-light-faded-active: #d6dce1;
-  --bs-bs-grey-light-faded-active-rgb: 214.06842105, 219.64999999999998, 225.2315789473684;
+    --bs-bs-grey-light-faded-active-rgb: 214.06842105, 219.65, 225.23157895;
   --bs-bs-grey-light-faded-active-r: 214.06842105;
   --bs-bs-grey-light-faded-active-g: 219.65;
   --bs-bs-grey-light-faded-active-b: 225.23157895;
   --bs-bs-grey-light-pale: #fcfcfd;
-  --bs-bs-grey-light-pale-rgb: 251.7, 252.15, 252.60000000000002;
+    --bs-bs-grey-light-pale-rgb: 251.7, 252.15, 252.6;
   --bs-bs-grey-light-pale-r: 251.7;
   --bs-bs-grey-light-pale-g: 252.15;
   --bs-bs-grey-light-pale-b: 252.6;
   --bs-bs-grey-light-pale-hover: #f0f2f4;
-  --bs-bs-grey-light-pale-hover-rgb: 239.88947368, 241.95000000000002, 244.01052631578955;
+    --bs-bs-grey-light-pale-hover-rgb: 239.88947368, 241.95, 244.01052632;
   --bs-bs-grey-light-pale-hover-r: 239.88947368;
   --bs-bs-grey-light-pale-hover-g: 241.95;
   --bs-bs-grey-light-pale-hover-b: 244.01052632;
   --bs-bs-grey-light-pale-active: #d8dee3;
-  --bs-bs-grey-light-pale-active-rgb: 216.26842105, 221.55, 226.83157894736866;
+    --bs-bs-grey-light-pale-active-rgb: 216.26842105, 221.55, 226.83157895;
   --bs-bs-grey-light-pale-active-r: 216.26842105;
   --bs-bs-grey-light-pale-active-g: 221.55;
   --bs-bs-grey-light-pale-active-b: 226.83157895;
@@ -25837,12 +25837,12 @@ a.card {
   --bs-bs-grey-dark-g: 212;
   --bs-bs-grey-dark-b: 218;
   --bs-bs-grey-dark-hover: #c2cad1;
-  --bs-bs-grey-dark-hover-rgb: 194.37674419, 201.79999999999998, 209.22325581395347;
+    --bs-bs-grey-dark-hover-rgb: 194.37674419, 201.8, 209.22325581;
   --bs-bs-grey-dark-hover-r: 194.37674419;
   --bs-bs-grey-dark-hover-g: 201.8;
   --bs-bs-grey-dark-hover-b: 209.22325581;
   --bs-bs-grey-dark-active: #abb5c0;
-  --bs-bs-grey-dark-active-rgb: 171.13023256, 181.4, 191.66976744186044;
+    --bs-bs-grey-dark-active-rgb: 171.13023256, 181.4, 191.66976744;
   --bs-bs-grey-dark-active-r: 171.13023256;
   --bs-bs-grey-dark-active-g: 181.4;
   --bs-bs-grey-dark-active-b: 191.66976744;
@@ -25852,12 +25852,12 @@ a.card {
   --bs-bs-grey-dark-faded-g: 244.25;
   --bs-bs-grey-dark-faded-b: 245.75;
   --bs-bs-grey-dark-faded-hover: #e7eaed;
-  --bs-bs-grey-dark-faded-hover-rgb: 231.12674419, 234.05, 236.97325581395347;
+    --bs-bs-grey-dark-faded-hover-rgb: 231.12674419, 234.05, 236.97325581;
   --bs-bs-grey-dark-faded-hover-r: 231.12674419;
   --bs-bs-grey-dark-faded-hover-g: 234.05;
   --bs-bs-grey-dark-faded-hover-b: 236.97325581;
   --bs-bs-grey-dark-faded-active: #d0d6db;
-  --bs-bs-grey-dark-faded-active-rgb: 207.88023256, 213.65000000000003, 219.41976744186047;
+    --bs-bs-grey-dark-faded-active-rgb: 207.88023256, 213.65, 219.41976744;
   --bs-bs-grey-dark-faded-active-r: 207.88023256;
   --bs-bs-grey-dark-faded-active-g: 213.65;
   --bs-bs-grey-dark-faded-active-b: 219.41976744;
@@ -25867,12 +25867,12 @@ a.card {
   --bs-bs-grey-dark-pale-g: 248.55;
   --bs-bs-grey-dark-pale-b: 249.45;
   --bs-bs-grey-dark-pale-hover: #eceef1;
-  --bs-bs-grey-dark-pale-hover-rgb: 236.02674419, 238.35, 240.6732558139534;
+    --bs-bs-grey-dark-pale-hover-rgb: 236.02674419, 238.35, 240.67325581;
   --bs-bs-grey-dark-pale-hover-r: 236.02674419;
   --bs-bs-grey-dark-pale-hover-g: 238.35;
   --bs-bs-grey-dark-pale-hover-b: 240.67325581;
   --bs-bs-grey-dark-pale-active: #d5dadf;
-  --bs-bs-grey-dark-pale-active-rgb: 212.78023256, 217.95000000000007, 223.11976744186035;
+    --bs-bs-grey-dark-pale-active-rgb: 212.78023256, 217.95, 223.11976744;
   --bs-bs-grey-dark-pale-active-r: 212.78023256;
   --bs-bs-grey-dark-pale-active-g: 217.95;
   --bs-bs-grey-dark-pale-active-b: 223.11976744;
@@ -26564,12 +26564,12 @@ a.card {
   --bs-apple-keyboard-background-g: 212;
   --bs-apple-keyboard-background-b: 217;
   --bs-apple-keyboard-background-hover: #c5cad0;
-  --bs-apple-keyboard-background-hover-rgb: 196.72, 201.68, 207.87999999999997;
+    --bs-apple-keyboard-background-hover-rgb: 196.72, 201.68, 207.88;
   --bs-apple-keyboard-background-hover-r: 196.72;
   --bs-apple-keyboard-background-hover-g: 201.68;
   --bs-apple-keyboard-background-hover-b: 207.88;
   --bs-apple-keyboard-background-active: #aeb5be;
-  --bs-apple-keyboard-background-active-rgb: 174.16, 181.04000000000002, 189.64;
+    --bs-apple-keyboard-background-active-rgb: 174.16, 181.04, 189.64;
   --bs-apple-keyboard-background-active-r: 174.16;
   --bs-apple-keyboard-background-active-g: 181.04;
   --bs-apple-keyboard-background-active-b: 189.64;
@@ -26579,12 +26579,12 @@ a.card {
   --bs-apple-keyboard-background-faded-g: 244.25;
   --bs-apple-keyboard-background-faded-b: 245.5;
   --bs-apple-keyboard-background-faded-hover: #e8eaec;
-  --bs-apple-keyboard-background-faded-hover-rgb: 231.97, 233.93, 236.38000000000002;
+    --bs-apple-keyboard-background-faded-hover-rgb: 231.97, 233.93, 236.38;
   --bs-apple-keyboard-background-faded-hover-r: 231.97;
   --bs-apple-keyboard-background-faded-hover-g: 233.93;
   --bs-apple-keyboard-background-faded-hover-b: 236.38;
   --bs-apple-keyboard-background-faded-active: #d1d5da;
-  --bs-apple-keyboard-background-faded-active-rgb: 209.41, 213.29000000000002, 218.14;
+    --bs-apple-keyboard-background-faded-active-rgb: 209.41, 213.29, 218.14;
   --bs-apple-keyboard-background-faded-active-r: 209.41;
   --bs-apple-keyboard-background-faded-active-g: 213.29;
   --bs-apple-keyboard-background-faded-active-b: 218.14;
@@ -26594,12 +26594,12 @@ a.card {
   --bs-apple-keyboard-background-pale-g: 248.55;
   --bs-apple-keyboard-background-pale-b: 249.3;
   --bs-apple-keyboard-background-pale-hover: #edeef0;
-  --bs-apple-keyboard-background-pale-hover-rgb: 236.67, 238.23000000000002, 240.18;
+    --bs-apple-keyboard-background-pale-hover-rgb: 236.67, 238.23, 240.18;
   --bs-apple-keyboard-background-pale-hover-r: 236.67;
   --bs-apple-keyboard-background-pale-hover-g: 238.23;
   --bs-apple-keyboard-background-pale-hover-b: 240.18;
   --bs-apple-keyboard-background-pale-active: #d6dade;
-  --bs-apple-keyboard-background-pale-active-rgb: 214.11, 217.59000000000006, 221.94000000000005;
+    --bs-apple-keyboard-background-pale-active-rgb: 214.11, 217.59, 221.94;
   --bs-apple-keyboard-background-pale-active-r: 214.11;
   --bs-apple-keyboard-background-pale-active-g: 217.59;
   --bs-apple-keyboard-background-pale-active-b: 221.94;
@@ -27291,7 +27291,7 @@ a.card {
   --bs-apple-keyboard-light-g: 255;
   --bs-apple-keyboard-light-b: 255;
   --bs-apple-keyboard-light-hover: #f5f5f5;
-  --bs-apple-keyboard-light-hover-rgb: 244.8, 244.79999999999998, 244.79999999999998;
+    --bs-apple-keyboard-light-hover-rgb: 244.8, 244.8, 244.8;
   --bs-apple-keyboard-light-hover-r: 244.8;
   --bs-apple-keyboard-light-hover-g: 244.8;
   --bs-apple-keyboard-light-hover-b: 244.8;
@@ -27306,7 +27306,7 @@ a.card {
   --bs-apple-keyboard-light-faded-g: 255;
   --bs-apple-keyboard-light-faded-b: 255;
   --bs-apple-keyboard-light-faded-hover: #f5f5f5;
-  --bs-apple-keyboard-light-faded-hover-rgb: 244.8, 244.79999999999998, 244.79999999999998;
+    --bs-apple-keyboard-light-faded-hover-rgb: 244.8, 244.8, 244.8;
   --bs-apple-keyboard-light-faded-hover-r: 244.8;
   --bs-apple-keyboard-light-faded-hover-g: 244.8;
   --bs-apple-keyboard-light-faded-hover-b: 244.8;
@@ -27321,7 +27321,7 @@ a.card {
   --bs-apple-keyboard-light-pale-g: 255;
   --bs-apple-keyboard-light-pale-b: 255;
   --bs-apple-keyboard-light-pale-hover: #f5f5f5;
-  --bs-apple-keyboard-light-pale-hover-rgb: 244.8, 244.79999999999998, 244.79999999999998;
+    --bs-apple-keyboard-light-pale-hover-rgb: 244.8, 244.8, 244.8;
   --bs-apple-keyboard-light-pale-hover-r: 244.8;
   --bs-apple-keyboard-light-pale-hover-g: 244.8;
   --bs-apple-keyboard-light-pale-hover-b: 244.8;
@@ -28018,12 +28018,12 @@ a.card {
   --bs-apple-keyboard-dark-g: 176;
   --bs-apple-keyboard-dark-b: 187;
   --bs-apple-keyboard-dark-hover: #9fa5b2;
-  --bs-apple-keyboard-dark-hover-rgb: 158.66666667, 165.46666666666667, 177.93333333333328;
+    --bs-apple-keyboard-dark-hover-rgb: 158.66666667, 165.46666667, 177.93333333;
   --bs-apple-keyboard-dark-hover-r: 158.66666667;
   --bs-apple-keyboard-dark-hover-g: 165.46666667;
   --bs-apple-keyboard-dark-hover-b: 177.93333333;
   --bs-apple-keyboard-dark-active: #8890a0;
-  --bs-apple-keyboard-dark-active-rgb: 136, 144.4, 159.79999999999998;
+    --bs-apple-keyboard-dark-active-rgb: 136, 144.4, 159.8;
   --bs-apple-keyboard-dark-active-r: 136;
   --bs-apple-keyboard-dark-active-g: 144.4;
   --bs-apple-keyboard-dark-active-b: 159.8;
@@ -28033,12 +28033,12 @@ a.card {
   --bs-apple-keyboard-dark-faded-g: 235.25;
   --bs-apple-keyboard-dark-faded-b: 238;
   --bs-apple-keyboard-dark-faded-hover: #dee1e5;
-  --bs-apple-keyboard-dark-faded-hover-rgb: 222.41666667, 224.7166666666667, 228.93333333333334;
+    --bs-apple-keyboard-dark-faded-hover-rgb: 222.41666667, 224.71666667, 228.93333333;
   --bs-apple-keyboard-dark-faded-hover-r: 222.41666667;
   --bs-apple-keyboard-dark-faded-hover-g: 224.71666667;
   --bs-apple-keyboard-dark-faded-hover-b: 228.93333333;
   --bs-apple-keyboard-dark-faded-active: #c8ccd3;
-  --bs-apple-keyboard-dark-faded-active-rgb: 199.75, 203.65000000000003, 210.80000000000007;
+    --bs-apple-keyboard-dark-faded-active-rgb: 199.75, 203.65, 210.8;
   --bs-apple-keyboard-dark-faded-active-r: 199.75;
   --bs-apple-keyboard-dark-faded-active-g: 203.65;
   --bs-apple-keyboard-dark-faded-active-b: 210.8;
@@ -28048,12 +28048,12 @@ a.card {
   --bs-apple-keyboard-dark-pale-g: 243.15;
   --bs-apple-keyboard-dark-pale-b: 244.8;
   --bs-apple-keyboard-dark-pale-hover: #e7e9ec;
-  --bs-apple-keyboard-dark-pale-hover-rgb: 230.91666667, 232.6166666666667, 235.73333333333335;
+    --bs-apple-keyboard-dark-pale-hover-rgb: 230.91666667, 232.61666667, 235.73333333;
   --bs-apple-keyboard-dark-pale-hover-r: 230.91666667;
   --bs-apple-keyboard-dark-pale-hover-g: 232.61666667;
   --bs-apple-keyboard-dark-pale-hover-b: 235.73333333;
   --bs-apple-keyboard-dark-pale-active: #d0d4da;
-  --bs-apple-keyboard-dark-pale-active-rgb: 208.25, 211.55000000000007, 217.60000000000008;
+    --bs-apple-keyboard-dark-pale-active-rgb: 208.25, 211.55, 217.6;
   --bs-apple-keyboard-dark-pale-active-r: 208.25;
   --bs-apple-keyboard-dark-pale-active-g: 211.55;
   --bs-apple-keyboard-dark-pale-active-b: 217.6;
@@ -30103,14 +30103,14 @@ small,
 }
 .form-range-inverted {
   height: 1em;
-  margin: 0.25em 0;
+    margin: min(0.25em, 0.5em / 2) 0;
   border-radius: 1em;
 }
 .form-range-inverted::-webkit-slider-runnable-track {
   height: 1em;
   background: #10427C;
   border-radius: 1em;
-  padding: 0 0.25em;
+    padding: 0 min(0.25em, 0.5em / 2);
 }
 .form-range-inverted::-webkit-slider-thumb {
   height: 0.5em;
@@ -30122,7 +30122,7 @@ small,
   height: 1em;
   background: #10427C;
   border-radius: 1em;
-  padding: 0 0.25em;
+    padding: 0 min(0.25em, 0.5em / 2);
 }
 .form-range-inverted::-moz-range-thumb {
   height: 0.5em;
@@ -30134,7 +30134,7 @@ small,
   height: 1em;
   background: #10427C;
   border-radius: 1em;
-  padding: 0 0.25em;
+    padding: 0 min(0.25em, 0.5em / 2);
 }
 .form-range-inverted::-ms-thumb {
   height: 0.5em;
@@ -30143,7 +30143,7 @@ small,
   background: #fff;
 }
 .form-range-inverted::-webkit-slider-thumb {
-  margin-top: 0.25em;
+    margin-top: min(0.25em, 0.5em / 2);
 }
 .form-range-inverted::-ms-fill-lower {
   background: #10427C;
@@ -30156,7 +30156,7 @@ small,
 .form-range-inverted.form-range-lg,
 .form-range-inverted-lg {
   height: 1.4em;
-  margin: 0.25em 0;
+    margin: min(0.25em, 0.9em / 2) 0;
   border-radius: 1.4em;
 }
 .form-range-inverted.form-range-lg::-webkit-slider-runnable-track,
@@ -30164,7 +30164,7 @@ small,
   height: 1.4em;
   background: #10427C;
   border-radius: 1.4em;
-  padding: 0 0.25em;
+    padding: 0 min(0.25em, 0.9em / 2);
 }
 .form-range-inverted.form-range-lg::-webkit-slider-thumb,
 .form-range-inverted-lg::-webkit-slider-thumb {
@@ -30178,7 +30178,7 @@ small,
   height: 1.4em;
   background: #10427C;
   border-radius: 1.4em;
-  padding: 0 0.25em;
+    padding: 0 min(0.25em, 0.9em / 2);
 }
 .form-range-inverted.form-range-lg::-moz-range-thumb,
 .form-range-inverted-lg::-moz-range-thumb {
@@ -30192,7 +30192,7 @@ small,
   height: 1.4em;
   background: #10427C;
   border-radius: 1.4em;
-  padding: 0 0.25em;
+    padding: 0 min(0.25em, 0.9em / 2);
 }
 .form-range-inverted.form-range-lg::-ms-thumb,
 .form-range-inverted-lg::-ms-thumb {
@@ -30203,7 +30203,7 @@ small,
 }
 .form-range-inverted.form-range-lg::-webkit-slider-thumb,
 .form-range-inverted-lg::-webkit-slider-thumb {
-  margin-top: 0.25em;
+    margin-top: min(0.25em, 0.9em / 2);
 }
 .form-range-inverted.form-range-lg::-ms-fill-lower,
 .form-range-inverted-lg::-ms-fill-lower {
@@ -30218,7 +30218,7 @@ small,
 .form-range-inverted.form-range-xl,
 .form-range-inverted-xl {
   height: 1.8em;
-  margin: 0.25em 0;
+    margin: min(0.25em, 1.1em / 2) 0;
   border-radius: 1.8em;
 }
 .form-range-inverted.form-range-xl::-webkit-slider-runnable-track,
@@ -30226,7 +30226,7 @@ small,
   height: 1.8em;
   background: #10427C;
   border-radius: 1.8em;
-  padding: 0 0.25em;
+    padding: 0 min(0.25em, 1.1em / 2);
 }
 .form-range-inverted.form-range-xl::-webkit-slider-thumb,
 .form-range-inverted-xl::-webkit-slider-thumb {
@@ -30240,7 +30240,7 @@ small,
   height: 1.8em;
   background: #10427C;
   border-radius: 1.8em;
-  padding: 0 0.25em;
+    padding: 0 min(0.25em, 1.1em / 2);
 }
 .form-range-inverted.form-range-xl::-moz-range-thumb,
 .form-range-inverted-xl::-moz-range-thumb {
@@ -30254,7 +30254,7 @@ small,
   height: 1.8em;
   background: #10427C;
   border-radius: 1.8em;
-  padding: 0 0.25em;
+    padding: 0 min(0.25em, 1.1em / 2);
 }
 .form-range-inverted.form-range-xl::-ms-thumb,
 .form-range-inverted-xl::-ms-thumb {
@@ -30265,7 +30265,7 @@ small,
 }
 .form-range-inverted.form-range-xl::-webkit-slider-thumb,
 .form-range-inverted-xl::-webkit-slider-thumb {
-  margin-top: 0.25em;
+    margin-top: min(0.25em, 1.1em / 2);
 }
 .form-range-inverted.form-range-xl::-ms-fill-lower,
 .form-range-inverted-xl::-ms-fill-lower {
@@ -55464,7 +55464,6 @@ table.table-list,
   margin-bottom: 1rem !important;
 }
 .table-list tr th {
-  color: var(--bs-heading-color);
   font-family: var(--bs-header-font-family);
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -55481,7 +55480,6 @@ table.table-list,
 .table-list tr td:before {
   content: attr(data-bs-table-list-header);
   display: block;
-  color: var(--bs-heading-color);
   font-family: var(--bs-header-font-family);
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -55515,7 +55513,6 @@ table.table-list,
     margin-bottom: 1rem !important;
   }
   .table-list-xs tr th {
-    color: var(--bs-heading-color);
     font-family: var(--bs-header-font-family);
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -55532,7 +55529,6 @@ table.table-list,
   .table-list-xs tr td:before {
     content: attr(data-bs-table-list-header);
     display: block;
-    color: var(--bs-heading-color);
     font-family: var(--bs-header-font-family);
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -55567,7 +55563,6 @@ table.table-list,
     margin-bottom: 1rem !important;
   }
   .table-list-sm tr th {
-    color: var(--bs-heading-color);
     font-family: var(--bs-header-font-family);
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -55584,7 +55579,6 @@ table.table-list,
   .table-list-sm tr td:before {
     content: attr(data-bs-table-list-header);
     display: block;
-    color: var(--bs-heading-color);
     font-family: var(--bs-header-font-family);
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -55619,7 +55613,6 @@ table.table-list,
     margin-bottom: 1rem !important;
   }
   .table-list-md tr th {
-    color: var(--bs-heading-color);
     font-family: var(--bs-header-font-family);
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -55636,7 +55629,6 @@ table.table-list,
   .table-list-md tr td:before {
     content: attr(data-bs-table-list-header);
     display: block;
-    color: var(--bs-heading-color);
     font-family: var(--bs-header-font-family);
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -55671,7 +55663,6 @@ table.table-list,
     margin-bottom: 1rem !important;
   }
   .table-list-lg tr th {
-    color: var(--bs-heading-color);
     font-family: var(--bs-header-font-family);
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -55688,7 +55679,6 @@ table.table-list,
   .table-list-lg tr td:before {
     content: attr(data-bs-table-list-header);
     display: block;
-    color: var(--bs-heading-color);
     font-family: var(--bs-header-font-family);
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -55723,7 +55713,6 @@ table.table-list,
     margin-bottom: 1rem !important;
   }
   .table-list-xl tr th {
-    color: var(--bs-heading-color);
     font-family: var(--bs-header-font-family);
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -55740,7 +55729,6 @@ table.table-list,
   .table-list-xl tr td:before {
     content: attr(data-bs-table-list-header);
     display: block;
-    color: var(--bs-heading-color);
     font-family: var(--bs-header-font-family);
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -55775,7 +55763,6 @@ table.table-list,
     margin-bottom: 1rem !important;
   }
   .table-list-xxl tr th {
-    color: var(--bs-heading-color);
     font-family: var(--bs-header-font-family);
     margin-top: 0;
     margin-bottom: 0.5rem;
@@ -55792,7 +55779,6 @@ table.table-list,
   .table-list-xxl tr td:before {
     content: attr(data-bs-table-list-header);
     display: block;
-    color: var(--bs-heading-color);
     font-family: var(--bs-header-font-family);
     margin-top: 0;
     margin-bottom: 0.5rem;

@@ -50,9 +50,10 @@ versionwrite:
 
 upload:
 	@echo "Start uploading"
-	@cd $(DISTRIB) && zip -q -r ../upload.zip *
+	@cd $(DISTRIB) && zip -q -r ../upload.zip * .*
 	@ssh root@132.180.10.7 "\
     	cd /net/httpd/htdocs/jsxgraph/; \
+    	rm -r home.new; \
     	mkdir home.new; \
     "
 	@scp -r upload.zip root@132.180.10.7:/net/httpd/htdocs/jsxgraph/home.new
