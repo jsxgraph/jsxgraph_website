@@ -88,12 +88,14 @@ The banner-style JSXGraph logo is also available with a colored background, maki
 [SVG]({{ relBase }}/media/logos/jsxgraph/svg/jsxgraph-logo_blue-square-outline-plain-pure.svg)
 
 ## Logo Colors
-Each logo is available in blue (#10427c), light blue (#aedcef), black, and with a gradient.
+Each logo is available in blue (#10427c), light blue (#aedcef), black, white, and with a gradient.
 
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-solid.png" class="w-10 w-10-over-lg">
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_light-square-solid.png" class="w-10 w-10-over-lg">
 
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_black-square-solid.png" class="w-10 w-10-over-lg">
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_white-square-solid.png" class="w-10 w-10-over-lg bg-light">
+
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_gradient-square-solid.png" class="w-10 w-10-over-lg">
 
 ## ZIP-Archive
