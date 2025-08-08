@@ -6,7 +6,7 @@ Since 2010
 
 University of Bayreuth
 
-sketchometry is an educational geometry tool that enables students to draw and manipulate geometric constructions using simple gestures. The software automatically recognizes shapes and relationships, providing a seamless transition from sketch to construction. Ideal for digital classrooms, sketchometry fosters active learning and helps students develop a deeper understanding of geometry through touch-based interaction.
+sketchometry is a user interface built on the foundation of JSXGraph. sketchometry enables students to draw and manipulate geometric constructions using simple gestures. The software automatically recognizes shapes and relationships, providing a seamless transition from rough sketches to precise constructions. Designed specifically for digital classrooms, sketchometry promotes active learning and supports a deeper understanding of geometry.
 
 [Learn more](https://sketchometry.org)
 
@@ -29,7 +29,7 @@ JSXCompressor is a JavaScript-based utility from the open-source JSXGraph projec
 
 Since 2024
 
-SASIM is a German inter-university cooperation dedicated to developing and sharing a STACK-based Engineering Mathematics Problem Bank enhanced with interactive JSXGraph visualizations. The network fosters exchange of tasks, collaborative design, and debugging support, while exploring innovative digital didactics. Its resources are used in exercises and exams across various universities, reaching more than 7,000 students each semester.
+SASIM is an inter-university cooperation dedicated to developing and sharing a STACK-based Engineering Mathematics Problem Bank enhanced with interactive JSXGraph visualizations. The network fosters exchange of tasks, collaborative design, and debugging support, while exploring innovative digital didactics. Its resources are used in exercises and exams across various universities, reaching more than 7,000 students each semester.
 
 [Learn more](https://stack-connect.oth-aw.de/partner/sasim/)
 
