@@ -2,7 +2,7 @@
 
 > /media/logos-external/logo-tsxgraph.png
 
-TSXGraph is a lightweight TypeScript wrapper for JSXGraph that improves coding with auto-completion, type-checking, and syntax support in VSCode. It simplifies the complex create() function, making JSXGraph easier to use for both beginners and advanced developers.
+TSXGraph is a lightweight TypeScript wrapper for JSXGraph that improves coding experience with auto-completion, type-checking, and syntax support in VSCode. It simplifies the complex create() function, making JSXGraph easier to use for both beginners and advanced developers.
 
 [Learn more](https://www.npmjs.com/package/jsxgraph-wrapper-typescript)
 
@@ -28,6 +28,8 @@ The i‑Učbeniki portal offers free Slovenian digital textbooks with interactiv
 > /media/logos-external/logo-meclib.png
 
 Meclib is a toolkit that simplifies authoring STACK questions in Moodle. It uses JSXGraph for static and interactive graphics controlled by Maxima variables, and offers Maxima-based feedback. Designed for mechanics, it supports creating free-body diagrams with rich formative assessment.
+
+[Case Study](https://stack-assessment.org/CaseStudies/2025/Mechlib/)
 
 [Learn more](https://github.com/mkraska/meclib)
 

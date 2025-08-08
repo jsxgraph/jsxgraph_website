@@ -92,10 +92,8 @@ Each logo is available in blue (#10427c), light blue (#aedcef), black, white, an
 
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-solid.png" class="w-10 w-10-over-lg">
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_light-square-solid.png" class="w-10 w-10-over-lg">
-
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_black-square-solid.png" class="w-10 w-10-over-lg">
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_white-square-solid.png" class="w-10 w-10-over-lg bg-light">
-
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_gradient-square-solid.png" class="w-10 w-10-over-lg">
 
 ## ZIP-Archive

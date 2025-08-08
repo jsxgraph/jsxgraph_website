@@ -7,11 +7,11 @@
 
 JSXGraph can be embedded into various systems as a plugin or through filter mechanisms, enabling seamless integration into platforms such as Moodle, STACK, Jupyter Notebook, and static HTML pages. This flexibility allows educators and developers to enhance digital learning environments with interactive mathematical visualizations across diverse technical contexts.
 
-# Moodle – Learning Management System
+# Moodle
 
 ![Moodle]({{ relBase }}/media/logos-external/logo-moodle.png)
 
-The JSXGraph filter for Moodle enables function plotting and dynamic geometry constructions with JSXGraph within a Moodle platform.
+The JSXGraph filter for the learning management system Moodle enables function plotting and dynamic geometry constructions with JSXGraph within a Moodle platform.
 Using the JSXGraph filter makes it a lot easier to embed JSXGraph constructions into Moodle online documents, e.g. in contents like page, quiz, link, ... .
 
 [Moodle JSXGraph Filter](https://moodle.org/plugins/filter_jsxgraph)
@@ -19,11 +19,11 @@ Using the JSXGraph filter makes it a lot easier to embed JSXGraph constructions 
 [Moodle JSXGraph Filter on GitHub](https://github.com/jsxgraph/moodle-filter_jsxgraph)
 
 
-# ILIAS – Learning Management System
+# ILIAS
 
 ![ILIAS]({{ relBase }}/media/logos-external/logo-ilias.png)
 
-The filter integrates interactive JSXGraph visualizations into ILIAS as a Page Component, allowing users to explore mathematical and scientific concepts through dynamic diagrams and graphs, enriching both instructional content and learner engagement. 
+The filter integrates interactive JSXGraph visualizations into the learning management system ILIAS as a Page Component, allowing users to explore mathematical and scientific concepts through dynamic diagrams and graphs, enriching both instructional content and learner engagement. 
 
 It is a third-party plugin that is not developed or maintained by the JSXGraph project itself.
 
@@ -40,13 +40,13 @@ JSXGraph can be used not only for capturing visual input but also for merely ill
 
 [STACK plugin](https://docs.stack-assessment.org/en/Specialist_tools/JSXGraph/)
 
-# Formulas Question Type (Moodle)
+# Formulas Question Type
 
 The Formulas extension for the Moodle JSXGraph filter facilitates the two-way exchange of values between formulas question logic and interactive JSXGraph visualizations.
 
 [Formulas extension for Moodle JSXGraph filter on GitHub](https://github.com/jsxgraph/moodleformulas_jsxgraph)
 
-# H5P.JSXGraph
+# H5P
 
 ![H5P]({{ relBase }}/media/logos-external/logo-h5p.png)
 
