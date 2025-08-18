@@ -4,7 +4,7 @@
 
 TSXGraph is a lightweight TypeScript wrapper for JSXGraph that improves coding experience with auto-completion, type-checking, and syntax support in VSCode. It simplifies the complex create() function, making JSXGraph easier to use for both beginners and advanced developers.
 
-[Learn more](https://www.npmjs.com/package/jsxgraph-wrapper-typescript)
+[Learn more](https://github.com/tom-berend/jsxgraph-wrapper-typescript)
 
 # Bourne2Learn
 
@@ -17,11 +17,10 @@ Murray Bourne’s site offers mobile-friendly JSXGraph demos, smooth animations,
 # i‑Učbeniki/i-Textbooks
 
 > /media/logos-external/logo-itextbooks.png
-[Learn more](https://eucbeniki.sio.si) 
 
 The i‑Učbeniki portal offers free Slovenian digital textbooks with interactive content. Many activities use JSXGraph, enabling dynamic visualizations in math and science that promote exploratory and hands-on learning. All materials are open and browser-based.
 
-[Learn more](https://eucbeniki.sio.si)
+[Learn more](https://www.iucbeniki.si)
 
 # Meclib
 
@@ -37,7 +36,8 @@ Meclib is a toolkit that simplifies authoring STACK questions in Moodle. It uses
 
 > /media/logos-external/logo-mumie.png
 
-MUMIE is a digital learning platform for mathematics and STEM subjects. It integrates JSXGraph to provide interactive visualizations in e-learning content. Students can explore dynamic constructions, manipulate parameters, and receive feedback, enhancing conceptual understanding.
+MUMIE is a digital learning platform for mathematics and STEM subjects.
+It integrates JSXGraph to provide interactive visualizations in e-learning content. Students can explore dynamic constructions, manipulate parameters, and receive feedback, enhancing conceptual understanding. For creation of such e-learning content, the platform offers an authoring tool with LaTeX-based syntax. 
 
 [Learn more](https://www.mumie.net)
 
