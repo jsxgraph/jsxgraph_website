@@ -20,7 +20,10 @@ Murray Bourne’s site offers mobile-friendly JSXGraph demos, smooth animations,
 
 The i‑Učbeniki portal offers free Slovenian digital textbooks with interactive content. Many activities use JSXGraph, enabling dynamic visualizations in math and science that promote exploratory and hands-on learning. All materials are open and browser-based.
 
-[Learn more](https://www.iucbeniki.si)
+
+[www.iucbeniki.si](https://www.iucbeniki.si)
+
+[Learn more](https://etorba.sio.si/etorba/sl/home)
 
 # Meclib
 
