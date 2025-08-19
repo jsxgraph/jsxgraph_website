@@ -10,6 +10,20 @@ sketchometry is a user interface built on the foundation of JSXGraph. sketchomet
 
 [Learn more](https://sketchometry.org)
 
+# Students' Projects
+
+> /media/logos-external/logo-square-active.png
+
+Since 2018
+
+University of Bayreuth
+
+Students in seminars at the University of Bayreuth developed their own JSXGraph projects. While many worked directly on the JSXGraph code, improving and extending its functionality, these contributions often merged into the official code base without being individually visible. 
+
+Some projects emerged as independent stand-alone applications, demonstrating innovative uses of JSXGraph beyond the library itself.
+
+[Learn more](https://jsxgraph.github.io)
+
 # JSXCompressor
 
 > /media/logos-external/logo-square-active.png
@@ -25,7 +39,6 @@ JSXCompressor is a JavaScript-based utility from the open-source JSXGraph projec
 # SASIM
 
 > /media/logos-external/logo-sasim.png
-
 
 Since 2024
 
@@ -69,6 +82,8 @@ University of Bayreuth (Coordination)
 
 ITEMS (Improving Tools for E-assessment in Maths and Science) is a European project aiming to enhance digital tools for STEM education. Its main objective is to design and promote innovative methods, pedagogies, learning materials, and tools for use in both higher education and high schools. 
 
+[JSXGraph Examples](https://jsxgraph.org/examples/index.html#ITEMS)
+
 [Learn more](https://erasmus-plus.ec.europa.eu/projects/search/details/2018-1-DE01-KA203-004268)
 
 # COMPASS
@@ -81,6 +96,8 @@ Funded by the European Union.
 
 COMPASS (Creating Online Materials & Products at STEM Subjects) supports teachers in developing lessons that connect mathematics and science with real-life contexts. It provides adaptable, enquiry-based teaching units and digital resources, promoting problem-solving and interdisciplinary learning for students across Europe.
 
+[JSXGraph Examples](https://jsxgraph.org/examples/index.html#COMPASS)
+
 [Learn more](https://erasmus-plus.ec.europa.eu/projects/search/details/2016-1-ES01-KA201-025485)
 
 # Everything is Number
@@ -92,5 +109,7 @@ Since 2008
 University of Bayreuth
 
 The Pythagoreans believed that numbers are hidden in everything—from musical harmonies to the movement of the planets—and concluded: “Everything is number.” Inspired by this idea, Swiss artist Eugen Jost explores numbers and language in his art. Some of his artworks have been made interactive using JSXGraph. These digital versions allow viewers to explore the mathematical structures.
+
+[JSXGraph Examples](https://www.everything-is-number.net/paintings)
 
 [Learn more](https://www.everything-is-number.net)

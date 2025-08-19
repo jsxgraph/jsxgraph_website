@@ -4,6 +4,9 @@ parent: docs
 order: 1
 sections:
 
+   - file: intro
+     layout: text
+
    - file: step1
      layout: text
 

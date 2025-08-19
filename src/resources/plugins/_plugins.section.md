@@ -1,6 +1,6 @@
 <style>
 #section-plugins img {
-    width: 125px;
+    width: 100px;
     height: auto;
 }
 </style>

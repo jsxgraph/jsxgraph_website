@@ -1,3 +1,11 @@
+# STACK
+
+> /media/logos-external/logo-stack-p.png
+
+STACK is an open-source assessment system for mathematics and STEM. It offers algebraic input, automated feedback, and randomized tasks, mainly within Moodle. Integrated with JSXGraph, it also enables dynamic visualizations and interactive elements, supporting innovative, scalable online learning worldwide.
+
+[Learn more](https://stack-assessment.org)
+
 # TSXGraph
 
 > /media/logos-external/logo-tsxgraph.png
@@ -68,4 +76,13 @@ Numbas is an open-source math assessment platform that integrates JSXGraph for i
 
 KDetude’s Eleda is a No‑Code pedagogical authoring platform that integrates JSXGraph, enabling teachers to build interactive, randomized math activities—graphs, geometry, feedback—without coding. JSXGraph components are embedded via visual blocks and fully controlled by Eleda’s interface. 
 
-[Learn more](https://kdetude.eu)
+[Learn more](https://kdetude.eu/plateforme-eleda/)
+
+
+# The WeBWorK Project
+
+> /media/logos-external/logo-square-passive.png
+
+The WeBWorK Project is an open-source online homework system widely used in mathematics and science education. Through its integration with JSXGraph, it supports dynamic, interactive visualizations and explorations, enriching problem sets with geometric and graphical elements for students.
+
+[Learn more](https://openwebwork.org)
