@@ -26,7 +26,7 @@ var c = board.create('circle', [A, B, C], {
 });
 ```
 
-#### HTML template – JSXGraph hosted via CDN
+#### HTML Template
 
 ```html
 <!DOCTYPE html>

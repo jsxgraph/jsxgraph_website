@@ -1,4 +1,4 @@
-# Visual input with JSXGraph
+# Visual Input with JSXGraph
 
 In contrast, visual input methods using JSXGraph enable students to interact with geometric objects directly. 
 Instead of typing expressions, learners manipulate constructions, move points, or adapt function graphs in a coordinate system. 

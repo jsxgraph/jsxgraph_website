@@ -4,7 +4,7 @@ You can work with JSXGraph either directly in a web browser using online resourc
 
 We recommend using a modern code editor to write and test your HTML file with the JSXGraph code efficiently.
 
-## JSXGraph hosted via CDN
+## JSXGraph Hosted Via CDN
 
 The preferred way is to include JSXGraph online from one of the CDNs (Content Delivery Network).
 Add the following lines into the HTML document head:
@@ -15,7 +15,7 @@ Add the following lines into the HTML document head:
       href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
 ```
 
-#### HTML template – JSXGraph hosted via CDN
+#### HTML Template
 
 ```html
 <!DOCTYPE html>
@@ -33,7 +33,7 @@ Add the following lines into the HTML document head:
 </html>
 ```
 
-## JSXGraph locally hosted
+## JSXGraph Locally Hosted
 
 If you want to include a local copy of JSXGraph in your HTML file,
 download the two following JSXGraph files
@@ -48,7 +48,7 @@ and add the following lines into the document head:
 <link rel="stylesheet" type="text/css" href="jsxgraph.css">
 ```
 
-#### HTML template – JSXGraph locally hosted
+#### HTML Template
 
 ```html
 <!DOCTYPE html>

@@ -1,4 +1,4 @@
-# HTML template with MathJax
+# HTML Template with MathJax
 
 MathJax can easily be integrated into JSXGraph to display mathematical formulas within labels or texts. To use it, include the MathJax library in your HTML file and enable the `useMathJax` attribute when creating elements. 
 
@@ -48,7 +48,7 @@ This ensures that every text element created in JSXGraph will automatically be p
 
 [<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template with MathJax](src/html-mathjax.html)
 
-# HTML template with KaTeX
+# HTML Template with KaTeX
 
 KaTeX can also be integrated into JSXGraph to display mathematical formulas within labels or texts. To use it, include the KaTeX library in your HTML file and enable the useKatex attribute when creating text elements.
 

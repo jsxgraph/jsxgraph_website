@@ -1,4 +1,4 @@
-# HTML template – JSXGraph hosted via CDN
+# HTML Template – JSXGraph Hosted Via CDN
 
 ```html
 <!DOCTYPE html>
@@ -28,7 +28,7 @@
 
 [<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph hosted via CDN](src/html-cdn.html)
 
-# HTML template – JSXGraph locally hosted
+# HTML Template – JSXGraph Locally Hosted
 
 If you want to include a local copy of JSXGraph in your HTML file,
 download the two following JSXGraph files
@@ -63,7 +63,7 @@ download the two following JSXGraph files
 
 [<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph locally hosted](src/html-local.html)
 
-# HTML template – JSXGraph import (ES6)
+# HTML Template – JSXGraph Import (ES6)
 
 ```html
 <!DOCTYPE html>

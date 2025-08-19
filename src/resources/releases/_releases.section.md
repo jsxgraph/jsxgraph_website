@@ -64,7 +64,7 @@ For example, include `jsxgraphcore.js` version 1.9.2 using one of the following 
 
 `https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.9.2.js`
 
-# List of releases
+# List of Releases
 
 [//]: # (Header row of table will not be shown)
 

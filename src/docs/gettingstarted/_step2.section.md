@@ -16,7 +16,7 @@ The following code has to be placed into the body part of an HTML file:
 </script>
 ```
 
-#### HTML template – JSXGraph hosted via CDN
+#### HTML Template
 
 ```html
 <!DOCTYPE html>

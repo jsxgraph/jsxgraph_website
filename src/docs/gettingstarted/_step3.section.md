@@ -18,7 +18,7 @@ var f = board.create(
 );
 ```
 
-#### HTML template – JSXGraph hosted via CDN
+#### HTML Template
 
 ```html
 <!DOCTYPE html>

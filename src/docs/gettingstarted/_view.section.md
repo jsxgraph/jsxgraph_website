@@ -4,6 +4,8 @@ JSXGraph provides powerful 3D visualizations directly in the browser. As a first
 
 [More 3D examples]({{ relBase }}/share/tag/3d) 
 
+#### HTML Template
+
 ```html
 <!DOCTYPE html>
 <html lang="en">

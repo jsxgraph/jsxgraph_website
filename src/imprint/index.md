@@ -13,7 +13,7 @@ University of Bayreuth
 Universitätsstraße 30   
 95447 Bayreuth
 
-# Represented by
+# Represented By
 
 **Chairman and Main Developer**   
 Prof. Dr. Alfred Wassermann   
@@ -30,6 +30,8 @@ Universitätsstraße 30
 Tel.: [+49 (0) 921 55-3266](tel:+49921553266)   
 Email: <jsxgraph@uni-bayreuth.de>   
 Website: <https://jsxgraph.org> and <https://jsxgraph.uni-bayreuth.de>
+
+&nbsp;  
 
 ---
 

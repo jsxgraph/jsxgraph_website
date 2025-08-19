@@ -13,5 +13,5 @@ The development of JSXGraph is coordinated at the University of Bayreuth, German
 Center for Mobile Learning with Digital Technology (CMLDT)  
 University of Bayreuth   
 Universitätsstraße 30   
-95447 Bayreuth
+95447 Bayreuth  
 Germany

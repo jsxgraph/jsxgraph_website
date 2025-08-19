@@ -22,7 +22,7 @@ The circumcircle of a triangle can be created as follows:
 var c = board.create('circle', [A, B, C]);
 ```
 
-#### HTML template – JSXGraph hosted via CDN
+#### HTML Template
 
 ```html
 <!DOCTYPE html>
