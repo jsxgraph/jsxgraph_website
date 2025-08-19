@@ -14,15 +14,19 @@ carousel:
   speed: 3000
   data: # use sign #~# to define breakpoints
     - text: >
+        Math Visualization.#~#
+        Interactive.#~#
+        Seamless.
+    - text: >
+        Web-Based.#~#
+        Open-Source.#~#
+        JavaScript.
+    - text: >
         6<sup>th</sup> Intl. JSXGraph#~#
         Conference,#~#
         7.-9. October 2025
       link: https://jsxgraph.org/conf2025
       target: _blank
-    - text: >
-        Math Visualization.#~#
-        Web-Based.#~#
-        Interactive. Seamless.
 
 url:
   web: https://jsxgraph.org
