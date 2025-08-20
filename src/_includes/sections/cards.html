@@ -126,7 +126,7 @@
                 <div class="card h-100" id="{{ id | default: head | to_id }}">
                     {%- endif -%}
                     {%- if image != nil -%}
-                    <img src="{{ relBase }}{{ image }}" class="card-img-top" alt="{{ head }}">
+                    <img src="{{ relBase }}{{ image }}" class="card-img-top border-bottom" alt="{{ head }}">
                     {%- endif -%}
                     <div class="card-body">
                         {%- if head != nil -%}
