@@ -6,7 +6,7 @@ JSXGraph. Center for Mobile Learning with Digital Technology – University of B
 
 # How to Embed a Link to JSXGraph’s Website
 
-A clickable logo can link users to the JSXGraph site seamlessly. 
+A clickable logo can link users to the JSXGraph site seamlessly: 
 
 <a href="https://jsxgraph.org" target="_blank" title="Visit JSXGraph">
     <img src="https://jsxgraph.org/home/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-banner-solid-text-solid.png" 
@@ -15,7 +15,7 @@ A clickable logo can link users to the JSXGraph site seamlessly.
          style="width:200px;cursor:pointer;">
 </a>
 
-You can reference the JSXGraph website directly in your own projects using HTML embedding.
+You can reference the JSXGraph website directly in your own projects using HTML embedding:
 
 ```
 <a href="https://jsxgraph.org" target="_blank" title="Visit JSXGraph">
