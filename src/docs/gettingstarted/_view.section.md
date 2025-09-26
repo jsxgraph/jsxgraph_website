@@ -2,7 +2,7 @@
 
 JSXGraph provides powerful 3D visualizations directly in the browser. As a first example you can create a draggable 3D point.
 
-[More 3D examples]({{ relBase }}/share/tag/3d) 
+[More 3D examples](https://jsxgraph.org/share/tag/3d) 
 
 #### HTML Template
 
