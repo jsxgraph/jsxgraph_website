@@ -1,6 +1,6 @@
 # ZIP-Archive
 
-All logo versions (solid/outline, colors, ...) are available in the following ZIP files:
+All logo versions (_solid_ /_outline_, colors, ...) are available in the following ZIP files:
 
 [JSXGraph Logos – PNG – White Background]({{ relBase }}/media/logos/jsxgraph/background/JSXGraph-logos-png-background.zip)
 

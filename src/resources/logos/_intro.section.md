@@ -22,7 +22,7 @@ Each version comes in a filled (_solid_) style as well as a stroke-only (_outlin
 
   &nbsp;
 
-The logos are also available in different colors, in blue (#10427c), light blue (#aedcef), black, white, and with a gradient.
+The logos are also available in different colors, in _blue_ (#10427c), _light_ blue (#aedcef), _black_, _white_, and with a _gradient_.
 
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-solid.png" class="w-10 w-10-over-lg">
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_light-square-solid.png" class="w-10 w-10-over-lg">
@@ -30,5 +30,5 @@ The logos are also available in different colors, in blue (#10427c), light blue 
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_white-square-solid.png" class="w-10 w-10-over-lg bg-light">
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_gradient-square-solid.png" class="w-10 w-10-over-lg">
 
-In addition, every logo version comes with both a white and a transparent background.
+In addition, every logo version comes with both a _white_ and a _transparent_ background.
 All logo versions can be downloaded from the ZIP files below.
