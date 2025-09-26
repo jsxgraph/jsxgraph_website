@@ -26,7 +26,7 @@ You can reference the JSXGraph website directly in your own projects using HTML 
 </a>
 ```
 
-Different versions of the logo are available in the [Logo Files](/resources/logos) section, allowing you to choose the style that best fits your design.
+Different versions of the logo are available in the [Logo Files]({{ relBase }}/resources/logos) section, allowing you to choose the style that best fits your design.
 This makes it easy to integrate JSXGraph branding into your pages professionally.
 
 # Spelling
