@@ -1,8 +1,20 @@
-The JSXGraph logo is available in three main layouts (_square_, _text_, _banner_). 
+The JSXGraph logo is available in three main layouts (_text_, _square_, _banner_). 
 Each version is offered in both a filled (_solid_) and a stroke-only (_outline_) style, suitable for different design and background needs. 
 All variants are provided with either a _transparent_ or a _white_ background and can be downloaded from the ZIP files below.
 
-# Square (figurative mark)
+# Text (Combined Word and Figurative Mark)
+
+The _text_ version is the official JSXGraph logo, ideal for branding and official communications.
+
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-text-solid.png" class="w-30 w-25-over-lg border border-2 border-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="{{ relBase }}/media/logos/jsxgraph/background/png/screen/jsxgraph-logo_blue-text-outline.png" class="w-30 w-25-over-lg border border-2 border-white">
+
+<img src="{{ relBase }}/media/logos/jsxgraph/background/png/screen/jsxgraph-logo_blue-text-solid.png" class="w-30 w-25-over-lg border border-2 border-grey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-text-outline.png" class="w-30 w-25-over-lg border border-2 border-grey">
+
+The ZIP files below contain the _text_ version in both _print_ and _screen_ formats, available in various resolutions. This ensures optimal quality for any usage.
+
+# Square (Figurative Mark)
 The _square_ version of the JSXGraph logo can be used as an icon or visual element in websites.
 
 <img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-solid.png" class="w-10 w-10-over-lg border border-2 border-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -21,19 +33,21 @@ There is also a variant _spaced_ with a completely white background, which can, 
 <img src="{{ relBase }}/media/logos/jsxgraph/background/png/screen/jsxgraph-logo_spaced-blue-square-solid.png" class="w-10 w-10-over-lg bg-light border border-2 border-grey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="{{ relBase }}/media/logos/jsxgraph/background/png/screen/jsxgraph-logo_spaced-blue-square-outline.png" class="w-10 w-10-over-lg bg-light border border-2 border-grey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-# Text (combined word and figurative mark)
+Graphic elements inspired by the logo are also available for decorative purposes. 
 
-The _text_ version is the official JSXGraph logo, ideal for branding and official communications.
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-solid-pure.png" class="w-5 w-5-over-lg border border-2 border-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-outline-pure.png" class="w-5 w-5-over-lg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-solid-plain-pure.png" class="w-5 w-5-over-lg border border-2 border-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-square-outline-plain-pure.png" class="w-5 w-5-over-lg">
 
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-text-solid.png" class="w-30 w-25-over-lg border border-2 border-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="{{ relBase }}/media/logos/jsxgraph/background/png/screen/jsxgraph-logo_blue-text-outline.png" class="w-30 w-25-over-lg border border-2 border-white">
+<img src="{{ relBase }}/media/logos/jsxgraph/background/png/screen/jsxgraph-logo_blue-square-solid-pure.png" class="w-5 w-5-over-lg border border-2 border-grey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="{{ relBase }}/media/logos/jsxgraph/background//png/screen/jsxgraph-logo_blue-square-outline-pure.png" class="w-5 w-5-over-lg border border-2 border-grey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="{{ relBase }}/media/logos/jsxgraph/background//png/screen/jsxgraph-logo_blue-square-solid-plain-pure.png" class="w-5 w-5-over-lg border border-2 border-grey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="{{ relBase }}/media/logos/jsxgraph/background//png/screen/jsxgraph-logo_blue-square-outline-plain-pure.png" class="w-5 w-5-over-lg border border-2 border-grey">
 
-<img src="{{ relBase }}/media/logos/jsxgraph/background/png/screen/jsxgraph-logo_blue-text-solid.png" class="w-30 w-25-over-lg border border-2 border-grey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="{{ relBase }}/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-text-outline.png" class="w-30 w-25-over-lg border border-2 border-grey">
+They can be used to complement layouts, highlight content, or add a consistent visual touch across different media.
 
-The ZIP files below contain the _text_ version in both _print_ and _screen_ formats, available in various resolutions. This ensures optimal quality for any usage.
-
-# Banner (combined with background)
+# Banner (Combined with Background)
 
 The _banner_ version of the JSXGraph logo is designed for wide-format applications, such as headers or promotional materials.
 
@@ -49,18 +63,17 @@ Additional variants of the _banner_ logo can be found in the ZIP files below.
 
 All logo variants come in multiple sizes, provided in _PNG_ for both _print_ and _screen_ use, as well as in _SVG_ format.
 
-### White Background
-
-[JSXGraph Logos – PNG (_print_/_screen_)]({{ relBase }}/media/logos/jsxgraph/background/JSXGraph-logos-png-background.zip)
-
-[JSXGraph Logos – SVG]({{ relBase }}/media/logos/jsxgraph/background/JSXGraph-logos-svg-background.zip)
-
 ### Transparent Background
 
 [JSXGraph Logos – PNG (_print_/_screen_)]({{ relBase }}/media/logos/jsxgraph/JSXGraph-logos-png.zip)
 
 [JSXGraph Logos – SVG]({{ relBase }}/media/logos/jsxgraph/JSXGraph-logos-svg.zip)
 
+### White Background
+
+[JSXGraph Logos – PNG (_print_/_screen_)]({{ relBase }}/media/logos/jsxgraph/background/JSXGraph-logos-png-background.zip)
+
+[JSXGraph Logos – SVG]({{ relBase }}/media/logos/jsxgraph/background/JSXGraph-logos-svg-background.zip)
 
 # Colors
 
