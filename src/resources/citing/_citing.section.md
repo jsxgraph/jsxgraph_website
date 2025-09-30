@@ -4,9 +4,9 @@
 
 JSXGraph. Center for Mobile Learning with Digital Technology – University of Bayreuth, Germany. https://jsxgraph.org.
 
-# How to Embed a Link to JSXGraph’s Website
+# Embed a Link to JSXGraph
 
-A clickable logo can link users to the JSXGraph site seamlessly: 
+You can easily link to the JSXGraph website by adding the logo to your own website: 
 
 <a href="https://jsxgraph.org" target="_blank" title="Visit JSXGraph">
     <img src="https://jsxgraph.org/home/media/logos/jsxgraph/png/screen/jsxgraph-logo_blue-banner-solid-text-solid.png" 
@@ -15,7 +15,11 @@ A clickable logo can link users to the JSXGraph site seamlessly:
          style="width:200px;cursor:pointer;">
 </a>
 
-You can reference the JSXGraph website directly in your own projects using HTML embedding:
+The preferred way is to download the official logo (see [Logo Files]({{ relBase }}/resources/logos)) and make it clickable with a link to 
+
+`https://jsxgraph.org`
+
+As an alternative, you can use the provided HTML embedding code to reference the JSXGraph website directly.
 
 ```
 <a href="https://jsxgraph.org" target="_blank" title="Visit JSXGraph">
@@ -27,9 +31,8 @@ You can reference the JSXGraph website directly in your own projects using HTML 
 ```
 
 Different versions of the logo are available in the [Logo Files]({{ relBase }}/resources/logos) section, allowing you to choose the style that best fits your design.
-This makes it easy to integrate JSXGraph branding into your pages professionally.
 
-# Spelling
+# Spelling of JSXGraph
 
 The correct capitalization is ‘JSXG’ in uppercase, followed by ‘raph’ in lowercase — written exactly as ‘JSXGraph’.
 This consistent styling reflects the project’s name and should be used in all formal references.
