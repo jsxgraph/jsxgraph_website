@@ -88,7 +88,7 @@ sections:
 
 <!-- overrides -->
 
-<style type="text/css">
+<style>
   .jxgbox {
     background-color: transparent;
     border: none;
@@ -97,6 +97,6 @@ sections:
   }
 </style>
 
-<script type="text/javascript">
+<script>
     window.JXG.Options.board.showCopyright = false;
 </script>

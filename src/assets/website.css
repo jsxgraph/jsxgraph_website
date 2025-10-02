@@ -58467,10 +58467,9 @@ footer {
   -webkit-perspective: 1000;
   /* Apple scroll bug fix */
 }
-
 img,
 video {
-    display: block;
+    display: inline-block;
 }
 /* http://www.olivergast.de/wp-content/demos/keyframes/index.html#header */
 @-webkit-keyframes tremble {
