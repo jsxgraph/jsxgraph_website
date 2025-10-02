@@ -54,7 +54,7 @@
 </body>
 </html>
 ```
-To include JSXGraph locally in your HTML file, place the following three files in the same directory:
+To include JSXGraph locally in your HTML file, place the following three files in the same folder:
 
 - [HTML template – JSXGraph locally hosted](src/local.template.html)
 - <https://jsxgraph.org/distrib/jsxgraphcore.js>

@@ -35,8 +35,7 @@ Add the following lines into the HTML document head:
 
 ## JSXGraph Locally Hosted
 
-If you want to include a local copy of JSXGraph in your HTML file,
-download the two following JSXGraph files
+If you want to include a local copy of JSXGraph in your HTML file, download the following files and save them in the same folder as your HTML file:
 
 - <https://jsxgraph.org/distrib/jsxgraphcore.js>
 - <https://jsxgraph.org/distrib/jsxgraph.css>
