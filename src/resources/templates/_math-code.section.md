@@ -46,7 +46,7 @@ This ensures that every text element created in JSXGraph will automatically be p
 </html>
 ```
 
-[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template with MathJax](src/mathjax.template.html)
+[HTML template with MathJax](src/mathjax.template.html)
 
 # HTML Template with KaTeX
 
@@ -100,4 +100,4 @@ This guarantees that all text elements generated in JSXGraph are automatically r
 </html>
 ```
 
-[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template with KaTeX](src/katex.template.html)
+[HTML template with KaTeX](src/katex.template.html)

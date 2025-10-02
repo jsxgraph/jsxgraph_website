@@ -18,7 +18,7 @@
 </html>
 ```
 
-[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template with iFrame](src/iframe.template.html)
+[HTML template with iFrame](src/iframe.template.html)
 
 ## iFrame Source – JSXGraph Hosted Via CDN
 ````html
@@ -56,4 +56,4 @@
 </html>
 ````
 
-[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>iFrame Source – JSXGraph hosted via CDN](src/iframe-src.template.html)
+[iFrame Source – JSXGraph hosted via CDN](src/iframe-src.template.html)

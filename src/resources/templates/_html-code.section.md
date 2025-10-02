@@ -26,15 +26,9 @@
 </html>
 ```
 
-[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph hosted via CDN](src/cdn.template.html)
+[HTML template – JSXGraph hosted via CDN](src/cdn.template.html)
 
 # HTML Template – JSXGraph Locally Hosted
-
-If you want to include a local copy of JSXGraph in your HTML file,
-download the two following JSXGraph files
-
-- <https://jsxgraph.org/distrib/jsxgraphcore.js>
-- <https://jsxgraph.org/distrib/jsxgraph.css>
 
 ```html
 <!DOCTYPE html>
@@ -60,8 +54,12 @@ download the two following JSXGraph files
 </body>
 </html>
 ```
+To include JSXGraph locally in your HTML file, place the following three files in the same directory:
 
-[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph locally hosted](src/local.template.html)
+- [HTML template – JSXGraph locally hosted](src/local.template.html)
+- <https://jsxgraph.org/distrib/jsxgraphcore.js>
+- <https://jsxgraph.org/distrib/jsxgraph.css>
+
 
 # HTML Template – JSXGraph Import (ES6)
 
@@ -93,4 +91,4 @@ download the two following JSXGraph files
 </html>
 ```
 
-[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph import (ES6)](src/es6.template.html)
+[HTML template – JSXGraph import (ES6)](src/es6.template.html)
