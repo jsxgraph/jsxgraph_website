@@ -18,7 +18,7 @@ sections:
     layout: board-block
     data:
       boardid: library
-      title: Apollonian circle packing 
+      title: Apollonian circle packing
       link: /share/example/apollonian-circle-packing
       target: _blank
 
@@ -47,7 +47,7 @@ sections:
       title: Continuity
       link: /share/example/continuity
       target: _blank
-      
+
   - file: accessibility
     layout: board-block
     data:
@@ -55,7 +55,7 @@ sections:
 
       title: Iterated Icosahedron
       link: /share/example/iterated-icosahedron
-      target: _blank      
+      target: _blank
 
 
   - file: technical-features
@@ -65,8 +65,8 @@ sections:
       board_pos: second
       title: Implicit plot – Elliptic curves
       link: /share/example/elliptic-curves-group-law
-      target: _blank      
-     
+      target: _blank
+
   - file: open-source
     layout: board-block
     data:
@@ -74,7 +74,7 @@ sections:
       title: Mirror, Mirror on the Wall ...
       link: /share/example/3d-mirror-mirror-on-the-wall
       target: _blank
- 
+
   - file: license
     layout: board-block
     data:
@@ -85,3 +85,18 @@ sections:
       target: _blank
 
 ---
+
+<!-- overrides -->
+
+<style type="text/css">
+  .jxgbox {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+  }
+</style>
+
+<script type="text/javascript">
+    window.JXG.Options.board.showCopyright = false;
+</script>

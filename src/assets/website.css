@@ -56476,6 +56476,7 @@ object {
   border: none;
   box-shadow: none;
   margin: 0;
+    display: block;
 }
 label.required:after,
 label > .required:after {
@@ -56602,7 +56603,6 @@ textarea.readonly {
 .carousel-static .carousel-item {
   transition: none;
 }
-
 .card-img-overlay.card-img:not(.border):not(.border-start):not(.border-end),
 .card-img-overlay.card-img-top:not(.border):not(.border-start):not(.border-end),
 .card-img-overlay.card-img-bottom:not(.border):not(.border-start):not(.border-end) {
@@ -56610,15 +56610,12 @@ textarea.readonly {
   margin-left: -1px;
   margin-right: -1px;
 }
-
 .card-img-overlay.card-img-top:not(.border):not(.border-start):not(.border-end) {
   margin-top: -1px;
 }
-
 .card-img-overlay.card-img-top:not(.border):not(.border-start):not(.border-end) {
     margin-bottom: -1px;
 }
-
 .card,
 .card-img,
 .card-img-top,
@@ -58470,6 +58467,11 @@ footer {
   -webkit-perspective: 1000;
   /* Apple scroll bug fix */
 }
+
+img,
+video {
+    display: block;
+}
 /* http://www.olivergast.de/wp-content/demos/keyframes/index.html#header */
 @-webkit-keyframes tremble {
   0% {
@@ -59094,12 +59096,6 @@ footer {
 }
 .language-php .code-highlighting:before {
   content: "PHP";
-}
-#page-home .jxgbox {
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 @font-face {
   font-family: FiraSans;
