@@ -53,5 +53,8 @@ sections:
    - file: help
      layout: text
 
-
 ---
+
+<script type="text/javascript">
+    window.JXG.Options.board.showCopyright = window.JXG.Options.board._default_showCopyright;
+</script>
