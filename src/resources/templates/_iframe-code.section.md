@@ -9,7 +9,7 @@
 </head>
 <body style="background-color: #eeffff">
 <iframe
-    src="iframe-src.html"
+        src="./iframe-src.template.html"
     style="width: 500px; height: 500px; overflow:hidden; border: none;"
     sandbox="allow-scripts"
     allow="fullscreen *;"
@@ -18,7 +18,7 @@
 </html>
 ```
 
-[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template with iFrame](src/html-iframe.html)
+[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template with iFrame](src/iframe.template.html)
 
 ## iFrame Source – JSXGraph Hosted Via CDN
 ````html
@@ -56,4 +56,4 @@
 </html>
 ````
 
-[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>iFrame Source – JSXGraph hosted via CDN](src/iframe-src.html)
+[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>iFrame Source – JSXGraph hosted via CDN](src/iframe-src.template.html)

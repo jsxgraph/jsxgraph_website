@@ -26,7 +26,7 @@
 </html>
 ```
 
-[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph hosted via CDN](src/html-cdn.html)
+[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph hosted via CDN](src/cdn.template.html)
 
 # HTML Template – JSXGraph Locally Hosted
 
@@ -61,7 +61,7 @@ download the two following JSXGraph files
 </html>
 ```
 
-[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph locally hosted](src/html-local.html)
+[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph locally hosted](src/local.template.html)
 
 # HTML Template – JSXGraph Import (ES6)
 
@@ -93,4 +93,4 @@ download the two following JSXGraph files
 </html>
 ```
 
-[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph import (ES6)](src/html-es6.html)
+[<i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>HTML template – JSXGraph import (ES6)](src/es6.template.html)

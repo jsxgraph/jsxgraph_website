@@ -19,6 +19,7 @@ module Jekyll
       input = input.gsub(/<a([^"]*)href="([^"]+)\.(zip)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-zipper me-1"></i>');
       input = input.gsub(/<a([^"]*)href="([^"]+)\.(ttf|woff)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-word me-1"></i>');
       input = input.gsub(/<a([^"]*)href="([^"]+)\.(jc|js|sketcho|css|map)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>');
+      input = input.gsub(/<a([^"]*)href="([^"]+)\.(template\.html)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>');
     end
 
     def replace_tables(input)
