@@ -64,12 +64,13 @@ For example, include `jsxgraphcore.js` version 1.9.2 using one of the following 
 
 `https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.9.2.js`
 
-# List of Releases
+# List of previous releases
 
 [//]: # (Header row of table will not be shown)
 
 | Version       | jsDelivr                                                                         | cdnjs                                                                           | JSXGraph server                                                                    |
 |---------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| ***v1.11.1*** | [jsDelivr](https://cdn.jsdelivr.net/npm/jsxgraph@1.11.1/distrib/jsxgraphcore.js) | [cdnjs](https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.11.1/jsxgraphcore.js) | [JSXGraph server](https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.11.1.js) |
 | ***v1.11.0*** | [jsDelivr](https://cdn.jsdelivr.net/npm/jsxgraph@1.11.0/distrib/jsxgraphcore.js) | [cdnjs](https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.11.0/jsxgraphcore.js) | [JSXGraph server](https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.11.0.js) |
 | ***v1.10.1*** | [jsDelivr](https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js) | [cdnjs](https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.10.1/jsxgraphcore.js) | [JSXGraph server](https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.10.1.js) |
 | ***v1.10.0*** | [jsDelivr](https://cdn.jsdelivr.net/npm/jsxgraph@1.10.0/distrib/jsxgraphcore.js) | [cdnjs](https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.10.0/jsxgraphcore.js) | [JSXGraph server](https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.10.0.js) |
