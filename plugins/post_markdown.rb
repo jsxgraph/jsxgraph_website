@@ -23,7 +23,9 @@ module Jekyll
     end
 
     def add_relBase(input, relBase='')
-        input = input.gsub(/<img([^"]*)src="\/([^"]+)"([^>]*)>/, '<img\1src="'+relBase+'/\2"\3>');
+        input = input.gsub(/placeholder_relBase_Z7fjMwSUhPD9ZI5tgpY4mZq1UI44kZ/, relBase);
+        # not necessary anymore:
+        # input = input.gsub(/<img([^"]*)src="\/([^"]+)"([^>]*)>/, '<img\1src="'+relBase+'/\2"\3>');
     end
 
     def replace_tables(input)
