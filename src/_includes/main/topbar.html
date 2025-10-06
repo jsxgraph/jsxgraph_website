@@ -40,7 +40,7 @@
                         <a href="{{ relBase }}{{ i_page.url }}"
                            class="nav-link {% if page.url == i_page.url or (include.active and include.active == id) %}active{% endif %}">
                             <i class="fa-fw {{ i_page.icon }}">{% if i_page.icon == '' %}&nbsp;{% endif %}</i>
-                            {{ i_page.menu_title | default: i_page.header | default: i_page.title_short | default: i_page.title }}
+                            {{ i_page.menu_title | default: i_page.header | default: i_page.title }}
                         </a>
                     </li>
                     {%- endfor -%}
