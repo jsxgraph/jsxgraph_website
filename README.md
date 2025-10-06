@@ -1,5 +1,49 @@
 # JSXGraph website
 
+## Development and release
+
+### Run live test version
+
+```shell
+make dev
+```
+
+### Version number
+
+- Adapt `version` and `version_year` in [src/_data/const.yml](src/_data/const.yml)
+- _or:_ Write version number in line 1, as array in line 2 and year in line 3 in [VERSION](VERSION) and call ``
+  ```shell
+  make versionwrite
+  ```
+- _or:_ Get version number from JSXGraph project (in same directory as this project):
+  ```shell
+  make version
+  ```
+
+### Build files in [distrib/](distrib/)
+
+```shell
+make build
+```
+
+### Release / Upload to server
+
+```shell
+make release # build and upload
+make upload  # upload prebuild distrib directory
+```
+
+The Upload does:
+
+- Copy files in [distrib/](distrib/) to the server via:
+   ```shell
+   scp -r distrib/ root@132.180.10.7:/net/httpd/htdocs/jsxgraph/home.new
+   ```
+- Link new version to <https://jsxgraph.org> and link <https://jsxgraph.uni-bayreuth.de> via
+   ```shell
+   ssh root@132.180.10.7 "cd /net/httpd/htdocs/jsxgraph/; rm -r home.old; mv home home.old; mv home.new home;"
+   ```
+
 ## Components
 
 ### References and Links
@@ -140,47 +184,3 @@ The following sections (and params) are possible:
 Notes:
 
 [^1]: *file* does not determine a file `.section.md` but the path of the extra file.
-
-## Development and release
-
-### Run live test version
-
-```shell
-make dev
-```
-
-### Version number
-
-- Adapt `version` and `version_year` in [src/_data/const.yml](src/_data/const.yml)
-- _or:_ Write version number in line 1, as array in line 2 and year in line 3 in [VERSION](VERSION) and call ``
-  ```shell
-  make versionwrite
-  ```
-- _or:_ Get version number from JSXGraph project (in same directory as this project):
-  ```shell
-  make version
-  ```
-
-### Build files in [distrib/](distrib/)
-
-```shell
-make build
-```
-
-### Release / Upload to server
-
-```shell
-make release # build and upload
-make upload  # upload prebuild distrib directory
-```
-
-The Upload does:
-
-- Copy files in [distrib/](distrib/) to the server via:
-   ```shell
-   scp -r distrib/ root@132.180.10.7:/net/httpd/htdocs/jsxgraph/home.new
-   ```
-- Link new version to <https://jsxgraph.org> and link <https://jsxgraph.uni-bayreuth.de> via
-   ```shell
-   ssh root@132.180.10.7 "cd /net/httpd/htdocs/jsxgraph/; rm -r home.old; mv home home.old; mv home.new home;"
-   ```
