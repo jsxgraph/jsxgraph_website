@@ -1,0 +1,108 @@
+// -----------------------------
+// ------- orientation ---------
+// -----------------------------
+
+.generate-orientation(@orientation_label) {
+  @label: ~'@{orientation_label}';
+
+  .generate-orientation-inner(@i: 1) when (@i <= length(@width_names)) {
+    @name: extract(@width_names, @i);
+    @w_min: 'width_@{name}_min';
+
+    /// devices with @@w_min and up
+    @media (min-width: @@w_min) {
+
+      .d-@{label}-@{name}-inline {
+        display: inline !important;
+      }
+
+      .d-@{label}-@{name}-inline-block {
+        display: inline-block !important;
+      }
+
+      .d-@{label}-@{name}-block {
+        display: block !important;
+      }
+
+      .d-@{label}-@{name}-grid {
+        display: grid !important;
+      }
+
+      .d-@{label}-@{name}-table {
+        display: table !important;
+      }
+
+      .d-@{label}-@{name}-table-row {
+        display: table-row !important;
+      }
+
+      .d-@{label}-@{name}-table-cell {
+        display: table-cell !important;
+      }
+
+      .d-@{label}-@{name}-flex {
+        display: flex !important;
+      }
+
+      .d-@{label}-@{name}-inline-flex {
+        display: inline-flex !important;
+      }
+
+      .d-@{label}-@{name}-none {
+        display: none !important;
+      }
+
+    }
+    .generate-orientation-inner(@i + 1);
+  }
+
+  .d-@{label}-inline {
+    display: inline !important;
+  }
+
+  .d-@{label}-inline-block {
+    display: inline-block !important;
+  }
+
+  .d-@{label}-block {
+    display: block !important;
+  }
+
+  .d-@{label}-grid {
+    display: grid !important;
+  }
+
+  .d-@{label}-table {
+    display: table !important;
+  }
+
+  .d-@{label}-table-row {
+    display: table-row !important;
+  }
+
+  .d-@{label}-table-cell {
+    display: table-cell !important;
+  }
+
+  .d-@{label}-flex {
+    display: flex !important;
+  }
+
+  .d-@{label}-inline-flex {
+    display: inline-flex !important;
+  }
+
+  .d-@{label}-none {
+    display: none !important;
+  }
+
+  .generate-orientation-inner();
+}
+
+@media (orientation: landscape) {
+  .generate-orientation('landscape');
+}
+
+@media (orientation: portrait) {
+  .generate-orientation('portrait');
+}

@@ -1,0 +1,200 @@
+// Only vars here!
+
+//////////////////////
+/// from bootstrap ///
+//////////////////////
+
+@spacer: 1rem;
+@spacer_factors: 0, 0.25, 0.5, 1, 1.5, 3, 5;
+
+@width_names: xs, sm, md, lg, xl, xxl;
+@width_xxl_max: Infinity;
+@width_xxl_min: 1400px; // from bootstrap
+@width_xl_max: @width_xxl_min - 1;
+@width_xl_min: 1200px; // from bootstrap
+@width_lg_max: @width_xl_min - 1;
+@width_lg_min: 992px; // from bootstrap
+@width_md_max: @width_lg_min - 1;
+@width_md_min: 768px; // from bootstrap
+@width_sm_max: @width_md_min - 1;
+@width_sm_min: 576px; // from bootstrap
+@width_xs_max: @width_sm_min - 1;
+@width_xs_min: 385px; // not from bootstrap
+
+@color_bs_grey_light: #e9ecef; // fix
+@color_bs_grey_dark: #ced4da; // fix
+
+//////////////////
+/// from apple ///
+//////////////////
+
+@color_apple_keyboard_background: #d0d4d9; // fix
+@color_apple_keyboard_light: #ffffff; // fix
+@color_apple_keyboard_dark: #aab0bb; // fix
+
+//////////////////
+/// thresholds ///
+//////////////////
+
+@threshold_light: 60%;
+@threshold_dark: 60%;
+@threshold_outer: 10%;
+
+@threshold_faded: 75%;
+@threshold_pale: 85%;
+@threshold_active: 10%;
+@threshold_hover: 17%;
+
+/////////////////////////
+/// color definitions ///
+/////////////////////////
+
+@color_body: @color_white;
+@color_background: mix(@color_primary, #fff, 5%);
+
+@color_green: #009600;
+@color_yellow: #ffea00;
+@color_orange: #ffa807;
+@color_red: red;
+@color_purple: #a100ff;
+@color_grey: #b0b0b0;
+@color_grey_light: mix(@color_grey, #fff, @threshold_light);
+@color_grey_dark: mix(@color_grey, #000, @threshold_dark);
+@color_blue: #00aecb;
+@color_black: #000;
+@color_white: #fff;
+
+@color_primary: #0d6efd;
+@color_primary_light: mix(@color_primary, #fff, @threshold_light);
+@color_primary_dark: mix(@color_primary, #000, @threshold_dark);
+
+@color_secondary: #6c757d;
+@color_secondary_light: mix(@color_secondary, #fff, @threshold_light);
+@color_secondary_dark: mix(@color_secondary, #000, @threshold_dark);
+
+@color_tertiary: #8205ff;
+@color_tertiary_light: mix(@color_tertiary, #fff, @threshold_dark);
+@color_tertiary_dark: mix(@color_tertiary, #000, @threshold_dark);
+
+@color_outer: mix(@color_primary, contrast(@color_primary, @color_grey, mix(@color_grey, #fff)), @threshold_outer);
+@color_outer_light: mix(@color_primary, contrast(@color_primary, @color_grey_light, mix(@color_grey_light, #fff)), @threshold_outer);
+@color_outer_dark: mix(@color_primary, contrast(@color_primary, @color_grey_dark, mix(@color_grey_dark, #fff)), @threshold_outer);
+
+@color_success: #009600;
+@color_warning: #ffc107;
+@color_danger: red;
+@color_error: red;
+@color_info: rgb(40, 60, 80);
+
+@color_dark: #343a40;
+@color_light: #eeeeee;
+
+@color_text_dark: #212529;
+@color_text_light: #fff;
+
+@color_link: @color_primary;
+@color_link_hover: @color_primary_dark;
+
+@gradient_direction: to bottom right;
+
+////////////////////
+/// color arrays ///
+////////////////////
+
+@bootstrap_colors: body,
+green, yellow, orange, red, purple,
+grey_light, grey, grey_dark, blue, black,
+background, outer, outer_light, outer_dark,
+primary, secondary, tertiary,
+primary_light, primary_dark, secondary_light, secondary_dark, tertiary_light, tertiary_dark,
+success, warning, danger, error, info,
+light, dark,
+white, black,
+bs_grey_light, bs_grey_dark,
+apple_keyboard_background, apple_keyboard_light, apple_keyboard_dark;
+
+@bootstrap_gradients_colors1: primary_dark, secondary_dark, tertiary_dark, grey_dark, outer_dark;
+@bootstrap_gradients_colors2: primary_light, secondary_light, tertiary_light, grey_light, outer_light;
+@bootstrap_gradients_names: primary, secondary, tertiary, grey, outer;
+
+/////////////////////
+/// miscellaneous ///
+/////////////////////
+
+@max_alternative_cols: 12;
+
+@dynamic_headsizes: false;
+
+@underline_links: false;
+
+@disable_focus_remaining: true;
+
+@touch_action: auto;
+
+@scrollbar_color: @color_outer_dark;
+@scrollbar_width: 1.1rem;
+
+@label_required_asterisk: true;
+
+@override_code_highlighting: true;
+
+@fixed_width_xxs: 50px;
+@fixed_width_xs: 95px;
+@fixed_width_sm: 125px;
+@fixed_width_md: 165px;
+@fixed_width_lg: 200px;
+@fixed_width_xl: 250px;
+@fixed_width_xxl: 275px;
+
+@fixed_height_xxs: 0.25rem;
+@fixed_height_xs: 0.5rem;
+@fixed_height_sm: 1.2rem;
+@fixed_height_md: 2.2rem;
+@fixed_height_lg: 3.5rem;
+@fixed_height_xl: 5rem;
+@fixed_height_xxl: 7.5rem;
+
+@fixed_sizes: xxs, xs, sm, md, lg, xl, xxl;
+
+@position_distance_xxs: 10px;
+@position_distance_xs: 15px;
+@position_distance_sm: 20px;
+@position_distance_md: 25px;
+@position_distance_lg: 35px;
+@position_distance_xl: 45px;
+@position_distance_xxl: 55px;
+
+@container_xs_percent: 70;
+@container_sm_percent: 80;
+@container_md_percent: 90;
+@container_lg_percent: 110;
+@container_xl_percent: 120;
+@container_xxl_percent: 1380;
+
+@z_index_outer: 1000;
+
+@shadow_width: 7px;
+
+@bg_stripes_width: 5rem; // bootstrap default is 1rem
+
+@circle: 170px;
+@rounded_max_radius: 50px;
+@square: 150px;
+
+@collape_half: 525px;
+
+@order_max: 6;
+
+@scale_print_small: 70%;
+
+///////////////////////
+/// modal and offcanvas ///
+///////////////////////
+
+@backdrop_opacity: 0.3;
+@backdrop_color: @color_primary;
+
+@offcanvas_width: 500px;
+
+@draggable_modal_pos_top: 0; // empirical values
+@draggable_modal_pos_left: calc(-50vw + 50%); // empirical values

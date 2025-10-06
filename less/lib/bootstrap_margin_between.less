@@ -1,0 +1,59 @@
+// ---------------------------------
+// -------- margin between ---------
+// ---------------------------------
+
+// ATTENTION: Doesn't work with e.g. flex-column-reverse-md,...
+
+.generate-margin-between-inner(@postfix, @n: length(@spacer_factors)-1) when (@n >= 0) {
+  @f: extract(@spacer_factors, @n+1);
+
+  .m-between@{postfix}-@{n}:not(.d-flex) {
+
+    > :not(div,li,h1,h2,h3,h4,h5):not(:last-child) {
+      margin-right: @spacer*@f;
+    }
+
+    > div, > li, > h1, > h2, > h3, > h4, > h5 {
+      &:not(:last-child) {
+        margin-bottom: @spacer*@f;
+      }
+    }
+
+  }
+
+  .m-between@{postfix}-@{n}.css-cols-gap {
+    -webkit-column-gap: @spacer*@f !important;
+    -moz-column-gap: @spacer*@f !important;
+    column-gap: @spacer*@f !important;
+  }
+
+  .m-between@{postfix}-@{n},
+  .g@{postfix}-@{n} {
+    &.d-flex:not(.flex-column):not(.flex-column-reverse):not(.flex-row-reverse) > *:not(:last-child),
+    &.d-flex:not(.flex-column):not(.flex-column-reverse).flex-row-reverse > *:not(:first-child) {
+      margin-right: @spacer*@f;
+    }
+
+    &.d-flex.flex-column:not(.flex-row):not(.flex-row-reverse):not(.flex-column-reverse) > *:not(:last-child),
+    &.d-flex.flex-column:not(.flex-row):not(.flex-row-reverse).flex-column-reverse > *:not(:first-child) {
+      margin-bottom: @spacer*@f;
+    }
+  }
+
+  .generate-margin-between-inner(@postfix, @n - 1);
+}
+
+.generate-margin-between(@i: 1) when (@i <= length(@width_names)) {
+  @name: extract(@width_names, @i);
+  @w_min: 'width_@{name}_min';
+
+  /// devices with @@w_min and up
+  @media (min-width: @@w_min) {
+    .generate-margin-between-inner(~'-@{name}');
+  }
+
+  .generate-margin-between(@i + 1);
+}
+
+.generate-margin-between-inner(~'');
+.generate-margin-between();

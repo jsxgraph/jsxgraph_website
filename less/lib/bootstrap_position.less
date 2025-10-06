@@ -1,0 +1,231 @@
+@import url("vars_default.less");
+
+// ----------------------------------------
+// ------- top, right, bottom, left -------
+// ----------------------------------------
+
+@percents: 0, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 66, 70, 75, 80, 85, 90, 95, 100;
+
+.generate-position-defs(@i: 1) when (@i <= length(@percents)) {
+  @percent: extract(@percents,@i) * 1%;
+  @nvh: extract(@percents,@i) * 1vh;
+  @nvw: extract(@percents,@i) * 1vw;
+
+  .top-@{i} {
+    top: @percent;
+  }
+  .top-vh-@{i} {
+    top: @nvh;
+  }
+
+  .end-@{i} {
+    right: @percent;
+  }
+  .end-vw@{i} {
+    right: @nvw;
+  }
+
+  .bottom-@{i} {
+    bottom: @percent;
+  }
+  .bottom-vh-@{i} {
+    bottom: @nvh;
+  }
+
+  .start-@{i} {
+    left: @percent;
+  }
+  .start-vw@{i} {
+    left: @nvw;
+  }
+
+  .generate-position-defs(@i+1);
+}
+
+.generate-bs-pos(@n: length(@spacer_factors)-1) when (@n >= 0) {
+
+  @f: extract(@spacer_factors, @n+1);
+
+  .top-@{n} {
+    top: @spacer*@f;
+  }
+  .top-n@{n} {
+    top: -1*@spacer*@f;
+  }
+
+  .end-@{n} {
+    right: @spacer*@f;
+  }
+  .end-n@{n} {
+    right: -1*@spacer*@f;
+  }
+
+  .bottom-@{n} {
+    bottom: @spacer*@f;
+  }
+  .bottom-n@{n} {
+    bottom: -1*@spacer*@f;
+  }
+
+  .start-@{n} {
+    left: @spacer*@f;
+  }
+  .start-n@{n} {
+    left: -1*@spacer*@f;
+  }
+
+  .generate-bs-pos(@n - 1);
+}
+
+@dists: xxs, xs, sm, md, lg, xl, xxl;
+
+.generate-position-distance-inner(@postfix:~'', @j:1) when (@j <= length(@dists)) {
+  @d: extract(@dists, @j);
+  @dist: 'position_distance_@{d}';
+
+  .top-@{d}-dist@{postfix} {
+    top: @@dist;
+  }
+
+  .bottom-@{d}-dist@{postfix} {
+    bottom: @@dist;
+  }
+
+  .start-@{d}-dist@{postfix} {
+    left: @@dist;
+  }
+
+  .end-@{d}-dist@{postfix} {
+    right: @@dist;
+  }
+
+  .top-start-@{d}-dist@{postfix} {
+    top: @@dist;
+    left: @@dist;
+  }
+
+  .top-end-@{d}-dist@{postfix} {
+    top: @@dist;
+    right: @@dist;
+  }
+
+  .bottom-start-@{d}-dist@{postfix} {
+    bottom: @@dist;
+    left: @@dist;
+  }
+
+  .bottom-end-@{d}-dist@{postfix} {
+    bottom: @@dist;
+    right: @@dist;
+  }
+
+  .generate-position-distance-innerst(@d) when (@d = md) {
+    .top-dist@{postfix} {
+      top: @@dist;
+    }
+
+    .bottom-dist@{postfix} {
+      bottom: @@dist;
+    }
+
+    .start-dist@{postfix} {
+      left: @@dist;
+    }
+
+    .end-dist@{postfix} {
+      right: @@dist;
+    }
+
+    .top-start-dist@{postfix} {
+      top: @@dist;
+      left: @@dist;
+    }
+
+    .top-end-dist@{postfix} {
+      top: @@dist;
+      right: @@dist;
+    }
+
+    .bottom-start-dist@{postfix} {
+      bottom: @@dist;
+      left: @@dist;
+    }
+
+    .bottom-end-dist@{postfix} {
+      bottom: @@dist;
+      right: @@dist;
+    }
+  }
+  .generate-position-distance-innerst(@d);
+
+  .generate-position-distance-inner(@postfix, (@j + 1));
+}
+
+.generate-position-distance(@i: 1) when (@i <= length(@width_names)) {
+  @name: extract(@width_names, @i);
+  @w_min: 'width_@{name}_min';
+
+  /// devices with @@w_min and up
+  @media (min-width: @@w_min) {
+    .generate-position-distance-inner(~'-@{name}');
+
+    .top-dist-@{name} {
+      top: @position_distance_md;
+    }
+
+    .bottom-dist-@{name} {
+      bottom: @position_distance_md;
+    }
+
+    .start-dist-@{name} {
+      left: @position_distance_md;
+    }
+
+    .end-dist-@{name} {
+      right: @position_distance_md;
+    }
+
+    .top-start-dist-@{name} {
+      top: @position_distance_md;
+      left: @position_distance_md;
+    }
+
+    .top-end-dist-@{name} {
+      top: @position_distance_md;
+      right: @position_distance_md;
+    }
+
+    .bottom-start-dist-@{name} {
+      bottom: @position_distance_md;
+      left: @position_distance_md;
+    }
+
+    .bottom-end-dist-@{name} {
+      bottom: @position_distance_md;
+      right: @position_distance_md;
+    }
+
+  }
+  .generate-position-distance(@i + 1);
+}
+
+.generate-position-defs();
+.generate-bs-pos();
+.generate-position-distance();
+.generate-position-distance-inner();
+
+.centered {
+  top: 50%; // .top-50
+  left: 50%; // .start-50
+  transform: translate(-50%, -50%); // .translate-middle
+}
+
+.centered-x {
+  left: 50%; // .start-50
+  transform: translateX(-50%); // .translate-middle-x
+}
+
+.centered-y {
+  top: 50%; // .top-0
+  transform: translateY(-50%); // .translate-middle-y
+}

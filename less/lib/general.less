@@ -1,0 +1,23 @@
+// -----------------------------
+// ---------- general ----------
+// -----------------------------
+
+.off {
+  display: none !important;
+}
+
+.indent-line {
+  padding-left: 50px;
+  text-indent: -50px;
+}
+
+header, footer {
+  z-index: @z_index_outer;
+  -webkit-transform: translateZ(0px); /* Apple scroll bug fix */
+  -webkit-transform: translate3d(0, 0, 0); /* Apple scroll bug fix */
+  -webkit-perspective: 1000; /* Apple scroll bug fix */
+}
+
+img, video {
+  display: inline-block;
+}

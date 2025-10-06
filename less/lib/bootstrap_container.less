@@ -1,0 +1,62 @@
+// ---------------------------------
+// ----------- container -----------
+// ---------------------------------
+
+// from bootstrap
+
+@container_sizes: xs, sm, md, lg, xl, xxl;
+
+@container_w_sm: 540px;
+@container_w_md: 720px;
+@container_w_lg: 960px;
+@container_w_xl: 1140px;
+@container_w_xxl: 1320px;
+
+@container_suffices_sm: -sm;
+@container_suffices_md: -md, -sm;
+@container_suffices_lg: -lg, -md, -sm;
+@container_suffices_xl: -xl, -lg, -md, -sm;
+@container_suffices_xxl: -xxl, -xl, -lg, -md, -sm;
+
+// generation
+
+.generate-container(@i: 1) when (@i <= length(@container_sizes)) {
+
+  @size: extract(@container_sizes, @i);
+
+  .generate-container-inner(@j: 2) when (@j <= length(@width_names)) {
+    @name: extract(@width_names, @j);
+    @w_min: 'width_@{name}_min';
+    @suffices: 'container_suffices_@{name}';
+    @w_value_bs: 'container_w_@{name}';
+    @w_scaling: 'container_@{size}_percent';
+    @w_value: (@@w_value_bs * @@w_scaling / 100);
+
+    // devices with @@w_min and up
+    @media (min-width: @@w_min) {
+      each(@@suffices, {
+        .@{size}-container@{value} {
+          max-width: @w_value;
+        }
+      });
+      .@{size}-container {
+        max-width: @w_value;
+      }
+    }
+
+    .generate-container-inner(@j+ 1);
+  }
+  .generate-container-inner();
+
+  @name: extract(@width_names, @i);
+  @w_min: 'width_@{name}_min';
+  @media (max-width: @@w_min - 1) {
+    .@{size}-container {
+      max-width: unset;
+    }
+  }
+
+  .generate-container(@i + 1);
+}
+
+.generate-container();
