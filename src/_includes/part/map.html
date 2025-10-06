@@ -1,0 +1,40 @@
+{% assign link = include.link %}
+{% assign width = include.width | default: "100%" %}
+{% assign height = include.height | default: "400px" %}
+
+{% assign uuid = 8 | randhex %}
+
+<div class="google-maps">
+    <div id="map-placeholder-{{ uuid }}"
+         class="google-maps-placeholder"
+         data-iframe-src="{{ link }}"
+         data-width="{{ width }}"
+         data-height="{{ height }}"
+         style="width: {{ width }};">
+        <div>
+            <p>
+                {{ const.maps.text }}
+            </p>
+            <div>
+                <button type="button" class="btn btn-secondary h-fix-md w-fit py-1 px-3 d-flex" id="map-privacy-check-{{ uuid }}">
+                    {{ const.maps.button }}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#map-privacy-check-{{ uuid }}').click(function () {
+            var mapPlaceholder = $('#map-placeholder-{{ uuid }}');
+            var mapPlaceholderWidth = mapPlaceholder.attr('data-width');
+            var mapPlaceholderHeight = mapPlaceholder.attr('data-height');
+            var mapPlaceholderSrc = mapPlaceholder.attr('data-iframe-src');
+            // Build iframe
+            var mapIFrame = '<iframe src="' + mapPlaceholderSrc + '" width="' + mapPlaceholderWidth + '" height="' + mapPlaceholderHeight + '" style="border:0;" allowfullscreen="" loading="lazy"></iframe>';
+            // Add iFrame and remove placeholder
+            mapPlaceholder.replaceWith(mapIFrame);
+        });
+    });
+</script>

@@ -1,0 +1,110 @@
+// -----------------------------
+// --------- shorten -----------
+// -----------------------------
+
+.generate-shorten-defs(@n: 10) when (@n >= 1) {
+  .shorten-content-@{n} {
+    &, & * {
+      /* hide too long content by adding "..." */
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: @n; /* number of lines */
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-align: left;
+    }
+
+    & {
+      display: -webkit-box;
+    }
+  }
+
+  .generate-shorten-defs(@n - 1);
+}
+
+.generate-shorten-defs(10);
+
+.shorten-content-x {
+  &, & * {
+    /* hide too long content by adding "..." */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; /* number of lines */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  & {
+    display: -webkit-box;
+  }
+}
+
+// -----------------------------
+// -------- scrollbar ----------
+// -----------------------------
+
+::-webkit-scrollbar {
+  width: @scrollbar_width;
+  min-width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: @scrollbar_color;
+  border-radius: @scrollbar_width;
+  border: solid 4px transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darken(@scrollbar_color, @threshold_hover);
+  border-radius: @scrollbar_width;
+  border: solid 3.5px transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+// -----------------------------
+// --------- overflow ----------
+// -----------------------------
+
+.overflow-x-auto {
+  overflow-x: auto !important;
+}
+
+.overflow-y-auto {
+  overflow-y: auto !important;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden !important;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden !important;
+}
+
+.overflow-x-visible {
+  overflow-x: visible !important;
+}
+
+.overflow-y-visible {
+  overflow-y: visible !important;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll !important;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll !important;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include basics.html %}
+    {% include main/head.html %}
+</head>
+{% if page.external_link==nil and page.is_separator!=true -%}
+<body data-role="page" class="position-relative">
+
+    <noscript>
+        <div class="alert alert-danger" role="alert">
+            This page requires JavaScript to work correctly.
+            Please enable JavaScript in your browser and reload the page.
+        </div>
+    </noscript>
+
+    {% assign id = page.url | split: '/' | last | default: "home" %}
+    <main class="container md-container m-between-5 mt-4 mb-5 pb-5" id="page-{{ id }}">
+        <div class="mb-3">
+            <h1>{{ page.header | default: page.title }}</h1>
+        </div>
+
+        {% include content.html %}
+    </main>
+</body>
+{% endif -%}
+</html>

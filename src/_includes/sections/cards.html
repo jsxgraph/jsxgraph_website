@@ -1,0 +1,147 @@
+<div class="section-cards" id="section-{{ include.file }}">
+    <!--@formatter:off-->
+        {%- assign delimiter_header = include.data.delimiter_header | default: "# " -%}
+        {%- assign delimiter_header_size = delimiter_header | size -%}
+        {%- assign delimiter_image = include.data.delimiter_image | default: "> " -%}
+        {%- assign delimiter_image_size = delimiter_image | size -%}
+        {%- assign delimiter_link = include.data.delimiter_link | default: "> " -%}
+        {%- assign delimiter_link_size = delimiter_link | size -%}
+        {%- assign delimiter_id = include.data.delimiter_id | default: "> " -%}
+        {%- assign delimiter_id_size = delimiter_id | size -%}
+        {%- assign lines = include.content_raw | newline_to_br | split: "<br />" -%}
+        {%- assign heads = "" | split: ',' -%}
+        {%- assign images = "" | split: ',' -%}
+        {%- assign links = "" | split: ',' -%}
+        {%- assign ids = "" | split: ',' -%}
+        {%- assign contents = "" | split: ',' -%}
+        {%- assign max_n = include.data.n | default: -1 -%}
+
+        {%- assign head = nil -%}
+        {%- assign image = nil -%}
+        {%- assign link = nil -%}
+        {%- assign id = nil -%}
+        {%- assign cont = nil -%}
+        {%- for line in lines -%}
+        {%- assign start = line | strip | slice: 0, delimiter_header_size -%}
+        {%- if start == delimiter_header -%}
+
+        {%- assign heads = heads | push: head -%}
+        {%- assign proof = image | strip_newlines | strip -%}
+        {%- if proof != '' and proof != nil and proof != '-' -%}
+        {%- assign images = images | push: image -%}
+        {%- else -%}
+        {%- assign images = images | push: nil -%}
+        {%- endif -%}
+        {%- assign proof = link | strip_newlines | strip -%}
+        {%- if proof != '' and proof != nil and proof != '-' -%}
+        {%- assign links = links | push: link -%}
+        {%- else -%}
+        {%- assign links = links | push: nil -%}
+        {%- endif -%}
+        {%- assign proof = id | strip_newlines | strip -%}
+        {%- if proof != '' and proof != nil and proof != '-' -%}
+        {%- assign ids = ids | push: id -%}
+        {%- else -%}
+        {%- assign ids = ids | push: nil -%}
+        {%- endif -%}
+        {%- assign contents = contents | push: cont -%}
+        {%- assign image = nil -%}
+        {%- assign link = nil -%}
+        {%- assign id = nil -%}
+        {%- assign cont = nil -%}
+        {%- assign head = line | replace_first: delimiter_header, "" -%}
+
+        {%- else -%}
+
+        {%- assign start = line | strip | slice: 0, delimiter_image_size -%}
+        {%- if start == delimiter_image and image==nil -%}
+
+        {%- assign image = line | replace_first: delimiter_image, "" | strip_newlines | strip -%}
+
+        {%- elsif start == delimiter_link and link==nil -%}
+
+        {%- assign link = line | replace_first: delimiter_link, "" | strip_newlines | strip -%}
+
+        {%- else -%}
+
+        {%- assign start = line | strip | slice: 0, delimiter_id_size -%}
+        {%- if start == delimiter_id and id==nil -%}
+
+        {%- assign id = line | replace_first: delimiter_id, "" | strip_newlines | strip -%}
+
+        {%- else -%}
+
+        {%- assign cont = cont | append: <br /> | br_to_newline | append: line -%}
+
+        {%- endif -%}
+        {%- endif -%}
+        {%- endif -%}
+        {%- endfor -%}
+        {%- assign heads = heads | push: head | shift -%}
+        {%- assign proof = image | strip_newlines | strip -%}
+        {%- if proof != '' and proof != nil and proof != '-' -%}
+        {%- assign images = images | push: image | shift -%}
+        {%- else -%}
+        {%- assign images = images | push: nil | shift -%}
+        {%- endif -%}
+        {%- assign proof = link | strip_newlines | strip -%}
+        {%- if proof != '' and proof != nil and proof != '-' -%}
+        {%- assign links = links | push: link | shift -%}
+        {%- else -%}
+        {%- assign links = links | push: nil | shift -%}
+        {%- endif -%}
+        {%- assign proof = id | strip_newlines | strip -%}
+        {%- if proof != '' and proof != nil and proof != '-' -%}
+        {%- assign ids = ids | push: id | shift -%}
+        {%- else -%}
+        {%- assign ids = ids | push: nil | shift -%}
+        {%- endif -%}
+        {%- assign contents = contents | push: cont | shift -%}
+        <!--@formatter:on-->
+
+    <div class="row g-5 g-md-3 g-lg-5 g-xl-4">
+
+        {%- for head in heads -%}
+        {%- assign image = images[forloop.index0] -%}
+        {%- assign link = links[forloop.index0] -%}
+        {%- assign id = ids[forloop.index0] -%}
+        {%- assign body = contents[forloop.index0] -%}
+        {%- if max_n > 0 and max_n <= forloop.index0 -%}
+        {%- break -%}
+        {%- endif -%}
+
+        <div class="col-12 col-md-6 col-xl-4">
+            {%- if link != nil -%}
+            {%- assign stringToCheck = link %}
+            {%- assign checkArray = stringToCheck | split: ':' -%}
+            {%- if checkArray[0] == 'http' or checkArray[0] == 'https' -%}
+            {%- assign link = stringToCheck %}
+            {%- assign target = '_blank' %}
+            {%- else -%}
+            {%- assign link = relBase | append: stringToCheck %}
+            {%- assign target = '_self' %}
+            {%- endif -%}
+            <a href="{{ link }}" target="{{ target }}" class="card card-action card-action-outer-light h-100 no-focus" id="{{ id | default: head | to_id }}">
+                {%- else -%}
+                <div class="card h-100" id="{{ id | default: head | to_id }}">
+                    {%- endif -%}
+                    {%- if image != nil -%}
+                    <img src="{{ relBase }}{{ image }}" class="card-img-top border-bottom" alt="{{ head }}">
+                    {%- endif -%}
+                    <div class="card-body">
+                        {%- if head != nil -%}
+                        <h2 class="card-title">{{ head | pre_markdown | markdownify | replace_post: relBase }}</h2>
+                        {%- endif -%}
+                        {%- if body != nil -%}
+                        {{ body | pre_markdown | markdownify | replace_post: relBase }}
+                        {%- endif -%}
+                    </div>
+                    {%- if link == nil -%}
+                </div>
+                {%- else -%}
+            </a>
+            {%- endif -%}
+        </div>
+        {%- endfor -%}
+    </div>
+</div>

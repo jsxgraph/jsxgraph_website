@@ -1,0 +1,62 @@
+{%- assign tile_width = include.width | default: "auto" -%}
+<!-- auto | xs | sm | md | lg | xl | xxl -->
+
+{%- assign polygon = include.polygon | default: const.default_polygon -%}
+<!-- circle | 4 | 5 | 6 | 8 | jsxgraph-pure | jsxgraph-plain -->
+
+{%- if polygon == "jsxgraph-pure" -%}
+{%- assign class = "jsxgraph-logo-pure-clip" -%}
+{%- elsif polygon == "jsxgraph-plain" -%}
+{%- assign class = "jsxgraph-logo-plain-clip" -%}
+{%- elsif polygon == "circle" -%}
+{%- assign class = "circle-clip" -%}
+{%- elsif polygon == "4" -%}
+{%- assign class = "square-clip" -%}
+{%- elsif polygon == "5" -%}
+{%- assign class = "pentagon-clip" -%}
+{%- elsif polygon == "8" -%}
+{%- assign class = "octagon-clip" -%}
+{%- else -%}
+{%- assign class = "hexagon-clip" -%}
+{%- endif -%}
+
+{%- assign max_size = include.max_size | default: include.data.size -%}
+{%- assign width = 100 | divided_by: max_size | append: "%" -%}
+{%- assign max_n = include.data.size | minus: 1 -%}
+
+{% for i in (0..max_n) %}
+{%- assign data = include.data[i] -%}
+
+<div style="width: {{ width }};">
+    {%- assign stringToCheck = data.link %}
+    {%- assign checkArray = stringToCheck | split: ':' -%}
+    {%- if checkArray[0] == 'http' or checkArray[0] == 'https' -%}
+    {%- assign link = data.link -%}
+    {%- assign target = data.target | default: "_blank" -%}
+    {%- else -%}
+    {%- assign link = relBase | append: data.link -%}
+    {%- assign target = data.target | default: "_self" -%}
+    {%- endif -%}
+    <a href="{{ link }}" target="{{ target }}"
+       class="square {% if tile_width=='auto' %} w-100 {% else %} w-fix-{{tile_width}} w-max-100 {% endif %} overflow-hidden mx-auto mb-1 d-block tile-button tile-button-squares">
+        <div class="btn btn-{{ data.colorclass | default: 'primary' }} border border-{{ data.colorclass | default: 'primary' }} rounded-0 {{ class }}">
+            <div class="d-flex flex-column w-100 h-100">
+                {%- if data.image -%}
+                <div class="flex-fill mx-n1 mt-n1 position-relative">
+                    <div class="w-100 h-100 image-bg-cover" style="background-image: url('{{ relBase }}{{ data.image }}');"></div>
+                    <div class="position-absolute top-0 start-0 end-0 bottom-0 bg-{{ data.colorclass | default: 'primary' }} opacity-33"></div>
+                </div>
+                {%- else -%}
+                <div class="flex-fill mb-n1 d-flex align-items-center justify-content-center">
+                    <i class="biggest fa-fw {{ data.icon }}">{% if data.icon == '' %}&nbsp;{% endif %}</i>
+                </div>
+                {%- endif -%}
+                <div class="shorten-content-x tile-label">
+                    {{ data.title | default: "" }}
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+
+{% endfor %}

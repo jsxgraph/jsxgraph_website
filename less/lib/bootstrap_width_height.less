@@ -1,0 +1,244 @@
+// --------------------------------
+// ------- width and height -------
+// --------------------------------
+
+.generate-w-and-h(@i: 1) when (@i <= length(@width_names)) {
+  @name: extract(@width_names, @i);
+  @w_min: 'width_@{name}_min';
+
+  /// devices with @@w_min and up
+  @media (min-width: @@w_min) {
+    .define-w-and-h(~"-@{name}");
+  }
+
+  .generate-w-and-h(@i + 1);
+}
+
+.define-w-and-h(@postfix) {
+  // fix
+
+  .generate-w-and-h-fix(@postfix);
+
+  // shortcuts
+
+  label.input-group-text.w-fix@{postfix} {
+    flex-shrink: 0 !important;
+  }
+
+  .w-fix@{postfix} {
+    width: @fixed_width_md !important;
+  }
+
+  .h-fix@{postfix} {
+    height: @fixed_height_md !important;
+  }
+
+  .wh-fix@{postfix} {
+    width: @fixed_width_md !important;
+    height: @fixed_width_md !important;
+  }
+
+  .hw-fix@{postfix} {
+    height: @fixed_height_md !important;
+    width: @fixed_height_md !important;
+  }
+
+  // misc
+
+  .w-variable@{postfix} {
+    width: inherit !important;
+  }
+
+  .w-auto@{postfix} {
+    width: auto !important;
+  }
+
+  .w-fit@{postfix} {
+    width: fit-content !important;
+  }
+
+  .h-variable@{postfix} {
+    height: inherit !important;
+  }
+
+  .h-fit@{postfix} {
+    height: fit-content !important;
+  }
+
+  // proportional
+
+  .generate-w-and-h-proportional(@postfix);
+}
+
+.generate-w-and-h-fix(@post, @i:1) when (@i <= length(@fixed_sizes)) {
+  @postfix: if((@post = ~''), ~'', ~'-over@{post}');
+  @size: extract(@fixed_sizes, @i);
+  @width: 'fixed_width_@{size}';
+  @height: 'fixed_height_@{size}';
+
+  label.input-group-text.w-fix-@{size}@{postfix} {
+    flex-shrink: 0 !important;
+  }
+
+  .w-fix-@{size}@{postfix} {
+    width: @@width !important;
+  }
+
+  .h-fix-@{size}@{postfix} {
+    height: @@height !important;
+  }
+
+  .w-and-h-fix-@{size}@{postfix} {
+    width: @@width !important;
+    height: @@width !important;
+  }
+
+  .h-and-w-fix-@{size}@{postfix} {
+    height: @@height !important;
+    width: @@height !important;
+  }
+
+  .generate-w-and-h-fix(@post, @i+1);
+}
+
+.generate-w-and-h-proportional(@postfix, @n:0) when (@n <= 100) {
+
+  // min-height
+
+  .h-min-@{n}@{postfix} {
+    min-height: (@n * 1%) !important;
+  }
+
+  .vh-min-@{n}@{postfix} {
+    min-height: (@n * 1%) !important;
+    min-height: (@n * 1vh) !important;
+    min-height: calc(var(--vh, 1vh) * @n) !important;
+  }
+
+  // min-width
+
+  .w-min-@{n}@{postfix} {
+    min-width: (@n * 1%) !important;
+  }
+
+  .vw-min-@{n}@{postfix} {
+    min-width: (@n * 1%) !important;
+    min-width: (@n * 1vw) !important;
+    min-width: calc(var(--vw, 1vw) * @n) !important;
+  }
+
+  // max-height
+
+  .h-max-@{n}@{postfix} {
+    max-height: (@n * 1%) !important;
+  }
+
+  .vh-max-@{n}@{postfix} {
+    max-height: (@n * 1%) !important;
+    max-height: (@n * 1vh) !important;
+    max-height: calc(var(--vh, 1vh) * @n) !important;
+  }
+
+  // max-width
+
+  .w-max-@{n}@{postfix} {
+    max-width: (@n * 1%) !important;
+  }
+
+  .vw-max-@{n}@{postfix} {
+    max-width: (@n * 1%) !important;
+    max-width: (@n * 1vw) !important;
+    max-width: calc(var(--vw, 1vw) * @n) !important;
+  }
+
+  // height
+
+  .h-@{n}@{postfix} {
+    height: (@n * 1%) !important;
+  }
+
+  .svh-@{n}@{postfix} {
+    height: (@n * 1%) !important;
+    height: (@n * 1vh) !important;
+    height: calc(var(--vh, 1svh) * @n) !important;
+    height: (@n * 1svh) !important;
+  }
+
+  .lvh-@{n}@{postfix} {
+    height: (@n * 1%) !important;
+    height: (@n * 1vh) !important;
+    height: calc(var(--vh, 1lvh) * @n) !important;
+    height: (@n * 1lvh) !important;
+  }
+
+  .dvh-@{n}@{postfix} {
+    height: (@n * 1%) !important;
+    height: (@n * 1vh) !important;
+    height: calc(var(--vh, 1dvh) * @n) !important;
+    height: (@n * 1dvh) !important;
+  }
+
+  .vh-@{n}@{postfix} {
+    height: (@n * 1%) !important;
+    height: (@n * 1vh) !important;
+    height: calc(var(--vh, 1vh) * @n) !important;
+  }
+
+  // width
+
+  .w-@{n}@{postfix} {
+    width: (@n * 1%) !important;
+  }
+
+  .svw-@{n}@{postfix} {
+    width: (@n * 1%) !important;
+    width: (@n * 1vw) !important;
+    width: calc(var(--vw, 1svw) * @n) !important;
+    width: (@n * 1svw) !important;
+  }
+
+  .lvw-@{n}@{postfix} {
+    width: (@n * 1%) !important;
+    width: (@n * 1vw) !important;
+    width: calc(var(--vw, 1lvw) * @n) !important;
+    width: (@n * 1lvw) !important;
+  }
+
+  .dvw-@{n}@{postfix} {
+    width: (@n * 1%) !important;
+    width: (@n * 1vw) !important;
+    width: calc(var(--vw, 1dvw) * @n) !important;
+    width: (@n * 1dvw) !important;
+  }
+
+  .vw-@{n}@{postfix} {
+    width: (@n * 1%) !important;
+    width: (@n * 1vw) !important;
+    width: calc(var(--vw, 1vw) * @n) !important;
+  }
+
+  // vmin und vmax
+
+  .vmin-@{n}@{postfix} {
+    height: (@n * 1%) !important;
+    height: (@n * 1vh) !important;
+    height: calc(var(--vh, 1vmin) * @n) !important;
+    height: (@n * 1vmin) !important;
+  }
+
+  .vmax-@{n}@{postfix} {
+    height: (@n * 1%) !important;
+    height: (@n * 1vh) !important;
+    height: calc(var(--vh, 1vmax) * @n) !important;
+    height: (@n * 1vmax) !important;
+  }
+
+  .generate-w-and-h-proportional(@postfix, @n+5);
+}
+
+.square {
+  aspect-ratio: 1/1;
+}
+
+.define-w-and-h(~"");
+.generate-w-and-h();

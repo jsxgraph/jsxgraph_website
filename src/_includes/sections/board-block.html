@@ -1,0 +1,47 @@
+<div class="row g-4 {% if include.data.board_pos=='second' or include.data.board_pos=='last' or include.data.board-pos=='right' or include.data.board-pos=='end' %}flex-row-reverse{% else %}flex-row{% endif %} justify-content-center section-board-block" id="section-{{ include.file }}">
+    <div class="col-12 col-xs-10 col-sm-8 col-md-6 col-lg-5 col-xxl-4">
+        <div style="width: {{ include.data.width | default: '100%' }}; height: {{ include.data.height | default: 'auto' }}; aspect-ratio: {{ include.data.aspect_ratio | default: '1/1' }};" class="jxgbox" id="{{ include.data.boardid }}"></div>
+        <script type="text/javascript">
+            (function () {
+                /*@formatter:off*/
+                {{ include.js }}
+                /*@formatter:on*/
+            })();
+        </script>
+        {% if include.data.title %}
+        <div class="mt-3 text-muted text-center">
+            {% if include.data.link %}
+
+            {%- assign stringToCheck = include.data.link %}
+            {%- assign checkArray = stringToCheck | split: ':' -%}
+            {%- if checkArray[0] == 'http' or checkArray[0] == 'https' or include.data.target == "_blank" -%}
+            {%- assign link = include.data.link -%}
+            {%- assign target = include.data.target | default: "_blank" -%}
+            {%- else -%}
+            {%- assign link = relBase | append: include.data.link -%}
+            {%- assign target = include.data.target | default: "_self" -%}
+            {%- endif -%}
+            <a href="{{ link }}" target="{{ target }}">
+                {{ include.data.title }}
+                {%- if target == "_blank" -%}
+                <i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>
+                {%- endif -%}
+            </a>
+
+            {% else %}
+            {{ include.data.title }}
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+    <div class="col-12 col-md-6 col-lg-7 col-xxl-8">
+        <div class="d-flex h-100">
+            <div class="my-auto">
+                {{ include.content }}
+                <div class="mt-3">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

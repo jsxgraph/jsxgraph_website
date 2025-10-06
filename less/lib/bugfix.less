@@ -1,0 +1,73 @@
+// -----------------------------
+// ---------- bugfixes ---------
+// -----------------------------
+
+/**
+* Fix for iPad iPhone iOS slight scroll
+* see also: http://stackoverflow.com/questions/19012135/ios-7-ipad-safari-landscape-innerheight-outerheight-layout-issue
+*/
+.body-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100% !important;
+}
+
+/**
+ * Disable double tap or pinch zoom
+ *
+ * auto
+ * Enable browser handling of all panning and zooming gestures.
+ *
+ * none
+ * Disable browser handling of all panning and zooming gestures.
+ *
+ * pan-x
+ * Enable single-finger horizontal panning gestures. May be combined with pan-y, pan-up, pan-down and/or pinch-zoom.
+ *
+ * pan-y
+ * Enable single-finger vertical panning gestures. May be combined with pan-x, pan-left, pan-right and/or pinch-zoom.
+ *
+ * manipulation
+ * Enable panning and pinch zoom gestures, but disable additional non-standard gestures such as double-tap to zoom.
+ * Disabling double-tap to zoom removes the need for browsers to delay the generation of click events when the user taps the screen.
+ * This is an alias for "pan-x pan-y pinch-zoom" (which, for compatibility, is itself still valid).
+ *
+ * pan-left, pan-right, pan-up, pan-down
+ * Enable single-finger gestures that begin by scrolling in the given direction(s).
+ * Once scrolling has started, the direction may still be reversed.
+ * Note that scrolling "up" (pan-up) means that the user is dragging their finger downward on the screen surface,
+ * and likewise pan-left means the user is dragging their finger to the right. Multiple directions may be combined
+ * except when there is a simpler representation (for example, "pan-left pan-right" is invalid since "pan-x" is simpler,
+ * but "pan-left pan-down" is valid).
+ *
+ * pinch-zoom
+ * Enable multi-finger panning and zooming of the page. This may be combined with any of the pan-values.
+ */
+* {
+  -ms-touch-action: @touch_action;
+  touch-action: @touch_action;
+}
+
+/**
+* prevent bouncing on mobile - add this class to html and body !
+*
+* attention:
+* scrollable parts have to use overflow: auto
+*/
+
+body.no-bounce,
+html.no-bounce {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden !important; // not good for position fixed
+  overscroll-behavior-y: none;
+}
+
+// Set this via javascript to Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+.vh-100-calc {
+  height: 100vh;
+}

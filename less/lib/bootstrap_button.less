@@ -1,0 +1,186 @@
+// ------------------
+// ---- buttons -----
+// ------------------
+
+.btn {
+  transition: none;
+}
+
+.btn-none,
+.btn-none.no-focus {
+  font-weight: 400;
+  font-size: inherit;
+  line-height: inherit;
+  vertical-align: inherit;
+  color: inherit;
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+  border: 0;
+}
+
+.define-btn-sizes(@postfix) {
+
+  .btn-xs@{postfix},
+  .btn-group-xs@{postfix} > .btn {
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-padding-x: 0.425rem;
+    --bs-btn-font-size: 0.625rem;
+    --bs-btn-border-radius: 0.2rem;
+  }
+
+  .pagination-xs@{postfix} {
+    --bs-pagination-padding-y: 0.25rem;
+    --bs-pagination-padding-x: 0.425rem;
+    --bs-pagination-font-size: 0.625rem;
+    --bs-pagination-border-radius: 0.2rem;
+  }
+
+  .btn-sm@{postfix},
+  .btn-group-sm@{postfix} > .btn {
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-padding-x: 0.5rem;
+    --bs-btn-font-size: 0.875rem;
+    --bs-btn-border-radius: 0.25rem;
+  }
+
+  .pagination-sm@{postfix} {
+    --bs-pagination-padding-y: 0.25rem;
+    --bs-pagination-padding-x: 0.5rem;
+    --bs-pagination-font-size: 0.875rem;
+    --bs-pagination-border-radius: 0.25rem;
+  }
+
+  .btn-md@{postfix},
+  .btn-group-md@{postfix} > .btn {
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-border-radius: 0.375rem;
+  }
+
+  .pagination-md@{postfix} {
+    --bs-pagination-padding-y: 0.375rem;
+    --bs-pagination-padding-x: 0.75rem;
+    --bs-pagination-font-size: 1rem;
+    --bs-pagination-border-radius: 0.375rem;
+  }
+
+  .btn-lg@{postfix},
+  .btn-group-lg@{postfix} > .btn {
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-font-size: 1.25rem;
+    --bs-btn-border-radius: 0.5rem;
+  }
+
+  .pagination-lg@{postfix} {
+    --bs-pagination-padding-y: 0.5rem;
+    --bs-pagination-padding-x: 1rem;
+    --bs-pagination-font-size: 1.25rem;
+    --bs-pagination-border-radius: 0.5rem;
+  }
+
+}
+
+.generate-btn-sizes(@i: 1) when (@i <= length(@width_names)) {
+  @name: extract(@width_names, @i);
+  @w_min: 'width_@{name}_min';
+
+  // devices with @@w_min and up
+  @media (min-width: @@w_min) {
+    .define-btn-sizes(~"-over-@{name}");
+  }
+
+  .generate-btn-sizes(@i+1);
+}
+
+.define-btn-sizes(~"");
+.generate-btn-sizes();
+
+.btn-group > :not(.btn-check:first-child) + *,
+.btn-group > .btn-group:not(:first-child) {
+  margin-left: -1px;
+}
+
+.btn-inline,
+.btn-inline.no-focus {
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-inline:focus, .btn-inline:focus-visible, .btn-inline.focus,
+.btn-none:focus, .btn-none:focus-visible, .btn-none.focus {
+  box-shadow: none;
+}
+
+.btn-inline.disabled,
+.btn-inline:disabled,
+.btn-transparent.disabled,
+.btn-transparent:disabled {
+  background: none !important;
+  background-color: transparent !important;
+  opacity: inherit;
+}
+
+.btn-circle {
+  border-radius: 1000px;
+  width: @circle;
+  height: @circle;
+}
+
+.btn-square {
+  border-radius: 20px;
+  width: @square;
+  height: @square;
+}
+
+.badge.fs-inherit {
+  padding: 0.6em 0.8em;
+}
+
+.badge-combined {
+  display: flex;
+  padding: 0 !important;
+}
+
+.badge-combined.fs-inherit > * {
+  padding: 0.6em 0.8em !important;
+}
+
+.badge-combined > * {
+  padding: 0.25em 0.4em;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.badge-combined.rounded-pill {
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
+}
+
+.badge-combined.rounded-pill > * {
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 10rem;
+}
+
+.badge-combined > *:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.badge-combined > *:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}

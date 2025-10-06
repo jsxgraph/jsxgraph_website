@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My JSXGraph Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+            id="MathJax-script" async></script>
+</head>
+<body>
+<div id="box" class="jxgbox" style="width:500px; aspect-ratio: 1/1;"></div>
+<script>
+    JXG.Options.text.useMathJax = true; // Enable MathJax for all JSXGraph elements!
+    var board = JXG.JSXGraph.initBoard(
+        'box', {
+            boundingbox: [-10, 10, 10, -10],
+            axis:true
+        });
+    var A = board.create('point', [-4,  5], { name: '$$A_{\\max}$$' });
+
+    // Insert JSXGraph code here!
+
+</script>
+</body>
+</html>

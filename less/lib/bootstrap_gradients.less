@@ -1,0 +1,235 @@
+// -----------------------------
+// -------- gradients ----------
+// -----------------------------
+
+.generate-gradient-defs(@colors1: primary_dark, @colors2: primary_light, @names: primary, @i: 1) when ((@i <= length(@names)) and (length(@names) = length(@colors1)) and (length(@colors1) = length(@colors2))) {
+  @name: extract(@names, @i);
+  @col1: extract(@colors1, @i);
+  @color1: 'color_@{col1}';
+  @col2: extract(@colors2, @i);
+  @color2: 'color_@{col2}';
+  @mix: mix(@@color1, @@color2);
+
+  .bg-@{name}-gradient {
+    background: linear-gradient(@gradient_direction, @@color1, @@color2);
+    color: contrast(@mix, @color_text_dark, @color_text_light);
+  }
+
+  .navbar.bg-@{name}-gradient {
+    .navbar-brand, .nav-link, .navbar-toggler-icon {
+      color: contrast(@mix, @color_text_dark, @color_text_light);
+    }
+
+    .nav-link.active {
+      color: contrast(@mix, lighten(@color_text_dark, @threshold_active), darken(@color_text_light, @threshold_active));
+    }
+  }
+
+  .bg-@{name}-gradient-hover {
+    background: linear-gradient(@gradient_direction, @@color1, @@color2);
+    color: contrast(@mix, @color_text_dark, @color_text_light);
+    cursor: pointer;
+  }
+
+  .bg-@{name}-gradient-hover:active,
+  .bg-@{name}-gradient-hover.active {
+    background: linear-gradient(@gradient_direction, darken(@@color1, @threshold_active), darken(@@color2, @threshold_active));
+    color: contrast(mix(darken(@@color1, @threshold_active), darken(@@color2, @threshold_active)), @color_text_dark, @color_text_light);
+  }
+
+  .bg-@{name}-gradient-hover:hover:not(.no-hover),
+  .bg-@{name}-gradient-hover.hover:not(.no-hover),
+  .bg-@{name}-gradient-hover:focus:not(.no-focus),
+  .bg-@{name}-gradient-hover:focus-visible:not(.no-focus),
+  .bg-@{name}-gradient-hover.focus:not(.no-focus),
+  .bg-@{name}-gradient-hover-sim {
+    background: linear-gradient(@gradient_direction, darken(@@color1, @threshold_hover), darken(@@color2, @threshold_hover));
+    color: contrast(mix(darken(@@color1, @threshold_hover), darken(@@color2, @threshold_hover)), @color_text_dark, @color_text_light);
+  }
+
+  .border-@{name}-gradient {
+    border-color: transparent !important;
+    background-image: linear-gradient(white, white), linear-gradient(@gradient_direction, @@color1, @@color2) !important;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
+  .text-@{name}-gradient {
+    background: linear-gradient(@gradient_direction, @@color1, @@color2);
+    background-color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .link-@{name}-gradient,
+  .text-@{name}-gradient-hover {
+    background: linear-gradient(@gradient_direction, @@color1, @@color2);
+    background-color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+  }
+
+  .link-@{name}-gradient:active,
+  .link-@{name}-gradient.active,
+  .text-@{name}-gradient-hover:active,
+  .text-@{name}-gradient-hover.active {
+    background: linear-gradient(@gradient_direction, transparent, transparent);
+    background-color: darken(mix(@@color1, @@color2), @threshold_active) !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .link-@{name}-gradient:hover:not(.no-hover),
+  .link-@{name}-gradient.hover:not(.no-hover),
+  .link-@{name}-gradient:focus:not(.no-focus),
+  .link-@{name}-gradient:focus-visible:not(.no-focus),
+  .link-@{name}-gradient.focus:not(.no-focus),
+  .text-@{name}-gradient-hover:hover:not(.no-hover),
+  .text-@{name}-gradient-hover.hover:not(.no-hover),
+  .text-@{name}-gradient-hover:focus:not(.no-focus),
+  .text-@{name}-gradient-hover:focus-visible:not(.no-focus),
+  .text-@{name}-gradient-hover.focus:not(.no-focus) {
+    background: linear-gradient(@gradient_direction, transparent, transparent);
+    background-color: darken(mix(@@color1, @@color2), @threshold_hover) !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-@{name}-gradient-faded {
+    background: linear-gradient(@gradient_direction, mix(#fff, @@color1, @threshold_faded), mix(#fff, @@color2, @threshold_faded));
+    color: contrast(mix(mix(@@color1, #fff, 15%), mix(#fff, @@color2, @threshold_faded)), @color_text_dark, @color_text_light);
+  }
+
+  .navbar.bg-@{name}-gradient-faded {
+    .navbar-brand, .nav-link, .navbar-toggler-icon {
+      color: contrast(mix(mix(@@color1, #fff, 15%), mix(#fff, @@color2, @threshold_faded)), @color_text_dark, @color_text_light);
+    }
+
+    .nav-link.active {
+      color: contrast(mix(mix(@@color1, #fff, 15%), mix(#fff, @@color2, @threshold_faded)), lighten(@color_text_dark, @threshold_active), darken(@color_text_light, @threshold_active));
+    }
+  }
+
+  .border-@{name}-gradient-faded {
+    border-color: transparent !important;
+    background-image: linear-gradient(white, white), linear-gradient(@gradient_direction, mix(#fff, @@color1, @threshold_faded), mix(#fff, @@color2, @threshold_faded)) !important;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
+  .text-@{name}-gradient-faded {
+    background: linear-gradient(@gradient_direction, mix(#fff, @@color1, @threshold_faded), mix(#fff, @@color2, @threshold_faded));
+    background-color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-@{name}-gradient-pale {
+    background: linear-gradient(@gradient_direction, mix(#fff, @@color1, @threshold_pale), mix(#fff, @@color2, @threshold_pale));
+    color: contrast(mix(mix(@@color1, #fff, 15%), mix(#fff, @@color2, @threshold_pale)), @color_text_dark, @color_text_light);
+  }
+
+  .navbar.bg-@{name}-gradient-pale {
+    .navbar-brand, .nav-link, .navbar-toggler-icon {
+      color: contrast(mix(mix(@@color1, #fff, 15%), mix(#fff, @@color2, @threshold_pale)), @color_text_dark, @color_text_light);
+    }
+
+    .nav-link.active {
+      color: contrast(mix(mix(@@color1, #fff, 15%), mix(#fff, @@color2, @threshold_pale)), lighten(@color_text_dark, @threshold_active), darken(@color_text_light, @threshold_active));
+    }
+  }
+
+  .border-@{name}-gradient-pale {
+    border-color: transparent !important;
+    background-image: linear-gradient(white, white), linear-gradient(@gradient_direction, mix(#fff, @@color1, @threshold_pale), mix(#fff, @@color2, @threshold_pale)) !important;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
+  .text-@{name}-gradient-pale {
+    background: linear-gradient(@gradient_direction, mix(#fff, @@color1, @threshold_pale), mix(#fff, @@color2, @threshold_pale));
+    background-color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .btn-@{name}-gradient,
+  .btn-@{name}-gradient.no-hover:not(.btn-transparent),
+  .btn-@{name}-gradient.no-hover:hover:not(.btn-transparent),
+  .btn-@{name}-gradient.no-active:not(.btn-transparent),
+  .btn-@{name}-gradient.no-active:active:not(.btn-transparent),
+  .btn-@{name}-gradient.no-focus:not(.btn-transparent),
+  .btn-@{name}-gradient.no-focus:focus:not(.btn-transparent),
+  .btn-@{name}-gradient.no-focus:focus-visible:not(.btn-transparent) {
+    background: linear-gradient(@gradient_direction, @@color1, @@color2);
+    border-color: transparent;
+    border: none;
+    color: contrast(@mix, @color_text_dark, @color_text_light);
+  }
+
+  .btn-@{name}-gradient:not(:disabled):not(.disabled):active:not(.no-active),
+  .btn-@{name}-gradient:not(:disabled):not(.disabled).active:not(.no-active) {
+    background: linear-gradient(@gradient_direction, darken(@@color1, @threshold_active), darken(@@color2, @threshold_active));
+    border-color: transparent;
+    border: none;
+    color: contrast(mix(darken(@@color1, @threshold_active), darken(@@color2, @threshold_active)), @color_text_dark, @color_text_light);
+  }
+
+  .btn-@{name}-gradient:focus:not(.no-focus),
+  .btn-@{name}-gradient:focus-visible:not(.no-focus),
+  .btn-@{name}-gradient.focus:not(.no-focus),
+  .btn-@{name}-gradient:not(:disabled):not(.disabled):hover:not(.no-hover),
+  .btn-@{name}-gradient:not(:disabled):not(.disabled).hover:not(.no-hover) {
+    background: linear-gradient(@gradient_direction, darken(@@color1, @threshold_hover), darken(@@color2, @threshold_hover));
+    border-color: transparent;
+    border: none;
+    color: contrast(mix(darken(@@color1, @threshold_hover), darken(@@color2, @threshold_hover)), @color_text_dark, @color_text_light);
+  }
+
+  .btn-@{name}-gradient.disabled,
+  .btn-@{name}-gradient:disabled {
+    background: linear-gradient(@gradient_direction, mix(@@color1, #eee, 60%), mix(@@color2, #eee, 60%)) !important;
+    border-color: transparent;
+    border: none;
+    opacity: 1;
+    color: darken(mix(@@color1, @@color2), @threshold_active); // contrast(mix(mix(@@color1, #eee, 75%), mix(@@color2, #eee, 75%)), @color_text_dark, @color_text_light);
+  }
+
+  // .btn-outline-@{name}-gradient will not work!
+
+  .alert-@{name}-gradient {
+    color: darken(mix(@@color1, @@color2), 30%);
+    background: linear-gradient(@gradient_direction, mix(@@color1, #fff, 50%), mix(@@color2, #fff, 50%));
+    border-color: mix(mix(@@color1, @@color2), #fff, 50%);
+  }
+
+  .list-group-item-@{name}-gradient {
+    color: mix(mix(@@color1, @@color2), #000, 30%);
+    background: linear-gradient(@gradient_direction, mix(@@color1, #fff, 40%), mix(@@color2, #fff, 40%));
+  }
+
+  .list-group-item-@{name}-gradient.list-group-item-action:hover:not(.no-hover),
+  .list-group-item-@{name}-gradient.list-group-item-action.hover:not(.no-hover),
+  .list-group-item-@{name}-gradient.list-group-item-action:focus:not(.no-focus),
+  .list-group-item-@{name}-gradient.list-group-item-action:focus-visible:not(.no-focus),
+  .list-group-item-@{name}-gradient.list-group-item-action.focus:not(.no-focus) {
+    color: mix(mix(@@color1, @@color2), #000, 30%);
+    background: linear-gradient(@gradient_direction, lighten(@@color1, @threshold_hover), mix(@@color2, #fff, 60%));
+  }
+
+  .list-group-item-@{name}-gradient.list-group-item-action.active:not(.no-active),
+  .list-group-item-@{name}-gradient.list-group-item-action:active:not(.no-active) {
+    color: #fff;
+    background: linear-gradient(@gradient_direction, lighten(@@color1, @threshold_active), mix(@@color2, #000, 75%));
+    border-color: mix(mix(@@color1, @@color2), #000, 75%);
+  }
+
+  .generate-gradient-defs(@colors1, @colors2, @names, (@i + 1));
+}
+
+/////////////////
+/// gradients ///
+/////////////////
+
+.generate-gradient-defs(@bootstrap_gradients_colors1, @bootstrap_gradients_colors2, @bootstrap_gradients_names);

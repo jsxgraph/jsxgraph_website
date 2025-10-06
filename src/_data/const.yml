@@ -1,0 +1,83 @@
+# Some general consts
+
+webtitle: JSXGraph
+slogan: > # use sign #~# to define breakpoints
+  Math Visualization.#~#
+  Web-Based.#~#
+  Interactive. Seamless.
+
+version: v1.11.1
+version_year: 2025
+
+carousel:
+  active: true
+  speed: 3000
+  data: # use sign #~# to define breakpoints
+    - text: >
+        Math Visualization.#~#
+        Interactive.#~#
+        Seamless.
+    - text: >
+        Web-Based.#~#
+        Open-Source.#~#
+        JavaScript.
+    - text: >
+        6<sup>th</sup> Intl. JSXGraph#~#
+        Conference,#~#
+        7.-9. October 2025
+      link: https://jsxgraph.org/conf2025
+      target: _blank
+
+url:
+  web: https://jsxgraph.org
+  js: https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js
+  css: https://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css
+
+default_polygon: "jsxgraph-pure"  # jsxgraph-pure | jsxgraph-plain | circle | 4 | 5 | 6 | 8
+
+meta: >
+  JSXGraph is a cross-platform library for interactive geometry, function plotting, and data visualization in the web browser. 
+
+keywords: >
+  interactive geometry, dynamic mathematics, visualization, web-based graphics, mathematical constructions, function plotting, data visualization, accessibility, ARIA support, keyboard interaction, touch interaction, screen reader compatibility, open-source software, JavaScript library, STEM education, inquiry-based learning, cross-platform support, educational technology
+
+btn:
+  menu: Menu
+  more: More
+
+cookie:
+  hint: >
+    JSXGraph stores only essential data for core website functionality in your browser.
+  more: Learn more.
+  btn: Okay
+  link: /privacy
+
+maps:
+  button: Load Google Maps
+  text: >
+    You can view the location via Google Maps.
+    When you load the map, personal data will be sent to Google, and cookies will be set by Google.
+    Therefore, it is possible that the provider stores your access and analyzes your behavior.
+    You can find Google Maps' privacy policy
+    <a href="https://policies.google.com/privacy" target="_blank" title="https://policies.google.com/privacy">here</a>.
+
+institution: >
+  Center for Mobile Learning with Digital Technology<br>
+  University of Bayreuth
+
+address: >
+  Universitätsstraße 30<br>
+  95447 Bayreuth<br>
+  Germany
+
+supporters:
+  title: Supported by
+  containerclass: g-5 g-xs-4 g-sm-5
+  itemclass: col-7 col-xs-4 col-lg-3 col-xxl-2 mx-auto mx-xs-0
+  list:
+    - name: Center for Mobile Learning with Digital Technology
+      logo: /media/logos/logo-cmldt.png
+      url: https://mobile-learning.uni-bayreuth.de
+    - name: University of Bayreuth
+      logo: /media/logos/logo-ubt.png
+      url: https://www.uni-bayreuth.de

@@ -1,0 +1,56 @@
+.circle-clip,
+.square-clip,
+.pentagon-clip,
+.hexagon-clip,
+.octagon-clip {
+  aspect-ratio: 1/1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+}
+
+.circle-clip {
+  clip-path: circle(49% at 50% 50%);
+  padding: 10%;
+}
+
+.square-clip {
+  clip-path: polygon(0% 0%,
+  100% 0%,
+  100% 100%,
+  0% 100%);
+  padding: 5%;
+}
+
+.pentagon-clip {
+  clip-path: polygon(50% 3%,
+  98% 37%,
+  80% 97%,
+  20% 97%,
+  2% 37%);
+  padding: 7% 8%;
+}
+
+.hexagon-clip {
+  clip-path: polygon(100% 50%,
+  75% 93%,
+  25% 93%,
+  0% 50%,
+  25% 7%,
+  75% 7%);
+  padding: 10% 4%;
+}
+
+.octagon-clip {
+  clip-path: polygon(32% 3%,
+  68% 3%,
+  97% 32%,
+  97% 68%,
+  68% 97%,
+  32% 97%,
+  3% 68%,
+  3% 32%);
+  padding: 6%;
+}

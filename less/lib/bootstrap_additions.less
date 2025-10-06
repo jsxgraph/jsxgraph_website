@@ -1,0 +1,251 @@
+// ----------------------------------
+// ----------- additional -----------
+// ----------------------------------
+
+.nowrap,
+.break-nothing {
+  white-space: nowrap;
+}
+
+.wrap,
+.break-all {
+  white-space: normal;
+}
+
+.wrap-any,
+.anywrap,
+.break-any {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+ul {
+  padding-left: 1.5rem;
+  list-style-type: square;
+
+  ul {
+    list-style-type: disc;
+
+    ul {
+      list-style-type: '\2212  '; // minus
+
+      ul {
+        list-style-type: '\25B8  '; // triangle
+
+        ul {
+          list-style-type: '\223C '; // tilde
+
+          ul {
+            list-style-type: circle;
+          }
+        }
+      }
+    }
+  }
+}
+
+ol > li > ul {
+  margin-bottom: 1rem;
+}
+
+iframe,
+object {
+  width: 100%;
+  height: 350px;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  display: block;
+}
+
+.required when (@label_required_asterisk = true) {
+  label&:after, label > &:after {
+    content: '\002A';
+    margin-left: 0.25rem;
+  }
+}
+
+.h1-indent {
+  margin-left: 0;
+}
+
+.h2-indent {
+  margin-left: 0.66rem;
+}
+
+.h3-indent {
+  margin-left: 1.33rem;
+}
+
+.h4-indent {
+  margin-left: 2rem;
+}
+
+.h5-indent {
+  margin-left: 2.66rem;
+}
+
+.h6-indent {
+  margin-left: 3.33rem;
+}
+
+blockquote {
+  font-style: italic;
+  padding-left: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-left: 3px solid @color_primary;
+  background-color: fade(@color_primary, 3%);
+}
+
+.cursor-pointer {
+  cursor: pointer !IMPORTANT;
+}
+
+.cursor-default {
+  cursor: default !IMPORTANT;
+}
+
+.d-not-first:first-child {
+  display: none !important;
+}
+
+.d-not-last:last-child {
+  display: none !important;
+}
+
+.not-visible {
+  visibility: hidden;
+}
+
+.dropdown-menu .list-group {
+  border: 0;
+  border-radius: 0;
+}
+
+.dropdown-menu .list-group .list-group-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  white-space: nowrap;
+  border: 0;
+  border-radius: 0;
+}
+
+.collapse-half:not(.show) {
+  overflow: hidden;
+  height: @collape_half;
+}
+
+[data-bs-toggle="collapse"][aria-expanded="false"] .collapse-opened,
+[data-bs-toggle="collapse"][aria-expanded="true"] .collapse-closed {
+  display: none;
+}
+
+label input.btn-check:not(:checked) ~ .btn-check-checked,
+label input.btn-check:checked ~ .btn-check-unchecked,
+input.btn-check:not(:checked) + label .btn-check-checked,
+input.btn-check:checked + label .btn-check-unchecked {
+  display: none;
+}
+
+.form-control:disabled,
+.form-control.disabled,
+.form-control:read-only,
+.form-control.readonly,
+input.readonly, select.readonly, textarea.readonly {
+  background-color: #e9ecef;
+  opacity: 1;
+  cursor: default;
+}
+
+.alert {
+  &.alert-sm {
+    .px-2();
+    .py-1();
+    font-size: 90%;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.carousel-inline-control {
+
+  display: flex;
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: relative;
+    color: @color_dark;
+    opacity: 1;
+
+    // From .btn
+    --bs-btn-font-weight: 400;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-color: #212529;
+    --bs-btn-bg: transparent;
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+
+    // from .btn-inline
+    border-radius: 0;
+    border: 0;
+    box-shadow: none !important;
+    font-size: 1.1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.carousel-static .carousel-item {
+  transition: none;
+}
+
+.card-img-overlay.card-img:not(.border):not(.border-start):not(.border-end),
+.card-img-overlay.card-img-top:not(.border):not(.border-start):not(.border-end),
+.card-img-overlay.card-img-bottom:not(.border):not(.border-start):not(.border-end) {
+  width: calc(100% + 1px + 1px);
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.card-img-overlay.card-img-top:not(.border):not(.border-start):not(.border-end) {
+  margin-top: -1px;
+}
+
+.card-img-overlay.card-img-top:not(.border):not(.border-start):not(.border-end) {
+  margin-bottom: -1px;
+}
+
+.card, .card-img, .card-img-top, .card-img-bottom, .card-header, .card-body, .card-footer {
+  border-color: var(--bs-card-border-color) !important;
+}
+
+// -----------------------
+// ------- opacity -------
+// -----------------------
+
+@percents: 0, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 66, 70, 75, 80, 85, 90, 95, 100;
+
+.generate-opacity-defs(@i: 1) when (@i <= length(@percents)) {
+  @no: extract(@percents, @i);
+  @percent: (@no / 100);
+
+  .opacity-@{no} {
+    opacity: @percent !important;
+  }
+
+  .generate-opacity-defs(@i+1);
+}
+
+.generate-opacity-defs();

@@ -1,0 +1,49 @@
+<footer class="mt-5">
+    {% if (const.supporters.list | length) > 0 %}
+    <div class="bg-white my-5">
+        {% include part/supporters.html %}
+    </div>
+    {% endif %}
+    <div class="bg-primary">
+        <div class="container md-container py-4">
+            <div class="row justify-content-between align-items-center g-4">
+                <div class="col-12 col-md-6">
+                    <div class="m-between-2 m-between-md-3">
+                        {%- assign pagelist = site.pages | where: "in_menu_footer",true | sort: 'order' -%}
+                        {%- for i_page in pagelist %}
+
+                        {%- if i_page.pagination_info and i_page.pagination_info.curr_page > 1 -%}
+                        {%- continue -%}
+                        {%- endif -%}
+
+                        <div>
+                            <a href="{{ relBase }}{{ i_page.url }}" class="link-white link-quiet">
+                                {{ i_page.menu_title | default: i_page.header | default: i_page.title }}
+                            </a>
+                        </div>
+                        {%- endfor -%}
+                    </div>
+                </div>
+                <div class="col-12 col-md">
+                    {{ const.institution }}
+                    <br>
+                    {{ const.address }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-outer">
+        <div class="container md-container py-4">
+            <div class="d-flex flex-wrap flex-nowrap-md justify-content-center align-items-center">
+                <div class="nowrap">
+                    &copy; 2008 - {{ 'now' | date: "%Y" }}
+                </div>
+                <div class="mx-3 d-none d-md-block">|</div>
+                <div class="w-100 d-block d-md-none"></div>
+                <div>
+                    {{ const.webtitle }}
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,128 @@
+// ---------------------------------
+// ----------- safe area -----------
+// ---------------------------------
+
+@types: margin, padding;
+@prefix_margin: m;
+@prefix_padding: p;
+
+@has_negtive: margin;
+
+@directions: top, bottom, left, right;
+@suffix_top: t, y, '';
+@suffix_bottom: b, y, '';
+@suffix_left: s, x, '';
+@suffix_right: e, x, '';
+
+@sa_top: safe-area-inset-top;
+@sa_bottom: safe-area-inset-bottom;
+@sa_left: safe-area-inset-left;
+@sa_right: safe-area-inset-right;
+
+.generate-m-p(@postfix: ~'', @i: 1) when (@i <= length(@types)) {
+
+  .generate-m-p-inner(@j: 1) when (@j <= length(@directions)) {
+
+    @type: extract(@types, @i);
+    @dir: extract(@directions, @j);
+    @attribute: ~'@{type}-@{dir}';
+
+    @sa: 'sa_@{dir}';
+
+    @prefix_name: 'prefix_@{type}';
+    @prefix: @@prefix_name;
+    @suffixes_names: 'suffix_@{dir}';
+    @suffixes: @@suffixes_names;
+
+    .generate-m-p-innerst(@k: 1) when (@k <= length(@suffixes)) {
+
+      @suffix: extract(@suffixes, @k);
+      @suff: ~'@{suffix}';
+
+      .generate-spaces(@l: length(@spacer_factors)) when (@l >= 1) {
+        @idx: @l - 1;
+
+        .@{prefix}@{suff}@{postfix}-@{idx} {
+            @{attribute}: (@spacer * extract(@spacer_factors, @l)) !important;
+        }
+
+        .generate-spaces((@l - 1));
+      }
+
+      .generate-spaces();
+
+      .@{prefix}@{suff}-safe-area@{postfix},
+      .@{prefix}@{suff}-sa@{postfix} {
+          @{attribute}: env(@@sa) !important;
+      }
+
+      .negative(@flag) when (@flag = true) {
+        .@{prefix}@{suff}-n-safe-area@{postfix},
+        .@{prefix}@{suff}-n-sa@{postfix} {
+            @{attribute}: calc(0px - env(@@sa)) !important;
+        }
+      }
+      .negative(boolean(@type = @has_negtive));
+
+      .@{prefix}@{suff}-safe-area@{postfix}-0,
+      .@{prefix}@{suff}-sa@{postfix}-0 {
+          @{attribute}: 0 !important;
+      }
+
+      .generate-m-p-innerst((@k + 1));
+    }
+    .generate-m-p-innerst();
+    .generate-m-p-inner((@j + 1));
+
+  }
+  .generate-m-p-inner();
+  .generate-m-p(@postfix, (@i + 1));
+
+}
+
+.generate-m-p-breakpoints(@i: 1) when (@i <= length(@width_names)) {
+  @name: extract(@width_names, @i);
+  @w_min: 'width_@{name}_min';
+
+  // devices with @@w_min and up
+  @media (min-width: @@w_min) {
+    .generate-m-p(~'-@{name}');
+  }
+
+  .generate-m-p-breakpoints(@i + 1);
+}
+
+.generate-m-p();
+.generate-m-p-breakpoints();
+
+.top-n-safe-area {
+  top: calc(0px - env(safe-area-inset-top)) !important;
+}
+
+.bottom-n-safe-area {
+  bottom: calc(0px - env(safe-area-inset-bottom)) !important;
+}
+
+.start-n-safe-area {
+  left: calc(0px - env(safe-area-inset-top)) !important;
+}
+
+.end-n-safe-area {
+  right: calc(0px - env(safe-area-inset-bottom)) !important;
+}
+
+.mb-0-last:last-child {
+  margin-bottom: 0;
+}
+
+.mt-0-first:first-child {
+  margin-top: 0;
+}
+
+.ms-0-first:first-child {
+  margin-left: 0;
+}
+
+.me-0-last:last-child {
+  margin-right: 0;
+}

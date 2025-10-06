@@ -1,0 +1,78 @@
+{%- assign polygon = include.polygon | default: const.default_polygon -%}
+<!-- circle | 4 | 5 | 6 | 8 | jsxgraph-pure | jsxgraph-plain -->
+
+{%- if polygon == "jsxgraph-pure" -%}
+{%- assign class = "jsxgraph-logo-pure-clip" -%}
+{%- elsif polygon == "jsxgraph-plain" -%}
+{%- assign class = "jsxgraph-logo-plain-clip" -%}
+{%- elsif polygon == "circle" -%}
+{%- assign class = "circle-clip" -%}
+{%- elsif polygon == "4" -%}
+{%- assign class = "square-clip" -%}
+{%- elsif polygon == "5" -%}
+{%- assign class = "pentagon-clip" -%}
+{%- elsif polygon == "8" -%}
+{%- assign class = "octagon-clip" -%}
+{%- else -%}
+{%- assign class = "hexagon-clip" -%}
+{%- endif -%}
+
+<div class="{{ include.class }} shortcuts">
+    <div class="row g-2 g-sm-3 g-md-4 justify-content-center my-4 w-100">
+        {%- assign color = include.color | default: 'primary' -%}
+        {%- assign first = true -%}
+        {%- assign pagelist = site.pages | where: "in_shortcuts",true | sort: 'order_shortcuts' -%}
+        {%- for i_page in pagelist -%}
+
+        {%- if i_page.pagination_info and i_page.pagination_info.curr_page > 1 -%}
+        {%- continue -%}
+        {%- endif -%}
+
+        {%- if i_page.external_link -%}
+        {%- assign link = i_page.external_link -%}
+        {%- assign target = i_page.target | default: "_blank" -%}
+        {%- else -%}
+        {%- assign link = relBase | append: i_page.url -%}
+        {%- assign target = i_page.target | default: "_self" -%}
+        {%- endif -%}
+        <div class="col-9 col-xs-8 col-sm-4 col-md-3">
+            <a href="{{ link }}" target="{{ target }}" class="link-quiet d-flex d-sm-block m-between-3 m-between-sm-0 align-items-center">
+                {% if i_page.icon %}
+                <div class="square w-fix-xxs w-fix-xs-over-sm w-fix-sm-over-md mx-sm-auto overflow-hidden mb-sm-2">
+                    <div class="btn btn-{{ color }} rounded-0 {{ class }}">
+                        <div class="d-flex justify-content-center align-items-center w-100">
+                            <div class="big d-block d-sm-none">
+                                <i class="fa-fw {{ i_page.icon }}"></i>
+                            </div>
+                            <div class="biggest d-none d-sm-block">
+                                <i class="fa-fw {{ i_page.icon }}"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                <div class="link-{{ color }}">
+                    <div class="text-start d-block d-sm-none">
+                        {{ i_page.title_shortcuts | default: i_page.title }}
+                        {% if i_page.subtitle %}
+                        <div class="smaller">
+                            {{ i_page.subtitle }}
+                        </div>
+                        {% endif %}
+                    </div>
+                    <div class="text-center d-none d-sm-block">
+                        {{ i_page.title_shortcuts | default: i_page.title }}
+                        {% if i_page.subtitle %}
+                        <div class="smaller">
+                            {{ i_page.subtitle }}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 d-sm-none m-0"></div>
+        {%- assign first = false -%}
+        {%- endfor -%}
+    </div>
+</div>

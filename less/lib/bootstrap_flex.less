@@ -1,0 +1,70 @@
+// ---------------
+// ---- flex -----
+// ---------------
+
+.define-flex-options(@postfix) {
+
+  .flex-fill@{postfix} {
+    flex: 1 1 auto !important;
+  }
+
+  .flex-row@{postfix} {
+    flex-direction: row !important;
+  }
+
+  .flex-column@{postfix} {
+    flex-direction: column !important;
+  }
+
+  .flex-row-reverse@{postfix} {
+    flex-direction: row-reverse !important;
+  }
+
+  .flex-column-reverse@{postfix} {
+    flex-direction: column-reverse !important;
+  }
+
+  .flex-grow@{postfix}-0 {
+    flex-grow: 0 !important;
+  }
+
+  .flex-grow@{postfix}-1 {
+    flex-grow: 1 !important;
+  }
+
+  .flex-shrink@{postfix}-0 {
+    flex-shrink: 0 !important;
+  }
+
+  .flex-shrink@{postfix}-1 {
+    flex-shrink: 1 !important;
+  }
+
+  .flex-wrap@{postfix} {
+    flex-wrap: wrap !important;
+  }
+
+  .flex-nowrap@{postfix} {
+    flex-wrap: nowrap !important;
+  }
+
+  .flex-wrap-reverse@{postfix} {
+    flex-wrap: wrap-reverse !important;
+  }
+
+}
+
+.generate-flex-options(@i: 1) when (@i <= length(@width_names)) {
+  @name: extract(@width_names, @i);
+  @w_min: 'width_@{name}_min';
+
+  // devices with @@w_min and up
+  @media (min-width: @@w_min) {
+    .define-flex-options(~"-@{name}");
+  }
+
+  .generate-flex-options(@i+1);
+}
+
+.define-flex-options(~"");
+.generate-flex-options();

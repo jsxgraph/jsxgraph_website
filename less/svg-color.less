@@ -1,0 +1,24 @@
+.generate-svg-colors(@colors: primary, @i: 1) when (@i <= length(@colors)) {
+  @name_raw: extract(@colors, @i);
+  @color: 'color_@{name_raw}';
+
+  @name: replace(@name_raw, '_', '-', 'gi');
+
+  .svg-@{name} {
+    path {
+      stroke: @@color !important;
+    }
+    .text path {
+      fill: @@color !important;
+      stroke: none !important;
+    }
+  }
+
+  path.svg-@{name} {
+    stroke: @@color !important;
+  }
+
+  .generate-svg-colors(@colors, (@i + 1));
+}
+
+.generate-svg-colors(@bootstrap_colors);

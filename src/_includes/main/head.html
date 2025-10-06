@@ -1,0 +1,142 @@
+<!-- ########################################
+                       meta
+   ######################################### -->
+
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+{% if (page.layout == "default") or (page.layout == "splash") %}
+{%- for store in const.appstores -%}
+{%- if store.banner.enabled %}
+{{ store.banner.code }}
+{% endif -%}
+{%- endfor -%}
+{% endif %}
+<title>
+    {%- if page.title_only == true -%}{{ page.title }}{%- else -%}
+    {%- if page.is_home != true -%}{{ page.title }} | {% endif -%}
+    {{ const.webtitle }}
+    {%- endif -%}
+</title>
+
+<meta name="robots" content="index,follow">
+<meta name="description" content="{{ const.meta | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip }}">
+<meta name="keywords" content="{{ const.keywords | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip }}">
+
+{% if page.external_link -%}
+<meta http-equiv="refresh" content="0; url={{page.external_link}}"/>
+{%- endif %}
+
+{% if page.is_separator -%}
+{% assign id = page.url | split: '/' | last %}
+{%- assign subs = site.pages | where: "parent",id | where_exp:"item", "item.parent != nil" | sort: 'order' -%}
+<meta http-equiv="refresh" content="0; url={{ relBase }}{{ subs[0].url }}"/>
+{%- endif %}
+
+<!-- ########################################
+                    icons
+   ######################################### -->
+
+<link rel="icon" type="image/x-icon" href="{{ relBase }}/media/favicon/16.png">
+<link rel="shortcut icon" type="image/x-icon" href="{{ relBase }}/media/favicon/16.png">
+<link rel="icon" type="image/x-icon" href="{{ relBase }}/media/favicon/32.png">
+<link rel="shortcut icon" type="image/x-icon" href="{{ relBase }}/media/favicon/32.png">
+<link rel="icon" href="{{ relBase }}/media/favicon/logo-light.svg" type="image/x-icon" >
+<link rel="shortcut icon" href="{{ relBase }}/media/favicon/logo-light.svg" type="image/x-icon" >
+<link rel="icon" href="{{ relBase }}/media/favicon/logo-light.svg" media="(prefers-color-scheme: light)" type="image/x-icon" >
+<link rel="shortcut icon" href="{{ relBase }}/media/favicon/logo-light.svg" media="(prefers-color-scheme: light)" type="image/x-icon" >
+<link rel="icon" href="{{ relBase }}/media/favicon/logo-dark.svg" media="(prefers-color-scheme: dark)" type="image/x-icon" >
+<link rel="shortcut icon" href="{{ relBase }}/media/favicon/logo-dark.svg" media="(prefers-color-scheme: dark)" type="image/x-icon" >
+
+{% if page.external_link==nil and page.is_separator!=true -%}
+<!-- ########################################
+                  JS + Helper
+    ######################################### -->
+
+<script type="text/javascript" src="{{ relBase }}/assets/extend/ecma.js"></script>
+<script type="text/javascript" src="{{ relBase }}/assets/extend/jxg_compensation.js"></script>
+
+<!-- ########################################
+                      MathJax
+    ######################################### -->
+<script type="text/javascript">
+    window.MathJax = {
+        loader: {
+            load: ['[tex]/html'],
+        },
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            packages: ['base', 'ams', 'html'],
+        },
+        options: {
+            ignoreHtmlClass: 'tex2jax_ignore',
+            processHtmlClass: 'tex2jax_process',
+        },
+    };
+</script>
+<script type="text/javascript" src="{{ relBase }}/assets/mathjax/es5/tex-chtml.js"></script>
+
+<!-- ########################################
+                  JSXGraph
+    ######################################### -->
+
+{%- assign stringToCheck = const.url.css %}
+{%- assign checkArray = stringToCheck | split: ':' -%}
+{%- if checkArray[0] == 'http' or checkArray[0] == 'https' -%}
+{%- assign link = stringToCheck %}
+{%- else -%}
+{%- assign link = relBase | append: stringToCheck %}
+{%- endif -%}
+<link rel="stylesheet" href="{{ link }}"/>
+
+{%- assign stringToCheck = const.url.js %}
+{%- assign checkArray = stringToCheck | split: ':' -%}
+{%- if checkArray[0] == 'http' or checkArray[0] == 'https' -%}
+{%- assign link = stringToCheck %}
+{%- else -%}
+{%- assign link = relBase | append: stringToCheck %}
+{%- endif -%}
+<script type="text/javascript" src="{{ link }}"></script>
+
+<!-- ########################################
+                   jQuery
+    ######################################### -->
+<script type="text/javascript" src="{{ relBase }}/assets/jquery/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="{{ relBase }}/assets/extend/jquery.js"></script>
+
+<!-- ########################################
+                  Bootstrap
+    ######################################### -->
+<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/bootstrap/bootstrap-individual.min.css">
+<script type="text/javascript" src="{{ relBase }}/assets/extend/popper.min.js"></script>
+<script type="text/javascript" src="{{ relBase }}/assets/extend/tether.min.js"></script>
+<script type="text/javascript" src="{{ relBase }}/assets/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ relBase }}/assets/extend/bootstrap.js"></script>
+<script type="text/javascript" src="{{ relBase }}/assets/extend/masonry.min.js"></script>
+
+<!-- ########################################
+                   jszip
+    ######################################### -->
+<script type="text/javascript" src="{{ relBase }}/assets/jszip/jszip.min.js"></script>
+
+<!-- ########################################
+                  FontAwesome
+    ######################################### -->
+<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/fontawesome-6.5.1/css/fontawesome.css"/>
+<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/fontawesome-6.5.1/css/brands.css"/>
+<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/fontawesome-6.5.1/css/solid.css"/>
+<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/fontawesome-6.5.1/css/regular.css"/>
+
+<!-- ########################################
+                   website
+    ######################################### -->
+<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/website.css?v={{ site.time | date: '%Y%m%d%H%M%S%L' }}">
+<script type="text/javascript" src="{{ relBase }}/assets/website.js"></script>
+
+<!-- ########################################
+                  clipping
+    ######################################### -->
+{% include main/clip-pattern.html %}
+
+{%- endif -%}

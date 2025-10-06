@@ -1,0 +1,55 @@
+{%- if page.splash.topbar != false -%}
+{% include main/topbar.html splash=true %}
+{%- endif -%}
+
+<style>
+    .image-bg-cover {
+        background: color-mix(in hsl, var(--bs-primary), #fff);
+    }
+
+    /*@formatter:off*/
+    #splash,
+    #topbar.topbar-splash #menu-toggler {
+        color: {{ page.splash.color | default: 'white' }};
+    }
+    /*@formatter:on*/
+</style>
+
+{%- if page.splash.image or page.splash.background -%}
+{% assign background_default = "url('" | append: relBase | append: page.splash.image | append: "')" %}
+{% assign background = page.splash.background | default: background_default %}
+{% assign background = background | preg_replace: '{{ relBase }}', relBase %}
+{% assign style = "background: " | append: background | append: ";" %}
+{%- endif -%}
+
+<div id="splash" class="position-relative">
+    <div id="splash-image" class="position-sticky top-0">
+        <div class="image-bg-cover" style="{{ style }}"></div>
+    </div>
+
+    {%- if page.splash.content != nil -%}
+    {%- for splash in page.splash.content -%}
+    {%- if splash.file != nil -%}
+    {%- assign file = '_' | append: splash.file | append: '.splash.md' -%}
+    {%- capture splash_inclusion -%}{% include_relative {{file}} %}{%- endcapture -%}
+    {%- elsif splash.content != nil -%}
+    {%- if splash.content == "this" -%}{%- assign splash_inclusion = content -%}{%- else -%}{%- assign splash_inclusion = splash.content -%}{%- endif -%}
+    {%- else -%}
+    {%- assign splash_inclusion = "" -%}
+    {%- endif -%}
+    {%- assign spl_content = splash_inclusion | pre_markdown | markdownify | replace_post: relBase -%}
+    {% include main/splash-page.html content=spl_content overlay=splash.overlay overlay_background=splash.overlay_background scroll=splash.scroll content_raw=splash_inclusion data=splash.data index=forloop.index index0=forloop.index0 %}
+    {%- endfor -%}
+    {%- endif -%}
+
+    <div class="w-100 h-0"></div>
+
+    <script type="module">
+        $('.splash-scroll').on('click', function () {
+            $(this).parents('.splash-page').next('div').scrollIntoView({
+                block: 'start',
+                behavior: 'smooth',
+            });
+        });
+    </script>
+</div>

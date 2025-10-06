@@ -1,0 +1,41 @@
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="cookie-hint" class="toast bg-outer border-primary rounded-0 z-index-outer" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+        <div class="d-flex">
+            <div class="toast-body px-3 py-2">
+                {{ const.cookie.hint }}
+                <a href="{{ relBase }}{{ const.cookie.link }}">
+                    {{ const.cookie.more }}
+                </a>
+            </div>
+            <button type="button" class="btn btn-primary rounded-0" id="cookie-accept">
+                {{ const.cookie.btn }}
+            </button>
+        </div>
+    </div>
+</div>
+
+<script type="module">
+    (function () {
+        const hint = $('#cookie-hint'),
+            toast = bootstrap.Toast.getOrCreateInstance(hint[0]),
+            button = $('#cookie-accept'),
+            body = $('body'),
+            lsKey = 'accept_cookie';
+
+        let ls = window.localStorage,
+            entry;
+
+        if (typeof ls == 'undefined' || typeof ls.getItem == 'undefined') return;
+        entry = ls.getItem(lsKey);
+
+        if (typeof entry == 'undefined' || (entry !== true && entry !== 'true')) {
+            toast.show();
+            body.css('padding-bottom', hint.outerHeight());
+        }
+
+        button.on('click', function () {
+            ls.setItem(lsKey, true);
+            toast.hide();
+        });
+    })();
+</script>

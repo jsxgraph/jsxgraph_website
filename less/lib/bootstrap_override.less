@@ -1,0 +1,232 @@
+// -----------------------------
+// ---------- override ---------
+// -----------------------------
+
+a,
+a:hover,
+.btn-link {
+  text-decoration: none;
+}
+
+.gen-a() when (@underline_links = true) {
+  a,
+  .btn-link {
+    text-decoration: underline;
+  }
+
+  a:hover,
+  .btn-link:hover {
+  }
+}
+
+.gen-a();
+
+a:not([href]):not([class]),
+.link-quiet,
+.dropdown-item,
+.btn,
+.list-group-item,
+.list-group-item-action,
+.nav-link,
+.carousel-control-prev,
+.carousel-control-next {
+  &, &:hover, * {
+    text-decoration: none;
+  }
+}
+
+hr {
+  border-width: var(--bs-border-width);
+  opacity: 1;
+}
+
+.gen-hs() when (@dynamic_headsizes = true) {
+
+  h1, .h1 {
+    font-size: calc(1.66rem + 1vw);
+  }
+
+  @media (min-width: 1200px) {
+    h1, .h1 {
+      font-size: 2.33rem;
+    }
+  }
+
+  h2, .h2 {
+    font-size: calc(1.33rem + 1vw);
+  }
+
+  @media (min-width: 1200px) {
+    h2, .h2 {
+      font-size: 2rem;
+    }
+  }
+
+  h3, .h3 {
+    font-size: calc(1rem + 1vw);
+  }
+
+  @media (min-width: 1200px) {
+    h3, .h3 {
+      font-size: 1.66rem;
+    }
+  }
+
+  h4, .h4 {
+    font-size: calc(0.66rem + 1vw);
+  }
+
+  @media (min-width: 1200px) {
+    h4, .h4 {
+      font-size: 1.33rem;
+    }
+  }
+
+  h5, .h5 {
+    font-size: calc(0.58rem + 1vw);
+  }
+
+  h6, .h6 {
+    font-size: calc(0.5rem + 1vw);
+  }
+
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    b,
+    .fw-bold {
+      font-weight: 800 !important;
+    }
+  }
+
+}
+
+.gen-hs();
+
+:root {
+  --bs-header-font-family: var(--bs-body-font-family);
+}
+
+.normal {
+  font-weight: normal;
+  font-size: var(--bs-body-font-size);
+  font-family: var(--bs-body-font-family);
+}
+
+.font-normal {
+  font-family: var(--bs-body-font-family);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.font-header {
+  font-family: var(--bs-header-font-family);
+}
+
+code, pre,
+.font-monospace {
+  font-family: var(--bs-font-monospace) !important;
+}
+
+:focus,
+:focus-visible,
+.focus,
+.btn-check:focus + .btn,
+.btn-check:focus-visible + .btn {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn {
+  --bs-btn-font-size: var(--bs-body-font-size);
+}
+
+.badge {
+  font-weight: inherit;
+}
+
+.list-group .list-group-item {
+  background-color: transparent;
+}
+
+.list-group-item.active {
+  background-color: @color_primary;
+  border-color: @color_primary;
+}
+
+select {
+  cursor: pointer;
+}
+
+.table thead.table-light th {
+  color: #212529;
+  background-color: #cfcfcf;
+  border-color: #cfcfcf;
+}
+
+.table-responsive.table-bordered {
+  border: 0;
+}
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: inherit;
+}
+
+.accordion-button-none::before,
+.accordion-button-none::after,
+.accordion-button.no-arrow::before,
+.accordion-button.no-arrow::after,
+.dropdown-toggle.no-arrow::before,
+.dropdown-toggle.no-arrow::after {
+  display: none !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: @color_primary;
+}
+
+.dropdown-item:hover:not(.no-hover),
+.dropdown-item:focus:not(.no-focus),
+.dropdown-item:focus-visible:not(.no-focus) {
+  color: #212529;
+  background-color: #dcdcdc;
+}
+
+.dropdown-item.no-hover:hover,
+.dropdown-item.no-focus:focus,
+.dropdown-item.no-focus:focus-visible {
+  color: inherit;
+  background-color: inherit;
+}
+
+option:disabled {
+  color: #d8d8d8;
+}
+
+.modal-backdrop,
+.offcanvas-backdrop,
+.custom-backdrop {
+  background-color: @backdrop_color;
+}
+
+.modal-backdrop.show,
+.offcanvas-backdrop.show,
+.custom-backdrop.fade.show,
+.custom-backdrop:not(.show):not(.fade):not(.off) {
+  opacity: @backdrop_opacity;
+}
+
+code when (@override_code_highlighting = true) {
+  color: inherit;
+  font-size: 95%;
+  background-color: #efefef;
+  padding: 1px;
+}
+
+pre code when (@override_code_highlighting = true) {
+  padding: 10px;
+  display: block;
+}

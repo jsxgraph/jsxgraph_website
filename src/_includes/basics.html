@@ -1,0 +1,21 @@
+{%- assign relBase = '' -%}
+{%- if page.absolute_paths -%}
+{%- assign relBase = site.data.const.url.web -%}
+{%- else -%}
+{%- assign tempDepth = page.url | append: 'hackish-solution' | split: '/' | size | minus: 2 -%}
+{%- for i in (1..tempDepth) -%}
+{%- if forloop.last -%}
+{%- assign relBase = relBase | append: ".." -%}
+{%- else -%}
+{%- assign relBase = relBase | append: "../" -%}
+{%- endif -%}
+{%- endfor -%}
+{%- if relBase == '' -%}
+{%- assign relBase = '.' -%}
+{%- endif -%}
+{%- endif -%}
+
+{% capture newline %}
+{% endcapture %}
+
+{% assign const = site.data.const %}

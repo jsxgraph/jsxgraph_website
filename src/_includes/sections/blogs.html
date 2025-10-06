@@ -1,0 +1,122 @@
+<!--@formatter:off-->
+{%- assign delimiter_header = include.data.delimiter_header | default: "# " -%}
+{%- assign delimiter_header_size = delimiter_header | size -%}
+{%- assign delimiter_badge = include.data.delimiter_badge | default: "> " -%}
+{%- assign delimiter_badge_size = delimiter_badge | size -%}
+{%- assign delimiter_id = include.data.delimiter_id | default: "> " -%}
+{%- assign delimiter_id_size = delimiter_id | size -%}
+{%- assign lines = include.content_raw | newline_to_br | split: "<br />" -%}
+{%- assign heads = "" | split: ',' -%}
+{%- assign badges = "" | split: ',' -%}
+{%- assign ids = "" | split: ',' -%}
+{%- assign contents = "" | split: ',' -%}
+{%- assign max_n = include.data.n | default: -1 -%}
+{%- assign badge_is_date = include.data.badge_is_date | default: false -%}
+
+{%- assign head = nil -%}
+{%- assign badge = nil -%}
+{%- assign id = nil -%}
+{%- assign cont = nil -%}
+{%- for line in lines -%}
+{%- assign start = line | strip | slice: 0, delimiter_header_size -%}
+{%- if start == delimiter_header -%}
+
+{%- assign heads = heads | push: head -%}
+{%- assign proof = badge | strip_newlines | strip -%}
+{%- if proof != '' and proof != nil and proof != '-' -%}
+{%- assign badges = badges | push: badge -%}
+{%- else -%}
+{%- assign badges = badges | push: nil -%}
+{%- endif -%}
+{%- assign proof = id | strip_newlines | strip -%}
+{%- if proof != '' and proof != nil and proof != '-' -%}
+{%- assign ids = ids | push: id -%}
+{%- else -%}
+{%- assign ids = ids | push: nil -%}
+{%- endif -%}
+{%- assign contents = contents | push: cont -%}
+{%- assign badge = nil -%}
+{%- assign id = nil -%}
+{%- assign cont = nil -%}
+{%- assign head = line | replace_first: delimiter_header, "" -%}
+
+{%- else -%}
+
+{%- assign start = line | strip | slice: 0, delimiter_badge_size -%}
+{%- if start == delimiter_badge and badge==nil -%}
+
+{%- assign badge = line | replace_first: delimiter_badge, "" -%}
+
+{%- else -%}
+
+{%- assign start = line | strip | slice: 0, delimiter_id_size -%}
+{%- if start == delimiter_id and id==nil -%}
+
+{%- assign id = line | replace_first: delimiter_id, "" | strip_newlines | strip -%}
+
+{%- else -%}
+
+{%- assign cont = cont | append: <br /> | br_to_newline | append: line -%}
+
+{%- endif -%}
+{%- endif -%}
+{%- endif -%}
+{%- endfor -%}
+{%- assign heads = heads | push: head | shift -%}
+{%- assign proof = badge | strip_newlines | strip -%}
+{%- if proof != '' and proof != nil and proof != '-' -%}
+{%- assign badges = badges | push: badge | shift -%}
+{%- else -%}
+{%- assign badges = badges | push: nil | shift -%}
+{%- endif -%}
+{%- assign proof = id | strip_newlines | strip -%}
+{%- if proof != '' and proof != nil and proof != '-' -%}
+{%- assign ids = ids | push: id | shift -%}
+{%- else -%}
+{%- assign ids = ids | push: nil | shift -%}
+{%- endif -%}
+{%- assign contents = contents | push: cont | shift -%}
+<!--@formatter:on-->
+
+<div class="m-between-5 section-blogs" id="section-{{ include.file }}">
+    {%- for head in heads -%}
+    {%- assign badge = badges[forloop.index0] -%}
+    {%- assign id = ids[forloop.index0] -%}
+    {%- assign body = contents[forloop.index0] -%}
+    {%- if max_n > 0 and max_n <= forloop.index0 -%}
+    {%- break -%}
+    {%- endif -%}
+    <div id="{{ id | default: head | to_id }}">
+        <div class="d-flex align-items-center mb-3">
+            {%- if head != nil -%}
+            <h3 class="mb-0">
+                <!--@formatter:off-->
+                    {%- assign arr = head | pre_markdown | markdownify | replace_post: relBase | strip | split: "<p>" -%}
+                    {%- if arr.size > 2 -%}
+                    {{ arr | join: "<p>" | prepend: "<p>" }}
+                    {%- else -%}
+                    {{ arr[1] | remove: "</p>" }}
+                    {%- endif -%}
+                    <!--@formatter:on-->
+            </h3>
+            {%- endif -%}
+            {%- if badge != nil -%}
+            <div class="ms-auto">
+                <div class="badge rounded-pill bg-primary {% if badge_is_date != false %}w-fix-sm{% endif %}">
+                    {%- if badge_is_date != false -%}
+                    {{ badge | date: badge_is_date }}
+                    {%- else -%}
+                    {{ badge | pre_markdown | markdownify | replace_post: relBase }}
+                    {%- endif -%}
+                </div>
+            </div>
+            {%- endif -%}
+        </div>
+        {%- if body != nil -%}
+        <div>
+            {{ body | pre_markdown | markdownify | replace_post: relBase }}
+        </div>
+        {%- endif -%}
+    </div>
+    {%- endfor -%}
+</div>

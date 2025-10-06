@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%- include basics.html -%}
+    {%- include main/head.html -%}
+</head>
+{% if page.external_link==nil and page.is_separator!=true -%}
+<body data-role="page" class="position-relative">
+    {% assign id = page.url | split: '/' | last | default: "home" %}
+    <main id="page-{{ id }}">
+        <div class="d-none">
+            <h1>{{ page.header | default: page.title }}</h1>
+        </div>
+
+        {%- include main/splash.html -%}
+    </main>
+</body>
+{% endif -%}
+</html>

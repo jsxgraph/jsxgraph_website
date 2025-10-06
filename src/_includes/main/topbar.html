@@ -1,0 +1,78 @@
+{%- assign splash = include.splash | default: false -%}
+
+<header class="position-{% if splash == true %}fixed{% else %}sticky{% endif %} top-0 start-0 end-0 p-3 z-index-outer {% if splash == true %}topbar-splash{% else %}mb-4{% endif %}" id="topbar">
+    <div class="d-flex justify-content-between align-items-center">
+        <a class="d-flex align-items-center text-primary" href="{{ relBase }}">
+            <div class="d-inline my-n2 py-2 me-2">
+                <div class="d-inline topbar-nosplash">
+                    <img class="d-inline d-sm-none h-fix-md w-auto" src="{{ relBase }}/media/logos/logo-sm.png"/>
+                    <img class="d-none d-sm-inline h-fix-md w-auto" src="{{ relBase }}/media/logos/logo.png"/>
+                </div>
+                <div class="d-inline topbar-onlysplash">
+                    <img class="d-none d-md-inline h-fix-md w-auto" src="{{ relBase }}/media/logos/logo-sm.png"/>
+                </div>
+            </div>
+            <div class="d-inline text-primary">
+                {{ const.version }}
+            </div>
+        </a>
+        <div></div>
+        <div class="d-flex align-items-center m-between-3 m-between-md-4">
+            <nav class="navbar navbar-expand m-0 p-0">
+                <ul class="navbar-nav m-0 p-0">
+
+                    {%- assign pagelist = site.pages | where: "in_menu_topbar",true | sort: 'order' -%}
+                    {%- assign n_topbar = 0 -%}
+                    {%- for i_page in pagelist -%}
+                    {% assign id = i_page.url | split: '/' | last %}
+                    {%- if id == "index.html" -%}
+                    {%- assign id = i_page.url | split: '/' -%}
+                    {%- assign tmp = id.size | minus: 2 -%}
+                    {%- assign id = id[tmp] -%}
+                    {%- endif -%}
+
+                    {%- if i_page.pagination_info and i_page.pagination_info.curr_page > 1 -%}
+                    {%- continue -%}
+                    {%- endif -%}
+
+                    {%- assign n_topbar = n_topbar | add: 1 -%}
+                    <li class="nav-item d-none d-lg-block">
+                        <a href="{{ relBase }}{{ i_page.url }}"
+                           class="nav-link {% if page.url == i_page.url or (include.active and include.active == id) %}active{% endif %}">
+                            <i class="fa-fw {{ i_page.icon }}">{% if i_page.icon == '' %}&nbsp;{% endif %}</i>
+                            {{ i_page.menu_title | default: i_page.header | default: i_page.title }}
+                        </a>
+                    </li>
+                    {%- endfor -%}
+
+                    <li class="nav-item" id="menu-toggler-container">
+                        <div class="nav-link cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" id="menu-toggler">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                            {%- if n_topbar > 0 -%}
+                            <span class="d-none d-sm-inline d-lg-none ms-2" id="menu-toggler-name-menu">
+                                {{ const.btn.menu }}
+                            </span>
+                            <span class="d-none d-lg-inline ms-2" id="menu-toggler-name-more">
+                                {{ const.btn.more }}
+                            </span>
+                            {%- else -%}
+                            <span class="d-none d-md-inline ms-2">
+                                {{ const.btn.menu }}
+                            </span>
+                            {%- endif -%}
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+{%- if splash == true -%}
+<script type="module">
+    const THRESHOLD = $('#splash').height() - $('#splash-image').height() - $('#topbar').outerHeight();
+    $(document).on('scroll', function () {
+        $('#topbar').toggleClass('topbar-splash', $(this).scrollTop() < THRESHOLD);
+    }).trigger('scroll');
+</script>
+{%- endif -%}

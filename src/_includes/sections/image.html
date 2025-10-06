@@ -1,0 +1,10 @@
+<div class="section-image">
+    {%- if include.data.title != nil -%}
+    <h2>
+        {{ include.data.title }}
+    </h2>
+    {%- endif -%}
+    <div class="d-flex">
+        <img src="{{ relBase }}{{ include.data.image | default: include.data.file }}" style="width: {{ include.data.width | default: '100%' }}; max-width: 100%;" class="{{ include.data.class }}" alt="Image">
+    </div>
+</div>

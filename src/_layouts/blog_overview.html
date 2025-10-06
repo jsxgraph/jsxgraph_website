@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include basics.html %}
+    {% include main/head.html %}
+</head>
+{% if page.external_link==nil and page.is_separator!=true -%}
+<body data-role="page" class="position-relative">
+
+    {%- assign postlist_id = page.postlist_id -%}
+    {%- assign posts_intro = page.posts_intro | default: 50 -%}
+
+    {%- for i_page in site.pages -%}
+    {%- assign id = i_page.url | split: '/' | last -%}
+    {%- if id == "index.html" -%}
+    {%- assign id = i_page.url | split: '/' -%}
+    {%- assign tmp = id.size | minus: 2 -%}
+    {%- assign id = id[tmp] -%}
+    {%- endif -%}
+    {%- if id == postlist_id -%}
+    {%- assign postlist_page = i_page -%}
+    {%- endif -%}
+    {%- endfor -%}
+
+    {% include main/menu.html active=postlist_id %}
+    {% include main/topbar.html active=postlist_id %}
+
+    <noscript>
+        <div class="alert alert-danger" role="alert">
+            This page requires JavaScript to work correctly.
+            Please enable JavaScript in your browser and reload the page.
+        </div>
+    </noscript>
+
+    {% assign id = page.url | split: '/' | last | default: "home" %}
+    <main class="container md-container m-between-5 mt-4 mb-5 pb-5" id="page-{{ id }}">
+        <div class="mb-3">
+            <h1>{{ page.header | default: page.title }}</h1>
+        </div>
+
+        {%- if page.render_this == "before" or page.render_this == true -%}
+        {% include content.html %}
+        {%- endif -%}
+
+        <div class="row blog-overview">
+
+            <div class="col-12 col-lg-9">
+                <h2 class="d-none">List of Posts</h2>
+                <div class="list-group list-group-flush mx-n4 mt-n4 mb-0">
+
+                    {%- assign posts = paginator.posts | default: site.posts -%}
+                    {% for post in posts %}
+                    <a href="{{ relBase }}{{ post.url }}" class="list-group-item list-group-item-action px-4 py-4">
+                        <article class="post-preview">
+                            <div class="mb-4">
+                                {% include main/post-header.html post=post head_level=3 %}
+                            </div>
+
+                            {{ post.content | truncatewords: posts_intro | strip_html | xml_escape}}
+                        </article>
+                        <div class="text-end link-primary">Read more</div>
+                    </a>
+                    {% endfor %}
+                </div>
+
+                {% if paginator and paginator.total_pages > 1 %}
+                <div class="d-flex">
+                    {% if paginator.previous_page %}
+                    <a href="{{ relBase }}{{ paginator.previous_page_path }}" class="btn btn-outline-primary w-fix-lg me-auto">Newer Posts</a>
+                    {% endif %}
+                    {% if paginator.next_page %}
+                    <a href="{{ relBase }}{{ paginator.next_page_path }}" class="btn btn-outline-primary w-fix-lg ms-auto">Older Posts</a>
+                    {% endif %}
+                </div>
+                {% endif %}
+
+            </div>
+
+            <div class="col-12 col-lg-2 ms-lg-auto">
+                <h2 class="h3">Tags</h2>
+                <div class="css-cols-2 css-cols-sm-3 css-cols-md-4 css-cols-lg-1-important">
+                    {% assign sorted_tags = "" | split:"" %}
+                    {% for tag in site.tags %}
+                    {% assign sorted_tags = sorted_tags | push: tag[0] %}
+                    {% endfor %}
+                    {% assign sorted_tags = sorted_tags | sort_natural %}
+                    {% for tag in sorted_tags %}
+                    <a href="{{ relBase }}{{ site.taglist.root }}{{ tag | slopify }}" class="d-block badge bg-white text-start p-0 mx-0 mt-0 mb-2 link-primary">
+                        <i class="fa-solid fa-fw fa-tag"></i>
+                        {{ tag }}
+                    </a>
+                    {% endfor %}
+                </div>
+
+                <h2 class="h3">Categories</h2>
+                <div class="css-cols-2 css-cols-sm-3 css-cols-md-4 css-cols-lg-1-important">
+                    {% assign sorted_cats = "" | split:"" %}
+                    {% for cat in site.categories %}
+                    {% assign sorted_cats = sorted_cats | push: cat[0] %}
+                    {% endfor %}
+                    {% assign sorted_cats = sorted_cats | sort_natural %}
+                    {% for cat in sorted_cats %}
+                    <a href="{{ relBase }}{{ site.categorylist.root }}{{ cat | slopify }}" class="d-block badge bg-white text-start p-0 mx-0 mt-0 mb-2 link-primary">
+                        <i class="fa-solid fa-layer-group"></i>
+                        {{ cat }}
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+
+        {%- if page.render_this == "after" -%}
+        {% include content.html %}
+        {%- endif -%}
+    </main>
+
+    {% include main/cookie-hint.html %}
+    {% include main/footer.html %}
+</body>
+{% endif -%}
+</html>

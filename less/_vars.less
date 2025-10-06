@@ -1,0 +1,33 @@
+// Only vars here!
+
+// ---------------------------------------------
+// ------------- override defaults -------------
+// ---------------------------------------------
+
+@fixed_width_xxs: 40px;
+@fixed_width_xs: 75px;
+@fixed_width_sm: 90px;
+
+@threshold_active: 12%;
+@threshold_hover: 4%;
+@threshold_overlay: 65%;
+
+@color_primary: #10427C;
+@color_secondary: mix(@color_primary, #0085a1); // = #08648f = 8,100,143
+
+@color_outer: #aedcef;//#a1daf8; //#eedd66;//#ccee33;//#dcfa19;//rgb(250, 240, 120);// rgb(90, 230, 130); // mix(#fff, @color_secondary, @threshold_faded); // = #c1d8e3 = 193,216,227
+@color_outer_light: mix(@color_outer, #fff, @threshold_light);
+@color_outer_dark: mix(@color_outer, #10427C, @threshold_dark);
+
+@color_tertiary: @color_outer; // Only used for splash overlay
+@splash_overlay: fade(@color_tertiary, 93%);
+
+@color_code_base: mix(#fdfdfd, @color_primary, 85%);
+@color_code_bg: mix(@color_code_base, #fff, 45%);
+@color_code_outer: darken(@color_code_base, @threshold_dark);
+
+@color_link: mix(@color_primary, #fff, (@threshold_light + @threshold_light / 2));
+
+@rounded_max_radius: 20%;
+
+@backdrop_opacity: 0.5;

@@ -1,0 +1,102 @@
+# Where things are
+source: ./src
+destination: ./distrib
+plugins_dir: ./plugins # takes an array of strings and loads plugins in that order
+layouts_dir: _layouts
+includes_dir: _includes
+data_dir: _data
+sass:
+  sass_dir: ./src/_sass
+
+# Parsing
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class: 'code-highlighting'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+plugins:
+  - jekyll-paginate-v2
+
+# Handling Reading
+safe: false
+include: [ ".htaccess", ".htpasswd" ]
+exclude: [ "Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "README.md", "*.section.md", "*.less" ]
+keep_files: [ "index.html" ]
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+strict_front_matter: false
+disable_disk_cache: true
+
+# Blogposts
+pagination:
+  enabled: true # for development disable this
+  per_page: 7
+  limit: 0
+  permalink: '/page-:num.html'
+  title: ':title (Page :num)'
+  sort_field: 'date'
+  sort_reverse: true
+bloglist:
+  postlist_id: 'news'
+  is_home: false
+  in_menu_popup: false
+  in_menu_topbar: false
+  in_menu_footer: false
+  render_this: false
+  absolute_paths: false
+  in_shortcuts: false
+taglist:
+  root: '/news/tag/'
+categorylist:
+  root: '/news/category/'
+
+# Scoping
+defaults:
+  - scope:
+      path: "" # landing page
+    values:
+      layout: default
+      is_home: false
+      in_menu_popup: true
+      in_menu_topbar: false
+      in_menu_footer: false
+      render_this: true
+      absolute_paths: false
+      in_shortcuts: false
+  - scope:
+      path: "error"
+    values:
+      layout: plain
+      is_home: false
+      in_menu_popup: false
+      in_menu_topbar: false
+      in_menu_footer: false
+      render_this: true
+      absolute_paths: false
+      in_shortcuts: false
+  - scope:
+      path: "news/"
+    values:
+      layout: blog_overview
+      postlist_id: "news"
+      pagination:
+        enabled: true
+  - scope:
+      path: "_posts"
+    values:
+      layout: blog_post
+      postlist_id: "news"
+      permalink: /:year-:month-:day-:title/ # /news/:year-:month-:day-:title:output_ext   # for better SEO
+  - scope:
+      path: "_posts/releases"
+    values:
+      category: Release
+      postlist_id: "news"
+      # /news/release/:title:output_ext             # for better SEO

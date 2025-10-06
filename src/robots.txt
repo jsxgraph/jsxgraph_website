@@ -1,0 +1,6 @@
+User-Agent: *
+Disallow: /assets
+Disallow: /media
+Disallow: /error
+Disallow: *.js
+Disallow: *.css

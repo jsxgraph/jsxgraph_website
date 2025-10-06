@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include basics.html %}
+    {% include main/head.html %}
+</head>
+{% if page.external_link==nil and page.is_separator!=true -%}
+<body data-role="page" class="position-relative">
+    {% include main/menu.html %}
+
+    <noscript>
+        <div class="alert alert-danger" role="alert">
+            This page requires JavaScript to work correctly.
+            Please enable JavaScript in your browser and reload the page.
+        </div>
+    </noscript>
+
+    {% assign id = page.url | split: '/' | last | default: "home" %}
+    <main id="page-{{ id }}">
+        <div class="d-none">
+            <h1>{{ page.header | default: page.title }}</h1>
+        </div>
+
+        {% include main/splash.html %}
+
+        <div class="container md-container m-between-5 my-5 py-5">
+            {% include content.html %}
+        </div>
+    </main>
+
+    {% include main/cookie-hint.html %}
+    {% include main/footer.html %}
+</body>
+{% endif -%}
+</html>

@@ -1,0 +1,40 @@
+#topbar {
+  &:not(.topbar-splash) {
+    .bg-outer();
+    .border-bottom();
+    .border-outer();
+  }
+
+  &:not(.topbar-splash) {
+    .topbar-onlysplash {
+      .off();
+    }
+  }
+
+  &.topbar-splash {
+    .topbar-nosplash {
+      .off();
+    }
+
+    li.nav-item:not(#menu-toggler-container),
+    #menu-toggler-name-more {
+      .off();
+    }
+
+    #menu-toggler-name-menu {
+      display: inline !important;
+    }
+  }
+}
+
+main {
+  &, * {
+    scroll-margin-top: 120px;
+  }
+
+  header, #splash {
+    &, * {
+      scroll-margin-top: 0;
+    }
+  }
+}
