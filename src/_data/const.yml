@@ -47,8 +47,7 @@ btn:
 
 cookie:
   hint: >
-    JSXGraph stores essential data in your browser,
-    to enable the functionality of the software.
+    JSXGraph stores only essential data for core website functionality in your browser.
   more: Learn more.
   btn: Okay
   link: /privacy
