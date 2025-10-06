@@ -37,6 +37,5 @@ Visit the new website and discover how JSXGraph makes mathematics interactive, v
 
 [jsxgraph.org](https://jsxgraph.org)
 
-Best regards, 
-
+Best regards,  
 Carsten, on behalf of the JSXGraph team
