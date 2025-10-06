@@ -98,7 +98,7 @@
                         <div class="d-flex align-items-center w-100 {% if include.data.arrows=='left' %}ps-3 ps-md-4{% else %}pe-3 pe-md-4 pe-xl-5{% endif %}">
                             {%- if head != nil -%}
                             <h2 class="mb-0">
-                                {{ head | pre_markdown | markdownify | replace_post }}
+                                {{ head | pre_markdown | markdownify | replace_post: relBase }}
                             </h2>
                             {%- endif -%}
                             {%- if badge != nil -%}
@@ -107,7 +107,7 @@
                                     {%- if badge_is_date != false -%}
                                     {{ badge | date: badge_is_date }}
                                     {%- else -%}
-                                    {{ badge | pre_markdown | markdownify | replace_post }}
+                                    {{ badge | pre_markdown | markdownify | replace_post: relBase }}
                                     {%- endif -%}
                                 </div>
                             </div>
@@ -121,7 +121,7 @@
             <div id="accordion-{{ include.index0 }}-{{ forloop.index0 }}" class="accordion-collapse collapse {% if forloop.index0==open %}show{% else %}{% endif %}" data-bs-parent="#accordion-{{ include.index0 }}">
                 <div class="pb-5 pt-4 mb-5">
                     {%- if body != nil -%}
-                    {{ body | pre_markdown | markdownify | replace_post }}
+                    {{ body | pre_markdown | markdownify | replace_post: relBase }}
                     {%- endif -%}
                 </div>
             </div>

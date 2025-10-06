@@ -1,9 +1,9 @@
-{%- assign content_blank = content | replace_post | strip_newlines -%}
+{%- assign content_blank = content | replace_post: relBase | strip_newlines -%}
 
 {%- if content_blank != "" -%}
 {%- if page.render_this == "before" or page.render_this == true or page.sections == nil -%}
 <div class="content">
-    {{ content | replace_post }}
+    {{ content | replace_post: relBase }}
 </div>
 {%- endif -%}
 {%- endif -%}
@@ -19,7 +19,7 @@
 {%- if section.file != nil -%}
 {%- assign text_file = '_' | append: section.file | append: '.section.md' -%}
 {%- capture section_inclusion -%}{% include_relative {{text_file}} %}{%- endcapture -%}
-{%- assign sec_content = section_inclusion | pre_markdown | markdownify | replace_post -%}
+{%- assign sec_content = section_inclusion | pre_markdown | markdownify | replace_post: relBase -%}
 {%- assign name = section.file -%}
 {%- else -%}
 {%- assign section_inclusion = nil -%}
@@ -63,7 +63,7 @@
 {%- if section.file != nil -%}
 {%- assign file = '_' | append: section.file | append: '.section.md' -%}
 {%- capture section_inclusion -%}{% include_relative {{file}} %}{%- endcapture -%}
-{%- assign sec_content = section_inclusion | pre_markdown | markdownify | replace_post -%}
+{%- assign sec_content = section_inclusion | pre_markdown | markdownify | replace_post: relBase -%}
 {%- else -%}
 {%- assign section_inclusion = nil -%}
 {%- assign sec_content = nil -%}
@@ -76,6 +76,6 @@
 
 {%- if page.render_this == "after" and page.sections != nil and content_blank -%}
 <div class="content">
-    {{ content | replace_post }}
+    {{ content | replace_post: relBase }}
 </div>
 {%- endif -%}
