@@ -78,11 +78,11 @@ release: build upload
 
 build:
 	@echo "Build via jekyll"
-	@$(JEKYLL) build --incremental
+	@$(JEKYLL) build
 	@echo " ... done"
 
 dev:
-	@$(JEKYLL) serve --incremental
+	@$(JEKYLL) serve
 
 #######################
 ### Rules for tests ###
