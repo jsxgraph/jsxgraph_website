@@ -49,7 +49,7 @@ versionwrite:
 
 upload:
 	@echo "Start uploading"
-	@cd $(DISTRIB) && zip -q -r ../upload.zip * .*
+	@cd $(DISTRIB) && zip -r ../upload.zip * .*
 	@ssh root@132.180.10.7 "\
     	cd /net/httpd/htdocs/jsxgraph/; \
     	rm -r home.new; \
@@ -71,18 +71,18 @@ upload:
 	@echo "... done"
 
 ###################################
-### Rules for combinated making ###
+### Rules for combined making ###
 ###################################
 
 release: build upload
 
 build:
 	@echo "Build via jekyll"
-	@$(JEKYLL) build
+	@$(JEKYLL) build --incremental
 	@echo " ... done"
 
 dev:
-	@$(JEKYLL) serve
+	@$(JEKYLL) serve --incremental
 
 #######################
 ### Rules for tests ###

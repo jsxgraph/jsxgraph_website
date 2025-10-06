@@ -37,24 +37,24 @@
                     icons
    ######################################### -->
 
-<link rel="icon" type="image/x-icon" href="{{ relBase }}/media/favicon/16.png">
-<link rel="shortcut icon" type="image/x-icon" href="{{ relBase }}/media/favicon/16.png">
-<link rel="icon" type="image/x-icon" href="{{ relBase }}/media/favicon/32.png">
-<link rel="shortcut icon" type="image/x-icon" href="{{ relBase }}/media/favicon/32.png">
-<link rel="icon" href="{{ relBase }}/media/favicon/logo-light.svg" type="image/x-icon" >
-<link rel="shortcut icon" href="{{ relBase }}/media/favicon/logo-light.svg" type="image/x-icon" >
-<link rel="icon" href="{{ relBase }}/media/favicon/logo-light.svg" media="(prefers-color-scheme: light)" type="image/x-icon" >
-<link rel="shortcut icon" href="{{ relBase }}/media/favicon/logo-light.svg" media="(prefers-color-scheme: light)" type="image/x-icon" >
-<link rel="icon" href="{{ relBase }}/media/favicon/logo-dark.svg" media="(prefers-color-scheme: dark)" type="image/x-icon" >
-<link rel="shortcut icon" href="{{ relBase }}/media/favicon/logo-dark.svg" media="(prefers-color-scheme: dark)" type="image/x-icon" >
+<link async rel="icon" type="image/x-icon" href="{{ relBase }}/media/favicon/16.png">
+<link async rel="shortcut icon" type="image/x-icon" href="{{ relBase }}/media/favicon/16.png">
+<link async rel="icon" type="image/x-icon" href="{{ relBase }}/media/favicon/32.png">
+<link async rel="shortcut icon" type="image/x-icon" href="{{ relBase }}/media/favicon/32.png">
+<link async rel="icon" href="{{ relBase }}/media/favicon/logo-light.svg" type="image/x-icon" >
+<link async rel="shortcut icon" href="{{ relBase }}/media/favicon/logo-light.svg" type="image/x-icon" >
+<link async rel="icon" href="{{ relBase }}/media/favicon/logo-light.svg" media="(prefers-color-scheme: light)" type="image/x-icon" >
+<link async rel="shortcut icon" href="{{ relBase }}/media/favicon/logo-light.svg" media="(prefers-color-scheme: light)" type="image/x-icon" >
+<link async rel="icon" href="{{ relBase }}/media/favicon/logo-dark.svg" media="(prefers-color-scheme: dark)" type="image/x-icon" >
+<link async rel="shortcut icon" href="{{ relBase }}/media/favicon/logo-dark.svg" media="(prefers-color-scheme: dark)" type="image/x-icon" >
 
 {% if page.external_link==nil and page.is_separator!=true -%}
 <!-- ########################################
                   JS + Helper
     ######################################### -->
 
-<script type="text/javascript" src="{{ relBase }}/assets/extend/ecma.js"></script>
-<script type="text/javascript" src="{{ relBase }}/assets/extend/jxg_compensation.js"></script>
+<!-- <script type="text/javascript" src="{{ relBase }}/assets/extend/ecma.js"></script> -->
+<!-- <script type="text/javascript" src="{{ relBase }}/assets/extend/jxg_compensation.js"></script> -->
 
 <!-- ########################################
                       MathJax
@@ -75,7 +75,7 @@
         },
     };
 </script>
-<script type="text/javascript" src="{{ relBase }}/assets/mathjax/es5/tex-chtml.js"></script>
+<script async type="text/javascript" src="{{ relBase }}/assets/mathjax/es5/tex-chtml.js"></script>
 
 <!-- ########################################
                   JSXGraph
@@ -102,37 +102,37 @@
 <!-- ########################################
                    jQuery
     ######################################### -->
-<script type="text/javascript" src="{{ relBase }}/assets/jquery/jquery-3.6.1.min.js"></script>
-<script type="text/javascript" src="{{ relBase }}/assets/extend/jquery.js"></script>
+<script async type="text/javascript" src="{{ relBase }}/assets/jquery/jquery-3.6.1.min.js"></script>
+<script async type="text/javascript" src="{{ relBase }}/assets/extend/jquery.js"></script>
 
 <!-- ########################################
                   Bootstrap
     ######################################### -->
-<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/bootstrap/bootstrap-individual.min.css">
-<script type="text/javascript" src="{{ relBase }}/assets/extend/popper.min.js"></script>
-<script type="text/javascript" src="{{ relBase }}/assets/extend/tether.min.js"></script>
-<script type="text/javascript" src="{{ relBase }}/assets/bootstrap/bootstrap.min.js"></script>
-<script type="text/javascript" src="{{ relBase }}/assets/extend/bootstrap.js"></script>
-<script type="text/javascript" src="{{ relBase }}/assets/extend/masonry.min.js"></script>
+<link async rel="stylesheet" type="text/css" href="{{ relBase }}/assets/bootstrap/bootstrap-individual.min.css">
+<script async type="text/javascript" src="{{ relBase }}/assets/extend/popper.min.js"></script>
+<script async type="text/javascript" src="{{ relBase }}/assets/extend/tether.min.js"></script>
+<script async type="text/javascript" src="{{ relBase }}/assets/bootstrap/bootstrap.min.js"></script>
+<script async type="text/javascript" src="{{ relBase }}/assets/extend/bootstrap.js"></script>
+<script async type="text/javascript" src="{{ relBase }}/assets/extend/masonry.min.js"></script>
 
 <!-- ########################################
                    jszip
     ######################################### -->
-<script type="text/javascript" src="{{ relBase }}/assets/jszip/jszip.min.js"></script>
+<!-- <script async type="text/javascript" src="{{ relBase }}/assets/jszip/jszip.min.js"></script> -->
 
 <!-- ########################################
                   FontAwesome
     ######################################### -->
-<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/fontawesome-6.5.1/css/fontawesome.css"/>
-<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/fontawesome-6.5.1/css/brands.css"/>
-<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/fontawesome-6.5.1/css/solid.css"/>
-<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/fontawesome-6.5.1/css/regular.css"/>
+<link async rel="stylesheet" type="text/css" href="{{ relBase }}/assets/fontawesome-6.5.1/css/fontawesome.css"/>
+<link async rel="stylesheet" type="text/css" href="{{ relBase }}/assets/fontawesome-6.5.1/css/brands.css"/>
+<link async rel="stylesheet" type="text/css" href="{{ relBase }}/assets/fontawesome-6.5.1/css/solid.css"/>
+<link async rel="stylesheet" type="text/css" href="{{ relBase }}/assets/fontawesome-6.5.1/css/regular.css"/>
 
 <!-- ########################################
                    website
     ######################################### -->
-<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/website.css?v={{ site.time | date: '%Y%m%d%H%M%S%L' }}">
-<script type="text/javascript" src="{{ relBase }}/assets/website.js"></script>
+<link async rel="stylesheet" type="text/css" href="{{ relBase }}/assets/website.css?v={{ site.time | date: '%Y%m%d%H%M%S%L' }}">
+<script async type="text/javascript" src="{{ relBase }}/assets/website.js"></script>
 
 <!-- ########################################
                   clipping
