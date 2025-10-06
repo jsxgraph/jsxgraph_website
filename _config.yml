@@ -100,3 +100,6 @@ defaults:
       category: Release
       postlist_id: "news"
       # /news/release/:title:output_ext             # for better SEO
+
+plugins:
+  - jekyll-feed
