@@ -49,7 +49,7 @@ versionwrite:
 
 upload:
 	@echo "Start uploading"
-	@cd $(DISTRIB) && zip -r ../upload.zip * .*
+	@cd $(DISTRIB) && zip -r ../upload.zip * .htaccess
 	@ssh root@132.180.10.7 "\
     	cd /net/httpd/htdocs/jsxgraph/; \
     	rm -r home.new; \
