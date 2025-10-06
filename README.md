@@ -143,63 +143,44 @@ Notes:
 
 ## Development and release
 
-### Run test version
-
-Build files to directory [distrib/](distrib/) via the call
-
-```shell
-jekyll serve -l
-```
-
-or
-
-```shell
-bundle exec jekyll serve -l
-```
-
-or
+### Run live test version
 
 ```shell
 make dev
 ```
 
-### Make
+### Version number
 
-The project `jsxgraph` needs to be at the same level as this project for the following commands:
+- Adapt `version` and `version_year` in [src/_data/const.yml](src/_data/const.yml)
+- _or:_ Write version number in line 1, as array in line 2 and year in line 3 in [VERSION](VERSION) and call ``
+  ```shell
+  make versionwrite
+  ```
+- _or:_ Get version number from JSXGraph project (in same directory as this project):
+  ```shell
+  make version
+  ```
 
-- Call `make version` to get version string from JSXGraph and put it in all contexts of the website.
-- Call `make versionlocal` to type a user defined version string and put it in all contexts of the website.
-
-The following call prepares a running version of the website in directory [distrib/](distrib/):
+### Build files in [distrib/](distrib/)
 
 ```shell
-make website
+make build
 ```
 
-It updates the website without getting version and release notes (but libs) from JSXGraph.
+### Release / Upload to server
 
-### Release
+```shell
+make release # build and upload
+make upload  # upload prebuild distrib directory
+```
 
-To release the new version of website follow the steps:
+The Upload does:
 
-1. Call in the root of this project:
-    - `make website` (packs and compiles the current website in the present form)
-    - or `make release` (packs and compiles the current website, gets the current version and the release information from JSXGraph beforehand)
-2. Pull the newest version from server.
-3. Push all files to Git.
+- Copy files in [distrib/](distrib/) to the server via:
    ```shell
-   git commit -a
-   git push
-   git tag vx.y.z  # optional in version-git-tag
-   git push origin vx.y.z # optional in version-git-tag
+   scp -r distrib/ root@132.180.10.7:/net/httpd/htdocs/jsxgraph/home.new
    ```
-4. Call `make upload` and type in the correct server password.   
-   This does:
-    - Copy files in [distrib/](distrib/) to the server via:
-       ```shell
-       scp -r distrib/ root@132.180.10.7:/net/httpd/htdocs/jsxgraph/home.new
-       ```
-    - Link new version to <https://jsxgraph.org> and link <https://jsxgraph.uni-bayreuth.de> via
-       ```shell
-       ssh root@132.180.10.7 "cd /net/httpd/htdocs/jsxgraph/; rm -r home.old; mv home home.old; mv home.new home;"
-       ```
+- Link new version to <https://jsxgraph.org> and link <https://jsxgraph.uni-bayreuth.de> via
+   ```shell
+   ssh root@132.180.10.7 "cd /net/httpd/htdocs/jsxgraph/; rm -r home.old; mv home home.old; mv home.new home;"
+   ```

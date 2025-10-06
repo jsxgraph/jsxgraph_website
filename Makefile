@@ -1,9 +1,10 @@
-.PHONY: website
+.PHONY: build
 
-default: website
+default: build
 
 # Build tools
 MAKE=make --no-print-directory
+JEKYLL=bundle exec jekyll
 
 # Directories
 DISTRIB=distrib
@@ -22,9 +23,7 @@ VERSION_NO=$(shell cat ${VERSION_FILE} | head -n 1)
 VERSION_ARR=$(shell cat ${VERSION_FILE} | head -n 2 | tail -n -1)
 VERSION_YEAR=$(shell cat ${VERSION_FILE} | head -n 3 | tail -n -1)
 
-version:
-	@$(MAKE) versionget
-	@$(MAKE) versionwrite
+version: versionget versionwrite
 
 # get from jsxgraph
 versionget:
@@ -75,19 +74,15 @@ upload:
 ### Rules for combinated making ###
 ###################################
 
-website: build
-
-websitelocal: versionwrite build
-
-release: version build
+release: build upload
 
 build:
 	@echo "Build via jekyll"
-	@bundle exec jekyll build
+	@$(JEKYLL) build
 	@echo " ... done"
 
 dev:
-	@bundle exec jekyll serve
+	@$(JEKYLL) serve
 
 #######################
 ### Rules for tests ###
