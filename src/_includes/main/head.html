@@ -45,8 +45,8 @@
 <link async rel="shortcut icon" href="{{ relBase }}/media/favicon/logo-light.svg" type="image/x-icon" >
 <link async rel="icon" href="{{ relBase }}/media/favicon/logo-light.svg" media="(prefers-color-scheme: light)" type="image/x-icon" >
 <link async rel="shortcut icon" href="{{ relBase }}/media/favicon/logo-light.svg" media="(prefers-color-scheme: light)" type="image/x-icon" >
-<link async rel="icon" href="{{ relBase }}/media/favicon/logo-dark.svg" media="(prefers-color-scheme: dark)" type="image/x-icon" >
-<link async rel="shortcut icon" href="{{ relBase }}/media/favicon/logo-dark.svg" media="(prefers-color-scheme: dark)" type="image/x-icon" >
+<!-- <link async rel="icon" href="{{ relBase }}/media/favicon/logo-dark.svg" media="(prefers-color-scheme: dark)" type="image/x-icon" >
+<link async rel="shortcut icon" href="{{ relBase }}/media/favicon/logo-dark.svg" media="(prefers-color-scheme: dark)" type="image/x-icon" > -->
 
 {% if page.external_link==nil and page.is_separator!=true -%}
 <!-- ########################################
@@ -59,7 +59,7 @@
 <!-- ########################################
                       MathJax
     ######################################### -->
-<script type="text/javascript">
+<script async type="text/javascript">
     window.MathJax = {
         loader: {
             load: ['[tex]/html'],
