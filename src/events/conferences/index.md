@@ -1,7 +1,7 @@
 ---
 title: Further events
 parent: events
-order: 2
+order: 3
 sections:
 
   - file: 24hours

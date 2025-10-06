@@ -1,7 +1,7 @@
 ---
 title: JSXGraph Conferences
 parent: events
-order: 1
+order: 2
 sections:
 
    - file: intro
