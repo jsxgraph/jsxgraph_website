@@ -23,4 +23,5 @@ Our old Google Groups forum will remain open, but we encourage everyone to join 
 ### Get Involved!
 We'd love for you to start or join discussions on our new forum, exploring new ideas and ways to use JSXGraph. Let's make this community thrive!
 
-Best regards, Alfred, on behalf of the JSXGraph team
+Best regards,
+Alfred, on behalf of the JSXGraph team

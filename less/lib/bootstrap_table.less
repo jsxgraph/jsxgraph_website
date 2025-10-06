@@ -1,0 +1,122 @@
+// ----------------------------------
+// ------------- table --------------
+// ----------------------------------
+
+.table thead th,
+.table thead td {
+  border-bottom: 2.5px solid #dee2e6;
+}
+
+.table tfoot th,
+.table tfoot td {
+  border-top: 2.5px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table-hover-cell tbody td:hover {
+  color: #212529;
+  --bs-table-accent-bg: rgba(0, 0, 0, 0.075) !important;
+}
+
+.table tbody .cell-highlighted {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-chess tbody tr:nth-of-type(odd) td:nth-of-type(odd),
+.table-chess tbody tr:nth-of-type(even) td:nth-of-type(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-xs th, .table-xs td,
+.table-xs > :not(caption) > * > * {
+  padding: 0 .25rem;
+}
+
+.table-xxs th, .table-xxs td,
+.table-xxs > :not(caption) > * > * {
+  padding: 0;
+}
+
+.table-sm,
+.table-xs,
+.table-xxs {
+  margin-bottom: 0;
+}
+
+.table-none tbody tr {
+  background-color: transparent !important;
+}
+
+.table-none th,
+.table-none td,
+.table-none thead th,
+.table-none thead td,
+.table-none tfoot th,
+.table-none tfoot td,
+.table-none tbody + tbody {
+  border: 0;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > *,
+.table-hover > tbody > tr:hover > * {
+  color: unset;
+}
+
+.define-table-list(@postfix) {
+  .table-list@{postfix} {
+    table&, tbody, tr, td, th {
+      display: block;
+      padding: 0;
+      background-color: transparent !important;
+      box-shadow: none !important;
+      color: @color_text_dark !important;
+      border: none !important;
+    }
+
+    thead {
+      display: none;
+    }
+
+    tr {
+      .mb-3();
+
+      th {
+        .h4();
+      }
+
+      &:first-child th {
+        .mt-0();
+      }
+
+      td {
+        &:before {
+          content: attr(data-bs-table-list-header);
+          display: block;
+          .h5();
+        }
+      }
+
+      th + td {
+        &:before {
+          .mt-0();
+        }
+      }
+    }
+  }
+}
+
+.generate-table-list(@i: 1) when (@i <= length(@width_names)) {
+  @name: extract(@width_names, @i);
+  @w_min: 'width_@{name}_min';
+  @w_max: @@w_min - 1;
+
+  // devices with @w_max and down
+  @media (max-width: @w_max) {
+    .define-table-list(~"-@{name}");
+  }
+
+  .generate-table-list(@i+1);
+}
+
+.define-table-list(~"");
+.generate-table-list();

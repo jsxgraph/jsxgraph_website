@@ -1,0 +1,198 @@
+// -----------------------------
+// ----- alternative cols ------
+// -----------------------------
+
+.generate-column-defs(@i: 0) when (@i <= @max_alternative_cols) {
+
+  // Extra small devices (portrait phones, less than 576px)
+  // No media query for `xs` since this is the default in Bootstrap
+  .css-cols-@{i} {
+    -webkit-column-count: @i;
+    -moz-column-count: @i;
+    column-count: @i;
+
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+
+    column-fill: balance;
+  }
+
+  .css-cols-@{i}-important {
+    -webkit-column-count: @i !important;
+    -moz-column-count: @i !important;
+    column-count: @i !important;
+
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+
+    column-fill: balance;
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    .css-cols-sm-@{i} {
+      -webkit-column-count: @i;
+      -moz-column-count: @i;
+      column-count: @i;
+
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px;
+
+      column-fill: balance;
+    }
+
+    .css-cols-sm-@{i}-important {
+      -webkit-column-count: @i !important;
+      -moz-column-count: @i !important;
+      column-count: @i !important;
+
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px;
+
+      column-fill: balance;
+    }
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    .css-cols-md-@{i} {
+      -webkit-column-count: @i;
+      -moz-column-count: @i;
+      column-count: @i;
+
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px;
+
+      column-fill: balance;
+    }
+
+    .css-cols-md-@{i}-important {
+      -webkit-column-count: @i !important;
+      -moz-column-count: @i !important;
+      column-count: @i !important;
+
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px;
+
+      column-fill: balance;
+    }
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    .css-cols-lg-@{i} {
+      -webkit-column-count: @i;
+      -moz-column-count: @i;
+      column-count: @i;
+
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px;
+
+      column-fill: balance;
+    }
+
+    .css-cols-lg-@{i}-important {
+      -webkit-column-count: @i !important;
+      -moz-column-count: @i !important;
+      column-count: @i !important;
+
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px;
+
+      column-fill: balance;
+    }
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    .css-cols-xl-@{i} {
+      -webkit-column-count: @i;
+      -moz-column-count: @i;
+      column-count: @i;
+
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px;
+
+      column-fill: balance;
+    }
+
+    .css-cols-xl-@{i}-important {
+      -webkit-column-count: @i !important;
+      -moz-column-count: @i !important;
+      column-count: @i !important;
+
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px;
+
+      column-fill: balance;
+    }
+  }
+
+  // Extra extra large devices (large desktops, 1400px and up)
+  @media (min-width: 1400px) {
+    .css-cols-xxl-@{i} {
+      -webkit-column-count: @i;
+      -moz-column-count: @i;
+      column-count: @i;
+
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px;
+
+      column-fill: balance;
+    }
+
+    .css-cols-xxl-@{i}-important {
+      -webkit-column-count: @i !important;
+      -moz-column-count: @i !important;
+      column-count: @i !important;
+
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px;
+
+      column-fill: balance;
+    }
+  }
+
+  .generate-column-defs(@i + 1);
+}
+
+///////////////
+/// columns ///
+///////////////
+
+.generate-column-defs();
+
+// .css-cols-gap see margin between!
+
+.css-cols-nogap {
+  -webkit-column-gap: 0;
+  -moz-column-gap: 0;
+  column-gap: 0;
+}
+
+.css-cols-auto {
+  column-fill: auto;
+}
+
+.css-cols-balance {
+  column-fill: balance;
+}
+
+.css-cols-nobreak-inside {
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
+  break-inside: avoid;
+}

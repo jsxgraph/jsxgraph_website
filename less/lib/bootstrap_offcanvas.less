@@ -1,0 +1,37 @@
+// -----------------------------
+// --------- offcanvas ---------
+// -----------------------------
+
+.offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xs {
+  --bs-offcanvas-width: @offcanvas_width;
+}
+
+.offcanvas-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+}
+
+.offcanvas.offcanvas-relative {
+  position: relative;
+  height: 100%;
+}
+
+.offcanvas.offcanvas-relative.offcanvas-start {
+  margin-left: -400px;
+  transition: transform 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+}
+
+.offcanvas.offcanvas-relative.offcanvas-start.show {
+  margin-left: 0;
+}
+
+.offcanvas.offcanvas-relative.offcanvas-end {
+  margin-right: -400px;
+  transition: transform 0.3s ease-in-out, margin-right 0.3s ease-in-out;
+}
+
+.offcanvas.offcanvas-relative.offcanvas-end.show {
+  margin-right: 0;
+}

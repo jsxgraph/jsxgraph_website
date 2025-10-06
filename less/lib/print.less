@@ -1,0 +1,56 @@
+// -----------------------------
+// ----------- print -----------
+// -----------------------------
+
+@media print {
+
+  body,
+  .bg-background {
+    background-color: #fff !important;
+  }
+
+  html.no-bounce,
+  body.no-bounce {
+    position: relative !important;
+    width: 100vw !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .vh-100-calc,
+  .h-100 {
+    height: auto !important;
+  }
+
+  .bg-print,
+  .bg-print *,
+  tr, th, td {
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .small-print {
+    font-size: @scale_print_small;
+  }
+
+  tr, th, td {
+    page-break-inside: avoid;
+    page-break-after: auto
+  }
+
+  .no-print-break {
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .container,
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: unset !important;
+  }
+}

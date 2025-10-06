@@ -1,0 +1,1095 @@
+// -----------------------------
+// ---------- colors -----------
+// -----------------------------
+
+.generate-color-opacities(@color, @name, @op: 0) when (@op <= 100) {
+
+  .bg-@{name}-op-@{op} {
+    background-color: fade(@color, @op) !important;
+    color: contrast(fade(@color, @op), @color_text_dark, @color_text_light);
+  }
+
+  .generate-color-opacities(@color, @name, @op + 5);
+}
+
+.generate-color-vars (@name, @color) {
+  --bs-@{name}: @color;
+  @r: red(@color);
+  @g: green(@color);
+  @b: blue(@color);
+  --bs-@{name}-rgb: @r, @g, @b;
+  --bs-@{name}-r: @r;
+  --bs-@{name}-g: @g;
+  --bs-@{name}-b: @b;
+}
+
+.generate-color-defs(@colors: primary, @i: 1) when (@i <= length(@colors)) {
+  @name_raw: extract(@colors, @i);
+  @color: 'color_@{name_raw}';
+
+  @name: replace(@name_raw, '_', '-', 'gi');
+
+  :root {
+    .generate-color-vars(@name, @@color);
+    .generate-color-vars(~'@{name}-hover', darken(@@color, @threshold_hover));
+    .generate-color-vars(~'@{name}-active', darken(@@color, @threshold_active));
+    .generate-color-vars(~'@{name}-faded', mix(#fff, @@color, @threshold_faded));
+    .generate-color-vars(~'@{name}-faded-hover', darken(mix(#fff, @@color, @threshold_faded), @threshold_hover));
+    .generate-color-vars(~'@{name}-faded-active', darken(mix(#fff, @@color, @threshold_faded), @threshold_active));
+    .generate-color-vars(~'@{name}-pale', mix(#fff, @@color, @threshold_pale));
+    .generate-color-vars(~'@{name}-pale-hover', darken(mix(#fff, @@color, @threshold_pale), @threshold_hover));
+    .generate-color-vars(~'@{name}-pale-active', darken(mix(#fff, @@color, @threshold_pale), @threshold_active));
+  }
+
+  .bg-@{name} {
+    background-color: @@color !important;
+    color: contrast(@@color, @color_text_dark, @color_text_light);
+  }
+
+  .navbar.bg-@{name} {
+    .navbar-brand, .nav-link, .navbar-toggler-icon {
+      color: contrast(@@color, @color_text_dark, @color_text_light);
+    }
+
+    .nav-link.active {
+      color: contrast(@@color, lighten(@color_text_dark, @threshold_active), darken(@color_text_light, @threshold_active));
+    }
+  }
+
+  .bg-@{name}-hover {
+    background-color: @@color !important;
+    color: contrast(@@color, @color_text_dark, @color_text_light);
+    cursor: pointer;
+  }
+
+  .bg-@{name}-hover:active,
+  .bg-@{name}-hover.active {
+    background-color: darken(@@color, @threshold_active) !important;
+    color: contrast(darken(@@color, @threshold_active), @color_text_dark, @color_text_light);
+  }
+
+  .bg-@{name}-hover:hover:not(.no-hover),
+  .bg-@{name}-hover.hover:not(.no-hover),
+  .bg-@{name}-hover:focus:not(.no-focus),
+  .bg-@{name}-hover:focus-visible:not(.no-focus),
+  .bg-@{name}-hover.focus:not(.no-focus),
+  .bg-@{name}-hover-sim {
+    background-color: darken(@@color, @threshold_hover) !important;
+    color: contrast(darken(@@color, @threshold_hover), @color_text_dark, @color_text_light);
+  }
+
+  .border-@{name} {
+    border-color: @@color !important;
+  }
+
+  .text-@{name} {
+    color: @@color !important;
+  }
+
+  .link-@{name},
+  .text-@{name}-hover {
+    color: @@color !important;
+    cursor: pointer;
+  }
+
+  .link-@{name}:active,
+  .link-@{name}.active,
+  .text-@{name}-hover:active,
+  .text-@{name}-hover.active {
+    color: darken(@@color, @threshold_active) !important;
+  }
+
+  .link-@{name}:hover:not(.no-hover),
+  .link-@{name}.hover:not(.no-hover),
+  .link-@{name}:focus:not(.no-focus),
+  .link-@{name}:focus-visible:not(.no-focus),
+  .link-@{name}.focus:not(.no-focus),
+  .text-@{name}-hover:hover:not(.no-hover),
+  .text-@{name}-hover.hover:not(.no-hover),
+  .text-@{name}-hover:focus:not(.no-focus),
+  .text-@{name}-hover:focus-visible:not(.no-focus),
+  .text-@{name}-hover.focus:not(.no-focus) {
+    color: darken(@@color, @threshold_hover) !important;
+  }
+
+  .bg-@{name}-faded {
+    background-color: mix(#fff, @@color, @threshold_faded) !important;
+    color: contrast(mix(#fff, @@color, @threshold_faded), @color_text_dark, @color_text_light);
+  }
+
+  .generate-color-opacities(@@color, @name);
+
+  .navbar.bg-@{name}-faded {
+    .navbar-brand, .nav-link, .navbar-toggler-icon {
+      color: contrast(mix(#fff, @@color, @threshold_faded), @color_text_dark, @color_text_light);
+    }
+
+    .nav-link.active {
+      color: contrast(mix(#fff, @@color, @threshold_faded), lighten(@color_text_dark, @threshold_active), darken(@color_text_light, @threshold_active));
+    }
+  }
+
+  .bg-@{name}-faded-hover {
+    background-color: mix(#fff, @@color, @threshold_faded) !important;
+    color: contrast(mix(#fff, @@color, @threshold_faded), @color_text_dark, @color_text_light);
+    cursor: pointer;
+  }
+
+  .bg-@{name}-faded-hover:active,
+  .bg-@{name}-faded-hover.active {
+    background-color: darken(mix(#fff, @@color, @threshold_faded), @threshold_active) !important;
+    color: contrast(darken(mix(#fff, @@color, @threshold_faded), @threshold_active), @color_text_dark, @color_text_light);
+  }
+
+  .bg-@{name}-faded-hover:hover:not(.no-hover),
+  .bg-@{name}-faded-hover.hover:not(.no-hover),
+  .bg-@{name}-faded-hover:focus:not(.no-focus),
+  .bg-@{name}-faded-hover:focus-visible:not(.no-focus),
+  .bg-@{name}-faded-hover.focus:not(.no-focus) {
+    background-color: darken(mix(#fff, @@color, @threshold_faded), @threshold_hover) !important;
+    color: contrast(darken(mix(#fff, @@color, @threshold_faded), @threshold_hover), @color_text_dark, @color_text_light);
+  }
+
+  .border-@{name}-faded {
+    border-color: mix(#fff, @@color, @threshold_faded) !important;
+  }
+
+  .text-@{name}-faded {
+    color: mix(#fff, @@color, @threshold_faded) !important;
+  }
+
+  .text-@{name}-faded-hover {
+    color: mix(#fff, @@color, @threshold_faded) !important;
+    cursor: pointer;
+  }
+
+  .text-@{name}-faded-hover:active,
+  .text-@{name}-faded-hover.active {
+    color: darken(mix(#fff, @@color, @threshold_faded), @threshold_active) !important;
+  }
+
+  .text-@{name}-faded-hover:hover:not(.no-hover),
+  .text-@{name}-faded-hover.hover:not(.no-hover),
+  .text-@{name}-faded-hover:focus:not(.no-focus),
+  .text-@{name}-faded-hover:focus-visible:not(.no-focus),
+  .text-@{name}-faded-hover.focus:not(.no-focus) {
+    color: darken(mix(#fff, @@color, @threshold_faded), @threshold_hover) !important;
+  }
+
+  .bg-@{name}-pale {
+    background-color: mix(#fff, @@color, @threshold_pale) !important;
+    color: contrast(mix(#fff, @@color, @threshold_pale), @color_text_dark, @color_text_light);
+  }
+
+  .navbar.bg-@{name}-pale {
+    .navbar-brand, .nav-link, .navbar-toggler-icon {
+      color: contrast(mix(#fff, @@color, @threshold_pale), @color_text_dark, @color_text_light);
+    }
+
+    .nav-link.active {
+      color: contrast(mix(#fff, @@color, @threshold_pale), lighten(@color_text_dark, @threshold_active), darken(@color_text_light, @threshold_active));
+    }
+  }
+
+  .bg-@{name}-pale-hover {
+    background-color: mix(#fff, @@color, @threshold_pale) !important;
+    color: contrast(mix(#fff, @@color, @threshold_pale), @color_text_dark, @color_text_light);
+    cursor: pointer;
+  }
+
+  .bg-@{name}-pale-hover:active,
+  .bg-@{name}-pale-hover.active {
+    background-color: darken(mix(#fff, @@color, @threshold_pale), @threshold_active) !important;
+    color: contrast(darken(mix(#fff, @@color, @threshold_pale), @threshold_active), @color_text_dark, @color_text_light);
+  }
+
+  .bg-@{name}-pale-hover:hover:not(.no-hover),
+  .bg-@{name}-pale-hover.hover:not(.no-hover),
+  .bg-@{name}-pale-hover:focus:not(.no-focus),
+  .bg-@{name}-pale-hover:focus-visible:not(.no-focus),
+  .bg-@{name}-pale-hover.focus:not(.no-focus) {
+    background-color: darken(mix(#fff, @@color, @threshold_pale), @threshold_hover) !important;
+    color: contrast(darken(mix(#fff, @@color, @threshold_pale), @threshold_hover), @color_text_dark, @color_text_light);
+  }
+
+  .border-@{name}-pale {
+    border-color: mix(#fff, @@color, @threshold_pale) !important;
+  }
+
+  .text-@{name}-pale {
+    color: mix(#fff, @@color, @threshold_pale) !important;
+  }
+
+  .text-@{name}-pale-hover {
+    color: mix(#fff, @@color, @threshold_pale) !important;
+    cursor: pointer;
+  }
+
+  .text-@{name}-pale-hover:active,
+  .text-@{name}-pale-hover.active {
+    color: darken(mix(#fff, @@color, @threshold_pale), @threshold_active) !important;
+  }
+
+  .text-@{name}-pale-hover:hover:not(.no-hover),
+  .text-@{name}-pale-hover.hover:not(.no-hover),
+  .text-@{name}-pale-hover:focus:not(.no-focus),
+  .text-@{name}-pale-hover:focus-visible:not(.no-focus),
+  .text-@{name}-pale-hover.focus:not(.no-focus) {
+    color: darken(mix(#fff, @@color, @threshold_pale), @threshold_hover) !important;
+  }
+
+  .btn-@{name} {
+    & when (@disable_focus_remaining = true) {
+      --bs-btn-active-bg: @@color;
+      --bs-btn-active-border-color: @@color;
+      --bs-btn-active-color: contrast(@@color, @color_text_dark, @color_text_light);
+
+      --bs-btn-hover-bg: @@color;
+      --bs-btn-hover-border-color: @@color;
+      --bs-btn-hover-color: contrast(@@color, @color_text_dark, @color_text_light);
+
+      --bs-btn-disabled-bg: @@color;
+      --bs-btn-disabled-border-color: @@color;
+      --bs-btn-disabled-color: contrast(@@color, @color_text_dark, @color_text_light);
+    }
+
+    & when (@disable_focus_remaining = false) {
+      --bs-btn-active-bg: darken(@@color, @threshold_active);
+      --bs-btn-active-border-color: darken(@@color, @threshold_active);
+      --bs-btn-active-color: contrast(darken(@@color, @threshold_active), @color_text_dark, @color_text_light);
+
+      --bs-btn-hover-bg: darken(@@color, @threshold_hover);
+      --bs-btn-hover-border-color: darken(@@color, @threshold_hover);
+      --bs-btn-hover-color: contrast(darken(@@color, @threshold_hover), @color_text_dark, @color_text_light);
+
+      --bs-btn-disbled-bg: mix(@@color, #fff, 50%);
+      --bs-btn-disbled-border-color: mix(@@color, #fff, 50%);
+      @disabled: mix(@@color, #fff, 30%);
+      --bs-btn-disbled-color: if(luma(@disabled) > 80%, darken(@disabled, 20%), @disabled);
+    }
+  }
+
+  .btn-@{name},
+  .btn-@{name}.no-hover,
+  .btn-@{name}.no-hover:hover,
+  .btn-@{name}.no-active,
+  .btn-@{name}.no-active:active,
+  .btn-@{name}.no-focus,
+  .btn-@{name}.no-focus:focus,
+  .btn-@{name}.no-focus:focus-visible {
+    background-color: @@color;
+    border-color: @@color;
+    color: contrast(@@color, @color_text_dark, @color_text_light);
+  }
+
+  .btn-@{name}:not(:disabled):not(.disabled):active:not(.no-active),
+  .btn-@{name}:not(:disabled):not(.disabled).active:not(.no-active),
+  .btn-check:active + .btn-@{name},
+  .btn-check:checked + .btn-@{name} {
+    background: none;
+    background-color: darken(@@color, @threshold_active);
+    border-color: darken(@@color, @threshold_active);
+    color: contrast(darken(@@color, @threshold_active), @color_text_dark, @color_text_light);
+  }
+
+  .show > .btn-@{name}.dropdown-toggle,
+  .btn-@{name}.dropdown-toggle.show {
+    background: none;
+    background-color: darken(@@color, @threshold_hover) !important;
+    border-color: darken(@@color, @threshold_hover) !important;
+    color: contrast(darken(@@color, @threshold_hover), @color_text_dark, @color_text_light) !important;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .btn-@{name}:not(:disabled):not(.disabled):hover:not(.no-hover),
+    .btn-@{name}:not(:disabled):not(.disabled).hover:not(.no-hover),
+    .btn-@{name}:not(:disabled):not(.disabled):focus:not(.no-focus),
+    .btn-@{name}:not(:disabled):not(.disabled):focus-visible:not(.no-focus),
+    .btn-@{name}:not(:disabled):not(.disabled).focus:not(.no-focus) {
+      background: none;
+      background-color: darken(@@color, @threshold_hover) !important;
+      border-color: darken(@@color, @threshold_hover) !important;
+      color: contrast(darken(@@color, @threshold_hover), @color_text_dark, @color_text_light) !important;
+    }
+  }
+
+  .btn-@{name}.disabled,
+  .btn-@{name}:disabled {
+    background-color: mix(@@color, #fff, 50%);
+    border-color: mix(@@color, #fff, 50%);
+    opacity: inherit;
+    @disabled: mix(@@color, #fff, 30%);
+    color: if(luma(@disabled) > 80%, darken(@disabled, 20%), @disabled);
+  }
+
+  .btn-@{name}-faded {
+    & when (@disable_focus_remaining = true) {
+      --bs-btn-active-bg: mix(#fff, @@color, @threshold_faded);
+      --bs-btn-active-border-color: mix(#fff, @@color, @threshold_faded);
+      --bs-btn-active-color: contrast(mix(#fff, @@color, @threshold_faded), @color_text_dark, @color_text_light);
+
+      --bs-btn-hover-bg: mix(#fff, @@color, @threshold_faded);
+      --bs-btn-hover-border-color: mix(#fff, @@color, @threshold_faded);
+      --bs-btn-hover-color: contrast(mix(#fff, @@color, @threshold_faded), @color_text_dark, @color_text_light);
+
+      --bs-btn-disabled-bg: mix(#fff, @@color, @threshold_faded);
+      --bs-btn-disabled-border-color: mix(#fff, @@color, @threshold_faded);
+      --bs-btn-disabled-color: contrast(@@color, @color_text_dark, @color_text_light);
+    }
+
+    & when (@disable_focus_remaining = false) {
+      --bs-btn-active-bg: darken(mix(#fff, @@color, @threshold_faded), @threshold_active);
+      --bs-btn-active-border-color: darken(mix(#fff, @@color, @threshold_faded), @threshold_active);
+      --bs-btn-active-color: contrast(darken(mix(#fff, @@color, @threshold_faded), @threshold_active), @color_text_dark, @color_text_light);
+
+      --bs-btn-hover-bg: darken(mix(#fff, @@color, @threshold_faded), @threshold_hover);
+      --bs-btn-hover-border-color: darken(mix(#fff, @@color, @threshold_faded), @threshold_hover);
+      --bs-btn-hover-color: contrast(darken(mix(#fff, @@color, @threshold_faded), @threshold_hover), @color_text_dark, @color_text_light);
+
+      --bs-btn-disbled-bg: mix(mix(#fff, @@color, @threshold_faded), #fff, 50%);
+      --bs-btn-disbled-border-color: mix(mix(#fff, @@color, @threshold_faded), #fff, 50%);
+      @disabled: mix(mix(#fff, @@color, @threshold_faded), #fff, 30%);
+      --bs-btn-disbled-color: if(luma(@disabled) > 80%, darken(@disabled, 20%), @disabled);
+    }
+  }
+
+  .btn-@{name}-faded,
+  .btn-@{name}-faded.no-hover,
+  .btn-@{name}-faded.no-hover:hover,
+  .btn-@{name}-faded.no-active,
+  .btn-@{name}-faded.no-active:active,
+  .btn-@{name}-faded.no-focus,
+  .btn-@{name}-faded.no-focus:focus,
+  .btn-@{name}-faded.no-focus:focus-visible {
+    background-color: mix(#fff, @@color, @threshold_faded);
+    border-color: mix(#fff, @@color, @threshold_faded);
+    color: contrast(mix(#fff, @@color, @threshold_faded), @color_text_dark, @color_text_light);
+  }
+
+  .btn-@{name}-faded:not(:disabled):not(.disabled):active:not(.no-active),
+  .btn-@{name}-faded:not(:disabled):not(.disabled).active:not(.no-active),
+  .btn-check:active + .btn-@{name}-faded,
+  .btn-check:checked + .btn-@{name}-faded {
+    background: none;
+    background-color: darken(mix(#fff, @@color, @threshold_faded), @threshold_active);
+    border-color: darken(mix(#fff, @@color, @threshold_faded), @threshold_active);
+    color: contrast(darken(mix(#fff, @@color, @threshold_faded), @threshold_active), @color_text_dark, @color_text_light);
+  }
+
+  .show > .btn-@{name}-faded.dropdown-toggle,
+  .btn-@{name}-faded.dropdown-toggle.show {
+    background: none;
+    background-color: darken(mix(#fff, @@color, @threshold_faded), @threshold_hover) !important;
+    border-color: darken(mix(#fff, @@color, @threshold_faded), @threshold_hover) !important;
+    color: contrast(darken(mix(#fff, @@color, @threshold_faded), @threshold_hover), @color_text_dark, @color_text_light) !important;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .btn-@{name}-faded:not(:disabled):not(.disabled):hover:not(.no-hover),
+    .btn-@{name}-faded:not(:disabled):not(.disabled).hover:not(.no-hover),
+    .btn-@{name}-faded:not(:disabled):not(.disabled):focus:not(.no-focus),
+    .btn-@{name}-faded:not(:disabled):not(.disabled):focus-visible:not(.no-focus),
+    .btn-@{name}-faded:not(:disabled):not(.disabled).focus:not(.no-focus) {
+      background: none;
+      background-color: darken(mix(#fff, @@color, @threshold_faded), @threshold_hover) !important;
+      border-color: darken(mix(#fff, @@color, @threshold_faded), @threshold_hover) !important;
+      color: contrast(darken(mix(#fff, @@color, @threshold_faded), @threshold_hover), @color_text_dark, @color_text_light) !important;
+    }
+  }
+
+  .btn-@{name}-faded.disabled,
+  .btn-@{name}-faded:disabled {
+    background-color: mix(mix(#fff, @@color, @threshold_faded), #fff, 50%);
+    border-color: mix(mix(#fff, @@color, @threshold_faded), #fff, 50%);
+    opacity: inherit;
+    @disabled: mix(mix(#fff, @@color, @threshold_faded), #fff, 30%);
+    color: if(luma(@disabled) > 80%, darken(@disabled, 20%), @disabled);
+  }
+
+  .btn-@{name}-pale {
+    & when (@disable_focus_remaining = true) {
+      --bs-btn-active-bg: mix(#fff, @@color, @threshold_pale);
+      --bs-btn-active-border-color: mix(#fff, @@color, @threshold_pale);
+      --bs-btn-active-color: contrast(mix(#fff, @@color, @threshold_pale), @color_text_dark, @color_text_light);
+
+      --bs-btn-hover-bg: mix(#fff, @@color, @threshold_pale);
+      --bs-btn-hover-border-color: mix(#fff, @@color, @threshold_pale);
+      --bs-btn-hover-color: contrast(mix(#fff, @@color, @threshold_pale), @color_text_dark, @color_text_light);
+
+      --bs-btn-disabled-bg: mix(#fff, @@color, @threshold_pale);
+      --bs-btn-disabled-border-color: mix(#fff, @@color, @threshold_pale);
+      --bs-btn-disabled-color: contrast(mix(#fff, @@color, @threshold_pale), @color_text_dark, @color_text_light);
+    }
+
+    & when (@disable_focus_remaining = false) {
+      --bs-btn-active-bg: darken(mix(#fff, @@color, @threshold_pale), @threshold_active);
+      --bs-btn-active-border-color: darken(mix(#fff, @@color, @threshold_pale), @threshold_active);
+      --bs-btn-active-color: contrast(darken(mix(#fff, @@color, @threshold_pale), @threshold_active), @color_text_dark, @color_text_light);
+
+      --bs-btn-hover-bg: darken(mix(#fff, @@color, @threshold_pale), @threshold_hover);
+      --bs-btn-hover-border-color: darken(mix(#fff, @@color, @threshold_pale), @threshold_hover);
+      --bs-btn-hover-color: contrast(darken(mix(#fff, @@color, @threshold_pale), @threshold_hover), @color_text_dark, @color_text_light);
+
+      --bs-btn-disbled-bg: mix(mix(#fff, @@color, @threshold_pale), #fff, 50%);
+      --bs-btn-disbled-border-color: mix(mix(#fff, @@color, @threshold_pale), #fff, 50%);
+      @disabled: mix(mix(#fff, @@color, @threshold_pale), #fff, 30%);
+      --bs-btn-disbled-color: if(luma(@disabled) > 80%, darken(@disabled, 20%), @disabled);
+    }
+  }
+
+  .btn-@{name}-pale,
+  .btn-@{name}-pale.no-hover,
+  .btn-@{name}-pale.no-hover:hover,
+  .btn-@{name}-pale.no-active,
+  .btn-@{name}-pale.no-active:active,
+  .btn-@{name}-pale.no-focus,
+  .btn-@{name}-pale.no-focus:focus,
+  .btn-@{name}-pale.no-focus:focus-visible {
+    background-color: mix(#fff, @@color, @threshold_pale);
+    border-color: mix(#fff, @@color, @threshold_pale);
+    color: contrast(mix(#fff, @@color, @threshold_pale), @color_text_dark, @color_text_light);
+  }
+
+  .btn-@{name}-pale:not(:disabled):not(.disabled):active:not(.no-active),
+  .btn-@{name}-pale:not(:disabled):not(.disabled).active:not(.no-active),
+  .btn-check:active + .btn-@{name}-pale,
+  .btn-check:checked + .btn-@{name}-pale {
+    background: none;
+    background-color: darken(mix(#fff, @@color, @threshold_pale), @threshold_active);
+    border-color: darken(mix(#fff, @@color, @threshold_pale), @threshold_active);
+    color: contrast(darken(mix(#fff, @@color, @threshold_pale), @threshold_active), @color_text_dark, @color_text_light);
+  }
+
+  .show > .btn-@{name}-pale.dropdown-toggle,
+  .btn-@{name}-pale.dropdown-toggle.show {
+    background: none;
+    background-color: darken(mix(#fff, @@color, @threshold_pale), @threshold_hover) !important;
+    border-color: darken(mix(#fff, @@color, @threshold_pale), @threshold_hover) !important;
+    color: contrast(darken(mix(#fff, @@color, @threshold_pale), @threshold_hover), @color_text_dark, @color_text_light) !important;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .btn-@{name}-pale:not(:disabled):not(.disabled):hover:not(.no-hover),
+    .btn-@{name}-pale:not(:disabled):not(.disabled).hover:not(.no-hover),
+    .btn-@{name}-pale:not(:disabled):not(.disabled):focus:not(.no-focus),
+    .btn-@{name}-pale:not(:disabled):not(.disabled):focus-visible:not(.no-focus),
+    .btn-@{name}-pale:not(:disabled):not(.disabled).focus:not(.no-focus) {
+      background: none;
+      background-color: darken(mix(#fff, @@color, @threshold_pale), @threshold_hover) !important;
+      border-color: darken(mix(#fff, @@color, @threshold_pale), @threshold_hover) !important;
+      color: contrast(darken(mix(#fff, @@color, @threshold_pale), @threshold_hover), @color_text_dark, @color_text_light) !important;
+    }
+  }
+
+  .btn-@{name}-pale.disabled,
+  .btn-@{name}-pale:disabled {
+    background-color: mix(mix(#fff, @@color, @threshold_pale), #fff, 50%);
+    border-color: mix(mix(#fff, @@color, @threshold_pale), #fff, 50%);
+    opacity: inherit;
+    @disabled: mix(mix(#fff, @@color, @threshold_pale), #fff, 30%);
+    color: if(luma(@disabled) > 80%, darken(@disabled, 20%), @disabled);
+  }
+
+  .btn-outline-@{name} {
+    & when (@disable_focus_remaining = true) {
+      --bs-btn-active-bg: white;
+      --bs-btn-active-border-color: @@color;
+      --bs-btn-active-color: if(luma(@@color) > 80%, darken(@@color, 40%), @@color);
+
+      --bs-btn-hover-bg: white;
+      --bs-btn-hover-border-color: @@color;
+      --bs-btn-hover-color: if(luma(@@color) > 80%, darken(@@color, 40%), @@color);
+
+      --bs-btn-disabled-bg: transparent;
+      --bs-btn-disabled-border-color: @@color;
+      --bs-btn-disabled-color: if(luma(@@color) > 80%, darken(@@color, 40%), @@color);
+    }
+
+    & when (@disable_focus_remaining = false) {
+      --bs-btn-active-bg: @@color;
+      --bs-btn-active-border-color: @@color;
+      --bs-btn-active-color: contrast(@@color, @color_text_dark, @color_text_light);
+
+      --bs-btn-hover-bg: darken(@@color, @threshold_hover);
+      --bs-btn-hover-border-color: darken(@@color, @threshold_hover);
+      --bs-btn-hover-color: contrast(darken(@@color, @threshold_hover), @color_text_dark, @color_text_light);
+
+      --bs-btn-disbled-bg: transparent;
+      --bs-btn-disbled-border-color: mix(@@color, #fff, 50%);
+      --bs-btn-disbled-color: mix(@@color, #fff, 50%);
+    }
+  }
+
+  .btn-outline-@{name},
+  .btn-outline-@{name}.no-hover,
+  .btn-outline-@{name}.no-hover:hover,
+  .btn-outline-@{name}.no-active,
+  .btn-outline-@{name}.no-active:active,
+  .btn-outline-@{name}.no-focus,
+  .btn-outline-@{name}.no-focus:focus,
+  .btn-outline-@{name}.no-focus:focus-visible {
+    color: if(luma(@@color) > 80%, darken(@@color, 40%), @@color);
+    border-color: @@color;
+    background-color: transparent;
+  }
+
+  .btn-outline-@{name}:not(:disabled):not(.disabled):active:not(.no-active),
+  .btn-outline-@{name}:not(:disabled):not(.disabled).active:not(.no-active),
+  .btn-check:active + .btn-outline-@{name},
+  .btn-check:checked + .btn-outline-@{name} {
+    background-color: @@color;
+    border-color: @@color;
+    color: contrast(@@color, @color_text_dark, @color_text_light);
+  }
+
+  .show > .btn-outline-@{name}.dropdown-toggle,
+  .btn-outline-@{name}.dropdown-toggle.show {
+    color: contrast(darken(@@color, @threshold_hover), @color_text_dark, @color_text_light) !important;
+    background-color: darken(@@color, @threshold_hover) !important;
+    border-color: darken(@@color, @threshold_hover) !important;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .btn-outline-@{name}:not(:disabled):not(.disabled):hover:not(.no-hover),
+    .btn-outline-@{name}:not(:disabled):not(.disabled).hover:not(.no-hover),
+    .btn-outline-@{name}:not(:disabled):not(.disabled):focus:not(.no-focus),
+    .btn-outline-@{name}:not(:disabled):not(.disabled):focus-visible:not(.no-focus),
+    .btn-outline-@{name}:not(:disabled):not(.disabled).focus:not(.no-focus) {
+      color: contrast(darken(@@color, @threshold_hover), @color_text_dark, @color_text_light) !important;
+      background-color: darken(@@color, @threshold_hover) !important;
+      border-color: darken(@@color, @threshold_hover) !important;
+    }
+  }
+
+  .btn-outline-@{name}.disabled,
+  .btn-outline-@{name}:disabled {
+    color: mix(@@color, #fff, 50%);
+    border-color: mix(@@color, #fff, 50%);
+    background-color: transparent;
+    opacity: inherit;
+  }
+
+  .btn-outline-@{name}-faded {
+    & when (@disable_focus_remaining = true) {
+      --bs-btn-active-bg: white;
+      --bs-btn-active-border-color: mix(#fff, @@color, @threshold_faded);
+      --bs-btn-active-color: if(luma(mix(#fff, @@color, @threshold_faded)) > 80%, darken(mix(#fff, @@color, @threshold_faded), 40%), mix(#fff, @@color, @threshold_faded));
+
+      --bs-btn-hover-bg: white;
+      --bs-btn-hover-border-color: mix(#fff, @@color, @threshold_faded);
+      --bs-btn-hover-color: if(luma(mix(#fff, @@color, @threshold_faded)) > 80%, darken(mix(#fff, @@color, @threshold_faded), 40%), mix(#fff, @@color, @threshold_faded));
+
+      --bs-btn-disabled-bg: transparent;
+      --bs-btn-disabled-border-color: mix(#fff, @@color, @threshold_faded);
+      --bs-btn-disabled-color: if(luma(mix(#fff, @@color, @threshold_faded)) > 80%, darken(mix(#fff, @@color, @threshold_faded), 40%), mix(#fff, @@color, @threshold_faded));
+    }
+
+    & when (@disable_focus_remaining = false) {
+      --bs-btn-active-bg: mix(#fff, @@color, @threshold_faded);
+      --bs-btn-active-border-color: mix(#fff, @@color, @threshold_faded);
+      --bs-btn-active-color: contrast(mix(#fff, @@color, @threshold_faded), @color_text_dark, @color_text_light);
+
+      --bs-btn-hover-bg: darken(mix(#fff, @@color, @threshold_faded), @threshold_hover);
+      --bs-btn-hover-border-color: darken(mix(#fff, @@color, @threshold_faded), @threshold_hover);
+      --bs-btn-hover-color: contrast(darken(mix(#fff, @@color, @threshold_faded), @threshold_hover), @color_text_dark, @color_text_light);
+
+      --bs-btn-disbled-bg: transparent;
+      --bs-btn-disbled-border-color: mix(mix(#fff, @@color, @threshold_faded), #fff, 50%);
+      --bs-btn-disbled-color: mix(mix(#fff, @@color, @threshold_faded), #fff, 50%);
+    }
+  }
+
+  .btn-outline-@{name}-faded,
+  .btn-outline-@{name}-faded.no-hover,
+  .btn-outline-@{name}-faded.no-hover:hover,
+  .btn-outline-@{name}-faded.no-active,
+  .btn-outline-@{name}-faded.no-active:active,
+  .btn-outline-@{name}-faded.no-focus,
+  .btn-outline-@{name}-faded.no-focus:focus,
+  .btn-outline-@{name}-faded.no-focus:focus-visible {
+    color: if(luma(mix(#fff, @@color, @threshold_faded)) > 80%, darken(mix(#fff, @@color, @threshold_faded), 40%), mix(#fff, @@color, @threshold_faded));
+    border-color: mix(#fff, @@color, @threshold_faded);
+    background-color: transparent;
+  }
+
+  .btn-outline-@{name}-faded:not(:disabled):not(.disabled):active:not(.no-active),
+  .btn-outline-@{name}-faded:not(:disabled):not(.disabled).active:not(.no-active),
+  .btn-check:active + .btn-outline-@{name}-faded,
+  .btn-check:checked + .btn-outline-@{name}-faded {
+    background-color: mix(#fff, @@color, @threshold_faded);
+    border-color: mix(#fff, @@color, @threshold_faded);
+    color: contrast(mix(#fff, @@color, @threshold_faded), @color_text_dark, @color_text_light);
+  }
+
+  .show > .btn-outline-@{name}-faded.dropdown-toggle,
+  .btn-outline-@{name}-faded.dropdown-toggle.show {
+    color: contrast(darken(mix(#fff, @@color, @threshold_faded), @threshold_hover), @color_text_dark, @color_text_light) !important;
+    background-color: darken(mix(#fff, @@color, @threshold_faded), @threshold_hover) !important;
+    border-color: darken(mix(#fff, @@color, @threshold_faded), @threshold_hover) !important;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .btn-outline-@{name}-faded:not(:disabled):not(.disabled):hover:not(.no-hover),
+    .btn-outline-@{name}-faded:not(:disabled):not(.disabled).hover:not(.no-hover),
+    .btn-outline-@{name}-faded:not(:disabled):not(.disabled):focus:not(.no-focus),
+    .btn-outline-@{name}-faded:not(:disabled):not(.disabled):focus-visible:not(.no-focus),
+    .btn-outline-@{name}-faded:not(:disabled):not(.disabled).focus:not(.no-focus) {
+      color: contrast(darken(mix(#fff, @@color, @threshold_faded), @threshold_hover), @color_text_dark, @color_text_light) !important;
+      background-color: darken(mix(#fff, @@color, @threshold_faded), @threshold_hover) !important;
+      border-color: darken(mix(#fff, @@color, @threshold_faded), @threshold_hover) !important;
+    }
+  }
+
+  .btn-outline-@{name}-faded.disabled,
+  .btn-outline-@{name}-faded:disabled {
+    color: mix(mix(#fff, @@color, @threshold_faded), #fff, 50%);
+    border-color: mix(mix(#fff, @@color, @threshold_faded), #fff, 50%);
+    background-color: transparent;
+    opacity: inherit;
+  }
+
+  .btn-outline-@{name}-pale {
+    & when (@disable_focus_remaining = true) {
+      --bs-btn-active-bg: white;
+      --bs-btn-active-border-color: mix(#fff, @@color, @threshold_pale);
+      --bs-btn-active-color: if(luma(mix(#fff, @@color, @threshold_pale)) > 80%, darken(mix(#fff, @@color, @threshold_pale), 40%), mix(#fff, @@color, @threshold_pale));
+
+      --bs-btn-hover-bg: white;
+      --bs-btn-hover-border-color: mix(#fff, @@color, @threshold_pale);
+      --bs-btn-hover-color: if(luma(mix(#fff, @@color, @threshold_pale)) > 80%, darken(mix(#fff, @@color, @threshold_pale), 40%), mix(#fff, @@color, @threshold_pale));
+
+      --bs-btn-disabled-bg: transparent;
+      --bs-btn-disabled-border-color: mix(#fff, @@color, @threshold_pale);
+      --bs-btn-disabled-color: if(luma(mix(#fff, @@color, @threshold_pale)) > 80%, darken(mix(#fff, @@color, @threshold_pale), 40%), mix(#fff, @@color, @threshold_pale));
+    }
+
+    & when (@disable_focus_remaining = false) {
+      --bs-btn-active-bg: mix(#fff, @@color, @threshold_pale);
+      --bs-btn-active-border-color: mix(#fff, @@color, @threshold_pale);
+      --bs-btn-active-color: contrast(mix(#fff, @@color, @threshold_pale), @color_text_dark, @color_text_light);
+
+      --bs-btn-hover-bg: darken(mix(#fff, @@color, @threshold_pale), @threshold_hover);
+      --bs-btn-hover-border-color: darken(mix(#fff, @@color, @threshold_pale), @threshold_hover);
+      --bs-btn-hover-color: contrast(darken(mix(#fff, @@color, @threshold_pale), @threshold_hover), @color_text_dark, @color_text_light);
+
+      --bs-btn-disbled-bg: transparent;
+      --bs-btn-disbled-border-color: mix(mix(#fff, @@color, @threshold_pale), #fff, 50%);
+      --bs-btn-disbled-color: mix(mix(#fff, @@color, @threshold_pale), #fff, 50%);
+    }
+  }
+
+  .btn-outline-@{name}-pale,
+  .btn-outline-@{name}-pale.no-hover,
+  .btn-outline-@{name}-pale.no-hover:hover,
+  .btn-outline-@{name}-pale.no-active,
+  .btn-outline-@{name}-pale.no-active:active,
+  .btn-outline-@{name}-pale.no-focus,
+  .btn-outline-@{name}-pale.no-focus:focus,
+  .btn-outline-@{name}-pale.no-focus:focus-visible {
+    color: if(luma(mix(#fff, @@color, @threshold_pale)) > 80%, darken(mix(#fff, @@color, @threshold_pale), 40%), mix(#fff, @@color, @threshold_pale));
+    border-color: mix(#fff, @@color, @threshold_pale);
+    background-color: transparent;
+  }
+
+  .btn-outline-@{name}-pale:not(:disabled):not(.disabled):active:not(.no-active),
+  .btn-outline-@{name}-pale:not(:disabled):not(.disabled).active:not(.no-active),
+  .btn-check:active + .btn-outline-@{name}-pale,
+  .btn-check:checked + .btn-outline-@{name}-pale {
+    background-color: mix(#fff, @@color, @threshold_pale);
+    border-color: mix(#fff, @@color, @threshold_pale);
+    color: contrast(mix(#fff, @@color, @threshold_pale), @color_text_dark, @color_text_light);
+  }
+
+  .show > .btn-outline-@{name}-pale.dropdown-toggle,
+  .btn-outline-@{name}-pale.dropdown-toggle.show {
+    color: contrast(darken(mix(#fff, @@color, @threshold_pale), @threshold_hover), @color_text_dark, @color_text_light) !important;
+    background-color: darken(mix(#fff, @@color, @threshold_pale), @threshold_hover) !important;
+    border-color: darken(mix(#fff, @@color, @threshold_pale), @threshold_hover) !important;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .btn-outline-@{name}-pale:not(:disabled):not(.disabled):hover:not(.no-hover),
+    .btn-outline-@{name}-pale:not(:disabled):not(.disabled).hover:not(.no-hover),
+    .btn-outline-@{name}-pale:not(:disabled):not(.disabled):focus:not(.no-focus),
+    .btn-outline-@{name}-pale:not(:disabled):not(.disabled):focus-visible:not(.no-focus),
+    .btn-outline-@{name}-pale:not(:disabled):not(.disabled).focus:not(.no-focus) {
+      color: contrast(darken(mix(#fff, @@color, @threshold_pale), @threshold_hover), @color_text_dark, @color_text_light) !important;
+      background-color: darken(mix(#fff, @@color, @threshold_pale), @threshold_hover) !important;
+      border-color: darken(mix(#fff, @@color, @threshold_pale), @threshold_hover) !important;
+    }
+  }
+
+  .btn-outline-@{name}-pale.disabled,
+  .btn-outline-@{name}-pale:disabled {
+    color: mix(mix(#fff, @@color, @threshold_pale), #fff, 50%);
+    border-color: mix(mix(#fff, @@color, @threshold_pale), #fff, 50%);
+    opacity: inherit;
+  }
+
+  .alert-@{name} {
+    color: darken(@@color, 30%);
+    background-color: mix(@@color, #fff, 30%);
+    border-color: mix(@@color, #fff, 40%);
+
+    .alert-link {
+      color: darken(@@color, 35%);
+    }
+  }
+
+  .list-group-item-@{name} {
+    color: contrast(mix(@@color, #fff, 30%), @color_text_dark, @color_text_light);
+    background-color: mix(@@color, #fff, 30%);
+  }
+
+  .list-group-item-@{name}.list-group-item-action:hover:not(.no-hover),
+  .list-group-item-@{name}.list-group-item-action.hover:not(.no-hover),
+  .list-group-item-@{name}.list-group-item-action:focus:not(.no-focus),
+  .list-group-item-@{name}.list-group-item-action:focus-visible:not(.no-focus),
+  .list-group-item-@{name}.list-group-item-action.focus:not(.no-focus) {
+    color: contrast(darken(mix(@@color, #fff, 30%), @threshold_hover), @color_text_dark, @color_text_light);
+    background-color: darken(mix(@@color, #fff, 30%), @threshold_hover) !important;
+  }
+
+  .list-group-item-@{name}.list-group-item-action.active,
+  .list-group-item-@{name}.list-group-item-action:active {
+    color: contrast(darken(mix(@@color, #fff, 30%), @threshold_active), @color_text_dark, @color_text_light);
+    background-color: darken(mix(@@color, #fff, 30%), @threshold_active) !important;
+    border-color: darken(mix(@@color, #fff, 30%), @threshold_active);
+  }
+
+  .card.card-action-@{name}:hover:not(.no-hover),
+  .card.card-action-@{name}.hover:not(.no-hover),
+  .card.card-action-@{name}:focus:not(.no-focus),
+  .card.card-action-@{name}:focus-visible:not(.no-focus),
+  .card.card-action-@{name}.focus:not(.no-focus) {
+    color: contrast(darken(mix(@@color, #fff, 30%), @threshold_hover), @color_text_dark, @color_text_light);
+    background-color: darken(mix(@@color, #fff, 30%), @threshold_hover) !important;
+    box-shadow: 0 0 @shadow_width 0 darken(@@color, @threshold_hover) !important;
+  }
+
+  .card.card-action-@{name}:active,
+  .card.card-action-@{name}.active {
+    color: contrast(darken(mix(@@color, #fff, 30%), @threshold_active), @color_text_dark, @color_text_light);
+    background-color: darken(mix(@@color, #fff, 30%), @threshold_active) !important;
+    box-shadow: 0 0 @shadow_width 0 darken(@@color, @threshold_active) !important;
+  }
+
+  .form-check-input-@{name}:checked,
+  .form-check-input-@{name}[type=checkbox]:indeterminate {
+    border-color: @@color;
+    background-color: @@color;
+    color: contrast(@@color, @color_text_dark, @color_text_light);
+  }
+
+  .form-check .form-check-input-@{name}:checked ~ .form-check-label.form-check-label-em {
+    color: @@color;
+    font-weight: 700;
+  }
+
+  .table-@{name} {
+    background-color: mix(@@color, #fff, 20%); // 20% are from bootstrap
+    --bs-table-bg: mix(@@color, #fff, 20%); // 20% are from bootstrap
+    border-color: mix(@@color, #fff, 30%);
+    color: contrast(mix(@@color, #fff, 20%), @color_text_dark, @color_text_light);
+  }
+
+  .table-striped.table-@{name} > tbody > tr:nth-of-type(odd),
+  .table-striped > tbody > tr.table-@{name}:nth-of-type(odd),
+  .table-striped > tbody > tr:nth-of-type(odd) th.table-@{name},
+  .table-striped > tbody > tr:nth-of-type(odd) td.table-@{name},
+  .table-striped-@{name} tbody tr:nth-of-type(odd) {
+    background-color: fade(@@color, 20%);
+  }
+
+  .table-chess.table-@{name} tbody tr:nth-of-type(odd) td:nth-of-type(odd),
+  .table-chess.table-@{name} tbody tr:nth-of-type(even) td:nth-of-type(even),
+  .table-chess-@{name} tbody tr:nth-of-type(odd) td:nth-of-type(odd),
+  .table-chess-@{name} tbody tr:nth-of-type(even) td:nth-of-type(even) {
+    background-color: fade(@@color, 20%);
+  }
+
+  .shine-@{name},
+  .shadow-@{name},
+  .shine-@{name}:focus,
+  .shine-@{name}:focus-visible,
+  .shadow-@{name}:focus,
+  .shadow-@{name}:focus-visible {
+    box-shadow: 0 0 @shadow_width 0 @@color !important;
+  }
+
+  .text-shine-@{name},
+  .text-shadow-@{name},
+  .text-shine-@{name}:focus,
+  .text-shine-@{name}:focus-visible,
+  .text-shadow-@{name}:focus,
+  .text-shadow-@{name}:focus-visible {
+    text-shadow: 0 0 @shadow_width @@color !important;
+  }
+
+  .popover-@{name}-faded {
+    --bs-popover-border-color: @@color;
+    --bs-popover-header-bg: fade(@@color, 25%);
+    --bs-popover-header-color: @@color;
+  }
+
+  .popover-@{name} {
+    --bs-popover-border-color: @@color;
+    --bs-popover-header-bg: @@color;
+    --bs-popover-header-color: contrast(@@color, @color_text_dark, @color_text_light);
+  }
+
+  .generate-color-defs(@colors, (@i + 1));
+}
+
+//////////////
+/// colors ///
+//////////////
+
+body {
+  background-color: @color_body;
+}
+
+a,
+.btn-link {
+  color: @color_link;
+}
+
+a:hover,
+.btn-link:hover {
+  color: @color_link_hover;
+}
+
+.page-link {
+  border-color: @color_primary_dark;
+  background-color: #fff;
+  color: @color_primary;
+}
+
+.page-link:hover {
+  color: @color_primary_dark;
+  border-color: @color_primary_dark;
+  background-color: @color_grey;
+}
+
+.page-link.active,
+.active > .page-link {
+  border-color: @color_primary_dark;
+  background-color: @color_primary;
+  color: contrast(@color_primary, @color_text_dark, @color_text_light);
+}
+
+.page-link.disabled,
+.disabled > .page-link {
+  border-color: @color_primary_dark;
+  background-color: #fff;
+  color: @color_grey_dark;
+}
+
+.list-group-item {
+  color: @color_text_dark;
+  background-color: #fff;
+}
+
+.list-group-item.list-group-item-action:hover:not(.no-hover),
+.list-group-item.list-group-item-action.hover:not(.no-hover),
+.list-group-item.list-group-item-action:focus:not(.no-focus),
+.list-group-item.list-group-item-action:focus-visible:not(.no-focus),
+.list-group-item.list-group-item-action.focus:not(.no-focus) {
+  color: @color_text_dark;
+  background-color: darken(#fff, @threshold_hover);
+}
+
+.accordion-button:not(.collapsed):not(.no-active):not(.accordion-button-none),
+.accordion-button.accordion-button-action:hover:not(.no-hover),
+.accordion-button.accordion-button-action.hover:not(.no-hover),
+.accordion-button.accordion-button-action:focus:not(.no-focus),
+.accordion-button.accordion-button-action:focus-visible:not(.no-focus),
+.accordion-button.accordion-button-action.focus:not(.no-focus) {
+  color: @color_primary_dark;
+  background-color: mix(@color_primary, #fff, 20%);
+}
+
+.accordion-button.accordion-button-none,
+.accordion-button:not(.collapsed).no-active {
+  color: inherit;
+  background-color: inherit;
+  box-shadow: none;
+}
+
+a.card {
+  color: var(--bs-body-color);
+  text-decoration: none;
+}
+
+.card.card-action {
+  cursor: pointer;
+}
+
+.card.card-action:hover:not(.no-hover),
+.card.card-action.hover:not(.no-hover),
+.card.card-action:focus:not(.no-focus),
+.card.card-action:focus-visible:not(.no-focus),
+.card.card-action.focus:not(.no-focus) {
+  color: contrast(darken(mix(@color_bs_grey_light, #fff, 30%), @threshold_hover), @color_text_dark, @color_text_light);
+  background-color: darken(mix(@color_bs_grey_light, #fff, 30%), @threshold_hover) !important;
+  box-shadow: 0 0 @shadow_width 0 darken(@color_bs_grey_light, @threshold_hover) !important;
+}
+
+.card.card-action:active,
+.card.card-action.active {
+  color: contrast(darken(mix(@color_bs_grey_light, #fff, 30%), @threshold_active), @color_text_dark, @color_text_light);
+  background-color: darken(mix(@color_bs_grey_light, #fff, 30%), @threshold_active) !important;
+  box-shadow: 0 0 @shadow_width 0 darken(@color_bs_grey_light, @threshold_active) !important;
+}
+
+.navbar {
+  .nav-link {
+    color: @color_text_dark;
+  }
+
+  .nav-link:hover {
+    color: lighten(@color_text_dark, @threshold_hover);;
+  }
+
+  .nav-link.active {
+    color: @color_primary;
+  }
+}
+
+.generate-color-defs(@bootstrap_colors);
+
+.table-striped-none tbody tr:nth-of-type(odd) {
+  background-color: inherit;
+}
+
+.bg-striped {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: @bg_stripes_width @bg_stripes_width;
+}
+
+.bg-striped-em {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.40) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.40) 50%, rgba(255, 255, 255, 0.40) 75%, transparent 75%, transparent);
+  background-size: @bg_stripes_width @bg_stripes_width;
+}
+
+.bg-stripes-animated {
+  -webkit-animation: bg-stripes 1s linear infinite;
+  animation: bg-stripes 1s linear infinite;
+}
+
+@-webkit-keyframes bg-stripes {
+  from {
+    background-position: @bg_stripes_width 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes bg-stripes {
+  from {
+    background-position: @bg_stripes_width 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.btn-bs,
+.btn-bs.no-hover,
+.btn-bs.no-hover:hover,
+.btn-bs.no-active,
+.btn-bs.no-active:active,
+.btn-bs.no-focus,
+.btn-bs.no-focus:focus,
+.btn-bs.no-focus:focus-visible {
+  background-color: @color_bs_grey_light;
+  border-color: @color_bs_grey_dark;
+  color: contrast(@color_bs_grey_light, @color_text_dark, @color_text_light);
+}
+
+.btn-bs:not(:disabled):not(.disabled):active:not(.no-active),
+.btn-bs:not(:disabled):not(.disabled).active:not(.no-active),
+.btn-check:active + .btn-bs,
+.btn-check:checked + .btn-bs {
+  background: none;
+  background-color: darken(@color_bs_grey_light, @threshold_active);
+  border-color: darken(@color_bs_grey_dark, @threshold_active);
+  color: contrast(darken(@color_bs_grey_light, @threshold_active), @color_text_dark, @color_text_light);
+}
+
+.show > .btn-bs.dropdown-toggle,
+.btn-bs.dropdown-toggle.show {
+  background: none;
+  background-color: darken(@color_bs_grey_light, @threshold_hover) !important;
+  border-color: darken(@color_bs_grey_dark, @threshold_hover) !important;
+  color: contrast(darken(@color_bs_grey_light, @threshold_hover), @color_text_dark, @color_text_light) !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-bs:not(:disabled):not(.disabled):hover:not(.no-hover),
+  .btn-bs:not(:disabled):not(.disabled).hover:not(.no-hover),
+  .btn-bs:not(:disabled):not(.disabled):focus:not(.no-focus),
+  .btn-bs:not(:disabled):not(.disabled):focus-visible:not(.no-focus),
+  .btn-bs:not(:disabled):not(.disabled).focus:not(.no-focus) {
+    background: none;
+    background-color: darken(@color_bs_grey_light, @threshold_hover) !important;
+    border-color: darken(@color_bs_grey_dark, @threshold_hover) !important;
+    color: contrast(darken(@color_bs_grey_light, @threshold_hover), @color_text_dark, @color_text_light) !important;
+  }
+}
+
+.btn-bs.disabled,
+.btn-bs:disabled {
+  background-color: mix(@color_bs_grey_light, #fff, 50%);
+  border-color: mix(@color_bs_grey_dark, #fff, 50%);
+  opacity: inherit;
+  @disabled: mix(@color_bs_grey_light, #fff, 30%);
+  color: if(luma(@disabled) > 80%, darken(@disabled, 20%), @disabled);
+}
+
+.bg-transparent {
+  background: none;
+  background-color: transparent;
+}
+
+.bg-transparent-img,
+.bg-transparent-gutter {
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23bababa;%7D.cls-2%7Bfill:%23dfdfdf;%7D%3C/style%3E%3C/defs%3E%3Cg%3E%3Crect class='cls-1' x='6' y='2' width='2' height='2'/%3E%3Crect class='cls-1' x='2' y='2' width='2' height='2'/%3E%3Crect class='cls-1' width='2' height='2'/%3E%3Crect class='cls-1' x='4' width='2' height='2'/%3E%3Crect class='cls-1' y='4' width='2' height='2'/%3E%3Crect class='cls-1' x='4' y='4' width='2' height='2'/%3E%3Crect class='cls-1' x='8' y='4' width='2' height='2'/%3E%3Crect class='cls-1' x='6' y='6' width='2' height='2'/%3E%3Crect class='cls-1' x='2' y='6' width='2' height='2'/%3E%3C/g%3E%3Cg%3E%3Crect class='cls-2' y='2' width='2' height='2'/%3E%3Crect class='cls-2' x='4' y='2' width='2' height='2'/%3E%3Crect class='cls-2' x='6' width='2' height='2'/%3E%3Crect class='cls-2' x='2' width='2' height='2'/%3E%3Crect class='cls-2' x='6' y='4' width='2' height='2'/%3E%3Crect class='cls-2' x='2' y='4' width='2' height='2'/%3E%3Crect class='cls-2' y='6' width='2' height='2'/%3E%3Crect class='cls-2' x='4' y='6' width='2' height='2'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.btn-transparent,
+.btn-transparent.no-focus,
+.btn-transparent.no-hover {
+  background: none;
+  background-color: transparent;
+  border: transparent;
+}
+
+.text-transparent {
+  color: transparent;
+}
+
+.border-transparent {
+  border-color: transparent !important;
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.border-white-50 {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.border-white-75 {
+  border-color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.bg-hoverable:hover:not(.no-hover),
+.bg-hoverable.hover:not(.no-hover) {
+  background-color: @color_grey;
+}

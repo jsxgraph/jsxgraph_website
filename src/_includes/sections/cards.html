@@ -130,10 +130,10 @@
                     {%- endif -%}
                     <div class="card-body">
                         {%- if head != nil -%}
-                        <h2 class="card-title">{{ head | pre_markdown | markdownify | replace_post }}</h2>
+                        <h2 class="card-title">{{ head | pre_markdown | markdownify | replace_post: relBase }}</h2>
                         {%- endif -%}
                         {%- if body != nil -%}
-                        {{ body | pre_markdown | markdownify | replace_post }}
+                        {{ body | pre_markdown | markdownify | replace_post: relBase }}
                         {%- endif -%}
                     </div>
                     {%- if link == nil -%}

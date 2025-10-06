@@ -1,0 +1,84 @@
+// ----------------------------------------
+// --------- input group vertical ---------
+// ----------------------------------------
+
+.generate-input-group-vertical(@i: 1) when (@i <= length(@width_names)) {
+  @name: extract(@width_names, @i);
+  @w_min: 'width_@{name}_min';
+  @w_max: @@w_min - 1;
+
+  // devices with @w_max and down
+  @media (max-width: @w_max) {
+    .input-group-vertical-under-@{name} > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback),
+    .input-group-vertical-under-@{name} > .form-control + .form-control:not(:first-child),
+    .input-group-vertical-under-@{name} > .form-control + .form-select:not(:first-child) {
+      margin-left: 0;
+      margin-top: -1px;
+    }
+
+    .input-group-vertical-under-@{name} > *:not(.invalid-feedback):not(.valid-feedback):not(.input-slider) {
+      width: 100%;
+      display: block;
+    }
+
+    .input-group-vertical-@{name} > .input-slider {
+      height: 40px;
+    }
+
+    .input-group-vertical-under-@{name}:not(.has-validation) > :not(.dropdown-toggle):not(.dropdown-menu),
+    .input-group-vertical-under-@{name}:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .input-group-vertical-under-@{name}:not(.has-validation) > :first-child {
+      border-top-left-radius: 0.25rem !important;
+      border-top-right-radius: 0.25rem !important;
+    }
+
+    .input-group-vertical-under-@{name}:not(.has-validation) > :last-child {
+      border-bottom-left-radius: 0.25rem !important;
+      border-bottom-right-radius: 0.25rem !important;
+    }
+  }
+
+  .generate-input-group-vertical(@i+1);
+}
+
+.generate-input-group-vertical();
+
+.input-group-vertical > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback),
+.input-group-vertical > .form-control + .form-control:not(:first-child),
+.input-group-vertical > .form-control + .form-select:not(:first-child) {
+  margin-left: 0;
+  margin-top: -1px;
+}
+
+.input-group-vertical > *:not(.invalid-feedback):not(.valid-feedback):not(.input-slider) {
+  width: 100%;
+  display: block;
+}
+
+.input-group-vertical > .input-slider {
+  height: 40px;
+}
+
+.input-group-vertical:not(.has-validation) > :not(.dropdown-toggle):not(.dropdown-menu),
+.input-group-vertical:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group-vertical:not(.has-validation) > :first-child {
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+}
+
+.input-group-vertical:not(.has-validation) > :last-child {
+  border-bottom-left-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}

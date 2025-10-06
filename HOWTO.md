@@ -9,7 +9,7 @@ make dev
 ## Version number
 
 - Adapt `version` and `version_year` in [src/_data/const.yml](src/_data/const.yml)
-- _or:_ Write version number in line 1, as array in line 2 and year in line 3 in [VERSION](VERSION) and call ``
+- _or:_ Write version number in line 1, as array in line 2 and year in line 3 in [VERSION](VERSION) and call
   ```shell
   make versionwrite
   ```

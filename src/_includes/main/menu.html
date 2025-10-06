@@ -7,7 +7,7 @@
             <i class="fa-solid fa-xmark"></i>
         </button>
     </div>
-    <div class="offcanvas-body m-between-3 py-0">
+    <div class="offcanvas-body py-0">
         <div class="accordion list-group list-group-flush mx-n3" id="menu-accordion">
             {%- assign pagelist = site.pages | where: "in_menu_popup",true | where: "parent",nil | sort: 'order' -%}
             {%- for i_page in pagelist -%}
@@ -129,7 +129,7 @@
             {%- endfor -%}
         </div>
 
-        <div class="mt-3 mb-5">
+        <div class="mt-4 mb-5">
             {%- include part/tiles.html -%}
         </div>
     </div>

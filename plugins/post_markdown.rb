@@ -22,17 +22,24 @@ module Jekyll
       input = input.gsub(/<a([^"]*)href="([^"]+)\.(template\.html)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>');
     end
 
+    def add_relBase(input, relBase='')
+        input = input.gsub(/placeholder_relBase_Z7fjMwSUhPD9ZI5tgpY4mZq1UI44kZ/, relBase);
+        # not necessary anymore:
+        # input = input.gsub(/<img([^"]*)src="\/([^"]+)"([^>]*)>/, '<img\1src="'+relBase+'/\2"\3>');
+    end
+
     def replace_tables(input)
         input = input.gsub(/<table([^>]*)>(.*)<\/table>/m, '<table\1 class="table table-striped table-list-sm">\2</table>');
         input = input.gsub(/<thead([^>]*)>(.*)<\/thead>/m, '<thead\1>\2</thead>');
         input = input.gsub(/<td>[\s|\n|\r|\r\n]*<strong>[\s|\n|\r|\r\n]*<em>[\s|\n|\r|\r\n]*(.*)[\s|\n|\r|\r\n]*<\/em>[\s|\n|\r|\r\n]*<\/strong>[\s|\n|\r|\r\n]*<\/td>/, '<th scope="row">\1</th>');
     end
 
-    def replace_post(input)
+    def replace_post(input, relBase='')
       if(input != nil)
         input = replace_tables(input)
         input = replace_buttons(input)
         input = replace_links(input)
+        input = add_relBase(input, relBase)
       end
     end
 

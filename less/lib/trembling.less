@@ -1,0 +1,61 @@
+// -----------------------------
+// --------- trembling ---------
+// -----------------------------
+
+/* http://www.olivergast.de/wp-content/demos/keyframes/index.html#header */
+@-webkit-keyframes tremble {
+  0% {
+    -webkit-transform: rotate(0.7deg);
+    -webkit-animation-timing-function: ease-in;
+  }
+  50% {
+    -webkit-transform: rotate(-1deg);
+    -webkit-animation-timing-function: ease-out;
+  }
+}
+
+@-moz-keyframes tremble {
+  0% {
+    -moz-transform: rotate(0.7deg);
+    -moz-animation-timing-function: ease-in;
+  }
+  50% {
+    -moz-transform: rotate(-1deg);
+    -moz-animation-timing-function: ease-out;
+  }
+}
+
+@keyframes tremble {
+  0% {
+    transform: rotate(0.7deg);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: rotate(-1deg);
+    animation-timing-function: ease-out;
+  }
+}
+
+.tremble, .tremble2 {
+  -webkit-animation-name: tremble;
+  -webkit-animation-duration: 0.25s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+
+  -moz-animation-name: tremble;
+  -moz-animation-duration: 0.25s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-direction: alternate;
+
+  animation-name: tremble;
+  animation-duration: 0.25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+.tremble:nth-child(even) {
+  animation-delay: -.75s;
+}
