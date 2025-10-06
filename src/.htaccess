@@ -4,8 +4,6 @@ ErrorDocument 403 /error/403.html
 ErrorDocument 404 /error/404.html
 ErrorDocument 500 /error/index.html
 
-# deny from all
-# allow from 132.180
 allow from all
 
 # Options -Indexes
