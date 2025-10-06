@@ -5,7 +5,7 @@
 </style>
 
 - Carsten Miller, Alfred Wassermann (Eds.):  
-  [**CMLDT publications**](https://mobile-learning.uni-bayreuth.de/CMLDTpublications/index.html).   
+  **[CMLDT publications](https://mobile-learning.uni-bayreuth.de/CMLDTpublications/)**.   
   Center for Mobile Learning with Digital Technology (CMLDT) - University of Bayreuth.  
   Bayreuth, 2023 - 2025.  
   
@@ -45,12 +45,12 @@
   ISBN 978-3-00-032628-8
 
 - Michael Gerhäuser, Bianca Valentin, Alfred Wassermann:  
-  [**JSXGraph – Dynamic Mathematics with JavaScript**](https://www.learntechlib.org/p/109512/),  
+  **[JSXGraph – Dynamic Mathematics with JavaScript](https://www.learntechlib.org/p/109512/)**,  
   in The International Journal for Technology in Mathematics Education (IJTME)  
   ISSN: 1744-2710, 17 4 (2010)
 
 - Michael Gerhäuser, Bianca Valentin:  
-  [**Interactive SVG with JSXGraph**]({{ relBase }}/media/pdf/jsxgraph.pdf),  
+  **[Interactive SVG with JSXGraph]({{ relBase }}/media/pdf/jsxgraph.pdf)**,  
   Proceedings of the SVGOpen 2009
 
 
