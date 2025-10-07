@@ -6,6 +6,8 @@
 </head>
 {% if page.external_link==nil and page.is_separator!=true -%}
 <body data-role="page" class="position-relative">
+    {% include main/clip-pattern.html %}
+
     {% assign id = page.url | split: '/' | last | default: "home" %}
     <main id="page-{{ id }}">
         <div class="d-none">

@@ -3,8 +3,6 @@ id: 857
 title: JSXGraph in epub3
 date: 2014-03-19T15:13:24+00:00
 author: Alfred Wassermann
-guid: http://jsxgraph.uni-bayreuth.de/wp/?p=857
-permalink: /2014/03/19/jsxgraph-in-epub3/
 category: Examples
 tags:
   - epub3

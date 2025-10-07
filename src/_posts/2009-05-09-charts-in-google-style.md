@@ -3,8 +3,6 @@ id: 214
 title: 'Charts &#8211; Google style'
 date: 2009-05-09T15:12:11+00:00
 author: Alfred Wassermann
-guid: http://jsxgraph.uni-bayreuth.de/wp/?p=214
-permalink: /2009/05/09/charts-in-google-style/
 category: Examples
 tags:
   - chart
