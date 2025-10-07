@@ -6,5 +6,5 @@ parent: docs
 order: 3
 external_link: /docs/
 in_shortcuts: true
-order_shortcuts: 2
+order_shortcuts: 3
 ---

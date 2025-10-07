@@ -4,7 +4,7 @@ subtitle: Announcements
 icon: fa-solid fa-bullhorn
 order: 8
 in_shortcuts: true
-order_shortcuts: 7
+order_shortcuts: 4
 is_blogpost: false
 ---
 
