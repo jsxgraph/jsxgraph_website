@@ -3,8 +3,6 @@ id: 237
 title: Recent examples
 date: 2009-06-29T13:27:32+00:00
 author: Alfred Wassermann
-guid: http://jsxgraph.uni-bayreuth.de/wp/?p=237
-permalink: /2009/06/29/recent-examples/
 categories: Examples
 tags:
   - bounding box

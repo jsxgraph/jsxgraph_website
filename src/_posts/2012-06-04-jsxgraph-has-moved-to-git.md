@@ -3,8 +3,6 @@ id: 741
 title: JSXGraph has moved to Git
 date: 2012-06-04T19:36:11+00:00
 author: Michael Gerhäuser
-guid: http://jsxgraph.uni-bayreuth.de/wp/?p=741
-permalink: /2012/06/04/jsxgraph-has-moved-to-git/
 category: News
 tags:
   - Git

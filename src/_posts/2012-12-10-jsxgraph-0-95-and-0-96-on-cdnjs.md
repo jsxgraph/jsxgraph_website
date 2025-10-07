@@ -3,8 +3,6 @@ id: 796
 title: JSXGraph 0.95 and 0.96 on CDNjs
 date: 2012-12-10T10:38:10+00:00
 author: Michael Gerhäuser
-guid: http://jsxgraph.uni-bayreuth.de/wp/?p=796
-permalink: /2012/12/10/jsxgraph-0-95-and-0-96-on-cdnjs/
 category: News
 tags:
   - CDN
