@@ -2,7 +2,6 @@
 
 Jekyll::Hooks.register [:pages, :documents], :pre_render do |doc, payload|
     doc.content = doc.content.gsub(/(#+) /, '#\1 ');
-    doc.content = doc.content.gsub(/{{( )*relBase( )*}}/, 'placeholder_relBase_Z7fjMwSUhPD9ZI5tgpY4mZq1UI44kZ');
 end
 
 module Jekyll
