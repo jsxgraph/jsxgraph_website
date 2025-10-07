@@ -54,6 +54,9 @@
                 <div class="link-{{ color }}">
                     <div class="text-start d-block d-sm-none">
                         {{ i_page.title_shortcuts | default: i_page.title }}
+                        {%- if target == "_blank" -%}
+                        <i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>
+                        {%- endif -%}
                         {% if i_page.subtitle %}
                         <div class="smaller">
                             {{ i_page.subtitle }}
@@ -62,6 +65,9 @@
                     </div>
                     <div class="text-center d-none d-sm-block">
                         {{ i_page.title_shortcuts | default: i_page.title }}
+                        {%- if target == "_blank" -%}
+                        <i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>
+                        {%- endif -%}
                         {% if i_page.subtitle %}
                         <div class="smaller">
                             {{ i_page.subtitle }}
