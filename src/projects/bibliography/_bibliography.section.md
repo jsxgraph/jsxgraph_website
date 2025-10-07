@@ -1,14 +1,17 @@
 <style>
-#section-references ul li {
+#section-bibliography ul li {
    margin-bottom: 20px;
 }
 </style>
+### Preprint Series – Technical Reports
 
-- Carsten Miller, Alfred Wassermann (Eds.):  
-  **[CMLDT publications](https://mobile-learning.uni-bayreuth.de/CMLDTpublications/)**.   
-  Center for Mobile Learning with Digital Technology (CMLDT) - University of Bayreuth.  
-  Bayreuth, 2023 - 2025.  
-  
+Carsten Miller, Alfred Wassermann (Eds.):  
+**[CMLDT publications](https://mobile-learning.uni-bayreuth.de/CMLDTpublications/)**.   
+Center for Mobile Learning with Digital Technology (CMLDT) - University of Bayreuth.  
+Bayreuth, 2023 - 2025.  
+
+### JSXGraph Publications
+
 - Darko Drakulić, Igor Pesek, Alfred Wassermann, and Blaž Zmazek:  
   **JSXGraph in i-textbooks**,  
   in Igor Pesek, Blaž Zmazek, and Vladimir Milekšič, editors, Slovenian i-textbooks, pages 93–114.  
