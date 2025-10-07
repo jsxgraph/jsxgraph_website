@@ -3,7 +3,7 @@
 {%- if content_blank != "" -%}
 {%- if page.render_this == "before" or page.render_this == true or page.sections == nil -%}
 <div class="content">
-    {{ content | replace_post }}
+    {{ content | markdownify | replace_post }}
 </div>
 {%- endif -%}
 {%- endif -%}
@@ -76,6 +76,6 @@
 
 {%- if page.render_this == "after" and page.sections != nil and content_blank -%}
 <div class="content">
-    {{ content | replace_post }}
+    {{ content| markdownify | replace_post }}
 </div>
 {%- endif -%}
