@@ -2,6 +2,7 @@
 
 Jekyll::Hooks.register [:pages, :documents], :pre_render do |doc, payload|
     doc.content = doc.content.gsub(/(#+) /, '#\1 ');
+    doc.content = "{% include basics %}" + doc.content;
 end
 
 module Jekyll

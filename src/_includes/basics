@@ -18,4 +18,4 @@
 {% capture newline %}
 {% endcapture %}
 
-{% assign const = site.data.const %}
+{%- assign const = site.data.const %}
