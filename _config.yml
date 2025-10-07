@@ -23,6 +23,7 @@ kramdown:
       start_line: 1
 plugins:
   - jekyll-paginate-v2
+  - jekyll-feed
 
 # Handling Reading
 safe: false
@@ -34,7 +35,12 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter: false
 disable_disk_cache: true
 
+# Main data
+title: 'JSXGraph' # For feed
+
 # Blogposts
+feed:
+  path: '/feed.xml'
 pagination:
   enabled: true # for development disable this
   per_page: 7
@@ -100,7 +106,3 @@ defaults:
       category: Release
       postlist_id: "news"
       permalink: /news/release/:title:output_ext             # for better SEO
-
-plugins:
-  - jekyll-feed
-name: "JSXGraph homepage"
