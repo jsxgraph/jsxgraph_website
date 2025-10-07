@@ -103,3 +103,4 @@ defaults:
 
 plugins:
   - jekyll-feed
+name: "JSXGraph homepage"
