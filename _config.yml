@@ -35,8 +35,10 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 strict_front_matter: false
 disable_disk_cache: true
 
-# Main data
-title: 'JSXGraph' # For feed
+# Main data (for feed)
+title: 'JSXGraph'
+url: 'https://jsxgraph.org/home'
+description: 'JSXGraph is a cross-platform library for interactive geometry, function plotting, and data visualization in the web browser.'
 
 # Blogposts
 feed:
