@@ -9,6 +9,33 @@
             <div class="row justify-content-between align-items-center g-4">
                 <div class="col-12 col-md-6">
                     <div class="m-between-2 m-between-md-3">
+
+                        {% if const.feed.enabled -%}
+                        <div>
+                            {%- assign stringToCheck = site.feed.path | default: const.feed.link %}
+                            {%- assign checkArray = stringToCheck | split: ':' -%}
+                            {%- if checkArray[0] == 'http' or checkArray[0] == 'https' -%}
+                            {%- assign link = site.feed.path | default: const.feed.link -%}
+                            {%- assign target = const.feed.target | default: "_blank" -%}
+                            {%- else -%}
+                            {%- assign link = site.feed.path | default: const.feed.link -%}
+                            {%- assign link = relBase | append: link -%}
+                            {%- assign target = const.feed.target | default: "_self" -%}
+                            {%- endif %}
+                            <a>
+                                <a href="{{ link }}" target="{{ target }}" class="link-white link-quiet">
+                                    {%- if const.feed.icon != nil and const.feed.icon != "" -%}
+                                    <i class="{{ const.feed.icon }} me-1"></i>
+                                    {%- endif -%}
+                                    {{ const.feed.title }}
+                                    {%- if target == "_blank" -%}
+                                    <i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>
+                                    {%- endif -%}
+                                </a>
+                            </a>
+                        </div>
+                        {% endif -%}
+
                         {%- assign pagelist = site.pages | where: "in_menu_footer",true | sort: 'order' -%}
                         {%- for i_page in pagelist %}
 

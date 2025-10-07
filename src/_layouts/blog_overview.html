@@ -78,21 +78,6 @@
             </div>
 
             <div class="col-12 col-lg-2 ms-lg-auto">
-                <h2 class="h3">Tags</h2>
-                <div class="css-cols-2 css-cols-sm-3 css-cols-md-4 css-cols-lg-1-important">
-                    {% assign sorted_tags = "" | split:"" %}
-                    {% for tag in site.tags %}
-                    {% assign sorted_tags = sorted_tags | push: tag[0] %}
-                    {% endfor %}
-                    {% assign sorted_tags = sorted_tags | sort_natural %}
-                    {% for tag in sorted_tags %}
-                    <a href="{{ relBase }}{{ site.taglist.root }}{{ tag | slopify }}" class="d-block badge bg-white text-start p-0 mx-0 mt-0 mb-2 link-primary">
-                        <i class="fa-solid fa-fw fa-tag"></i>
-                        {{ tag }}
-                    </a>
-                    {% endfor %}
-                </div>
-
                 <h2 class="h3">Categories</h2>
                 <div class="css-cols-2 css-cols-sm-3 css-cols-md-4 css-cols-lg-1-important">
                     {% assign sorted_cats = "" | split:"" %}
@@ -104,6 +89,21 @@
                     <a href="{{ relBase }}{{ site.categorylist.root }}{{ cat | slopify }}" class="d-block badge bg-white text-start p-0 mx-0 mt-0 mb-2 link-primary">
                         <i class="fa-solid fa-layer-group"></i>
                         {{ cat }}
+                    </a>
+                    {% endfor %}
+                </div>
+
+                <h2 class="h3">Tags</h2>
+                <div class="css-cols-2 css-cols-sm-3 css-cols-md-4 css-cols-lg-1-important">
+                    {% assign sorted_tags = "" | split:"" %}
+                    {% for tag in site.tags %}
+                    {% assign sorted_tags = sorted_tags | push: tag[0] %}
+                    {% endfor %}
+                    {% assign sorted_tags = sorted_tags | sort_natural %}
+                    {% for tag in sorted_tags %}
+                    <a href="{{ relBase }}{{ site.taglist.root }}{{ tag | slopify }}" class="d-block badge bg-white text-start p-0 mx-0 mt-0 mb-2 link-primary">
+                        <i class="fa-solid fa-fw fa-tag"></i>
+                        {{ tag }}
                     </a>
                     {% endfor %}
                 </div>
