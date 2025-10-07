@@ -1,5 +1,5 @@
 /*
-  Copyright 2023
+  Copyright 2025
 
   Andreas Walter
 
@@ -76,15 +76,19 @@
     };*/
 
     $.fn.first = function () {
-        return $(this.toArray().first());
+        let arr = this.toArray();
+        return $(arr[0]);
     };
 
     $.fn.middle = function () {
-        return $(this.toArray().middle());
+        let arr = this.toArray(),
+            mid = Math.floor((arr.length - 1) / 2);
+        return $(arr[mid]);
     };
 
     $.fn.last = function () {
-        return $(this.toArray().last());
+        let arr = this.toArray();
+        return $(arr[arr.length - 1]);
     };
 
     $.fn.findSelf = function (selector) {
