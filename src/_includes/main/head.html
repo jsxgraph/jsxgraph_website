@@ -107,6 +107,7 @@
 {%- comment %}
 <!-- ########################################
                    jQuery
+       (must not be loaded asynchronous)
     ######################################### -->
 {%- endcomment %}
 <script type="text/javascript" src="{{ relBase }}/assets/jquery/jquery-3.6.1.min.js"></script>
@@ -115,13 +116,14 @@
 {%- comment %}
 <!-- ########################################
                   Bootstrap
+       (must not be loaded asynchronous)
     ######################################### -->
 {%- endcomment %}
-<link async rel="stylesheet" type="text/css" href="{{ relBase }}/assets/bootstrap/bootstrap-individual.min.css">
-<script async type="text/javascript" src="{{ relBase }}/assets/extend/popper.min.js"></script>
-<script async type="text/javascript" src="{{ relBase }}/assets/extend/tether.min.js"></script>
-<script async type="text/javascript" src="{{ relBase }}/assets/bootstrap/bootstrap.min.js"></script>
-<script async type="text/javascript" src="{{ relBase }}/assets/extend/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ relBase }}/assets/bootstrap/bootstrap-individual.min.css">
+<script type="text/javascript" src="{{ relBase }}/assets/extend/popper.min.js"></script>
+<script type="text/javascript" src="{{ relBase }}/assets/extend/tether.min.js"></script>
+<script type="text/javascript" src="{{ relBase }}/assets/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ relBase }}/assets/extend/bootstrap.js"></script>
 
 {%- comment %}
 <!-- ########################################
