@@ -1,10 +1,10 @@
 ---
-title: References
+title: Bibliography
 parent: projects
 order: 4
 sections:
 
-  - file: references
+  - file: bibliography
     layout: text
 ---
 

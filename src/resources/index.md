@@ -1,5 +1,5 @@
 ---
 title: Resources
-order: 3
+order: 2
 is_separator: true
 ---
