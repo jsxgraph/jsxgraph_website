@@ -37,7 +37,7 @@
     {%- else -%}
     {%- assign splash_inclusion = "" -%}
     {%- endif -%}
-    {%- assign spl_content = splash_inclusion | pre_markdown | markdownify | replace_post: relBase -%}
+    {%- assign spl_content = splash_inclusion | pre_markdown | markdownify | replace_post -%}
     {% include main/splash-page.html content=spl_content overlay=splash.overlay overlay_background=splash.overlay_background scroll=splash.scroll content_raw=splash_inclusion data=splash.data index=forloop.index index0=forloop.index0 %}
     {%- endfor -%}
     {%- endif -%}

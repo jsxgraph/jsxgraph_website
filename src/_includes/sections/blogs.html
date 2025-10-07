@@ -91,7 +91,7 @@
             {%- if head != nil -%}
             <h3 class="mb-0">
                 <!--@formatter:off-->
-                    {%- assign arr = head | pre_markdown | markdownify | replace_post: relBase | strip | split: "<p>" -%}
+                    {%- assign arr = head | pre_markdown | markdownify | replace_post | strip | split: "<p>" -%}
                     {%- if arr.size > 2 -%}
                     {{ arr | join: "<p>" | prepend: "<p>" }}
                     {%- else -%}
@@ -106,7 +106,7 @@
                     {%- if badge_is_date != false -%}
                     {{ badge | date: badge_is_date }}
                     {%- else -%}
-                    {{ badge | pre_markdown | markdownify | replace_post: relBase }}
+                    {{ badge | pre_markdown | markdownify | replace_post }}
                     {%- endif -%}
                 </div>
             </div>
@@ -114,7 +114,7 @@
         </div>
         {%- if body != nil -%}
         <div>
-            {{ body | pre_markdown | markdownify | replace_post: relBase }}
+            {{ body | pre_markdown | markdownify | replace_post }}
         </div>
         {%- endif -%}
     </div>
