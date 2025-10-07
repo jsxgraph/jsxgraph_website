@@ -40,7 +40,7 @@ title: 'JSXGraph' # For feed
 
 # Blogposts
 feed:
-  path: '/feed.xml'
+  path: '/news/feed.xml'
 pagination:
   enabled: true # for development disable this
   per_page: 7

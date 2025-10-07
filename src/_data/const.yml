@@ -81,3 +81,9 @@ supporters:
     - name: University of Bayreuth
       logo: /media/logos/logo-ubt.png
       url: https://www.uni-bayreuth.de
+
+feed:
+  enabled: true
+  title: RSS Feed
+  icon: fa-solid fa-square-rss
+  target: _blank
