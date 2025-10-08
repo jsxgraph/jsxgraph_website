@@ -2,7 +2,7 @@
 id: 552
 title: Option handling in version 0.90
 author: Alfred Wassermann
-category: News
+category: General
 tags:
   - Options
 ---

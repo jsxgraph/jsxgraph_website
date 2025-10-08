@@ -2,7 +2,7 @@
 id: 520
 title: 'JSXGraph &#8211; handling images and texts'
 author: Alfred Wassermann
-category: News
+category: General
 tags:
   - image
   - text

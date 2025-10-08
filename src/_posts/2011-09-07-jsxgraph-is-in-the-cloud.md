@@ -2,7 +2,7 @@
 id: 658
 title: JSXGraph is in the cloud!
 author: Alfred Wassermann
-category: News
+category: General
 tags:
   - CDN
 ---

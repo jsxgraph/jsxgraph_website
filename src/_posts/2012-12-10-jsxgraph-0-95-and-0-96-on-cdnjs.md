@@ -2,7 +2,7 @@
 id: 796
 title: JSXGraph 0.95 and 0.96 on CDNjs
 author: Michael Gerhäuser
-category: News
+category: General
 tags:
   - CDN
 ---

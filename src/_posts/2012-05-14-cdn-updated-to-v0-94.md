@@ -2,7 +2,7 @@
 id: 726
 title: CDN updated to v0.94
 author: Alfred Wassermann
-category: News
+category: General
 tags:
   - CDN
 ---

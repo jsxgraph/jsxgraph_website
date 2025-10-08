@@ -2,7 +2,7 @@
 id: 769
 title: 'SourceForge repository: New URL'
 author: Michael Gerhäuser
-category: News
+category: General
 tags:
   - Git
   - Repository

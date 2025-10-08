@@ -1,7 +1,7 @@
 ---
 title: The New JSXGraph Website Is Live!
 author: Carsten Miller
-category: News
+category: General
 tags:
   - Redesign
   - Website

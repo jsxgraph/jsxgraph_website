@@ -2,7 +2,7 @@
 id: 707
 title: CDN updated to v0.93
 author: Michael Gerhäuser
-category: News
+category: General
 tags:
   - CDN
 ---

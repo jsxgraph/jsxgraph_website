@@ -2,7 +2,7 @@
 id: 845
 title: New moodle plugin
 author: Alfred Wassermann
-category: News
+category: General
 tags:
   - Moodle
 ---

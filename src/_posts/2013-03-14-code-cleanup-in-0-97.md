@@ -2,7 +2,7 @@
 id: 819
 title: Code cleanup in 0.97
 author: Alfred Wassermann
-category: News
+category: General
 tags:
   - AMD
 ---

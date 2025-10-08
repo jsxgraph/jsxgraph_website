@@ -2,7 +2,7 @@
 id: 816
 title: JSXGraph and AMD
 author: Alfred Wassermann
-category: News
+category: General
 tags:
   - How to
   - AMD

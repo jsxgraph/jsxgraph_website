@@ -2,7 +2,7 @@
 id: 741
 title: JSXGraph has moved to Git
 author: Michael Gerhäuser
-category: News
+category: General
 tags:
   - Git
   - Subversion
