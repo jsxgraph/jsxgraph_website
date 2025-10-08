@@ -26,3 +26,5 @@ To make sure you never miss an update, subscribe to our
 <a href="{{ link }}" target="{{ target }}">RSS feed</a>.
 </p>
 {% endif %}
+
+New features, fixes, and performance updates can be found in the ["Release" category]({{ relBase }}/news/category/release/).
