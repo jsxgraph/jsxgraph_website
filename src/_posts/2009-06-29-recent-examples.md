@@ -2,7 +2,7 @@
 id: 237
 title: Recent examples
 author: Alfred Wassermann
-category: Examples
+category: Example
 tags:
   - bounding box
   - jQuery

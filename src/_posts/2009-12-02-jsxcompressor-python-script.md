@@ -2,7 +2,7 @@
 id: 388
 title: 'JSXCompressor &#8211; Python script'
 author: Alfred Wassermann
-category: Examples
+category: Example
 tags:
   - JSXCompressor
   - gunzip

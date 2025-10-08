@@ -2,7 +2,7 @@
 id: 214
 title: 'Charts &#8211; Google style'
 author: Alfred Wassermann
-category: Examples
+category: Example
 tags:
   - chart
   - PHP

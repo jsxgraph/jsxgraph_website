@@ -2,7 +2,7 @@
 id: 857
 title: JSXGraph in epub3
 author: Alfred Wassermann
-category: Examples
+category: Example
 tags:
   - epub3
 ---

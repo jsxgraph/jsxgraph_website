@@ -2,7 +2,7 @@
 id: 346
 title: 'JSXCompressor &#8211; zlib compressed JavaScript code'
 author: Alfred Wassermann
-category: Examples
+category: Example
 tags:
   - JSXCompressor
   - gunzip
