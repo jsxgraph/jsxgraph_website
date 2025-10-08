@@ -1,7 +1,6 @@
 ---
 title: 2. international JSXGraph conference 
 subtitle: Online conference
-date: 2021-09-16T07:00:00+00:00
 category: Announcement
 tags:
   - Workshop

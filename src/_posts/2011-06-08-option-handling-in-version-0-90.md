@@ -1,7 +1,6 @@
 ---
 id: 552
 title: Option handling in version 0.90
-date: 2011-06-08T11:10:26+00:00
 author: Alfred Wassermann
 category: News
 tags:

@@ -1,7 +1,6 @@
 ---
 id: 263
 title: 'Who&#8217;s using JSXGraph?'
-date: 2009-07-24T12:49:59+00:00
 author: Alfred Wassermann
 category: News
 ---

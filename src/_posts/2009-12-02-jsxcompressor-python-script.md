@@ -1,7 +1,6 @@
 ---
 id: 388
 title: 'JSXCompressor &#8211; Python script'
-date: 2009-12-02T15:41:10+00:00
 author: Alfred Wassermann
 category: Examples
 tags:

@@ -1,7 +1,6 @@
 ---
 id: 57
 title: New JSXGraph homepage
-date: 2009-02-18T18:29:04+00:00
 author: Alfred Wassermann
 category: News
 ---

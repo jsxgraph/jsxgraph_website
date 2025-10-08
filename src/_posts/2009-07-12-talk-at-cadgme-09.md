@@ -1,7 +1,6 @@
 ---
 id: 256
 title: JSXGraph at CADGME 09
-date: 2009-07-12T06:42:49+00:00
 author: Alfred Wassermann
 category: News
 ---

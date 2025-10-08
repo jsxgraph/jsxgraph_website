@@ -1,7 +1,6 @@
 ---
 id: 346
 title: 'JSXCompressor &#8211; zlib compressed JavaScript code'
-date: 2009-09-29T10:58:38+00:00
 author: Alfred Wassermann
 category: Examples
 tags:

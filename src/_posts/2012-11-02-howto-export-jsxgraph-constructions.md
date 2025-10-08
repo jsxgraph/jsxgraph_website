@@ -1,7 +1,6 @@
 ---
 id: 762
 title: 'Howto: Export JSXGraph constructions'
-date: 2012-11-02T12:35:22+00:00
 author: Michael Gerhäuser
 category: News
 tags:

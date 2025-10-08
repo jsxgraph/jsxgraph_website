@@ -1,7 +1,6 @@
 ---
 id: 276
 title: Problems with IE
-date: 2009-07-31T14:02:03+00:00
 author: Alfred Wassermann
 category: Bug
 tags:

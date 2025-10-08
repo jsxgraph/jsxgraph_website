@@ -1,7 +1,6 @@
 ---
 id: 816
 title: JSXGraph and AMD
-date: 2013-03-14T12:10:49+00:00
 author: Alfred Wassermann
 category: News
 tags:

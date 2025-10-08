@@ -1,7 +1,6 @@
 ---
 id: 67
 title: Release history
-date: 2009-02-18T19:07:41+00:00
 author: Alfred Wassermann
 ---
 After moving to wordpress the original news about new releases are lost.

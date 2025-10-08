@@ -1,7 +1,6 @@
 ---
 id: 769
 title: 'SourceForge repository: New URL'
-date: 2012-09-28T17:41:29+00:00
 author: Michael Gerhäuser
 category: News
 tags:

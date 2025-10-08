@@ -1,7 +1,6 @@
 ---
 id: 153
 title: JSXGraph at Google Groups
-date: 2009-03-19T12:34:00+00:00
 author: Alfred Wassermann
 category: News
 tags:

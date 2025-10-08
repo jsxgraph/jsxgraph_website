@@ -1,7 +1,6 @@
 ---
 id: 741
 title: JSXGraph has moved to Git
-date: 2012-06-04T19:36:11+00:00
 author: Michael Gerhäuser
 category: News
 tags:

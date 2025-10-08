@@ -1,9 +1,8 @@
 ---
 id: 237
 title: Recent examples
-date: 2009-06-29T13:27:32+00:00
 author: Alfred Wassermann
-categories: Examples
+category: Examples
 tags:
   - bounding box
   - jQuery

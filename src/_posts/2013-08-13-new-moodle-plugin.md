@@ -1,7 +1,6 @@
 ---
 id: 845
 title: New moodle plugin
-date: 2013-08-13T10:04:58+00:00
 author: Alfred Wassermann
 category: News
 tags:
