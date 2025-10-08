@@ -2,7 +2,7 @@
 title: 2. international JSXGraph conference 
 subtitle: Online conference
 author: Carsten Miller, Alfred Wassermann
-category: Announcement
+category: Event
 tags:
   - Workshop
 ---

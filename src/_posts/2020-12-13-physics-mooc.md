@@ -1,7 +1,7 @@
 ---
 title: Free MOOC - Materials for teaching High School Physics
 subtitle: Online course
-category: Announcement
+category: Event
 tags:
   - Workshop
 ---

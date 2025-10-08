@@ -1,7 +1,7 @@
 ---
 title: JSXGraph related workshops 
 subtitle: Create learning material for moodle 
-category: Announcement
+category: Event
 tags:
   - Workshop
 ---

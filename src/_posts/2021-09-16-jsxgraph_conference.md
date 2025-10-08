@@ -1,7 +1,7 @@
 ---
 title: 2. international JSXGraph conference 
 subtitle: Online conference
-category: Announcement
+category: Event
 tags:
   - Workshop
 ---
