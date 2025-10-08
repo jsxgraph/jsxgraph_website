@@ -7,5 +7,5 @@ order: 3
 in_shortcuts: true
 order_shortcuts: 7
 
-external_link: https://jsfiddle.net/dbw0pk82/
+external_link: https://jsfiddle.net/my0fkdb6/1/
 ---
