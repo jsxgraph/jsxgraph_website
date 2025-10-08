@@ -2,7 +2,7 @@
 id: 762
 title: 'Howto: Export JSXGraph constructions'
 author: Michael Gerhäuser
-category: News
+category: Example
 tags:
   - Canvas
   - export
@@ -10,6 +10,7 @@ tags:
   - image
 
 ---
+
 You created a wonderful mathlet and now you want to include it into a static environment like a pdf document. To do so you have to export the construction into a format that can be processed by e.g. your word processor. Based on the rendering techniques used in JSXGraph to display the graphics you have the choice between SVG and PNG. In this post we will describe several methods how you can extract a JSXGraph construction into either a _SVG_ or _PNG_ encoded static image.
 
 Regardless of the export format the results always show almost every element present on the board. One exception are text elements. This is because JSXGraph is using HTML text elements to display all kinds of texts like element labels and text elements. But HTML texts won&#8217;t show up in the exported image (except the screenshot method) so we have to set the text display to internal before we initialize the board with `JXG.JSXGraph.initBoard()`:
