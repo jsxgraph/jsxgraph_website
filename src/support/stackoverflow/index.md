@@ -2,8 +2,8 @@
 title: StackOverflow
 subtitle: Programming Questions
 icon: fa-brands fa-stack-overflow
-parent: links
-order: 4
+parent: support
+order: 2
 in_shortcuts: true
 order_shortcuts: 6
 

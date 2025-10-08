@@ -2,8 +2,8 @@
 title:  Forum
 subtitle: Discussion
 icon: fa-solid fa-comments
-parent: links
-order: 2
+parent: support
+order: 1
 in_shortcuts: true
 order_shortcuts: 2
 
