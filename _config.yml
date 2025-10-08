@@ -101,6 +101,7 @@ defaults:
     values:
       layout: blog_post
       postlist_id: "news"
+      category: General
       permalink: /news/:year-:month-:day-:title:output_ext   # for better SEO  # old: /:year-:month-:day-:title/
   - scope:
       path: "_posts/releases"
