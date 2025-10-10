@@ -59145,6 +59145,12 @@ footer,
   font-size: calc(var(--bs-body-font-size) * 0.55);
   margin-left: calc(var(--bs-body-font-size) * 0.55 / 2);
 }
+
+.copybutton {
+    display: inline !important;
+    padding: 0 !important;
+    margin: -10px 0.25rem -5px !important;
+}
 .svg-body path {
   stroke: #fff !important;
 }

@@ -109,6 +109,12 @@ Following styles are available:
 </a>
 ```
 
+## Copy button
+
+```text
+{% include part/copybutton.html data=<content> %}
+```
+
 It is important to use either `<a type="button"` or `<button type="button"` and no class.
 The attribute `colorclass` can also been omitted.
 
