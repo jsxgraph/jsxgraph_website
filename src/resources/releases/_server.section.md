@@ -66,5 +66,6 @@ To use a specific version, include one of the following links with the correspon
 
 ## Example
 
-For example, include `jsxgraphcore.js` version 1.9.2 from cdnjs using:  
+For example, include `jsxgraphcore.js` version 1.9.2 from cdnjs:
+
 `https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraphcore.js`
