@@ -112,7 +112,7 @@ Following styles are available:
 ## Copy button
 
 ```text
-{% include part/copybutton.html data=<content> %}
+{% include part/copybutton.html data="<content>" %}
 ```
 
 It is important to use either `<a type="button"` or `<button type="button"` and no class.

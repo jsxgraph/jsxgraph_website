@@ -93,7 +93,7 @@ function copyToClipboard(
     }
 
     if (!navigator || !navigator.clipboard || !navigator.clipboard.write || !ClipboardItem) {
-        console.log('Copy to clipboard via textarea');
+        console.log('Copied to clipboard via textarea');
         el = document.createElement('textarea');
         el.value = string;
         document.body.appendChild(el);
@@ -104,7 +104,7 @@ function copyToClipboard(
         successFunc();
 
     } else if (JXG.isString(content)) {
-        console.log('Copy to clipboard via navigator text');
+        console.log('Copied to clipboard via navigator text');
         navigator.clipboard.writeText(content)
             .then(function () {
                 successFunc();
@@ -117,7 +117,7 @@ function copyToClipboard(
                 console.warn(e);
             });
     } else {
-        console.log('Copy to clipboard via navigator ClipboardItem');
+        console.log('Copied to clipboard via navigator ClipboardItem');
         navigator.clipboard.write([new ClipboardItem({[content.type]: content})])
             .then(function () {
                 successFunc();
