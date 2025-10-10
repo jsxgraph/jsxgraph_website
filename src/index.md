@@ -14,7 +14,7 @@ splash:
 
 sections:
 
-  - file: download
+  - file: get
     layout: text
 
   - file: library
