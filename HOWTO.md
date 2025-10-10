@@ -131,53 +131,53 @@ If you would like to have a different formatting, use section image.
 
 The following sections (and params) are possible:
 
-| layout          | data attribute   | type       | possible values and **_defaults_** | effect                                                              |
-|-----------------|------------------|------------|------------------------------------|---------------------------------------------------------------------|
-| **text**        | -                |            |                                    |                                                                     |
-| **subpages**    | parent           | optional   | id of page (default: this page)    | id of parent page                                                   |
-|                 | polygon          | optional   | shape (default: detault_polygon)   | shape of boxes                                                      |
-| **image-block** | image            | obligatory | url starting with `/`              | path to the image or gif                                            |
-|                 | image_pos        | optional   | **_first_** \| second              | the image is to the left or right of the text block                 |
-| **image**[^1]   | image            | obligatory | url starting with `/`              | path to the image or gif                                            |
-|                 | title            | optional   | plain text                         | optional title displayed in the bottom right corner                 |
-|                 | width            | optional   | dimension with unit, default: 100% | optional dimension                                                  |
-|                 | class            | optional   | e.g. "mx-auto" for centering       | css class for img                                                   |
-| **blogs**       | delimiter_header | optional   | **_#&#9251;_** \| @...             | lines beginning with this string are used as headers                |
-|                 | delimiter_badge  | optional   | **_>&#9251;_** \| @...             | badge after header line                                             |
-|                 | badge_is_date    | optional   | **_false_** \| @...                | string which formats date                                           |
-|                 | delimiter_id     | optional   | **_>&#9251;_** \| @...             | id after header line                                                |
-|                 | n                | optional   | **_-1_** \| 1 \| 2 \| 3 \| ...     | maximum entries                                                     |
-| **accordion**   | delimiter_header | optional   | **_#&#9251;_** \| @...             | lines beginning with this string are used as headers                |
-|                 | delimiter_badge  | optional   | **_>&#9251;_** \| @...             | badge after header line                                             |
-|                 | badge_is_date    | optional   | **_false_** \| @...                | string which formats date                                           |
-|                 | delimiter_id     | optional   | **_>&#9251;_** \| @...             | id after header line                                                |
-|                 | n                | optional   | **_-1_** \| 1 \| 2 \| 3 \| ...     | maximum entries                                                     |
-|                 | arrows           | optional   | **_right_** \| left                | position of arrow                                                   |
-|                 | open             | optional   | **_-1_** \| 0 \| 1 \| 2 \| ...     | which entry should be open?                                         |
-| **cards**       | delimiter_header | optional   | **_#&#9251;_** \| @...             | lines beginning with this string are used as headers                |
-|                 | delimiter_image  | optional   | **_>&#9251;_** \| @...             | image after header line                                             |
-|                 | delimiter_link   | optional   | **_>&#9251;_** \| @...             | link after header line                                              |
-|                 | delimiter_id     | optional   | **_>&#9251;_** \| @...             | id after header line                                                |
-|                 | n                | optional   | **_-1_** \| 1 \| 2 \| 3 \| ...     | maximum entries                                                     |
-| **board-block** | boardid          | obligatory | unique id                          | unique id that is used in code_file                                 |
-|                 | board_pos        | optional   | **_first_** \| second              | the board is to the left or right of the text block                 |
-|                 | title            | optional   | plain text                         | subtitle under the board                                            |
-|                 | link             | optional   | url                                | link for the subtitle                                               |
-|                 | target           | optional   | _blank \| _self                    | target for the link (default will be calculated)                    |
-|                 | width            | optional   | **_100%_** \| ...                  | width of the board                                                  |
-|                 | height           | optional   | **_auto_** \| ...                  | height of the board                                                 |
-|                 | aspect_ratio     | optional   | **_1/1_** \| ...                   | aspect-ratio of the board                                           |
-|                 | code_file        | optional   | url starting with `/`              | path to the js file (default is same as **_file_** with ending .js) |
-| **board**[^1]   | code_file        | optional   | url starting with `/`              | path to the js file (default is same as **_file_** with ending .js) |
-|                 | boardid          | obligatory | unique id                          | unique id that is used in code_file                                 |
-|                 | title            | optional   | plain text                         | subtitle under the board                                            |
-|                 | link             | optional   | url                                | link for the subtitle                                               |
-|                 | target           | optional   | _blank \| _self                    | target for the link (default will be calculated)                    |
-|                 | width            | optional   | **_500px_** \| ...                 | width of the board                                                  |
-|                 | max_width        | optional   | **_100%_** \| ...                  | max-width of the board                                              |
-|                 | height           | optional   | **_auto_** \| ...                  | height of the board                                                 |
-|                 | aspect_ratio     | optional   | **_1/1_** \| ...                   | aspect-ratio of the board                                           |
-|                 | class            | optional   | e.g. "mx-auto" for centering       | css class for board                                                 |
+| layout          | data attribute   | type       | possible values and **_defaults_**     | effect                                                              |
+|-----------------|------------------|------------|----------------------------------------|---------------------------------------------------------------------|
+| **text**        | class            | optional   | e.g. "bg-primary" for background color | css class for div                                                   |
+| **subpages**    | parent           | optional   | id of page (default: this page)        | id of parent page                                                   |
+|                 | polygon          | optional   | shape (default: detault_polygon)       | shape of boxes                                                      |
+| **image-block** | image            | obligatory | url starting with `/`                  | path to the image or gif                                            |
+|                 | image_pos        | optional   | **_first_** \| second                  | the image is to the left or right of the text block                 |
+| **image**[^1]   | image            | obligatory | url starting with `/`                  | path to the image or gif                                            |
+|                 | title            | optional   | plain text                             | optional title displayed in the bottom right corner                 |
+|                 | width            | optional   | dimension with unit, default: 100%     | optional dimension                                                  |
+|                 | class            | optional   | e.g. "mx-auto" for centering           | css class for img                                                   |
+| **blogs**       | delimiter_header | optional   | **_#&#9251;_** \| @...                 | lines beginning with this string are used as headers                |
+|                 | delimiter_badge  | optional   | **_>&#9251;_** \| @...                 | badge after header line                                             |
+|                 | badge_is_date    | optional   | **_false_** \| @...                    | string which formats date                                           |
+|                 | delimiter_id     | optional   | **_>&#9251;_** \| @...                 | id after header line                                                |
+|                 | n                | optional   | **_-1_** \| 1 \| 2 \| 3 \| ...         | maximum entries                                                     |
+| **accordion**   | delimiter_header | optional   | **_#&#9251;_** \| @...                 | lines beginning with this string are used as headers                |
+|                 | delimiter_badge  | optional   | **_>&#9251;_** \| @...                 | badge after header line                                             |
+|                 | badge_is_date    | optional   | **_false_** \| @...                    | string which formats date                                           |
+|                 | delimiter_id     | optional   | **_>&#9251;_** \| @...                 | id after header line                                                |
+|                 | n                | optional   | **_-1_** \| 1 \| 2 \| 3 \| ...         | maximum entries                                                     |
+|                 | arrows           | optional   | **_right_** \| left                    | position of arrow                                                   |
+|                 | open             | optional   | **_-1_** \| 0 \| 1 \| 2 \| ...         | which entry should be open?                                         |
+| **cards**       | delimiter_header | optional   | **_#&#9251;_** \| @...                 | lines beginning with this string are used as headers                |
+|                 | delimiter_image  | optional   | **_>&#9251;_** \| @...                 | image after header line                                             |
+|                 | delimiter_link   | optional   | **_>&#9251;_** \| @...                 | link after header line                                              |
+|                 | delimiter_id     | optional   | **_>&#9251;_** \| @...                 | id after header line                                                |
+|                 | n                | optional   | **_-1_** \| 1 \| 2 \| 3 \| ...         | maximum entries                                                     |
+| **board-block** | boardid          | obligatory | unique id                              | unique id that is used in code_file                                 |
+|                 | board_pos        | optional   | **_first_** \| second                  | the board is to the left or right of the text block                 |
+|                 | title            | optional   | plain text                             | subtitle under the board                                            |
+|                 | link             | optional   | url                                    | link for the subtitle                                               |
+|                 | target           | optional   | _blank \| _self                        | target for the link (default will be calculated)                    |
+|                 | width            | optional   | **_100%_** \| ...                      | width of the board                                                  |
+|                 | height           | optional   | **_auto_** \| ...                      | height of the board                                                 |
+|                 | aspect_ratio     | optional   | **_1/1_** \| ...                       | aspect-ratio of the board                                           |
+|                 | code_file        | optional   | url starting with `/`                  | path to the js file (default is same as **_file_** with ending .js) |
+| **board**[^1]   | code_file        | optional   | url starting with `/`                  | path to the js file (default is same as **_file_** with ending .js) |
+|                 | boardid          | obligatory | unique id                              | unique id that is used in code_file                                 |
+|                 | title            | optional   | plain text                             | subtitle under the board                                            |
+|                 | link             | optional   | url                                    | link for the subtitle                                               |
+|                 | target           | optional   | _blank \| _self                        | target for the link (default will be calculated)                    |
+|                 | width            | optional   | **_500px_** \| ...                     | width of the board                                                  |
+|                 | max_width        | optional   | **_100%_** \| ...                      | max-width of the board                                              |
+|                 | height           | optional   | **_auto_** \| ...                      | height of the board                                                 |
+|                 | aspect_ratio     | optional   | **_1/1_** \| ...                       | aspect-ratio of the board                                           |
+|                 | class            | optional   | e.g. "mx-auto" for centering           | css class for board                                                 |
 
 Notes:
 
