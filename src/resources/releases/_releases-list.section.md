@@ -1,9 +1,10 @@
-# List of previous releases
+# List of releases
 
 [//]: # (Header row of table will not be shown)
 
 | Version       | jsDelivr                                                                         | cdnjs                                                                           | JSXGraph server                                                                    |
 |---------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| ***v1.12.0*** | [jsDelivr](https://cdn.jsdelivr.net/npm/jsxgraph@1.12.0/distrib/jsxgraphcore.js) | [cdnjs](https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.12.0/jsxgraphcore.js) | [JSXGraph server](https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.12.0.js) |
 | ***v1.11.1*** | [jsDelivr](https://cdn.jsdelivr.net/npm/jsxgraph@1.11.1/distrib/jsxgraphcore.js) | [cdnjs](https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.11.1/jsxgraphcore.js) | [JSXGraph server](https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.11.1.js) |
 | ***v1.11.0*** | [jsDelivr](https://cdn.jsdelivr.net/npm/jsxgraph@1.11.0/distrib/jsxgraphcore.js) | [cdnjs](https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.11.0/jsxgraphcore.js) | [JSXGraph server](https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.11.0.js) |
 | ***v1.10.1*** | [jsDelivr](https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js) | [cdnjs](https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.10.1/jsxgraphcore.js) | [JSXGraph server](https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.10.1.js) |

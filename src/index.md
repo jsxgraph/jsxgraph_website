@@ -14,6 +14,9 @@ splash:
 
 sections:
 
+  - file: download
+    layout: text
+
   - file: library
     layout: board-block
     data:
