@@ -1,69 +1,3 @@
-To work correctly, JSXGraph requires two files:
-
-- `jsxgraphcore.js` contains the complete source code of JSXGraph bundled in one file. All objects of JSXGraph use the namespace JXG. Beside JXG there are no global variables.
-- Include the css commands from `jsxgraph.css` into the web pages.
-
-For ES6 import use the file `jsxgraphcore.mjs` instead of `jsxgraphcore.js`.
-
-
-
-# Server
-
-JSXGraph can be downloaded at least  from:
-- [jsDelivr](https://jsdelivr.com) 
-- [cdnjs](https://cdnjs.cloudflare.com/)
-- [npm/nodejs](https://www.npmjs.com) 
-- [JSXGraph Server](https://jsxgraph.org)
-
-The links always have a specific structure. For permanent hosting of the
-library `jsxgraphcore.js` we highly recommend either local hosting or CDN
-hosting at jsDelivr or cdnjs.
-
-## Latest Version
-
-`https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js`
-
-`https://jsxgraph.org/distrib/jsxgraphcore.js`
-
-## Specific Version 
-
-To use a specific version, include one of the following links with the corresponding version number:
-
-#### jsDelivr
-
-`https://cdn.jsdelivr.net/npm/jsxgraph@`***`<version number>`***`/distrib/jsxgraph.css`
-
-`https://cdn.jsdelivr.net/npm/jsxgraph@`***`<version number>`***`/distrib/jsxgraphcore.js`
-
-`https://cdn.jsdelivr.net/npm/jsxgraph@`***`<version number>`***`/distrib/jsxgraphcore.mjs`
-
-
-#### cdnjs
-
-`https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/`***`<version number>`***`/jsxgraph.css`
-
-`https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/`***`<version number>`***`/jsxgraphcore.js`
-
-`https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/`***`<version number>`***`/jsxgraphcore.mjs`
-
-#### University of Bayreuth 
-
-`https://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css`  
-
-`https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-`***`<version number>`***`.js`  
-
-`https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-`***`<version number>`***`.mjs`  
-
-## Example
-
-For example, include `jsxgraphcore.js` version 1.9.2 using one of the following links:  
-
-`https://cdn.jsdelivr.net/npm/jsxgraph@1.9.2/distrib/jsxgraphcore.js`
-
-`https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.9.2/jsxgraphcore.js`
-
-`https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore-1.9.2.js`
-
 # List of previous releases
 
 [//]: # (Header row of table will not be shown)
@@ -116,32 +50,26 @@ For example, include `jsxgraphcore.js` version 1.9.2 using one of the following 
 
 <button type="button" colorclass="outline-primary" class="w-fix-lg mx-auto" id="releases-all">Show all releases</button>
 <style>
-#section-releases table thead,
-#section-releases table tbody td:before {
+#section-releases-list table thead,
+#section-releases-list table tbody td:before {
     display: none;
 }
 
-#section-releases table td {
+#section-releases-list table td {
     white-space: nowrap;
 }
 </style>
 
 <script type="text/javascript">
 (function() {
-    $('#section-releases table tbody tr').each(function(i, that) {
+    $('#section-releases-list table tbody tr').each(function(i, that) {
         if(i > 5)
             $(that).addClass('off');
     });
 
     $('#releases-all').on('click', function () {
-        $('#section-releases table tbody tr').removeClass('off');
+        $('#section-releases-list table tbody tr').removeClass('off');
         $(this).addClass('off');
     });
 })();
 </script>
-
-# Debian Support
-
-JSXGraph (incl. source code) is also available as a Debian `deb`-package:
-
-[JSXGraph at Debian](https://packages.debian.org/search?keywords=jsxgraph)
