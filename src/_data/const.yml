@@ -10,7 +10,7 @@ version: v1.12.0
 version_year: 2025
 
 carousel:
-  active: true
+  active: false
   speed: 3000
   data: # use sign #~# to define breakpoints
     - text: >
@@ -36,7 +36,7 @@ url:
 default_polygon: "jsxgraph-pure"  # jsxgraph-pure | jsxgraph-plain | circle | 4 | 5 | 6 | 8
 
 meta: >
-  JSXGraph is a cross-platform library for interactive geometry, function plotting, and data visualization in the web browser. 
+  JSXGraph is a powerful cross-platform library for interactive geometry, function plotting, and data visualization in the web browser. 
 
 keywords: >
   interactive geometry, dynamic mathematics, visualization, web-based graphics, mathematical constructions, function plotting, data visualization, accessibility, ARIA support, keyboard interaction, touch interaction, screen reader compatibility, open-source software, JavaScript library, STEM education, inquiry-based learning, cross-platform support, educational technology
