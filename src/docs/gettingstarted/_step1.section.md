@@ -33,6 +33,9 @@ Add the following lines into the HTML document head:
 </html>
 ```
 
+<br>
+There are several server options to integrate JSXGraph in your site. You can find them [here]({{ relBase }}/resources/releases/).
+
 ## JSXGraph Locally Hosted
 
 If you want to include a local copy of JSXGraph in your HTML file, download the following files and save them in the same folder as your HTML file:
@@ -63,7 +66,3 @@ and add the following lines into the document head:
 </body>
 </html>
 ```
-
-
-
-
