@@ -1,7 +1,12 @@
 ---
 title: Getting Started
+subtitle: Step Into JSXGraph
+icon: fa-solid fa-rocket
 parent: docs
 order: 1
+in_shortcuts: true
+order_shortcuts: 6
+
 sections:
 
    - file: intro

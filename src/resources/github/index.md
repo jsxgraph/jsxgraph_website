@@ -2,9 +2,9 @@
 title: GitHub
 subtitle: Source Code
 icon: fa-brands fa-github
-in_shortcuts: true
 parent: resources
 order: 3
+in_shortcuts: false
 order_shortcuts: 6
 
 external_link: https://github.com/jsxgraph
