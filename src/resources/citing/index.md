@@ -1,7 +1,7 @@
 ---
 title: Citing
 parent: resources
-order: 6
+order: 7
 sections:
 
   - file: citing

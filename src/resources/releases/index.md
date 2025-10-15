@@ -1,7 +1,7 @@
 ---
 title: Releases
 parent: resources
-order: 3
+order: 4
 sections:
 
   - file: server
