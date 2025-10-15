@@ -83,6 +83,7 @@ You can include any board via
     link=...                        // optional
     target=...                      // _self or _blank
     class=...                       // optional
+    class_title=...                 // optional
     width=...                       // optional
     height=...                      // optional
     aspect_ratio=...                // optional
@@ -103,6 +104,7 @@ or with a separate file `_[].js`:
     link=...                        // optional
     target=...                      // _self or _blank
     class=...                       // optional
+    class_title=...                 // optional
     width=...                       // optional
     height=...                      // optional
     aspect_ratio=...                // optional

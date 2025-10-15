@@ -8,7 +8,7 @@
     {%- endif -%}
 
     {% if include.title and title_pos=="before" %}
-    <div class="h5 mb-3">
+    <div class="mb-3 {{ include.class_title | default: 'h5' }}">
         {% if include.link %}
 
         {%- assign stringToCheck = include.link %}
@@ -38,37 +38,31 @@
              class="jxgbox {{ include.class }}" id="{{ include.boardid }}"></div>
     </div>
 
-    <script type="text/javascript">
-        (function () {
-            /*@formatter:off*/
-            {{ js }}
-            /*@formatter:on*/
-        })();
-    </script>
-
     {% if include.title and title_pos=="after" %}
-    <div class="mt-3 text-muted text-center" style="width: {{ include.width | default: '500px' }}; max-width: {{ include.max_width | default: '100%' }};">
-        {% if include.link %}
+    <div class="d-flex">
+        <div class="mt-3 {{ include.class_title | default: 'text-muted text-center' }}" style="width: {{ include.width | default: '500px' }}; max-width: {{ include.max_width | default: '100%' }};">
+            {% if include.link %}
 
-        {%- assign stringToCheck = include.link %}
-        {%- assign checkArray = stringToCheck | split: ':' -%}
-        {%- if checkArray[0] == 'http' or checkArray[0] == 'https' or include.target == "_blank" -%}
-        {%- assign link = include.link -%}
-        {%- assign target = include.target | default: "_blank" -%}
-        {%- else -%}
-        {%- assign link = relBase | append: include.link -%}
-        {%- assign target = include.target | default: "_self" -%}
-        {%- endif -%}
-        <a href="{{ link }}" target="{{ target }}">
-            {{ include.title }}
-            {%- if target == "_blank" -%}
-            <i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>
+            {%- assign stringToCheck = include.link %}
+            {%- assign checkArray = stringToCheck | split: ':' -%}
+            {%- if checkArray[0] == 'http' or checkArray[0] == 'https' or include.target == "_blank" -%}
+            {%- assign link = include.link -%}
+            {%- assign target = include.target | default: "_blank" -%}
+            {%- else -%}
+            {%- assign link = relBase | append: include.link -%}
+            {%- assign target = include.target | default: "_self" -%}
             {%- endif -%}
-        </a>
+            <a href="{{ link }}" target="{{ target }}">
+                {{ include.title }}
+                {%- if target == "_blank" -%}
+                <i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>
+                {%- endif -%}
+            </a>
 
-        {% else %}
-        {{ include.title }}
-        {% endif %}
+            {% else %}
+            {{ include.title }}
+            {% endif %}
+        </div>
     </div>
     {% endif %}
 
