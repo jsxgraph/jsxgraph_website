@@ -12,6 +12,7 @@ version_year: 2025
 carousel:
   active: false
   speed: 3000
+  controls: true
   data: # use sign #~# to define breakpoints
     - text: >
         Math Visualization.#~#
