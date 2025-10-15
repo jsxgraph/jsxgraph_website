@@ -59725,6 +59725,21 @@ h6:first-child,
 .h6:first-child {
   margin-top: 0;
 }
+
+.jsxgraph-board h1:first-child,
+.jsxgraph-board .h1:first-child,
+.jsxgraph-board h2:first-child,
+.jsxgraph-board .h2:first-child,
+.jsxgraph-board h3:first-child,
+.jsxgraph-board .h3:first-child,
+.jsxgraph-board h4:first-child,
+.jsxgraph-board .h4:first-child,
+.jsxgraph-board h5:first-child,
+.jsxgraph-board .h5:first-child,
+.jsxgraph-board h6:first-child,
+.jsxgraph-board .h6:first-child {
+    margin-top: 3rem;
+}
 .leading-logo,
 .content > h2:before,
 .content > .h2:before {
