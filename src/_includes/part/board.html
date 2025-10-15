@@ -47,7 +47,7 @@
     </script>
 
     {% if include.title and title_pos=="after" %}
-    <div class="mt-3 text-muted text-center">
+    <div class="mt-3 text-muted text-center" style="width: {{ include.width | default: '500px' }}; max-width: {{ include.max_width | default: '100%' }};">
         {% if include.link %}
 
         {%- assign stringToCheck = include.link %}
@@ -71,4 +71,12 @@
         {% endif %}
     </div>
     {% endif %}
+
+    <script type="text/javascript">
+        (function () {
+            /*@formatter:off*/
+            {{ js }}
+            /*@formatter:on*/
+        })();
+    </script>
 </div>
