@@ -56,5 +56,4 @@ include part/board.html
 
 jsfile="js_step3"
 boardid="board-step3"
-title="Preview"
 %}

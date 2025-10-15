@@ -72,5 +72,4 @@ include part/board.html
 
 jsfile="js_attributes"
 boardid="board-attributes"
-title="Preview"
 %}

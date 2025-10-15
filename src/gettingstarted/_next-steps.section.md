@@ -64,5 +64,4 @@ include part/board.html
 
 jsfile="js_next"
 boardid="board-next"
-title="Preview"
 %}

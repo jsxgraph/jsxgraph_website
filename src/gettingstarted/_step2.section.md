@@ -48,5 +48,4 @@ include part/board.html
 
 jsfile="js_step2"
 boardid="board-step2"
-title="Preview"
 %}
