@@ -65,6 +65,30 @@ Links are automatically supplemented with target="_blank" if
 - they refer to a file ending with `.pdf`, `.jpg`, `.png`, `.svg`, `.sketcho`, `.zip`, `.woff` or `.ttf`.
   These links are also preceded by an icon.
 
+## JSXGraph boards
+
+You can include any board via
+
+```text
+{%- capture jscode %}
+    ...                             // js code
+{% endcapture -%}
+{%
+    include part/board.html
+    js=jscode
+    boardid=...                     // mandatory
+    title=...                       // optional
+    title_pos=...                   // before or after
+    link=...                        // optional
+    target=...                      // _self or _blank
+    class=...                       // optional
+    width=...                       // optional
+    height=...                      // optional
+    aspect_ratio=...                // optional
+    max_width=...                   // optional
+%}
+```
+
 ## Code highlighting
 
 Change theme by executing
@@ -74,32 +98,9 @@ rougify style ... > src/assets/less/code_highlighting.css
 ```
 
 Following styles are available:
-
-- base16
-- base16.dark
-- base16.light
-- base16.monokai
-- base16.monokai.dark
-- base16.monokai.light
-- base16.solarized
-- base16.solarized.dark
-- base16.solarized.light
-- bw
-- colorful
-- github
-- github.dark
-- github.light
-- gruvbox
-- gruvbox.dark
-- gruvbox.light
-- igorpro
-- magritte
-- molokai
-- monokai
-- monokai.sublime
-- pastie
-- thankful_eyes
-- tulip
+`base16`, `base16.dark`, `base16.light`, `base16.monokai`, `base16.monokai.dark`, `base16.monokai.light`, `base16.solarized`, `base16.solarized.dark`,
+`base16.solarized.light`, `bw`, `colorful`, `github`, `github.dark`, `github.light`, `gruvbox`, `gruvbox.dark`, `gruvbox.light`, `igorpro`,
+`magritte`, `molokai`, `monokai`, `monokai.sublime`, `pastie`, `thankful_eyes`, `tulip`
 
 ## Buttons
 
