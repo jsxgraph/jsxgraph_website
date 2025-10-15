@@ -59145,7 +59145,6 @@ footer,
   font-size: calc(var(--bs-body-font-size) * 0.55);
   margin-left: calc(var(--bs-body-font-size) * 0.55 / 2);
 }
-
 .copybutton {
     display: inline !important;
     padding: 0 !important;
@@ -59565,6 +59564,12 @@ path.svg-apple-keyboard-dark {
 #splash .splash-overlay {
   background: rgba(174, 220, 239, 0.93);
   color: #10427C !important;
+}
+
+#splash .splash-overlay .carousel-control-prev,
+#splash .splash-overlay .carousel-control-next {
+    color: #10427C !important;
+    opacity: 0.25;
 }
 #splash .splash-overlay .splash-scroll:hover {
   color: #1a4a81 !important;

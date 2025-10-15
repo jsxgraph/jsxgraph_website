@@ -47,4 +47,13 @@
         {% endfor -%}
 
     </div>
+
+    {%- if const.carousel.controls == true %}
+    <button class="carousel-control-prev w-auto px-3" type="button" data-bs-target="#carousel-{{ uuid }}" data-bs-slide="prev">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="carousel-control-next w-auto px-3" type="button" data-bs-target="#carousel-{{ uuid }}" data-bs-slide="next">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    {% endif -%}
 </div>
