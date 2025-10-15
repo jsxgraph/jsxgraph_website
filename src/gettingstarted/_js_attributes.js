@@ -1,5 +1,5 @@
 (function () {
-    const BOARDID = 'attributes-result';
+    const BOARDID = 'board-attributes';
     const board = JXG.JSXGraph.initBoard(BOARDID, {boundingbox: [-10, 10, 10, -10], axis: true});
     A = board.create('point', [2, 1], {name: 'A', fixed: true});
     var f = board.create(

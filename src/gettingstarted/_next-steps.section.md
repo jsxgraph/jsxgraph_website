@@ -57,4 +57,12 @@ var c = board.create('circle', [A, B, C]);
 </html>
 ```
 
-#### JSXGraph  Preview
+#### JSXGraph Preview
+
+{%
+include part/board.html
+
+jsfile="js_next"
+boardid="board-next"
+title="Preview"
+%}

@@ -42,3 +42,11 @@ The following code has to be placed into the body part of an HTML file:
 ```
 
 #### JSXGraph Preview
+
+{%
+include part/board.html
+
+jsfile="js_step2"
+boardid="board-step2"
+title="Preview"
+%}

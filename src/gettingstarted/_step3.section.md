@@ -49,4 +49,12 @@ var f = board.create(
 </html>
 ```
 
-#### JSXGraph  Preview
+#### JSXGraph Preview
+
+{%
+include part/board.html
+
+jsfile="js_step3"
+boardid="board-step3"
+title="Preview"
+%}

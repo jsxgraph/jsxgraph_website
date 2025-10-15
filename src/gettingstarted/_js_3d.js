@@ -1,6 +1,6 @@
 (function () {
     var board = JXG.JSXGraph.initBoard(
-        'view-result', {
+        'board-3d', {
             boundingbox: [-10, 10, 10, -10],
             axis: false,
             pan: {enabled: false},
