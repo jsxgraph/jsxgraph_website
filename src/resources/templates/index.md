@@ -1,7 +1,7 @@
 ---
 title: Starter Templates
 parent: resources
-order: 2
+order: 1
 sections:
 
     - file: html

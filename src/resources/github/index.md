@@ -3,7 +3,7 @@ title: GitHub
 subtitle: Source Code
 icon: fa-brands fa-github
 parent: resources
-order: 3
+order: 2
 in_shortcuts: false
 order_shortcuts: 6
 

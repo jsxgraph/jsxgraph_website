@@ -1,7 +1,7 @@
 ---
 title: Logo Files 
 parent: resources
-order: 6
+order: 7
 sections:
     
   - file: intro
