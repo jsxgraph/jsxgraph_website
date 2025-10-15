@@ -1,6 +1,6 @@
 {% assign uuid = 8 | randhex %}
 
-<div id="carousel-{{ uuid }}" class="carousel carousel-dark slide w-100 bigger" data-bs-ride="carousel" data-bs-interval="{{ const.carousel.speed | default: 5000 }}">
+<div id="carousel-{{ uuid }}" class="carousel slide w-100 bigger" data-bs-ride="carousel" data-bs-interval="{{ const.carousel.speed | default: 5000 }}">
     <div class="carousel-inner py-1">
 
         {%- for item in const.carousel.data %}
