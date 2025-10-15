@@ -1,5 +1,11 @@
 <div class="jsxgraph-board">
     {% assign title_pos = include.title_pos | default: "after" %}
+    {%- if include.jsfile != nil -%}
+    {%- assign jsfile = '_' | append: include.jsfile | append: '.js' -%}
+    {%- capture js -%}{% include_relative {{jsfile}} %}{%- endcapture -%}
+    {%- else -%}
+    {%- assign js = include.js -%}
+    {%- endif -%}
 
     {% if include.title and title_pos=="before" %}
     <div class="h5 mb-3">
@@ -35,7 +41,7 @@
     <script type="text/javascript">
         (function () {
             /*@formatter:off*/
-            {{ include.js }}
+            {{ js }}
             /*@formatter:on*/
         })();
     </script>

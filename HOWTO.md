@@ -89,6 +89,25 @@ You can include any board via
 %}
 ```
 
+or with a separate file `_[].js`:
+
+```text
+{%
+    include part/board.html
+    jsfile=...                      // mandatory name of file between _ and .js
+    boardid=...                     // mandatory
+    title=...                       // optional
+    title_pos=...                   // before or after
+    link=...                        // optional
+    target=...                      // _self or _blank
+    class=...                       // optional
+    width=...                       // optional
+    height=...                      // optional
+    aspect_ratio=...                // optional
+    max_width=...                   // optional
+%}
+```
+
 ## Code highlighting
 
 Change theme by executing
