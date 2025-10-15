@@ -3,7 +3,7 @@
 #section-server a > code, 
 #section-server p > strong code,
 #section-server p > em code {
-background-color: transparent;
+    background-color: transparent;
 }
 </style>
 
