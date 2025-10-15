@@ -75,7 +75,8 @@ You can include any board via
 {% endcapture -%}
 {%
     include part/board.html
-    js=jscode
+    
+    js=jscode                       // mandatory
     boardid=...                     // mandatory
     title=...                       // optional
     title_pos=...                   // before or after
@@ -94,6 +95,7 @@ or with a separate file `_[].js`:
 ```text
 {%
     include part/board.html
+    
     jsfile=...                      // mandatory name of file between _ and .js
     boardid=...                     // mandatory
     title=...                       // optional
