@@ -11,7 +11,6 @@ The preferred way is to include JSXGraph online from one of the CDNs (Content De
 Add the following lines into the HTML document head:
 
 ```html
-
 <script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
 <link rel="stylesheet" type="text/css"
       href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
@@ -48,7 +47,6 @@ If you want to include a local copy of JSXGraph in your HTML file, download the 
 and add the following lines into the document head:
 
 ```html
-
 <script src="jsxgraphcore.js"></script>
 <link rel="stylesheet" type="text/css" href="jsxgraph.css">
 ```
@@ -78,7 +76,6 @@ This division needs an ID. Using this ID, we declare this element to be a board 
 The following code has to be placed into the body part of an HTML file:
 
 ```html
-
 <div id="box" class="jxgbox" style="width:500px; aspect-ratio: 1/1;"></div>
 <script>
     var board = JXG.JSXGraph.initBoard(
