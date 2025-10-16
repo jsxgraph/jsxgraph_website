@@ -2,6 +2,17 @@
 ///               helpers              ///
 //////////////////////////////////////////
 
+/**
+ * Copies content to system clipboard.
+ *
+ * Copied from JSXGraph share.
+ *
+ * @param {String|Blob} content
+ * @param {String|jQuery} [successAnchor=undefined]
+ * @param {'bg-color'|'popup'|'tooltip'|'text'|'html'|'append'|'off'} [successType=undefined]
+ * @param {String} [successMessage=undefined]
+ * @param {Number} [successDuration=1800]
+ */
 function copyToClipboard(
     content,
     successAnchor = undefined,
