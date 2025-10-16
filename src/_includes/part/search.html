@@ -2,16 +2,6 @@
 {% assign layout = include.layout | default: 'input' %}
 {% comment %}<!-- input | full -->{% endcomment %}
 
-{% if layout == "full" %}
-<div class="mb-4 mt-n3 back">
-    <a href="../" class="d-flex m-between-1">
-        <div class="sketcho sketcho-caret-left sketcho-lg"></div>
-        <sketcholanguage tag="div" key="OVERVIEW"></sketcholanguage>
-        <div class="sketcho sketcho-blank sketcho-lg"></div>
-    </a>
-</div>
-{% endif %}
-
 <form id="search-form" class="d-flex m-between-1" method="dialog" autocomplete="off" autocapitalize="off">
     <input type="search" id="search" class="form-control rounded-0" placeholder="{{ const.search.placeholder }}" aria-label="{{ const.search.label }}" spellcheck="false" autocapitalize="off" autocomplete="off" required>
     <button id="search-button" class="btn btn-link {% if layout == 'full' %}link-primary{% else %}nav-link{% endif %} border-0 rounded-0 square px-2 py-0" type="submit">
@@ -42,10 +32,6 @@
 
     $.getJSON('{{ relBase }}{{ const.search.url }}data.json', function (searchData) {
         DATA = searchData;
-        DATA.forEach(page => {
-            page.title = SketchoLanguage.getTranslation(page.title_key).toString();
-            page.description = SketchoLanguage.getTranslation(page.description_key).toString();
-        });
 
         FUSE = new Fuse(DATA, {
             includeScore: true,
@@ -56,16 +42,16 @@
             ignoreDiacritics: true,
 
             /**
-             * 2 ist praxisnah, damit nicht schon bei Eingaben wie „a“ alles knallt.
-             * 3 ist noch robuster gegen unnötigen Lärm.
-             * 4 nur, wenn deine Datenmenge sehr groß ist und du Treffermüll vermeiden willst.
+             * 2 is practical so that everything doesn't crash when you enter something like “a.”
+             * 3 is even more robust against unnecessary noise.
+             * 4 only if you have a very large amount of data and want to avoid junk hits.
              */
             minMatchCharLength: 3,
             /**
-             * 0 bedeutet: nur exakte Treffer.
-             * 0.6 ist Default.
-             * 0.2–0.3 ist oft ein guter Wert für „normale“ Volltextsuchen: tolerant genug für Tippfehler, aber nicht so schwammig, dass alles matcht.
-             * Willst du echte Fuzzy-Suche mit vielen Treffern (auch bei starken Abweichungen), geh Richtung 0.4–0.5.
+             * 0 means: exact matches only.
+             * 0.6 is the default.
+             * 0.2–0.3 is often a good value for “normal” full-text searches: tolerant enough for typos, but not so vague that everything matches.
+             * If you want true fuzzy search with many hits (even with significant deviations), go for 0.4–0.5.
              */
             threshold: 0.3,
 
