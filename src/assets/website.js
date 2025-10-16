@@ -142,3 +142,65 @@ function copyToClipboard(
             });
     }
 }
+
+/**
+ * Generates a string from a template and uses variables.
+ *
+ * Copied from sketchometry.
+ *
+ * @param {String} templateName
+ * @param {Object} variables
+ * @returns {String|jQuery}
+ */
+function renderTemplate(templateName, variables) {
+    function renderMathJax(stringOrNode) {
+        let wasString = JXG.isString(stringOrNode),
+            node;
+
+        if (wasString)
+            node = $('<div></div>').append(stringOrNode);
+        else
+            node = stringOrNode;
+
+        node.findSelf('tex').each(function (_, node) {
+            node.outerText = $(node).outerHTML();
+        });
+
+        try {
+            if (MathJax)
+                if (MathJax.typeset) {
+                    // Version 3
+                    MathJax.typeset([node[0]]);
+                } else {
+                    // Version 2
+                    MathJax.Hub.Queue(['Typeset', MathJax.Hub, node[0]]);
+                }
+        } catch (e) {
+            console.warn(e);
+        }
+
+        if (wasString)
+            return $(node).html();
+        else
+            return node;
+    }
+
+    let tmpl, re;
+
+    tmpl = load(templateName) || 'Template \'' + templateName + '\' not found';
+
+    // replace variables
+    re = /%(.*?)%/;
+    while (re.test(tmpl)) {
+        tmpl = tmpl.replace(re, (typeof variables[RegExp.$1] !== 'undefined' && variables[RegExp.$1] !== null ? variables[RegExp.$1] : ('#!$' + RegExp.$1 + '#!$')));
+    }
+
+    // replace the temp #!$ by % again
+    re = /#!\$/g;
+    tmpl = tmpl.replace(re, '%');
+
+    tmpl = $('<div></div>').append(tmpl);
+    tmpl = renderMathJax(tmpl);
+
+    return $($(tmpl).html());
+}

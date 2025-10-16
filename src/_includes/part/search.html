@@ -18,7 +18,7 @@
     });
 </script>
 {% else %}
-<script type="text/javascript" src="{{ relBase }}/assets/fuse/fuse.min.js?v={{now}}"></script>
+<script type="text/javascript" src="{{ relBase }}/assets/fuse/fuse.min.js"></script>
 
 <div id="results" class="mt-5 row justify-content-center g-3 g-md-4"></div>
 
@@ -129,7 +129,7 @@
                     item.color = 'primary';
             }
 
-            RES.append(SketchoUtils.renderTemplate('template_result', item));
+            RES.append(renderTemplate('template_result', item));
         });
     }
 </script>
