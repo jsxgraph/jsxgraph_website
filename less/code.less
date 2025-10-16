@@ -42,6 +42,24 @@
     margin-bottom: -2px;
   }
 
+  .language-js &,
+  .language-javascript &,
+  .language-html &,
+  .language-css &,
+  .language-json &,
+  .language-jessiecode &,
+  .language-php & {
+    margin-top: -0.5rem;
+
+    h1 + &,
+    h2 + &,
+    h3 + &,
+    h4 + &,
+    h5 + & {
+      margin-top: -1rem;
+    }
+  }
+
   .language-js &:before,
   .language-javascript &:before {
     content: "JavaScript";
