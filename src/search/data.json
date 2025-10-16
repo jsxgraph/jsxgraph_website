@@ -16,37 +16,74 @@ layout: null
     {%- if page.pagination_info and page.pagination_info.curr_page > 1 -%}
       {%- continue -%}
     {%- endif %}
+    {%- if page.is_taglist or page.is_categorylist -%}
+      {%- continue -%}
+    {%- endif -%}
+    {%- assign content_blank = page.content | replace_post | strip_newlines -%}
+    {%- assign sections = page.sections -%}
+    {%- if content_blank == "" and (sections == nil or sections.size == 0) -%}
+    {%- assign content = "" -%}
+    {%- else -%}
     {%- capture content -%}
-      {%- include content.html -%}
+      {% include content.html %}
     {%- endcapture -%}
-    {% assign type = "site" -%}
-    {%- if page.is_taglist -%}
-      {% assign type = "taglist" -%}
-    {%- endif %}
-    {%- if page.is_categorylist -%}
-      {% assign type = "categorylist" -%}
     {%- endif %}
   {
-    "type": {{ type | jsonify }},
-    "title": {{ page.title | jsonify }},
+    "type": "site",
+    "title_site": {{ page.title | jsonify }},
     "name": {{ page.name | jsonify }},
     "url": {{ page.url | relative_url | jsonify }},
     "dir": {{ page.dir | relative_url | jsonify }},
-    "content": {{ content | strip_html | strip | jsonify }}
+    "content_site": {{ content | strip_html | strip | jsonify }},
+    "content_parsed": {{ content | strip_html | strip | markdownify | jsonify }},
+    "external_link": {{ page.external_link | jsonify }},
+    "data": {{ page | jsonify }}
   },
   {%- endfor -%}
 
-  {%- for post in site.posts | sort: "date" -%}
+  {%- assign pages = site.pages | where: "is_categorylist", true -%}
+  {%- for page in pages -%}
+  {%- if page.sitemap.exclude == true -%}
+    {%- continue -%}
+  {%- endif %}
+  {
+    "type": "categorylist",
+    "title_categorylist": {{ page.title | jsonify }},
+    "url": {{ page.url | relative_url | jsonify }},
+    "dir": {{ page.dir | relative_url | jsonify }},
+    "content_categorylist": "",
+    "content_parsed": ""
+  },
+  {%- endfor -%}
+
+  {%- assign pages = site.pages | where: "is_taglist", true -%}
+  {%- for page in pages -%}
+  {%- if page.sitemap.exclude == true -%}
+    {%- continue -%}
+  {%- endif %}
+  {
+    "type": "taglist",
+    "title_taglist": {{ page.title | jsonify }},
+    "url": {{ page.url | relative_url | jsonify }},
+    "dir": {{ page.dir | relative_url | jsonify }},
+    "content_taglist": "",
+    "content_parsed": ""
+  },
+  {%- endfor -%}
+
+  {%- assign posts = site.posts | sort: "date" -%}
+  {%- for post in posts -%}
   {%- if post.published == false -%}
     {%- continue -%}
   {%- endif %}
   {
     "type": "post",
-    "title": {{ post.title | jsonify }},
+    "title_post": {{ post.title | jsonify }},
     "name": {{ post.name | jsonify }},
     "url": {{ post.url | relative_url | jsonify }},
     "datetime": {{ post.date | date_to_xmlschema  | jsonify }},
-    "content": {{ post.content | strip_html | strip | jsonify }}
+    "content_post": {{ post.content | strip_html | strip | jsonify }},
+    "content_parsed": {{ post.content | strip_html | strip  | markdownify | jsonify }}
   }{%- unless forloop.last -%},{%- endunless -%}
   {%- endfor %}
 ]

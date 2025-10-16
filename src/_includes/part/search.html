@@ -23,10 +23,19 @@
 <div id="results" class="mt-5 row justify-content-center g-3 g-md-4"></div>
 
 <script type="text/html-template" id="template_result">
-
+    <div class="mb-5">
+        <div class="mb-3">
+            <h2 class="m-0">%title%</h2>
+            <div class="text-muted %class_subtitle%">%subtitle%</div>
+        </div>
+        <div class="shorten-content-4 mb-3 %class_content%">%content%</div>
+        <div class="text-center">
+            <a href="%link%" target="%target%" class="btn btn-outline-primary w-fix-lg">%linktitle%</a>
+        </div>
+    </div>
 </script>
 
-<script type="text/javascript">
+<script async type="text/javascript">
     let FUSE = null,
         DATA = [];
 
@@ -53,7 +62,7 @@
              * 0.2–0.3 is often a good value for “normal” full-text searches: tolerant enough for typos, but not so vague that everything matches.
              * If you want true fuzzy search with many hits (even with significant deviations), go for 0.4–0.5.
              */
-            threshold: 0.3,
+            threshold: 0.2,
 
             ignoreLocation: true,
             // location: 0,
@@ -65,9 +74,17 @@
             // fieldNormWeight: 1,
 
             keys: [
-                {name: 'title', weight: 3},
-                {name: 'description', weight: 2},
-                {name: 'content', weight: 1},
+                {name: 'title_site', weight: 4},
+                {name: 'content_site', weight: 4},
+
+                {name: 'title_post', weight: 3},
+                {name: 'content_post', weight: 3},
+
+                {name: 'title_categorylist', weight: 2},
+                {name: 'content_categorylist', weight: 2},
+
+                {name: 'title_taglist', weight: 1},
+                {name: 'content_taglist', weight: 1},
             ],
         });
 
@@ -102,31 +119,41 @@
         result.forEach(function (result) {
             let item = result.item;
 
-            item.class_video = 'off';
-            item.class_image = 'off';
-            item.class_icon = 'off';
+            item.title = item['title_' + item.type];
+            item.content_plain = item['content_' + item.type];
+            item.content = item.content_plain.trim();
 
-            switch (item.layout) {
-                case 'item':
-                    if (item.tile_type === 'video' || item.tile_type === 'image' || item.tile_type === 'icon')
-                        item['class_' + item.tile_type] = '';
-                    else
-                        item.class_image = '';
-                    item.color = 'secondary';
+            item.class_content = !JXG.exists(item.content, true) ? 'off' : '';
+
+            switch (item.type) {
+                case 'categorylist':
+                    item.subtitle = 'News Category';
                     break;
-
-                case 'category':
-                    if (item.tile_type === 'video' || item.tile_type === 'image' || item.tile_type === 'icon')
-                        item['class_' + item.tile_type] = '';
-                    else
-                        item.class_image = '';
-                    item.color = 'primary';
+                case 'taglist':
+                    item.subtitle = 'News Tag';
                     break;
-
+                case 'post':
+                    item.subtitle = 'News Post';
+                    break;
+                case 'site':
+                    if (JXG.exists(item.external_link, true)) {
+                        item.subtitle = 'External Link';
+                        break;
+                    }
                 default:
-                    if (item.tile_type === 'video' || item.tile_type === 'image' || item.tile_type === 'icon')
-                        item['class_' + item.tile_type] = '';
-                    item.color = 'primary';
+                    item.subtitle = '';
+            }
+            item.class_subtitle = !JXG.exists(item.subtitle, true) ? 'off' : '';
+
+            if (JXG.exists(item.external_link, true)) {
+                item.link = item.external_link;
+                item.linktitle = '{{ const.search.goto }}';
+                item.target = '_blank';
+                item.linktitle += '<i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>';
+            } else {
+                item.link = '{{ relBase }}' + item.url;
+                item.target = '_self';
+                item.linktitle = '{{ const.search.goto }}';
             }
 
             RES.append(JXG.website.renderTemplate('template_result', item));
