@@ -10,7 +10,7 @@
 </form>
 
 {% if layout != "full" %}
-<script type="text/javascript">
+<script type="module">
     $('#search-form').on('submit', function () {
         const query = $('#search').val();
         if (query.length <= 0) return;
@@ -18,7 +18,7 @@
     });
 </script>
 {% else %}
-<script type="text/javascript" src="{{ relBase }}/assets/fuse/fuse.min.js"></script>
+<script type="module" src="{{ relBase }}/assets/fuse/fuse.min.js"></script>
 
 <div id="results" class="mt-5 row justify-content-center g-3 g-md-4"></div>
 
@@ -35,7 +35,7 @@
     </div>
 </script>
 
-<script async type="text/javascript">
+<script type="module">
     let FUSE = null,
         DATA = [];
 
@@ -74,11 +74,11 @@
             // fieldNormWeight: 1,
 
             keys: [
-                {name: 'title_site', weight: 4},
-                {name: 'content_site', weight: 4},
+                {name: 'title_site', weight: 10},
+                {name: 'content_site', weight: 10},
 
-                {name: 'title_post', weight: 3},
-                {name: 'content_post', weight: 3},
+                {name: 'title_post', weight: 5},
+                {name: 'content_post', weight: 5},
 
                 {name: 'title_categorylist', weight: 2},
                 {name: 'content_categorylist', weight: 2},

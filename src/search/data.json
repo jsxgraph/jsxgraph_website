@@ -20,8 +20,8 @@ layout: null
       {%- continue -%}
     {%- endif -%}
     {%- assign content_blank = page.content | replace_post | strip_newlines -%}
-    {%- assign sections = page.sections -%}
-    {%- if content_blank == "" and (sections == nil or sections.size == 0) -%}
+    {%- assign sections_size = page.sections | size -%}
+    {%- if content_blank == "" and sections_size == 0 -%}
     {%- assign content = "" -%}
     {%- else -%}
     {%- capture content -%}
