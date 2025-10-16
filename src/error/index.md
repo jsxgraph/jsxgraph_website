@@ -6,9 +6,9 @@ sitemap:
 ---
 
 <style>
-.content {
+main > * {
     text-align: center;
-    font-size: 120%;
+    font-size: 130%;
 }
 </style>
 
