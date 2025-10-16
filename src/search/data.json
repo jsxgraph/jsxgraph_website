@@ -1,0 +1,52 @@
+---
+layout: null
+---
+{%- comment -%}
+// @formatter:off
+{%- endcomment -%}
+[
+  {%- assign pages = site.pages | sort: "order" -%}
+  {%- for page in pages -%}
+    {%- if page.url == const.search.url -%}
+      {%- continue -%}
+    {%- endif %}
+    {%- if page.sitemap.exclude == true or page.name == "feed.xml" or page.name == "/news/feed.xml" or page.name == "data.json" or page.name == "sitemap.xml" -%}
+      {%- continue -%}
+    {%- endif %}
+    {%- if page.pagination_info and page.pagination_info.curr_page > 1 -%}
+      {%- continue -%}
+    {%- endif %}
+    {%- capture content -%}
+      {%- include content.html -%}
+    {%- endcapture -%}
+    {% assign type = "site" -%}
+    {%- if page.is_taglist -%}
+      {% assign type = "taglist" -%}
+    {%- endif %}
+    {%- if page.is_categorylist -%}
+      {% assign type = "categorylist" -%}
+    {%- endif %}
+  {
+    "type": {{ type | jsonify }},
+    "title": {{ page.title | jsonify }},
+    "name": {{ page.name | jsonify }},
+    "url": {{ page.url | relative_url | jsonify }},
+    "dir": {{ page.dir | relative_url | jsonify }},
+    "content": {{ content | strip_html | strip | jsonify }}
+  },
+  {%- endfor -%}
+
+  {%- for post in site.posts | sort: "date" -%}
+  {%- if post.published == false -%}
+    {%- continue -%}
+  {%- endif %}
+  {
+    "type": "post",
+    "title": {{ post.title | jsonify }},
+    "name": {{ post.name | jsonify }},
+    "url": {{ post.url | relative_url | jsonify }},
+    "datetime": {{ post.date | date_to_xmlschema  | jsonify }},
+    "content": {{ post.content | strip_html | strip | jsonify }}
+  }{%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor %}
+]
