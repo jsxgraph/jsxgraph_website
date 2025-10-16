@@ -24,6 +24,7 @@ kramdown:
 plugins:
   - jekyll-paginate-v2
   - jekyll-feed
+  - jekyll_include_plugin
 
 # Handling Reading
 safe: false

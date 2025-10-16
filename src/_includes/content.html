@@ -18,7 +18,7 @@
 {%- elsif section.layout == 'board-block' -%}
 {%- if section.file != nil -%}
 {%- assign text_file = '_' | append: section.file | append: '.section.md' -%}
-{%- capture section_inclusion -%}{% include_relative {{text_file}} %}{%- endcapture -%}
+{%- capture section_inclusion -%}{% include_file {{ page.dir }}{{text_file}} %}{%- endcapture -%}
 {%- assign sec_content = section_inclusion | pre_markdown | markdownify | replace_post -%}
 {%- assign name = section.file -%}
 {%- else -%}
@@ -27,10 +27,10 @@
 {%- assign name = nil -%}
 {%- endif -%}
 {%- if section.code_file != nil -%}
-{%- capture js -%}{% include_relative {{ section.data.code_file }} %}{%- endcapture -%}
+{%- capture js -%}{% include_file {{ page.dir }}{{ section.data.code_file }} %}{%- endcapture -%}
 {%- else if section.file != nil -%}
 {%- assign js_file = '_' | append: section.file | append: '.section.js' -%}
-{%- capture js -%}{% include_relative {{js_file}} %}{%- endcapture -%}
+{%- capture js -%}{% include_file {{ page.dir }}{{js_file}} %}{%- endcapture -%}
 {%- else -%}
 {%- assign js = nil -%}
 {%- endif -%}
@@ -38,11 +38,11 @@
 
 {%- elsif section.layout == 'board' -%}
 {%- if section.code_file != nil -%}
-{%- capture js -%}{% include_relative {{ section.data.code_file }} %}{%- endcapture -%}
+{%- capture js -%}{% include_file {{ page.dir }}{{ section.data.code_file }} %}{%- endcapture -%}
 {%- assign name = section.code_file -%}
 {%- else if section.file != nil -%}
 {%- assign js_file = '_' | append: section.file | append: '.section.js' -%}
-{%- capture js -%}{% include_relative {{js_file}} %}{%- endcapture -%}
+{%- capture js -%}{% include_file {{ page.dir }}{{js_file}} %}{%- endcapture -%}
 {%- assign name = section.file -%}
 {%- else -%}
 {%- assign js = nil -%}
@@ -55,14 +55,14 @@
 
 {%- elsif section.layout == 'file' -%}
 <div>
-    {% include_relative {{ section.file }} %}
+    {% include_file {{ page.dir }}{{ section.file }} %}
 </div>
 
 {%- else -%}
 
 {%- if section.file != nil -%}
 {%- assign file = '_' | append: section.file | append: '.section.md' -%}
-{%- capture section_inclusion -%}{% include_relative {{file}} %}{%- endcapture -%}
+{%- capture section_inclusion -%}{% include_file {{ page.dir }}{{file}} %}{%- endcapture -%}
 {%- assign sec_content = section_inclusion | pre_markdown | markdownify | replace_post -%}
 {%- else -%}
 {%- assign section_inclusion = nil -%}
