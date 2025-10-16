@@ -89,6 +89,8 @@ defaults:
       render_this: true
       absolute_paths: false
       in_shortcuts: false
+      sitemap:
+        exclude: true
   - scope:
       path: "news/"
     values:

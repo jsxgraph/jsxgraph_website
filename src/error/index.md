@@ -1,8 +1,6 @@
 ---
 title: Error
 header: An error occurred...
-sitemap:
-  exclude: 'yes'
 ---
 
 <style>

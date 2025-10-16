@@ -1,7 +1,5 @@
 ---
     layout: null
-    sitemap:
-        exclude: 'yes'
     is_home: false
     in_menu_popup: false
     in_menu_footer: false
@@ -35,7 +33,7 @@
     {%- endunless -%}
     {%- endfor -%}
     {%- for page in site.pages -%}
-    {%- unless page.sitemap.exclude == "yes" or page.name == "feed.xml" %}
+    {%- unless page.sitemap.exclude == true or page.name == "feed.xml" or page.name == "/news/feed.xml" or page.name == "data.json" or page.name == "sitemap.xml" %}
     <url>
         <loc>{{ site.data.const.url.web | default: site.url }}{{ page.url | remove: "index.html" }}</loc>
         {%- if page.sitemap.lastmod %}
