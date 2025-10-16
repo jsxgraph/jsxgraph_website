@@ -59080,7 +59080,6 @@ video {
   margin-top: -2px;
   margin-bottom: -2px;
 }
-
 .language-js .code-highlighting,
 .language-javascript .code-highlighting,
 .language-html .code-highlighting,
@@ -59090,7 +59089,6 @@ video {
 .language-php .code-highlighting {
     margin-top: -0.5rem;
 }
-
 h1 + .language-js .code-highlighting,
 h1 + .language-javascript .code-highlighting,
 h1 + .language-html .code-highlighting,
