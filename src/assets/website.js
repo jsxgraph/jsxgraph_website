@@ -1,158 +1,35 @@
-//////////////////////////////////////////
-///               helpers              ///
-//////////////////////////////////////////
+'use strict';
 
-/**
- * Copies content to system clipboard.
- *
- * Copied from JSXGraph share.
- *
- * @param {String|Blob} content
- * @param {String|jQuery} [successAnchor=undefined]
- * @param {'bg-color'|'popup'|'tooltip'|'text'|'html'|'append'|'off'} [successType=undefined]
- * @param {String} [successMessage=undefined]
- * @param {Number} [successDuration=1800]
- */
-function copyToClipboard(
-    content,
-    successAnchor = undefined,
-    successType = undefined,
-    successMessage = undefined,
-    successDuration = 1800,
-) {
-    let el, successFunc = function () { };
+(function () {
+    window.JXG = window.JXG || {};
+    JXG.website = {};
 
-    if (JXG.exists(successAnchor) && JXG.exists(successMessage)) {
-        successFunc = function () {
-            let obj, backup;
+    //////////////////////////////////////////
+    ///             private                ///
+    //////////////////////////////////////////
 
-            switch (successType) {
-                case 'bg-color':
-                    obj = $(successAnchor);
+    let _cache = {};
 
-                    if (obj.attr('data-copy-blocked') === 'true')
-                        return;
-                    obj.attr('data-copy-blocked', 'true');
-                    obj.addClass(successMessage);
-                    window.setTimeout(() => {
-                        obj.removeClass(successMessage);
-                        obj.attr('data-copy-blocked', 'false');
-                    }, successDuration);
-                    break;
+    function load(templateName) {
+        let element;
 
-                case 'popup':
-                case 'tooltip':
-                    obj = bsAddOns.enableTooltips(successAnchor, {
-                        title: successMessage,
-                        trigger: 'manual',
-                        placement: 'top',
-                    })[0];
-                    obj.show();
-                    window.setTimeout(() => {
-                        obj.hide();
-                    }, successDuration);
-                    break;
+        if (!JXG.exists(_cache[templateName], true)) {
+            element = document.getElementById(templateName);
+            if (!JXG.exists(element)) return undefined;
 
-                case 'text':
-                    obj = $(successAnchor);
-                    backup = obj.text();
-                    if (obj.attr('data-copy-blocked') === 'true')
-                        return;
-                    obj.attr('data-copy-blocked', 'true');
-                    obj.text(successMessage);
-                    window.setTimeout(() => {
-                        obj.text(backup);
-                        obj.attr('data-copy-blocked', 'false');
-                    }, successDuration);
-                    break;
+            _cache[templateName] = trim(element.innerHTML);
+        }
 
-                case 'html':
-                    obj = $(successAnchor);
-                    backup = obj.html();
-                    if (obj.attr('data-copy-blocked') === 'true')
-                        return;
-                    obj.attr('data-copy-blocked', 'true');
-                    obj.html(successMessage);
-                    window.setTimeout(() => {
-                        obj.html(backup);
-                        obj.attr('data-copy-blocked', 'false');
-                    }, successDuration);
-                    break;
-
-                case 'append':
-                    obj = $(successAnchor);
-                    backup = obj.html();
-                    if (obj.attr('data-copy-blocked') === 'true')
-                        return;
-                    obj.attr('data-copy-blocked', 'true');
-                    obj.html(backup + successMessage);
-                    window.setTimeout(() => {
-                        obj.html(backup);
-                        obj.attr('data-copy-blocked', 'false');
-                    }, successDuration);
-                    break;
-
-                case 'off':
-                    obj = $(successAnchor);
-                    obj.removeClass('off');
-                    window.setTimeout(() => {
-                        obj.addClass('off');
-                    }, successDuration);
-                    break;
-            }
-        };
+        return _cache[templateName];
     }
 
-    if (!navigator || !navigator.clipboard || !navigator.clipboard.write || !ClipboardItem) {
-        console.log('Copied to clipboard via textarea');
-        el = document.createElement('textarea');
-        el.value = string;
-        document.body.appendChild(el);
-        el.select();
-        document.execCommand('copy');
-        document.body.removeChild(el);
+    function trim(str) {
+        str = str.replace(/^\s+/, '');
+        str = str.replace(/\s+$/, '');
 
-        successFunc();
-
-    } else if (JXG.isString(content)) {
-        console.log('Copied to clipboard via navigator text');
-        navigator.clipboard.writeText(content)
-            .then(function () {
-                successFunc();
-            })
-            .catch(function (e) {
-                /*
-                Workaround:
-                Safari needs to have navigator.clipboard.write in an eventhandler directly.
-                 */
-                console.warn(e);
-            });
-    } else {
-        console.log('Copied to clipboard via navigator ClipboardItem');
-        navigator.clipboard.write([new ClipboardItem({[content.type]: content})])
-            .then(function () {
-                successFunc();
-            })
-            .catch(function () {
-                /*
-                Workaround:
-                Safari needs to have navigator.clipboard.write in an eventhandler directly.
-                 */
-                console.warn(e);
-            });
+        return str;
     }
-}
 
-/**
- * Generates a string from a template and uses variables.
- *
- * Copied from sketchometry.
- *
- * @param {String} templateName
- * @param {Object} variables
- * @returns {String|jQuery}
- */
-function renderTemplate(templateName, variables) {
     function renderMathJax(stringOrNode) {
         let wasString = JXG.isString(stringOrNode),
             node;
@@ -185,22 +62,179 @@ function renderTemplate(templateName, variables) {
             return node;
     }
 
-    let tmpl, re;
+    //////////////////////////////////////////
+    ///              public                ///
+    //////////////////////////////////////////
 
-    tmpl = load(templateName) || 'Template \'' + templateName + '\' not found';
+    /**
+     * Copies content to system clipboard.
+     *
+     * Copied from JSXGraph share.
+     *
+     * @param {String|Blob} content
+     * @param {String|jQuery} [successAnchor=undefined]
+     * @param {'bg-color'|'popup'|'tooltip'|'text'|'html'|'append'|'off'} [successType=undefined]
+     * @param {String} [successMessage=undefined]
+     * @param {Number} [successDuration=1800]
+     */
+    JXG.website.copyToClipboard = function (
+        content,
+        successAnchor = undefined,
+        successType = undefined,
+        successMessage = undefined,
+        successDuration = 1800,
+    ) {
+        let el, successFunc = function () { };
 
-    // replace variables
-    re = /%(.*?)%/;
-    while (re.test(tmpl)) {
-        tmpl = tmpl.replace(re, (typeof variables[RegExp.$1] !== 'undefined' && variables[RegExp.$1] !== null ? variables[RegExp.$1] : ('#!$' + RegExp.$1 + '#!$')));
-    }
+        if (JXG.exists(successAnchor) && JXG.exists(successMessage)) {
+            successFunc = function () {
+                let obj, backup;
 
-    // replace the temp #!$ by % again
-    re = /#!\$/g;
-    tmpl = tmpl.replace(re, '%');
+                switch (successType) {
+                    case 'bg-color':
+                        obj = $(successAnchor);
 
-    tmpl = $('<div></div>').append(tmpl);
-    tmpl = renderMathJax(tmpl);
+                        if (obj.attr('data-copy-blocked') === 'true')
+                            return;
+                        obj.attr('data-copy-blocked', 'true');
+                        obj.addClass(successMessage);
+                        window.setTimeout(() => {
+                            obj.removeClass(successMessage);
+                            obj.attr('data-copy-blocked', 'false');
+                        }, successDuration);
+                        break;
 
-    return $($(tmpl).html());
-}
+                    case 'popup':
+                    case 'tooltip':
+                        obj = bsAddOns.enableTooltips(successAnchor, {
+                            title: successMessage,
+                            trigger: 'manual',
+                            placement: 'top',
+                        })[0];
+                        obj.show();
+                        window.setTimeout(() => {
+                            obj.hide();
+                        }, successDuration);
+                        break;
+
+                    case 'text':
+                        obj = $(successAnchor);
+                        backup = obj.text();
+                        if (obj.attr('data-copy-blocked') === 'true')
+                            return;
+                        obj.attr('data-copy-blocked', 'true');
+                        obj.text(successMessage);
+                        window.setTimeout(() => {
+                            obj.text(backup);
+                            obj.attr('data-copy-blocked', 'false');
+                        }, successDuration);
+                        break;
+
+                    case 'html':
+                        obj = $(successAnchor);
+                        backup = obj.html();
+                        if (obj.attr('data-copy-blocked') === 'true')
+                            return;
+                        obj.attr('data-copy-blocked', 'true');
+                        obj.html(successMessage);
+                        window.setTimeout(() => {
+                            obj.html(backup);
+                            obj.attr('data-copy-blocked', 'false');
+                        }, successDuration);
+                        break;
+
+                    case 'append':
+                        obj = $(successAnchor);
+                        backup = obj.html();
+                        if (obj.attr('data-copy-blocked') === 'true')
+                            return;
+                        obj.attr('data-copy-blocked', 'true');
+                        obj.html(backup + successMessage);
+                        window.setTimeout(() => {
+                            obj.html(backup);
+                            obj.attr('data-copy-blocked', 'false');
+                        }, successDuration);
+                        break;
+
+                    case 'off':
+                        obj = $(successAnchor);
+                        obj.removeClass('off');
+                        window.setTimeout(() => {
+                            obj.addClass('off');
+                        }, successDuration);
+                        break;
+                }
+            };
+        }
+
+        if (!navigator || !navigator.clipboard || !navigator.clipboard.write || !ClipboardItem) {
+            console.log('Copied to clipboard via textarea');
+            el = document.createElement('textarea');
+            el.value = string;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+
+            successFunc();
+
+        } else if (JXG.isString(content)) {
+            console.log('Copied to clipboard via navigator text');
+            navigator.clipboard.writeText(content)
+                .then(function () {
+                    successFunc();
+                })
+                .catch(function (e) {
+                    /*
+                    Workaround:
+                    Safari needs to have navigator.clipboard.write in an eventhandler directly.
+                     */
+                    console.warn(e);
+                });
+        } else {
+            console.log('Copied to clipboard via navigator ClipboardItem');
+            navigator.clipboard.write([new ClipboardItem({[content.type]: content})])
+                .then(function () {
+                    successFunc();
+                })
+                .catch(function () {
+                    /*
+                    Workaround:
+                    Safari needs to have navigator.clipboard.write in an eventhandler directly.
+                     */
+                    console.warn(e);
+                });
+        }
+    };
+
+    /**
+     * Generates a string from a template and uses variables.
+     *
+     * Copied from sketchometry.
+     *
+     * @param {String} templateName
+     * @param {Object} variables
+     * @returns {String|jQuery}
+     */
+    JXG.website.renderTemplate = function (templateName, variables) {
+        let tmpl, re;
+
+        tmpl = load(templateName) || 'Template \'' + templateName + '\' not found';
+
+        // replace variables
+        re = /%(.*?)%/;
+        while (re.test(tmpl)) {
+            tmpl = tmpl.replace(re, (typeof variables[RegExp.$1] !== 'undefined' && variables[RegExp.$1] !== null ? variables[RegExp.$1] : ('#!$' + RegExp.$1 + '#!$')));
+        }
+
+        // replace the temp #!$ by % again
+        re = /#!\$/g;
+        tmpl = tmpl.replace(re, '%');
+
+        tmpl = $('<div></div>').append(tmpl);
+        tmpl = renderMathJax(tmpl);
+
+        return $($(tmpl).html());
+    };
+
+})();
