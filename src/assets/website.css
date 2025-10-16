@@ -56755,13 +56755,11 @@ pre,
 .font-monospace {
   font-family: var(--bs-font-monospace) !important;
 }
-
 .normal {
     font-weight: normal;
     font-size: var(--bs-body-font-size);
     font-family: var(--bs-body-font-family);
 }
-
 .font-normal {
     font-family: var(--bs-body-font-family);
 }
@@ -59656,7 +59654,7 @@ main #splash * {
 }
 h1,
 .h1 {
-  padding-bottom: 1rem;
+    margin-bottom: 2rem !important;
 }
 h2,
 .h2 {
