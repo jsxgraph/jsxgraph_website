@@ -17,9 +17,23 @@
             </div>
         </a>
         <div></div>
-        <div class="d-flex align-items-center m-between-3 m-between-md-4">
+        <div class="d-flex align-items-center">
             <nav class="navbar navbar-expand m-0 p-0">
                 <ul class="navbar-nav m-0 p-0">
+
+                    {% if page.dir != const.search.url %}
+                    <li class="nav-item me-3 d-flex align-items-center">
+                        <div class="topbar-nosplash d-none d-md-block">
+                            {% include part/search.html %}
+                        </div>
+                        <a class="topbar-nosplash d-block d-md-none nav-link" href="{{ relBase }}{{ const.search.url }}">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a class="topbar-onlysplash nav-link" href="{{ relBase }}{{ const.search.url }}">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+                    {% endif %}
 
                     <li class="nav-item" id="menu-toggler-container">
                         <div class="nav-link cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu" id="menu-toggler">

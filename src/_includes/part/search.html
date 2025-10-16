@@ -1,0 +1,150 @@
+{% include basics %}
+{% assign layout = include.layout | default: 'input' %}
+{% comment %}<!-- input | full -->{% endcomment %}
+
+{% if layout == "full" %}
+<div class="mb-4 mt-n3 back">
+    <a href="../" class="d-flex m-between-1">
+        <div class="sketcho sketcho-caret-left sketcho-lg"></div>
+        <sketcholanguage tag="div" key="OVERVIEW"></sketcholanguage>
+        <div class="sketcho sketcho-blank sketcho-lg"></div>
+    </a>
+</div>
+{% endif %}
+
+<form id="search-form" class="d-flex m-between-1" method="dialog" autocomplete="off" autocapitalize="off">
+    <input type="search" id="search" class="form-control rounded-0" placeholder="{{ const.search.placeholder }}" aria-label="{{ const.search.label }}" spellcheck="false" autocapitalize="off" autocomplete="off" required>
+    <button id="search-button" class="btn btn-link link-primary border-0 rounded-0 square px-2 py-0" type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+</form>
+
+{% if layout != "full" %}
+<script type="text/javascript">
+    $('#search-form').on('submit', function () {
+        const query = $('#search').val();
+        if (query.length <= 0) return;
+        window.open('{{ relBase }}{{ const.search.url }}#' + query, '_self');
+    });
+</script>
+{% else %}
+<script type="text/javascript" src="{{ relBase }}/assets/fuse/fuse.min.js?v={{now}}"></script>
+
+<div id="results" class="mt-5 row justify-content-center g-3 g-md-4"></div>
+
+<script type="text/html-template" id="template_result">
+
+</script>
+
+<script type="text/javascript">
+    let FUSE = null,
+        DATA = [];
+
+    $.getJSON('{{ relBase }}{{ const.search.url }}data.json', function (searchData) {
+        DATA = searchData;
+        DATA.forEach(page => {
+            page.title = SketchoLanguage.getTranslation(page.title_key).toString();
+            page.description = SketchoLanguage.getTranslation(page.description_key).toString();
+        });
+
+        FUSE = new Fuse(DATA, {
+            includeScore: true,
+            includeMatches: true, // for debug
+            shouldSort: true,
+
+            isCaseSensitive: false,
+            ignoreDiacritics: true,
+
+            /**
+             * 2 ist praxisnah, damit nicht schon bei Eingaben wie „a“ alles knallt.
+             * 3 ist noch robuster gegen unnötigen Lärm.
+             * 4 nur, wenn deine Datenmenge sehr groß ist und du Treffermüll vermeiden willst.
+             */
+            minMatchCharLength: 3,
+            /**
+             * 0 bedeutet: nur exakte Treffer.
+             * 0.6 ist Default.
+             * 0.2–0.3 ist oft ein guter Wert für „normale“ Volltextsuchen: tolerant genug für Tippfehler, aber nicht so schwammig, dass alles matcht.
+             * Willst du echte Fuzzy-Suche mit vielen Treffern (auch bei starken Abweichungen), geh Richtung 0.4–0.5.
+             */
+            threshold: 0.3,
+
+            ignoreLocation: true,
+            // location: 0,
+            // distance: 100,
+
+            // findAllMatches: false,
+            // useExtendedSearch: false,
+            // ignoreFieldNorm: false,
+            // fieldNormWeight: 1,
+
+            keys: [
+                {name: 'title', weight: 3},
+                {name: 'description', weight: 2},
+                {name: 'content', weight: 1},
+            ],
+        });
+
+        let s = decodeURI(location.hash.substring(1));
+        if (JXG.exists(s, true)) {
+            $('#search').val(s);
+            search();
+        }
+    }).fail(function (e) {
+        console.error(e);
+    });
+
+    $('#search').on('input change', function () {
+        search();
+    });
+    $('#search-form').on('submit', function () {
+        search();
+    });
+
+    function search(query = undefined) {
+        const RES = $('#results');
+
+        query = query || $('#search').val();
+        location.hash = '#' + query;
+        RES.empty();
+
+        if (query.length < FUSE.options.minMatchCharLength) return;
+
+        let result = FUSE.search(query);
+
+        console.log(result);
+        result.forEach(function (result) {
+            let item = result.item;
+
+            item.class_video = 'off';
+            item.class_image = 'off';
+            item.class_icon = 'off';
+
+            switch (item.layout) {
+                case 'item':
+                    if (item.tile_type === 'video' || item.tile_type === 'image' || item.tile_type === 'icon')
+                        item['class_' + item.tile_type] = '';
+                    else
+                        item.class_image = '';
+                    item.color = 'secondary';
+                    break;
+
+                case 'category':
+                    if (item.tile_type === 'video' || item.tile_type === 'image' || item.tile_type === 'icon')
+                        item['class_' + item.tile_type] = '';
+                    else
+                        item.class_image = '';
+                    item.color = 'primary';
+                    break;
+
+                default:
+                    if (item.tile_type === 'video' || item.tile_type === 'image' || item.tile_type === 'icon')
+                        item['class_' + item.tile_type] = '';
+                    item.color = 'primary';
+            }
+
+            RES.append(SketchoUtils.renderTemplate('template_result', item));
+        });
+    }
+</script>
+{% endif %}
