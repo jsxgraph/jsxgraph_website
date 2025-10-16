@@ -59077,6 +59077,54 @@ video {
   margin-top: -2px;
   margin-bottom: -2px;
 }
+
+.language-js .code-highlighting,
+.language-javascript .code-highlighting,
+.language-html .code-highlighting,
+.language-css .code-highlighting,
+.language-json .code-highlighting,
+.language-jessiecode .code-highlighting,
+.language-php .code-highlighting {
+    margin-top: -0.5rem;
+}
+
+h1 + .language-js .code-highlighting,
+h1 + .language-javascript .code-highlighting,
+h1 + .language-html .code-highlighting,
+h1 + .language-css .code-highlighting,
+h1 + .language-json .code-highlighting,
+h1 + .language-jessiecode .code-highlighting,
+h1 + .language-php .code-highlighting,
+h2 + .language-js .code-highlighting,
+h2 + .language-javascript .code-highlighting,
+h2 + .language-html .code-highlighting,
+h2 + .language-css .code-highlighting,
+h2 + .language-json .code-highlighting,
+h2 + .language-jessiecode .code-highlighting,
+h2 + .language-php .code-highlighting,
+h3 + .language-js .code-highlighting,
+h3 + .language-javascript .code-highlighting,
+h3 + .language-html .code-highlighting,
+h3 + .language-css .code-highlighting,
+h3 + .language-json .code-highlighting,
+h3 + .language-jessiecode .code-highlighting,
+h3 + .language-php .code-highlighting,
+h4 + .language-js .code-highlighting,
+h4 + .language-javascript .code-highlighting,
+h4 + .language-html .code-highlighting,
+h4 + .language-css .code-highlighting,
+h4 + .language-json .code-highlighting,
+h4 + .language-jessiecode .code-highlighting,
+h4 + .language-php .code-highlighting,
+h5 + .language-js .code-highlighting,
+h5 + .language-javascript .code-highlighting,
+h5 + .language-html .code-highlighting,
+h5 + .language-css .code-highlighting,
+h5 + .language-json .code-highlighting,
+h5 + .language-jessiecode .code-highlighting,
+h5 + .language-php .code-highlighting {
+    margin-top: -1rem;
+}
 .language-js .code-highlighting:before,
 .language-javascript .code-highlighting:before {
   content: "JavaScript";
@@ -59613,6 +59661,10 @@ path.svg-apple-keyboard-dark {
 main,
 main * {
   scroll-margin-top: 120px;
+}
+
+main .accordion-collapse {
+    scroll-margin-top: 160px;
 }
 main header,
 main #splash,
