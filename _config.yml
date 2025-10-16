@@ -112,3 +112,25 @@ defaults:
       category: Release
       postlist_id: "news"
       permalink: /news/release/:title:output_ext             # for better SEO
+  - scope:
+      path: "sitemap.xml"
+    values:
+      sitemap:
+        exclude: true
+      layout: null
+      is_home: false
+      in_menu_popup: false
+      in_menu_footer: false
+      absolute_paths: false
+      in_shortcuts: false
+  - scope:
+      path: "news/feed.xml"
+    values:
+      sitemap:
+        exclude: true
+      layout: null
+      is_home: false
+      in_menu_popup: false
+      in_menu_footer: false
+      absolute_paths: false
+      in_shortcuts: false
