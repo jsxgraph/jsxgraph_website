@@ -7,7 +7,6 @@
 {% assign tag_title_close = tag_title | prepend: "/" %}
 {% if head_level <= 4 %}{% assign tag_subtitle = head_level | plus: 1 | prepend: "h" %}
 {% else %}{%- assign tag_subtitle = "p" -%}{% endif %}
-{% assign tag_subtitle_close = tag_subtitle | prepend: "/" %}
 {% if head_level <= 2 %}{%- assign tag_subtitle_display = head_level | plus: 3 | prepend: "h" -%}
 {% else %}{%- assign tag_subtitle_display = "normal" -%}{% endif %}
 
@@ -18,9 +17,9 @@
         {{ post.title }}
         <{{tag_title_close}}>
         {% if post.subtitle %}
-        <{{tag_subtitle}} class="{{tag_subtitle_display}} m-0 text-muted">
+        <div class="{{tag_subtitle}} {{tag_subtitle_display}} m-0 text-muted">
         {{ post.subtitle }}
-        <{{tag_subtitle_close}}>
+        </div>
         {% endif %}
         <!--@formatter:on-->
     </div>
