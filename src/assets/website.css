@@ -30466,7 +30466,6 @@ input[type=search]::-webkit-search-cancel-button {
   background-position: center center;
   background-size: contain;
 }
-
 input[type=search]:not(:focus)::-webkit-search-cancel-button {
     display: none;
 }
@@ -56736,14 +56735,6 @@ hr {
 :root {
   --bs-header-font-family: var(--bs-body-font-family);
 }
-.normal {
-  font-weight: normal;
-  font-size: var(--bs-body-font-size);
-  font-family: var(--bs-body-font-family);
-}
-.font-normal {
-  font-family: var(--bs-body-font-family);
-}
 h1,
 .h1,
 h2,
@@ -56763,6 +56754,16 @@ code,
 pre,
 .font-monospace {
   font-family: var(--bs-font-monospace) !important;
+}
+
+.normal {
+    font-weight: normal;
+    font-size: var(--bs-body-font-size);
+    font-family: var(--bs-body-font-family);
+}
+
+.font-normal {
+    font-family: var(--bs-body-font-family);
 }
 :focus,
 :focus-visible,
