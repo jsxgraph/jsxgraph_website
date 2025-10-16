@@ -134,3 +134,14 @@ defaults:
       in_menu_footer: false
       absolute_paths: false
       in_shortcuts: false
+  - scope:
+      path: "search/data.json"
+    values:
+      sitemap:
+        exclude: true
+      layout: null
+      is_home: false
+      in_menu_popup: false
+      in_menu_footer: false
+      absolute_paths: false
+      in_shortcuts: false
