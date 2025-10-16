@@ -185,18 +185,19 @@ boardid="board-step3"
 
 # Next Steps
 
-The command _board.create(elementType, [parameters], attributes)_ is the central method in JSXGraph for adding new elements to a construction.
-It takes at least two arguments: a string _elementType_ specifying the type of element (e.g., 'point', 'circle', 'functiongraph') and an array of
-parameters the element depends on, optionally followed by an object _attributes_.
+The command `board.create(elementType, [parameters], attributes)` is the central method in JSXGraph for adding new elements to a construction.
+It takes at least two arguments: a string `elementType` specifying the type of element (e.g., `'point'`, `'circle'`, `'functiongraph'`) and an array
+of
+parameters the element depends on, optionally followed by an attributes object .
 
-Add two aditional points:
+Add two additional points:
 
 ```js
 var B = board.create('point', [-4, 5], {name: 'B'});
 var C = board.create('point', [-6, -5], {name: 'C'});
 ```
 
-The three points define the vertices of a triangle, which can then be created using these points as _parameters_:
+The three points define the vertices of a triangle, which can then be created using these points as parameters:
 
 ```js
 var p = board.create('polygon', [A, B, C]);
@@ -254,24 +255,24 @@ boardid="board-next"
 
 # Styling of Elements
 
-The optional _attributes_ object allows you to customize the appearance and behavior of an element, such as its color, size, label, or whether it is
+The optional attributes object allows you to customize the appearance and behavior of an element, such as its color, size, label, or whether it is
 draggable.
 
 ## Attributes
 
-To make a point non-movable, you can set the attribute _fixed_, which prevents users from dragging it on the board:
+To make a point non-movable, you can set the attribute `fixed`, which prevents users from dragging it on the board:
 
 ```js
 var A = board.create('point', [2, 1], {name: 'A', fixed: true});
 ```
 
-The fill color of a polygon can be set using the _fillColor_ attribute:
+The fill color of a polygon can be set using the `fillColor` attribute:
 
 ```js
 var p = board.create('polygon', [A, B, C], {fillcolor: '#ff0099'});
 ```
 
-You can customize the stroke of a circle using attributes like _strokeColor_, _strokeWidth_ for line thickness and _dash_ for dashed or dotted styles:
+You can customize the stroke of a circle using attributes like `strokeColor`, `strokeWidth` for line thickness and `dash` for dashed or dotted styles:
 
 ```js
 var c = board.create('circle', [A, B, C], {
