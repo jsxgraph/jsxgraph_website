@@ -56699,7 +56699,6 @@ a:hover,
 .btn-link {
   text-decoration: none;
 }
-
 a:hover,
 .btn-link:hover {
     text-decoration: underline;
@@ -59660,10 +59659,17 @@ path.svg-apple-keyboard-dark {
 #topbar.topbar-splash #menu-toggler-name-menu {
   display: inline !important;
 }
-
 #topbar a,
 #topbar .btn-link {
     text-decoration: none !important;
+}
+
+#topbar .nav-link {
+    color: #10427C;
+}
+
+#topbar .nav-link:hover {
+    color: #165aa9;
 }
 main,
 main * {
