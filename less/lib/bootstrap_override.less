@@ -8,7 +8,7 @@ a:hover,
   text-decoration: none;
 }
 
-.gen-a() when (@underline_links = true) {
+.gen-a() when (@underline_links = normal) {
   a,
   .btn-link {
     text-decoration: underline;
@@ -16,6 +16,29 @@ a:hover,
 
   a:hover,
   .btn-link:hover {
+  }
+}
+
+.gen-a() when (@underline_links = hover) {
+  a,
+  .btn-link {
+  }
+
+  a:hover,
+  .btn-link:hover {
+    text-decoration: underline;
+  }
+}
+
+.gen-a() when (@underline_links = always) {
+  a,
+  .btn-link {
+    text-decoration: underline;
+  }
+
+  a:hover,
+  .btn-link:hover {
+    text-decoration: underline;
   }
 }
 

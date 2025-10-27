@@ -8,8 +8,8 @@
 @fixed_width_xs: 75px;
 @fixed_width_sm: 90px;
 
-@threshold_active: 12%;
-@threshold_hover: 4%;
+@threshold_active: 15%;
+@threshold_hover: 10%;
 @threshold_overlay: 65%;
 
 @color_primary: #10427C;
@@ -26,7 +26,8 @@
 @color_code_bg: mix(@color_code_base, #fff, 45%);
 @color_code_outer: darken(@color_code_base, @threshold_dark);
 
-@color_link: mix(@color_primary, #fff, (@threshold_light + @threshold_light / 2));
+@color_link: @color_primary;
+@underline_links: hover;
 
 @rounded_max_radius: 20%;
 
