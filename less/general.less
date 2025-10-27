@@ -42,14 +42,21 @@ footer,
   font-size: 1rem;
 }
 
+.form-control,
+.btn,
+#search {
+  border: 3px solid @color_primary;
+  border-radius: 0.5rem 0 0.5rem 0;
+}
+
 .tile-button-squares .tile-label {
-  --bs-body-font-size: 1rem; // 0.8rem;
-  font-size: 1rem; // 0.8rem;
+  --bs-body-font-size: 1rem;
+  font-size: 1rem;
 }
 
 .tile-button-icons .tile-label {
-  --bs-body-font-size: 1rem; // 0.8rem;
-  font-size: 1rem; // 0.8rem;
+  --bs-body-font-size: 1rem;
+  font-size: 1rem;
 }
 
 .icon-external-link {
@@ -62,4 +69,14 @@ footer,
   display: inline !important;
   padding: 0 !important;
   margin: -10px 0.25rem -5px !important;
+}
+
+#search-results {
+  a:hover {
+    text-decoration: none;
+
+    h1, h2, h3, h4, h5, h6 {
+      text-decoration: underline;
+    }
+  }
 }

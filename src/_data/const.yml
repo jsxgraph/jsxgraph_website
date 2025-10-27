@@ -45,6 +45,11 @@ keywords: >
 btn:
   menu: Menu
 
+search:
+  label: Search
+  placeholder: Type to search
+  url: /search/
+
 cookie:
   hint: >
     JSXGraph stores only essential data for core website functionality in your browser.
