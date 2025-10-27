@@ -59675,6 +59675,9 @@ main,
 main * {
   scroll-margin-top: 120px;
 }
+main .accordion-collapse {
+    scroll-margin-top: 160px;
+}
 main header,
 main #splash,
 main header *,

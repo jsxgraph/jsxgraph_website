@@ -1,6 +1,6 @@
 ---
 title: Team
-order: 7
+order: 8
 sections:
 
   - file: team

@@ -1,5 +1,5 @@
 ---
 title: Events
-order: 6
+order: 7
 is_separator: true
 ---

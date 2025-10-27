@@ -1,7 +1,7 @@
 ---
 title: Plugins
 parent: resources
-order: 4
+order: 6
 sections:
 
     - file: plugins

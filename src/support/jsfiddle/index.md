@@ -2,8 +2,8 @@
 title: jsFiddle
 subtitle: Live Coding
 icon: fa-brands fa-jsfiddle
-parent: links
-order: 3
+parent: support
+order: 4
 in_shortcuts: true
 order_shortcuts: 7
 
