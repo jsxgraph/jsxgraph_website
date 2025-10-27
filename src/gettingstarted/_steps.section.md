@@ -180,7 +180,7 @@ jsfile="js_step3"
 boardid="board-step3"
 %}
 
-# Step 4 – Dependent Elements
+# Dependent Elements
 
 The command `board.create(elementType, [parameters], attributes)` is the central method in JSXGraph for adding new elements to a construction.
 It takes at least two arguments: a string `elementType` specifying the type of element (e.g., `'point'`, `'circle'`, `'functiongraph'`) and an array
