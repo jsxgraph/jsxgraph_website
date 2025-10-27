@@ -93,7 +93,7 @@
 @color_text_light: #fff;
 
 @color_link: @color_primary;
-@color_link_hover: @color_primary_dark;
+@color_link_hover: contrast(@color_link, lighten(@color_link, @threshold_hover), darken(@color_link, @threshold_hover));
 
 @gradient_direction: to bottom right;
 
@@ -125,7 +125,7 @@ apple_keyboard_background, apple_keyboard_light, apple_keyboard_dark;
 
 @dynamic_headsizes: false;
 
-@underline_links: false;
+@underline_links: false; // false | always | hover | normal
 
 @disable_focus_remaining: true;
 
