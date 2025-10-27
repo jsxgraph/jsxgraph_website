@@ -3,7 +3,7 @@
 {% comment %}<!-- input | full -->{% endcomment %}
 
 <form id="search-form" class="d-flex m-between-1" method="dialog" autocomplete="off" autocapitalize="off">
-    <input type="search" id="search" class="form-control rounded-0 rounded-top-start rounded-bottom-end border-primary" placeholder="{{ const.search.placeholder }}" aria-label="{{ const.search.label }}" spellcheck="false" autocapitalize="off"
+    <input type="search" id="search" class="form-control" placeholder="{{ const.search.placeholder }}" aria-label="{{ const.search.label }}" spellcheck="false" autocapitalize="off"
            autocomplete="off" required>
     <button id="search-button" class="btn btn-link {% if layout == 'full' %}link-primary{% else %}nav-link{% endif %} border-0 rounded-0 square px-2 py-0" type="submit">
         <i class="fa-solid fa-magnifying-glass"></i>
