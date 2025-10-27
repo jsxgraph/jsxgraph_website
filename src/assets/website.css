@@ -59139,7 +59139,6 @@ footer,
   --bs-body-font-size: 1rem;
   font-size: 1rem;
 }
-
 .form-control,
 .btn,
 #search {
@@ -59163,6 +59162,19 @@ footer,
   display: inline !important;
   padding: 0 !important;
   margin: -10px 0.25rem -5px !important;
+}
+
+#search-results a:hover {
+    text-decoration: none;
+}
+
+#search-results a:hover h1,
+#search-results a:hover h2,
+#search-results a:hover h3,
+#search-results a:hover h4,
+#search-results a:hover h5,
+#search-results a:hover h6 {
+    text-decoration: underline;
 }
 .svg-body path {
   stroke: #fff !important;

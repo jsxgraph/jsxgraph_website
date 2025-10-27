@@ -48,7 +48,6 @@ btn:
 search:
   label: Search
   placeholder: Type to search
-  goto: Show more
   url: /search/
 
 cookie:

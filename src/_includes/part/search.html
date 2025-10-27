@@ -21,19 +21,18 @@
 {% else %}
 <script type="module" src="{{ relBase }}/assets/fuse/fuse.min.js"></script>
 
-<div id="results" class="mt-5 row justify-content-center g-3 g-md-4"></div>
+<div id="search-results" class="mt-5 row justify-content-center g-3 g-md-4"></div>
 
 <script type="text/html-template" id="template_result">
-    <div class="mb-5">
+    <a href="%link%" target="%target%" class="d-block mb-5">
         <div class="mb-3">
-            <h2 class="m-0">%title%</h2>
+            <h2 class="m-0">
+                %title%%linkpostfix%
+            </h2>
             <div class="text-muted %class_subtitle%">%subtitle%</div>
         </div>
-        <div class="shorten-content-4 mb-3 %class_content%">%content%</div>
-        <div class="text-center">
-            <a href="%link%" target="%target%" class="btn btn-outline-primary w-fix-lg">%linktitle%</a>
-        </div>
-    </div>
+        <div class="text-dark shorten-content-4 mb-3 %class_content%">%content%</div>
+    </a>
 </script>
 
 <script type="module">
@@ -106,7 +105,7 @@
     });
 
     function search(query = undefined) {
-        const RES = $('#results');
+        const RES = $('#search-results');
 
         query = query || $('#search').val();
         location.hash = '#' + query;
@@ -148,13 +147,12 @@
 
             if (JXG.exists(item.external_link, true)) {
                 item.link = item.external_link;
-                item.linktitle = '{{ const.search.goto }}';
                 item.target = '_blank';
-                item.linktitle += '<i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>';
+                item.linkpostfix = '<i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>';
             } else {
                 item.link = '{{ relBase }}' + item.url;
                 item.target = '_self';
-                item.linktitle = '{{ const.search.goto }}';
+                item.linkpostfix = '';
             }
 
             RES.append(JXG.website.renderTemplate('template_result', item));
