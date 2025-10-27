@@ -59617,6 +59617,12 @@ path.svg-apple-keyboard-dark {
 #topbar .btn-link {
   text-decoration: none !important;
 }
+#topbar .nav-link {
+  color: #10427C;
+}
+#topbar .nav-link:hover {
+  color: #165aa9;
+}
 main,
 main * {
   scroll-margin-top: 120px;
