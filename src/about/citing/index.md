@@ -1,6 +1,6 @@
 ---
 title: Citing
-order: 3
+order: 5
 sections:
 
   - file: citing

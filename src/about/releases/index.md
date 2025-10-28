@@ -1,6 +1,6 @@
 ---
 title: Releases
-order: 6
+order: 2
 sections:
 
   - file: server

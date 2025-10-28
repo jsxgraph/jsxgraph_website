@@ -1,6 +1,6 @@
 ---
 title: Assessment
-order: 2
+order: 3
 sections:
 
   - file: intro
