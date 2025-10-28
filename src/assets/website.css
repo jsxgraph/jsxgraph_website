@@ -59601,7 +59601,8 @@ path.svg-apple-keyboard-dark {
   stroke: #aab0bb !important;
 }
 #splash .splash-page {
-  padding-top: 30px;
+    padding-top: 75px;
+    padding-bottom: 25px;
   min-height: 100vh;
   min-height: 100svh;
   width: 100%;
@@ -59722,7 +59723,6 @@ main #splash * {
 #menu .offcanvas-header {
   padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x) !important;
 }
-
 #menu .offcanvas-header a,
 #menu .offcanvas-header button {
   padding: 0 !important;
@@ -59731,7 +59731,6 @@ main #splash * {
   padding-left: 0rem !important;
   padding-right: 0rem !important;
 }
-
 #menu .offcanvas-header a,
 #menu .offcanvas-header button,
 #menu .offcanvas-header a:hover,
