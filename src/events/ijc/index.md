@@ -1,6 +1,5 @@
 ---
 title: JSXGraph Conferences
-parent: events
 order: 2
 sections:
 

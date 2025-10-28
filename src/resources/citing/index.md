@@ -1,6 +1,5 @@
 ---
 title: Citing
-parent: resources
 order: 8
 sections:
 

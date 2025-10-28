@@ -1,6 +1,5 @@
 ---
 title: Starter Templates
-parent: resources
 order: 1
 sections:
 

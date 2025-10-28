@@ -1,6 +1,5 @@
 ---
 title: Projects
-parent: projects
 order: 1
 sections:
 

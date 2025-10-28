@@ -1,4 +1,4 @@
-<div class="offcanvas offcanvas-end" tabindex="-1" id="menu">
+<div class="offcanvas offcanvas-end show" tabindex="-1" id="menu">
     <div class="offcanvas-header">
         <button type="button" class="btn-inline btn-none">
             <i class="fa-solid fa-fw"></i>
@@ -10,7 +10,18 @@
     <div class="offcanvas-body py-0">
         <div class="accordion list-group list-group-flush mx-n3" id="menu-accordion">
             {%- assign pagelist = site.pages | where: "in_menu_popup",true | where: "parent",nil | sort: 'order' -%}
-            {%- for i_page in pagelist -%}
+            {% comment %}<!-- @formatter:off -->{% endcomment %}
+                {%- assign pages = "" | split: "," -%}
+                {%- for p in pagelist -%}
+                {%- assign split = p.dir | split: "/" -%}
+                {%- if split.size > 2 -%}
+                    {%- continue -%}
+                {%- endif -%}
+                {%- assign pages = pages | push: p -%}
+                {%- endfor -%}
+            {% comment %}<!-- @formatter:on --> {% endcomment %}
+
+            {%- for i_page in pages -%}
             {% assign id = i_page.url | split: '/' | last %}
             {%- if id == "index.html" -%}
             {%- assign id = i_page.url | split: '/' -%}
@@ -24,7 +35,21 @@
 
             {% if page.url == i_page.url or (include.active and include.active == id) %}{%- assign is_active = true -%}{% else %}{%- assign is_active = false -%}{% endif %}
 
-            {%- assign subs = site.pages | where: "in_menu_popup",true | where: "parent",id | where_exp:"item", "item.parent != nil" | sort: 'order' -%}
+            {%- assign subpages = site.pages | where: "in_menu_popup",true | sort: 'order' -%}
+            {% comment %}<!-- @formatter:off -->{% endcomment %}
+                {%- assign subs = "" | split: "," -%}
+                {%- if i_page.dir != "/" -%}
+                    {%- assign sub_string_size = i_page.dir | size -%}
+                    {%- for sub in subpages -%}
+                        {%- assign start = sub.dir | slice: 0, sub_string_size -%}
+                        {%- if i_page.dir != start or i_page.dir == sub.dir -%}
+                            {%- continue -%}
+                        {%- endif -%}
+                        {%- assign subs = subs | push: sub -%}
+                    {%- endfor -%}
+                {%- endif -%}
+            {% comment %}<!-- @formatter:on --> {% endcomment %}
+
             {%- assign is_active_sub = false -%}
             {%- for j_page in subs -%}
             {% assign subid = j_page.url | split: '/' | last %}

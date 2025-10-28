@@ -3,7 +3,6 @@ title: Examples Database
 title_shortcuts: Examples
 subtitle: Database
 icon: fa-solid fa-folder-open
-parent: resources
 order: 4
 in_shortcuts: true
 order_shortcuts: 4

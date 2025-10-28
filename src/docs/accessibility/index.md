@@ -1,6 +1,5 @@
 ---
 title: Accessibility
-parent: docs
 order: 5
 sections:
 

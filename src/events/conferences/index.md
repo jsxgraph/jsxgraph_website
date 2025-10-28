@@ -1,6 +1,5 @@
 ---
 title: Further events
-parent: events
 order: 3
 sections:
 

@@ -1,6 +1,5 @@
 ---
 title: Bibliography
-parent: projects
 order: 4
 sections:
 

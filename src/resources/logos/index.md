@@ -1,6 +1,5 @@
 ---
 title: Logo Files 
-parent: resources
 order: 7
 sections:
     
