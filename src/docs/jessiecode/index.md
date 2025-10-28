@@ -1,5 +1,5 @@
 ---
 title: JessieCode
-order: 4
+order: 2
 external_link: https://github.com/jsxgraph/jessiecode
 ---

@@ -1,6 +1,6 @@
 ---
 title: Accessibility
-order: 5
+order: 3
 sections:
 
   - file: accessibility
