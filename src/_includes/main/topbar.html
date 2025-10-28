@@ -19,10 +19,17 @@
         <div></div>
         <div class="d-flex align-items-center">
             <nav class="navbar navbar-expand m-0 p-0">
-                <ul class="navbar-nav m-0 p-0">
+                <ul class="navbar-nav m-0 p-0 d-flex m-between-3 m-between-lg-4">
+
+                    <li class="nav-item d-flex align-items-center" style="font-size: 0; /* for vertical alignment */">
+                        <a class="github-button d-block" href="https://github.com/jsxgraph/jsxgraph"
+                           data-color-scheme="no-preference: light; light: light; dark: dark;"
+                           data-size="large" data-show-count="true" aria-label="Star jsxgraph/jsxgraph on GitHub">Star on GitHub</a>
+                        <script async defer src="https://buttons.github.io/buttons.js"></script>
+                    </li>
 
                     {% if page.dir != const.search.url %}
-                    <li class="nav-item me-3 d-flex align-items-center">
+                    <li class="nav-item d-flex align-items-center">
                         <div class="topbar-nosplash d-none d-md-block">
                             {% include part/search.html %}
                         </div>
