@@ -1,9 +1,9 @@
 <div class="offcanvas offcanvas-end show" tabindex="-1" id="menu">
     <div class="offcanvas-header">
-        <button type="button" class="btn-inline btn-none">
-            <i class="fa-solid fa-fw"></i>
-        </button>
-        <button type="button" class="btn-inline btn-none" data-bs-dismiss="offcanvas">
+        <a href="{{ relBase }}{{ const.search.url }}" class="btn-inline btn-none btn-link">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <button type="button" class="btn-inline btn-none btn-link" data-bs-dismiss="offcanvas">
             <i class="fa-solid fa-xmark"></i>
         </button>
     </div>
@@ -154,7 +154,7 @@
             {%- endfor -%}
         </div>
 
-        <div class="mt-4 mb-5">
+        <div class="mt-4 mb-5 pt-2">
             {%- include part/tiles.html -%}
         </div>
     </div>

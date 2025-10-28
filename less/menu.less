@@ -24,8 +24,12 @@
   .offcanvas-header {
     padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x) !important;
 
-    button {
+    a, button {
       .p-0();
+
+      &, &:hover {
+        text-decoration: none;
+      }
     }
   }
 

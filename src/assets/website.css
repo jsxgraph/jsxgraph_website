@@ -59084,7 +59084,6 @@ video {
   margin-top: -2px;
   margin-bottom: -2px;
 }
-
 .language-js .code-highlighting,
 .language-javascript .code-highlighting,
 .language-html .code-highlighting,
@@ -59094,7 +59093,6 @@ video {
 .language-php .code-highlighting {
     margin-top: -0.5rem;
 }
-
 h1 + .language-js .code-highlighting,
 h1 + .language-javascript .code-highlighting,
 h1 + .language-html .code-highlighting,
@@ -59692,7 +59690,6 @@ main,
 main * {
   scroll-margin-top: 120px;
 }
-
 main .accordion-collapse {
     scroll-margin-top: 160px;
 }
@@ -59725,12 +59722,21 @@ main #splash * {
 #menu .offcanvas-header {
   padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x) !important;
 }
+
+#menu .offcanvas-header a,
 #menu .offcanvas-header button {
   padding: 0 !important;
   padding-top: 0rem !important;
   padding-bottom: 0rem !important;
   padding-left: 0rem !important;
   padding-right: 0rem !important;
+}
+
+#menu .offcanvas-header a,
+#menu .offcanvas-header button,
+#menu .offcanvas-header a:hover,
+#menu .offcanvas-header button:hover {
+    text-decoration: none;
 }
 #menu .offcanvas-footer {
   padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x) !important;
