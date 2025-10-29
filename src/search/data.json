@@ -22,9 +22,9 @@ layout: null
     {%- assign content_blank = page.content | replace_post | strip_newlines -%}
     {%- assign sections_size = page.sections | size -%}
     {%- if content_blank == "" and sections_size == 0 -%}
-    {%- assign content = "" -%}
+    {%- assign content_site = "" -%}
     {%- else -%}
-    {%- capture content -%}
+    {%- capture content_site -%}
       {% include content.html paths="absolute" %}
     {%- endcapture -%}
     {%- endif %}
@@ -34,8 +34,8 @@ layout: null
     "name": {{ page.name | jsonify }},
     "url": {{ page.url | relative_url | jsonify }},
     "dir": {{ page.dir | relative_url | jsonify }},
-    "content_site": {{ content | strip_html | strip | jsonify }},
-    "content_parsed": {{ content | strip_html | strip | markdownify | jsonify }},
+    "content_site": {{ content_site | strip_html | strip | jsonify }},
+    "content_parsed": {{ content_site | pre_markdown | markdownify | replace_post | jsonify }},
     "external_link": {{ page.external_link | jsonify }},
     "data": {{ page | jsonify }}
   },
@@ -83,7 +83,7 @@ layout: null
     "url": {{ post.url | relative_url | jsonify }},
     "datetime": {{ post.date | date_to_xmlschema  | jsonify }},
     "content_post": {{ post.content | strip_html | strip | jsonify }},
-    "content_parsed": {{ post.content | strip_html | strip  | markdownify | jsonify }}
+    "content_parsed": {{ post.content | pre_markdown | markdownify | replace_post | jsonify }}
   }{%- unless forloop.last -%},{%- endunless -%}
   {%- endfor %}
 ]
