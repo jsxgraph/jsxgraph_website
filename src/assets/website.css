@@ -59186,7 +59186,7 @@ footer,
   font-size: 1rem;
 }
 .form-control,
-.btn:not(.badge),
+.btn:not(.badge):not(.copybutton),
 #search {
     border: 3px solid #10427C;
     border-radius: 0.5rem 0 0.5rem 0;
