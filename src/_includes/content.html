@@ -1,13 +1,19 @@
 {% comment %}<!-- @formatter:off -->{% endcomment %}
 
 {%- assign paths = include.paths | default: "relative" -%}{% comment %}<!-- relative | absolute -->{% endcomment %}
-{%- assign this = include.page | default: page -%}
+{%- if include.page -%}
+    {%- assign this = include.page -%}
+    {%- assign this_content = this.content -%}
+{%- else -%}
+    {%- assign this = page -%}
+    {%- assign this_content = content -%}
+{%- endif -%}
 
-{%- assign content_blank = page.content | replace_post | strip_newlines -%}
+{%- assign content_blank = this_content | replace_post | strip_newlines -%}
 {%- if content_blank != "" -%}
     {%- if page.render_this == "before" or page.render_this == true or page.sections == nil -%}
         <div class="content">
-            {{ page.content | markdownify | replace_post }}
+            {{ this_content | pre_markdown | markdownify | replace_post }}
         </div>
     {%- endif -%}
 {%- endif -%}
@@ -144,6 +150,6 @@
 
 {%- if page.render_this == "after" and page.sections != nil and content_blank -%}
     <div class="content">
-        {{ page.content | markdownify | replace_post }}
+        {{ this_content | markdownify | replace_post }}
     </div>
 {%- endif -%}
