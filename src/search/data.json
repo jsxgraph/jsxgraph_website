@@ -19,9 +19,9 @@ layout: null
     {%- if page.is_taglist or page.is_categorylist -%}
       {%- continue -%}
     {%- endif -%}
-    {%- assign content_blank = page.content | replace_post | strip_newlines -%}
+    {%- assign content_blank_tmp = page.content | replace_post | strip_newlines -%}
     {%- assign sections_size = page.sections | size -%}
-    {%- if content_blank == "" and sections_size == 0 -%}
+    {%- if content_blank_tmp == "" and sections_size == 0 -%}
     {%- assign content_site = "" -%}
     {%- else -%}
     {%- capture content_site -%}
