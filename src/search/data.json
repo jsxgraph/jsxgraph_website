@@ -81,9 +81,11 @@ layout: null
     "title_post": {{ post.title | jsonify }},
     "name": {{ post.name | jsonify }},
     "url": {{ post.url | relative_url | jsonify }},
-    "datetime": {{ post.date | date_to_xmlschema  | jsonify }},
+    "date": {{ post.date | date_to_xmlschema  | jsonify }},
+    "date_formatted": {{ post.date | date: "%B %-d, %Y" | jsonify }},
     "content_post": {{ post.content | strip_html | strip | jsonify }},
-    "content_parsed": {{ post.content | pre_markdown | markdownify | replace_post | jsonify }}
+    "content_parsed": {{ post.content | pre_markdown | markdownify | replace_post | jsonify }},
+    "data": {{ post | jsonify }}
   }{%- unless forloop.last -%},{%- endunless -%}
   {%- endfor %}
 ]

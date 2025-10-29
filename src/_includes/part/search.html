@@ -21,10 +21,10 @@
 {% else %}
 <script type="module" src="{{ relBase }}/assets/fuse/fuse.min.js"></script>
 
-<div id="search-results" class="mt-5 row justify-content-center g-3 g-md-4"></div>
+<div id="search-results" class="mt-5 row justify-content-center g-5"></div>
 
 <script type="text/html-template" id="template_result">
-    <a href="%link%" target="%target%" class="d-block mb-5">
+    <a href="%link%" target="%target%" class="d-block">
         <div class="mb-3">
             <h2 class="m-0">
                 %title%%linkpostfix%
@@ -133,7 +133,7 @@
                     item.subtitle = 'News Tag';
                     break;
                 case 'post':
-                    item.subtitle = 'News Post';
+                    item.subtitle = 'News Post (' + item.date_formatted + ')';
                     break;
                 case 'site':
                     if (JXG.exists(item.external_link, true)) {
