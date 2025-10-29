@@ -13,11 +13,11 @@
             {% comment %}<!-- @formatter:off -->{% endcomment %}
                 {%- assign pages = "" | split: "," -%}
                 {%- for p in pagelist -%}
-                {%- assign split = p.dir | split: "/" -%}
-                {%- if split.size > 2 -%}
-                    {%- continue -%}
-                {%- endif -%}
-                {%- assign pages = pages | push: p -%}
+                    {%- assign split = p.dir | split: "/" -%}
+                    {%- if split.size > 2 -%}
+                        {%- continue -%}
+                    {%- endif -%}
+                    {%- assign pages = pages | push: p -%}
                 {%- endfor -%}
             {% comment %}<!-- @formatter:on --> {% endcomment %}
 
