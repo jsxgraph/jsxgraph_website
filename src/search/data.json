@@ -25,7 +25,7 @@ layout: null
     {%- assign content_site = "" -%}
     {%- else -%}
     {%- capture content_site -%}
-      {% include content.html paths="absolute" %}
+      {% include content.html paths="absolute" page=page %}
     {%- endcapture -%}
     {%- endif %}
   {
