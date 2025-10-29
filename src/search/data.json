@@ -22,12 +22,21 @@ layout: null
     {%- assign content_blank_tmp = page.content | replace_post | strip_newlines -%}
     {%- assign sections_size = page.sections | size -%}
     {%- if content_blank_tmp == "" and sections_size == 0 -%}
-    {%- assign content_site = "" -%}
+      {%- assign content_site = "" -%}
     {%- else -%}
-    {%- capture content_site -%}
-      {% include content.html paths="absolute" page=page %}
-    {%- endcapture -%}
+      {%- capture content_site -%}
+        {% include content.html paths="absolute" page=page %}
+      {%- endcapture -%}
     {%- endif %}
+
+    {%- assign content_light = content_site
+              | preg_replace: '<([/]?em[^>]*)>', '°°°\1°°°'
+              | preg_replace: '<([/]?strong[^>]*)>', '°°°\1°°°'
+              | preg_replace: '<([/]?code[^>]*)>', '°°°\1°°°'
+              | strip_html
+              | preg_replace: '°°°([^°]+)°°°', '<\1>'
+              | preg_replace: '\{%[^%]+%\}', ''
+    -%}
   {
     "type": "site",
     "title_site": {{ page.title | jsonify }},
@@ -35,6 +44,7 @@ layout: null
     "url": {{ page.url | relative_url | jsonify }},
     "dir": {{ page.dir | relative_url | jsonify }},
     "content_site": {{ content_site | strip_html | strip | jsonify }},
+    "content_light": {{ content_light | strip | jsonify }},
     "content_parsed": {{ content_site | pre_markdown | markdownify | replace_post | jsonify }},
     "external_link": {{ page.external_link | jsonify }},
     "data": {{ page | jsonify }}
@@ -52,6 +62,7 @@ layout: null
     "url": {{ page.url | relative_url | jsonify }},
     "dir": {{ page.dir | relative_url | jsonify }},
     "content_categorylist": "",
+    "content_light": "",
     "content_parsed": ""
   },
   {%- endfor -%}
@@ -67,6 +78,7 @@ layout: null
     "url": {{ page.url | relative_url | jsonify }},
     "dir": {{ page.dir | relative_url | jsonify }},
     "content_taglist": "",
+    "content_light": "",
     "content_parsed": ""
   },
   {%- endfor -%}
@@ -84,6 +96,7 @@ layout: null
     "date": {{ post.date | date_to_xmlschema  | jsonify }},
     "date_formatted": {{ post.date | date: "%B %-d, %Y" | jsonify }},
     "content_post": {{ post.content | strip_html | strip | jsonify }},
+    "content_light": {{ post.content | strip_html | strip | jsonify }},
     "content_parsed": {{ post.content | pre_markdown | markdownify | replace_post | jsonify }},
     "data": {{ post | jsonify }}
   }{%- unless forloop.last -%},{%- endunless -%}

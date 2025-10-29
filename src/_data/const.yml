@@ -50,6 +50,23 @@ search:
   placeholder: Type to search
   url: /search/
 
+  # 0 means: exact matches only.
+  # 0.6 is the default.
+  # 0.2–0.3 is often a good value for “normal” full-text searches: tolerant enough for typos, but not so vague that everything matches.
+  # If you want true fuzzy search with many hits (even with significant deviations), go for 0.4–0.5.
+  threshold: 0.2
+
+  # 2 is practical so that everything doesn't crash when you enter something like “a.”
+  # 3 is even more robust against unnecessary noise.
+  # 4 only if you have a very large amount of data and want to avoid junk hits.
+  min_char: 3
+
+  # highlighting
+  excerpt: 500
+  excerpt_html: true
+  highlight_match_length_difference: 90%
+  highlight_class: text-primary fw-little-bold
+
 cookie:
   hint: >
     JSXGraph stores only essential data for core website functionality in your browser.
