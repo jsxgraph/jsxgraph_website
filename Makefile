@@ -84,6 +84,25 @@ build:
 dev:
 	@$(JEKYLL) serve
 
+
+.PHONY: postprocess
+###################################
+# Test if purifycss is installed and 
+# execute it
+# Installation:
+#   sudo npm install -g purify-css
+###################################
+
+postprocess:
+	@echo "Postprocessing: shrink webpage.css"
+	@if type "purifycss" >/dev/null 2>/dev/null; then \
+		cd distrib; \
+		purifycss assets/website.css ./index.html --info --min --out assets/website_purified.css && \
+		cp assets/website.css assets/website_org.css && \
+		cp assets/website_purified.css assets/website.css; \
+	else echo "purifycss not installed"; \
+	fi
+
 #######################
 ### Rules for tests ###
 #######################
