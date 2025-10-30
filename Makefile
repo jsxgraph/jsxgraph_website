@@ -87,22 +87,28 @@ dev:
 
 .PHONY: postprocess
 ###################################
-# Test if purifycss is installed and 
+# Test if purgecss is installed and 
 # execute it
 # Installation:
-#   sudo npm install -g purify-css
+#   npm install purify-css
 ###################################
 
 postprocess:
 	@echo "Postprocessing: shrink webpage.css"
-	@if type "purifycss" >/dev/null 2>/dev/null; then \
-		cd distrib; \
-		purifycss assets/website.css ./index.html --info --min --out assets/website_purified.css && \
-		cp assets/website.css assets/website_org.css && \
-		cp assets/website_purified.css assets/website.css; \
-	else echo "purifycss not installed"; \
+	@if [ -f node_modules/purify-css/bin/purifycss ]; then \
+		node purifycss/cssPurifier && \
+		cp distrib/assets/website.css distrib/assets/website_org.css && \
+		cp distrib/assets/website_purified.css distrib/assets/website.css; \
+	else echo "npm package 'purify-css' not installed"; \
 	fi
 
+# 	@echo "Postprocessing: shrink webpage.css"
+# 	@if type "purgecss" >/dev/null 2>/dev/null; then \
+# 		purgecss --css distrib/assets/website.css --content distrib/**/*.html distrib/**/*.js --output distrib/assets/website_purified.css && \
+# 		cp distrib/assets/website.css distrib/assets/website_org.css && \
+# 		cp distrib/assets/website_purified.css distrib/assets/website.css; \
+# 	else echo "purgecss not installed"; \
+# 	fi
 #######################
 ### Rules for tests ###
 #######################
