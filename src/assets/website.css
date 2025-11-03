@@ -56850,6 +56850,10 @@ pre code {
   padding: 10px;
   display: block;
 }
+
+code {
+    word-break: break-all;
+}
 .css-cols-0 {
   -webkit-column-count: 0;
   -moz-column-count: 0;

@@ -13,14 +13,14 @@ module Jekyll
       input = input.gsub(/<a([^"]*)href="http([^"]+)"([^>]*)>([^<]*)<\/a>/, '<a\1href="http\2" target="_blank"\3>\4<i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i></a>');
       input = input.gsub(/<a([^"]*)href="([^"]+)"([^"]*)target="_blank"([^>]*)>([^<]*)<\/a>/, '<a\1href="\2"\3target="_blank"\4>\5<i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i></a>');
       # Add icon to YouTube and mundo links
-      input = input.gsub(/<a([^"]*)href="([^"]*)(youtube|mundo\.schule)([^"]*)"([^>]*)>/, '<a\1href="\2\3\4" target="_blank"\5><i class="fa-brands fa-fw fa-lg fa-youtube me-1"></i>');
+      input = input.gsub(/<a([^"]*)href="([^"]*)(youtube|mundo\.schule)([^"]*)"([^>]*)>/, '<a\1href="\2\3\4" target="_blank"\5><i class="fa-brands fa-fw fa-lg fa-youtube d-inline me-2"></i>');
       # Add target="_blank" and icon to files
-      input = input.gsub(/<a([^"]*)href="([^"]+)\.(pdf)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-pdf me-1"></i>');
-      input = input.gsub(/<a([^"]*)href="([^"]+)\.(gif|jpg|jpeg|png|svg)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-image me-1"></i>');
-      input = input.gsub(/<a([^"]*)href="([^"]+)\.(zip)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-zipper me-1"></i>');
-      input = input.gsub(/<a([^"]*)href="([^"]+)\.(ttf|woff)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-word me-1"></i>');
-      input = input.gsub(/<a([^"]*)href="([^"]+)\.(jc|js|sketcho|css|map)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>');
-      input = input.gsub(/<a([^"]*)href="([^"]+)\.(template\.html)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-code me-1"></i>');
+      input = input.gsub(/<a([^"]*)href="([^"]+)\.(pdf)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-pdf d-inline me-2"></i>');
+      input = input.gsub(/<a([^"]*)href="([^"]+)\.(gif|jpg|jpeg|png|svg)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-image d-inline me-2"></i>');
+      input = input.gsub(/<a([^"]*)href="([^"]+)\.(zip)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-zipper d-inline me-2"></i>');
+      input = input.gsub(/<a([^"]*)href="([^"]+)\.(ttf|woff)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-word d-inline me-2"></i>');
+      input = input.gsub(/<a([^"]*)href="([^"]+)\.(jc|js|sketcho|css|map)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-code d-inline me-2"></i>');
+      input = input.gsub(/<a([^"]*)href="([^"]+)\.(template\.html)"([^>]*)>/, '<a\1href="\2.\3" target="_blank"\4><i class="fa-solid fa-fw fa-lg fa-file-code d-inline me-2"></i>');
     end
 
     def replace_tables(input)
