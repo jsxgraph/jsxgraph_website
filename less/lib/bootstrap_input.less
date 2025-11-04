@@ -6,19 +6,22 @@
 @range_thumb_height: 1em;
 @range_max: max(@range_track_height, @range_thumb_height);
 @range_min: min(@range_track_height, @range_thumb_height);
-@range_inverted_padding: min(0.25em, (@range_max - @range_min) / 2);
+@range_inverted_padding_calc: (@range_max - @range_min) / 2;
+@range_inverted_padding: if((@range_inverted_padding_calc < 0.25em), @range_inverted_padding_calc, 0.25em);
 
 @range_track_height_lg: 0.5em;
 @range_thumb_height_lg: 1.4em;
 @range_max_lg: max(@range_track_height_lg, @range_thumb_height_lg);
 @range_min_lg: min(@range_track_height_lg, @range_thumb_height_lg);
-@range_inverted_padding_lg: min(0.25em, (@range_max_lg - @range_min_lg) / 2);
+@range_inverted_padding_lg_calc: (@range_max_lg - @range_min_lg) / 2;
+@range_inverted_padding_lg: if((@range_inverted_padding_lg_calc < 0.25em), @range_inverted_padding_lg_calc, 0.25em);
 
 @range_track_height_xl: 0.7em;
 @range_thumb_height_xl: 1.8em;
 @range_max_xl: max(@range_track_height_xl, @range_thumb_height_xl);
 @range_min_xl: min(@range_track_height_xl, @range_thumb_height_xl);
-@range_inverted_padding_xl: min(0.25em, (@range_max_xl - @range_min_xl) / 2);
+@range_inverted_padding_xl_calc: (@range_max_xl - @range_min_xl) / 2;
+@range_inverted_padding_xl: if((@range_inverted_padding_xl_calc < 0.25em), @range_inverted_padding_xl_calc, 0.25em);
 
 // checks and switches
 

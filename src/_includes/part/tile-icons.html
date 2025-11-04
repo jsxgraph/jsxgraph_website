@@ -56,6 +56,9 @@
         {% endif %}
         <div class="shorten-content-x mb-2 tile-label py-0 px-1">
             {{ data.title | default: "" }}
+            {%- if target == "_blank" -%}
+            <i class="fa-solid fa-arrow-up-right-from-square icon-external-link"></i>
+            {%- endif -%}
         </div>
     </a>
 </div>

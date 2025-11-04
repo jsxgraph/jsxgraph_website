@@ -6,7 +6,7 @@
 
   .bg-@{name}-op-@{op} {
     background-color: fade(@color, @op) !important;
-    color: contrast(fade(@color, @op), @color_text_dark, @color_text_light);
+    color: contrast(mix(@color, #fff, @op), @color_text_dark, @color_text_light);
   }
 
   .generate-color-opacities(@color, @name, @op + 5);
