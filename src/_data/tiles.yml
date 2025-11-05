@@ -2,17 +2,17 @@
   width: "sm"
   data:
     - title: "Forum"
-      link: "/links/forum"
+      link: "/community/forum"
       target: "_blank"
       icon: "fa-solid fa-comments"
 
     - title: "API"
-      link: "/docs/api"
+      link: "/documentation/api"
       target: "_blank"
       icon: "fa-solid fa-book-open"
 
     - title: "Examples"
-      link: "/resources/share"
+      link: "/learn/share"
       target: "_blank"
       icon: "fa-solid fa-folder-open"
 
@@ -20,11 +20,11 @@
   width: "sm"
   data:
     - title: "GitHub"
-      link: "/links/github"
+      link: "/community/github"
       target: "_blank"
       icon: "fa-brands fa-github"
 
     - title: "jsFiddle"
-      link: "/links/jsfiddle"
+      link: "/community/jsfiddle"
       target: "_blank"
       icon: "fa-brands fa-jsfiddle"
