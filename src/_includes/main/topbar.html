@@ -23,7 +23,7 @@
                 {%- else -%}
                 {%- assign link = stringToCheck -%}
                 {%- assign link = relBase | append: link -%}
-                {%- assign target = const.feed.target | default: "_self" -%}
+                {%- assign target = "_self" -%}
                 {%- endif -%}
             </a>
             <a class="d-flex align-items-center" href="{{ link }}" target="{{ target }}">
