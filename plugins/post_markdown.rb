@@ -24,7 +24,7 @@ module Jekyll
     end
 
     def replace_tables(input)
-        input = input.gsub(/<table([^>]*)>(.*)<\/table>/m, '<table\1 class="table table-striped table-list-sm">\2</table>');
+        input = input.gsub(/<table([^>]*)>(.*)<\/table>/m, '<table\1 class="table table-striped table-list-md">\2</table>');
         input = input.gsub(/<thead([^>]*)>(.*)<\/thead>/m, '<thead\1>\2</thead>');
         input = input.gsub(/<td>[\s|\n|\r|\r\n]*<strong>[\s|\n|\r|\r\n]*<em>[\s|\n|\r|\r\n]*(.*)[\s|\n|\r|\r\n]*<\/em>[\s|\n|\r|\r\n]*<\/strong>[\s|\n|\r|\r\n]*<\/td>/, '<th scope="row">\1</th>');
     end
