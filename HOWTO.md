@@ -17,6 +17,9 @@ make dev
   ```shell
   make version
   ```
+## Update "releases"
+
+- File: `src/about/releases/_releases-list.section.md`
 
 ## Build files in [distrib/](distrib/)
 
@@ -26,8 +29,15 @@ make build
 
 ## Release / Upload to server
 
+- build and upload:
+
 ```shell
-make release # build and upload
+make release 
+```
+
+- upload only:
+
+```shell
 make upload  # upload prebuild distrib directory
 ```
 
