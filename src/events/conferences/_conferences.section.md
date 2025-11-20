@@ -1,6 +1,6 @@
 # Visualisation Tools for Teaching in STEM – Blended Intensive Programmes (BIP)
 
-## 3rd – 7st. November 2025, Tallinn (Estonia)
+## 3rd – 7st November 2025, Tallinn (Estonia)
 
 Discover how JSXGraph can enhance STEM education! Create interactive visual resources, explore complex concepts from functions to 3D vector fields, and exchange teaching ideas with international peers. Learn to integrate visualisations into digital learning platforms.
 

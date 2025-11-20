@@ -1,6 +1,6 @@
 # 24 Hours of JSXGraph (On-Site in Bayreuth)
 
-## March 4th- 5th, 2026, Bayreuth (Germany)
+## 4th - 5th March 2026, Bayreuth (Germany)
 
 Following the success of [24 Hours of JSXGraph 2025](https://jsxgraph.org/24hours2025/), JSXGraph users and developers will meet again in 2026 for another inspiring exchange of ideas and innovations.
 
