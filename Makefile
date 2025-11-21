@@ -80,6 +80,10 @@ build:
 	@echo "Build via jekyll"
 	@$(JEKYLL) build
 	@echo " ... done"
+	@size=$$(du -sh $(DISTRIB) | cut -f1); \
+	echo ""; \
+	echo "Size of build website: \033[1m$$size\033[0m"
+	echo ""
 
 dev:
 	@$(JEKYLL) serve
@@ -87,7 +91,7 @@ dev:
 
 .PHONY: postprocess
 ###################################
-# Test if purgecss is installed and 
+# Test if purgecss is installed and
 # execute it
 # Installation:
 #   npm install purify-css
