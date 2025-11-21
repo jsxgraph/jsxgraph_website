@@ -82,7 +82,7 @@ build:
 	@echo " ... done"
 	@size=$$(du -sh $(DISTRIB) | cut -f1); \
 	echo ""; \
-	echo "Size of build website: \033[1m$$size\033[0m"
+	echo "Size of build website: \033[1m$$size\033[0m"; \
 	echo ""
 
 dev:
