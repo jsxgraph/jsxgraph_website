@@ -1,3 +1,13 @@
+# Visualisation Tools for Teaching in STEM – Blended Intensive Programmes (BIP)
+
+## 3rd – 7st November 2025, Tallinn (Estonia)
+
+Discover how JSXGraph can enhance STEM education! Create interactive visual resources, explore complex concepts from functions to 3D vector fields, and exchange teaching ideas with international peers. Learn to integrate visualisations into digital learning platforms.
+
+Rathmann, Wigand (Educator), Friedrich-Alexander-Universität Erlangen-Nürnberg, Germany/University of Bayreuth, Germany 
+
+[More information](https://sites.google.com/tktk.ee/bipttk/Visualisation-Tools-for-Teaching-in-STEM)
+
 # ICTMT17 – International Conference on Technology in Mathematics Teaching
 
 ## 21st – 23rd October 2025, London (GB)
