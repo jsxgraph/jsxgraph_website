@@ -4,8 +4,8 @@
 
 - 7.-9. October
 - <a href="https://jsxgraph.org/conf2025" target="_blank">Web page</a>
-- Playlist coming soon!
-- Book of Abstracts coming soon!
+- <a href="https://youtube.com/playlist?list=PLr10cPSXxWJf-o5YKPjnR13sUPmxGTxop&si=cp4d14XGZJXI9wG8">Playlist</a>
+- <a href="{{ relBase }}/media/pdf/ijc-abstracts/ijc-2025.pdf" target="_blank">Book of Abstracts</a>
 
 # 2024
 
