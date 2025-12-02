@@ -30,9 +30,7 @@ LiaScript is an interactive e-learning framework for creating dynamic, web-based
 
 Audiofunctions+ is a web tool, developed with React, designed to support the teaching and exploration of mathematical function graphs for visually impaired students through sonification.
 It combines JSXGraph and Tone.js to represent functions using sound and enabling interactive exploration via keyboard and mouse.
-Audiofunctions+ is developed as part of the Erasmus+ project Sonairgraph.
-
-[Sonairgraph](https://sonairgraph.unito.it/)
+Audiofunctions+ is developed as part of the Erasmus+ project [Sonairgraph](https://sonairgraph.unito.it/).
 
 [Audiofunctions+](https://audiofunctions-plus.netlify.app)
 
@@ -40,7 +38,7 @@ Audiofunctions+ is developed as part of the Erasmus+ project Sonairgraph.
 
 > /media/logos-external/logo-hm4mint.png
 
-HM4mint is an online course on Mathematics for STEM students which is acknowledged at several universities ([hm4mint.nrw]((https://hm4mint.nrw)).
+HM4mint is an online course on Mathematics for STEM students which is acknowledged at several universities ([hm4mint.nrw](https://hm4mint.nrw)).
 HM4mint also initiated an exercise pool that offers interactive math problems.
 Using JSXGraph, it enables dynamic visualizations, and graphical exercises.
 
