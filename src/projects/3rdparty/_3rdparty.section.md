@@ -85,4 +85,4 @@ KDetude’s Eleda is a No‑Code pedagogical authoring platform that integrates 
 
 The WeBWorK Project is an open-source online homework system widely used in mathematics and science education. Through its integration with JSXGraph, it supports dynamic, interactive visualizations and explorations, enriching problem sets with geometric and graphical elements for students.
 
-[Learn more](https://openwebwork.org)x
+[Learn more](https://openwebwork.org)
