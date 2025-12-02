@@ -93,7 +93,7 @@ The WeBWorK Project is an open-source online homework system widely used in math
 
 HM4mint is an online course on Mathematics for STEM students which is acknowledged at several universities ([hm4mint.nrw]((https://hm4mint.nrw)). 
 HM4mint also initiated an exercise pool that offers interactive math problems.
-Using JSXGraph, it enables dynamic visualizations, and graphical exercises (https://pool.mumie.net).
+Using JSXGraph, it enables dynamic visualizations, and graphical exercises.
 
 [Learn more](https://pool.mumie.net)
 
