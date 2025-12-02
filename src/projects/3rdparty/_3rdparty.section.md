@@ -81,8 +81,39 @@ KDetude’s Eleda is a No‑Code pedagogical authoring platform that integrates 
 
 # The WeBWorK Project
 
-> /media/logos-external/logo-square-passive.png
+> /media/logos-external/logo-webwork.png
 
 The WeBWorK Project is an open-source online homework system widely used in mathematics and science education. Through its integration with JSXGraph, it supports dynamic, interactive visualizations and explorations, enriching problem sets with geometric and graphical elements for students.
 
 [Learn more](https://openwebwork.org)
+
+
+
+# HM4Mint
+
+> /media/logos-external/logo-hm4mint.png
+
+HM4mint is an online course on Mathematics for STEM students which is
+acknowledged at several universities ([hm4mint.nrw](https://hm4mint.nrw)). HM4mint
+also initiated an exercise pool that offers interactive math problems.
+Using JSXGraph, it enables dynamic visualizations, and graphical
+exercises.
+
+[Learn more](https://pool.mumie.net)
+
+# LiaScript
+
+> /media/logos-external/logo-liascript.png
+
+LiaScript is an interactive e-learning framework for creating dynamic, web-based lessons. By embedding JSXGraph, it allows seamless inclusion of interactive geometry, plots, and visualizations directly within learning content.
+
+[Learn more](https://liascript.github.io)
+
+# Audiofunctions+
+
+> /media/logos-external/logo-audiofunctions.png
+
+Audiofunctions+ is a web tool for teaching math functions to visually impaired students via sonification. Functions are explored with sound using JSXGraph and tone.js, with points of interest highlighted and interactive keyboard/ mouse navigation for learning and comparison.
+
+[Learn more](https://audiofunctions-plus.netlify.app)
+
