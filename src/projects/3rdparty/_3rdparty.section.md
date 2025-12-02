@@ -87,17 +87,13 @@ The WeBWorK Project is an open-source online homework system widely used in math
 
 [Learn more](https://openwebwork.org)
 
-
-
 # HM4Mint
 
 > /media/logos-external/logo-hm4mint.png
 
-HM4mint is an online course on Mathematics for STEM students which is
-acknowledged at several universities ([hm4mint.nrw](https://hm4mint.nrw)). HM4mint
-also initiated an exercise pool that offers interactive math problems.
-Using JSXGraph, it enables dynamic visualizations, and graphical
-exercises.
+HM4mint is an online course on Mathematics for STEM students which is acknowledged at several universities ([hm4mint.nrw]((https://hm4mint.nrw)). 
+HM4mint also initiated an exercise pool that offers interactive math problems.
+Using JSXGraph, it enables dynamic visualizations, and graphical exercises (https://pool.mumie.net).
 
 [Learn more](https://pool.mumie.net)
 
@@ -109,11 +105,17 @@ LiaScript is an interactive e-learning framework for creating dynamic, web-based
 
 [Learn more](https://liascript.github.io)
 
+[JSXGraph Plugin](https://github.com/LiaTemplates/JSXGraph)
+
 # Audiofunctions+
 
 > /media/logos-external/logo-audiofunctions.png
 
-Audiofunctions+ is a web tool for teaching math functions to visually impaired students via sonification. Functions are explored with sound using JSXGraph and tone.js, with points of interest highlighted and interactive keyboard/ mouse navigation for learning and comparison.
+Audiofunctions+ is a web tool, developed with React, designed to support the teaching and exploration of mathematical function graphs for visually impaired students through sonification. 
+It combines JSXGraph and Tone.js to represent functions using sound and enabling interactive exploration via keyboard and mouse. 
+Audiofunctions+ is developed as part of the Erasmus+ project Sonairgraph.
 
-[Learn more](https://audiofunctions-plus.netlify.app)
+[Sonairgraph](https://sonairgraph.unito.it/)
+
+[Audiofunctions+](https://audiofunctions-plus.netlify.app)
 
