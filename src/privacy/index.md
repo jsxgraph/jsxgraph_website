@@ -29,12 +29,12 @@ E-Mail: <jsxgraph@uni-bayreuth.de>
 
 Der Datenschutzbeauftragte des Verantwortlichen ist:
 
-Axel Pürckhauer   
-Angewandte Informatik (AI), Raum 1.13   
+Jonas Holoubek  
+Zentrale Universitätsverwaltung (ZUV), Büro 1.17  
 Universitätsstraße 30   
 95447 Bayreuth   
 Deutschland   
-Tel.: [+49 (0) 921 55-7668](tel:+49921557668)   
+Tel.: [+49 (0) 921 55-5335](tel:+49921555335)   
 E-Mail: <datenschutz@uni-bayreuth.de>
 
 # III. Allgemeines zur Datenverarbeitung
@@ -117,24 +117,9 @@ zwingend erforderlich. Es besteht folglich seitens des Nutzers keine Widerspruch
 
 **Beschreibung und Umfang der Datenverarbeitung**
 
-Beim Aufruf der sketchometry-Webseite sowie der sketchometry-App werden Daten (Cookies, LocalStorage, SessionStorage, IndexedDB, ...) im Browser
-gespeichert.
+Unsere Website verwendet Cookies. Bei Cookies handelt es sich um Textdateien, die im Internetbrowser bzw. vom Internetbrowser auf dem Computersystem des Nutzers gespeichert werden. Ruft ein Nutzer eine Website auf, so kann ein Cookie auf dem Betriebssystem des Nutzers gespeichert werden. Dieser Cookie enthält eine charakteristische Zeichenfolge, die eine eindeutige Identifizierung des Browsers beim erneuten Aufrufen der Website ermöglicht.
 
-Bei Cookies handelt es sich um Textdateien, die im Internetbrowser bzw. vom Internetbrowser auf dem Computersystem des Nutzers gespeichert werden.
-Ruft ein Nutzer eine Website auf, so kann ein Cookie auf dem Betriebssystem des Nutzers gespeichert werden. Dieser Cookie enthält eine
-charakteristische Zeichenfolge, die eine eindeutige Identifizierung des Browsers beim erneuten Aufrufen der Website
-ermöglicht.
-
-Wir setzen Cookies ein, um unsere Website nutzerfreundlicher zu gestalten. Einige Elemente unserer Internetseite erfordern es, dass der aufrufende
-Browser auch nach einem Seitenwechsel identifiziert werden kann.
-
-Bei den erfassten Daten der sketchometry-App (Konstruktionen, Einstellungen und Werkzeuge) handelt es sich Textdateien bzw. Zeichenfolgen, die im
-Browser-Speicher (LocalStorage, SessionStorage, IndexedDB) erfasst werden. Setzt ein Nutzer die sketchometry-App ein, werden diese Daten auf dem
-Betriebssystem direkt im Browser des Nutzers gespeichert. Diese Daten enthalten charakteristische Zeichenfolgen, die eine eindeutige Identifizierung
-des Browsers beim erneuten Aufrufen der sketchometry-App ermöglichen.
-
-Die Speicherung der Daten ist erforderlich, um dem Nutzer bei einem erneuten Aufruf der sketchometry-App, die vom Nutzer gespeicherten Daten
-(Konstruktionen, Einstellungen und Werkzeuge) wieder bereitzustellen.
+Wir setzen Cookies ein, um unsere Website nutzerfreundlicher zu gestalten. Einige Elemente unserer Internetseite erfordern es, dass der aufrufende Browser auch nach einem Seitenwechsel identifiziert werden kann.
 
 **Rechtsgrundlage für die Datenverarbeitung**
 
@@ -158,16 +143,7 @@ In diesen Zwecken liegt auch unser berechtigtes Interesse in der Verarbeitung de
 
 **Dauer der Speicherung, Widerspruchs- und Beseitigungsmöglichkeit**
 
-Cookies werden auf dem Rechner des Nutzers gespeichert und von diesem an unserer Seite übermittelt. Daher haben Sie als Nutzer auch die volle
-Kontrolle über die Verwendung von Cookies. Durch eine Änderung der Einstellungen in Ihrem Internetbrowser können Sie die Übertragung von Cookies
-deaktivieren oder einschränken. Bereits gespeicherte Cookies können jederzeit gelöscht werden. Dies kann auch automatisiert erfolgen. Werden Cookies
-für unsere Website deaktiviert, können möglicherweise nicht mehr alle Funktionen der Website vollumfänglich genutzt werden.
-
-Die Daten der App werden ebenfalls auf dem Rechner des Nutzers gespeichert. Eine Übermittlung an uns findet nicht statt. Daher haben Sie als Nutzer
-auch die volle Kontrolle über die Verwendung dieser Daten. Durch eine Änderung der Einstellungen in Ihrem Internetbrowser können Sie die Speicherung
-der Daten der App deaktivieren oder einschränken. Bereits gespeicherte App-Daten können jederzeit gelöscht werden. Dies kann auch automatisiert
-erfolgen. Wird die Speicherung der Daten der App deaktiviert, können möglicherweise nicht mehr alle Funktionen (insbesondere selbst erstellte
-Konstruktionen) der App vollumfänglich genutzt werden.
+Cookies werden auf dem Rechner des Nutzers gespeichert und von diesem an unserer Seite übermittelt. Daher haben Sie als Nutzer auch die volle Kontrolle über die Verwendung von Cookies. Durch eine Änderung der Einstellungen in Ihrem Internetbrowser können Sie die Übertragung von Cookies deaktivieren oder einschränken. Bereits gespeicherte Cookies können jederzeit gelöscht werden. Dies kann auch automatisiert erfolgen. Werden Cookies für unsere Website deaktiviert, können möglicherweise nicht mehr alle Funktionen der Website vollumfänglich genutzt werden.
 
 # VIII. Kontaktformular und E-Mail-Kontakt
 
