@@ -10,10 +10,17 @@ version: v1.12.2
 version_year: 2025
 
 carousel:
-  active: false
+  active: true
   speed: 3000
   controls: true
   data: # use sign #~# to define breakpoints
+    - text: >
+        Upcoming event:#~#
+        <b>24 hours of JSXGraph</b>,#~#
+        4th - 5th March 2026,#~#
+        on-site in Bayreuth
+      link: https://jsxgraph.org/24hours2026/
+      target: _blank
     - text: >
         Math Visualization.#~#
         Interactive.#~#
@@ -22,12 +29,6 @@ carousel:
         Web-Based.#~#
         Open-Source.#~#
         JavaScript.
-    - text: >
-        6<sup>th</sup> Intl. JSXGraph#~#
-        Conference,#~#
-        7.-9. October 2025
-      link: https://jsxgraph.org/conf2025
-      target: _blank
 
 url:
   web: https://jsxgraph.org
