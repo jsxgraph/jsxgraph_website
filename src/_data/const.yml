@@ -33,8 +33,8 @@ carousel:
 url:
   web: https://jsxgraph.org
   release_topbar: /about/releases/#list-of-releases # link | false
-  js: https://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js
-  css: https://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css
+  js: https://jsxgraph.org/distrib/jsxgraphcore.js
+  css: https://jsxgraph.org/distrib/jsxgraph.css
 
 default_polygon: "jsxgraph-pure"  # jsxgraph-pure | jsxgraph-plain | circle | 4 | 5 | 6 | 8
 
