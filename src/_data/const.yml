@@ -14,13 +14,13 @@ carousel:
   speed: 3000
   controls: true
   data: # use sign #~# to define breakpoints
-    - text: >
-        Upcoming event:#~#
-        <b>24 hours of JSXGraph</b>,#~#
-        4th - 5th March 2026,#~#
-        on-site in Bayreuth
-      link: https://jsxgraph.org/24hours2026/
-      target: _blank
+    #- text: >
+    #    Upcoming event:#~#
+    #    <b>24 hours of JSXGraph</b>,#~#
+    #    4th - 5th March 2026,#~#
+    #    on-site in Bayreuth
+    #  link: https://jsxgraph.org/24hours2026/
+    #  target: _blank
     - text: >
         Math Visualization.#~#
         Interactive.#~#

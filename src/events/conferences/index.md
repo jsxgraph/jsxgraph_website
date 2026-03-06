@@ -3,13 +3,23 @@ title: Past events
 order: 3
 sections:
 
-  - file: conferences
-    layout: text    
+
+  - file: 2026_24hours
+    layout: text
+
+  - file: 2026_24hours-impressions
+    layout: cards
+
+  - file: 2025_bip
+    layout: text
     
-  - file: 24hours
+  - file: 2025_ictmt17
+    layout: text
+
+  - file: 2025_24hours
     layout: text     
 
-  - file: 24hours-impressions
+  - file: 2025_24hours-impressions
     layout: cards     
 
   - file: webinar
