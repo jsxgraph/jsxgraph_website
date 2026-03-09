@@ -34,6 +34,17 @@ Audiofunctions+ is developed as part of the Erasmus+ project [Sonairgraph](https
 
 [Audiofunctions+](https://audiofunctions-plus.netlify.app)
 
+# CAScad
+
+> /media/logos-external/logo-cascad.png
+
+CAScad (Computer Algebra System Notebook) is a (still experimental) browser-based reactive CAS notebook supporting different kernels (GIAC JS as default). 
+It uses JSXGraph to render interactive 2D and 3D plots. Math 2D input with MathField. No install needed, runs fully in the browser, a PWA.
+
+[Learn more](https://s-celles.github.io/CAScad/)
+
+[Source code](https://github.com/s-celles/CAScad)
+
 # HM4Mint
 
 > /media/logos-external/logo-hm4mint.png
