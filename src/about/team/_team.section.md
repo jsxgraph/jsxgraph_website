@@ -56,6 +56,16 @@ Prof. Dr. Alfred Wassermann
     </div>
 </div>
 
+# Associate Members
+
+<div class="d-flex flex-wrap" id="section-team-list">
+    <div>
+        <img src="{{ relBase }}/media/team/rathmann.jpg" alt="Wigand Rathmann">
+        <div>Wigand Rathmann</div>
+    </div>
+</div>
+
+
 # Former Members
 
 - Michael Gerhäuser

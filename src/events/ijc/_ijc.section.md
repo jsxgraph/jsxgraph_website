@@ -1,3 +1,10 @@
+# 2026
+
+> /media/conferences/conf2026.png
+
+- 6.-8. October
+- <a href="https://jsxgraph.org/conf2026" target="_blank">Web page</a>
+
 # 2025
 
 > /media/conferences/conf2025.png

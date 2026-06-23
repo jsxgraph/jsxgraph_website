@@ -4,6 +4,9 @@ order: 3
 sections:
 
 
+  - file: 2026_stack-triest
+    layout: text
+    
   - file: 2026_24hours
     layout: text
 
