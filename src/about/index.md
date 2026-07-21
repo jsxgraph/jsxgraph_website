@@ -1,5 +1,5 @@
 ---
 title: About
-order: 1
+order: 70
 is_separator: true
 ---
