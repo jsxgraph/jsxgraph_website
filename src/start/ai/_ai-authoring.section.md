@@ -134,4 +134,4 @@ With these habits, AI becomes a genuinely productive co-author for JSXGraph: you
 
 For a smooth AI-assisted workflow, try *JSXGraph AIR for VS Code*. It turns your browser into a live preview for JSXGraph constructions, updating instantly whenever you save your code via a local WebSocket bridge—whether the code is handwritten, pasted, or AI-generated with GitHub Copilot or other AI assistants. Export your work as a self-contained HTML file or directly to the clipboard.
 
-[Learn more]({{ relBase }}/docs/jsxgraph-air-vscode)
+[Learn more]({{ relBase }}/documentation/jsxgraph-air-vscode)

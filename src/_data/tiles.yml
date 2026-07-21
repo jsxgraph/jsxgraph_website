@@ -12,7 +12,7 @@
       icon: "fa-solid fa-book-open"
 
     - title: "Examples"
-      link: "/learn/share"
+      link: "/examples/share"
       target: "_blank"
       icon: "fa-solid fa-folder-open"
 

@@ -24,7 +24,7 @@ Every edit saved in the editor renders instantly via a local WebSocket bridge â€
 
 Add MathJax or custom CSS via header.js, guarded by an allowlist, and export your work as a self-contained HTML file or straight to the clipboard.
 
-[Learn more]({{ relBase }}/docs/jsxgraph-air-vscode)
+[Learn more]({{ relBase }}/documentation/jsxgraph-air-vscode)
 
 
 # JSXGraph AIR Buddy
@@ -63,7 +63,7 @@ University of Bayreuth
 
 JSXCompressor is a JavaScript-based utility from the open-source JSXGraph project that enables deflate, unzip, and base64 decoding directly in the browser, allowing for the transmission and execution of compressed JavaScript, XML, or JSON data without server-side compression. It can be used in combination with PHP to embed compressed, base64-encoded scripts into HTML, making it a useful tool when server-side gzip compression is not available.
 
-[Learn more]({{ relBase }}/docs/jsxcompressor/)
+[Learn more]({{ relBase }}/documentation/jsxcompressor/)
 
 # SASIM
 
