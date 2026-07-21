@@ -1,6 +1,10 @@
-# What is AIR Buddy? Talk to Your Construction
+# Talk to Your Construction
 
-JSXGraph AIR Buddy is a conversational companion in the JSXGraph AIR family. While [*JSXGraph AIR for VS Code*]({{ relBase }}/docs/jsxgraph-air-vscode) supports authors who work directly with code, AIR Buddy removes the code from view entirely: you create and control interactive mathematical constructions by simply describing them — typed or spoken (via your OS), in natural language.
+JSXGraph AIR Buddy is a conversational companion in the JSXGraph AIR family.
+
+<img src="{{ relBase }}/media/logos/jsxgraph/air/jsxgraph-air-blue-text-solid-500.png" class="w-40 w-40-over-lg">
+
+While [*JSXGraph AIR for VS Code*]({{ relBase }}/docs/jsxgraph-air-vscode) supports authors who work directly with code, AIR Buddy removes the code from view entirely: you create and control interactive mathematical constructions by simply describing them — typed or spoken (via your OS), in natural language.
 
 <img src="{{ relBase }}/media/images/jsxgraph-air-buddy/air-buddy-prompt.png" class="w-75 w-60-over-lg">
 
@@ -11,7 +15,6 @@ Behind the scenes, an AI assistant "translates" your words into JSXGraph code an
 AIR Buddy is aimed at learners, teachers, and authors who want to explore, demonstrate, and experiment with dynamic mathematics — without writing a single line of JavaScript. Even JSXGraph board properties can be controlled using natural language.
 
 <img src="{{ relBase }}/media/images/jsxgraph-air-buddy/air-buddy-properties.png" class="w-75 w-60-over-lg">
-
 
 # Examples
 

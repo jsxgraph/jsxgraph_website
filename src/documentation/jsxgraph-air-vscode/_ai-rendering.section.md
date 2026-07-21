@@ -2,7 +2,11 @@
 
 ## Artificial Intelligence Renderer – Powered by JSXGraph
 
-Create JSXGraph illustrations with AI assistance, right from your editor. *JSXGraph AIR for Visual Studio Code* turns a browser tab into a live preview for your JSXGraph constructions: let GitHub Copilot (or any AI assistant in VS Code) write the code in `construction.js` — every save instantly updates the rendered construction. Additional libraries such as MathJax or custom CSS can be added via `header.js`, guarded by a configurable allowlist. When you're done, export your work as a single self-contained HTML file or copy it straight to the clipboard.
+Create JSXGraph illustrations with AI assistance, right from your editor. *JSXGraph AIR for Visual Studio Code* turns a browser tab into a live preview for your JSXGraph constructions: let GitHub Copilot (or any AI assistant in VS Code) write the code in `construction.js` — every save instantly updates the rendered construction. 
+
+<img src="{{ relBase }}/media/logos/jsxgraph/air/jsxgraph-air-blue-text-solid-500.png" class="w-40 w-40-over-lg">
+
+Additional libraries such as MathJax or custom CSS can be added via `header.js`, guarded by a configurable allowlist. When you're done, export your work as a single self-contained HTML file or copy it straight to the clipboard.
 
 ![jsxgraph-air-vscode.png]({{ relBase }}/media/images/jsxgraph-air-vscode.png)
 
