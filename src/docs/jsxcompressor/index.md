@@ -1,6 +1,6 @@
 ---
 title: JSXCompressor
-order: 4
+order: 50
 sections:
 
   - file: jsxcompressor

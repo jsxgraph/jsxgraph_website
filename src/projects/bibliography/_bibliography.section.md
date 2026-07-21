@@ -8,7 +8,7 @@
 Carsten Miller, Alfred Wassermann (Eds.):  
 **[CMLDT publications](https://mobile-learning.uni-bayreuth.de/CMLDTpublications/)**.   
 Center for Mobile Learning with Digital Technology (CMLDT) - University of Bayreuth.  
-Bayreuth, 2023 - 2025.  
+Bayreuth, 2023 - 2026.  
 
 ### JSXGraph Publications
 

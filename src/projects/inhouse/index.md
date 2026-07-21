@@ -1,6 +1,6 @@
 ---
 title: Projects
-order: 1
+order: 10
 sections:
 
   - file: projects

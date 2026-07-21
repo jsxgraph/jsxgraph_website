@@ -1,5 +1,5 @@
 ---
-title: Upcoming events
+title: Upcoming Events
 title_shortcuts: Events 
 subtitle: Conferences
 icon: fa-solid fa-calendar-days

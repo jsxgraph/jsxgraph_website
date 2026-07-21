@@ -1,6 +1,6 @@
 ---
 title: Bibliography
-order: 4
+order: 50
 sections:
 
   - file: bibliography

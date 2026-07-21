@@ -1,5 +1,5 @@
 ---
-title: Past events
+title: Past Events
 order: 3
 sections:
 

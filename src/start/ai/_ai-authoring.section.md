@@ -129,3 +129,9 @@ AI models occasionally invent JSXGraph methods or attributes that don't exist, o
 6. **Verify against the API docs** — feed errors back to the AI.
 
 With these habits, AI becomes a genuinely productive co-author for JSXGraph: you contribute the mathematical intent and the invariants, the AI contributes fast, clean code.
+
+# JSXGraph Artificial Intelligence Renderer – AIR for VS Code
+
+For a smooth AI-assisted workflow, try *JSXGraph AIR for VS Code*. It turns your browser into a live preview for JSXGraph constructions, updating instantly whenever you save your code via a local WebSocket bridge—whether the code is handwritten, pasted, or AI-generated with GitHub Copilot or other AI assistants. Export your work as a self-contained HTML file or directly to the clipboard.
+
+[Learn more](../../docs/jsxgraph-air-vscode)

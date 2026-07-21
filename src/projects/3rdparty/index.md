@@ -1,7 +1,7 @@
 ---
 title: 3rd Party Projects
 header: 3<sup>rd</sup> Party Projects
-order: 2
+order: 20
 sections:
 
   - file: 3rdparty
