@@ -1,5 +1,5 @@
 ---
 title: Example Wiki
-order: 4
+order: 20
 external_link: /wiki
 ---
