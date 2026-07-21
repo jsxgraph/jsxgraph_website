@@ -2,7 +2,7 @@
 title: Getting Started
 subtitle: Step Into JSXGraph
 icon: fa-solid fa-rocket
-order: 1
+order: 10
 in_shortcuts: true
 order_shortcuts: 6
 

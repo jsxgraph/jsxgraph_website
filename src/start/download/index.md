@@ -1,6 +1,6 @@
 ---
-title: Releases
-order: 2
+title: Download
+order: 50
 sections:
 
   - file: server

@@ -1,6 +1,6 @@
 ---
 title: Plugins
-order: 4
+order: 60
 sections:
 
     - file: plugins

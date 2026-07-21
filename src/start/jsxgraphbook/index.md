@@ -1,5 +1,5 @@
 ---
 title: JSXGraph Book
-order: 5
+order: 30
 external_link: https://ipesek.github.io/jsxgraphbook/
 ---

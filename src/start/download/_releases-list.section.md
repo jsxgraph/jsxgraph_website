@@ -1,4 +1,4 @@
-# List of releases
+# List of Releases
 
 [//]: # (Header row of table will not be shown)
 

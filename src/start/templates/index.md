@@ -1,6 +1,6 @@
 ---
 title: Starter Templates
-order: 2
+order: 20
 sections:
 
     - file: html
