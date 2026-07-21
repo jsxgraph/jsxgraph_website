@@ -17,4 +17,4 @@ the JSXGraph server hosted at the University of Bayreuth.
 # Step Into JSXGraph
 
 The following steps will guide you through the initial setup of JSXGraph and help you create your first interactive JSXGraph visualization.
-For ready-to-use examples, check out our [starter templates]({{ relBase }}/resources/templates) page.
+For ready-to-use examples, check out our [starter templates]({{ relBase }}/start/templates) page.

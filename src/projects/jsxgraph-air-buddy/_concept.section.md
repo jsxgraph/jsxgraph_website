@@ -1,12 +1,12 @@
 # What is AIR Buddy? Talk to Your Construction
 
-JSXGraph AIR Buddy is a conversational companion in the JSXGraph AIR family. While [*JSXGraph AIR for VS Code*](../../docs/jsxgraph-air-vscode) supports authors who work directly with code, AIR Buddy removes the code from view entirely: you create and control interactive mathematical constructions by simply describing them — typed or spoken (via your OS), in natural language.
+JSXGraph AIR Buddy is a conversational companion in the JSXGraph AIR family. While [*JSXGraph AIR for VS Code*]({{ relBase }}/docs/jsxgraph-air-vscode) supports authors who work directly with code, AIR Buddy removes the code from view entirely: you create and control interactive mathematical constructions by simply describing them — typed or spoken (via your OS), in natural language.
 
 <img src="{{ relBase }}/media/images/jsxgraph-air-buddy/air-buddy-prompt.png" class="w-75 w-60-over-lg">
 
 Behind the scenes, an AI assistant "translates" your words into JSXGraph code and renders the result instantly as a live, fully interactive construction in the browser. You stay in the mathematical conversation; AIR Buddy takes care of the programming.
 
-![JSYGraph AIR Buddy Circle](../../media/images/jsxgraph-air-buddy/air-buddy-circle.png)
+![JSYGraph AIR Buddy Circle]({{ relBase }}/media/images/jsxgraph-air-buddy/air-buddy-circle.png)
 
 AIR Buddy is aimed at learners, teachers, and authors who want to explore, demonstrate, and experiment with dynamic mathematics — without writing a single line of JavaScript. Even JSXGraph board properties can be controlled using natural language.
 
@@ -41,7 +41,7 @@ Every instruction modifies the live construction in place. Exploring a conjectur
 
 AIR Buddy is not a one-way text-to-picture generator. All three layers stay connected in both directions.
 
-![JSYGraph AIR Buddy Bidirectional Control](../../media/images/jsxgraph-air-buddy/air-buddy-source.png)
+![JSYGraph AIR Buddy Bidirectional Control]({{ relBase }}/media/images/jsxgraph-air-buddy/air-buddy-source.png)
 
 ## Speech/Text <=> JSXGraph Code <=> Live Construction
 
