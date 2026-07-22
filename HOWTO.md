@@ -19,7 +19,8 @@ make dev
   ```
 ## Update "releases"
 
-- File: `src/about/releases/_releases-list.section.md`
+~~- File: `src/about/releases/_releases-list.section.md`~~
+- File: `src/start/download/_releases-list.section.md`
 
 ## Build files in [distrib/](distrib/)
 
