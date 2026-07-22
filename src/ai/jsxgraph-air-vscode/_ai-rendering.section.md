@@ -27,7 +27,13 @@ Additional libraries such as MathJax or custom CSS can be added via `header.js`,
 - A modern web browser (Chrome, Firefox, Safari, Edge) — displays the live preview page
 Internet connection — required for loading the JSXGraph library from CDN and for Copilot; the bridge server itself runs entirely locally.
 
-### Download 
+### GitHub
+
+*JSXGraph AIR for Visual Studio Code* is published on GitHub:
+
+[JSXGraph AIR for Visual Studio Code](https://github.com/jsxgraph/jsxgraph-air-vscode)
+
+### Download
 
 Get the package (preview page + bridge server) here:
 

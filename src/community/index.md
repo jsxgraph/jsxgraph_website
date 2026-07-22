@@ -1,5 +1,5 @@
 ---
-title: Community & Support
-order: 40
+title: Community
+order: 70
 is_separator: true
 ---

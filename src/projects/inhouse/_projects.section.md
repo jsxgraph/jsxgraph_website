@@ -24,7 +24,7 @@ Every edit saved in the editor renders instantly via a local WebSocket bridge �
 
 Add MathJax or custom CSS via header.js, guarded by an allowlist, and export your work as a self-contained HTML file or straight to the clipboard.
 
-[Learn more]({{ relBase }}/documentation/jsxgraph-air-vscode)
+[Learn more]({{ relBase }}/ai/jsxgraph-air-vscode)
 
 
 # JSXGraph AIR Buddy
@@ -37,7 +37,7 @@ University of Bayreuth
 
 JSXGraph AIR Buddy is an AI-powered conversational interface for creating and exploring interactive mathematics. Users describe constructions in natural language — typed or spoken (via OS) — and the AI translates them into JSXGraph code, rendering live, dynamic visualizations in the browser. The code remains hidden by default, enabling learners and teachers to focus on mathematical thinking while supporting seamless interaction and exploration.
 
-[Learn more]({{ relBase }}/projects/jsxgraph-air-buddy)
+[Learn more]({{ relBase }}/ai/jsxgraph-air-buddy)
 
 # Students' Projects
 

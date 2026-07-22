@@ -71,4 +71,5 @@ Prof. Dr. Alfred Wassermann
 - Michael Gerhäuser
 - Bianca Valentin
 - Peter Wilfahrt
+- Heiko Vogel
 

@@ -1,6 +1,6 @@
 ---
-title: Authoring with AI
-order: 40
+title: AI – Best Practices
+order: 10
 sections:
 
   - file: ai-authoring

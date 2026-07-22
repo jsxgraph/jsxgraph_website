@@ -1,10 +1,12 @@
+*+++ JSXGraph AIR Buddy is currently in the prototype stage and     will be available for download at a later date. +++*
+
 # Talk to Your Construction
 
 JSXGraph AIR Buddy is a conversational companion in the JSXGraph AIR family.
 
 <img src="{{ relBase }}/media/logos/jsxgraph/air/jsxgraph-air-blue-text-solid-500.png" class="w-40 w-40-over-lg">
 
-While [*JSXGraph AIR for VS Code*]({{ relBase }}/docs/jsxgraph-air-vscode) supports authors who work directly with code, AIR Buddy removes the code from view entirely: you create and control interactive mathematical constructions by simply describing them — typed or spoken (via your OS), in natural language.
+While [*JSXGraph AIR for VS Code*]({{ relBase }}/ai/jsxgraph-air-vscode) supports authors who work directly with code, AIR Buddy removes the code from view entirely: you create and control interactive mathematical constructions by simply describing them — typed or spoken (via your OS), in natural language.
 
 <img src="{{ relBase }}/media/images/jsxgraph-air-buddy/air-buddy-prompt.png" class="w-75 w-60-over-lg">
 
@@ -63,7 +65,3 @@ But it is never out of reach: one click reveals the live code panel. This makes 
 - *Learners* interact purely through language and the construction itself.
 - *Curious users* can peek at the code and discover how their words became JSXGraph elements — a gentle, motivating entry point into programming dynamic mathematics.
 - *Authors and developers* can open the code layer permanently, edit it directly, and watch construction and conversation stay in sync.
-
-# Download
-
-JSXGraph AIR Buddy is currently in the prototype stage and will be available for download shortly.

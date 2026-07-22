@@ -1,5 +1,5 @@
 ---
-title: Docs & Reference
+title: Documentation
 order: 30
 is_separator: true
 ---

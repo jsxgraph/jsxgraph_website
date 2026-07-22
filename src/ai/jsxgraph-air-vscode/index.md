@@ -1,6 +1,6 @@
 ---
-title: AI Rendering (VS Code)
-order: 40
+title: AI Rendering in VS Code
+order: 20
 sections:
 
   - file: ai-rendering

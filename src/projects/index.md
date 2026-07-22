@@ -1,5 +1,5 @@
 ---
-title: Projects & References
-order: 50
+title: Projects
+order: 60
 is_separator: true
 ---
