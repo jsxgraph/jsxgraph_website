@@ -1,8 +1,11 @@
 (function () {
     var board = JXG.JSXGraph.initBoard('license',
         {boundingbox: [-8, 8, 8,-8], axis: false, showcopyright: false, shownavigation: false,
+            zoom: {
+                enabled: false
+            },
             pan: {
-                needTwoFingers: true
+                enabled: false
             }
         });
     let sl = board.create('slider', [[-6, -6], [5, -6], [0, 0.4, 1]], {

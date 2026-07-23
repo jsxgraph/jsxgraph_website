@@ -9,6 +9,9 @@ order: 1
 sections:
 
    - file: 2026_stack-international-meeting-nairobi
+     layout: text    
+     
+   - file: 2026_bip_STEM_teaching
      layout: text     
 
    - file: intro

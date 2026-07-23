@@ -102,7 +102,7 @@ AI models occasionally invent JSXGraph methods or attributes that don't exist, o
 
 # A Prompt Template to Start From
 
-> Create a JSXGraph construction of <topic>.
+> Create a JSXGraph construction of &lt;topic&gt;.
 >
 > Requirements:
 > - Invariants: <which properties must hold under dragging, e.g.

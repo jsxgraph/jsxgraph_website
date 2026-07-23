@@ -15,7 +15,7 @@ You can easily link to the JSXGraph website by adding the logo to your own websi
          style="width:200px;cursor:pointer;">
 </a>
 
-The preferred way is to download the official logo (see [Logo Files]({{ relBase }}/resources/logos)) and make it clickable with a link to 
+The preferred way is to download the official logo (see [Logo Files]({{ relBase }}/about/logo)) and make it clickable with a link to 
 
 `https://jsxgraph.org`
 
@@ -30,7 +30,7 @@ As an alternative, you can use the provided HTML embedding code to reference the
 </a>
 ```
 
-Different versions of the logo are available in the [Logo Files]({{ relBase }}/resources/logos) section, allowing you to choose the style that best fits your design.
+Different versions of the logo are available in the [Logo Files]({{ relBase }}/about/logo) section, allowing you to choose the style that best fits your design.
 
 # Spelling of JSXGraph
 
