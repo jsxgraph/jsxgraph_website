@@ -349,7 +349,7 @@ JSXGraph provides powerful 3D visualizations directly in the browser. As a first
     <div id="box" class="jxgbox" style="width:500px; aspect-ratio: 1/1;"></div>
     <script>
         var board = JXG.JSXGraph.initBoard(
-                'view-result', {
+                'box', {
                     boundingbox: [-10, 10, 10, -10],
                     axis: false,
                     pan: {enabled: false},
