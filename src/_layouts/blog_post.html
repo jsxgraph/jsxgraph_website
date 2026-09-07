@@ -34,12 +34,13 @@
 
     {% assign id = page.url | split: '/' | last | default: "home" %}
     <main class="container md-container m-between-5 mt-4 mb-5 pb-5" id="page-{{ id }}">
-        <div class="mb-4">
-            {% include main/post-header.html post=page link_badges=true %}
-        </div>
+        <article class="post">
+            <div class="mb-4">
+                {% include main/post-header.html post=page link_badges=true %}
+            </div>
 
-        {% include content.html %}
-
+            {% include content.html %}
+        </article>
         <div class="d-flex justify-content-center">
             <a href="{{ relBase }}{{ postlist_page.url }}" class="btn btn-outline-primary w-fix-lg">
                 To all posts

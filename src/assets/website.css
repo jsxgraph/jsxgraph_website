@@ -56853,7 +56853,6 @@ pre code {
 code {
     word-break: break-all;
 }
-
 p code,
 li code {
     word-break: unset;
@@ -59198,6 +59197,11 @@ footer,
 #search {
     border: 3px solid #10427C;
     border-radius: 0.5rem 0 0.5rem 0;
+}
+
+article.post-preview .badge.rounded-pill,
+article.post .badge.rounded-pill {
+    border-radius: 0.5rem 0 0.5rem 0 !important;
 }
 .tile-button-squares .tile-label {
   --bs-body-font-size: 1rem;
