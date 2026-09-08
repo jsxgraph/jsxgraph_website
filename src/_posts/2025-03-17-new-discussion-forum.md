@@ -4,8 +4,8 @@ author: Alfred Wassermann
 category: General
 tags:
   - Discussion
+  - Forum
 ---
-
 
 Dear community,
 

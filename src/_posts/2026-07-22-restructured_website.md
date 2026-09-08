@@ -2,7 +2,7 @@
 title: Restructured Website
 subtitle: New structure and ai resources
 author: Carsten Miller
-category: Website
+category: General
 tags:
   - Website
   - AI
