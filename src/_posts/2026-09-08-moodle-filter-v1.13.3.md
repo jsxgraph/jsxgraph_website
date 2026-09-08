@@ -22,7 +22,7 @@ to benefit from the newest features and to avoid potential errors.
 Our Moodle filter can be found
 
 - [on GitHub](https://github.com/jsxgraph/moodle-filter_jsxgraph/releases/tag/v1.13.3) -
-  please post upcoming issues and wishes to the filter [here](https://github.com/jsxgraph/moodle-filter_jsxgraph/issues)
+  please post upcoming issues and wishes for the filter [here](https://github.com/jsxgraph/moodle-filter_jsxgraph/issues)
 - [in the new Moodle Marketplace](https://marketplace.moodle.com/plugins/filter_jsxgraph)
 
 Best regards,  
