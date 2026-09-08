@@ -19,4 +19,4 @@ The _Formulas extension_ for the _Moodle JSXGraph filter_ facilitates the two-wa
 
 - [Formulas Question Type](https://dynamiccourseware.org)
 - [Formulas Extension for Moodle JSXGraph Filter on GitHub](https://github.com/jsxgraph/moodleformulas_jsxgraph)
-- [Moodle JSXGraph Filter](https://moodle.org/plugins/filter_jsxgraph)
+- [Moodle JSXGraph Filter](https://marketplace.moodle.com/plugins/filter_jsxgraph)

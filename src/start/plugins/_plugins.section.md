@@ -14,8 +14,7 @@ JSXGraph can be embedded into various systems as a plugin or through filter mech
 The JSXGraph filter for the learning management system Moodle enables function plotting and dynamic geometry constructions with JSXGraph within a Moodle platform.
 Using the JSXGraph filter makes it a lot easier to embed JSXGraph constructions into Moodle online documents, e.g. in contents like page, quiz, link, ... .
 
-[Moodle JSXGraph Filter](https://moodle.org/plugins/filter_jsxgraph)
-
+[Moodle JSXGraph Filter](https://marketplace.moodle.com/plugins/filter_jsxgraph)  
 [Moodle JSXGraph Filter on GitHub](https://github.com/jsxgraph/moodle-filter_jsxgraph)
 
 
