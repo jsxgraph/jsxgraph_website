@@ -1,4 +1,4 @@
-*+++ JSXGraph AIR Compass is currently in the prototype stage and     will be available for download at a later date. +++*
+*+++ JSXGraph AIR Compass is currently a prototype and will be available for download later. +++*
 
 # Talk to Your Construction
 
