@@ -27,7 +27,7 @@ Add MathJax or custom CSS via header.js, guarded by an allowlist, and export you
 [Learn more]({{ relBase }}/ai/jsxgraph-air-vscode)
 
 
-# JSXGraph AIR Buddy
+# JSXGraph AIR Compass
 
 > /media/logos-external/logo-air.png
 
@@ -35,9 +35,9 @@ Since 2026
 
 University of Bayreuth
 
-JSXGraph AIR Buddy is an AI-powered conversational interface for creating and exploring interactive mathematics. Users describe constructions in natural language — typed or spoken (via OS) — and the AI translates them into JSXGraph code, rendering live, dynamic visualizations in the browser. The code remains hidden by default, enabling learners and teachers to focus on mathematical thinking while supporting seamless interaction and exploration.
+JSXGraph AIR Compass is an AI-powered conversational interface for creating and exploring interactive mathematics. Users describe constructions in natural language — typed or spoken (via OS) — and the AI translates them into JSXGraph code, rendering live, dynamic visualizations in the browser. The code remains hidden by default, enabling learners and teachers to focus on mathematical thinking while supporting seamless interaction and exploration.
 
-[Learn more]({{ relBase }}/ai/jsxgraph-air-buddy)
+[Learn more]({{ relBase }}/ai/jsxgraph-air-compass)
 
 # Students' Projects
 

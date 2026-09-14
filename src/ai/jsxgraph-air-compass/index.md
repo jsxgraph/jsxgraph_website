@@ -1,5 +1,5 @@
 ---
-title: JSXGraph AIR Buddy
+title: JSXGraph AIR Compass
 order: 30
 sections:
 

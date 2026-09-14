@@ -1,6 +1,6 @@
 # Didactical Perspectives
 
-JSXGraph AIR Buddy provides a foundation for further research in mathematics education, enabling the investigation of AI-supported natural language interaction, accessibility, multilingualism, and mathematical learning.
+JSXGraph AIR Compass provides a foundation for further research in mathematics education, enabling the investigation of AI-supported natural language interaction, accessibility, multilingualism, and mathematical learning.
 
 ## Mathematical Construction through Natural Language
 
