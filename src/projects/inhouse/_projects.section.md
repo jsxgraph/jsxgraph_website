@@ -10,22 +10,17 @@ sketchometry is a user interface built on the foundation of JSXGraph. sketchomet
 
 [Learn more](https://sketchometry.org)
 
-# JSXGraph AIR (VS Code)
+# JSXGraph GEO
 
-> /media/logos-external/logo-air-vscode.png
+> /media/logos-external/logo-geo.png
 
 Since 2026
 
 University of Bayreuth
 
-JSXGraph AIR for VS Code turns your browser into a live preview for JSXGraph constructions: 
+JSXGraph GEO brings interactive maps and globes to your browser. You can switch between different projections, such as the Mercator projection, which preserves angles but enlarges polar regions, and the Equal Earth projection, which preserves relative areas. You can explore distortions as maps transform, draw routes and regions, and use spherical distances and areas for teaching and assessment purposes. No external map service is required once it has been loaded. It works offline!
 
-Every edit saved in the editor renders instantly via a local WebSocket bridge — handwritten, pasted, or AI-generated with GitHub Copilot or other AI assistants. 
-
-Add MathJax or custom CSS via header.js, guarded by an allowlist, and export your work as a self-contained HTML file or straight to the clipboard.
-
-[Learn more]({{ relBase }}/ai/jsxgraph-air-vscode)
-
+[Learn more](https://jsxgraph.org/extensions/geo/)
 
 # JSXGraph AIR Compass
 
@@ -38,6 +33,22 @@ University of Bayreuth
 JSXGraph AIR Compass is an AI-powered conversational interface for creating and exploring interactive mathematics. Users describe constructions in natural language — typed or spoken (via OS) — and the AI translates them into JSXGraph code, rendering live, dynamic visualizations in the browser. The code remains hidden by default, enabling learners and teachers to focus on mathematical thinking while supporting seamless interaction and exploration.
 
 [Learn more]({{ relBase }}/ai/jsxgraph-air-compass)
+
+# JSXGraph AIR (VS Code)
+
+> /media/logos-external/logo-air-vscode.png
+
+Since 2026
+
+University of Bayreuth
+
+JSXGraph AIR for VS Code turns your browser into a live preview for JSXGraph constructions:
+
+Every edit saved in the editor renders instantly via a local WebSocket bridge — handwritten, pasted, or AI-generated with GitHub Copilot or other AI assistants.
+
+Add MathJax or custom CSS via header.js, guarded by an allowlist, and export your work as a self-contained HTML file or straight to the clipboard.
+
+[Learn more]({{ relBase }}/ai/jsxgraph-air-vscode)
 
 # Students' Projects
 
