@@ -1,6 +1,6 @@
 ---
 title: JSXGraph GEO — maps and globes as constructions
-subtitle: moodle-filter-v1.13.3
+subtitle: A JSXGraph extension
 author: Carsten Miller
 category: General
 tags:
@@ -31,6 +31,8 @@ we are pleased to announce JSXGraph GEO, a Geography extension that adds two new
             data: JXG.Geography.datasets.naturalEarth110,
             tabindex: null,
         });
+        globe.angles.bank = 23.44 * Math.PI / 180; 
+        globe.rotateMode('azimuth');
         globe.rotateMode('azimuth');
     }());
 </script>
@@ -84,7 +86,7 @@ Replace `geomap` with `globe3d` and you have a globe. The *Natural Earth* data s
 
 ### Where to look
 
-A short demonstration is at [jsxgraph.org/extensions/geo/demo/](https://jsxgraph.org/extensions/geo/demo/); the documentation, with live examples for every option and every element, is at [jsxgraph.org/extensions/geo](https://jsxgraph.org/extensions/geo/).
+A short demonstration is at [jsxgraph.org/extensions/geo/demo/](https://jsxgraph.org/extensions/geo/demo/); the documentation, with live examples for every option and every element, is at [jsxgraph.org/extensions/geo/](https://jsxgraph.org/extensions/geo/).
 
 This is a first version. It is not cartographic software and does not try to be — the measurements are spherical rather than ellipsoidal, the dataset is generalised at 1:110 million, and a handful of further limits are written down next to the code they apply to. Corrections from anyone who knows their way around maps are very welcome.
 
