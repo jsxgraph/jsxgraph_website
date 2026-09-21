@@ -34,6 +34,14 @@ Audiofunctions+ is developed as part of the Erasmus+ project [Sonairgraph](https
 
 [Audiofunctions+](https://audiofunctions-plus.netlify.app)
 
+# Doenet
+
+> /media/logos-external/logo-doenet.png
+
+Doenet is a community of STEM instructors and authors who strive to engage students' minds and spur active interaction with mathematical ideas. We work together to develop open source tools that enable anyone to create exploratory activities with feedback. The activities use JSXGraph to create interactive graphs that can assess students' work.
+
+[Doenet](https://doenet.org)
+
 # CAScad
 
 > /media/logos-external/logo-cascad.png

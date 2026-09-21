@@ -12,7 +12,7 @@ sketchometry is a user interface built on the foundation of JSXGraph. sketchomet
 
 # JSXGraph GEO
 
-> /media/logos-external/logo-geo.png
+> /media/logos-external/logo-geo-project.png
 
 Since 2026
 
