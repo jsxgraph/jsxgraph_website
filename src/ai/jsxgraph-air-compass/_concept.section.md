@@ -65,3 +65,9 @@ But it is never out of reach: one click reveals the live code panel. This makes 
 - *Learners* interact purely through language and the construction itself.
 - *Curious users* can peek at the code and discover how their words became JSXGraph elements – a gentle, motivating entry point into programming dynamic mathematics.
 - *Authors and developers* can open the code layer permanently, edit it directly, and watch construction and conversation stay in sync.
+
+# JSXGraph AIR Compass – Presentation at the AI Day 2026, Bayreuth
+
+Carsten Miller, University of Bayreuth
+
+[Poster_AI-DAY_AIR-Compass.pdf](poster/Poster_AI-DAY_AIR-Compass.pdf)

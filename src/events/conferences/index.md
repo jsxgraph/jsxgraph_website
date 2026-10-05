@@ -3,7 +3,9 @@ title: Past Events
 order: 3
 sections:
 
-
+  - file: 2026_stack-international-meeting-nairobi
+    layout: text
+    
   - file: 2026_stack-triest
     layout: text
     

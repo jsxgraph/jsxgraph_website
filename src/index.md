@@ -100,3 +100,9 @@ sections:
 <script>
     window.JXG.Options.board.showCopyright = false;
 </script>
+
+
+
+
+
+
