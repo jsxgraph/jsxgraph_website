@@ -16,7 +16,7 @@ carousel:
   data: # use sign #~# to define breakpoints
     - text: >
         New Geography Extension: #~#
-        <b>Mercator vs. Equal Earth and a Globe. </b><img src="{{ relBase }}/media/images/globe.png" style="width:50px; height: 50px; margin: auto;">
+        <b>Mercator vs. Equal Earth and a Globe. </b><img src="https://home/media/images/globe.png" style="width:50px; height: 50px; margin: auto;">
       link: https://jsxgraph.org/extensions/geo/demo/
       target: _blank
     - text: >
