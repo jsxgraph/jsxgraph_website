@@ -50,6 +50,18 @@ Add MathJax or custom CSS via header.js, guarded by an allowlist, and export you
 
 [Learn more]({{ relBase }}/ai/jsxgraph-air-vscode)
 
+# JSXGraph for Quarto
+
+> /media/logos-external/logo-quarto.png
+
+Since 2026
+
+University of Bayreuth
+
+The JSXGraph extension for Quarto embeds interactive JSXGraph boards directly in Quarto documents, websites and reveal.js slides. For PDF and Word output, boards are automatically exported as static SVG. An assessment bridge and a built-in graph editor support exercises and LMS integration. Install it with a single command and enable it globally or per page. It is open source under the MIT license.
+
+[Learn more](https://github.com/jsxgraph/jsxgraph-quarto)
+
 # Students' Projects
 
 > /media/logos-external/logo-square-active.png
