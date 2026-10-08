@@ -6,4 +6,4 @@ The event explores AI-aware digital assessment practices in STEM education, with
 
 Rathmann, Wigand (Educator), Friedrich-Alexander-Universität Erlangen-Nürnberg, Germany/University of Bayreuth, Germany 
 
-[More information](https://sites.google.com/tktk.ee/bipttk/Visualisation-Tools-for-Teaching-in-STEM)
+[More information](https://sites.google.com/tktk.ee/bipttk/Supporting-STEM-Teaching-through-Digital-Assessment-Practices)
