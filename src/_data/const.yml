@@ -20,19 +20,18 @@ carousel:
       link: https://jsxgraph.org/extensions/geo/demo/
       target: _blank
     - text: >
-        Upcoming event: #~#
         <b>7. International JSXGraph Conference</b>.#~#
         6. – 8. October 2026.
       link: https://jsxgraph.org/conf2026/
       target: _blank
-    #- text: >
-    #    Math Visualization.#~#
-    #    Interactive.#~#
-    #    Seamless.
-    #- text: >
-    #    Web-Based.#~#
-    #    Open-Source.#~#
-    #    JavaScript.
+    - text: >
+        Math Visualization.#~#
+        Interactive.#~#
+        Seamless.
+    - text: >
+        Web-Based.#~#
+        Open-Source.#~#
+        JavaScript.
 
 url:
   web: https://jsxgraph.org
