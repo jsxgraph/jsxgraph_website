@@ -30,7 +30,7 @@ LiaScript is an interactive e-learning framework for creating dynamic, web-based
 
 The Math4U portal offers a complete platform for practising all aspects of high school mathematics, all in one place. The content is clearly organised into 12 thematic topics and 60 subtopics, with each subtopic divided into two or three parts. This structure remains consistent across all tests, games, and applications available on the portal.
 
-[Learn more](https://jsxgraph.org/home/projects/3rdparty/ ).
+[Learn more](https://math4u.vsb.cz)
 
 # Doenet
 
