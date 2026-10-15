@@ -24,15 +24,13 @@ LiaScript is an interactive e-learning framework for creating dynamic, web-based
 
 [JSXGraph Plugin](https://github.com/LiaTemplates/JSXGraph)
 
-# Audiofunctions+
+# Math4U
 
-> /media/logos-external/logo-audiofunctions.png
+> /media/logos-external/logo-math4u.png
 
-Audiofunctions+ is a web tool, developed with React, designed to support the teaching and exploration of mathematical function graphs for visually impaired students through sonification.
-It combines JSXGraph and Tone.js to represent functions using sound and enabling interactive exploration via keyboard and mouse.
-Audiofunctions+ is developed as part of the Erasmus+ project [Sonairgraph](https://sonairgraph.unito.it/).
+The Math4U portal offers a complete platform for practising all aspects of high school mathematics, all in one place. The content is clearly organised into 12 thematic topics and 60 subtopics, with each subtopic divided into two or three parts. This structure remains consistent across all tests, games, and applications available on the portal.
 
-[Audiofunctions+](https://audiofunctions-plus.netlify.app)
+[Learn more](https://jsxgraph.org/home/projects/3rdparty/ ).
 
 # Doenet
 
