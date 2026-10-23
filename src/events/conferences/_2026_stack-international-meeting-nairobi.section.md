@@ -2,7 +2,7 @@
 
 ## 27th – 31st July 2026, Nairobi (KE)
 
-The conference will blend academics with practical implementations through a range of academic presentations, workshops, and community meetings.
+The conference blended academic perspectives with practical implementations through academic presentations, workshops, and community meetings.
 
 - Alfred Wassermann: JSXGraph, University of Bayreuth, Germany
 
