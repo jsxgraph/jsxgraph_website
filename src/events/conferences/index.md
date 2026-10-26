@@ -3,6 +3,9 @@ title: Past Events
 order: 3
 sections:
 
+  - file: 2026_bip_STEM_teaching
+    layout: text
+    
   - file: 2026_stack-international-meeting-nairobi
     layout: text
     

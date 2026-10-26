@@ -8,7 +8,7 @@ order_shortcuts: 1
 order: 1
 sections:
      
-   - file: 2026_bip_STEM_teaching
+   - file: 2027_24hours
      layout: text     
 
    - file: intro
