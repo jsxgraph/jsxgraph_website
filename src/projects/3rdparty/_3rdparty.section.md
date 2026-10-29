@@ -28,9 +28,20 @@ LiaScript is an interactive e-learning framework for creating dynamic, web-based
 
 > /media/logos-external/logo-math4u.png
 
-The Math4U portal offers a complete platform for practising all aspects of high school mathematics, all in one place. The content is clearly organised into 12 thematic topics and 60 subtopics, with each subtopic divided into two or three parts. This structure remains consistent across all tests, games, and applications available on the portal.
+The Math4U portal offers a complete platform for practising high school mathematics in one place. Its content is organised into 12 topics and 60 subtopics, each divided into two or three parts. This structure is consistent across all tests, games, and applications on the portal.
 
 [Learn more](https://math4u.vsb.cz)
+
+# Audiofunctions+
+
+> /media/logos-external/logo-audiofunctions.png
+
+Audiofunctions+ is a React-based web tool that uses JSXGraph and Tone.js to sonify mathematical function graphs, helping visually impaired students explore them interactively by keyboard and mouse.
+Audiofunctions+ is developed as part of the Erasmus+ project [Sonairgraph](https://sonairgraph.unito.it/).
+
+[Learn more](https://audiofunctions-plus.unito.it)
+
+[Audiofunctions+ on GitHub](https://github.com/SONAIRGRAPH/audiofunctions-plus)
 
 # Doenet
 

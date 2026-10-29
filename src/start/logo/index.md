@@ -1,6 +1,6 @@
 ---
 title: Logo Files
-order: 6
+order: 70
 sections:
     
   - file: intro
