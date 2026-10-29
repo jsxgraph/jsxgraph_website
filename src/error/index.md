@@ -12,4 +12,4 @@ main > * {
 
 Sorry! An error occurred and this site is not available.
 
-Please go back to [{{ site.data.const.url.web }}](/).
+Please go back to [{{ site.data.const.url.web }}]({{ site.data.const.url.web }}).
