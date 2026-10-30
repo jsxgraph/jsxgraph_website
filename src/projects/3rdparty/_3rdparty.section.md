@@ -51,6 +51,16 @@ Doenet is a community of STEM instructors and authors who strive to engage stude
 
 [Doenet](https://doenet.org)
 
+# GoodMaith
+
+> /media/logos-external/logo-goodmaith.png
+
+GoodMaith is an AI math solver with live graphs. Solve a problem and each step is drawn on a board you can drag: a tangent, an integral, a sine. Teach mode is the tutor: it asks one step at a time.
+
+[Learn more](https://www.goodmaith.com)
+
+[Handbook](https://www.goodmaith.com/handbook)
+
 # CAScad
 
 > /media/logos-external/logo-cascad.png
